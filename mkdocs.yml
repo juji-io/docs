@@ -1,0 +1,4 @@
+site_name: Juji Documentation
+nav:
+  - Home: index.md
+  - Get Started: getstarted.md
