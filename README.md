@@ -1,15 +1,21 @@
-# docs
+# Juji Documentation
 
 This is the source for Juji's documentation Web site https://docs.juji.io. The site is built with [mkdocs](https://mkdocs.org).
 
+We welcome pull requests for this repository.
+
 ## Setup
+
+Make sure you have python on your system. Now install needed extensions:
 
 ```bash
 pip install mkdocs
+pip install mkdocs-material
 ```
 
-
 ## Test
+
+After you edit the documents, you can test the site by starting a dev-server:
 
 ```bash
 cd docs
@@ -22,8 +28,10 @@ The dev-server also supports auto-reloading, and will rebuild your documentation
 
 ## Deploy
 
-You should have cloned the repo for the built site at `git@github.com:juji-io/juji-io.github.io.git`
-So you should have the following file structure:
+Only Juji staff can deploy the site at https://docs.juji.io
+
+You should have cloned the repo for the built site at
+`git@github.com:juji-io/juji-io.github.io.git`, so that you should have the following file structure:
 
 ```
 docs/

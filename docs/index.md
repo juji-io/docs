@@ -1,17 +1,28 @@
-# Welcome to MkDocs
+# Get Started on Juji
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+Thank you for using Juji. By following our guides, you will be creating fun chatbots in no time.
 
-## Commands
+## Create your first chatbot
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+This guide assumes that you have already created an account on Juji platform. If
+you have not done so, please head over https://juji.io/signup to create your *free*
+account.
 
-## Project layout
+After you sign in to Juij, just follow these simple steps to create your first chatbot.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Choose a template
+
+### Preview the chatbot
+
+!!! info "Call for contribution"
+    We appreciate your help in improving this documentation, please send us a
+    [github pull request](https://github.com/juji-io/docs) if you would like to
+    change anything here.
+
+## Customize the chatbot
+
+### Customize agenda
+
+### Customize FAQs
+
+## Create your own topics

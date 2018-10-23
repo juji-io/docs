@@ -1,4 +1,48 @@
-site_name: Juji Documentation
+site_name: 'Juji Documentation'
+site_description: 'Tutorials, guides, and references for Juji chatbot creation platform'
+site_url: 'https://docs.juji.io'
+
+repo_name: 'juji-io/docs'
+repo_url: 'https://github.com/juji-io/docs'
+
+copyright: 'Copyright &copy; 2018 Juji, Inc.'
+
+google_analytics:
+  - 'UA-108804735-1'
+  - 'auto'
+
+theme:
+  logo: 'img/juji-logo.png'
+  favicon: 'img/favicon.ico'
+  name: 'material'
+  palette:
+    primary: 'white'
+    accent: 'deep orange'
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - meta
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
 nav:
-  - Home: index.md
-  - Get Started: getstarted.md
+  - Get Started: index.md
+  - REP Tutorial: tutorial.md
+  - Back to Juji: https://juji.io
