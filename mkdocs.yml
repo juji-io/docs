@@ -44,5 +44,14 @@ markdown_extensions:
 
 nav:
   - Get Started: index.md
-  - REP Tutorial: tutorial.md
-  - Back to Juji: https://juji.io
+  - Chatbot Design: design.md
+  - Juji Concepts: concept.md
+  - Built-in Assets:
+    - Bot Initiated: sys-bot.md
+    - User Initiated: sys-user.md
+  - Chatbot Scripting: ide.md
+  - Language Tutorial: tutorial.md
+  - Language Reference: reference.md
+  - System Functions: sys-fun/
+  - Create with Juji: https://juji.io/login
+  - Discuss Juji: https://forum.juji.io
