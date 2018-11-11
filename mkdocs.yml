@@ -15,6 +15,7 @@ theme:
   logo: 'img/juji-logo.png'
   favicon: 'img/favicon.ico'
   name: 'material'
+  custom_dir: 'theme/'
   palette:
     primary: 'white'
     accent: 'deep orange'
@@ -25,6 +26,7 @@ markdown_extensions:
   - meta
   - codehilite:
       guess_lang: false
+      linenums: true
   - toc:
       permalink: true
   - pymdownx.betterem:
