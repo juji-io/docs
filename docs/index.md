@@ -9,12 +9,10 @@ Head over to https://juji.io/signup
 All you need for creating an account on Juji platform is a working email
 address.
 
-
-
-
 ## Create your first chatbot
 
-After you sign in to Juij, just follow these simple steps to create your first chatbot.
+After you sign in to Juij, follow these simple steps to create and deploy your
+first Juji chatbot.
 
 ### Choose a template
 

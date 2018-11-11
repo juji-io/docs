@@ -41,7 +41,17 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.striphtml:
+      strip_attributes: ''
 
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/juji-io'
+    - type: 'twitter'
+      link: 'https://twitter.com/juji_io'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/juji-io/'
 nav:
   - Get Started: index.md
   - Chatbot Design: design.md
