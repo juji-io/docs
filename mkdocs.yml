@@ -21,6 +21,7 @@ theme:
     accent: 'deep orange'
 
 markdown_extensions:
+  - def_list
   - admonition
   - footnotes
   - meta
@@ -59,12 +60,8 @@ nav:
   - Get Started: index.md
   - Chatbot Design: design.md
   - Juji Concepts: concept.md
-  - Built-in Assets:
-    - Bot Initiated: sys-bot.md
-    - User Initiated: sys-user.md
-  - Chatbot Scripting: ide.md
-  - Language Tutorial: tutorial.md
-  - Language Reference: reference.md
-  - System Functions: sys-fun/
-  - Create with Juji: https://juji.io/login
+  - Chatbot Scripting: scripting.md
+  - FAQs: faq.md
+  - REP Reference: reference.md
+  - Go to Juji Now: https://juji.io/login
   - Discuss Juji: https://forum.juji.io

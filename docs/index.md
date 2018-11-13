@@ -73,4 +73,5 @@ Only first name is required for chatting with Juji bots (but is configurable by 
 
 <p align="center"><img src="img/chat-mary.png" alt="Chat with Mary" width="550"/></p>
 
-You are now chatting with your first deployed Juji bot!
+You are now chatting with your first deployed Juji bot! As could thousands of
+others at the same time, for 24 hours a day and 7 days a week!
