@@ -54,6 +54,7 @@ extra:
       link: 'https://twitter.com/juji_io'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company/juji-io/'
+
 nav:
   - Get Started: index.md
   - Chatbot Design: design.md
