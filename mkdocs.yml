@@ -29,6 +29,7 @@ markdown_extensions:
       guess_lang: false
       linenums: true
   - toc:
+      toc_depth: '3'
       permalink: true
   - pymdownx.betterem:
       smart_enable: all
@@ -61,7 +62,7 @@ nav:
   - Chatbot Design: design.md
   - Juji Concepts: concept.md
   - Chatbot Scripting: scripting.md
-  - FAQs: faq.md
   - REP Reference: reference.md
+  - FAQs: faq.md
   - Go to Juji Now: https://juji.io/login
   - Discuss Juji: https://forum.juji.io

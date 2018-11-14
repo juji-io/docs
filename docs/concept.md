@@ -6,7 +6,7 @@ creation platform. The core of the Juji platform is a hybrid AI system that marr
 so called "traditional AI" and the state of art deep learning (DL) and machine
 learning (ML) technologies.
 
-To meet enterprise requirements that demand flexibility, accountability and
+To meet industrial requirements that demand flexibility, accountability and
 explainability of AI systems, Juji developed a declarative production rule
 language to glue together the state of art natural language processing (NLP)
 capabilities. Called REP (Responsible Empathetic Persona), the language compiler
@@ -20,7 +20,7 @@ Reference](reference.md) for more details.
 
 Topics are the primary building blocks of a REP driven conversation, which break
 up the chat into some groups of turns according to semantic affinity. The
-simplest topic may represent only one turn of the conversation, but many go
+simplest topic may represent only one turn of the conversation, but may go
 deeper and branch into nested followup topics.
 
 Here is the definition of our first topic:
@@ -111,7 +111,7 @@ associated with zero or multiple followup topics.
   (ask-about-chinese-stock-market))
 
 ```
-Line 4 is a trigger that requires user input contains any one of "hello", "howdy" or "hi". For details of the match patterns, see [Match Patterns](reference.md#match)
+Line 4 is a trigger that requires user input contains any one of "hello", "howdy" or "hi". For details of the trigger patterns, see [Trigger Patterns](reference.md#triger)
 
 Line 5 is an action that includes a system built-in function call that returns the user's
 first name. In addition to producing text output, functions can do arbitrary
@@ -119,8 +119,8 @@ things.
 
 Line 7 is a trigger that contains a built-in function call that checks whether
 the user input is very similar to the sentence "what's up", i.e. the similarity
-to the sentence has to be over 0.9. Obviously, this is where DL and ML
-technologies make a big play.
+of user's response to the sentence has to be over 0.9. Obviously, this is an
+instance where DL and ML technologies make a big play.
 
 Line 11 shows that our pattern language handles foreign languages as well.
 
