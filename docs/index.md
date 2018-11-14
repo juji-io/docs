@@ -14,13 +14,13 @@ address.
 After you sign in to Juji, follow these simple steps to create and deploy your
 first Juji chatbot.
 
-Click the green `+ AI Helper` button to start creating your first bot:
-
 <p align="center"><img src="img/create-ai.png" alt="Create an AI" width="450"/></p>
 
-Your first bot is called "AI App 1" by default, you can change the name later.
+Click the green `+ AI Helper` button to start creating your first bot.
 
 <p align="center"><img src="img/ai-app-1.png" alt="AI App 1" width="250"/></p>
+
+Your first bot is called "AI App 1" by default, you can change the name later.
 
 Click the `Start Now` button, you can now choose a template for your bot.
 
