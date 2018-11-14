@@ -723,7 +723,8 @@ Local variable has precedence over global variable when the two names collide.
 
 ## Namespace
 
-REP reuses Clojure namespace constructs. Each script has a unique namespace.
+REP reuses [Clojure namespace](https://clojure.org/reference/namespaces)
+constructs. Each script has a unique namespace, and may require other namespaces.
 
 ```Clojure
 (ns juji.eng1.ava

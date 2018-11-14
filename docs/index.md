@@ -4,17 +4,17 @@ Thank you for using Juji. By following our guides, you will be creating chatbots
 
 ## Create an account
 
-Head over to https://juji.io/signup
+If you have not done so, head over to https://juji.io/signup to create an account.
 
-All you need for creating an account on Juji platform is a working email
+All you need for creating an account on the Juji platform is a working email
 address.
 
 ## Create your first chatbot
 
-After you sign in to Juij, follow these simple steps to create and deploy your
+After you sign in to Juji, follow these simple steps to create and deploy your
 first Juji chatbot.
 
-Click the green `+ AI Helper` button to start creating your first AI bot:
+Click the green `+ AI Helper` button to start creating your first bot:
 
 <p align="center"><img src="img/create-ai.png" alt="Create an AI" width="450"/></p>
 
@@ -26,21 +26,21 @@ Click the `Start Now` button, you can now choose a template for your bot.
 
 <p align="center"><img src="img/choose-template.png" alt="Choose a template" width="350"/></p>
 
-Choose any one template, say `conduct an B2B interview`, and click `Continue` button.
+Choose any one of the templates, say `conduct an B2B interview`, and click `Continue` button.
 
 <p align="center"><img src="img/design-page.png" alt="Design page" width="550"/></p>
 
 Now you get to a page where you could customize your bot. But let us not get too
-far ahead of ourselves, instead check out what the bot can do right now.
+far ahead of ourselves, instead let us check out what the bot can do right now.
 
 Click `Preview` button at the left menu, and wait a few seconds.
 
 <p align="center"><img src="img/chat-preview.png" alt="Preview page" width="550"/></p>
 
-Now we see that our first bot starts the chat. You can chat with the bot to see
+Now we see that our first bot starts a chat. You can chat with the bot to see
 how it does. It is pretty cool, huh?
 
-Now let's release the bot to the world! Click `Release` menu on the left.
+Now let us release the bot to the world! Click `Release` menu on the left.
 
 <p align="center"><img src="img/release-web.png" alt="Release page" width="550"/></p>
 
@@ -61,11 +61,11 @@ Now your bot is deployed.
 
 You have two URLs. The first URL is the production deployment of your bot. The
 second URL is for sending to your friends for testing. The two URLs host the
-same chat bot, but the later will not mess up your results reporting.
+same chat bot, but the later will not be included in your results reporting.
 
 ## Chat with your first chatbot
 
-Point your browser to the URL above.
+Point your browser to the URL generated above.
 
 <p align="center"><img src="img/chat-cover.png" alt="Chat cover page" width="600"/></p>
 

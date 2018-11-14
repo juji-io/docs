@@ -9,7 +9,7 @@ Now we learn how to use it to customize our chatbot.
 ## Customize Agenda
 
 Unlike many chatbots that only answer user's requests, an important mission of
-Juji chatbot is to ask user questions or give user guidance. Therefore, each
+Juji chatbot is to ask user questions or give user guidances. Therefore, each
 Juji chatbot has an agenda, which may consists of some questions to ask or
 information to give.
 
@@ -18,12 +18,13 @@ sample agenda. You may modify it to your liking by doing the following.
 
 ### Change Wordings
 
-Juji platform has many built-in questions that organizations often ask their
+Juji platform has many built-in questions that organizations may ask their
 audience, such as what kind of product their customers favor, what needs their
 employees have, and so on.
 
-You may want to change how these questions are asked. To change any question,
-just click on the bubble containing the question, it expands into a dialog:
+You may want to change the way how these questions are asked. To change the
+wording of any question, just click on the bubble containing the question, it
+expands into a dialog:
 
 <p align="center"><img src="../img/change-wording.png" alt="Change wording" width="550"/></p>
 
@@ -31,7 +32,7 @@ The main text box contains the text of the question that you can edit. After
 editing, click `Save` to save your changes.
 
 If you `Preivew` your chat, you will find that the bot asks the question with
-your wording.
+your new wording.
 
 ### Delete Question
 
@@ -53,23 +54,23 @@ built-in questions that your bot can ask the audience.
 
 Juji works hard to handle the contingencies surrounding these built-in
 questions, such as followup inquiries, uncooperative responses, and so on,
-based on our ample experience in developing and deploying chatbots to many real
+based on our ample experience in developing and deploying chatbots to real world
 use cases. We recommend you to try these built-ins first.
 
-If you could not find a built-in that is close to the question you have in mind,
+If you could not find a built-in question that is close to the question you have in mind,
 you may write your own topic to handle them by clicking `Write Custom Topic`
 link in the editing dialog. Refers to [Juji Concepts](concept.md) to start
 learning your way around writing topics.
 
 ## Customize Answer to FAQs
 
-As expected, Juji bot can answer user's common questions. You can customize the
+Juji bot can also answer user's common questions. You can customize the
 bot's answers to these frequently asked questions (FAQs) by clicking on the `FAQ` link
 at the right side of the red bar on top. It brings up a dialog:
 
 <p align="center"><img src="../img/faq-edit.png" alt="FAQ edit" width="550"/></p>
 
-On top of the dialog is a pull down menu to select questions to add to
+On top of the dialog is a pull down menu for selecting questions to add to
 the list of FAQs you bot will answer.
 
 Juji works hard to recognize these questions in whatever form your users may

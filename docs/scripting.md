@@ -1,7 +1,11 @@
 # Chat Scripting
 
-Juji platform provides an integrated development environment for scripting a REP
-chatbot.
+The Juji platform has many built-in capabilities for creating a
+full-fledged conversational agent for most common use cases. When your needs go
+beyond these built-in capabilities, Juji put in your hands a simple yet expressive
+language called REP, so that you can harness the full power of the platform.
+Additionally, Juji platform contains an integrated development environment (IDE) for
+working with REP scripts.
 
 ## Write Custom Topic
 

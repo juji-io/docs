@@ -1,26 +1,26 @@
 # Concepts of Juji Platform
 
 Juji leverages the fruits of half century of artificial
-intelligence (AI) research to build a practical and easy-to-use conversation
-creation platform. The core of the Juji platform is a hybrid AI system that marries the
-so called "traditional AI" and the state of art deep learning (DL) and machine
-learning (ML) technologies.
+intelligence (AI) research to build a practical and easy-to-use conversational
+agent authoring platform. The core of the Juji platform is a hybrid AI system
+that marries the so called "traditional AI" and the state of art deep learning
+(DL) and machine learning (ML) technologies in natural language processing (NLP).
 
 To meet industrial requirements that demand flexibility, accountability and
 explainability of AI systems, Juji developed a declarative production rule
-language to glue together the state of art natural language processing (NLP)
-capabilities. Called REP (Responsible Empathetic Persona), the language compiler
-and run-time provide automatic dialog management, which alleviates most of the
+language to glue together the state of art NLP
+capabilities. Called **REP** (Responsible Empathetic Persona), the language compiler
+and run-time provide **automatic dialog management**, which alleviates most of the
 burdens and pains associated with developing a conversational agent.
 
-We now briefly go over the REP language. Please refer to [Language
+We now briefly go over the main concepts of REP language. Please refer to [Language
 Reference](reference.md) for more details.
 
 ## Topic
 
 Topics are the primary building blocks of a REP driven conversation, which break
 up the chat into some groups of turns according to semantic affinity. The
-simplest topic may represent only one turn of the conversation, but may go
+simplest topic may represent only one turn of the conversation, but many topics go
 deeper and branch into nested followup topics.
 
 Here is the definition of our first topic:
@@ -61,12 +61,12 @@ to say.
      ["Nice to meet you!"]))
 
 ```
-Line 5 starts an anonymous topic definition, for we are too lazy to give it a
-name but a `_`, nor do we allow room for parameters. The line also ends with a
-trigger. Basically, this trigger is matched if the word "hello" is contained in
-the user's response to "Hello world!".
+Line 5 starts an anonymous topic definition, for we are too lazy to come up a
+name so we use a `_` as the name, nor do we allow room for parameters. The line
+ends with a trigger pattern. Basically, this pattern is matched if the word
+"hello" is contained in the user's response to our "Hello world!".
 
-Line 6 is the action, the bot says "Nice to meet you!"
+Line 6 is the action, if triggered, the bot will say "Nice to meet you!"
 
 Of course, we could be not so lazy and give the followup topic a proper
 definition instead. Say, let's call it "greeting".
@@ -111,7 +111,8 @@ associated with zero or multiple followup topics.
   (ask-about-chinese-stock-market))
 
 ```
-Line 4 is a trigger that requires user input contains any one of "hello", "howdy" or "hi". For details of the trigger patterns, see [Trigger Patterns](reference.md#triger)
+Line 4 is a trigger pattern that requires user input to contain any one of "hello",
+"howdy" or "hi". For details of the many patterns REP supports, see [Rule Patterns](reference.md#rule-pattern)
 
 Line 5 is an action that includes a system built-in function call that returns the user's
 first name. In addition to producing text output, functions can do arbitrary
@@ -136,7 +137,7 @@ topics into three types.
 
 ### Agenda Topic
 
-These are often the topics you define in the main [Design View](design.md). They
+These are often the topics you define in the [Design View](design.md). They
 are placed in the agenda queue of the run-time system. You may also control the
 ordering and its randomization. In general, the bot tries to ensure all the
 agenda topics are covered, unless the users is stubbornly uncooperative.
@@ -146,21 +147,21 @@ agenda topics are covered, unless the users is stubbornly uncooperative.
 If an agenda topic fails to produce a bot response, ad-lib topics are tested.
 They are mainly Juji's built-in topics that cover all kinds of
 contingencies, such as user misbehavior, missing information, courtesy fillers,
-and so on.
+and so on. You may write your own ad-lib topics.
 
 ### Exception Topic
 
 These topics are tried last, and they handle cases where the bot has failed to
 cope with a situation, so that the conversation can still go on. These include
 system errors, REP scripting mistakes, and so on. These topics again normally are
-written by Juji.
+written by Juji, but you can write your own as well.
 
 Any topic can be treated as any topic category by being placed in one of the
 three topic queues in the `config` form. Details description is in [Config](reference.md#config)
 
 ## Other Features
 
-In addition to topics and functions, REP language includes many convenient scripting
+In addition to topics and functions, REP language includes some convenient scripting
 features, such as [Variables](reference.md#variable), [Named
 Patterns](reference.md#named-pattern), [Name Spaces](reference.md#namespace), and so on.
 
