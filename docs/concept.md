@@ -140,7 +140,7 @@ topics into three types.
 These are often the topics you define in the [Design View](design.md). They
 are placed in the agenda queue of the run-time system. You may also control the
 ordering and its randomization. In general, the bot tries to ensure all the
-agenda topics are covered, unless the users is stubbornly uncooperative.
+agenda topics are covered, unless the user is stubbornly uncooperative.
 
 ### Ad-lib Topic
 
