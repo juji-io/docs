@@ -416,8 +416,15 @@ actions, querying database, and so on;
 
 What about `or`? Well, all rules are implicitly `or`ed together in a topic (see below).
 
-!!! note
+!!! info
     One can still explicitly use Clojure logic forms such as `and`, `or`, `not` within the patterns.
+
+Juji platform provide a set of built-in functions, see [System Functions](function.md) for details.
+
+!!! note
+    Juji system functions have special calling conventions:
+    1. No namespace is necessary.
+    2. The first argument should be omitted, for it refers to the chatbot itself.
 
 To define a function, the `defn` form of Clojure can be used in the script. The defined function resides in the namespace of the script (see below). Calling these user defined functions in the script do not require namespace prefix. Core functions or macros of Clojure, such as >=, and, or,if, as well as REP system functions can also be called without namespace prefix.
 

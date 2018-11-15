@@ -20,6 +20,9 @@ theme:
     primary: 'white'
     accent: 'deep orange'
 
+extra_css:
+  - 'stylesheets/extra.css'
+
 markdown_extensions:
   - def_list
   - admonition
@@ -63,6 +66,7 @@ nav:
   - Juji Concepts: concept.md
   - Chatbot Scripting: scripting.md
   - REP Reference: reference.md
+  - System Functions: function.md
   - FAQs: faq.md
   - Go to Juji Now: https://juji.io/login
   - Discuss Juji: https://forum.juji.io
