@@ -426,7 +426,9 @@ Juji platform provide a set of built-in functions, see [System Functions](functi
     1. No namespace is necessary.
     2. The first argument should be omitted, for it refers to the chatbot itself.
 
-To define a function, the `defn` form of Clojure can be used in the script. The defined function resides in the namespace of the script (see below). Calling these user defined functions in the script do not require namespace prefix. Core functions or macros of Clojure, such as >=, and, or,if, as well as REP system functions can also be called without namespace prefix.
+To define a function, the `defn` form of Clojure can be used in the script. The
+defined function resides in the namespace of the script (see below).
+
 
 ## Pattern Construct
 
@@ -738,12 +740,17 @@ constructs. Each script has a unique namespace, and may require other namespaces
   (:require [my.other :as other]
             [juji.questions :as jq]))
 ```
-Namespaced symbols can be used to refer to things defined in other namespaces.
+Symbol with a prefix in front of `/` is considered as namespaced, e.g.
+`abc/xyz`, where `abc` is the namespace prefix. Namespaced symbols can be used
+to refer to things defined in other namespaces,
 
 ```Clojure
 [other/_greetings]
 [(ask-question jq/what-q)]
 ```
+
+Clojure core functions or macros of Clojure, such as `>=`, `and`, `or`,`if`, as
+well as Juji system functions can be called without namespace prefix.
 
 ## Question
 
