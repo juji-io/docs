@@ -1,3 +1,5 @@
+no_toc: true
+
 # Frequently Asked Questions
 
 How do I create a chatbot/AI agent/AI helper?
