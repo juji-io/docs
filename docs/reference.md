@@ -182,30 +182,7 @@ If we only want to match the literal form of the text, without lemmatization or 
 Used in response, the string pattern will become part of the output as it is.
 
 !!! note
-    String pattern is case insensitive.
-
-### Regex Pattern
-
-When a pattern requires sub-token variations, we can use regular
-expressions, which are character based. A regular expression is represented as a
-string with a `#` in front. The syntax follows Clojure's.
-
-```Clojure
-#"\d+"  ; match a token consists of one or more digits.
-#"fav*" ; match "favorite", "fav", "favarable", etc.
-```
-
-!!! warning
-    In REP, the regex pattern is restricted to represent a single token only. A regex representing multiple tokens will never match since the input to the regex is always a single token.
-
-Similar to string pattern, when a token’s case-sensitivity is important, e.g. when matching acronyms, regex patterns can be useful.
-
-```Clojure
-#"IBM" ; match "IBM" or "IBMer", but not "ibm"
-#"^IBM$" ; match "IBM" only
-```
-
-Regex patterns are not allowed in actions.
+    String pattern is case **insensitive**.
 
 ### Alternative Pattern
 
@@ -243,20 +220,6 @@ The case indicator keyword has to be the first element of the vector. The orders
 
 When used in action patterns, the system will randomly pick the alternatives using the
 compatible semantics as matches. For example, `:1` will randomly pick one alternative as output; `:?` will pick one or zero alternative at random chance; and so on. The one exception is the `:0` case, as it does not make sense in actions. The choices are made at runtime.
-
-!!! note "Token Conversion Precedence"
-    Strings, symbols, and regex can be freely mixed in a pattern, as expected.
-    ```Clojure
-    [I "used to" work in #"^IBM$"];
-    ```
-    However, when the same input word matches more than one type of tokens, a
-    precedence is used to determine which type of token this input word is
-    converted to:
-    **string > symbol > regex**.
-    ```Clojure
-    ;; for an input word "IBM", the string "ibm" is actually matched
-    [:1 IBM "ibm" #"IBM"]
-    ```
 
 ### Wildcard Pattern
 
@@ -354,11 +317,91 @@ For certain syntactic or semantic class of content, some pre-defined tags can al
 ;; the first dog should not match, whereas the second should
 [#pos/verb dog]
 ```
-These tags are backed by machine learning based natural language processing modules, e.g. parts of speech tagging.
+Most tags are backed by ML based NLP modules.
+
+#### Parts of Speech tags
+
+ Tag | Description | Examples
+---|---|---
+#pos/noun |Noun | desk, books, water
+#pos/verb |Verb | go, enjoy, love
+#pos/adj  |Adjective | superior, one-of-a-kind, the most
+#pos/adv  |Adverb  | very, later, lovely
+#pos/pronoun |Pronoun | she, her, you
+#pos/preposition |Preposition | on, for, after
+#pos/to |to |to
+#pos/particle |Particle | so, up, let
+#pos/number |Number token | two, third
+#pos/ext-there |Existential theres | there
+#pos/modal | Verbs don't take s ending in 3rd person | can, may, must
+#pos/determiner | Determiner | a, no, the, any, each, that
+#pos/conjunction | Conjunction | and, but, nor, or, plus, minus
+#pos/interjection | Interjection | my, oh, please, see, uh, well, yes
+
+#### Phrases tags
+
+ Tag | Description | Examples
+---|---|---
+#phrase/NP | Noun phrase | the police officer's dog, a yellow house
+#phrase/VP | Verb phrase | was walking, must go, let the fresh air in
+#phrase/PP | Preposition phrase | in the storefront window, by the river
+#phrase/ADJP | Adjective phrase | smarter than me, extremely delighted
+#phrase/ADVP | Adverb phrase | in total silence, quite easily
+#phrase/sub | subordinate clause | that, because, while
+#phrase/other | not part of any chunk |
+
+#### Entity tags
+ Tag | Description | Examples
+---|---|---
+#entity/person  | person name | John, Mary
+#entity/org | organization name | UN, IBM
+#entity/location | location name | Canada, Main St.
+#entity/time | time | tomorrow, around 10:30
+#entity/duration | duration | 5 years, 3 hours
+
+#### Regex tag
+
+When a pattern requires sub-token variations, we can use character based regular
+expressions. A regular expression is represented as a
+string with a tag `#token/regex` in front. The syntax of the string follows
+Java and Clojure's regular expression.
+
+```Clojure
+#token/regex "\d+"  ; match a token consists of one or more digits.
+#token/regex "fav*" ; match "favorite", "fav", "favarable", etc.
+```
+
+!!! warning
+    In REP, the regex tag pattern is restricted to represent a single token only. A regex representing multiple tokens will never match since the input to the pattern is always a single token.
+
+When a token’s case-sensitivity is important, e.g. when matching acronyms, regex tag can be useful.
+
+```Clojure
+#token/regex "IBM" ; match "IBM" or "IBMer", but not "ibm"
+#token/regex "^IBM$" ; match "IBM" only
+```
+
+Tag patterns are not allowed in actions.
+
+!!! note "Token Conversion Precedence"
+    Strings, symbols, and regex can be freely mixed in a pattern, as expected.
+    ```Clojure
+    [I "used to" work in #token/regex "^IBM$"];
+    ```
+    However, when the same input word matches more than one type of tokens, a
+    precedence is used to determine which type of token this input word is
+    converted to:
+    **string > symbol > regex**.
+    ```Clojure
+    ;; for an input word "IBM", the string "ibm" is actually matched
+    [:1 IBM "ibm" #token/regex "IBM"]
+    ```
 
 ### Class Pattern
 
-The placeholders for the same set of classes indicated above can be specified using namespaced keywords. For example,
+With the exception of regex tag, the same set of tags
+indicated above can be specified using namespaced keywords, which represent
+placeholders for the specified class of content. For example,
 
 ```Clojure
 ;; :pos/verb matches a token whose parts of speech tag is a verb, e.g. "love", "hate", etc.
@@ -789,6 +832,7 @@ questions are radio buttons; `:multiple-choice` questions are check boxes.
 The value of `:choices` attribute may be given a name, defined before hand, so that they are reusable, e.g. `libert1-5` and `yes-on`, or it could be included inline, e.g. the choices in `election-q`.
 
 `:open-ended` question are normally presented as sentences in a conversational turn. They may optionally have a `:wording` attribute that is an action pattern.
+
 
 Questions, once defined, can be used in special functions to be displayed to the
 users. `:open-ended` questions are displayed using function `(ask-question
