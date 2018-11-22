@@ -6,7 +6,7 @@ Juji exposes the same API that powers our Web application to our users.
 
 The Juji API is based on [GraphQL](https://graphql.org). We support
 cross-origin resource sharing (CORS) so you can interact with Juji from any
-client-side applications that support GraphQL.
+client-side application thats support GraphQL. The API endpoint is https://juji.io/api/graphql
 
 Like many GraphQL APIs, Juji API is explorable and executable through
 [GraphiQL](https://github.com/graphql/graphiql) in-browser IDE.  Once you've
@@ -14,7 +14,10 @@ logged in to Juji platform, you can access [the GraphiQL endpoint](https://juji.
 
 ## Authentication
 
-Almost all Juji API operations require authentication.  Once you have created an
+Almost all Juji API operations require authentication.  The authentication is
+based on [JSON Web Token (JWT)](https://en.wikipedia.org/wiki/JSON_Web_Token).
+
+Once you have created an
 account at https://juji.io/signup, to authenticate to the API, supply
 your email and password to the `authenticate` mutation and request the `token`
 field in the response.
@@ -57,7 +60,16 @@ The advantages of EDN and Transit are richer data types. With Transit you also g
 
 ## Chat
 
-Juji's chat experience is built on top of WebSockets to push data to the client. This requires using GraphQL subscriptions to enable the server to push data to your client.
+Juji's chat experience is built on top of
+[WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client.
+
+This requires using [GraphQL subscriptions](https://facebook.github.io/graphql/June2018/#sec-Subscription-Operation-Definitions) to enable the server to push data to your client.
+
+The WebSocket is initiated by doing a HTTP `GET` on
+`https://juji.io/api/v1/chsk`. Since WebSocket requests cannot set custom
+headers, the JWT token should be sent as a query parameter `auth-token`.
+
+Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open.
 
 ## Domain Nouns
 
