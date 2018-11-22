@@ -49,8 +49,8 @@ of the trigger are met and the action is taken by the bot, we say that the rule 
 ### Followup Topic
 
 When a rule is fired, its associated followup topics are primed, meaning that
-these followup topics will be first considered in the bot's quest to come up something
-to say.
+these followup topics will be first considered in the bot's quest to come up
+with something to say.
 
 ```clojure
 (deftopic hello-world
@@ -61,8 +61,8 @@ to say.
      ["Nice to meet you!"]))
 
 ```
-Line 5 starts an anonymous topic definition, for we are too lazy to come up a
-name so we use a `_` as the name, nor do we allow room for parameters. The line
+Line 5 starts an anonymous topic definition, for we are too lazy to come up with
+a name so we use a `_` as the name, nor do we allow room for parameters. The line
 ends with a trigger pattern. Basically, this pattern is matched if the word
 "hello" is contained in the user's response to our "Hello world!".
 
