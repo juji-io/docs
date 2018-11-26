@@ -130,10 +130,11 @@ already.
 
 ## Dialog Management
 
-In REP, the dialog flow is managed automatically by the system. The conversation
-may jump around, but the bot always brings the conversation back. This unique
-combination of flow flexibility and mission focus is achieved by categorizing
-topics into three types.
+In REP, the dialog flow is managed automatically by the system. The system
+properly handles both user initiated (reactive) and system initiated (proactive)
+conversation turns. The conversation may jump around, but the bot always brings
+the conversation back. This unique combination of flow flexibility and mission
+focus is achieved with the help of categorizing topics into three types.
 
 ### Agenda Topic
 
@@ -152,7 +153,7 @@ and so on. You may write your own ad-lib topics.
 ### Exception Topic
 
 These topics are tried last, and they handle cases where the bot has failed to
-cope with a situation, so that the conversation can still go on. These include
+cope with a situation, so that the conversation may still go on. These include
 system errors, REP scripting mistakes, and so on. These topics again normally are
 written by Juji, but you can write your own as well.
 
