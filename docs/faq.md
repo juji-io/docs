@@ -74,6 +74,12 @@ What is a **Remark**?
 What’s the difference between a **Remark** and a **Question**?
 : A remark is a chatbot comment in conversation that does not require user input. In contrast, when the chatbot asks a question, it will actively wait for the user to input the answer.
 
+What is custom-topic and how to write it?
+: Custom-topic allows you to customize the way you would like the bot to respond to users’ inputs. Topics are the primary building blocks of the chatbot’s conversation. The [concept page](concept.md) of the Juji documentation provides detailed explanation on how to write a topic.
+
+How can I customized the chatbot’s response to participants' answers in open-ended questions?
+: Custom-topic can be used to customize the chatbot’s responses. The custom-topic editor can be accessed by clicking on the particular question on the **“Design”** page and then click on “Write Custom Topic”. For more advanced users, the IDE page can be used for more powerful chat script editing. Please refer to [Work with Full REP Scripts](scripting.md#work-with-full-rep-scripts) and [Juji Concepts](concept.md) for more information on chat script editing using IDE.
+
 Does the chatbot work with interview questions which have primarily choice answers, and need only the chatbot’s help to draw out responses for those who select “other” in their multiple choice answer?
 : Yes, we support choice questions, open-ended questions, and other types of questions. Although we recommend our users to take advantage of our AI powered conversation skills and personality analysis by using open-ended questions, our chatbot works perfectly in chat with primarily choice questions. The AI chatbot can be easily set up to collect extra responses when interviewee select "other" in a multiple choice question.
 

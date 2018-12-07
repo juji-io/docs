@@ -23,7 +23,7 @@ Click `Compile` to compile and any syntax error will be reported.
 
 ## Work with Full REP Scripts
 
-At https://juji.io/ide, you have access to an online scripting environment.
+At https://juji.io/ide, you have access to an online scripting environment. To access the IDE page, you can also click on the word "Advanced" in the Juji app [Design View](design.md).
 
 <p align="center"><img src="../img/ide-custom.png" alt="IDE" width="600"/></p>
 
