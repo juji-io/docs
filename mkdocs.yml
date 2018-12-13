@@ -68,7 +68,7 @@ nav:
   - Chatbot Scripting: scripting.md
   - REP Reference: reference.md
   - System Functions: function.md
-  - User Defined Functions: udf.md
+  #- User Defined Functions: udf.md
   - API Reference: api.md
   - FAQs: faq.md
   - Go to Juji Now: https://juji.io/login
