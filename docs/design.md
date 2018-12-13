@@ -47,7 +47,7 @@ icon between question items to bring up a popup menu:
 
 <p align="center"><img src="../img/add-question.png" alt="Add question" width="550"/></p>
 
-Select `Qeustion Bank`, it brings up a dialog that allows you to select the Juji
+Select `Question Bank`, it brings up a dialog that allows you to select the Juji
 built-in questions that your bot can ask the audience.
 
 <p align="center"><img src="../img/question-bank.png" alt="Question bank" width="550"/></p>
@@ -62,7 +62,7 @@ you may write your own topic to handle them by clicking `Write Custom Topic`
 link in the editing dialog. Refers to [Juji Concepts](concept.md) to start
 learning your way around writing topics.
 
-## Customize Answer to FAQs
+## Customize FAQs
 
 Juji bot can also answer user's common questions. You can customize the
 bot's answers to these frequently asked questions (FAQs) by clicking on the `FAQ` link
@@ -83,3 +83,7 @@ the conversation and Juji bot would answer them correctly using your answers.
 
 You can also delete questions that are not relevant to you. After you are done
 with editing the FAQs, do not forget to click `Save`.
+
+### Add Self-defined FAQs
+
+If you want to add your self-defined questions for FAQs, you can follow [this workflow](scripting.md#workflow-of-adding-self-defined-faqs-in-script) using script editing.
