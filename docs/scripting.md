@@ -76,22 +76,22 @@ created right there.
 
 ## Add Self-defined FAQs
 
-You may have already prepared answers to some frequently asked questions that you want to import into the scropt. Juji provides a command line tool for you to convert the FAQ and answers into REP script snippets, and you can then paste them into your script in IDE.
+You may have already prepared answers to some frequently asked questions that you want to import into the script. Juji provides a command line tool for you to convert the FAQ and answers into REP script snippets, and you can then paste them into your script in IDE.
 
 Before you start, please make sure you have installed Java 6 or higher and you are familiar with general [concepts](concept.md) of Juji script.
 
-### Step 1: Prepare the FAQ CSV File 
+### Step 1: Prepare the FAQ CSV File
 
 Your self-defined FAQs need to be written in a csv file satisfying the following format requirements:
 
 1. The first column lists the questions.
-2. The scond colum lists the corresponding answers of the first column's questions.
+2. The second column lists the corresponding answers of the first column's questions.
 3. One row can only have one answer. But there can be multiple questions in the same row, which means these questions share the same answer. These questions should be separated by newline character.
 4. The first row is assumed to be the header.
 
 Here's an <a href="../faq-parser/example-faqs.csv">example FAQ csv file</a>.
 
-Once you have prepared your FAQ and answers in the above format, do the following to steps to import them:
+Once you have prepared your FAQ and answers in the above format, do the following two steps to import them:
 
 ### Step 2: Convert the FAQ File to a `deftopic`
 
@@ -107,13 +107,39 @@ You can also run the program with the help option to see all possible options.
 java -jar faq-parser-0.1.0.jar -h
 ```
 
-Running the faq-parser produces an edn file containing one deftopic, which will be used in the next step.
+Running the faq-parser produces an edn file containing one deftopic.
+
+For instance, running the faq-parser without any option on our example FAQ csv file would produce the following `deftopic` using a default name `generated-faq-topic`:
+
+```clojure
+(deftopic
+ generated-faq-topic
+ []
+ [(>
+   (max-similarity-score
+    ["where does your company locate?"
+     "what's your address?"
+     "where is your office?"])
+   0.75)]
+ ["We are located in San Jose, California."]
+ [(>
+   (max-similarity-score
+    ["how frequently do you carry out maintenance?"])
+   0.75)]
+ ["We carry out maintenance once a month."]
+ [(> (max-similarity-score ["how can i try your service?"]) 0.75)]
+ ["Our service is currently free to try. Please visit our website at juji.io to create an account and try to build your own chatbot in 10 minutes."])
+```
 
 ### Step 3: Paste the `deftopic` into your script in IDE
 
-First, you need to copy the `deftopic` form from the edn file into your main chat script. 
+Once you have your csv file converted, you need to copy the `deftopic` form from the edn file into your main chat script. You can paste it anywhere that has the same global scope as other `deftopic`s.
 
 Then, in your script, find the `:ad-lib` key and its vector value in `(config ...)`, and add the name of the `deftopic` to be the first item in that vector. By putting your deftopic at the beginning of the `:ad-lib` vector, the REP will check it before all other FAQs. On the other hand, you can generate multiple FAQ topics and place them in the `:ad-lib` vector in the order you desired.
+
+Following our previous example in step 2, below is a screenshot of adding the generated deftopic `generated-faq-topic` to a script and add the topic name to the script's `:ad-lib` vector:
+
+<p align="center"><img src="../img/add-generated-faq-topic.png" alt="IDE" width="600"/></p>
 
 At this point, you may save and compile the script. Now your self-defined FAQs are added to your chatbot.
 
