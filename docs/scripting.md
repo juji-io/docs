@@ -73,3 +73,41 @@ script files.
 
 When click `Generate Script` pull down menu, a new release can directly be
 created right there.
+
+### Workflow of Adding Self-defined FAQs in Script
+
+This workflow consists of two steps: Convert FAQs to a deftopic and Edit the Script.
+
+Before you start, please make sure you have installed Java 6 or higher and you are familiar with general [concepts](concept.md) of Juji script.
+
+Your self-defined FAQs need to be written in a csv file satisfying the following format requirements:
+
+1. The first column lists the questions.
+2. The scond colum lists the corresponding answers of the first column's questions.
+3. One row can only have one answer. But there can be multiple questions in the same row, which means these questions share the same answer. These questions should be separated by newline character.
+4. The first row is assumed to be the header.
+
+Here's an <a href="../faq-parser/example-faqs.csv">example FAQ csv file</a>.
+
+#### Step 1: Convert FAQs to a deftopic
+
+In order to convert FAQs to a deftopic, please download our <a href="../faq-parser/faq-parser-0.1.0.jar">faqs-parser jar</a>. Then you can convert your FAQs by running the following command:
+
+```
+java -jar faq-parser-0.1.0.jar <path/to/your-faq-csv-file>
+```
+
+You can also run the program with the help option to see all possible options.
+
+```
+java -jar faq-parser-0.1.0.jar -h
+```
+
+Running the faq-parser produces an edn file containing one deftopic, which will be used in the next step.
+
+#### Step 2: Edit the script
+
+First, you need to copy the deftopic from the edn file into your main chat script. Then, in your script, find the `:ad-lib` key and its vector value in `(config ...)`, and add the name of the deftopic to be the first item in that vector. By putting your deftopic at the beginning of the `:ad-lib` vector, the REP will check it before all other FAQs. On the other hand, you can generate multiple FAQ topics and place them in the `:ad-lib` vector in the order you desired.
+
+At this point, you may save and compile the script. So your self-defined FAQs are added into your chatbot.
+
