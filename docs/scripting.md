@@ -86,10 +86,12 @@ Your self-defined FAQs need to be written in a csv file satisfying the following
 
 1. The first column lists the questions.
 2. The second column lists the corresponding answers of the first column's questions.
-3. One row can only have one answer. But there can be multiple questions in the same row, which means these questions share the same answer. These questions should be separated by newline character.
+3. One row can only have one answer. But there can be multiple questions in the same row, which means these questions share the same answer. Basically, these are different examples of the same question. These example questions should be separated by newline characters.
 4. The first row is assumed to be the header.
 
 Here's an <a href="../faq-parser/example-faqs.csv">example FAQ csv file</a>.
+
+The ability of Juji bot to recognize FAQs depends on the number of example questions you give. So it is recommended that you give multiple forms of the same question as examples. 
 
 Once you have prepared your FAQ and answers in the above format, do the following two steps to import them:
 

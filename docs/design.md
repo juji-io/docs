@@ -86,4 +86,5 @@ with editing the FAQs, do not forget to click `Save`.
 
 ### Add Self-defined FAQs
 
-If you want to add your self-defined questions for FAQs, you can follow [this workflow](scripting.md#workflow-of-adding-self-defined-faqs-in-script) using script editing.
+If you have some FAQs that are not included in the Juji built-in FAQs, you can add them using our [chatbot scripting](scripting.md) facilities. 
+To add your own questions and answers, please follow [this instruction](scripting.md#add-self-defined-faqs).
