@@ -74,11 +74,13 @@ script files.
 When click `Generate Script` pull down menu, a new release can directly be
 created right there.
 
-### Workflow of Adding Self-defined FAQs in Script
+## Add Self-defined FAQs
 
-This workflow consists of two steps: Convert FAQs to a deftopic and Edit the Script.
+You may have already prepared answers to some frequently asked questions that you want to import into the scropt. Juji provides a command line tool for you to convert the FAQ and answers into REP script snippets, and you can then paste them into your script in IDE.
 
 Before you start, please make sure you have installed Java 6 or higher and you are familiar with general [concepts](concept.md) of Juji script.
+
+### Step 1: Prepare the FAQ CSV File 
 
 Your self-defined FAQs need to be written in a csv file satisfying the following format requirements:
 
@@ -89,9 +91,11 @@ Your self-defined FAQs need to be written in a csv file satisfying the following
 
 Here's an <a href="../faq-parser/example-faqs.csv">example FAQ csv file</a>.
 
-#### Step 1: Convert FAQs to a deftopic
+Once you have prepared your FAQ and answers in the above format, do the following to steps to import them:
 
-In order to convert FAQs to a deftopic, please download our <a href="../faq-parser/faq-parser-0.1.0.jar">faqs-parser jar</a>. Then you can convert your FAQs by running the following command:
+### Step 2: Convert the FAQ File to a `deftopic`
+
+In order to convert FAQs to a deftopic, please download the command line tool in the form of a jar file: <a href="../faq-parser/faq-parser-0.1.0.jar">faqs-parser jar</a>. Then you can convert your FAQs by running the following command:
 
 ```
 java -jar faq-parser-0.1.0.jar <path/to/your-faq-csv-file>
@@ -105,9 +109,11 @@ java -jar faq-parser-0.1.0.jar -h
 
 Running the faq-parser produces an edn file containing one deftopic, which will be used in the next step.
 
-#### Step 2: Edit the script
+### Step 3: Paste the `deftopic` into your script in IDE
 
-First, you need to copy the deftopic from the edn file into your main chat script. Then, in your script, find the `:ad-lib` key and its vector value in `(config ...)`, and add the name of the deftopic to be the first item in that vector. By putting your deftopic at the beginning of the `:ad-lib` vector, the REP will check it before all other FAQs. On the other hand, you can generate multiple FAQ topics and place them in the `:ad-lib` vector in the order you desired.
+First, you need to copy the `deftopic` form from the edn file into your main chat script. 
 
-At this point, you may save and compile the script. So your self-defined FAQs are added into your chatbot.
+Then, in your script, find the `:ad-lib` key and its vector value in `(config ...)`, and add the name of the `deftopic` to be the first item in that vector. By putting your deftopic at the beginning of the `:ad-lib` vector, the REP will check it before all other FAQs. On the other hand, you can generate multiple FAQ topics and place them in the `:ad-lib` vector in the order you desired.
+
+At this point, you may save and compile the script. Now your self-defined FAQs are added to your chatbot.
 
