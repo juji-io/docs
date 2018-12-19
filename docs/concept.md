@@ -114,9 +114,9 @@ associated with zero or multiple followup topics.
 Line 4 is a trigger pattern that requires user input to contain any one of "hello",
 "howdy" or "hi". For details of the many patterns REP supports, see [Rule Patterns](reference.md#rule-pattern)
 
-Line 5 is an action that includes a system built-in function call that returns the user's
-first name. In addition to producing text output, functions can do arbitrary
-things.
+Line 5 is an action that includes a [system built-in function](function.md) call
+that returns the user's first name. In addition to producing text output,
+functions can do arbitrary things. You can also write your own [user defined function](udf.md).
 
 Line 7 is a trigger that contains a built-in function call that checks whether
 the user input is very similar to the sentence "what's up", i.e. the similarity
@@ -128,7 +128,7 @@ Line 11 shows that our pattern language handles foreign languages as well.
 Line 9, 13, 14 contains reference to topics that must be defined elsewhere
 already.
 
-## Dialog Management
+## Automatic Dialog Management
 
 In REP, the dialog flow is managed automatically by the system. The system
 properly handles both user initiated (reactive) and system initiated (proactive)
