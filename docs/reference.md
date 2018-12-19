@@ -829,7 +829,7 @@ In order to support conducting surveys and have good results reporting, REP trea
 Some types of questions are normally presented in a GUI form. `:single-choice`
 questions are radio buttons; `:multiple-choice` questions are check boxes.
 
-The value of `:choices` attribute may be given a name, defined before hand, so that they are reusable, e.g. `libert1-5` and `yes-on`, or it could be included inline, e.g. the choices in `election-q`.
+The value of `:choices` attribute may be given a name, defined before hand, so that they are reusable, e.g. `likert1-5` and `yes-on`, or it could be included inline, e.g. the choices in `election-q`.
 
 `:open-ended` question are normally presented as sentences in a conversational turn. They may optionally have a `:wording` attribute that is an action pattern.
 
