@@ -46,7 +46,7 @@ only contain your own classes. The dependencies should be described in a
 `pom.xml` file that is inside the JAR or is uploaded along with the JAR. Juji will
 automatically resolve these dependencies if they are available on [Maven
 Central](https://mvnrepository.com/repos/central) or [clojars](https://clojars.org).
-rarroup
+
 #### JAR with dependencies
 
 If the package uses libraries that are not publicly available on Maven Central
