@@ -26,9 +26,8 @@ And point browser to http://localhost:8000
 
 The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file, documentation directory, or theme directory changes.
 
-## Deploy
 
-Only Juji staff can deploy the site at https://docs.juji.io
+## Deploy
 
 You should have cloned the repo for the built site at
 `git@github.com:juji-io/juji-io.github.io.git`, so that you should have the following file structure:
@@ -45,3 +44,11 @@ Now do the following to deploy the site:
 cd ../juji-io.github.io/
 mkdocs gh-deploy --config-file ../docs/mkdocs.yml --remote-branch master
 ```
+
+## Upgrade software
+
+```bash
+pip install mkdocs mkdocs-material pymdown-extensions --upgrade
+```
+
+If the mkdocs-material theme is updated, we need to reconcile our customization in `theme/base.html` with the installed one at ``/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/material/`

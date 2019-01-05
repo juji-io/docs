@@ -10,17 +10,104 @@ client-side application thats support GraphQL. The API endpoint is https://juji.
 
 Like many GraphQL APIs, Juji API is explorable and executable through
 [GraphiQL](https://github.com/graphql/graphiql) in-browser IDE.  Once you've
-logged in to Juji platform, you can access [the GraphiQL endpoint](https://juji.io/graphiql/graphiql.html).
+logged in to Juji platform, you can access [the GraphiQL
+endpoint](https://juji.io/graphiql/graphiql.html).
 
-## Authentication
+This API reference covers important points of using Juji API. Please
+leverage the interactive GraphiQL for an exhaustive listing of all API calls,
 
-Almost all Juji API operations require authentication.  The authentication is
+## Domain Nouns
+
+To effectively leverage the API, it is useful to understand the data schema of Juji platform. Juji data is organized with the following domain nouns.
+
+### Brand
+
+A brand is synonymous to an organization.
+
+### Engagement
+
+An engagement is a chatbot project created under a brand.
+
+### REP
+
+REP is abbreviation for Responsible Empathetic Persona. It is the identity of
+a chatbot, with a name and a personality. Each engagement has a REP.
+
+### Release
+
+A release represents a versioned deployment of one engagement.
+Thus an engagement may have multiple releases. This allows you to refine your
+bot without impacting your production release.
+
+### Script
+
+Each release is associated with a corresponding script in [REP Language](/reference/). The script is identified by a unique namespace. The namespace has a format `<brand-name>.<engX>.<rep-name>`, where `X`
+is the sequence number of the engagement, e.g. `mycorp.eng3.kaya`
+
+### Question
+
+REP often asks questions in a chat. Each question is associated with the namespace in
+which it resides, as well as a question id that is unique in that namespace.
+
+### Participation
+
+A participation represents one instance of a conversation by an end user with a REP.
+A participation is always associated with a release.
+
+### Answer
+
+Each end users answer to REP's question is recorded, along with the participation
+in which the question is answered.
+
+## Chat
+
+Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client. This requires using [GraphQL subscriptions](https://facebook.github.io/graphql/June2018/#sec-Subscription-Operation-Definitions) to enable the server to push data to your client. Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open.
+
+The following steps are required to initiate a chat session via API:
+
+### Create participation
+
+First, note the [Web URL of the REP](/#create-your-first-chatbot), e.g.
+`https://juji.io/pre-chat/mycorp/2`. Then make a HTTP `POST` request to that URL
+with the following form data:
+
+Field Name | Required?
+---|---
+`firstName` | Yes
+`lastName` | No
+`email` | No
+
+Only first name is required, so that the bot knows how to address the user.
+
+A successful `POST` request returns a JSON object with a field
+`participationId`, its value is a string representing an UUID.
+
+Failed request returns a JSON object with an `error` field with an error message string.
+
+### Establish Websocket connection
+
+A WebSocket connection with the server can now be initiated by doing a HTTP `GET` on `https://juji.io/api/v1/ws`.
+
+### Make GraphQL subscription
+
+Using the obtained `participationId`, a GraphQL subscription can now be made over
+the Websocket connection.
+
+### Send and receive messages
+
+
+
+## Data Access
+
+You can access meta data as well as chat results about your engagements over the
+GraphQL API.
+
+### Authentication
+
+Juji API data access operations require authentication.  The authentication is
 based on [JSON Web Token (JWT)](https://en.wikipedia.org/wiki/JSON_Web_Token).
 
-Once you have created an
-account at https://juji.io/signup, to authenticate to the API, supply
-your email and password to the `authenticate` mutation and request the `token`
-field in the response.
+Once you have created an account at https://juji.io/signup, to authenticate to the API, supply your email and password to the `authenticate` GraphQL mutation and request the `token` field in the response.
 
 For all subsequent API calls, add the returned token in the
 `Authorization` header of the request with the string `Bearer ` prefixed to the
@@ -29,7 +116,20 @@ header would be `Bearer abc`.
 
 Note that all API calls must be made over HTTPS and that as of now, the returned token is valid for up to 10 hours.
 
-## Errors
+### Format
+
+Our API can return data in JSON, [EDN](https://github.com/edn-format/edn) as well as
+[Transit](https://github.com/cognitect/transit-format) format.
+
+You can specify how you want to receive API responses by including the `Accept` header set to any one of:
+
+* `application/json` (default)
+* `application/edn`
+* `application/transit+json`
+
+The advantages of EDN and Transit are richer data types. With Transit you also get a more efficient over the wire format.
+
+### Errors
 
 GraphQL always returns a 200 HTTP response status code, so we have to rely on
 the `errors` field of the response to check for errors.
@@ -44,46 +144,7 @@ For example, an authentication errors look like:
 "data":     {}
 ```
 
+### Websocket
 
-## JSON, EDN and Transit
-
-Our API can return data in JSON, [EDN](https://github.com/edn-format/edn) as well as
-[Transit](https://github.com/cognitect/transit-format) format.
-
-You can specify how you want to receive API responses by including the `Accept` header set to any one of:
-
-* `application/json` (default)
-* `application/edn`
-* `application/transit+json`
-
-The advantages of EDN and Transit are richer data types. With Transit you also get a more efficient over the wire format.
-
-## Chat
-
-Juji's chat experience is built on top of
-[WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client.
-
-This requires using [GraphQL subscriptions](https://facebook.github.io/graphql/June2018/#sec-Subscription-Operation-Definitions) to enable the server to push data to your client.
-
-The WebSocket is initiated by doing a HTTP `GET` on
-`https://juji.io/api/v1/chsk`. Since WebSocket requests cannot set custom
-headers, the JWT token should be sent as a query parameter `auth-token`.
-
-Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open.
-
-## Domain Nouns
-
-### Brand
-A brand is synonymous to an organization.
-
-### Engagement
-An engagement is a chatbot project created under a brand.
-
-### Release
-A release represents a versioned deployment of one engagement (chatbot project).
-Thus an engagement may have multiple releases. This allows you to refine your
-bot without impacting your production release.
-
-### Participation
-A participation represents one instance of a conversation by a user with a bot.
-A participation is always associated with a release.
+Some computational intensive API requests are handled with Websockt, so the results
+can stream in when they become available. Since WebSocket requests cannot set custom headers, the JWT token should be sent as a query parameter `auth-token`.

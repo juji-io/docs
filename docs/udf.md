@@ -189,4 +189,4 @@ via other protocols, you can write JVM based UDFs to implement these protocols.
 Or if you prefer to write your own program in whatever languages and run your
 own application on your own platform, e.g. on mobile devices, we have a suite of [GraphQL
 API](api.md) that you can use to access Juji platform remotely, as long as your
-program can access Juji through HTTPS and can talk GraphQL.
+program can access Juji through HTTPS and can talk GraphQL over Websocket.
