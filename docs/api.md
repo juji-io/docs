@@ -8,12 +8,14 @@ The Juji API is based on [GraphQL](https://graphql.org). We support
 cross-origin resource sharing (CORS) so you can interact with Juji from any
 client-side application thats support GraphQL. The API endpoint is https://juji.io/api/graphql
 
-Like many GraphQL APIs, Juji API is explorable and executable through
-[GraphiQL](https://github.com/graphql/graphiql) in-browser IDE.  Once you've
-logged in to Juji platform, you can access [the GraphiQL
-endpoint](https://juji.io/graphiql/graphiql.html).  This API reference covers only
-important points of using Juji API. Please use the interactive GraphiQL to see all
-possible API calls,
+Juji API is explorable and executable through
+[GraphiQL](https://juji.io/graphiql/graphiql.html) in-browser IDE.  Once you've
+logged in to Juji platform, you can access the [GraphiQL
+](https://juji.io/graphiql/graphiql.html) IDE.  This API reference covers only
+important concepts of using Juji API. Please use the interactive
+[GraphiQL](https://juji.io/graphiql/graphiql.html) to read the detailed documentation of all Juji GraphQL API calls.
+
+<p align="center"><img src="../img/graphiql.png" alt="GraphiQL" width="650"/></p>
 
 ## Sample Application
 
