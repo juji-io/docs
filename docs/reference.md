@@ -867,6 +867,7 @@ In addition to topic specific directives in option map, some global directives f
 
 ```Clojure
 (config {
+  :release-action []
   :pre-action []
   :post-action []
   :agenda [start-topic [:a (topic-1 "arg1") topic-2 (topic-3 "arg3")] end-topic]
@@ -877,9 +878,14 @@ In addition to topic specific directives in option map, some global directives f
   :turn-pace 5 ; when there is no user input, the interval between system's proactive attempts to say something, in seconds
   :typing-allowance 10 ; when user is typing, how long the system allows the user to pause before trying to respond to previous user input, in seconds })
 ```
-`:pre-action` allows a vector of function calls before the chat session begin.
+`:release-action` allows a vector of function calls to run
+ right after compilation, so some setup for the release can be done, e.g.
+ to prepare some read-only data resources.
 
-`:post-action` allows a vector of function calls after the chat session ends.
+`:pre-action` allows a vector of function calls to run before a chat session begins.
+This allows some session specific setup, e.g. to initialize some global variables.
+
+`:post-action` allows a vector of function calls after a chat session ends.
 
 `:agenda` specifies desired conversation progression in term of topics. It uses a similar format as that of action patterns, only that the basic unit is topic invocation instead of tokens. It supports sequence pattern, alternative pattern, wildcard pattern, exclusion pattern, start and end pattern. Also, parameters for top level topics are given here.
 

@@ -177,7 +177,19 @@ We also added the coordinate of the library to `:dependencies` key of the
 `config` map. Since this library is publicly available on clojars, Juji will
 fetch the library and put it on classpath during script compilation.
 
+## Sandbox Restrictions
 
+Obviously, not everything is allowed to run in a UDF, or one could
+break out of the sandbox to compromise the security and privacy of everyone else
+on the system.
+
+Most of the JVM system level operations, reflection, GC and so on are not
+permitted to run in UDFs.
+
+Clojure dynamic functionalities such as code evaluation, namespace
+manipulation, try-catch exception handling, and so on, are not permitted.
+
+UDFs do have access to the Internet, but is not permitted to serve external requests.
 
 ## Other Languages
 
