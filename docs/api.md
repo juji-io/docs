@@ -166,7 +166,18 @@ Followed by REP's chat messages if this REP is configued to speak first, e.g.
   }
 }
 ```
-where the "normal" type is for normal chat messages.
+
+`type` is a required field of Juji chat message. Currently, chat message could be one of the following types:
+
+Type | Sender | Description
+---|---|---
+`user-joined` | server | REP or user have joined the chat, the start of a participation
+`typing` | client | User is typing
+`normal` | both | Normal chat messages
+`user-left` | server | REP ends the participation
+`keep-alive` | both | Server sends during idle to keep connection alive, client can send too
+`connection-closed` | server | Server detected that the WebSocket connection to client is lost
+`debug` | server | Debug information from the server
 
 ### Send chat messages
 
