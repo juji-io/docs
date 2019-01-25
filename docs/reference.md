@@ -697,8 +697,7 @@ seen as a decision tree that provides many decision points before a single actio
 ### Option Map
 
 A topic may optionally include an option map to control its behavior.  The options
-take default values if not specified in the option map. These are some example
-options:
+take default values if not specified in the option map. These are the options:
 
 ```Clojure
 {;; this topic will first segment input into sentences, then each rule will be
@@ -720,6 +719,7 @@ options:
  ;; topics are copied into this topic. This is how topics compose in REP.
  ;; These topic invocations will be tried before rules of this topic is tried.
  :include-before [(common-topic-a ?q) (common-topic-b)]
+
  ;; These topic invocations will be tried after rules of this topic is tried.
  :include-after [(common-topic-c) (common-topic-d)]
 
@@ -875,6 +875,7 @@ In addition to topic specific directives in option map, some global directives f
   :ad-lib [ad-lib1 ad-lib2]
   :session-duration-max 30 ; in minutes
   :min-response-time 2000 ; after user hit Enter key, the minimal system wait time before responding, in milliseconds
+  :between-response-delay ; when REP have multiple sentences to say in one turn, the deblay between the sentences
   :turn-pace 5 ; when there is no user input, the interval between system's proactive attempts to say something, in seconds
   :typing-allowance 10 ; when user is typing, how long the system allows the user to pause before trying to respond to previous user input, in seconds })
 ```
