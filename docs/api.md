@@ -172,9 +172,9 @@ Followed by REP's chat messages if this REP is configued to speak first, e.g.
 Type | Sender | Description
 ---|---|---
 `user-joined` | server | REP or user have joined the chat, the start of a participation
-`typing` | client | User is typing
 `normal` | both | Normal chat messages
 `user-left` | server | REP ends the participation
+`typing` | client | User is typing
 `keep-alive` | both | Server sends during idle to keep connection alive, client can send too
 `connection-closed` | server | Server detected that the WebSocket connection to client is lost
 `debug` | server | Debug information from the server
