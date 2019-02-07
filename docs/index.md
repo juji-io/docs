@@ -1,6 +1,9 @@
 # Get Started on Juji
 
-Thank you for using Juji. By following our guides, you will be creating chatbots in no time.
+Thank you for using Juji. By following our guides, you will be creating chatbots
+in no time. You may also start with this three-minutes video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wyElX2Py6gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Create an account
 
