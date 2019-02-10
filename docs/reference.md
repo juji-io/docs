@@ -728,6 +728,20 @@ take default values if not specified in the option map. These are the options:
  :note {:some-key some-value :other-key :other-value}}
 ```
 
+### Topic Composition
+
+`:include-before` and `:include-after` allow a topic to become part of another
+topic, effectively allow topics to become composible. So a topic may be thought
+of as a composition of three sets of rules: rules in `:include-before` topics,
+rules in the main body of the topic, and rules in `:inclue-after` topics.
+
+Sometimes it is necessary to use the set of rules in the main body only. These
+rules can be referred to in a special named topic, with an earmuff enclosed
+topic name and a `-main` suffix. For example, for a topic named
+`handle-favorite-things`, the system automatically creates a corresponding
+`*handle-favorite-things-main*` topic to refer to the rules in the main body of
+the topic.
+
 ### Anonymous Topic
 
  Any named topic can be a followup topic of another topic. However, sometimes we
