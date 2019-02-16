@@ -147,7 +147,7 @@ agenda topics are covered, unless the user is stubbornly uncooperative.
 
 If an agenda topic fails to produce a bot response, ad-lib topics are tested.
 They are mainly Juji's built-in topics that cover all kinds of
-contingencies, such as user misbehavior, missing information, courtesy fillers,
+contingencies, such as user digression, user misbehavior, missing information, courtesy fillers,
 and so on. You may write your own ad-lib topics.
 
 ### Exception Topic

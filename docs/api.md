@@ -322,8 +322,11 @@ The data analysis endpoint is https://juji.io/api/analyze
 The input file is expected to be `POST` as a `file` field in `multipart/form-data`.
 
 The input file can be either a JSON or CSV file with corresponding file suffix.
-If the input is CSV, we expect the first column is named `id`, and the second
-`text`.  If the input is JSON, we similarly expect an array of objects, where
+
+If the input is CSV, we expect the first column contains the identifier, and the
+second column contains a concatenation of an individual's written text as a single string. The CSV file should *not* have header.
+
+If the input is JSON, we expect an array of objects, where
 each object has two fields: `id` and `text`. `text` will be a concatenation of
 an individual's written text into a single string, and `id` be any string that
 is unique among the input rows/objects.

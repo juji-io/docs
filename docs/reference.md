@@ -700,11 +700,11 @@ A topic may optionally include an option map to control its behavior.  The optio
 take default values if not specified in the option map. These are the options:
 
 ```Clojure
-{;; this topic will first segment input into sentences, then each rule will be
+{;; This topic will first segment input into sentences, then each rule will be
  ;; tried on each sentence.
- ;; if any sentence matched the rule, the input is considered a match
+ ;; If any sentence matched the rule, the input is considered a match
  ;; default is false.
- ;; when used in a branch rule, when matched, all sentences in the input will be
+ ;; When used in a branch rule, when matched, all sentences in the input will be
  ;; considered by the next level rule
  :segment-sentence? true
 
@@ -712,8 +712,21 @@ take default values if not specified in the option map. These are the options:
  :named-pattern [_negative [:1 not don't doesn't]
                  _food [:+ tofu pizza pork]]
 
- ;; a default action added when neither this topic and ad-lib topics fire
- :default-action [:1 "Thank you for the input" "Got it, thank you"]
+ ;; Specify a pre-condition for the topic, its value is a match pattern. If
+ ;; present, the topic will be tried if the match pattern return true
+ :pre-condition [hello]
+
+ ;; These rules are tried after neither the topic's main rule set nor the ad-lib
+ ;; topics fire
+ :default-rules ([(> (input-length) 3)]
+                 [:1 "Thank you for the input" "Got it, thank you"]
+
+                 [thank]
+                 "You are welcome.")
+
+ ;; This response will be generated if the following fail to generate a
+ ;; response: main rule set of the topic, ad-lib topics and default rules of the topic
+ :failed-response ["ok"]
 
  ;; Include other topics as part of this topic, as if rules in the included
  ;; topics are copied into this topic. This is how topics compose in REP.
