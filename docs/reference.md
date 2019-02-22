@@ -716,7 +716,7 @@ take default values if not specified in the option map. These are the options:
  ;; present, the topic will be tried if the match pattern return true
  :pre-condition [hello]
 
- ;; These rules are tried after neither the topic's main rule set nor the ad-lib
+ ;; These rules are only tried after neither the topic's main rule set nor the ad-lib
  ;; topics fire
  :default-rules ([(> (input-length) 3)]
                  [:1 "Thank you for the input" "Got it, thank you"]
@@ -726,6 +726,7 @@ take default values if not specified in the option map. These are the options:
 
  ;; This response will be generated if the following fail to generate a
  ;; response: main rule set of the topic, ad-lib topics and default rules of the topic
+ ;; failed-reponse does not consume user input.
  :failed-response ["ok"]
 
  ;; Include other topics as part of this topic, as if rules in the included
@@ -743,17 +744,37 @@ take default values if not specified in the option map. These are the options:
 
 ### Topic Composition
 
-`:include-before` and `:include-after` allow a topic to become part of another
-topic, effectively allow topics to become composible. So a topic may be thought
-of as a composition of three sets of rules: rules in `:include-before` topics,
-rules in the main body of the topic, and rules in `:inclue-after` topics.
+`:include-before` and `:include-after` enable a topic to become part of another
+topic, allowing topics to become composible.
+
+Together with `:default-rules`, a topic may be thought
+of as a composition of four sets of rules that are tried in order:
+
+* rules in `:include-before` topics
+* rules in the main body of the topic
+* rules in `:inclue-after` topics
+* rules in `:default-rules`, which only apply after none of the above fires and
+none of the ad-lib topics fires.
 
 Sometimes it is necessary to use the set of rules in the main body only. These
-rules can be referred to in a special named topic, with an earmuff enclosed
+rules can be referred to with a special topic name, an earmuff enclosed
 topic name and a `-main` suffix. For example, for a topic named
-`handle-favorite-things`, the system automatically creates a corresponding
-`*handle-favorite-things-main*` topic to refer to the rules in the main body of
+`my.ns/handle-favorite-things`, the system automatically creates a corresponding
+`my.ns/*handle-favorite-things-main*` topic to refer to the rules in the main body of
 the topic.
+
+### Topic Recursion
+
+Since the followup topics of a topic can contain any topic, including the parent
+topic itself, REP supports arbitrary recursion among topics. This mechanism can
+be used for repeating, looping and any other purposes that require to go back
+to a prior topic.
+
+In addition to using the topic name as the recursion target, REP provides a
+special followup topic, `(*recur*)`, which always recurs back to the
+current topic. This is specially useful when a topic is included in another
+topic, so that the followup topic of the included topic can
+go back to the including topic, which is usually the intended behavior.
 
 ### Anonymous Topic
 
