@@ -716,9 +716,16 @@ take default values if not specified in the option map. These are the options:
  ;; present, the topic will be tried if the match pattern return true
  :pre-condition [hello]
 
+ ;; some function calls before the rules are tried, useful for initialization
+ :pre-action [(<- init-var 0)]
+
+ ;; some function calls after the rules are tried, useful for cleanup
+ :post-action [(cleanup-1) (cleanup-2)]
+
  ;; These rules are only tried after neither the topic's main rule set nor the ad-lib
- ;; topics fire
- :default-rules ([(> (input-length) 3)]
+ ;; topics fire; it may also have an option map with :include-before and :include-after
+ :default-rules ({:include-before [(my-default)]}
+                 [(> (input-length) 3)]
                  [:1 "Thank you for the input" "Got it, thank you"]
 
                  [thank]
@@ -744,24 +751,37 @@ take default values if not specified in the option map. These are the options:
 
 ### Topic Composition
 
-`:include-before` and `:include-after` enable a topic to become part of another
-topic, allowing topics to become composible.
-
 Together with `:default-rules`, a topic may be thought
-of as a composition of four sets of rules that are tried in order:
+of as a composition of two sets of rules that are tried in order, with an
+intermission of ad-lib topics:
 
-* rules in `:include-before` topics
 * rules in the main body of the topic
-* rules in `:inclue-after` topics
 * rules in `:default-rules`, which only apply after none of the above fires and
 none of the ad-lib topics fires.
+
+Both sets of rules may include rules of other topics. `:include-before` and
+`:include-after` options enable the rules of a topic to become parts of another
+topic, allowing topics to become composible. Rules in the topics of
+`:include-before` are tried before the main body of rules, `:include-after` are
+tried after the main body of rules.
+
+Taken together, the order of trying rules of a topic is the following:
+
+1. include-before of the topic
+2. main body of the topic
+3. include-after of the topic
+4. ad-lib topics
+5. include-before of the default rules
+6. main body of the default rules
+7. include-after of the default rules
 
 Sometimes it is necessary to use the set of rules in the main body only. These
 rules can be referred to with a special topic name, an earmuff enclosed
 topic name and a `-main` suffix. For example, for a topic named
 `my.ns/handle-favorite-things`, the system automatically creates a corresponding
 `my.ns/*handle-favorite-things-main*` topic to refer to the rules in the main body of
-the topic.
+the topic. Similarly, `my.ns/*handle-favorite-things-default*` refers to the set
+of rules in the default-rules of the topic.
 
 ### Topic Recursion
 
