@@ -66,9 +66,11 @@ nav:
   - Chatbot Design: design.md
   - Juji Concepts: concept.md
   - Chatbot Scripting: scripting.md
+  - Build-in Library Topics: topics.md
   - REP Reference: reference.md
   - System Function: function.md
   - User Defined Function: udf.md
+#  - Make Releases: release.md
   - API Reference: api.md
   - FAQs: faq.md
   - Go to Juji Now: https://juji.io/login
