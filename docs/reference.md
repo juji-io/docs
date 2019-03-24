@@ -364,11 +364,14 @@ Most tags are backed by ML based NLP modules.
 When a pattern requires sub-token variations, we can use character based regular
 expressions. A regular expression is represented as a
 string with a tag `#token/regex` in front. The syntax of the string follows
-Java and Clojure's regular expression.
+Java's regular expression.
 
 ```Clojure
-#token/regex "\d+"  ; match a token consists of one or more digits.
-#token/regex "fav*" ; match "favorite", "fav", "favarable", etc.
+;; match a token consists of one or more digits.
+;; Note the double backsladh
+#token/regex "\\d+"
+;; match "favorite", "fav", "favarable", etc.
+#token/regex "fav*"
 ```
 
 !!! warning
