@@ -27,6 +27,8 @@ npm install juji-client
 ```
 
 The MIT licensed source code of the client is at https://github.com/juji-io/cli-client
+As you can see, it took less than 200 lines of JavaScript code to have a client
+that chats with a Juji bot.
 
 ## Domain Nouns
 

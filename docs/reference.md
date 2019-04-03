@@ -137,38 +137,57 @@ control flow construct, a function, or a declaration, and so on.
 (deftopic my-topic [] []["OK"])
 ```
 
-### Token
+## Token
 
 Like most natural language processing software, REP breaks up an utterance into
 a sequence of words, called tokens. In languages such as English, punctuation
 such as spaces, periods, colons, and so on are the natural boundary between
-tokens. In REP, the punctuation marks that are not blank are also regarded as
+tokens. In REP, the punctuation marks that are not blanks are also regarded as
 tokens.
 
-For example, an English sentence "Hello, world!" is converted into a sequence of
-four tokens: `Hello`, `,`, `world`, `!`.
+For example, the string `"Hello, world!"` is converted into a sequence of
+four tokens: `"Hello"`, `","`, `"world"`, `"!"`.
+
+The only exception is `-`, which is not considered a token of its own.
+For instance, `"twenty-five-year-old"` is a single token.
 
 In REP, a token could be represented with a symbol, a string, or a regex.
 
-#### Symbol token
+### Symbol token
 
-Symbol tokens are converted to the lower case, then into the canonical form
-(lemma) of their names, so different forms of the same word are treated as
-the same. For example, `bike`, `Bikes` are the same token.
+Symbol tokens are first converted to the lower case, then into the canonical
+form (lemma) of their names, so different forms of the same word are treated as
+the same token. For example, `bike`, `Bikes` and `BIKES` are the same token.
 
 !!! note "Symbol containing / is not a token"
     Because `/` is a token of its own, a symbol containing a `/` will be treated
     as a name spaced REP language programming construct, instead of a token.
 
-#### String token
+### String token
 
-String tokens are not lemmatized, and they are only case insensitive. For
-example, "bike", and "Bike" are the same token.
+String tokens are not lemmatized, and they are only case *insensitive*. For
+example, `"bike"`, and `"Bike"` are the same token.
 
-#### Regex token
+### Regex token
 
-Java's regular expression can be used to represent a token. See Regex tag below
-for details.
+For maximal specificity, a token can be specified by a regular expression
+(regex). A tag `#token/regex` is used to designate a string as a regex.
+The string has the same syntax as [Java's regex pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) .
+See [Regex tag](#tag-pattern) below for more details.
+
+!!! note "Token Conversion Precedence"
+    Strings, symbols, and regex can be freely mixed in a pattern, as expected.
+    ```Clojure
+    [I "used to" work in #token/regex "^IBM$"];
+    ```
+    However, when the same input word matches more than one type of tokens, a
+    precedence is used to determine which type of token this input word is
+    converted to:
+    **string > symbol > regex**.
+    ```Clojure
+    ;; for an input word "IBM", the string "ibm" is actually matched
+    [:1 IBM "ibm" #token/regex "IBM"]
+    ```
 
 ## Rule Pattern
 
@@ -416,20 +435,6 @@ When a token’s case-sensitivity is important, e.g. when matching acronyms, reg
 #token/regex "IBM" ; match "IBM" or "IBMer", but not "ibm"
 #token/regex "^IBM$" ; match "IBM" only
 ```
-
-!!! note "Token Conversion Precedence"
-    Strings, symbols, and regex can be freely mixed in a pattern, as expected.
-    ```Clojure
-    [I "used to" work in #token/regex "^IBM$"];
-    ```
-    However, when the same input word matches more than one type of tokens, a
-    precedence is used to determine which type of token this input word is
-    converted to:
-    **string > symbol > regex**.
-    ```Clojure
-    ;; for an input word "IBM", the string "ibm" is actually matched
-    [:1 IBM "ibm" #token/regex "IBM"]
-    ```
 
 Tag patterns are not allowed in actions.
 
