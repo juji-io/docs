@@ -137,17 +137,50 @@ control flow construct, a function, or a declaration, and so on.
 (deftopic my-topic [] []["OK"])
 ```
 
+### Token
+
+Like most natural language processing software, REP breaks up an utterance into
+a sequence of words, called tokens. In languages such as English, punctuation
+such as spaces, periods, colons, and so on are the natural boundary between
+tokens. In REP, the punctuation marks that are not blank are also regarded as
+tokens.
+
+For example, an English sentence "Hello, world!" is converted into a sequence of
+four tokens: `Hello`, `,`, `world`, `!`.
+
+In REP, a token could be represented with a symbol, a string, or a regex.
+
+#### Symbol token
+
+Symbol tokens are converted to the lower case, then into the canonical form
+(lemma) of their names, so different forms of the same word are treated as
+the same. For example, `bike`, `Bikes` are the same token.
+
+!!! note "Symbol containing / is not a token"
+    Because `/` is a token of its own, a symbol containing a `/` will be treated
+    as a name spaced REP language programming construct, instead of a token.
+
+#### String token
+
+String tokens are not lemmatized, and they are only case insensitive. For
+example, "bike", and "Bike" are the same token.
+
+#### Regex token
+
+Java's regular expression can be used to represent a token. See Regex tag below
+for details.
+
 ## Rule Pattern
 
-The basis of REP is a rule language. The patterns of the rules are
+REP in its core is a rule language. The patterns of the rules are
 the basic abstraction of REP. A rule pattern can be used to infer the meaning of
 user’s input, or to specify the bot's actions. A pattern used in the
 former case is called a **trigger pattern**, used in the later, called an **action
 pattern**.
 
 Trigger patterns are similar in concept to regular expressions, but the focus
-here is on capturing natural language patterns. Therefore, they take words
-(called tokens) instead of characters as the basic units of pattern matches.
+here is on capturing natural language patterns. Therefore, they take tokens
+instead of characters as the basic units of pattern matches.
 
 There are many types of rule patterns.  The following are the basic types of
 patterns that can be composed together to form a complex pattern.
@@ -161,7 +194,7 @@ The simplest type of pattern is an ordered sequence of tokens separated by space
 ;; "I don't love pizza", and "I LOVE PIZZA"
 [I love pizza]
 ```
-As we can see, the match is not case sensitive. For the sake of conciseness, a sequence pattern consists of symbols are matched quite liberally. It basically scans the input sequentially for matched tokens, ignoring tokens that do not match (essentially, allowing wildcard between tokens). In addition, each symbol is converted to the canonical form (lemma) of its name, so different forms of the same word are treated as the same. For example,
+As we can see, the match is not case sensitive. For the sake of conciseness, a sequence pattern consists of tokens are matched quite liberally. It basically scans the input sequentially for matched tokens, ignoring tokens that do not match (essentially, allowing wildcard between tokens). For example,
 
 ```Clojure
 [I have two bicycle] ; can match "I had two bicycles".
@@ -319,7 +352,7 @@ For certain syntactic or semantic class of content, some pre-defined tags can al
 ```
 Most tags are backed by ML based NLP modules.
 
-#### Parts of Speech tags
+#### Parts of Speech tag
 
  Tag | Description | Examples
 ---|---|---
@@ -338,7 +371,7 @@ Most tags are backed by ML based NLP modules.
 #pos/conjunction | Conjunction | and, but, nor, or, plus, minus
 #pos/interjection | Interjection | my, oh, please, see, uh, well, yes
 
-#### Phrases tags
+#### Phrases tag
 
  Tag | Description | Examples
 ---|---|---
@@ -350,7 +383,7 @@ Most tags are backed by ML based NLP modules.
 #phrase/sub | subordinate clause | that, because, while
 #phrase/other | not part of any chunk |
 
-#### Entity tags
+#### Entity tag
  Tag | Description | Examples
 ---|---|---
 #entity/person  | person name | John, Mary
@@ -384,8 +417,6 @@ When a token’s case-sensitivity is important, e.g. when matching acronyms, reg
 #token/regex "^IBM$" ; match "IBM" only
 ```
 
-Tag patterns are not allowed in actions.
-
 !!! note "Token Conversion Precedence"
     Strings, symbols, and regex can be freely mixed in a pattern, as expected.
     ```Clojure
@@ -399,6 +430,9 @@ Tag patterns are not allowed in actions.
     ;; for an input word "IBM", the string "ibm" is actually matched
     [:1 IBM "ibm" #token/regex "IBM"]
     ```
+
+Tag patterns are not allowed in actions.
+
 
 ### Class Pattern
 
