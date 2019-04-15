@@ -983,6 +983,7 @@ In addition to topic specific directives in option map, some global directives f
   :agenda [start-topic [:a (topic-1 "arg1") topic-2 (topic-3 "arg3")] end-topic]
   :exception [error-topic1 error-topic2]
   :ad-lib [ad-lib1 ad-lib2]
+  :background [notify-topic1]
   :session-duration-max 30 ; in minutes
   :min-response-time 2000 ; after user hit Enter key, the minimal system wait time before responding, in milliseconds
   :between-response-delay ; when REP have multiple sentences to say in one turn, the deblay between the sentences
@@ -998,10 +999,17 @@ This allows some session specific setup, e.g. to initialize some global variable
 
 `:post-action` allows a vector of function calls after a chat session ends.
 
-`:agenda` specifies desired conversation progression in term of topics. It uses a similar format as that of action patterns, only that the basic unit is topic invocation instead of tokens. It supports sequence pattern, alternative pattern, wildcard pattern, exclusion pattern, start and end pattern. Also, parameters for top level topics are given here.
+`:agenda` vector specifies desired conversation progression in term of topics. It uses a similar format as that of action patterns, only that the basic unit is topic invocation instead of tokens. It supports sequence pattern, alternative pattern, wildcard pattern, exclusion pattern, start and end pattern. Also, parameters for top level topics are given here.
 
-REP may also use some topics as conversational fillers, e.g. to initiate small talks unrelated to the agenda, or to quickly dispatch user digression. These topics are declared by `:ad-lib`.
+REP may also use some topics as conversational fillers, e.g. to initiate small
+talks unrelated to the agenda, or to quickly dispatch user digression. These
+topics are declared in `:ad-lib` vector.
 
-User may also give unexpected input to REP. These exceptional user input are handled by topics declared by `:exception`.
+REP may also actively check some topics in the background, where some external conditions are the
+triggers. When the conditions are met, the REP may notify the users about the
+external events. These topics are in `:background` vector.
 
-The declaration of `:agenda`, `:ad-lib` and `:exception` uses the same format.
+User may also give unexpected input to REP. These exceptional user input are
+handled by topics declared in `:exception` vector.
+
+The declaration of `:agenda`, `:ad-lib`, `background` and `:exception` uses the same format.
