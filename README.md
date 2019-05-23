@@ -9,8 +9,8 @@ We welcome pull requests for this repository.
 Make sure you have python on your system. Now install needed extensions:
 
 ```bash
-pip install mkdocs
-pip install mkdocs-material
+pip install mkdocs==1.0.4
+pip install mkdocs-material==3.3.0
 ```
 
 ## Test
