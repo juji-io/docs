@@ -240,7 +240,10 @@ Used in response, the string pattern will become part of the output as it is.
 
 Another common type of pattern is to specify multiple alternatives that are
 equivalent for the match. However, there are several cases of matching
-behaviours for alternatives. For example, should we match zero or more of the alternatives, zero or one of them, one or more of them, only one, all of them or anything but them? We can use a keyword to indicate the desired case:
+behaviours for alternatives. For example, should we match zero or more of the
+alternatives `:*`, zero or one of them `:?`, one or more of them `:+`, only one
+`:1`, one to three of them `:1-3`, all of them `:a`, or anything but them `:!`?
+We use a keyword to indicate the desired case:
 
 ```Clojure
 ; match zero or more of the four tokens, in any order
@@ -249,6 +252,10 @@ behaviours for alternatives. For example, should we match zero or more of the al
 [:? pizza bacon sausage hamburger]
 ; match one or more of the four tokens, in any order
 [:+ pizza bacon sausage hamburger]
+; all three tokens must appear, in any order
+[:a pizza I love]
+; none of the three tokens can appear
+[:! pizza hamburger bacon]
 ; match one of the four alternatives
 [:1 pizza bacon sausage hamburger]
 ; match two of the four alternatives
@@ -259,8 +266,6 @@ behaviours for alternatives. For example, should we match zero or more of the al
 [:2- pizza bacon sausage hamburger]
 ; match any one token except the two listed
 [:0 pizza hamburger]
-; match all three tokens in any order
-[:a pizza I love]
 ```
 
 The case indicator keyword has to be the first element of the vector. The orders among the rest of the elements are ignored, since they are alternatives.
@@ -272,6 +277,22 @@ The case indicator keyword has to be the first element of the vector. The orders
 
 When used in action patterns, the system will randomly pick the alternatives using the
 compatible semantics as matches. For example, `:1` will randomly pick one alternative as output; `:?` will pick one or zero alternative at random chance; and so on. The one exception is the `:0` case, as it does not make sense in actions. The choices are made at runtime.
+
+### Exclusion Pattern
+
+At occasions when we need to exclude some special cases from a given pattern,
+the exclusion pattern is indicated by a keyword `:-`.
+
+```Clojure
+;; will match if there are two words between "love" and "pizza",
+;; as long as they do not contain "veggie" or "vegan"
+[I love [:- :2. [:1 veggie vegan]] pizza]
+```
+
+The first part following `:-` is the main pattern to be kept, and the rest are the cases to
+be excluded.
+
+Exclusions are not allowed in actions.
 
 ### Wildcard Pattern
 
@@ -341,23 +362,6 @@ We sometimes require a pattern to be at the start or the end of the sentence to 
 ; this :0. is misplaced, only bacon will be the last token
 [I love [:1 pizza bacon :0.]]
 ```
-
-### Exclusion Pattern
-
-At occasions when we need to exclude some special cases from a given pattern, the exclusion can be made by a preceding - symbol before the excluded pattern.
-
-```Clojure
-;; will match two words between "love" and "pizza", as long as they do not contain "veggie" or "vegan"
-[I love [:2. -[* [:1 veggie vegan] *] pizza]
-```
-
-A sub-pattern (as delimited by a pair of `[` and `]`) may contain at most one
-exclusion, and the exclusion must be the last element of the vector.
-
-!!! note
-    The excluded pattern should indicate special cases of the main pattern, otherwise the results are not well defined.
-
-Exclusions are not allowed in actions.
 
 ### Tag Pattern
 
