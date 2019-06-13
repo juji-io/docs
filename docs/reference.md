@@ -286,9 +286,8 @@ the exclusion pattern is indicated by a keyword `:-`.
 ```Clojure
 ;; will match if there are two words between "love" and "pizza",
 ;; as long as they do not contain "veggie" or "vegan"
-[I love [:- :2. [:1 veggie vegan]] pizza]
+[I love [:- :2. veggie vegan] pizza]
 ```
-
 The first part following `:-` is the main pattern to be kept, and the rest are the cases to
 be excluded.
 
