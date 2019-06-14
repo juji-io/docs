@@ -324,21 +324,23 @@ Wildcard patterns do not make sense in actions, and thus are not allowed there.
 ### Refinement Pattern
 
 At occasions when we need to refine a given pattern to impose further
-restrictions, two refinement patterns can be used.  In addition to match the
-first (main) pattern, requirement pattern `:=` requires the subsequent patterns
-to match as well; Conversely, exclusion pattern `:-` exclude the subsequent
-patterns from matching.
+restrictions, two refinement patterns can be used. These patterns start with a
+refinement keyword, either `:=` or `-`. The first part of the pattern following
+the refinement keyword is the main pattern to be matched, and the rest are the
+refinement.
+
+In addition to match the first (main) pattern, requirement pattern `:=` requires
+the subsequent patterns to match as well; Conversely, exclusion pattern `:-`
+exclude the subsequent patterns from matching.
 
 ```Clojure
 ;; will match if there are two words between "love" and "pizza",
 ;; and they must contain "veggie" or "vegan"
-[love [:= :2. veggie vegan] pizza]
+[love [:= :2. [:1 veggie vegan]] pizza]
 ;; will match if there are two words between "love" and "pizza",
 ;; as long as they do not contain "veggie" or "vegan"
 [love [:- :2. veggie vegan] pizza]
 ```
-The first part of the pattern following the refinement keyword is the main
-pattern to be matched, and the rest are the refinement, either required or excluded.
 
 Refinement patterns are not allowed in actions.
 
