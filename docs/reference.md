@@ -189,7 +189,7 @@ See [Regex tag](#tag-pattern) below for more details.
     [:1 IBM "ibm" #token/regex "IBM"]
     ```
 
-## Rule Pattern
+## Pattern of Rule
 
 REP in its core is a rule language. The patterns of the rules are
 the basic abstraction of REP. A rule pattern can be used to infer the meaning of
@@ -252,10 +252,6 @@ We use a keyword to indicate the desired case:
 [:? pizza bacon sausage hamburger]
 ; match one or more of the four tokens, in any order
 [:+ pizza bacon sausage hamburger]
-; all three tokens must appear, in any order
-[:a pizza I love]
-; none of the three tokens can appear
-[:! pizza hamburger bacon]
 ; match one of the four alternatives
 [:1 pizza bacon sausage hamburger]
 ; match two of the four alternatives
@@ -276,7 +272,10 @@ The case indicator keyword has to be the first element of the vector. The orders
 ```
 
 When used in action patterns, the system will randomly pick the alternatives using the
-compatible semantics as matches. For example, `:1` will randomly pick one alternative as output; `:?` will pick one or zero alternative at random chance; and so on. The one exception is the `:0` case, as it does not make sense in actions. The choices are made at runtime.
+compatible semantics as matches. For example, `:1` will randomly pick one
+alternative as output; `:?` will pick one or zero alternative at random chance;
+and so on. The one exception is the `:0` case, as it does not make sense in
+actions. The choices are made at run time.
 
 ### Wildcard Pattern
 
@@ -321,6 +320,25 @@ If we want to specify concrete numbers of wildcard words or a range of numbers, 
 
 Wildcard patterns do not make sense in actions, and thus are not allowed there.
 
+### Containment Pattern
+
+The patterns we introduced so far will only match if the input strictly
+conforms to the prescribed regular grammar. However, it is often desirable to
+specify a loosely defined containment relationship, such as, the input must
+contain all the specified pattern (`:a`), or the input must not contain any of
+the specified patterns (`:!`).
+
+```Clojure
+; all three tokens must appear, in any order
+; it matches "i love this pizza" or "this is the pizza I love"
+[:a pizza I love]
+; none of the three tokens can appear
+; it matches "i love coffe", but not "I love pizza"
+[:! pizza hamburger bacon]
+```
+
+Containment patterns are not allowed in actions.
+
 ### Refinement Pattern
 
 At occasions when we need to refine a given pattern to impose further
@@ -331,14 +349,14 @@ refinement.
 
 In addition to match the first (main) pattern, requirement pattern `:=` requires
 the subsequent patterns to match as well; Conversely, exclusion pattern `:-`
-exclude the subsequent patterns from matching.
+excludes the subsequent patterns from matching.
 
 ```Clojure
 ;; will match if there are two words between "love" and "pizza",
 ;; and they must contain "veggie" or "vegan"
 [love [:= :2. [:1 veggie vegan]] pizza]
 ;; will match if there are two words between "love" and "pizza",
-;; as long as they do not contain "veggie" or "vegan"
+;; as long as they do not contain either "veggie" or "vegan"
 [love [:- :2. veggie vegan] pizza]
 ```
 
