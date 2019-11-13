@@ -1,7 +1,6 @@
 # Get Started on Juji
 
-Thank you for using Juji. By following our guides, you will be creating chatbots
-in no time. 
+Thank you for using Juji. By following our guide, you will be creating chatbots in no time. 
 
 <!-- You may also start with this three-minutes video:
 
@@ -43,6 +42,8 @@ After less than a minute of preparation time, you will see the your chatbot star
 
 What's more? You are just a few clicks away from showing the chatbot to your audiences on facebook. 
 
+## Deploy your chatbot to facebook
+
 Let's say you really want to show the chatbot right away or you already done some [customization on the design page](design.md) without reading any documentation (because our app is so easy to use &#x1F920;), you can now navigate to the deploy page by clicking on `DEPLOY` on the left panel.
 
 <p align="center"><img src="img/deploy-fb.png" alt="Deploy facebook page" width="850"/></p>
@@ -59,11 +60,15 @@ If you cannot find some of your pages on the list, they probably don't have the 
 
 After you successfully deployed your chatbot to your facebook page, you will see the confirmation message on your deployment page as `Chatbot deployed on XX/XX/XXXX. Version X.`
 
+## It's live now! :tada: :fireworks: :dizzy:
+
 Now you can go your facebook page to test your chatbot.
 
 <p align="center"><img src="img/fb-chat-example.png" alt="facebook messager chat example" width="350"/></p>
 
-Once the chatbot is deployed, it is always on your page until your take it down. So you can use it to answer user questions, collecting information from your customers for your products and services.
+Once the chatbot is deployed, it is always on your page unless your take it down. So you can use it to interact with your audience for your products and services.
+
+I you are wondering what you can do with your chatbot, you can check out our next section [**Chatbot Design**](design.md).
 
 
 
