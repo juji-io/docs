@@ -185,8 +185,7 @@ For all the possible fields of the chat subscription, please consult GraphiQL, a
 look under "subscriptionRoot" - "chat" - "ChatMessage".
 
 For example, if you want the REP to ask choice questions in your chat, you need
-to add "display" and "move" fields in the subscription.
-
+to add the fields "display" (for displying the choice question) and "move" (for sending user moves that respond to the choice questions) in the subscription.
 
 ```graphql
 subscription {
@@ -196,8 +195,30 @@ subscription {
         type
         role
         text
-        display
-        move
+        display {
+          type
+          data {
+            type
+            gid
+            questions {
+              kind
+              wording
+              heading
+              qid
+              choices {
+                text
+                value
+                other
+              }
+            }
+          }
+        }
+        move {
+          value
+          text
+          question
+          gid
+        }
     }
 }
 ```
@@ -232,7 +253,7 @@ If successful, the client will receive a status message:
 }
 ```
 
-If you are sending response to a choice question, the input should include "move"
+If you are sending response to a choice question, the input should include a "move"
 field.
 
 ## Data Access
