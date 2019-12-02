@@ -181,6 +181,27 @@ Type | Sender | Description
 `connection-closed` | server | Server detected that the WebSocket connection to client is lost
 `debug` | server | Debug information from the server
 
+For all the possible fields of the chat subscription, please consult GraphiQL, and
+look under "subscriptionRoot" - "chat" - "ChatMessage".
+
+For example, if you want the REP to ask choice questions in your chat, you need
+to add "display" and "move" fields in the subscription.
+
+
+```graphql
+subscription {
+    chat(input: {
+        participationId: "5c3bcc2a-9ce5-40a7-b1da-80c065e283b0"
+    }) {
+        type
+        role
+        text
+        display
+        move
+    }
+}
+```
+
 ### Send chat messages
 
 The client should send the chat messages over WebSocket connection. The message
@@ -210,6 +231,9 @@ If successful, the client will receive a status message:
   }
 }
 ```
+
+If you are sending response to a choice question, the input should include "move"
+field.
 
 ## Data Access
 
