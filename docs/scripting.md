@@ -7,23 +7,9 @@ language called REP, so that you can harness the full power of the platform.
 Additionally, Juji platform contains an integrated development environment (IDE) for
 working with REP scripts.
 
-## Write Custom Topic
-
-<p align="center"><img src="../img/change-wording.png" alt="Change wording" width="600"/></p>
-
-In the editing dialog of a question, click on `Write Custom Topic`
-link, a topic editor is expanded in place.
-
-<p align="center"><img src="../img/custom-topic.png" alt="Custom topic" width="600"/></p>
-
-The topic editor contains a skeleton of a topic that you may edit to fill in
-rules to handle user's responses to this question.
-
-Click `Compile` to compile and any syntax error will be reported.
-
 ## Work with Full REP Scripts
 
-At https://juji.io/ide, you have access to an online scripting environment. To access the IDE page, you can also click on the word "Advanced" in the Juji app [Design View](design.md).
+At https://juji.io/ide, you have access to an online scripting environment. To access the IDE page, you can also click on the red "</>" button in the Juji app [Design View](design.md).
 
 <p align="center"><img src="../img/ide-custom.png" alt="IDE" width="600"/></p>
 
