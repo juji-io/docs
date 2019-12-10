@@ -165,13 +165,13 @@ shown below, each card contains:
 
 * **URL Buttons** (up to 3 links per card) 
 
-<p align="center"><img src="/img/design-add-FB-Media.png" alt="add a
+<p align="center"><img src="/img/design-add-FB-media.png" alt="add a
 topic button" width="550"/></p>
 
 Currently one can define up to three FB Media cards. In a Facebook
 Messenger window, these cards will show up in a carousel.
 
-<p align="center"><img src="/img/design-FB-Media-desktop.png" alt="carousel" width="550"/></p>
+<p align="center"><img src="/img/design-fb-media-desktop.png" alt="carousel" width="550"/></p>
 
 Note that FB Media cards will ***not*** show up if the chatbot is
 deployed on a website.
@@ -298,7 +298,7 @@ topic buttons" width="350"/></p>
 Here is how a Facebook choice looks like in a Facebook Messenger
 chatbot:
 
-<br><p align="center"><img src="/img/preview-FB-choice.png" alt="add a
+<br><p align="center"><img src="/img/preview-fb-choice.png" alt="add a
 topic buttons" width="350"/></p>
 
 #### **Facebook Email**
