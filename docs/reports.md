@@ -9,7 +9,7 @@ This dashboard currently shows the number of users who chatted with
 the chatbot. One can use the date slider below the chart to view the
 number of users per selected time period.
 
-<p align="center"><img src="/img/report-overview.png" alt="Chat Stats" width="650"/></p>
+<p align="center"><img src="/img/Report-Overview.png" alt="Chat Stats" width="650"/></p>
 
 ## **Audience Dashboard**
 
@@ -21,7 +21,7 @@ Audience overview is displayed in a table. The table shows several
 pieces of information related to users, such as `name`, `location`,
 and `channel`.
 
-<p align="center"><img src="/img/report-audience.png" alt="Audience Overview" width="650"/></p>
+<p align="center"><img src="/img/Report-Audience.png" alt="Audience Overview" width="650"/></p>
 
 <br>
 
