@@ -14,12 +14,12 @@ configure the fields to be shown on the cover page:
 * Email (optional)
 
 
-<p align="center"><img src="../img/web-cover.png" alt="Web Deployment" width="650"/></p>
+<p align="center"><img src="/img/web-cover.png" alt="Web Deployment" width="650"/></p>
 
 Use the `Generate URL` button to generate a web URL. This URL can then
 be embedded into an email or a website for target audience.
 
-<p align="center"><img src="../img/web-url.png" alt="generate URL" width="650"/></p>
+<p align="center"><img src="/img/web-url.png" alt="generate URL" width="650"/></p>
 
 Two URLs are generated:
 
@@ -35,7 +35,7 @@ One can deploy a Juji chatbot to a Facebook Messenger associated with
 a Facebook page.
 
 
-<p align="center"><img src="../img/facebook-deployment.png"
+<p align="center"><img src="/img/facebook-deployment.png"
 alt="Facebook Deployment" width="650"/></p>
 
 Similar to deploying to a website, one can also edit the **weclome
@@ -46,7 +46,7 @@ Use the blue `Connect with Facebook` button to deploy a
 chatbot. Select the page(s) you want to deploy to. Then click on the
 green `Deploy` button to complete the deployment.
 
-<p align="center"><img src="../img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
+<p align="center"><img src="/img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
 
 If there is no page listed, it means that you need to give Juji
 permissions to deploy your chatbot to one or more your Facebook
@@ -65,12 +65,12 @@ the new updates to the deployment, Juji supports two types of update:
     `Manage` button to push the updates to the existing chatbot. The
     updated chatbot will restart and reflect the changes made.
 
-<p align="center"><img src="../img/deploy-fb-after.png" alt="After
+<p align="center"><img src="/img/deploy-fb-after.png" alt="After
 successful facebook deployment" width="650"/></p>
 
 <br>
 
-<p align="center"><img src="../img/web-update.png" alt="Update chatbot" width="650"/></p>
+<p align="center"><img src="/img/web-update.png" alt="Update chatbot" width="650"/></p>
 
 * **New Release** Use the `Connect with Facebook` button or `New
     Release` button under `Manage` to release a new version of the

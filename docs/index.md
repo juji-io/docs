@@ -15,7 +15,7 @@ services.
 As shown below, Juji platform includes three main components, which
 can be used alone or together to suit different application needs.
 
-<p align="center"><img src="img/JujiPlatform.jpg" alt="Create an AI" width="650"/></p>
+<p align="center"><img src="/img/JujiPlatform.jpg" alt="Create an AI" width="650"/></p>
 
 
 * **Juji Studio** provides a graphical user interface (GUI) for
@@ -37,8 +37,7 @@ can be used alone or together to suit different application needs.
     API](https://docs.juji.io/api/) allows rapid and easy integration
     of such a chatbot into third-party applications.
 
-<br>
-# **Get Started on Juji**
+## **Get Started on Juji**
 
 <div align="center" style="margin-top :50px; margin-bottom: 50px"> <iframe width="560"
 height="315" src="https://www.youtube.com/embed/fzL4apEOdLk"
@@ -61,8 +60,8 @@ your first AI chatbot on Juji **in just a few minutes**.
     a conversation with you. Just say hello to it as you have just met
     a person.
 
-	  <p align="center"><img src="img/chat-preview.png"
-	  alt="Preview page" width="550"/></p>
+	  <p align="center"><img src="/img/chat-preview.png"
+	  alt="Preview page" width="600"/></p>
 
 * [**Deploy your chatbot**](/release/) By clicking on the `Deploy` button on
      the left menu panel, you can now publish the chatbot with a
@@ -71,11 +70,13 @@ your first AI chatbot on Juji **in just a few minutes**.
 ## **Your first AI chatbot is now live** :tada: :fireworks: :dizzy:
 
 You chatbot can now engage with your target audience on your Facebook
-page or your website.
-<p align="center"><img src="img/fb-chat-example.png" alt="facebook messager chat example" width="350"/></p>
+page:
+<p align="center"><img src="/img/fb-chat-example.png" alt="facebook messager chat example" width="350"/></p>
+
+or your website:
 
 <div style="margin-top: 20px; margin-bottom: 20px">
-<p align="center"><img src="img/deployed-web.png" alt="web chat example" width="550"/></p></div>
+<p align="center"><img src="/img/deployed-web.png" alt="web chat example" width="550"/></p></div>
 
 ## **Monitor your chatbot**
 
@@ -83,9 +84,8 @@ Juji also helps you monitor your chatbot activities and summarize
 audience information. Check out [**Reports Dashboard**](/reports)
 for more details. 
 
-<br>
 
-# **What's Next**
+## **What's Next**
 
 Your AI chatbot can be very powerful: it can help you scale out traditional
 labor-intensive operations with a personal touch. For example, your AI
@@ -95,3 +95,4 @@ cool and upbeat attitude :sunglasses:
 
 Please check out [**Chatbot Design**](/design) to customize your AI
 chatbot to suit your needs.
+

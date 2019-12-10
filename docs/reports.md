@@ -9,7 +9,7 @@ This dashboard currently shows the number of users who chatted with
 the chatbot. One can use the date slider below the chart to view the
 number of users per selected time period.
 
-<p align="center"><img src="../img/report-overview.png" alt="Chat Stats" width="650"/></p>
+<p align="center"><img src="/img/report-overview.png" alt="Chat Stats" width="650"/></p>
 
 ## **Audience Dashboard**
 
@@ -21,7 +21,7 @@ Audience overview is displayed in a table. The table shows several
 pieces of information related to users, such as `name`, `location`,
 and `channel`.
 
-<p align="center"><img src="../img/report-audience.png" alt="Audience Overview" width="650"/></p>
+<p align="center"><img src="/img/report-audience.png" alt="Audience Overview" width="650"/></p>
 
 <br>
 
@@ -34,7 +34,7 @@ conversation topic or custom attribute. Below is an example displaying
 the distribution of user choices by percentile to the question `What's your
 favorite color`.
 
-<p align="center"><img src="../img/audience-analytics-piechart.png"
+<p align="center"><img src="/img/audience-analytics-piechart.png"
 alt="Audience Analytics" width="650"/></p>
 
 <br>
@@ -43,7 +43,7 @@ to the question by themes (topics) and displays the discovered themes
 with the highest coverage. Below is an example showing the themes
 discovered for the question `What subject do you teach`:
 
-<p align="center"><img src="../img/audience-analytics-text.png"
+<p align="center"><img src="/img/audience-analytics-text.png"
 alt="Audience Analytics" width="650"/></p>
 
 <br>

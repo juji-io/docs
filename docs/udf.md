@@ -26,11 +26,11 @@ script to access.
 
 In IDE file browser, click open the desired engagement, click open `Config` file, on the menu bar of the main content panel, you will see a `Add Jar` button.
 
-<p align="center"><img src="../img/config-jar.png" alt="Add JAR button" width="650"/></p>
+<p align="center"><img src="/img/config-jar.png" alt="Add JAR button" width="650"/></p>
 
 Click the button to see a dialog for uploading the JAR file.
 
-<p align="center"><img src="../img/upload-jar.png" alt="Upload JAR dialog" width="550"/></p>
+<p align="center"><img src="/img/upload-jar.png" alt="Upload JAR dialog" width="550"/></p>
 
 The JAR file field is required and other fields are optional. However, `groupId`
 (organization identifier), `artifactId` (package identifier) and `version`

@@ -11,7 +11,7 @@ working with REP scripts.
 
 At https://juji.io/ide, you have access to an online scripting environment. To access the IDE page, you can also click on the red "</>" button in the Juji app [Design View](design.md).
 
-<p align="center"><img src="../img/ide-custom.png" alt="IDE" width="600"/></p>
+<p align="center"><img src="/img/ide-custom.png" alt="IDE" width="600"/></p>
 
 ### File Browser
 
@@ -41,7 +41,7 @@ local disk, or `Save` the file in the Juji platform.
 
 #### Main script file
 
-<p align="center"><img src="../img/ide-custom.png" alt="IDE" width="600"/></p>
+<p align="center"><img src="/img/ide-custom.png" alt="IDE" width="600"/></p>
 
 The main script file of a release has a namespace ending in something like
 `.web2`, where `web` the name of the release channel, and `2` means the second
@@ -127,7 +127,7 @@ Then, in your script, find the `:ad-lib` key and its vector value in `(config ..
 
 Following our previous example in step 2, below is a screenshot of adding the generated deftopic `generated-faq-topic` to a script and add the topic name to the script's `:ad-lib` vector:
 
-<p align="center"><img src="../img/add-generated-faq-topic.png" alt="IDE" width="600"/></p>
+<p align="center"><img src="/img/add-generated-faq-topic.png" alt="IDE" width="600"/></p>
 
 At this point, you may save and compile the script. Now your self-defined FAQs are added to your chatbot.
 
