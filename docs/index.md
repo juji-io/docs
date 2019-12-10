@@ -1,101 +1,97 @@
-# Get Started on Juji
 
-Thank you for using Juji. By following our guide, you will be creating chatbots in no time. 
+# **About Juji Platform**
 
-<!-- You may also start with this three-minutes video:
+Juji cloud-based platform powers the creation, customization, and
+operation of a new generation of Conversational Artificial
+Intelligence (AI) Assistants. Currently, these advanced AI assistants
+engage users in a text-based, natural language conversations to
+accomplish a wide variety of tasks, such as answering user inquiries
+and making personalized product recommendations. Also known as AI
+chatbots, these AI assistants can handle complex and diverse user
+inquiries, infer users' implicit needs and wants, and use such
+understanding to deliver truly hyper-personalized guidance and
+services.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wyElX2Py6gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+As shown below, Juji platform includes three main components, which
+can be used alone or together to suit different application needs.
 
-## Create an account
+<p align="center"><img src="img/JujiPlatform.jpg" alt="Create an AI" width="650"/></p>
 
-If you have not done so, head over to https://juji.io/signup to create an account.
 
-All you need for creating an account on the Juji platform is a working email
-address.
+* **Juji Studio** provides a graphical user interface (GUI) for
+  **everyone**, with or without technical skills or AI knowledge, to
+  rapidly create, customize, test, and deploy AI chatbots **with no
+  coding required**.
 
-## Create your first chatbot
+* **Juji IDE** enables people with minimal coding skills (e.g.,
+  writing HTML) to power AI chatbots with advanced capabilities (e.g.,
+  customizing product recommendation policies). It provides an
+  interactive development environment that allows chatbot developers
+  to write, compile, and preview AI chatbots using a high-level, [chatbot
+  scripting language](https://docs.juji.io/reference/).
 
-After you sign in to Juji, you arrive at the Dashboard. The Dashboard shows all the chatbots you have created. 
+* **Juji API** enables software engineers to embed AI
+    chatbots in different applications (e.g., mobile or web-based
+    applications). While Juji Studio supports the rapid creation and
+    customization of an AI chatbot, [Juji
+    API](https://docs.juji.io/api/) allows rapid and easy integration
+    of such a chatbot into third-party applications.
 
-Right now, you probably have no chatbot. Please feel free to follow the simple steps below to create and deploy your
-first Juji chatbot &#x1F929;.
+<br>
+# **Get Started on Juji**
 
-<p align="center"><img src="img/create-ai.png" alt="Create an AI" width="550"/></p>
+<div align="center" style="margin-top :50px; margin-bottom: 50px"> <iframe width="560"
+height="315" src="https://www.youtube.com/embed/fzL4apEOdLk"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-Click the red `+ AI Helper` button to start creating your first bot.
+As shown in the above tutorial video, getting started on Juji is
+straightforward. Below summarizes the key steps to create and deploy
+your first AI chatbot on Juji **in just a few minutes**.
 
-<p align="center"><img src="img/ai-helper-1.png" alt="AI Helper 1" width="550"/></p>
+* **Create an account**  Sign up [here](https://juji.io/signup) and
+    follow the simple steps to create a Juji account with only a
+    working email. 
 
-Here you can choose the template you would like to start with. How about `say hello world`?
+* **Create your first AI chatbot** After signing in, you can now create
+    your first AI chatbot. Click on the red `+ AI Helper` button and
+    follow the process to select `Say hello world` template.
+    
+* **Preview your chatbot** Now your chatbot is ready to have
+    a conversation with you. Just say hello to it as you have just met
+    a person.
 
-Your first bot is called `AI Helper 1` by default, you can change the name here, or whenever you like in the Dashboard.
+	  <p align="center"><img src="img/chat-preview.png"
+	  alt="Preview page" width="550"/></p>
 
-Click the green `Create` button when you are ready to proceed.
+* [**Deploy your chatbot**](#release.md) By clicking on the `Deploy` button on
+     the left menu panel, you can now publish the chatbot with a
+     few clicks to meet your audiences on Facebook or the web.
 
-<p align="center"><img src="img/design-page-intro.png" alt="Design page intro" width="550"/></p>
+## **Your first AI chatbot is now live** :tada: :fireworks: :dizzy:
 
-After you create a new chatbot, you have the choice to start customizing it or preview it. Let's take a look at what's in the template first by choosing `Preview Chatbot`.
-
-<p align="center"><img src="img/chat-preview.png" alt="Preview page" width="850"/></p>
-
-After less than a minute of preparation time, you will see the your chatbot starts the conversation. What's so cool is that now you can already chat with the chatbot &#x1F973;.
-
-What's more? You are just a few clicks away from showing the chatbot to your audiences on facebook. 
-
-## Deploy your chatbot to facebook
-
-Let's say you really want to show the chatbot right away or you already done some [customization on the design page](design.md) without reading any documentation (because our app is so easy to use &#x1F920;), you can now navigate to the deploy page by clicking on `DEPLOY` on the left panel.
-
-<p align="center"><img src="img/deploy-fb.png" alt="Deploy facebook page" width="850"/></p>
-
-Proceed by clicking `Continue with Facebook` button, which leads you to the facebook permission setting page. Once you follow through the permission settings, you can select the Facebook page(s) you want to deploy your chatbot to.
-
-<p align="center"><img src="img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
-
-Check the page(s) you want to deploy to. Then click on the green `Deploy` button to complete the deployment.
-
-If you cannot find some of your pages on the list, they probably don't have the permission for Juji to deploy your chatbot on them. In that case, you can click on `Connect More` to adjust your pages' permissions first.
-
-<p align="center"><img src="img/deploy-fb-after.png" alt="After successful facebook deployment" width="850"/></p>
-
-After you successfully deployed your chatbot to your facebook page, you will see the confirmation message on your deployment page as `Chatbot deployed on XX/XX/XXXX. Version X.`
-
-## It's live now! :tada: :fireworks: :dizzy:
-
-Now you can go your facebook page to test your chatbot.
-
+You chatbot can now engage with your target audience on your Facebook
+page or your website.
 <p align="center"><img src="img/fb-chat-example.png" alt="facebook messager chat example" width="350"/></p>
 
-Once the chatbot is deployed, it is always on your page unless your take it down. So you can use it to interact with your audience for your products and services.
+<div style="margin-top: 20px; margin-bottom: 20px">
+<p align="center"><img src="img/deployed-web.png" alt="web chat example" width="550"/></p></div>
 
-I you are wondering what you can do with your chatbot, you can check out our next section [**Chatbot Design**](design.md).
+## **Monitor your chatbot**
 
+Juji also helps you monitor your chatbot activities and summarize
+audience information. Check out [**Reports Dashboard**](reports.md)
+for more details. 
 
+<br>
 
-<!-- Now you get to a page where you could customize the cover page of your bot. We
-can do that later. Click `Next` at the right bottom.
+# **What's Next**
 
-<p align="center"><img src="img/generate-url.png" alt="Generate URL" width="550"/></p>
+Your AI chatbot can be very powerful: it can help you scale out traditional
+labor-intensive operations with a personal touch. For example, your AI
+chatbot can handle customer inquiries, make personalized product
+recommendations, and elicit customer reviews, 24x7 and always with a
+cool and upbeat attitude :sunglasses:
 
-Click `Generate URL`
-
-<p align="center"><img src="img/copy-url.png" alt="Copy URL" width="550"/></p>
-
-Now your bot is deployed.
-
-You have two URLs. The first URL is the production deployment of your bot. The
-second URL is for sending to your friends for testing. The two URLs host the
-same chat bot, but the later will not be included in your results reporting. -->
-
-<!-- ## Chat with your first chatbot
-
-Point your browser to the URL generated above.
-
-<p align="center"><img src="img/chat-cover.png" alt="Chat cover page" width="600"/></p>
-
-Only first name is required for chatting with Juji bots (but is configurable by you).
-
-<p align="center"><img src="img/chat-mary.png" alt="Chat with Mary" width="550"/></p>
-
-You are now chatting with your first deployed Juji bot! As could thousands of
-others at the same time, for 24 hours a day and 7 days a week! -->
+Please check out [**Chatbot Design**](design.md) to customize your AI
+chatbot to suit your needs.
