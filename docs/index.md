@@ -64,7 +64,7 @@ your first AI chatbot on Juji **in just a few minutes**.
 	  <p align="center"><img src="img/chat-preview.png"
 	  alt="Preview page" width="550"/></p>
 
-* [**Deploy your chatbot**](#release.md) By clicking on the `Deploy` button on
+* [**Deploy your chatbot**](/release/) By clicking on the `Deploy` button on
      the left menu panel, you can now publish the chatbot with a
      few clicks to meet your audiences on Facebook or the web.
 
@@ -80,7 +80,7 @@ page or your website.
 ## **Monitor your chatbot**
 
 Juji also helps you monitor your chatbot activities and summarize
-audience information. Check out [**Reports Dashboard**](reports.md)
+audience information. Check out [**Reports Dashboard**](/reports)
 for more details. 
 
 <br>
@@ -93,5 +93,5 @@ chatbot can handle customer inquiries, make personalized product
 recommendations, and elicit customer reviews, 24x7 and always with a
 cool and upbeat attitude :sunglasses:
 
-Please check out [**Chatbot Design**](design.md) to customize your AI
+Please check out [**Chatbot Design**](/design) to customize your AI
 chatbot to suit your needs.
