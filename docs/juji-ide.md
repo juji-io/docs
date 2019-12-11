@@ -20,10 +20,10 @@ Juji IDE provides an interactive development environment that allows
 ## Work with REP Scripts
 
 In the IDE, you have access to an online scripting environment. To
-access the IDE page, you can also click on the red "</>" button in the
+access the IDE page, you can click on the red "</\>" button at the bottom left corner of the
 Juji Studio under [Chatbot Design](/design).
 
-<p align="center"><img src="/img/ide-custom.png" alt="IDE" width="600"/></p>
+<p align="center"><img src="/img/ide-button.png" alt="IDE" width="80"/></p>
 
 ### File Browser
 
@@ -52,8 +52,6 @@ You can `Upload` a file to replace the file, or `Download` the file to your
 local disk, or `Save` the file in the Juji platform.
 
 #### Main script file
-
-<p align="center"><img src="/img/ide-custom.png" alt="IDE" width="600"/></p>
 
 The main script file of a release has a namespace ending in something like
 `.web2`, where `web` the name of the release channel, and `2` means the second
