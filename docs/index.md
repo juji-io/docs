@@ -64,8 +64,8 @@ After signing in, you can now create your first AI chatbot. Click on
 Now your chatbot is ready to have a conversation with you. Just say
     hello to it as you have just met a person.
 
-	  <p align="center"><img src="/img/chat-preview.png"
-	  alt="Preview page" width="600"/></p>
+<p align="center"><img src="/img/chat-preview.png"
+alt="Preview page" width="600"/></p>
 
 ### **Deploy Chatbot**
 
