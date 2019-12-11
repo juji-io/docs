@@ -23,14 +23,14 @@ can be used alone or together to suit different application needs.
   rapidly create, customize, test, and deploy AI chatbots **with no
   coding required**.
 
-  **Juji IDE** enables people with minimal coding skills (e.g.,
-  writing HTML) to power AI chatbots with advanced capabilities (e.g.,
+  **[Juji IDE](/juji-ide)** enables people with minimal coding skills (e.g.,
+  ability to write HTML) to power AI chatbots with advanced capabilities (e.g.,
   customizing product recommendation policies). It provides an
   interactive development environment that allows chatbot developers
   to write, compile, and preview AI chatbots using a high-level, [chatbot
   scripting language](https://docs.juji.io/reference/).
 
-  **Juji API** enables software engineers to embed AI chatbots in
+  **[Juji API](/api)** enables software engineers to embed AI chatbots in
     different applications (e.g., mobile or web-based
     applications). While Juji Studio supports the rapid creation and
     customization of an AI chatbot, [Juji

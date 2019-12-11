@@ -8,6 +8,10 @@ coding required**.
 
 <p align="center"><img src="/img/juji-studio.png" alt="Juji Studio" width="650px"/></p>
 
-### [Chatbot Design](/design) | [Chatbot Deployment](/release) | [Chatbot Monitoring](/reports)
+Follow these simple steps to create your Juji Chatbots to move your business forward:
 
-#### [Design Tips: Best Practices](/chatbot-design-tips)
+* [Chatbot Design](/design) 
+* [Chatbot Deployment](/release) 
+* [Chatbot Monitoring](/reports)
+
+Finally, some great [Design Tips and Best Practices](/chatbot-design-tips) to make your chatbots awe-inspiring.

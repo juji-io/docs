@@ -16,6 +16,8 @@ theme:
   favicon: 'img/favicon.ico'
   name: 'material'
   custom_dir: 'theme/'
+  feature:
+    tabs: true
   palette:
     primary: 'white'
     accent: 'deep orange'
@@ -63,9 +65,25 @@ extra:
 
 nav:
   - Get Started: index.md
-  - Juji Studio:  juji-studio.md
-  - Juji IDE: juji-ide.md
-  - Juji API: api.md
-  - FAQs: faq.md
+  - Juji Studio:  
+    - Introduction: juji-studio.md
+    - Chatbot Design: design.md
+    - Chatbot Deployment: release.md
+    - Chatbot Monitoring: reports.md
+    - Design Best Practices: chatbot-design-tips.md
+  - Juji IDE: 
+    - Introduction: juji-ide.md
+    - Concepts: concept.md
+    - Language: reference.md
+    - Built-in Dialog Library: topics.md
+    - System Functions: function.md
+    - User-defined Functions: udf.md
+  - Juji API: 
+    - Introduction: api.md
+    - Data Model: nouns.md
+    - Chat API: chat.md
+    - Data API: meta.md
+  - FAQs: 
+    - FAQs: faq.md
   - Juji Forum: https://forum.juji.io
   - Sign up at Juji: https://juji.io/login

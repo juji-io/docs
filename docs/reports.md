@@ -51,6 +51,6 @@ alt="Audience Analytics" width="650"/></p>
 ## **What's Next**
 
 Based on your needs, you may want to create multiple chatbots, e.g.,
-one for helping customers and the other for helping employees. Go back
-to the [**beginning**](index.md) to create more AI chatbots.
+one for helping customers and the other for helping employees. You need practice.  To make your work more productive, here are
+some [**great design tips**](/chatbot-design-tips).
 

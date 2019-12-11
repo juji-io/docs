@@ -190,6 +190,4 @@ you will always have a copy of what you have made.
 
 ## **What's Next**
 
-Once a chatbot is ready, you can deploy it onto a website or a
-Facebook page. Please check out [**Chatbot Deployment**](/design)
-to deploy your AI chatbot.
+Want to power up your chatbot-fu and get some more magic going? Juji has you covered. Dig deeper into **[Juji IDE](/juji-ide)**.
