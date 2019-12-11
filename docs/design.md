@@ -66,12 +66,14 @@ topic buttons" width="550"/></p>
 <p align="center"><img src="/img/design-message-type.png" alt="add a
 topic buttons" width="550"/></p>
 
-Once a topic is added, one can then edit the topic. See the section
-below on how to edit a specific topic.
+**IMPORTANT TIP:** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
+
+<p align="center"><img src="/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
 ### Edit a Topic
 
-In general, one can edit a topic in three sections:
+Once a topic is added, one can then edit the topic. See the section
+below on how to edit a specific topic. One can edit a topic in three sections:
 
 * **Chatbot Content** Use this section to customize the actual chatbot
 message(s) that users will see during a chat. Please refer to
