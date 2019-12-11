@@ -75,7 +75,7 @@ In general, one can edit a topic in three sections:
 
 * **Chatbot Content** Use this section to customize the actual chatbot
 message(s) that users will see during a chat. Please refer to
-[examples](#content-examples) and [best practices](#best-practices)
+[examples](#examples-customizing-chatbot-content) and [best practices](#design-tips-best-practices)
 for defining the content of a topic.
 
 <p align="center"><img src="/img/design-content.png" alt="add a
@@ -85,8 +85,8 @@ topic buttons" width="550"/></p>
 * **Chatbot Actions** Use this section to customize chatbot behavior
     under different conditions. The green "Customization" button shown
     below can be used to add a group of chatbot actions under one
-    condition (trigger). Please refer to [examples](#action-examples)
-    and [best practices](#best-practices)for defining specific
+    condition (trigger). Please refer to [examples](#examples-customizing-chatbot-actions)
+    and [best practices](#design-tips-best-practices) for defining specific
     conditions and corresponding custom chatbot actions.
 
 <p align="center"><img src="/img/design-chatbot-action.png" alt="add a
@@ -96,7 +96,7 @@ topic buttons" width="550"/></p>
 * **Topic Settings** Use this pop-up window
     to customize one or more topic-specific parameters, such as the
     delayed start of this topic and required user response
-    length. Please refer to [best practices](#best-practices] to tune
+    length. Please refer to [best practices](#design-tips-best-practices] to tune
     these parameters.
     
 <a name="topic-settings"></a><p align="center"><img src="/img/design-topic-settings.png" alt="add a
@@ -121,7 +121,7 @@ topic. The cloned topic will retain all behavior of the original topic.
 <p align="center"><img src="/img/design-clone-topic.png" alt="add a
 topic buttons" width="350"/></p>
 
-### <a name="content-examples">Examples: Customizing Chatbot Content</a>
+### Examples: Customizing Chatbot Content
 
 Here we use a set of examples to show how to define the content
 of different topics and how the content would appear in a chat on the web or
@@ -140,7 +140,7 @@ personalize the chatbot message.
 * **Add a paraphrase** Use the gree `+` button on the right of the
     text bubble to add paraphrases of the message. The paraphrases
     will be output randomly during a chat. See [best
-    practices](#best-practices) for good uses of paraphrases.
+    practices](#design-tips-best-practices) for good uses of paraphrases.
 
 <p align="center"><img src="/img/design-plain-remark.png" alt="add a
 topic buttons" width="550"/></p>
@@ -207,7 +207,7 @@ As shown below, a free-text request includes the following:
 * **Label** Typically, a label is the short form ("stem") of a chatbot
 request. Although it automatically takes the form of the main message,
 it is good to give a sensible label as it is also used for multiple
-purposes (see [best practices](#best-practices)).
+purposes (see [best practices](#design-tips-best-practices)).
 
 * **Main Message** (required) This is the question that users will see
     in a chat. Instead of asking a question directly, a good message
@@ -221,7 +221,7 @@ purposes (see [best practices](#best-practices)).
     can be used to re-ask the question by checking the `Re-asking
     Message` box.
 
-See [best practices](#best-practices) on how to phrase free-text
+See [best practices](#design-tips-best-practices) on how to phrase free-text
 questions in a conversation.
 
 <p align="center"><img src="/img/design-add-free-text-q.png" alt="add a
@@ -246,7 +246,7 @@ In addition to adding regular option items, `Other` option can be added to
 let a user specify additional text. One can also indicate whether to
 treat all the option items as numbers. Numeric choices can be used to
 define chatbot conditions involving numeric operations, such as `>=`
-and `<`. See [examples](#action-examples) below on defining chatbot conditions.
+and `<`. See [examples](#examples-customizing-chatbot-actions) below on defining chatbot conditions.
 
 <p align="center"><img src="/img/design-add-choice-q.png" alt="add a
 topic buttons" width="550"/></p>
@@ -312,7 +312,7 @@ required` in the [topic settings](#topic-settings).
 <p align="center"><img src="/img/design-add-FB-email.png" alt="add a
 topic buttons" width="650"/></p>
 
-### <a name="action-examples">Examples: Customizing Chatbot Actions</a>
+### Examples: Customizing Chatbot Actions
 
 In a natural conversation, different user behavior should drive
 different chatbot actions. Juji supports custom chatbot actions based
@@ -479,8 +479,6 @@ topic buttons" width="650"/></p>
 
 <br>
 ## **Design Tips: Best Practices**
-
-<a name="best-practices"></a> 
 
 In this section, we share design tips on creating superior AI chatbots
 that truly understand and help their users.
