@@ -1,3 +1,4 @@
+
 # **Monitor AI Chatbot**
 
 Once a chatbot is deployed, the `Reports` dashboard displays the chat
@@ -46,8 +47,8 @@ discovered for the question `What subject do you teach`:
 <p align="center"><img src="/img/audience-analytics-text.png"
 alt="Audience Analytics" width="650"/></p>
 
-<br>
-# **What's Next**
+
+## **What's Next**
 
 Based on your needs, you may want to create multiple chatbots, e.g.,
 one for helping customers and the other for helping employees. Go back

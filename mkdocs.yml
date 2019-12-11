@@ -63,16 +63,9 @@ extra:
 
 nav:
   - Get Started: index.md
-  - Chatbot Design: design.md
-  - Chatbot Deployment: release.md
-  - Report Dashboard: reports.md
-  - Juji Concepts: concept.md
-  - Chatbot Scripting: scripting.md
-  - Built-in Library Topics: topics.md
-  - REP Reference: reference.md
-  - System Function: function.md
-  - User Defined Function: udf.md
-  - API Reference: api.md
+  - Juji Studio:  juji-studio.md
+  - Juji IDE: juji-ide.md
+  - Juji API: api.md
   - FAQs: faq.md
-  - Juji Product: https://juji.io/login
   - Juji Forum: https://forum.juji.io
+  - Sign up at Juji: https://juji.io/login

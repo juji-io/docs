@@ -78,10 +78,9 @@ successful facebook deployment" width="650"/></p>
     substantial, we recommend to make a new release since one will be
     able to compare audience behavior under different releases.
 
-<br>
-# **What's Next**
+## **What's Next**
 
 Once a chatbot is deployed, you can monitor its status and the
 associated audience information. Please check out [**Report
-Dashboard**](reports.md) to deploy your AI chatbot.
+Dashboard**](reports.md) to deploy your AI chatbot. 
 

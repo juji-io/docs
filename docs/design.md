@@ -75,7 +75,7 @@ In general, one can edit a topic in three sections:
 
 * **Chatbot Content** Use this section to customize the actual chatbot
 message(s) that users will see during a chat. Please refer to
-[examples](#examples-customizing-chatbot-content) and [best practices](#design-tips-best-practices)
+[examples](#examples-customizing-chatbot-content) and [best practices](/chatbot-design-tips)
 for defining the content of a topic.
 
 <p align="center"><img src="/img/design-content.png" alt="add a
@@ -86,7 +86,7 @@ topic buttons" width="550"/></p>
     under different conditions. The green "Customization" button shown
     below can be used to add a group of chatbot actions under one
     condition (trigger). Please refer to [examples](#examples-customizing-chatbot-actions)
-    and [best practices](#design-tips-best-practices) for defining specific
+    and [best practices](/chatbot-design-tips) for defining specific
     conditions and corresponding custom chatbot actions.
 
 <p align="center"><img src="/img/design-chatbot-action.png" alt="add a
@@ -96,7 +96,7 @@ topic buttons" width="550"/></p>
 * **Topic Settings** Use this pop-up window
     to customize one or more topic-specific parameters, such as the
     delayed start of this topic and required user response
-    length. Please refer to [best practices](#design-tips-best-practices] to tune
+    length. Please refer to [best practices](/chatbot-design-tips) to tune
     these parameters.
     
 <a name="topic-settings"></a><p align="center"><img src="/img/design-topic-settings.png" alt="add a
@@ -140,7 +140,7 @@ personalize the chatbot message.
 * **Add a paraphrase** Use the gree `+` button on the right of the
     text bubble to add paraphrases of the message. The paraphrases
     will be output randomly during a chat. See [best
-    practices](#design-tips-best-practices) for good uses of paraphrases.
+    practices](/chatbot-design-tips) for good uses of paraphrases.
 
 <p align="center"><img src="/img/design-plain-remark.png" alt="add a
 topic buttons" width="550"/></p>
@@ -207,7 +207,7 @@ As shown below, a free-text request includes the following:
 * **Label** Typically, a label is the short form ("stem") of a chatbot
 request. Although it automatically takes the form of the main message,
 it is good to give a sensible label as it is also used for multiple
-purposes (see [best practices](#design-tips-best-practices)).
+purposes (see [best practices](/chatbot-design-tips)).
 
 * **Main Message** (required) This is the question that users will see
     in a chat. Instead of asking a question directly, a good message
@@ -221,7 +221,7 @@ purposes (see [best practices](#design-tips-best-practices)).
     can be used to re-ask the question by checking the `Re-asking
     Message` box.
 
-See [best practices](#design-tips-best-practices) on how to phrase free-text
+See [best practices](/chatbot-design-tips) on how to phrase free-text
 questions in a conversation.
 
 <p align="center"><img src="/img/design-add-free-text-q.png" alt="add a
@@ -477,118 +477,10 @@ requirements:
 <p align="center"><img src="/img/chatbot-settings-2.png" alt="add a
 topic buttons" width="650"/></p>
 
-<br>
-## **Design Tips: Best Practices**
-
-In this section, we share design tips on creating superior AI chatbots
-that truly understand and help their users.
-
-
-### Start with a Chat Outline
-
-Building an AI chatbot is similar to writing a screenplay, which
-should have a beginning, body, and end. Moreover, it should have a
-clear conversation goal to drive the chatbot's main behavior. 
-
-We strongly recommend that creating a chat outline using a text
-editor, such as a Google doc. Google doc allows collaborative editing,
-which let others, e.g., your colleagues or clients, help you polish
-the outline.
-
-Below is a sample chat outline:
-<br>
-<p align="center"><img src="/img/chat-outline.png" alt="add a
-topic buttons" width="650"/></p>
-
-### Mix Messages and Requests
-
-A superior AI chatbot should support a mixed-initiative conversation, where
-it can ask and answer questions. When writing a chat outline, mix the
-use of chatbot messages (don't require user responses) and requests
-(requiring user responses).
-
-In addition, if you use multiple chatbot messages in a row, you may
-want to add `delay` time (you can set it in [topic
-settings](#topic-settings) between them to time each message so they
-do not rush out too quickly one after another.
-
-
-### Paraphrase Messages and Requests
-
-To make a chatbot sound more natural, define paraphrases for a chatbot
-message or a request. For example, if your chatbot says hello to your
-audience everyday, you want your chatbot to say something differnt to
-avoid repeatitiveness. This can be easily done by adding paraphrases
-to the hello message.
-
-Similarly, a chatbot may need to repeat a question/request if a user
-does not comply to it. In such a case, you want to add paraphrases of
-the request, so your chatbot does not repeat the request using the
-same phrase. Moreover, when giving a request first time, the chatbot
-should give more information, such as the rationale of the
-request. When repeating this request, the chatbot however should not
-repeat everything to sound robotic. 
-
-### Give Sensible Request Labels
-
-The label of a free-text request is used for multiple purposes. It is
-used to summarize the topic (see the topic card on the left panel) and
-also used to index user answers to the request in an
-audience report.
-
-More importantly, it is used to find a matched Juji built-in topic to
-handle user responses to the request. For example, Juji has a built-in
-topic that handles diverse user responses to the request `What are
-your hobbies`. To find such a built-in topic, Juji uses the entered
-label. Giving a sensible lable thus can better help Juji find the
-right built-in conversation topic, which can then handle diverse user
-responses on that topic with no or little customization required.  
-
-### Anticipate User Questions
-
-To deliver a superior user experience, an AI chatbot should
-handle user inquiries or comments falling outside the main chat flow
-***any time*** during a chat. We recommend that chatbot creators
-prepare answers to three types of user questions.
-
-#### Prepare Answers to Reciprocal Questions
-
-Users often ask reciprocal questions, such as `what is your favorite
-color` when asked the same question by a chatbot. One should
-anticipate such user behavior and prepare the chatbot to handle such
-reciprocal questions.
-
-#### Prepare `HELP` Guide
-
-To make a conversation more efficient and transparent, we recommend to
-prepare a `HELP` guide, an answer to a user's request for help. This
-will help users figure out what they can or cannot do with the
-chatbot. It will also reduce user frustrations and
-help the chatbot better guide a user behavior. 
-
-#### Prepare Answers to "Common Sense" Questions
-
-Users will enjoy interacting with a chatbot more, if the chatbot can
-answer simple, "common sense" questions related to the duties of the
-chatbot. For example, if a chatbot is used to greet online customers
-of an e-commerce business, it should answer questions about the price
-and availability of the products. Similarly, if a chatbot is used to
-onboard customers for an application, it should answer questions about
-the application. 
-
-#### Preview Chatbot Often
-
-Since an AI chatbot can exhibit complex conversation behavior, we
-strongly recommend that you preview your AI chatbot frequently during
-the customization process. This will also help you revert your
-customizations if needed before going too far, since `undo` is
-not supported at this moment.
-
-<br>
-# **What's Next**
+## **What's Next**
 
 Once a chatbot is ready, you can deploy it onto a website or a
-Facebook page. Please check out [**Chatbot Deployment**](release.md)
+Facebook page. Please check out [**Chatbot Deployment**](/release)
 to deploy your AI chatbot.
 
 

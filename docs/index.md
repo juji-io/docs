@@ -18,20 +18,20 @@ can be used alone or together to suit different application needs.
 <p align="center"><img src="/img/JujiPlatform.jpg" alt="Create an AI" width="650"/></p>
 
 
-* **Juji Studio** provides a graphical user interface (GUI) for
+  **[Juji Studio](/juji-studio)** provides a graphical user interface (GUI) for
   **everyone**, with or without technical skills or AI knowledge, to
   rapidly create, customize, test, and deploy AI chatbots **with no
   coding required**.
 
-* **Juji IDE** enables people with minimal coding skills (e.g.,
+  **Juji IDE** enables people with minimal coding skills (e.g.,
   writing HTML) to power AI chatbots with advanced capabilities (e.g.,
   customizing product recommendation policies). It provides an
   interactive development environment that allows chatbot developers
   to write, compile, and preview AI chatbots using a high-level, [chatbot
   scripting language](https://docs.juji.io/reference/).
 
-* **Juji API** enables software engineers to embed AI
-    chatbots in different applications (e.g., mobile or web-based
+  **Juji API** enables software engineers to embed AI chatbots in
+    different applications (e.g., mobile or web-based
     applications). While Juji Studio supports the rapid creation and
     customization of an AI chatbot, [Juji
     API](https://docs.juji.io/api/) allows rapid and easy integration
