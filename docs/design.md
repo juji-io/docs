@@ -478,13 +478,15 @@ requirements:
 topic buttons" width="650"/></p>
 
 <br>
-# <a name="best-practices"></a> **Design Tips: Best Practices**
+## **Design Tips: Best Practices**
+
+<a name="best-practices"></a> 
 
 In this section, we share design tips on creating superior AI chatbots
 that truly understand and help their users.
 
 
-## Start with a Chat Outline
+### Start with a Chat Outline
 
 Building an AI chatbot is similar to writing a screenplay, which
 should have a beginning, body, and end. Moreover, it should have a
@@ -500,7 +502,7 @@ Below is a sample chat outline:
 <p align="center"><img src="/img/chat-outline.png" alt="add a
 topic buttons" width="650"/></p>
 
-## Mix Messages and Requests
+### Mix Messages and Requests
 
 A superior AI chatbot should support a mixed-initiative conversation, where
 it can ask and answer questions. When writing a chat outline, mix the
@@ -513,7 +515,7 @@ settings](#topic-settings) between them to time each message so they
 do not rush out too quickly one after another.
 
 
-## Paraphrase Messages and Requests
+### Paraphrase Messages and Requests
 
 To make a chatbot sound more natural, define paraphrases for a chatbot
 message or a request. For example, if your chatbot says hello to your
@@ -529,7 +531,7 @@ should give more information, such as the rationale of the
 request. When repeating this request, the chatbot however should not
 repeat everything to sound robotic. 
 
-## Give Sensible Request Labels
+### Give Sensible Request Labels
 
 The label of a free-text request is used for multiple purposes. It is
 used to summarize the topic (see the topic card on the left panel) and
@@ -544,21 +546,21 @@ label. Giving a sensible lable thus can better help Juji find the
 right built-in conversation topic, which can then handle diverse user
 responses on that topic with no or little customization required.  
 
-## Anticipate User Questions
+### Anticipate User Questions
 
 To deliver a superior user experience, an AI chatbot should
 handle user inquiries or comments falling outside the main chat flow
 ***any time*** during a chat. We recommend that chatbot creators
 prepare answers to three types of user questions.
 
-### Prepare Answers to Reciprocal Questions
+#### Prepare Answers to Reciprocal Questions
 
 Users often ask reciprocal questions, such as `what is your favorite
 color` when asked the same question by a chatbot. One should
 anticipate such user behavior and prepare the chatbot to handle such
 reciprocal questions.
 
-### Prepare `HELP` Guide
+#### Prepare `HELP` Guide
 
 To make a conversation more efficient and transparent, we recommend to
 prepare a `HELP` guide, an answer to a user's request for help. This
@@ -566,7 +568,7 @@ will help users figure out what they can or cannot do with the
 chatbot. It will also reduce user frustrations and
 help the chatbot better guide a user behavior. 
 
-### Prepare Answers to "Common Sense" Questions
+#### Prepare Answers to "Common Sense" Questions
 
 Users will enjoy interacting with a chatbot more, if the chatbot can
 answer simple, "common sense" questions related to the duties of the
@@ -576,7 +578,7 @@ and availability of the products. Similarly, if a chatbot is used to
 onboard customers for an application, it should answer questions about
 the application. 
 
-## Preview Chatbot Often
+#### Preview Chatbot Often
 
 Since an AI chatbot can exhibit complex conversation behavior, we
 strongly recommend that you preview your AI chatbot frequently during
