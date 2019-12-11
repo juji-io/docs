@@ -48,26 +48,32 @@ As shown in the above tutorial video, getting started on Juji is
 straightforward. Below summarizes the key steps to create and deploy
 your first AI chatbot on Juji **in just a few minutes**.
 
-* **Create an account**  Sign up [here](https://juji.io/signup) and
-    follow the simple steps to create a Juji account with only a
-    working email. 
+### **Create an account**
 
-* **Create your first AI chatbot** After signing in, you can now create
-    your first AI chatbot. Click on the red `+ AI Helper` button and
-    follow the process to select `Say hello world` template.
+Sign up [here](https://juji.io/signup) and follow the simple steps to
+    create a Juji account with only a working email.
+
+### **Create First AI Chatbot**
+
+After signing in, you can now create your first AI chatbot. Click on
+    the red `+ AI Helper` button and follow the process to select `Say
+    hello world` template.
     
-* **Preview your chatbot** Now your chatbot is ready to have
-    a conversation with you. Just say hello to it as you have just met
-    a person.
+### **Preview Chatbot**
+
+Now your chatbot is ready to have a conversation with you. Just say
+    hello to it as you have just met a person.
 
 	  <p align="center"><img src="/img/chat-preview.png"
 	  alt="Preview page" width="600"/></p>
 
-* [**Deploy your chatbot**](/release/) By clicking on the `Deploy` button on
-     the left menu panel, you can now publish the chatbot with a
-     few clicks to meet your audiences on Facebook or the web.
+### **Deploy Chatbot**
 
-## **Your first AI chatbot is now live** :tada: :fireworks: :dizzy:
+By clicking on the `Deploy` button on the left menu panel, you can now
+     publish the chatbot with a few clicks to meet your audiences on
+     Facebook or the web.
+
+**Your first AI chatbot is now live** :tada: :fireworks: :dizzy:
 
 You chatbot can now engage with your target audience on your Facebook
 page:
@@ -78,7 +84,7 @@ or your website:
 <div style="margin-top: 20px; margin-bottom: 20px">
 <p align="center"><img src="/img/deployed-web.png" alt="web chat example" width="550"/></p></div>
 
-## **Monitor your chatbot**
+### **Monitor Chatbot**
 
 Juji also helps you monitor your chatbot activities and summarize
 audience information. Check out [**Reports Dashboard**](/reports)
@@ -91,8 +97,7 @@ Your AI chatbot can be very powerful: it can help you scale out traditional
 labor-intensive operations with a personal touch. For example, your AI
 chatbot can handle customer inquiries, make personalized product
 recommendations, and elicit customer reviews, 24x7 and always with a
-cool and upbeat attitude :sunglasses:
+cool and upbeat attitude :sunglasses:  Now proceed to customizing the chatbot to suit your needs.
 
-Please check out [**Chatbot Design**](/design) to customize your AI
-chatbot to suit your needs.
+### [**Customize Chatbot**](/design)
 
