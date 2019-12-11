@@ -83,7 +83,9 @@ nav:
     - Data Model: nouns.md
     - Chat API: chat.md
     - Data API: meta.md
-  - FAQs: 
-    - FAQs: faq.md
+  - AI Chatbot Design Tips:
+    - Best Practices: chatbot-design-tips.md
+  - Juji Tutorial: tutorial.md  
   - Juji Forum: https://forum.juji.io
-  - Sign up at Juji: https://juji.io/login
+  - FAQs: faq.md
+  - Sign up on Juji: https://juji.io/login

@@ -1,4 +1,4 @@
-# **Chatbot Design Tips: Best Practices**
+# **Designing AI Chatbots: Best Practices**
 
 In this section, we share tips on designing AI chatbots
 that can:
@@ -82,15 +82,27 @@ conversation experience that can best engage with target audience.
 
 ### Mix Messages and Requests
 
-An AI chatbot should support a mixed-initiative conversation, where
-it can ask and answer questions. When writing a chat outline, mix the
+Juji AI chatbots can send two types of messages (check out [chatbot
+design](/design)). One type is a plain *chatbot message* that ignores
+user input. The other is a *chatbot request* that waits for user input
+and responds to it. If a chatbot sends too many messages that ignore
+user input, it feels like a monologue (or chatbot spam) instead of a
+dialog. If a chatbot asks too many questions, it feels like an
+interrogation instead of conversation. Thus, an AI chatbot should
+support a balanced asking and answering questions, also known as a
+*mixed-initiative conversation*.  When writing a chat outline, mix the
 use of chatbot messages (don't require user responses) and requests
 (requiring user responses).
+
 
 In addition, if you use multiple chatbot messages in a row, you may
 want to add `delay` time (you can set it in [topic
 settings](#topic-settings) between them to time each message so they
 do not rush out too quickly one after another.
+
+**IMPORTANT TIP:** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
+
+<p align="center"><img src="/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
 ### Paraphrase Messages and Requests
 

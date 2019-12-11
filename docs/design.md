@@ -361,7 +361,7 @@ topic buttons" width="450"/></p>
 topic buttons" width="450"/></p>
 
 * `matches` If a user input matches a rule specified in [Juji chatbot
-    language](reference.md).
+    language](scripting.md).
 
 <p align="center"><img src="/img/matches.png" alt="add a
 topic buttons" width="450"/></p>

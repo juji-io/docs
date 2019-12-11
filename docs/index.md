@@ -6,8 +6,8 @@ operation of a new generation of Conversational Artificial
 Intelligence (AI) Assistants. Currently, these advanced AI assistants
 engage users in a text-based, natural language conversations to
 accomplish a wide variety of tasks, such as answering user inquiries
-and making personalized product recommendations. Also known as AI
-chatbots, these AI assistants can handle complex and diverse user
+and making personalized product recommendations. Also known as **AI
+chatbots**, these AI assistants can handle complex and diverse user
 inquiries, infer users' implicit needs and wants, and use such
 understanding to deliver truly hyper-personalized guidance and
 services.
