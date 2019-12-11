@@ -1,6 +1,6 @@
 no_toc: true
 
-# Frequently Asked Questions
+# **Frequently Asked Questions**
 
 <hr>
 **How do I create a chatbot/AI agent/AI helper?**
