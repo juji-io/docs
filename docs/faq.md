@@ -4,7 +4,7 @@ no_toc: true
 
 <hr>
 **How do I create a chatbot/AI agent/AI helper?**
-: On your dashboard, click on the **“+ AI Helper”** button to create a new chatbot. Check check [how to get started](https://docs.juji.io/)
+: On your dashboard, click on the **“+ AI Helper”** button to create a new chatbot. Please check [how to get started](https://docs.juji.io/)
 
 <hr>
 **How do I change persona?**

@@ -1,4 +1,4 @@
-# **Juji Tutorial**
+# **Juji Tutorials**
 
 This page hosts a set of tutorials on how to design and customize AI chatbots for various applications.
 
