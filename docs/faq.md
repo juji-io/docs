@@ -135,13 +135,18 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 : On the web deployment, you can choose whether or not you want to collect email and/or last name from your chatbot end-users. The first name is mandatory for the chatbot to properly address the user in conversation.
 
 <hr>
-**Why does my chatbot take my question?**
+**Why didn't my chatbot take my question?**
 
 My chatbot asks a question, such as "I can help you now. What can I help you with today?".  But when a user asks a question, the chatbot does not answer and I have to ask it again as shown below.
 
+<p align="center"><img src="/img/wrong-q.png" alt="Design page" width="350px"/></p>
+
+
+: Juji chatbots send two types of messages, one is just a message without waiting for a user to respond, the other is a "true" request, which will wait for a user to respond. To take a user input, make sure your question is a "true" question. Check the card associated with your question and make sure it looks like T5 below instead of T6. A "true" request/question has a chat icon associated with the card (T5), while a plain message does not have it (T6). 
+
 <p align="center"><img src="/img/pseudo-q.png" alt="Design page" width="350px"/></p>
 
-: Juji chatbots send two types of messages, one is just a message without waiting for a user to respond, the other is a "true" request, which will wait for a user to respond. To take a user input, make sure your question is a "true" question. Check the card associated with your question and make sure it looks like T5 below instead of T6. A "true" request/question has a chat icon associated with the card (T5), while a plain message does not have it (T6). When you want your chatbot to send a true question, make sure you choose `Make a Request` option as shown below:
+When you want your chatbot to send a true question, make sure you choose `Make a Request` option as shown below:
 
 <p align="center"><img src="/img/design-topic-type.png" alt="add a
 topic buttons" width="550"/></p>
