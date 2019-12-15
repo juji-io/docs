@@ -110,7 +110,11 @@ To make a chatbot sound more natural, define paraphrases for a chatbot
 message or a request. For example, if your chatbot says hello to your
 audience everyday, you want your chatbot to say something differnt to
 avoid repeatitiveness. This can be easily done by adding paraphrases
-to the hello message.
+to the hello message. Below indicates the use of the green "+" to add
+paraphrases to a chatbot message:
+
+<p align="center"><img src="/img/add-paraphrases-remark.png" alt="add a
+topic buttons" width="550"/></p>
 
 Similarly, a chatbot may need to repeat a question/request if a user
 does not comply to it. In such a case, you want to add paraphrases of
@@ -120,7 +124,7 @@ should give more information, such as the rationale of the
 request. When repeating this request, the chatbot however should not
 repeat everything to sound robotic.
 
-Below is an example showing the initial message of a chatbot request. Since this message is long, it would not be used by the chatbot to repeat the question:
+Below is an example showing the initial phrase of a chatbot request. Since this message is long, it would not be used by the chatbot to repeat the question:
 
 <p align="center"><img src="/img/initial-msg.png" alt="Initial Message" width="650"/></p>
 

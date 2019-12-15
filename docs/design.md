@@ -139,10 +139,11 @@ personalize the chatbot message.
 
 * **Add a link** Use the green `link` button to add a URL (`bio`).
 
-* **Add a paraphrase** Use the gree `+` button on the right of the
-    text bubble to add paraphrases of the message. The paraphrases
-    will be output randomly during a chat. See [best
-    practices](/chatbot-design-tips) for good uses of paraphrases.
+* **Add a paraphrase** Use the green `+` button on the right of the
+    text bubble to add paraphrases of the message (see the screenshot
+    below). The paraphrases will be selected by your chatbot randomly
+    to send during a chat. See [best practices](/chatbot-design-tips)
+    for good uses of paraphrases.
 
 <p align="center"><img src="/img/design-plain-remark.png" alt="add a
 topic buttons" width="550"/></p>
