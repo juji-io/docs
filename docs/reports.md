@@ -14,9 +14,10 @@ number of users per selected time period.
 
 ## **Audience Dashboard**
 
-Juji reports audience information in real time in two sections. In
-particular, the [audience overview](#audience-overview) section gives
-an overview of audience information and key fields.  The [audience
+Juji presents a real-time audience dashboard, which monitors and
+displays audience information in two sections. In particular, the
+[audience overview](#audience-overview) section gives an overview of
+audience information and key fields.  The [audience
 analytics](#audience-analytics) section provides more detailed data
 analytics based on conversation topics or attributes. You can also
 [export audience data](#export-audience-data) to a CSV file for
