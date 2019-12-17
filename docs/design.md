@@ -123,7 +123,87 @@ topic. The cloned topic will retain all behavior of the original topic.
 <p align="center"><img src="/img/design-clone-topic.png" alt="add a
 topic buttons" width="350"/></p>
 
-### Examples: Customizing Chatbot Content
+## **Customize Q&A and Fallback**
+
+In addition to driving a conversation based on the main chat flow, an
+AI chatbot must handle user questions or side-talking raised any time
+during a chat. To enable a chatbot to do so, Juji allows the
+customization of Q&A and fallback.  
+
+Using the `Q&A Board`, one can customize Q&A, handle fallbacks, and
+monitor unanswered user questions encountered during a chat. Below is
+an example of a Q&A board:
+
+<p align="center"><img src="/img/design-qa.png" alt="add a
+topic buttons" width="650"/></p>
+
+The above screenshot shows that there is one unanswered user question
+(see the red badge displayed next to `Q&A Board`). On this page, one
+can enter a Q&A pair or user comment/chatbot response pair directly in
+the table or upload a CSV file containing a Q&A list. Below is a video
+that shows how to create or update a Q&A list:
+
+<div align="center"> <iframe width="560" height="315"
+src="https://www.youtube.com/embed/U0tR04xQTio" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe> </div>
+
+## **Customize Chatbot Settings**
+
+In addition to customizing the main chat flow and the Q&A list, one
+can also customize various chatbot settings, including the name of the project.
+
+### Project Name
+
+You can edit the `name` of the project by mouse hovering the project
+name and then click on the `pencil` button.
+
+### Chatbot Persona
+
+<p align="center"><img src="/img/chatbot-settings-1.png" alt="chatbot settings" width="650"/></p><br>
+
+### Conversation Parameters
+You can also customer other chatbot parameters, such as setting a
+`conversation pace` and `user response` requirement as shown below. 
+
+<p align="center"><img src="/img/chatbot-settings-2.png" alt="add a
+topic buttons" width="650"/></p>
+
+* **Conversation pace** It controls how fast a chatbot transitions
+    from one topic to the next.
+
+* **Refresh duration** It controls how frequently a chatbot auto
+starts itself from the beginning. In certain situations, you wish a
+chatbot to start more frequently (e.g., an e-commerce chatbot) than
+others (e.g., an interview chatbot) to make sure that users can
+accomplish their tasks without starting over again.
+
+* **Minimal response length** It controls the minimal number of words
+a user must provide to a chatbot request. This parameter sets the
+default for *all* questions and it can also be customized for a
+specific chabot question/request.
+
+* **Default response to unknown user input** This indicates what
+    the chatbot should say when encountered unrecognizable user input,
+    no matter whether it is a comment of question.
+
+* **Fallback handling** This allows you to control what kind of
+    fallback handling is desired for your chatbot. Juji provides a
+    rich list of fallback handling functions to manage user input that
+    is outside of your chatbot script. From our experience, users
+    often deviate from your chatbot script and start a side
+    talkng. These fallback handling functions enable your chatbot to
+    handle user-initiated side talking gracefully and also keep the
+    chat on track. 
+
+
+## **Examples**
+
+In this section, we use a set of concrete examples to show how to
+customize a chatbot. In particular, we show how to customize a
+chatbot's content and its behavior.
+
+### Customizing Chatbot Content
 
 Here we use a set of examples to show how to define the content
 of different topics and how the content would appear in a chat on the web or
@@ -315,7 +395,7 @@ required` in the [topic settings](#topic-settings).
 <p align="center"><img src="/img/design-add-FB-email.png" alt="add a
 topic buttons" width="650"/></p>
 
-### Examples: Customizing Chatbot Actions
+### Customizing Chatbot Actions
 
 In a natural conversation, different user behavior should drive
 different chatbot actions. Juji supports custom chatbot actions based
@@ -439,46 +519,6 @@ topic buttons" width="550"/></p>
 <p align="center"><img src="/img/custom-end-2.png" alt="add a
 topic buttons" width="550"/></p>
 
-## **Customize Q&A and Fallback**
-
-In addition to driving a conversation based on the main chat flow, an
-AI chatbot must handle user questions or side-talking raised any time
-during a chat. To enable a chatbot to do so, Juji allows the
-customization of Q&A and fallback.  
-
-Using the `Q&A Board`, one can customize Q&A, handle fallbacks, and
-monitor unanswered user questions encountered during a chat. Below is
-an example of a Q&A board:
-
-<p align="center"><img src="/img/design-qa.png" alt="add a
-topic buttons" width="650"/></p>
-
-The above screenshot shows that there is one unanswered user question
-(see the red badge displayed next to `Q&A Board`). On this page, one
-can enter a Q&A pair or user comment/chatbot response pair directly in
-the table or upload a CSV file containing a Q&A list. Below is a video
-that shows how to create or update a Q&A list:
-
-<div align="center"> <iframe width="560" height="315"
-src="https://www.youtube.com/embed/U0tR04xQTio" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture" allowfullscreen></iframe> </div>
-
-## **Customize Chatbot Persona and Beyond**
-
-In addition to customizing the main chat flow and the Q&A list, one
-can also customize various chatbot settings.
-
-* Edit the `name` of the project and the chatbot persona:
-
-<p align="center"><img src="/img/chatbot-settings-1.png" alt="add a
-topic buttons" width="650"/></p><br>
-
-* Customize parameters to set conversation pace and user response
-requirements:
-
-<p align="center"><img src="/img/chatbot-settings-2.png" alt="add a
-topic buttons" width="650"/></p>
 
 ## **What's Next**
 

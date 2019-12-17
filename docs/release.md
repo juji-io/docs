@@ -28,6 +28,34 @@ Two URLs are generated:
 
 * **Regular URL** Use this URL for target audience. 
 
+### **Customize Web URL with External Data**
+
+In some cases, you may want to customize the generated chatbot URL
+with additional information for various purposes. For example, if you
+use a chatbot to conduct surveys or onboard customers, you may want to
+append a unique user id to the chatbot URL and send this URL to
+qualified participants or customers.  You can also append additional
+information, such as source or session information, to track where the
+users obtained your chatbot URL.
+
+It's super easy to pass such external information to Juji. You just
+need to append the information to the chatbot URL. For example, the
+following Juji URL is appended with `?source=email` to identify that
+this chatbot URL will be emailed to the target audience:
+
+`https://juji.io/pre-chat/5df866e6-e911-4924-b9e1-7440038825c6?source=email`
+
+In contrast, the following indicates the URL will be posted on
+Linkedin:
+
+`https://juji.io/pre-chat/5df866e6-e911-4924-b9e1-7440038825c6?source=linkedin`
+
+Juji will automatically capture such *external* information in its
+reports. For example, two entries below from the CSV report file show
+the captured source information (see [how to download a CSV
+report](/reports)).
+
+<p align="center"><img src="/img/capture-external-info.png" alt="Web Deployment" width="650"/></p>
 
 ## **Deploy to Facebook Page**
 
@@ -57,26 +85,45 @@ chatbot to.
 
 ## **Update Deployed Chatbot**
 
-It's possible that a chatbot is updated after its deployment. To push
-the new updates to the deployment, Juji supports two types of update:
+It's possible that a chatbot needs to be updated after its
+deployment. For example, you may want to add a new chatbot question or
+update the wording of an existing chatbot request. To push the new
+updates to the deployment, Juji supports two types of update:
 
 * **Update Existing Release** Use the `Update` button on the Facebook
     deployment page (see below) or the one under the
     `Manage` button to push the updates to the existing chatbot. The
     updated chatbot will restart and reflect the changes made.
 
+### **Update Facebook Chatbot**
 <p align="center"><img src="/img/deploy-fb-after.png" alt="After
 successful facebook deployment" width="650"/></p>
 
 <br>
 
+### **Update Web Chatbot**
 <p align="center"><img src="/img/web-update.png" alt="Update chatbot" width="650"/></p>
 
 * **New Release** Use the `Connect with Facebook` button or `New
     Release` button under `Manage` to release a new version of the
-    chatbot. The a release version will be created. When chatbot updates are
-    substantial, we recommend to make a new release since one will be
-    able to compare audience behavior under different releases.
+    chatbot. A new release version will be created.
+
+
+## **Best Practices**
+
+How do you decide when to update a chatbot vs. make a new
+release(version)?  While this is completely up to you, we recommend
+that you simply `update` a chatbto without making a new release. When
+chatbot updates are substantial, we recommend that you make a new
+release. This implies the recording information fields (e.g.,
+questions and attributes) will be substantially different. Making a
+new release will also facilitate easier comparison of audience behavior
+under different chatbot versions.
+
+In addition, the current "Reports" page shows the audience
+information for the most recent version of chatbot. If you make a new
+release, currently you may not be able to view the audience
+information for previous releases.
 
 ## **What's Next**
 
