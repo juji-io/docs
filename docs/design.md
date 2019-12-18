@@ -278,14 +278,14 @@ Below is the preview of a web media card with an image:
 topic buttons" width="550"/></p>
 
 
-#### **Free-text Request**
+#### **<a name="free-text-request"></a>Free-text Request**
 
 Perhaps the most used request for an AI chatbot is to pose free-text,
 open-ended questions during a chat. Such a question can elicit diverse
 and detailed user responses to gather in-depth insights and better
 understand users' needs and wants.
 
-As shown below, a free-text request includes the following:
+<a name="request-label"></a>As shown below, a free-text request includes the following:
 
 * **Label** Typically, a label is the short form ("stem") of a chatbot
 request. Although it automatically takes the form of the main message,
@@ -398,9 +398,78 @@ topic buttons" width="650"/></p>
 ### Customizing Chatbot Actions
 
 In a natural conversation, different user behavior should drive
-different chatbot actions. Juji supports custom chatbot actions based
-on diverse user behavior. Next we use a set of examples to show how to
-customize chatbot actions based on user behavior. 
+different chatbot actions. Juji supports the customization of chatbot
+behavior in many ways. This section will use a set of concrete
+examples to show how to easily customize a chatbot behavior based on
+application needs. 
+
+#### **Use Juji Built-in Dialog**
+
+Unlike other chatbot platforms, Juji has a dialog library that
+contains thousands of built-in mini conversations. When you [add a
+topic](#add-a-topic) that is a [free-text
+request](#free-text-request), Juji automatically uses the [request
+label](#request-label) to search its dialog library and retrieve a
+matched mini conversation for this request.
+
+For example, if you enter `Have you ever worked at a restaurant?` as
+the request label, Juji will auto retrieve the matched mini
+conversation `This is to ask a user yes/no question' (see below)
+
+<p align="center"><img src="/img/example-label-1.png" alt="add a
+topic buttons" width="650"/></p>
+
+<p align="center"><img src="/img/example-topic-1.png" alt="add a
+topic buttons" width="650"/></p>
+
+In contrast, if the request label is `What's your favorite fruit`, the
+retrieved mini conversation would be `Ask a user about his/her
+favorite thing` (see below)
+
+<p align="center"><img src="/img/example-label-2.png" alt="add a
+topic buttons" width="650"/></p>
+
+<p align="center"><img src="/img/example-topic-2.png" alt="add a
+topic buttons" width="650"/></p>
+
+In case that Juji-retrieved mini conversation is not what you want to
+use, you can always find a different built-in dialog (click on the
+green search icon as shown above).
+
+#### **Use Juji Built-in Attributes**
+
+In certain built-in dialogs, Juji automatically creates a set of
+built-in attributes to capture processed user input. For example, if a
+mini dialog talks about the `weight` of something (e.g., `How much
+does your dog weigh`), Juji automatically parses user input to the
+question and stores the parsed user input into two attributes:
+`weight-amount` and `weight-unit`.
+
+Click on the green `attribute` icon to view the attributes associated
+with a built-in dialog (see below).
+
+<p align="center"><img src="/img/system-attribute-example.png" alt="add a
+topic buttons" width="650"/></p>
+
+You can also edit the attribute names to avoid potential conflicts. For
+example, your chatbot asks two questions regarding `weight`, one for
+dog and the other for cat. You would want to change the default
+attribute names to `dog-weight-amount` and `cat-weight-amount`,
+respectively to distinguish user answers to these two questions.
+
+#### **Pin a Found Dialog**
+
+As described above, Juji uses the request label you entered to search
+and find a matched built-in dialog. This means that changing your
+request label will *automatically* trigger Juji to find a different
+matched dialog. To avoid such situations, you can use the green `pin`
+icon to pin a found dialog (see above). This means that changes in
+your request label will no longer trigger Juji to search and
+change the matched dialog automatically.
+
+Besides reusing a Juji built-in dialog, you can always customize 
+a built-in dialog. Next we use a set of examples to show how to
+customize built-in dialogs.
 
 As shown below, each customization block includes two parts:
 

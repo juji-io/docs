@@ -29,7 +29,6 @@ Two URLs are generated:
 * **Regular URL** Use this URL for target audience. 
 
 ### **Customize Web URL with External Data**
-
 In some cases, you may want to customize the generated chatbot URL
 with additional information for various purposes. For example, if you
 use a chatbot to conduct surveys or onboard customers, you may want to
@@ -76,15 +75,14 @@ green `Deploy` button to complete the deployment.
 
 <p align="center"><img src="/img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
 
-If there is no page listed, it means that you need to give Juji
-permissions to deploy your chatbot to one or more your Facebook
-pages. In that case, click on the green `Connect More` button to
+If there is no page listed, it means that you have not given Juji
+permissions to any of your Facebook pages to host your
+chatbots. In that case, click on the green `Connect More` button to
 select Facebook pages and give permissions. The permitted pages should
-then show up in a list and you can then select one or more to deploy a
+then show up in the list and you can then select one or more to deploy a
 chatbot to.  
 
 ## **Update Deployed Chatbot**
-
 It's possible that a chatbot needs to be updated after its
 deployment. For example, you may want to add a new chatbot question or
 update the wording of an existing chatbot request. To push the new
@@ -109,20 +107,23 @@ successful facebook deployment" width="650"/></p>
     chatbot. A new release version will be created.
 
 
-## **Best Practices**
+### **Best Practices**
 
-How do you decide when to update a chatbot vs. make a new
-release(version)?  While this is completely up to you, we recommend
-that you simply `update` a chatbto without making a new release. When
-chatbot updates are substantial, we recommend that you make a new
-release. This implies the recording information fields (e.g.,
-questions and attributes) will be substantially different. Making a
-new release will also facilitate easier comparison of audience behavior
-under different chatbot versions.
+How do you decide whether to update a chatbot vs. to make a new
+release or version of the chatbot?  While the decision is completely
+up to you, we recommend that you normally just `update` a chatbot
+without making a new release/version of it. If you make substantial
+changes, such as adding questions or attributes, to a chatbot, we
+recommend that you make a new release of the chatbot
+(basically with a new version number). This is because data fields
+(e.g., chatbot questions or custom attributes) could be very different
+between two releases and you don't wish to mix the old and new data
+together. Making a new release will also facilitate easier comparison
+of audience behavior under different chatbot versions.
 
-In addition, the current "Reports" page shows the audience
-information for the most recent version of chatbot. If you make a new
-release, currently you may not be able to view the audience
+Note that the current [Reports](/reports) page shows the audience
+information for the most recent release/version of chatbot. If you
+make a new release, currently you may not be able to access the audience
 information for previous releases.
 
 ## **What's Next**

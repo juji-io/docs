@@ -1,11 +1,9 @@
 
 # **Monitor AI Chatbot**
-
 Once a chatbot is deployed, the `Reports` dashboard displays the chat
 stats and the audience information.
 
 ## **Chat Stats**
-
 This dashboard currently shows the number of users who chatted with
 the chatbot. One can use the date slider below the chart to view the
 number of users per selected time period.
@@ -13,7 +11,6 @@ number of users per selected time period.
 <p align="center"><img src="/img/Report-Overview.png" alt="Chat Stats" width="650"/></p>
 
 ## **Audience Dashboard**
-
 Juji presents a real-time audience dashboard, which monitors and
 displays audience information in two sections. In particular, the
 [audience overview](#audience-overview) section gives an overview of
@@ -24,7 +21,6 @@ analytics based on conversation topics or attributes. You can also
 additional analysis or third-party integration.
 
 ### **Audience Overview**
-
 Audience overview is displayed in a table. The table is updated in
 real time to show several pieces of basic information related to users,
 such as `name`, `location`, and `channel`.
@@ -34,7 +30,6 @@ such as `name`, `location`, and `channel`.
 <br>
 
 ### **Audience Analytics**
-
 Juji automatically analyzes audience information, such as user answers
 to specific chatbot questions or distribution of custom attribute
 values. Such analytic results are organized and displayed by
@@ -47,7 +42,7 @@ percentile to the question `What's your favorite color`.
 alt="Audience Analytics" width="650"/></p>
 
 <br> For an open-ended question, Juji summarizes the free-text user
-answers to the question by auto-discovered *semantic themes* and
+answers to the question by auto-discovered **semantic themes** and
 displays the discovered themes with the top-3 highest coverages. Below
 is an example showing the themes discovered for the question `What
 subject do you teach`:
@@ -56,7 +51,6 @@ subject do you teach`:
 alt="Audience Analytics" width="650"/></p>
 
 ### **Export Audience Data**
-
 In certain cases, you may wish to export the audience data for further
 analysis or to another application, such as your in-house CRM
 application. To do so, you can always export the data by downloading 
@@ -68,7 +62,6 @@ file.
 <p align="center"><img src="/img/download-report.png" alt="Chat Stats" width="650"/></p>
 
 ## **Types of Audience Data**
-
 An AI chatbot can actively listen to users and elicit in-depth
 information and/or questions from the users. Not only does such an AI
 chatbot capture incredibly rich and insightful information from a
@@ -77,7 +70,6 @@ about users from such information. In general, Juji AI chatbots
 capture several types of information from conversations. 
 
 ### Explicit User Input
-
 This type of information includes **user responses** to chatbot
 questions and **user questions** asked during a chat. Like a survey
 platform, Juji *automatically* records user responses to every chatbot
@@ -98,7 +90,6 @@ questions can be found in the CSV file (see how to [download a CSV
 file](#export-audience-data)).
 
 ### Custom Attributes
-
 In addition to recording user responses and user questions as is, Juji
 allows chatbot creators to define custom attributes and record such
 attributes as part of audience data.
@@ -152,22 +143,21 @@ topic buttons" width="450"/></p>
 
 
 ### Inferred User Characteristics
-
 In addition to storing [explicit user input](#explicit-user-input) and
 [extracting semantic meanings](#custom-attributes) of such input, Juji
 automatically infers user characteristics from user
 input. Currently, Juji infers about 150 user characteristics, including
-`Big 5 personality`, `reader DNA` and `gamer DNA`.
+`Big 5 personality` (see example below), `reader DNA` and `gamer DNA`.
+
+<p align="center"><img src="/img/big5-example.png" alt="inferred user characteristics" width="650"/></p>
 
 
 ## **Uses of Audience Data**
-
 Because AI chatbots produce rich audience information, which can be
 used to serve the audience in a hyper-personalized manner. Below we
 share several typical usages of such data.  
 
 ### Customer Segmentation
-
 A business can use one or more types of audience information mentioned
 above to create customer segments and serve different segments
 accordingly. For example, custom attributes recording sentiment
@@ -177,7 +167,6 @@ naturally divide customers into different segments, e.g., customers
 who like `blueberries' and customers who prefer `strawberries`.
 
 ### Retargeting Marketing
-
 Based on user explicit input or extracted custom attributes,
 businesses can retarget one or more specific customer segment. Using
 the above example, a farm that specilizes in growing blueberries can
@@ -187,7 +176,6 @@ pain points and use such insights to improve products/services.
 
 
 ### Hyper-Personalized Services
-
 Audience information can also be used to provide hyper-personalized
 services and deliver superior customer experience.
 
@@ -206,7 +194,6 @@ self-help books to those who are always eager to improve oneselves.
 
 
 ## **What's Next**
-
 Based on your needs, you may want to create multiple chatbots, e.g.,
 one for helping customers and the other for helping employees. You
 need practice.  To make your chatbot making and management tasks more
