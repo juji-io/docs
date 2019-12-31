@@ -440,8 +440,17 @@ green search icon as shown above). Below is a screenshot showing the
 Juji dialog library, where you can browse and use keywords to search
 for a suitable, built-in dialog to use.
 
-<p align="center"><img src="/img/search-a-topic.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/search-a-topic.png" alt="search a
+topic" width="550"/></p>
+
+A built-in Juji dialog is very powerful as it helps handle diverse
+user behavior automatically. For example, if you wish to collect
+users' contact information, the built-in dialog `Ask a user contact
+info` automatically handles various cases, such as user already opt-in
+contact information or potentially erroneous input.
+
+
+<p align="center"><img src="/img/ask-user-contact-topic.png" alt="Ask user contact info" width="350"/></p>
 
 #### <a name="use-built-in-attributes"></a>**Use Juji Built-in Attributes**
 
