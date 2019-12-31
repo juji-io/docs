@@ -7,25 +7,36 @@ real-world applications.
 
 ## **AI Chatbots vs. Non-AI Chatbots**
 
-Your applications should decide what type of chatbots you need. In
-general, chatbots are intended to scale out human-human communications
+In general, chatbots are made to scale out human-human communications
 (e.g., product marketing and customer support) through
 automation. Depending on the underlying technologies used, today's
 chatbots fall into two broad categories: Non-AI chatbots and AI
 chatbots. Non-AI chatbots focus on automating simple tasks (e.g.,
 broadcasting messages) with little intelligence, while AI chatbots
-focus on automating tasks, including complex tasks, with a human
-touch. The table below summaries the key differences between the two
-and their suitable tasks, respectively.
+focus on automating tasks, including complex tasks that involve highly
+diverse user interactions, with a human touch.  The table below
+summaries the key differences between the two and their suitable
+applications, respectively.
 
 <p align="center"><img src="/img/comparison-table.png" alt="Non-AI
 vs. AI chatbots" width="650"/></p>
 
+Juji Studio enables you to easily create powerful AI chatbots with
+built-in machine intelligence. Your application can often help you
+decide whether you need an AI chatbot. For example, if you need a
+chatbot just to broadcast messages but ignore any user interactions
+(e.g., user questions), you probably do not need an AI chatbot. On the
+other hand, if you want your chatbot to interactively engage and help your
+audience, e.g., answering user product inquiries while introducing 
+products, then you need an AI chatbot.
+
 ### Conversation Capabilities
 
 AI chatbots and non-AI chatbots differ greatly in their capabilities
-in carrying on and managing real conversations that involve natural
-language (free-text) communications. 
+in carrying on and managing conversations that involve natural
+language (free-text) communications. The type of communications you
+want to support helps you decide whether you need a non-AI or AI
+chatbot.
 
 #### **Non-AI Chatbots**
 
@@ -75,8 +86,10 @@ which can be directly used to support various social chitchats.
 
 Having a conversation is a natural way to get to know a person and use
 the understanding to best help the person. Since chatbots aim at
-scaling out human-human communications, ideally chatbots should get
-to know their users and use such knowledge to best help their users. 
+scaling out human-human communications, ideally chatbots should get to
+know their users and use such knowledge to best help their users. The
+level of understanding about your audience that you want to obtain
+can also help you decide whether you need a non-AI or AI chatbot. 
 
 #### **Non-AI Chatbots**
 
@@ -151,14 +164,14 @@ sample chat outline" width="650"/></p>
 
 <br>
 
-### Plot Conversation Graph
+### Draw Conversation Graph
 
 As shown in the above outline, chat topics may be conditioned upon
 previous chat topics. For example, topics `T2`, `T3`, and `T4` follow up to
 one branch of `T1` (`New Booking`), while topics `T5` and `T6`
 follow the other branch of `T1` (`Manage Booking`). Since Juji
-AI chatbots support arbitrarily complex conversations that many include
-complex depencies, it is always a good idea to plot the underlying
+AI chatbots support arbitrarily complex conversations that may include
+complex depencies, it is always a good idea to draw the underlying
 **conversation graph** to layout various dependencies. Below is the
 corresponding conversation graph representing the restaurant
 reservation chatbot mentioned above.
@@ -485,13 +498,13 @@ description of the event before posing the question. In such a case,
 put the long and full description in the request, but keep the
 request label short and concise as shown in the example below:
 
-<p align="center"><img src="/img/good-label.png" alt="A sensible label" width="650"/></p>
+<p align="center"><img src="../img/good-label.png" alt="A sensible label" width="650"/></p>
 
 Here is another example showing that the request wording is long while
 the label is kept short and to the point:
 
-<p align="center"><img src="/img/good-lable-2.png" alt="A sensible
-label 2" width="650"/></p>
+<p align="center"><img src="/img/good-label-2.png" alt="A sensible
+label 2" width="550"/></p>
 
 In case you don't think the label you entered retrieves a suitable
 built-in dialog, you can always browse Juji dialog library to [search
@@ -525,7 +538,7 @@ chatbot" width="650"/></p>
 
 
 
-## **Use Juji Studio and Juji API Together
+## **Make "Native" Juji AI Chatbot**
 
 While [Juji Studio](/juji-studio) provides an easy way to author,
 test, deploy, and manage an AI chatbot, [Juji API](/api) provides the
