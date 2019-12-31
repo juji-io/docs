@@ -150,3 +150,104 @@ When you want your chatbot to send a true question, make sure you choose `Make a
 
 <p align="center"><img src="/img/design-topic-type.png" alt="add a
 topic buttons" width="550"/></p>
+
+
+<hr>
+**What capabilities will we have to sync to SalesForce or Marketo?**
+
+
+: Currently you can export all your chat data to a CSV file, which can
+then be easily imported into third-party applications, such as
+SalesForce and Marketo. Check out [how to eport to CSV](/reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
+
+<hr>
+**Will we be able to go into the chatbot at any time and make changes after it goes live?**
+
+
+: Yes, Juji Studio allows you to do so very easily and quickly. Check out the instructions under [Design](/design).
+
+<hr>
+**How long will it take to create an AI chatbot?**
+
+
+: This depends on the purpose of your chatbot. For example, if you
+want to create an e-commerce chatbot that introduces products and
+answer customer questions, it may take from a couple of hours to a few
+days, during which most of the time will be spent on coming up and
+entering the Q&A pairs. If you already have a list of Q&As and your
+product list is short, it would then be rather fast. For example, it
+would take just a few minutes to get the first version up and running
+and then a couple of hours to fine-tune it if you wish to do so.
+
+<hr>
+**How long normally can a user chat with a Juji chatbot?**
+
+: Again, this depends on the purpose of your chatbot. An interview
+chatbot may chat with its users for a long period of time (e.g., 45
+minutes), while an e-commerce chatbot may chat with its users for a
+few minutes (e.g., 5 minutes) to help resolve user issues. Please
+check out [how to determine the optimal chat length](/chatbot-design-tips#optimal-chat-length).
+
+<hr>
+**How will my chatbot be improved over time? Does it improve if more people use it?**
+
+: Your chatbot will get improved over time from two aspects. First, it will be improved if you inject more knowledge into your chatbot. Second, it will also be improved when Juji improves its underlying dialog library. Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, more Juji chatbots are in action, the better all the Juji chatbots will get, and the faster all the Juji chatbots will be improved. There is indeed a network effect for Juji chatbots.
+
+<hr>
+**After I deploy my chatbot, what should I do then?**
+
+: One wise chatbot developer says that raising a chatbot is similar to
+raising a child, you should monitor your chatbot and feed your chatbot
+with new knowledge periodically to improve it and help it grow. Juji
+provides you with dashboards to [monitor the Q&A
+status](/design#customize-qa-and-fallback) as well as [monior the
+audience interaction](/reports) with your chatbot.
+
+: We strongly recommend that you check your chatbot via the dashboards
+periodically. If you don't have time to do so, you may want to hire a
+professional (e.g., a chatbot agency) who can help you monitor and
+maintain your chatbot.
+
+<hr>
+**Should I create a chatbot on Facebook Messenger or on my website**
+
+: If you maintain a Facebook page or group and use this channel to
+engage with your target audience frequently, we recommend that you deploy a
+chatbot to your Facebook Messenger that attaches to your Facebook page
+or group. A Facebook Messenger chatbot has several advantages over a web-based deployment:
+
+: * Easy to deploy
+: * Easy to personalize a chat for an opt-in user
+: * Can be synced with Facebook posts or ads
+: * Native to any mobile devices
+: * Always on
+
+<hr>
+**Will my users/audience see my project name?**
+
+: As shown below, your project name is internal to you, while the AI chatbot name is external to your audience.
+
+<p align="center"><img src="/img/project-name-chatbot-name.png" alt="Project Name vs. Chatbot Name" width="650px"/></p>
+
+<hr>
+**How can I capture a user's emoji like "thumbs up" and respond to it using an emoji?**
+
+: In Juji, you can capture user emoji input in two ways. One is to capture the keyboard input of an emoji. For example, the keyboard input for the smiling face emoji is :-). To capture such a smiling face input and respond to it with a same emoji, you can create a trigger that uses `matches` pattern and then respond to this pattern using the keyboard input:
+
+<p align="center"><img src="/img/handle-emoji-1.png" alt="Handle Emoji" width="450px"/></p>
+
+: Here is the chat result that shows a user's emoji input and the corresponding chatbot emoji response: 
+
+<p align="center"><img src="/img/handle-emoji-1-result.png" alt="Handle Emoji Result" width="550px"/></p>
+
+: Another way of capturing emojis is to directly copy and paste an emoji into a pattern as shown below (note that you must quote the emoji):
+
+<p align="center"><img src="/img/handle-emoji-2.png" alt="Handle Emoji" width="450px"/></p>
+
+: Here is the chat result that shows a user's emoji input and the corresponding chatbot emoji response: 
+
+<p align="center"><img src="/img/handle-emoji-2-result.png" alt="Handle Emoji Result" width="550px"/></p>
+
+: In addition, Juji's built-in dialogs automatically handle many types of emojis. If you just want to use Juji default responses to user emojis, you don't need to do anything. The example below shows such a default Juji response to a user's frowning face emoji.
+
+<p align="center"><img src="/img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>

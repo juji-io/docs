@@ -51,17 +51,21 @@ topic buttons" width="550"/></p>
 
 As shown above, Juji currently supports two types of topics:
 
-* **Chatbot Request**. This is for a chatbot to ask a user a question
-  or perform a certain action. The chatbot must wait for a user
-  to respond to such a request before moving the conversation
-  forward. Currently, Juji supports five types of chatbot request:
+#### **Chatbot Request**
+
+This is for a chatbot to ask a user a question or perform a certain
+  action. The chatbot must wait for a user to respond to such a
+  request before moving the conversation forward. Currently, Juji
+  supports five types of chatbot request:
 
 <p align="center"><img src="/img/design-request-type.png" alt="add a
 topic buttons" width="550"/></p>
 
-* **Chatbot Message**. This is for a chatbot to send a message to a user
-  without waiting for a user's response. Currently, Juji supports
-  three types of chatbot message.
+#### **Chatbot Message**
+
+This is for a chatbot to send a message to a user without waiting for
+  a user's response. Currently, Juji supports three types of chatbot
+  message.
 
 <p align="center"><img src="/img/design-message-type.png" alt="add a
 topic buttons" width="550"/></p>
@@ -403,7 +407,7 @@ behavior in many ways. This section will use a set of concrete
 examples to show how to easily customize a chatbot behavior based on
 application needs. 
 
-#### **Use Juji Built-in Dialog**
+#### <a name="built-in-dialog"></a> **Use Juji Built-in Dialog**
 
 Unlike other chatbot platforms, Juji has a dialog library that
 contains thousands of built-in mini conversations. When you [add a
@@ -426,17 +430,20 @@ In contrast, if the request label is `What's your favorite fruit`, the
 retrieved mini conversation would be `Ask a user about his/her
 favorite thing` (see below)
 
-<p align="center"><img src="/img/example-label-2.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/example-label-2.png" alt="example label" width="650"/></p>
 
-<p align="center"><img src="/img/example-topic-2.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/example-topic-2.png" alt="example topic associated with a label" width="650"/></p>
 
 In case that Juji-retrieved mini conversation is not what you want to
 use, you can always find a different built-in dialog (click on the
-green search icon as shown above).
+green search icon as shown above). Below is a screenshot showing the
+Juji dialog library, where you can browse and use keywords to search
+for a suitable, built-in dialog to use.
 
-#### **Use Juji Built-in Attributes**
+<p align="center"><img src="/img/search-a-topic.png" alt="add a
+topic buttons" width="550"/></p>
+
+#### <a name="use-built-in-attributes"></a>**Use Juji Built-in Attributes**
 
 In certain built-in dialogs, Juji automatically creates a set of
 built-in attributes to capture processed user input. For example, if a
@@ -457,7 +464,7 @@ dog and the other for cat. You would want to change the default
 attribute names to `dog-weight-amount` and `cat-weight-amount`,
 respectively to distinguish user answers to these two questions.
 
-#### **Pin a Found Dialog**
+#### **Pin a Matched Dialog**
 
 As described above, Juji uses the request label you entered to search
 and find a matched built-in dialog. This means that changing your
@@ -556,7 +563,7 @@ topic buttons" width="450"/></p>
 
 * `Extended Reply` This defines a full chatbot message, including image and
   paraphrases, that a chatbot can use to make an extended reply. This
-  defines a full topic - a message topic.
+  defines a full topic - a [message topic](#customizing-chatbot-content).
 
 * `Follow-up Request` This defines a chatbot request that allows the
   chatbot to ask a follow-up question. This defines a full topic - a
@@ -577,13 +584,13 @@ topic buttons" width="250"/></p>
 
 Then click on the text bubble or the `pencil` icon to edit the topic:
 
-* Make a chatbot stick around. 
+* **Make a chatbot stick around**
 
 <p align="center"><img src="/img/custom-end-1.png" alt="add a
 topic buttons" width="550"/></p>
 
 
-* End a chatbot. 
+* **End a chatbot**
 
 <p align="center"><img src="/img/custom-end-2.png" alt="add a
 topic buttons" width="550"/></p>
