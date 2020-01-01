@@ -4,44 +4,53 @@ no_toc: true
 
 <hr>
 **How do I create a chatbot/AI agent/AI helper?**
-: On your dashboard, click on the **“+ AI Helper”** button to create a new chatbot. Please check [how to get started](https://docs.juji.io/)
+: On your dashboard, click on the **`+ AI Helper`** button to create a new chatbot. Please check [how to get started](https://docs.juji.io/)
+
+<p align="center"><img src="/img/create-chatbot.png" alt="chatbot settings" width="650"/></p>
 
 <hr>
-**How do I change persona?**
+**How do I change chatbot persona?**
 
-: Click on **”Design”** on the left menu pane, you will see the design page. Near the top of the page, click on the image of the default persona to customize your chatbot persona.
+: Click on **`Design`** on the left menu panel and then click on **`Chatbot Settings`**. On
+this page, you can customize your chatbot persona. See [Customize Chatbot Persona](/design#chatbot-persona) for more details. 
+
+<p align="center"><img src="/img/change-persona.png" alt="chatbot settings" width="650"/></p>
 
 <hr>
 **How can I define my own persona?**
-: Click on **”Design”** on the left menu pane, then click on the image of the default persona. In the pop-up window, click on “Your Own” persona to define your new persona. You can customize its name, bio as well as upload an avatar image.
+
+: Click on **`Design`** on the left menu pane, then click on the
+**`Custom`** persona. You can then define your own custom
+persona. More details are under [Customize Chatbot
+Persona](/design#chatbot-persona).
 
 <hr>
 **How do I customize a conversation?**
-: Click on **”Design”** on the left menu pane, you will see the design page. Mouse over any text bubble or click on it to edit or delete the text. You can also click on any **“+”** sign to add new conversation topic.
+: Click on **`Design`** on the left menu pane, you will see the design page. Mouse over any text bubble or click on it to edit or delete the text. You can also click on any **`+`** sign to add new conversation topic.
 
 <hr>
 **How do I add a question?**
-: Click on **”Design”** on the left menu pane, you can add a question by clicking any “+” sign then choosing the question type.
+: Click on **`Design`** on the left menu pane, you can add a question by clicking any **`+`** sign then choosing the question type.
 
 <hr>
 **How do I deploy my chatbot?**
-: Click on **“Release”** on the left menu pane to go to the release page. Then choose your deployment type.
+: Click on **`Release`** on the left menu pane to go to the release page. Then choose your deployment type.
 
 <hr>
-**What does `Design` do?**
+**What does **`Design`** do?**
 : This allows you to customize your chatbot, such as its persona and conversation.
 
 <hr>
-**What does `Deploy` do?**
+**What does **`Deploy`** do?**
 : This allows you to deploy your chatbot to meet your audience. For example, you can get a web URL and send it out with your email, or you can embed the URL on your website to meet with your website visitors.
 
 <hr>
-**What does `Reports` do?** What do the results look like? What do I get? What results do I get?
-: The “Results” page displays multiple types of information gathered by your chatbot, such as chat stats, responses from each user, personality analysis, and overall response summaries.
+**What does **`Reports`** do?** What do the results look like? What do I get? What results do I get?
+: The **`Reports`** page displays multiple types of information gathered by your chatbot, such as chat stats, responses from each user, personality analysis, and overall response summaries.
 
 <hr>
-**What does `Preview` do?**
-: The “Preview” page allows you to test your chatbot before you deploy it to meet your audience.
+**What does **`Preview`** do?**
+: The **`Preview`** page allows you to test your chatbot before you deploy it to meet your audience.
 
 <hr>
 **How will Juji use the data collected from interviewees?**

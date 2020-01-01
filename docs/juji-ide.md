@@ -20,10 +20,10 @@ Juji IDE provides an interactive development environment that allows
 ## Work with REP Scripts
 
 In the IDE, you have access to an online scripting environment. To
-access the IDE page, you can click on the red "</\>" button at the bottom left corner of the
-Juji Studio under [Chatbot Design](/design).
+access the IDE page, you can click on the red round button at the bottom left corner of the
+[Chatbot Design](/design) window in [Juji Studio](/juji-studio).
 
-<p align="center"><img src="/img/ide-button.png" alt="IDE" width="80"/></p>
+<p align="center"><img src="/img/ide-button.png" alt="IDE button" width="650"/></p>
 
 ### File Browser
 
