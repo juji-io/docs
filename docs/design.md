@@ -22,25 +22,32 @@ three areas:
 <p align="center"><img src="/img/design-main-flow.png" alt="Design page" width="650px"/></p>
 
 As shown above, an AI chatbot created based on a template already
-contains a default chat flow (see the list of topic blocks shown on
-the left side of the screen). Such a chat flow is often defined for a
-chatbot to achieve specific goals. For example, a typical sales helper
-chatbot is associated with a chat flow that asks a user several
-questions and then use the gathered information to offer personalized
-services, such as making product recommendations.
+contains a default chat flow, which consists of one or more topic
+blocks shown on the left side of the screen. Each **topic block**
+often represents a [Juji built-in mini dialog](#built-in-dialog) that
+enables a chatbot to *automatically* carry on a multi-turn
+conversation with users.
 
-Since each chatbot has its own missions, a chatbot creator can use
-following operations to easily customize a main chat flow to suit
-his/her needs.
+A chat flow is often defined for a chatbot to achieve specific
+goals. For example, a typical AI sales helper chatbot is associated with
+a chat flow that asks a user several questions and then use the
+gathered information to offer personalized services, such as making
+product recommendations.
+
+Since each chatbot is made for its own missions, you can easily
+customize a chatbot by altering the chat flow or any topic blocks
+in the flow.
 
 ### Add a Topic
 
 One can add a topic to an existing chat flow in one of the two ways:
 
-* Click on the round green "+" button below "Welcome" topic to add a topic at the end of a chat flow.
+* Click on the round green **`+`** button below the **`Welcome`** card to
+  add a topic at the beginning of a chat flow. You can also use the
+  same green **`+`** button above the **`Wrap-up`** card to add a topic at the end of a chat flow.
 
-* Mouse hover any topic card (e.g., "How are you doing?") and then
-  select the round green "+" button to add a topic after the current
+* Mouse hover any topic card (e.g., `How are you doing?`) and then
+  select the round green **`+`** button to add a topic after the current
   topic card.
 
 <p align="center"><img src="/img/design-add-topic.png" alt="add a
@@ -529,7 +536,7 @@ topic buttons" width="450"/></p>
 
 
 * `contains-sentiment` If a user input contains a positive or
-    negative sentiment.
+    negative sentiment. <a name="sentiment-detection"></a>
 
 <p align="center"><img src="/img/contain-sentiment.png" alt="add a
 topic buttons" width="450"/></p>

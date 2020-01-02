@@ -46,6 +46,31 @@
     font-style:normal
 }
 
+body {
+    font-color: black; 
+    font-size: 14px;
+    font-family:  "GothamRounded-Light";
+}
+
+h1 {
+   font-family:  "GothamRounded-Medium"; 
+   color:    rgba(0,0,0,.54);
+}
+
+h2 {
+    font-family:  "GothamRounded-Medium";
+    color: rgba(0,0,0,.54);
+}
+
+h3 {
+    font-family:  "GothamRounded-Medium"; 
+    color: rgba(0,0,0,.54);
+}
+
+h4 {
+    font-family: "GothamRounded-Book";
+    font-size: 16px;
+}
 
 @media only screen and (min-width: 60em) {
   .md-content-no-toc {

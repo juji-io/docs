@@ -34,22 +34,22 @@ Persona](/design#chatbot-persona).
 
 <hr>
 **How do I deploy my chatbot?**
-: Click on **`Release`** on the left menu pane to go to the release page. Then choose your deployment type.
+: Click on **`Deploy`** on the left menu pane to go to the release page. Then choose your deployment type. For more details, check out various [deployment functions](/release).
 
 <hr>
-**What does **`Design`** do?**
-: This allows you to customize your chatbot, such as its persona and conversation.
+**What does `Design` do?**
+: This allows you to customize your chatbot, such as its persona and chatbot actions.
 
 <hr>
-**What does **`Deploy`** do?**
+**What does `Deploy` do?**
 : This allows you to deploy your chatbot to meet your audience. For example, you can get a web URL and send it out with your email, or you can embed the URL on your website to meet with your website visitors.
 
 <hr>
-**What does **`Reports`** do?** What do the results look like? What do I get? What results do I get?
+**What does `Reports` do?** What do the results look like? What do I get? What results do I get?
 : The **`Reports`** page displays multiple types of information gathered by your chatbot, such as chat stats, responses from each user, personality analysis, and overall response summaries.
 
 <hr>
-**What does **`Preview`** do?**
+**What does `Preview` do?**
 : The **`Preview`** page allows you to test your chatbot before you deploy it to meet your audience.
 
 <hr>
@@ -65,12 +65,19 @@ Persona](/design#chatbot-persona).
 : On the “Design” page of your chatbot, you can add a single choice question by first clicking the “+” sign then choosing “Radio buttons” in the popup menu.
 
 <hr>
-**What is a follow-up request?**
-: A follow-up request/question helps deepen a conversation based on a user’s answer to the previous (parent) question. For example, a follow-up question may be used to probe further if a user’s answer to the previous question is negative. Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
+**What is a `follow-up` request?**
+: A follow-up request is where a chatbot asks a question to deepen a conversation based on a user’s answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user’s answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](/design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
+
+<hr>
+**What are the differences between a `follow-up` request or a request I added using the round green `+` button)?**
+**When should I add a `follow-up` request?**
+**Should I add a `follow-up` or just a regular request?**
+
+: It is quite simple to test whether you need a follow-up or just a regular request. A follow-up request is always conditioned upon one or more other requests. The follow-up request will not be activated if such a condition is not met during a chat. In contrast, a regular request added using the green round **`+`** button will be activated unconditionally as the chat flows to it. In other words, if you want your chatbot to always make a request regardless what happened in a chat, you will add a regular request. Otherwise, you will add a follow-up request that will depend on certain conditions, e.g., particular user responses to a chatbot question.  
 
 <hr>
 **Can I download the conversation results?**
-: Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type.
+: Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](/reports#export-audience-data) for more details.
 
 <hr>
 **Does my deployed chatbot operate 24/7?**
@@ -90,7 +97,7 @@ Persona](/design#chatbot-persona).
 
 <hr>
 **I don’t see results of my chat**
-: Only the participation in a released(deployed) chat will show up in the results page. Participation in a preview chat will not be stored as results. For Web deployment, test mode is another option for testing. Comparing with testing on the “Preview” page, the participation on the test mode link can be viewed on the “Results” page.
+: Only the participation in a released(deployed) chat will show up in the results page. Participation in a preview chat will not be stored as results. For Web deployment, test mode is another option for testing. Comparing with testing on the `Preview` page, the participation on the test mode link can be viewed on the `Results` page.
 
 <hr>
 **My chat starts over again when I return to the `Preview` page**
@@ -105,12 +112,12 @@ Persona](/design#chatbot-persona).
 : A remark is a chatbot comment in conversation that does not require user input.
 
 <hr>
-**What’s the difference between a `Message` and a `Request`?**
-: A message or remark is a chatbot comment in conversation that does not require user input. In contrast, when the chatbot asks a question or make a request, it will actively wait for the user to input the answer.
+**What are the differences between a `Message` and a `Request`?**
+: A message or remark is a chatbot comment in conversation that does not wait for a user response. In contrast, when the chatbot asks a question or make a request, it will actively wait for the user to input the answer.
 
 <hr>
-**What is custom-topic and how to write it?**
-: Custom-topic allows you to customize the way you would like the bot to respond to users’ inputs. Topics are the primary building blocks of the chatbot’s conversation. The [concept page](concept.md) of the Juji documentation provides detailed explanation on how to write a topic.
+**What is a custom topic and how to write it?**
+: A custom topic allows you to customize the way you would like the bot to respond to users’ inputs. Topics are the primary building blocks of the chatbot’s conversation. The [concept page](concept.md) of the Juji documentation provides detailed explanation on how to write a topic.
 
 <hr>
 **How can I customized the chatbot’s response to participants' answers in open-ended questions?**

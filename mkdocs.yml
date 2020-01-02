@@ -84,7 +84,9 @@ nav:
     - Chat API: chat.md
     - Data API: meta.md
   - Beginners' Guide to AI Chatbots:
-    - Best Practices: chatbot-design-tips.md
+    - Why AI Chatbots: why-ai-chatbots.md
+    - Design Tips: chatbot-design-tips.md
+    - Advanced: chatbot-design-tips-advanced.md
   - Juji Tutorials: tutorial.md  
   - Juji Forum: https://forum.juji.io
   - FAQs: faq.md

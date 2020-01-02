@@ -1,131 +1,13 @@
-# **Designing AI Chatbots: Best Practices**
+# **Making AI Chatbots: <br> Best Practices**
 
 Based on our 18+ years of experience for designing and developing
-conversational AI (AI chatbots), here we share a set of design tips for
-making practical AI chatbots that can really help human users in
-real-world applications.
+conversational AI (AI chatbots), here we share a set of design tips
+for making practical AI chatbots that can truly help human users and
+personalize their help in real-world applications.
 
-## **AI Chatbots vs. Non-AI Chatbots**
-
-In general, chatbots are made to scale out human-human communications
-(e.g., product marketing and customer support) through
-automation. Depending on the underlying technologies used, today's
-chatbots fall into two broad categories: Non-AI chatbots and AI
-chatbots. Non-AI chatbots focus on automating simple tasks (e.g.,
-broadcasting messages) with little intelligence, while AI chatbots
-focus on automating tasks, including complex tasks that involve highly
-diverse user interactions, with a human touch.  The table below
-summaries the key differences between the two and their suitable
-applications, respectively.
-
-<p align="center"><img src="/img/comparison-table.png" alt="Non-AI
-vs. AI chatbots" width="650"/></p>
-
-Juji Studio enables you to easily create powerful AI chatbots with
-built-in machine intelligence. Your application can often help you
-decide whether you need an AI chatbot. For example, if you need a
-chatbot just to broadcast messages but ignore any user interactions
-(e.g., user questions), you probably do not need an AI chatbot. On the
-other hand, if you want your chatbot to interactively engage and help your
-audience, e.g., answering user product inquiries while introducing 
-products, then you need an AI chatbot.
-
-### Conversation Capabilities
-
-AI chatbots and non-AI chatbots differ greatly in their capabilities
-in carrying on and managing conversations that involve natural
-language (free-text) communications. The type of communications you
-want to support helps you decide whether you need a non-AI or AI
-chatbot.
-
-#### **Non-AI Chatbots**
-
-Most non-AI chatbots are also known as "button bots", which drive a
-fixed chat flow that requires users to click on a set of choice
-buttons and move a "chat" forward as shown below.
-
-<p align="center"><img src="/img/button-bot-pk-1.png" alt="an example of
-button bot" width="650"/></p>
-
-In such a flow, users are not allowed to interrupt or deviate from the
-flow, let alone asking questions or making requests during the flow
-(e.g., user questions are simply ignored). Such chatbots are suitable
-for only very simple tasks during which user actions can be highly
-anticipated (e.g., only a couple of choices to make) and users are
-unlikely to deviate from a pre-defined chat flow. 
-
-#### **AI Chatbots**
-
-In contrast, AI chatbots support a natural, fluid conversation during
-which they can actively listen to users' natural language input,
-allowing users to pose questions and deviate from a planned chat
-flow. The following screenshot shows that a user poses a free-text
-question instead of answering a chatbot's initial inquiry. The
-chatbot was able to recognize the free-text question and responds to it
-instantaneously. In addition, the chatbot remembers the conversation
-context, and reasks the question.
-
-<p align="center"><img src="/img/ai-bot-pk-1.png" alt="an example of
-AI bot" width="650"/></p>
-
-<br>
-
-In addition to supporting task-oriented chats (e.g., answering user
-questions), AI chatbots are capable of social chitchats. Below is an
-example showing a social chat between a chatbot and a user:
-
-<p align="center"><img src="/img/free-text-chat.png" alt="an example of
-AI bot" width="650"/></p>
-
-As shown above, the chatbot can recognize user input and carry on a
-conversation naturally. Juji provides a dialog library that contains
-thousands of [built-in mini conversations](/design#built-in-dialog),
-which can be directly used to support various social chitchats.
-
-### People Insights from Chat
-
-Having a conversation is a natural way to get to know a person and use
-the understanding to best help the person. Since chatbots aim at
-scaling out human-human communications, ideally chatbots should get to
-know their users and use such knowledge to best help their users. The
-level of understanding about your audience that you want to obtain
-can also help you decide whether you need a non-AI or AI chatbot. 
-
-#### **Non-AI Chatbots**
-
-Since non-AI chatbots typically do not interpret users' natural
-language expressions, their understanding of users is often
-limited. For example, their understanding of users is limited at
-eliciting users' choices or preferences from button selections as
-described above. Extracting richer information or implicit meanings
-from natural language expressions is not part of the user
-understanding process in non-AI chatbots. 
-
-#### **AI Chatbots**
-
-On the other hand, AI chatbots can interpret users' free-text
-expressions, which enable them to gain a deeper understanding of
-users. The example shown below indicates that not only does an AI
-chatbot understand that a user dislikes the movie in question, but it
-is also able to gather the rationale behind the user's negative
-sentiment.
-
-<p align="center"><img src="/img/people-insights-1.png" alt="an example of
-AI bot" width="650"/></p>
-
-Furthermore, a capable AI chatbot can read between the lines and
-automatically infer a user's unique characteristics, such as implicit
-needs and wants. For example, an AI chatbot may detect from a chat
-that a user is family-oriented and can then use such information to
-personalize the service. Similarly, an AI chatbot may infer that a
-user is impulsive and a quick decision maker, the chatbot may remind
-the user of checking facts before making a decision. Below
-shows two examples where a chatbot "coaches" two different candidates
-to do their best in an interview based on their unique
-characteristics.
-
-<p align="center"><img src="/img/people-insights-2.png" alt="an example of
-AI bot" width="550"/></p>
+In case you are not sure what an AI chatbot is or why you need one,
+check out this comparison on [AI chatbots vs. Non-AI
+chatbots](/why-ai-chatbots).
 
 ## **Support Tasks and Social Chitchat**
 
@@ -476,39 +358,6 @@ page:
 alt="Default Response" width="650"/></p>
 
 
-## **Give Sensible Labels**
-
-The label of a free-text request is used for multiple purposes. It is
-used to summarize the topic (see the topic card on the left panel) and
-also used to index user answers to the request in an audience report.
-
-More importantly, it is used to find a matched Juji built-in dialog to
-handle user responses to the request. For example, Juji has a built-in
-dialog that handles diverse user responses to the request `What are
-your hobbies`. To find such a built-in dialog, Juji uses the entered
-label. Giving a sensible lable thus can better help Juji find the
-right built-in conversation, which can then handle diverse user
-responses on that topic with no or little customization required.
-
-In particular, we suggest that you give short, concise labels to
-distill chatbot requests, which facilitates the finding of matched 
-built-in dialogs. For example, if your chatbot is intended to ask a
-user about his/her opinion about an event, it might give a long
-description of the event before posing the question. In such a case,
-put the long and full description in the request, but keep the
-request label short and concise as shown in the example below:
-
-<p align="center"><img src="../img/good-label.png" alt="A sensible label" width="650"/></p>
-
-Here is another example showing that the request wording is long while
-the label is kept short and to the point:
-
-<p align="center"><img src="/img/good-label-2.png" alt="A sensible
-label 2" width="550"/></p>
-
-In case you don't think the label you entered retrieves a suitable
-built-in dialog, you can always browse Juji dialog library to [search
-for a more suitable built-in dialog](/design#built-in-dialog).
 
 ## **Preview Chatbot Often**
 
@@ -522,37 +371,9 @@ If you need to undo the designs made, you may want to use the `clone`
 function to clone a chatbot first before undoing the designs. This way
 you will always have a copy of what you have made.
 
-## **Clone Chatbot for Different Audiences**
-
-In some cases, you may want your chatbot to behave slightly
-differently for different audiences. For example, one chatbot needs to
-redirect to a different URL after it is done chatting, while the other chatbot
-may generate a unique code at the end of the chat. To reuse most of
-the shared chatbot content, you can easily clone a chatbot as shown
-below and then deploy
-different chatbots for different audiences.
-
-
-<p align="center"><img src="/img/clone-a-chatbot.png" alt="Clone a
-chatbot" width="650"/></p>
-
-
-
-## **Make "Native" Juji AI Chatbot**
-
-While [Juji Studio](/juji-studio) provides an easy way to author,
-test, deploy, and manage an AI chatbot, [Juji API](/api) provides the
-flexibility of integrating an authored chatbot into any third-party
-applications, such as a web or a mobile application. We strongly
-encourage the use of both. For example, content creators such as
-social media marketers or sales personnel can use Juji Studio to enter
-the content of a chatbot. On the other side, the IT or engineering
-team can use the Juji API to integrate such a chatbot into business
-applications to deploy a chatbot "native" to the applications. This
-separation of duties gives each team the freedom to operate while
-allowing them to collaborate on the same chatbot.
 
 ## **What's Next**
 
-Want to power up your chatbot-fu and get some more magic going? Juji has you covered. Dig deeper into **[Juji IDE](/juji-ide)**.
+Want to power up your chatbot and get some more magic going? Juji has
+you covered. Dig deeper into [advanced design tips](/chatbot-design-tips-advanced) or **[Juji IDE](/juji-ide)**.
 
