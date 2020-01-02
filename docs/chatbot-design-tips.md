@@ -95,7 +95,7 @@ details on how to add/edit Q&As.
 
 <p align="center"><img src="/img/design-qa.png" alt="define Q&As" width="650"/></p>
 
-#### Prepare `HELP` Guide
+#### Prepare HELP Guide
 
 No matter how smart your chatbot is, it cannot do everything. To make
 a conversation more efficient and transparent, we recommend that you
