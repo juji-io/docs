@@ -6,7 +6,7 @@ automation. Depending on the underlying technologies used, today's
 chatbots fall into two broad categories: Non-AI chatbots and AI
 chatbots.
 
-## **Comparison Table**
+## **A Quick Comparison**
 
 Non-AI chatbots focus on automating simple tasks (e.g., broadcasting
 messages) with little intelligence, while AI chatbots focus on
@@ -143,8 +143,10 @@ determine whether you need an AI chatbot.
 * Do you want your chatbot to bond with your audience through social
   interactions and handle exceptions gracefully?
 
-* Do you want your chatbot to learn insights of your audience and
-  use such insights to help them?  
+* Do you want your chatbot to learn insights of your audience from a chat and
+  use such insights to help them in the chat?
+
+* Do you want your chatbot to improve and learn over time?
 
 If your answer is **`yes`** to **any** of the above questions, you
 need an AI chatbot. Additionally, you can use the above questions to

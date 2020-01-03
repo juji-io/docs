@@ -1,15 +1,41 @@
-no_toc: true
 
 # **Frequently Asked Questions**
 
 <hr>
-**How do I create a chatbot/AI agent/AI helper?**
+#### What are the differences between AI chatbots and non-AI chatbots?
+: Here is a [quick comparison](/why-ai-chatbots#a-quick-comparison) between the two.
+
+<hr>
+####Why do I need an AI chatbot?
+: Here is a [quick test](/why-ai-chatbots#ai-chatbots-a-quick-test) to help you determine if you need an AI chatbot.
+
+<hr>
+#### How do I know my chatbot has AI in it?
+#### How do I tell if my chatbot is an AI chatbot?
+
+: You can use the quick test below to check if your chatbot has any AI in it. If your answer is "yes" to all questions below, your chatbot is definitely an AI chatbot.
+: * Can your chatbot interact with your audience naturally, e.g.,
+  answering user natural language questions any time during a chat?
+
+: * Can your chatbot handle multi-step tasks with highly diverse (often
+  non-linear) user paths that are difficult to numerate or anticipate?
+
+: * Can your chatbot bond with your audience through natural, social
+  interactions?
+
+: * Can your chatbot learn insights of your audience from a chat and
+  use such insights to help them in the chat in real time?
+
+: * Can your chatbot improve and learn from more user interactions over time?
+
+<hr>
+####How do I create an AI chatbot/AI helper/AI agent?
 : On your dashboard, click on the **`+ AI Helper`** button to create a new chatbot. Please check [how to get started](https://docs.juji.io/)
 
 <p align="center"><img src="/img/create-chatbot.png" alt="chatbot settings" width="650"/></p>
-
+  
 <hr>
-**How do I change chatbot persona?**
+####How do I change chatbot persona?
 
 : Click on **`Design`** on the left menu panel and then click on **`Chatbot Settings`**. On
 this page, you can customize your chatbot persona. See [Customize Chatbot Persona](/design#chatbot-persona) for more details. 
@@ -17,7 +43,7 @@ this page, you can customize your chatbot persona. See [Customize Chatbot Person
 <p align="center"><img src="/img/change-persona.png" alt="chatbot settings" width="650"/></p>
 
 <hr>
-**How can I define my own persona?**
+####How can I define my own persona?
 
 : Click on **`Design`** on the left menu pane, then click on the
 **`Custom`** persona. You can then define your own custom
@@ -25,110 +51,114 @@ persona. More details are under [Customize Chatbot
 Persona](/design#chatbot-persona).
 
 <hr>
-**How do I customize a conversation?**
+####How do I customize a conversation?
 : Click on **`Design`** on the left menu pane, you will see the design page. Mouse over any text bubble or click on it to edit or delete the text. You can also click on any **`+`** sign to add new conversation topic.
 
 <hr>
-**How do I add a question?**
+####How do I add a question?
 : Click on **`Design`** on the left menu pane, you can add a question by clicking any **`+`** sign then choosing the question type.
 
 <hr>
-**How do I deploy my chatbot?**
+####How do I deploy my chatbot?
 : Click on **`Deploy`** on the left menu pane to go to the release page. Then choose your deployment type. For more details, check out various [deployment functions](/release).
 
 <hr>
-**What does `Design` do?**
+####What does `Design` do?
 : This allows you to customize your chatbot, such as its persona and chatbot actions.
 
 <hr>
-**What does `Deploy` do?**
+####What does `Deploy` do?
 : This allows you to deploy your chatbot to meet your audience. For example, you can get a web URL and send it out with your email, or you can embed the URL on your website to meet with your website visitors.
 
 <hr>
-**What does `Reports` do?** What do the results look like? What do I get? What results do I get?
+#### What does `Reports` do?
+#### What do the results look like?
+#### What do I get?
+What results do I get?
 : The **`Reports`** page displays multiple types of information gathered by your chatbot, such as chat stats, responses from each user, personality analysis, and overall response summaries.
 
 <hr>
-**What does `Preview` do?**
+####What does `Preview` do?
 : The **`Preview`** page allows you to test your chatbot before you deploy it to meet your audience.
 
 <hr>
-**How will Juji use the data collected from interviewees?**
+####How will Juji use the data collected from interviewees?
 : Privacy is very important to us. Please refer to our privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
 <hr>
-**How to add a multiple choice (checkboxes) question?**
+#### How to add a multiple choice (checkboxes) question?
 : On the “Design” page of your chatbot, you can add a multiple choice question by first clicking the “+” sign then choosing “Checkboxes” in the popup menu.
 
 <hr>
-**How to add a single choice (radio buttons) question?**
+####How to add a single choice (radio buttons) question?
 : On the “Design” page of your chatbot, you can add a single choice question by first clicking the “+” sign then choosing “Radio buttons” in the popup menu.
 
 <hr>
-**What is a `follow-up` request?**
+####What is a follow-up request?
 : A follow-up request is where a chatbot asks a question to deepen a conversation based on a user’s answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user’s answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](/design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
 
 <hr>
-**What are the differences between a `follow-up` request or a request I added using the round green `+` button)?**
-**When should I add a `follow-up` request?**
-**Should I add a `follow-up` or just a regular request?**
+####What are the differences between a follow-up request or a request I added using the round green `+` button)?
+####When should I add a follow-up request?
+####Should I add a follow-up or a regular request?
 
 : It is quite simple to test whether you need a follow-up or just a regular request. A follow-up request is always conditioned upon one or more other requests. The follow-up request will not be activated if such a condition is not met during a chat. In contrast, a regular request added using the green round **`+`** button will be activated unconditionally as the chat flows to it. In other words, if you want your chatbot to always make a request regardless what happened in a chat, you will add a regular request. Otherwise, you will add a follow-up request that will depend on certain conditions, e.g., particular user responses to a chatbot question.  
 
 <hr>
-**Can I download the conversation results?**
+####Can I download the conversation results?
 : Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](/reports#export-audience-data) for more details.
 
 <hr>
-**Does my deployed chatbot operate 24/7?**
+####Does my deployed chatbot operate 24/7?
 : Certainly. Your chatbot is alive 24x7.
 
 <hr>
-**How do I deploy the chat to my website?**
+####How do I deploy the chat to my website?
 : Go to “Release” page, choose web deployment to get the URL. You can then embed the URL into an iframe on your website.
 
 <hr>
-**How much does a chatbot cost?**
+####How much does a chatbot cost?
 : It is free for your chatbot to chat with as many people as you want, if you don't use Juji Premier features (e.g., customizing chatbot behavior based on natural language input or downloading chat reports). Subscription to Juji Premier starts at $20/month, up to 1000 chatbot subscribers or $200/yr. If you are from academia and intend to use Juji for academic research, please contact us at hello@juji.io for special discount. 
 
 <hr>
-**How to use the chatbot with Qualtrics?**
-: You can include Juji chatbot’s Web deployment link in your qualtrics messages; alternatively, you can include qualtrics survey link in Juji chatbot’s messages.
+####How to use Juji chatbot with Qualtrics or Survey Monkey?
+####How to use Juji chatbot with other survey software?
+: You can include Juji chatbot’s Web deployment link in your survey messages. Alternatively, you can include third-party survey link in Juji chatbot’s messages.
 
 <hr>
-**I don’t see results of my chat**
+####I don’t see results of my chat
 : Only the participation in a released(deployed) chat will show up in the results page. Participation in a preview chat will not be stored as results. For Web deployment, test mode is another option for testing. Comparing with testing on the `Preview` page, the participation on the test mode link can be viewed on the `Results` page.
 
 <hr>
-**My chat starts over again when I return to the `Preview` page**
+####My chat starts over again when I return to the `Preview` page
 : This is the expected behavior. “Preview” page is set up for user to tests their designed chats in different scenarios. When refreshed or returning to the “Preview” page from elsewhere, it will restart the chat.
 
 <hr>
-**I want a completion code for Mechanical Turk. How do I get a completion code?***
+####I want a completion code for Mechanical Turk. How do I get a completion code?
 : In the `Wrap-up` topic, if you choose to end the chat, you have an option to  choose whether or not you want to display a completion code that is unique for every end-user when the conversation ends. 
 
 <hr>
-**What is a `Remark`or `Message`?**
+####What is a `Remark`or `Message`?
 : A remark is a chatbot comment in conversation that does not require user input.
 
 <hr>
-**What are the differences between a `Message` and a `Request`?**
+####What are the differences between a `Message` and a `Request`?
 : A message or remark is a chatbot comment in conversation that does not wait for a user response. In contrast, when the chatbot asks a question or make a request, it will actively wait for the user to input the answer.
 
 <hr>
-**What is a custom topic and how to write it?**
+####What is a custom topic and how to write it?
 : A custom topic allows you to customize the way you would like the bot to respond to users’ inputs. Topics are the primary building blocks of the chatbot’s conversation. The [concept page](concept.md) of the Juji documentation provides detailed explanation on how to write a topic.
 
 <hr>
-**How can I customized the chatbot’s response to participants' answers in open-ended questions?**
+####How can I customized the chatbot’s response to participants' answers in open-ended questions?
 : You can use both [Juji Studio](/juji-studio) or [Juji IDE](/juji-ide) to customize chatbot responses. Also check out [Chatbot Design](/design) for specifics. 
 
 <hr>
-**Does the chatbot work with interview questions which have primarily choice answers, and need only the chatbot’s help to draw out responses for those who select “other” in their multiple choice answer?**
+####Does the chatbot work with interview questions which have primarily choice answers, and need only the chatbot’s help to draw out responses for those who select “other” in their multiple choice answer?
 : Yes, we support choice questions, open-ended questions, and other types of questions. Although we recommend our users to take advantage of our AI powered conversation skills and personality analysis by using open-ended questions, our chatbot works perfectly in chat with primarily choice questions. The AI chatbot can be easily set up to collect extra responses when interviewee select "other" in a multiple choice question.
 
 <hr>
-**Will Juji keep a copy of user contact information and their responses? Will Juji retain rights to use them?**
+####Will Juji keep a copy of user contact information and their responses? Will Juji retain rights to use them?
 
 : Juji holds privacy at the very heart of our
 product. We do not actively collect contact information from chatbot
@@ -139,19 +169,19 @@ the data collected and other privacy concerns, please refer to our
 privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
 <hr>
-**Will the persona I choose affect the way s/he responds to users?**
+####Will the persona I choose affect the way s/he responds to users?
 : Yes, different persona may have different responses depending on the context of the chat. Please check our publication regarding the [effect of chatbot personality](https://dl.acm.org/citation.cfm?id=3232077&dl=ACM&coll=DL).
 
 <hr>
-**If I give you the type of audience and information I am after, can you help me choose a fitting persona?**
+####If I give you the type of audience and information I am after, can you help me choose a fitting persona?
 : We can help you choose a fitting persona if you provide more information about the interview you would like to conduct.
 
 <hr>
-**I don’t want to collect any identifying information such as email addresses or last names**
+####I don’t want to collect any identifying information such as email addresses or last names
 : On the web deployment, you can choose whether or not you want to collect email and/or last name from your chatbot end-users. The first name is mandatory for the chatbot to properly address the user in conversation.
 
 <hr>
-**Why didn't my chatbot take my question?**
+####Why didn't my chatbot take my question?
 
 My chatbot asks a question, such as "I can help you now. What can I help you with today?".  But when a user asks a question, the chatbot does not answer and I have to ask it again as shown below.
 
@@ -169,7 +199,7 @@ topic buttons" width="550"/></p>
 
 
 <hr>
-**What capabilities will we have to sync to SalesForce or Marketo?**
+####What capabilities will we have to sync to SalesForce or Marketo?
 
 
 : Currently you can export all your chat data to a CSV file, which can
@@ -177,13 +207,13 @@ then be easily imported into third-party applications, such as
 SalesForce and Marketo. Check out [how to eport to CSV](/reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
 
 <hr>
-**Will we be able to go into the chatbot at any time and make changes after it goes live?**
+####Will we be able to go into the chatbot at any time and make changes after it goes live?
 
 
 : Yes, Juji Studio allows you to do so very easily and quickly. Check out the instructions under [Design](/design).
 
 <hr>
-**How long will it take to create an AI chatbot?**
+####How long will it take to create an AI chatbot?
 
 
 : This depends on the purpose of your chatbot. For example, if you
@@ -196,7 +226,7 @@ would take just a few minutes to get the first version up and running
 and then a couple of hours to fine-tune it if you wish to do so.
 
 <hr>
-**How long normally can a user chat with a Juji chatbot?**
+####How long normally can a user chat with a Juji chatbot?
 
 : Again, this depends on the purpose of your chatbot. An interview
 chatbot may chat with its users for a long period of time (e.g., 45
@@ -205,12 +235,12 @@ few minutes (e.g., 5 minutes) to help resolve user issues. Please
 check out [how to determine the optimal chat length](/chatbot-design-tips#optimal-chat-length).
 
 <hr>
-**How will my chatbot be improved over time? Does it improve if more people use it?**
+####How will my chatbot be improved over time? Does it improve if more people use it?
 
 : Your chatbot will get improved over time from two aspects. First, it will be improved if you inject more knowledge into your chatbot. Second, it will also be improved when Juji improves its underlying dialog library. Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, more Juji chatbots are in action, the better all the Juji chatbots will get, and the faster all the Juji chatbots will be improved. There is indeed a network effect for Juji chatbots.
 
 <hr>
-**After I deploy my chatbot, what should I do then?**
+####After I deploy my chatbot, what should I do then?
 
 : One wise chatbot developer says that raising a chatbot is similar to
 raising a child, you should monitor your chatbot and feed your chatbot
@@ -225,7 +255,7 @@ professional (e.g., a chatbot agency) who can help you monitor and
 maintain your chatbot.
 
 <hr>
-**Should I create a chatbot on Facebook Messenger or on my website**
+####Should I create a chatbot on Facebook Messenger or on my website
 
 : If you maintain a Facebook page or group and use this channel to
 engage with your target audience frequently, we recommend that you deploy a
@@ -239,14 +269,14 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 : * Always on
 
 <hr>
-**Will my users/audience see my project name?**
+####Will my users/audience see my project name?
 
 : As shown below, your project name is internal to you, while the AI chatbot name is external to your audience.
 
 <p align="center"><img src="/img/project-name-chatbot-name.png" alt="Project Name vs. Chatbot Name" width="650px"/></p>
 
 <hr>
-**How can I capture a user's emoji like "thumbs up" and respond to it using an emoji?**
+####How can I capture a user's emoji like "thumbs up" and respond to it using an emoji?
 
 : In Juji, you can capture user emoji input in two ways. One is to capture the keyboard input of an emoji. For example, the keyboard input for the smiling face emoji is :-). To capture such a smiling face input and respond to it with a same emoji, you can create a trigger that uses `matches` pattern and then respond to this pattern using the keyboard input:
 
@@ -269,7 +299,7 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 <p align="center"><img src="/img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>
 
 <hr>
-**How many question variations or expressions should I put in when preparing Q&A?**
+####How many question variations or expressions should I put in when preparing Q&A?
 
 : You can start with just one expression per question. Juji has a rich question library that will automatically augment a question you put in. Additionally, Juji chatbots always try to recommend similar questions if it could not find a well matched question during a chat. You can also use the [Q&A dashboard](/design#customize-qa-and-fallback) to monitor and improve the Q&A capabilities of your chatbot incrementally.  
 
