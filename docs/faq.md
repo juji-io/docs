@@ -267,3 +267,12 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 : In addition, Juji's built-in dialogs automatically handle many types of emojis. If you just want to use Juji default responses to user emojis, you don't need to do anything. The example below shows such a default Juji response to a user's frowning face emoji.
 
 <p align="center"><img src="/img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>
+
+<hr>
+**How many question variations or expressions should I put in when preparing Q&A?**
+
+: You can start with just one expression per question. Juji has a rich question library that will automatically augment a question you put in. Additionally, Juji chatbots always try to recommend similar questions if it could not find a well matched question during a chat. You can also use the [Q&A dashboard](/design#customize-qa-and-fallback) to monitor and improve the Q&A capabilities of your chatbot incrementally.  
+
+: Below is an example showing that a chatbot recommends similar questions when a highly matched question could not be found.
+
+<p align="center"><img src="/img/recommend-questions.png" alt="Recommend similar questions" width="650"/></p>
