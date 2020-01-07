@@ -11,7 +11,7 @@ chatbots.
 Non-AI chatbots focus on automating simple tasks (e.g., broadcasting
 messages) with little intelligence, while AI chatbots focus on
 automating tasks, including complex tasks that involve highly diverse
-user interactions, with a human touch.  The table below summaries the
+user interactions, with a human touch.  The table below summarizes the
 key differences between the two and their suitable applications,
 respectively.
 
