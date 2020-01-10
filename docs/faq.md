@@ -306,3 +306,32 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 : Below is an example showing that a chatbot recommends similar questions when a highly matched question could not be found.
 
 <p align="center"><img src="/img/recommend-questions.png" alt="Recommend similar questions" width="650"/></p>
+
+<hr>
+
+####Why do I see overlapped topic cards or cannot add follow-ups?
+
+: One of the most probably reason is that you are editing the same
+chatbot in multiple windows/tabs. In these parallel sessions, you might have
+been editing different parts of the chatbot flow and conflicts were
+created and could not reconciled. While we will prevent multiple
+sessions to be active at the same time in the near future, please
+check to make sure you have only one window/tab open for one chatbot.
+
+
+<hr>
+
+####Why cannot my chatbot answer any questions even after I uploaded
+Q&A CSV file on the Q&A dashboard?
+
+: If this occurs, please double check the Q&A CSV file you
+uploaded. Make sure that all the Q&As are entered following the CSV format as
+indicated. Check out the [required format](/design#customize-qa-and-fallback).
+
+<hr>
+
+####How do I suspend/pause/stop/disable a chatbot? I don't want to delete my
+chatbot but I want to pause it.
+
+: This is quite easy to do on Juji. Just follow these steps to
+[suspend a chatbot](/design#suspend-chat). 

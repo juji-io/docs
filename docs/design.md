@@ -77,7 +77,7 @@ This is for a chatbot to send a message to a user without waiting for
 <p align="center"><img src="/img/design-message-type.png" alt="add a
 topic buttons" width="550"/></p>
 
-**IMPORTANT TIP:** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
+**IMPORTANT TIP** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
 
 <p align="center"><img src="/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
@@ -151,8 +151,26 @@ topic buttons" width="650"/></p>
 The above screenshot shows that there is one unanswered user question
 (see the red badge displayed next to `Q&A Board`). On this page, one
 can enter a Q&A pair or user comment/chatbot response pair directly in
-the table or upload a CSV file containing a Q&A list. Below is a video
-that shows how to create or update a Q&A list:
+the table or upload a CSV file containing a Q&A list.
+
+**IMPORTANT TIP** If you decide to put all your Q&As in a CSV file and then upload, download the CSV file first as it contains the required file format to fill in your Q&As. As shown below, each template includes four columns:
+
+<p align="center"><img src="/img/qa-csv.png" alt="CSV file of Q&A" width="650"/></p>
+
+All four columns must be preserved, so is their order.  Although the
+first column (**`ID`**) and the last column (**`Comment`**) can be
+left empty, the empty columns must still exist and cannot be deleted.
+
+* **ID** You can use this column to give your Q&A pair a name/label. This label is especially useful if you want to group all different question expressions without duplicating the same answer (e.g., rows 2-3 and rows 5-6 representing two sets of Q&As). If you don't provide an ID, Juji will automatically generate one. 
+
+* **Question** This column holds questions.
+
+* **Answer** This column holds answers.
+
+* **Comment** This column holds your comments, which is optional. 
+
+Below is a very short video that shows how to create or update a Q&A
+list:
 
 <div align="center"> <iframe width="560" height="315"
 src="https://www.youtube.com/embed/U0tR04xQTio" frameborder="0"
@@ -593,14 +611,31 @@ topic buttons" width="450"/></p>
   chatbot to ask a follow-up question. This defines a full topic - a
   request topic. 
 
-#### **Customize End Topic**
+#### <a href="suspend-chat"></a>**Suspend Current Chat** 
+
+Sometimes, you may want to pause a chatbot a bit before letting it
+interact with your audience again. You can do so easily following these steps:
+
+* Go to `Main Chat Flow` under `Design`
+
+* Click on the **`Welcome`** card
+
+* Click on the slider under the welcome message (on the right panel) to suspend a chat. See the screenshot below. 
+
+* Edit the welcome message accordingly to inform users about the suspension/pause.
+
+<p align="center"><img src="/img/suspend-chatbot.png" alt="Suspend chat" width="650"/></p>
+
+**IMPORTANT TIP** If your chatbot is deployed via a web URL, you may also want to change the greeting message on the [web cover page](/release#deploy-to-website) to inform future users about the pause/suspension.
+
+#### **Customize End Topic** <a href="customize-end-topic"></a>
 
 One may want to customize a chatbot's ending behavior. For example, if
 a survey chatbot needs to end a conversational survey at some point. In
 contrast, a customer service chatbot must hang around to serve
 customers.
 
-To customize the ending behavior, click on the `Wrap-up`
+To customize the ending behavior, click on the **`Wrap-up`**
 topic, the last topic in the left topic panel.
 
 <p align="center"><img src="/img/wrapup-topic.png" alt="add a
