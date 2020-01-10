@@ -643,13 +643,13 @@ topic buttons" width="250"/></p>
 
 Then click on the text bubble or the `pencil` icon to edit the topic:
 
-* **Make a chatbot stick around**
+: **Option 1: Make a chatbot stick around**
 
 <p align="center"><img src="/img/custom-end-1.png" alt="add a
 topic buttons" width="550"/></p>
 
 
-* **End a chatbot**
+: **Option 2: End a chatbot**
 
 <p align="center"><img src="/img/custom-end-2.png" alt="add a
 topic buttons" width="550"/></p>
