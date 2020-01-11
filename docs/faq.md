@@ -299,6 +299,7 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 <p align="center"><img src="/img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>
 
 <hr>
+
 ####How many question variations or expressions should I put in when preparing Q&A?
 
 : You can start with just one expression per question. Juji has a rich question library that will automatically augment a question you put in. Additionally, Juji chatbots always try to recommend similar questions if it could not find a well matched question during a chat. You can also use the [Q&A dashboard](/design#customize-qa-and-fallback) to monitor and improve the Q&A capabilities of your chatbot incrementally.  
@@ -309,29 +310,30 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 
 <hr>
 
-####Why do I see overlapped topic cards or cannot add follow-ups?
+#### Why do I see overlapped topic cards or cannot add follow-ups?
 
 : One of the most probably reason is that you are editing the same
 chatbot in multiple windows/tabs. In these parallel sessions, you might have
 been editing different parts of the chatbot flow and conflicts were
-created and could not reconciled. While we will prevent multiple
+created and could not be reconciled. While we will prevent multiple
 sessions to be active at the same time in the near future, please
-check to make sure you have only one window/tab open for one chatbot.
+check to make sure you have only one window/tab open for one chatbot
+at a time.
 
 
 <hr>
 
-####Why cannot my chatbot answer any questions even after I uploaded
-Q&A CSV file on the Q&A dashboard?
+#### Why cannot my chatbot answer any questions even after I uploaded my Q&A CVS file?
 
 : If this occurs, please double check the Q&A CSV file you
-uploaded. Make sure that all the Q&As are entered following the CSV format as
-indicated. Check out the [required format](/design#customize-qa-and-fallback).
+uploaded. Make sure that all the Q&As are entered in the CSV following
+the [required format](/design#customize-qa-and-fallback).
 
 <hr>
 
-####How do I suspend/pause/stop/disable a chatbot? I don't want to delete my
-chatbot but I want to pause it.
+####How do I suspend/pause/stop/disable a chatbot? I don't want to delete my chatbot but I want to pause it.
+
+####How do I set up "out of office" for my chatbot?
 
 : This is quite easy to do on Juji. Just follow these steps to
 [suspend a chatbot](/design#suspend-chat). 
