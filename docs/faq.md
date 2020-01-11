@@ -323,7 +323,7 @@ at a time.
 
 <hr>
 
-#### Why cannot my chatbot answer any questions even after I uploaded my Q&A CVS file?
+#### Why cannot my chatbot answer any questions even after I uploaded my Q&A CSV file?
 
 : If this occurs, please double check the Q&A CSV file you
 uploaded. Make sure that all the Q&As are entered in the CSV following
