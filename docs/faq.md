@@ -312,13 +312,13 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 
 #### Why do I see overlapped topic cards or cannot add follow-ups?
 
-: One of the most probable reason is that you are editing the same
-chatbot in multiple windows/tabs. In these parallel sessions, you might have
-been editing different parts of the chatbot flow and conflicts were
-created and could not be reconciled. While we will prevent multiple
-sessions to be active at the same time in the near future, please
-check to make sure you have only one window/tab open for one chatbot
-at a time.
+: One of the most probable reasons is that you are editing the same
+chatbot in multiple windows/tabs or several people are using the same
+account. In these parallel sessions, you might have been editing
+different parts of the chatbot flow and conflicts were created and
+could not be reconciled. While we will prevent multiple sessions to be
+active at the same time in the near future, please check to make sure
+you have only one window/tab open for one chatbot at a time.
 
 
 <hr>
