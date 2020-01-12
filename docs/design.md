@@ -149,11 +149,13 @@ an example of a Q&A board:
 topic buttons" width="650"/></p>
 
 The above screenshot shows that there is one unanswered user question
-(see the red badge displayed next to `Q&A Board`). On this page, one
-can enter a Q&A pair or user comment/chatbot response pair directly in
-the table or upload a CSV file containing a Q&A list.
+(indicated by the red badge displayed next to the `Q&A Board`). On
+this page, one can enter a Q&A pair or user comment/chatbot response
+pair directly in the table or upload a CSV file containing a Q&A list.
 
-**IMPORTANT TIP** If you decide to put all your Q&As in a CSV file and then upload, download the CSV file first as it contains the required file format to fill in your Q&As. As shown below, each template includes four columns:
+<a name="qa-tips">**IMPORTANT TIP**</a> If you decide to put all your Q&As in a CSV file and then upload, download the CSV file first as it contains the required file format to fill in your Q&As.
+
+As shown below, each template includes four columns:
 
 <p align="center"><img src="/img/qa-csv.png" alt="CSV file of Q&A" width="650"/></p>
 
@@ -161,11 +163,11 @@ All four columns must be preserved, so is their order.  Although the
 first column (**`ID`**) and the last column (**`Comment`**) can be
 left empty, the empty columns must still exist and cannot be deleted.
 
-* **ID** You can use this column to give your Q&A pair a name/label. This label is especially useful if you want to group all different question expressions without duplicating the same answer (e.g., rows 2-3 and rows 5-6 representing two sets of Q&As). If you don't provide an ID, Juji will automatically generate one. 
+* **ID** You can use this column to give your Q&A pair a name/label.  If you don't provide an ID, Juji will automatically generate one.  This label is especially useful if you want to group all varied question expressions without duplicating the same answer (e.g., rows 2-3 and rows 5-6 representing two sets of Q&As). The question expressions with the same ID are considered the **same** question. 
 
-* **Question** This column holds questions.
+* **Question** This column holds questions and their varied expressions. 
 
-* **Answer** This column holds answers.
+* **Answer** This column holds answers. You can enter alternative answers to the same question. This will make your chatbot sound more intelligent. When there are alternative answers, a chatbot randomly chooses one to use when answering a matched question. 
 
 * **Comment** This column holds your comments, which is optional. 
 
@@ -220,6 +222,7 @@ a user must provide to a chatbot request. This parameter sets the
 default for *all* questions and it can also be customized for a
 specific chabot question/request.
 
+<a name="default-response"></a>
 * **Default response to unknown user input** This indicates what
     the chatbot should say when encountered unrecognizable user input,
     no matter whether it is a comment of question.

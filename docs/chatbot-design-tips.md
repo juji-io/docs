@@ -87,15 +87,15 @@ topic in the main outline to a Q&A or social chitchat). They will
 always bring users back on track (i.e., the topics in the main
 outline).
 
-In particular, we recommend that you prepare answers to three types of
-user questions that can be anticipated. All the Q&As can be entered in
-a CSV file or directly in the table on the `Q&A Board` page. Please
-refer to [Customize Q&A](/design#customize-qa-and-fallback) for more
-details on how to add/edit Q&As.
+In particular, we recommend that you prepare answers to <a href="#" name="qa-types">**three types of user questions**</a> that can be anticipated.
 
-<p align="center"><img src="/img/design-qa.png" alt="define Q&As" width="650"/></p>
+: * <a href="#help-guide">HELP Guide</a>
 
-#### Prepare HELP Guide
+: * <a href="#recip-q">Reciprocal Questions</a>
+
+: * <a href="#common-q">Common Sense Questions</a>
+
+#### <a name="help-guide"></a>Prepare HELP Guide
 
 No matter how smart your chatbot is, it cannot do everything. To make
 a conversation more efficient and transparent, we recommend that you
@@ -110,14 +110,21 @@ and then click `Submit`. You can also do so by downloading the CSV file on
 the Q&A board, filling in the entry related to `Help` in the CSV file,
 and then uploading the revised CSV file.
 
-#### Prepare Answers to Reciprocal Questions
+As part of the HELP guide, it is also valuable to customize answers to the following two questions:
+
+* **User request to chat with a human agent**. By default, this question is already in a chatbot's knowledge base. You may want to edit the system default response based on your situation. Just download the CSV file from the Q&A board and edit the answer to this question in the CSV file. Then upload. 
+
+* **Default response to any unrecognized user input**. You can edit the <a href="https://docs.juji.io/design#default-response" target="_blank">**default response to unknown user input**</a> as part of the [conversation parameters](/design#conversation-parameters).
+
+
+#### <a name="recip-q"></a>Prepare Answers to Reciprocal Questions
 
 Users often ask reciprocal questions, such as `what is your favorite
 color` when asked the same question by a chatbot. One should
 anticipate such user behavior and prepare the chatbot to handle such
 reciprocal questions.
 
-#### Prepare Answers to "Common Sense" Questions
+#### <a name="common-q"></a>Prepare Answers to "Common Sense" Questions
 
 Users will enjoy interacting with a chatbot more, if the chatbot can
 answer simple, "common sense" questions related to the duties of the
@@ -127,6 +134,12 @@ and availability of the products. Similarly, if a chatbot is used to
 onboard customers for an application, it should answer questions about
 the application.
 
+All the Q&As can be entered in a CSV file or directly in the table on
+the `Q&A Board` page. Please refer to [Customize
+Q&A](/design#customize-qa-and-fallback) for more details on how to
+add/edit Q&As.
+
+<p align="center"><img src="/img/design-qa.png" alt="define Q&As" width="650"/></p>
 
 ## **Balance Business Goals and User Experience**
 

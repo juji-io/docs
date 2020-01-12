@@ -138,7 +138,7 @@ What results do I get?
 : In the `Wrap-up` topic, if you choose to end the chat, you have an option to  choose whether or not you want to display a completion code that is unique for every end-user when the conversation ends. 
 
 <hr>
-####What is a `Remark`or `Message`?
+####What is a `Remark` or `Message`?
 : A remark is a chatbot comment in conversation that does not require user input.
 
 <hr>
@@ -299,6 +299,55 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 <p align="center"><img src="/img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>
 
 <hr>
+####Why do I need the ID column in my Q&A CSV file? Can I delete it? Do I have to use the IDs given to me?
+
+: The ID column is used to "index" the Q&A list so your chatbot knows how various questions are related to each other. For example, the questions with the same ID indicate that these questions share the same answer so you don't need to repeat the answers in the CSV entries.
+
+: The ID column must be kept in the CSV file. You can change the
+values in the ID column to whatever text labels you want to use. We in
+fact encourage you to use labels that you can remember to facilitate
+Q&A management. After you make such changes, make sure you choose the
+`Replace` option when you upload the changed CSV file. See [more tips](/design#qa-tips) on defining IDs.
+
+<hr>
+####How many questions should I put in so my chatbot can function reasonably smart?
+
+: This depends on your chatbot application. Applications that involve
+much knowledge especially complex knowledge may need many more
+questions than others. Here is a practical way to [anticipate the
+types of questions](/chatbot-design-tips#prepare-qa-list-and-chitchats)
+your chatbot should handle. This list helps you jumpstart the smarts
+of your chatbot.
+
+<hr>
+####Why do I always need to confirm the answers to the unanswered user questions on my Q&A dashboard? Can my chatbot learn itself? Why didn't my chatbot automatically learn new Q&As?
+
+: In the background, your chatbot is indeed learning constantly based its interactions with users. Just like any machine learning, self-learning may be erroneous (still remember the [infamous chatbot Tay](https://en.wikipedia.org/wiki/Tay_(bot))?). To avoid such mistakes, Juji currently uses human-in-the-loop learning, which requires that a human verifies the learned results before adopting them.
+
+: Consider the chat below between a user and a chatbot, selling
+products that cure fleas.  Since the chatbot could not find an answer
+to the user's question, it shows several potentially matched
+questions. Although the user didn't see the answer she seeks, she is
+interested in the answer regarding pet use. So she clicks the
+suggested question and views the answer.
+
+<p align="center"><img src="/img/wrong-qa-1.png" alt="Wrong Matched QA" width="550px"/></p>
+
+: Such user behavior teaches the chatbot the two questions `Can I use
+your product for my kids` and `Can I use your product for my pets?`
+are somewhat related to each other. This is why it shows that the question is the best matched on on Q&A dashboard:
+
+<p align="center"><img src="/img/wrong-qa-2.png" alt="Wrong Matched QA" width="550px"/></p>
+
+: However, the chatbot cannot determine whether they are close enough
+to share the same answer. In this case, the two clearly cannot share
+the same answer. Since such determination is highly domain dependent
+(e.g., the type of products being sold), the chatbot needs to be
+taught. This is why Juji requires that a human manually verifies
+whether a matched answer is indeed a good match. This will keep a
+chatbot's knowledge base clean, and hopefully free of errors.
+
+<hr>
 
 ####How many question variations or expressions should I put in when preparing Q&A?
 
@@ -337,3 +386,4 @@ the [required format](/design#customize-qa-and-fallback).
 
 : This is quite easy to do on Juji. Just follow these steps to
 [suspend a chatbot](/design#suspend-chat). 
+
