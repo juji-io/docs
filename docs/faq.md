@@ -322,30 +322,34 @@ of your chatbot.
 <hr>
 ####Why do I always need to confirm the answers to the unanswered user questions on my Q&A dashboard? Can my chatbot learn itself? Why didn't my chatbot automatically learn new Q&As?
 
-: In the background, your chatbot is indeed learning constantly based its interactions with users. Just like any machine learning, self-learning may be erroneous (still remember the [infamous chatbot Tay](https://en.wikipedia.org/wiki/Tay_(bot))?). To avoid such mistakes, Juji currently uses human-in-the-loop learning, which requires that a human verifies the learned results before adopting them.
+: In the background, your chatbot is indeed learning constantly based on its interactions with users. Like any machine learning, self-learning however may be erroneous (still remember the [infamous chatbot Tay](https://en.wikipedia.org/wiki/Tay_(bot))?). To avoid such mistakes, Juji currently uses human-in-the-loop learning, which requires that a human verifies the learned results before adopting them.
 
-: Consider the chat below between a user and a chatbot, selling
-products that cure fleas.  Since the chatbot could not find an answer
-to the user's question, it shows several potentially matched
+: Here is an example where self-learned results may be
+problematic. Consider the chat below between a user and a chatbot,
+selling products that cure fleas.  Since the chatbot could not find an
+answer to the user's question, it shows several potentially matched
 questions. Although the user didn't see the answer she seeks, she is
-interested in the answer regarding pet use. So she clicks the
-suggested question and views the answer.
+interested in the answer regarding pet use anyway. So she clicks on the
+suggested question (option 1) and views the answer.
 
 <p align="center"><img src="/img/wrong-qa-1.png" alt="Wrong Matched QA" width="550px"/></p>
 
-: Such user behavior teaches the chatbot the two questions `Can I use
-your product for my kids` and `Can I use your product for my pets?`
-are somewhat related to each other. This is why it shows that the question is the best matched on on Q&A dashboard:
+: Through this user interaction, the chatbot learns that the two
+questions `Can I use your product for my kids` and `Can I use your
+product for my pets?` are somewhat related to each other. It then
+lists the latter as the top-matched one on the Q&A dashboard:
 
 <p align="center"><img src="/img/wrong-qa-2.png" alt="Wrong Matched QA" width="550px"/></p>
 
-: However, the chatbot cannot determine whether they are close enough
-to share the same answer. In this case, the two clearly cannot share
-the same answer. Since such determination is highly domain dependent
-(e.g., the type of products being sold), the chatbot needs to be
-taught. This is why Juji requires that a human manually verifies
-whether a matched answer is indeed a good match. This will keep a
-chatbot's knowledge base clean, and hopefully free of errors.
+: However, the chatbot cannot really determine whether these two
+questions are close enough to share the same answer. In this case, it
+might be very problematic if just making the two questions share the
+same answer simply based on the user interaction. Such determination
+is often highly domain dependent (e.g., the type of products being
+sold), the chatbot needs to be taught explicitly. Hence Juji requires
+that a human manually verifies whether a matched question is indeed a
+good match to avoid potential mistakes. This will keep a chatbot's
+knowledge base clean, and hopefully free of errors.
 
 <hr>
 

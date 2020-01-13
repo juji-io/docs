@@ -139,19 +139,25 @@ topic buttons" width="350"/></p>
 In addition to driving a conversation based on the main chat flow, an
 AI chatbot must handle user questions or side-talking raised any time
 during a chat. To enable a chatbot to do so, Juji allows the
-customization of Q&A and fallback.  
+customization of Q&A and fallback. Such customization enables Juji
+chatbots to answer user free-text questions, handle user digressions, and
+even chitchat socially, anytime during a conversation.
 
-Using the `Q&A Board`, one can customize Q&A, handle fallbacks, and
-monitor unanswered user questions encountered during a chat. Below is
-an example of a Q&A board:
+### **Handle Free-Text Q&As**
+
+Using the `Q&A Board`, one can support custom, natural-language Q&As,
+monitor, and manage unanswered user questions encountered during a
+chat. Below is an example of a Q&A board:
 
 <p align="center"><img src="/img/design-qa.png" alt="add a
 topic buttons" width="650"/></p>
 
-The above screenshot shows that there is one unanswered user question
-(indicated by the red badge displayed next to the `Q&A Board`). On
-this page, one can enter a Q&A pair or user comment/chatbot response
-pair directly in the table or upload a CSV file containing a Q&A list.
+On this page, one can enter a custom Q&A pair directly in the table
+(using the green **`+`** button to add) or upload a CSV file
+containing a Q&A list. The above screenshot also shows that there is
+one unanswered user question (indicated by the red badge displayed
+next to the `Q&A Board`). Juji automatically detects unanswered user
+questions and displays such questions on the Q&A dashboard.
 
 <a name="qa-tips">**IMPORTANT TIP**</a> If you decide to put all your Q&As in a CSV file and then upload, download the CSV file first as it contains the required file format to fill in your Q&As.
 
@@ -163,13 +169,41 @@ All four columns must be preserved, so is their order.  Although the
 first column (**`ID`**) and the last column (**`Comment`**) can be
 left empty, the empty columns must still exist and cannot be deleted.
 
-* **ID** You can use this column to give your Q&A pair a name/label.  If you don't provide an ID, Juji will automatically generate one.  This label is especially useful if you want to group all varied question expressions without duplicating the same answer (e.g., rows 2-3 and rows 5-6 representing two sets of Q&As). The question expressions with the same ID are considered the **same** question. 
+* **ID** You can use this column to give your Q&A pair a
+    name/label. If you don't provide an ID, Juji will automatically
+    generate one. This label is especially useful to group all varied
+    question expressions into the **same question**. This way you
+    don't need to duplicate the answer for each varied expression. For
+    example, rows 2-3 and rows 5-6 represent two sets of
+    Q&As. Moreover, they also share all the alternative answers (see
+    below).
 
 * **Question** This column holds questions and their varied expressions. 
 
 * **Answer** This column holds answers. You can enter alternative answers to the same question. This will make your chatbot sound more intelligent. When there are alternative answers, a chatbot randomly chooses one to use when answering a matched question. 
 
-* **Comment** This column holds your comments, which is optional. 
+* **Comment** This column holds your comments, which is optional.
+
+
+### **Support Social Chitchat**
+
+In addition to answering user questions, you may want your chatbot to
+support social chitchat, e.g., responding to user casual comments. Similar
+to handling Q&As, you can enter user comments (e.g., `you are really
+smart`) and corresponding chatbot responses (e.g., `Thank you, I'm
+flattered`). During a chat, whenever users make matched comments, your
+chatbot can then respond to them.
+
+Below shows an example of custom social chitchat. Whenever a user
+texts expressions similar to those indicated under ID `Humor`
+(B8-B10), the chatbot will tell a joke by randomly picking one from
+cells C8 and C9:
+
+<p align="center"><img src="/img/custom-fallback.png" alt="Custom Fallback" width="650"/></p>
+
+**IMPORTANT TIP** Juji already provides rich, built-in social chitchats. We recommend that you observe the behavior of your chatbot first before adding any custom user comment-chatbot response pairs. 
+
+### **Tutorial Video**
 
 Below is a very short video that shows how to create or update a Q&A
 list:
