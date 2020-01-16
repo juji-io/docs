@@ -391,3 +391,18 @@ the [required format](/design#customize-qa-and-fallback).
 : This is quite easy to do on Juji. Just follow these steps to
 [suspend a chatbot](/design#suspend-chat). 
 
+<hr>
+####What is the difference between 'contains-keywords` and `is-similar-to` trigger?
+#### When should I use `contains-keywords` vs. `is-similar-to` trigger to guide my chatbot?
+
+: To decide which type of trigger to use, please check out [this tip](/chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
+
+<hr>
+####When should I use a choice question vs. a free-text question?
+####How should I decide a choice question vs. a free-text question?
+
+: These two questions normally elicit different types of
+information. One (choice) is more structured than the other
+(free-text). Check out [this design tip](/chatbot-design-tips-advanced#use-proper-chatbot-request) to
+choose one to deliver the best user experience.
+

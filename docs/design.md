@@ -81,6 +81,11 @@ topic buttons" width="550"/></p>
 
 <p align="center"><img src="/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
+**IMPORTANT TIP**
+
+To decide which chatbot request to use, please check out this [design
+tip](/chatbot-design-tips-advanced#use-proper-chatbot-request).
+
 ### Edit a Topic
 
 Once a topic is added, one can then edit the topic. See the section
@@ -384,7 +389,7 @@ questions in a conversation.
 <p align="center"><img src="/img/design-add-free-text-q.png" alt="add a
 topic buttons" width="850"/></p>
 
-#### **Choice Request**
+#### <a name="choice-request">**Choice Request**</a>
 
 One of the popular chatbot request is to ask a user to make a
 choice. Below is an example of a single choice request, also known as
@@ -433,7 +438,6 @@ repeats the choice question.
 
 <p align="center"><img src="/img/preview-choice-q-fb-fallback.png" alt="add a
 topic buttons" width="350"/></p>
-
 
 #### **Facebook Choice**
 
@@ -623,8 +627,16 @@ as customizing a chatbot message (see below) or indexing audience
 information (e.g., showing all users who `like-protein`).
 
 Note that for a **choice request**, since a user's input must be one
-of the choices, there is just one **IF** condition, the choice made by
+of the choices, there is just one type of **IF** condition, the choice made by
 the user.
+
+
+**IMPORTANT TIP**
+
+To decide which type of trigger (chatbot condition) to use, please
+check out this [design
+tip](/chatbot-design-tips-advanced#use-proper-chatbot-trigger).
+
 
 #### **Customize THEN Actions**
 
