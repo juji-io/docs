@@ -199,6 +199,25 @@ you have to use a yes-no question (e.g., collecting a definite yes-no
 answer), you may want to add a follow-up `Why` free-text question to
 elicit the rationale behind user responses.   
 
+### Use Proper Juji Built-in Dialog
+
+As mentioned in the [design](/design) section, Juji provides a rich
+set of [built-in, mini conversations](/design#built-in-dialog). These
+built-in dialogs automatically handle highly diverse, potentially
+complex user expressions. Such dialogs deliver great conversation experience
+without requiring much customization.
+
+Since Juji uses the request label (see how to [give a good label](/chatbot-design-tips-advanced#give-sensible-labels)) to find the matched built-in dialog, such match is not always correct. For example, your chatbot is supposed to ask a yes-no question, such as `Would you like to take a test drive?`. Juji may not always match such a question with the built-in dialog that handles yes-no question.
+
+<p align="center"><img src="/img/example-topic-1.png" alt="add a
+topic buttons" width="650"/></p>
+
+We thus strongly recommend that you always check the retrieved built-in dialog to see if it is what you want. If the retrieved built-in dialog is incorrect, use the search button to find a better matched Juji built-in dialog. Using a proper built-in dialog not only supports a better conversation experience, but also reduces your effort of customizing a chatbot. 
+
+<p align="center"><img src="/img/search-a-topic.png" alt="search a
+topic" width="550"/></p>
+
+
 ### Optimal Chat Length
 
 Although Juji AI chatbots can engage users in a very lengthy

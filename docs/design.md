@@ -500,6 +500,12 @@ topic buttons" width="650"/></p>
 <p align="center"><img src="/img/example-topic-1.png" alt="add a
 topic buttons" width="650"/></p>
 
+In this case, the built-in dialog will automatically process a user's
+positive or negative responses and enable you use the auto-detected
+expressions to direct the user to different paths. In other words, you
+don't need to worry about how to define triggers to catch highly
+diverse users' positive or negative expressions.
+
 In contrast, if the request label is `What's your favorite fruit`, the
 retrieved mini conversation would be `Ask a user about his/her
 favorite thing` (see below)
@@ -523,8 +529,8 @@ users' contact information, the built-in dialog `Ask a user contact
 info` automatically handles various cases, such as user already opt-in
 contact information or potentially erroneous input.
 
-
-<p align="center"><img src="/img/ask-user-contact-topic.png" alt="Ask user contact info" width="350"/></p>
+<p align="center"><img src="/img/ask-user-contact-topic.png" alt="Ask
+user contact info" width="350"/></p>
 
 #### <a name="use-built-in-attributes"></a>**Use Juji Built-in Attributes**
 
