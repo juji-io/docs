@@ -126,7 +126,11 @@ unique characteristics.
 AI bot" width="550"/></p>
 
 
-## **AI Chatbots? A Quick Test**
+## **Quick Test**
+
+There are many hypes and hopes about AI chatbots. If you are wondering whether you need an AI chatbot, a quick test below may help you make a decision. Additionally, there are many chatbot platforms out but not all of them can make AI chatbots. If you decide to make an AI chatbot, use the second test below to help you find the right chatbot platform that can live up to your expectations.
+
+### **Do I Need AI Chatbot**
 
 As described above, the differences between non-AI and AI chatbots are
 their abilities to engage with humans, glean human insights from a
@@ -151,6 +155,35 @@ determine whether you need an AI chatbot.
 If your answer is **`yes`** to **any** of the above questions, you
 need an AI chatbot. Additionally, you can use the above questions to
 evaluate whether a chatbot is an AI chatbot and its capabilities.  
+
+### **Which AI Chatbot Platform to Use?** <a name="right-platform"></a>
+
+This seems like a difficult question to answer especially for people who are notan AI expert. There is in fact a simple test to evaluate AI chatbot platforms: 
+
+* Does the platform use its own chatbot to serve its own business? In other words, do they trust their own product enough to dogfood it?
+
+* If the answer to the above question is `yes`, how do you like your interaction with the featured chatbot? Keep in mind that this is perhaps one of their better chatbots.
+   
+   : - Whether and how well does it understand your free-text input?
+   
+   : - Whether and how well does it address your questions and handle your interruptions?
+   
+   : - Whether and how well does it help you achieve your task?
+  
+* If the answers to the above questions are all positive, how fast can you use the platform to create a simple AI chatbot yourself? Just make a simple chatbot to demonstrate the following:
+
+    : - Ask an open-ended question to greet a user - (e.g., `How are you doing?`)
+    : - Present a piece of information (e.g., introducing a product)
+    
+    : - Ask user opinion after presenting the information
+
+    : - Ask a general question before responding to chatbot greeting
+      
+    : - Ask a question about the presented information before giving your own opinion
+
+* If platform does not allow you to DIY the simple AI chatbot as above, how long will take the platform provider to do it for you?
+
+If the answers to all the above questions are positive, there is definitely a good sign that the platform is an AI chatbot platform. You can then make a decision based on additional factors, such as ease-of-use and pricing of the platform.
 
 ## **What's Next**
 
