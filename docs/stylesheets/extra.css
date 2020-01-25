@@ -72,14 +72,14 @@ h4 {
     font-size: 16px;
 }
 
+@media only screen and (min-width: 76.25em) {
+  .md-content-no-toc {
+    margin-left: 12.1rem;
+  }
+}
+
 @media only screen and (min-width: 60em) {
   .md-content-no-toc {
     margin-right: 0;
-    margin-left: 20em;
-  }
-
-  .md-content {
-      margin-right: 24.2em;
-      margin-left: 20em;
   }
 }

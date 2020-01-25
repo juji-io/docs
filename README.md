@@ -51,4 +51,4 @@ mkdocs gh-deploy --config-file ../docs/mkdocs.yml --remote-branch master
 pip install mkdocs mkdocs-material pymdown-extensions --upgrade
 ```
 
-If the mkdocs-material theme is updated, we need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/material/base.html`
+If the mkdocs-material theme is updated, we need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/material/base.html`. Also need to change the names of the assets files to be the same as the built ones using `mkdocs build`.

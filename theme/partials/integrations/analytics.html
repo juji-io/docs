@@ -1,0 +1,16 @@
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script async src='assets/javascripts/autotrack.js'></script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', "{{ config.google_analytics[0] }}", 'auto', {allowLinker: true});
+ga('require', 'linkid');
+ga('require', 'cleanUrlTracker');
+ga('require', 'impressionTracker');
+ga('require', 'maxScrollTracker');
+ga('require', 'outboundLinkTracker');
+ga('require', 'pageVisibilityTracker');
+ga('require', 'urlChangeTracker');
+ga('require', 'linker');
+ga('linker:autoLink', ['docs.juji.io', 'juji.io'], false, false);
+ga('send', 'pageview');
+</script>
+
