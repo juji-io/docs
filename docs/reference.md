@@ -151,6 +151,10 @@ four tokens: `"Hello"`, `","`, `"world"`, `"!"`.
 The only exception is `-`, which is not considered a token of its own.
 For instance, `"twenty-five-year-old"` is a single token.
 
+In addition, we group consecutive digits together as a single token. 
+For example, "2:30pm" is converted into a sequence of four tokens: 
+"2", ":", "30", and "pm".
+
 In REP, a token could be represented with a symbol, a string, or a regex.
 
 ### Symbol token
