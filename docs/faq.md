@@ -81,6 +81,18 @@ industry standard secure protocols. Regarding details of our use of
 the data collected and other privacy concerns, please refer to our
 privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
+<hr>
+<a name="!cost"></a>
+### How much does a chatbot cost?
+: You can create as many chatbots as you want without being charged. It is also
+  free for your chatbot to chat with as many people as you want, if you don't
+  use Juji Premium features (e.g., customizing chatbot behavior based on natural
+  language input or downloading chat reports). Subscription to Juji Premium
+  starts at $25/month or $240/year, which includes up to 100 free chats per month. 
+  After that, each additional chat costs $0.1, the usage is billed monthly.  If you 
+  are from academia and intend to use Juji for academic research, please contact 
+  us at hello@juji.io for special discount.
+
 ## Design Questions
 
 <hr>
@@ -457,13 +469,3 @@ maintain your chatbot.
 then be easily imported into third-party applications, such as
 SalesForce and Marketo. Check out [how to eport to CSV](/reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
 
-<hr>
-<a name="!cost"></a>
-### How much does a chatbot cost?
-: You can create as many chatbots as you want without being charged. It is also
-  free for your chatbot to chat with as many people as you want, if you don't
-  use Juji Premium features (e.g., customizing chatbot behavior based on natural
-  language input or downloading chat reports). Subscription to Juji Premium
-  starts at $25/month or $240/year, which includes up to 100 free chats. After that, each additional chat costs $0.1.
-
-  If you are from academia and intend to use Juji for academic research, please contact us at hello@juji.io for special discount.
