@@ -619,6 +619,19 @@ The captured content can then be referred to later by its name symbol, for examp
     [I love (?kind +) pizza]
     ```
 
+It is often desirable to normalize the captured content into a standard format to store in the captured variable, we can add an additional argument for the capture form to do this. This 3rd elment of the capture form can be either a function or a value. If it is a value, it will simply replace the captured content. If it is a function, the function must have two parameters, the first parameter being the REP instance, the second the captured tokens in a vector. For example, 
+
+```Clojure
+;; Given user input "3", this rule will save in ?x "number"
+[(?x #token/regex "\\d" "number")]
+[?x]
+
+;; This will capture "1984/2/13" and save in ?x "2-13-1984"
+[(?x [#token/regex "\\d{4}" "/" #token/regex "\\d{1,2}" "/" #token/regex "\\d{1,2}"]
+     (fn [rep & [year _ month _ day]] (apply str month "-" day "-" year)))]
+[?x]
+```
+
 Capturing content is not allowed in actions, but referring to the captured
 content in action patterns is its intended use, where we gather user input.
 
