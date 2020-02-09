@@ -329,16 +329,21 @@ Wildcard patterns do not make sense in actions, and thus are not allowed there.
 The patterns we introduced so far will only match if the input strictly
 conforms to the prescribed regular grammar. However, it is often desirable to
 specify a loosely defined containment relationship, such as, the input must
-contain all the specified pattern (`:a`), or the input must not contain any of
-the specified patterns (`:!`).
+contain all the specified patterns (`:a`), the input must not contain any of
+the specified patterns (`:!`), or the input must contain some of the specified patterns (`:s`).
+Order of the sub-patterns do not matter for containment.
 
 ```Clojure
-; all three tokens must appear, in any order
+; all three tokens must appear, in any order,
 ; it matches "i love this pizza" or "this is the pizza I love"
 [:a pizza I love]
-; none of the three tokens can appear
+; none of the three tokens can appear,
 ; it matches "i love coffe", but not "I love pizza"
 [:! pizza hamburger bacon]
+; some of the three tokens can appear, in any order,
+; it matches "i love pizza and bacon", or "hamburger bacon and pizza", 
+; but not "I love tofu"
+[:s pizza hamburger bacon]
 ```
 
 Containment patterns are not allowed in actions.
