@@ -81,7 +81,7 @@ The advantages of EDN and Transit are richer data types. With Transit you also g
 GraphQL always returns a 200 HTTP response status code, so we have to rely on
 the `errors` field of the response to check for errors.
 
-Per the GraphQL specification, `errors` is an array of maps (dictionaries).  Each error map will have the following keys `message`, `category`, `kind` and `data`.  `data` is any valid `JSON` or `EDN` value and the other fields are all strings.  There are four (4) broad categories of errors `authentication`, `authorization`, `validation` and `unexpected`.  Within each category, `kind` explicitly identifies the actual error.
+Per the GraphQL specification, `errors` is an array of maps (dictionaries).  Each error map will have the following keys `message`, `category`, `kind` and `data`.  `data` is any valid `JSON` or `EDN` value and the other fields are all strings.  There are five (5) broad categories of errors `authentication`, `authorization`, `validation`, `application` and `unexpected`.  Within each category, `kind` explicitly identifies the actual error.
 
 For example, an authentication errors look like:
 ```json
