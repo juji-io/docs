@@ -6,11 +6,19 @@ We welcome pull requests for this repository.
 
 ## Setup
 
-Make sure you have python on your system. Now install needed extensions:
+Make sure you have python on your system. It is safer to use the same version of python as we do. 
 
 ```bash
-pip install mkdocs==1.0.4
-pip install mkdocs-material==3.3.0
+brew install pyenv
+pyenv install 3.6.6
+pyenv global 3.6.6
+```
+
+Now install needed extensions:
+
+```bash
+pip install mkdocs
+pip install mkdocs-material
 ```
 
 ## Test
@@ -51,4 +59,4 @@ mkdocs gh-deploy --config-file ../docs/mkdocs.yml --remote-branch master
 pip install mkdocs mkdocs-material pymdown-extensions --upgrade
 ```
 
-If the mkdocs-material theme is updated, we need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/material/base.html`. Also need to change the names of the assets files to be the same as the built ones using `mkdocs build`.
+If the mkdocs-material theme is updated, we need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`. Also need to change the names of the assets files to be the same as the built ones using `mkdocs build`.

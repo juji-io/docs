@@ -23,7 +23,7 @@
         <link rel="canonical" href="{{ page.canonical_url }}">
       {% endif %}
       {% if page and page.meta and page.meta.author %}
-        <meta name="author" content="{{ page.meta.author | first }}">
+        <meta name="author" content="{{ page.meta.author }}">
       {% elif config.site_author %}
         <meta name="author" content="{{ config.site_author }}">
       {% endif %}
@@ -41,19 +41,19 @@
         <meta name="lang:{{ key }}" content="{{ lang.t(key) }}">
       {% endfor %}
       <link rel="shortcut icon" href="{{ config.theme.favicon | url }}">
-      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-3.3.0">
+      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-4.6.3">
     {% endblock %}
     {% block htmltitle %}
       {% if page and page.meta and page.meta.title %}
         <title>{{ page.meta.title }}</title>
       {% elif page and page.title and not page.is_homepage %}
-        <title>{{ page.title }} - {{ config.site_name }}</title>
+        <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
       {% else %}
         <title>{{ config.site_name }}</title>
       {% endif %}
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ 'assets/stylesheets/application.1b62728e.css' | url }}">
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/application.adb8469c.css' | url }}">
       {% if palette.primary or palette.accent %}
         <link rel="stylesheet" href="{{ 'assets/stylesheets/application-palette.a8b3c06d.css' | url }}">
       {% endif %}
@@ -66,21 +66,21 @@
       {% endif %}
     {% endblock %}
     {% block libs %}
-      <script src="{{ 'assets/javascripts/modernizr.268332fc.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/modernizr.86422ebf.js' | url }}"></script>
     {% endblock %}
     {% block fonts %}
       {% if font != false %}
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{
-              font.text | replace(' ', '+')  + ':300,400,400i,700|' +
+              font.text | replace(' ', '+') + ':300,400,400i,700%7C' +
               font.code | replace(' ', '+')
-            }}">
+            }}&display=fallback">
         <style>body,input{font-family:"GothamRounded-Book","GothamRounded-Light","GothamRounded-Medium"}code,kbd,pre{font-family:"GothamRounded-Book","GothamRounded-Light","GothamRounded-Medium",monospace}</style>
       {% endif %}
     {% endblock %}
     <link rel="stylesheet" href="{{ 'assets/fonts/material-icons.css' | url }}">
     {% if config.extra.manifest %}
-      <link rel="manifest" href="{{ config.extra.manifest | url }}">
+      <link rel="manifest" type="application/manifest+json" href="{{ config.extra.manifest | url }}">
     {% endif %}
     {% for path in config["extra_css"] %}
       <link rel="stylesheet" href="{{ path | url }}">
@@ -115,7 +115,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     {% if page.toc | first is defined %}
-      <a href="{{ (page.toc | first).url }}" tabindex="1" class="md-skip">
+      <a href="{{ (page.toc | first).url }}" tabindex="0" class="md-skip">
         {{ lang.t('skip.link.title') }}
       </a>
     {% endif %}
@@ -131,7 +131,7 @@
       {% if feature.tabs %}
         {% include "partials/tabs.html" %}
       {% endif %}
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           {% block site_nav %}
             {% if nav %}
@@ -190,7 +190,7 @@
       {% endblock %}
     </div>
     {% block scripts %}
-      <script src="{{ 'assets/javascripts/application.808e90bb.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/application.c33a9706.js' | url }}"></script>
       {% if lang.t("search.language") != "en" %}
         {% set languages = lang.t("search.language").split(",") %}
         {% if languages | length and languages[0] != "" %}
@@ -201,7 +201,7 @@
               {% if language == "jp" %}
                 <script src="{{ (path ~ 'tinyseg.js') | url }}"></script>
               {% endif %}
-              {% if language in ("da", "de", "du", "es", "fi", "fr", "hu", "it", "jp", "no", "pt", "ro", "ru", "sv", "tr") %}
+              {% if language in ("ar", "da", "de", "es", "fi", "fr", "hu", "it", "ja", "nl", "no", "pt", "ro", "ru", "sv", "th", "tr", "vi") %}
                 <script src="{{ (path ~ 'lunr.' ~ language ~ '.js') | url }}"></script>
               {% endif %}
             {% endif %}
