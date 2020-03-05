@@ -624,7 +624,7 @@ The captured content can then be referred to later by its name symbol, for examp
     [I love (?kind +) pizza]
     ```
 
-It is often desirable to normalize the captured content into a standard format to store in the captured variable, we can add an additional argument for the capture form to do this. This 3rd elment of the capture form can be either a function or a value. If it is a value, it will simply replace the captured content. If it is a function, the function must have two parameters, the first parameter being the REP instance, the second the captured tokens in a vector. For example, 
+It is often desirable to normalize the captured content into a standard format to store in the captured variable, we can add an additional argument for the capture form to do this. This 3rd elment of the capture form can be either a function or a value. If it is a value, it will simply replace the captured content. If it is a function, the function must be a variadic function with more than one parameter: the first parameter is the REP instance, and the rest of the parameters each correspond to the captured tokens. For example, 
 
 ```Clojure
 ;; Given user input "3", this rule will save in ?x "number"
