@@ -42,12 +42,12 @@ need to append the information to the chatbot URL. For example, the
 following Juji URL is appended with `?source=email` to identify that
 this chatbot URL will be emailed to the target audience:
 
-`https://juji.io/pre-chat/5df866e6-e911-4924-b9e1-7440038825c6?source=email`
+`https://juji.ai/pre-chat/5df866e6-e911-4924-b9e1-7440038825c6?source=email`
 
 In contrast, the following indicates the URL will be posted on
 Linkedin:
 
-`https://juji.io/pre-chat/5df866e6-e911-4924-b9e1-7440038825c6?source=linkedin`
+`https://juji.ai/pre-chat/5df866e6-e911-4924-b9e1-7440038825c6?source=linkedin`
 
 Juji will automatically capture such *external* information in its
 reports. For example, two entries below from the CSV report file show

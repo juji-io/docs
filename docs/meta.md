@@ -1,7 +1,7 @@
 # Data Access
 
 You can access meta data as well as results about your chat engagements over the
-GraphQL API at https://juji.io/api/graphql
+GraphQL API at https://juji.ai/api/graphql
 
 An example GraphQL query to list all engagements of a brand:
 
@@ -31,7 +31,7 @@ GraphQL queries.
 Juji API data access operations require authentication.  The authentication is
 based on [JSON Web Token (JWT)](https://en.wikipedia.org/wiki/JSON_Web_Token).
 
-Once you have created an account at https://juji.io/signup, to authenticate to
+Once you have created an account at https://juji.ai/signup, to authenticate to
 the API, supply your email and password to the `authenticate` GraphQL mutation
 and request the `token` field in the response, e.g.
 
@@ -106,7 +106,7 @@ Currently, we offer individual traits analysis, where our models infer an
 individual's personality and other individual traits using text that he or she has
 written.
 
-The data analysis endpoint is https://juji.io/api/analyze
+The data analysis endpoint is https://juji.ai/api/analyze
 
 The input file is expected to be `POST` as a `file` field in `multipart/form-data`.
 

@@ -50,7 +50,7 @@ your first AI chatbot on Juji **in just a few minutes**.
 
 ### **Create an account**
 
-Sign up [here](https://juji.io/signup) and follow the simple steps to
+Sign up [here](https://juji.ai/signup) and follow the simple steps to
     create a Juji account with only a working email.
 
 ### **Create First AI Chatbot**
