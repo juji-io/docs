@@ -1,7 +1,9 @@
 
 # Chat API
 
-Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client. This requires using [GraphQL subscription](https://facebook.github.io/graphql/June2018/#sec-Subscription-Operation-Definitions) to enable the server to push data to your client. Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open.
+It is easy to write a chat client that talks with a Juji chatbot via Juji Chat API. For example, it takes less than 200 line of Javascript code to write a client that chats with a Juji bot, see [sample code written in node.js on github](https://github.com/juji-io/cli-client). 
+
+Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client. This requires using [GraphQL subscription](https://facebook.github.io/graphql/June2018/#sec-Subscription-Operation-Definitions) to enable the server to push data to your client. Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open. Clients can be written in any programming language that supports Websocket and GraphQL subscriptions.
 
 The following steps are required to initiate a chat session via the API:
 
