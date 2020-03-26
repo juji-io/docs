@@ -99,6 +99,22 @@
   {% else %}
     <body dir="{{ lang.t('direction') }}">
   {% endif %}
+  <div id='jujibot-icon'
+        background='#8BDFCD'
+        img_url='https://juji.ai/assets/img/content/juji-profile.png'>
+</div>
+<script>
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://juji.ai/assets/js/webplugin.js';
+       fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'juji-webplugin'));
+</script>
+<div id='juji-chatbot'
+        chat_url='https://juji.ai/pre-chat/5e1385c7-f4de-4248-b926-dfc805f11506'>
+</div>
     <svg class="md-svg">
       <defs>
         {% set platform = config.extra.repo_icon or config.repo_url %}
