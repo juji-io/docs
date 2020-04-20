@@ -7,7 +7,8 @@ This page hosts a set of video tutorials on how to design and customize AI chatb
 This two-minute video shows how to get started on Juji, and create and deploy your first AI chatbot.
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fzL4apEOdLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fzL4apEOdLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Juji Studio Features
 

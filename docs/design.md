@@ -51,10 +51,10 @@ One can add a topic to an existing chat flow in one of the two ways:
   topic card.
 
 <p align="center"><img src="/img/design-add-topic.png" alt="add a
-topic buttons" width="350"/></p>
+topic button" width="350"/></p>
 
 <p align="center"><img src="/img/design-topic-type.png" alt="add a
-topic buttons" width="550"/></p>
+topic type" width="550"/></p>
 
 As shown above, Juji currently supports two types of topics:
 
@@ -66,7 +66,7 @@ This is for a chatbot to ask a user a question or perform a certain
   supports five types of chatbot request:
 
 <p align="center"><img src="/img/design-request-type.png" alt="add a
-topic buttons" width="550"/></p>
+request topic - select a request type" width="550"/></p>
 
 #### **Chatbot Message**
 
@@ -75,11 +75,12 @@ This is for a chatbot to send a message to a user without waiting for
   message.
 
 <p align="center"><img src="/img/design-message-type.png" alt="add a
-topic buttons" width="550"/></p>
+message topic - select a message type" width="550"/></p>
 
 **IMPORTANT TIP** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
 
-<p align="center"><img src="/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
+<p align="center">
+<img src="/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
 **IMPORTANT TIP**
 
@@ -96,8 +97,8 @@ message(s) that users will see during a chat. Please refer to
 [examples](#examples-customizing-chatbot-content) and [best practices](/chatbot-design-tips)
 for defining the content of a topic.
 
-<p align="center"><img src="/img/design-content.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/design-content.png" alt="define
+topic content" width="550"/></p>
 
 
 * **Chatbot Actions** Use this section to customize chatbot behavior
@@ -107,8 +108,8 @@ topic buttons" width="550"/></p>
     and [best practices](/chatbot-design-tips) for defining specific
     conditions and corresponding custom chatbot actions.
 
-<p align="center"><img src="/img/design-chatbot-action.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/design-chatbot-action.png" alt="design
+chatbot actions" width="550"/></p>
 
 
 * **Topic Settings** Use this pop-up window
@@ -117,8 +118,9 @@ topic buttons" width="550"/></p>
     length. Please refer to [best practices](/chatbot-design-tips) to tune
     these parameters.
     
-<a name="topic-settings"></a><p align="center"><img src="/img/design-topic-settings.png" alt="add a
-topic buttons" width="550"/></p>
+<a name="topic-settings"></a><p align="center">
+<img src="/img/design-topic-settings.png" alt="design topic settings"
+width="550"/></p>
 
 ### Delete a Topic
 
@@ -126,8 +128,8 @@ To delete a topic, mouse hover the corresponding topic card listed in
 the left topic panel. Then click on the red trash can icon to delete
 the topic. A deletion is permanent and cannot be undone.
 
-<p align="center"><img src="/img/design-delete-topic.png" alt="add a
-topic buttons" width="350"/></p>
+<p align="center"><img src="/img/design-delete-topic.png" alt="delete a
+topic" width="350"/></p>
 
 
 ### Clone a Topic
@@ -136,8 +138,8 @@ To clone a topic, mouse over the corresponding topic card listed in
 the left topic panel. Then click on the green clone icon to clone the
 topic. The cloned topic will retain all behavior of the original topic.
  
-<p align="center"><img src="/img/design-clone-topic.png" alt="add a
-topic buttons" width="350"/></p>
+<p align="center"><img src="/img/design-clone-topic.png" alt="clone
+a topic" width="350"/></p>
 
 ## **Customize Q&A and Fallback**
 
@@ -154,8 +156,8 @@ Using the `Q&A Board`, one can support custom, natural-language Q&As,
 monitor, and manage unanswered user questions encountered during a
 chat. Below is an example of a Q&A board:
 
-<p align="center"><img src="/img/design-qa.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/design-qa.png" alt="Q&A dashboard"
+width="650"/></p>
 
 On this page, one can enter a custom Q&A pair directly in the table
 (using the green **`+`** button to add) or upload a CSV file
@@ -204,7 +206,7 @@ texts expressions similar to those indicated under ID `Humor`
 (B8-B10), the chatbot will tell a joke by randomly picking one from
 cells C8 and C9:
 
-<p align="center"><img src="/img/custom-fallback.png" alt="Custom Fallback" width="650"/></p>
+<p align="center"><img src="/img/custom-fallback.png" alt="Select Custom Fallback" width="650"/></p>
 
 **IMPORTANT TIP** Juji already provides rich, built-in social chitchats. We recommend that you observe the behavior of your chatbot first before adding any custom user comment-chatbot response pairs. 
 
@@ -244,8 +246,7 @@ To define a custom persona, click on the `Custom` persona icon as shown below. Y
 You can also customer other chatbot parameters, such as setting a
 `conversation pace` and `user response` requirement as shown below. 
 
-<p align="center"><img src="/img/chatbot-settings-2.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/chatbot-settings-2.png" alt="chatbot settings" width="650"/></p>
 
 * **Conversation pace** It controls how fast a chatbot transitions
     from one topic to the next.
@@ -304,14 +305,13 @@ personalize the chatbot message.
     to send during a chat. See [best practices](/chatbot-design-tips)
     for good uses of paraphrases.
 
-<p align="center"><img src="/img/design-plain-remark.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/design-plain-remark.png" alt="customize a plain message" width="550"/></p>
 
 You can always use the green `eye` icon located at the top-right
 corner of the text bubble to preview the above message in a chat:
 
-<p align="center"><br><br><img src="/img/preview-plain-remark.png" alt="add a
-topic buttons" width="350"/></p>
+<p align="center"><br><br><img src="/img/preview-plain-remark.png" alt="preview 
+a text message" width="350"/></p>
 
 #### **FB Media Card**
 
@@ -327,13 +327,12 @@ shown below, each card contains:
 
 * **URL Buttons** (up to 3 links per card) 
 
-<p align="center"><img src="/img/design-add-FB-media.png" alt="add a
-topic button" width="550"/></p>
+<p align="center"><img src="/img/design-add-FB-media.png" alt="Facebook Media Card" width="550"/></p>
 
 Currently one can define up to three FB Media cards. In a Facebook
 Messenger window, these cards will show up in a carousel.
 
-<p align="center"><img src="/img/design-fb-media-desktop.png" alt="carousel" width="550"/></p>
+<p align="center"><img src="/img/design-fb-media-desktop.png" alt="FB media card carousel" width="550"/></p>
 
 Note that FB Media cards will ***not*** show up if the chatbot is
 deployed on a website.
@@ -348,13 +347,13 @@ card contains:
 * **Hyper Link** (optional)
 * **Image** (optional image URL)
 
-<p align="center"><img src="/img/design-add-web-media-3.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/design-add-web-media-3.png" alt="add web
+media" width="550"/></p>
 
 Below is the preview of a web media card with an image:
 
-<p align="center"><img src="/img/preview-web-media.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/preview-web-media.png" alt="preview web media
+" width="550"/></p>
 
 
 #### **<a name="free-text-request"></a>Free-text Request**
@@ -387,7 +386,7 @@ See [best practices](/chatbot-design-tips) on how to phrase free-text
 questions in a conversation.
 
 <p align="center"><img src="/img/design-add-free-text-q.png" alt="add a
-topic buttons" width="850"/></p>
+free-text question" width="850"/></p>
 
 #### <a name="choice-request">**Choice Request**</a>
 
@@ -402,7 +401,7 @@ As shown below, a single choice question contains:
 * **Option Items** (at least one item is required)
 
 <p align="center"><img src="/img/design-add-radio.png" alt="add a
-topic buttons" width="850"/></p>
+single-answer multiple choice question" width="850"/></p>
 
 In addition to adding regular option items, `Other` option can be added to
 let a user specify additional text. One can also indicate whether to
@@ -411,20 +410,18 @@ define chatbot conditions involving numeric operations, such as `>=`
 and `<`. See [examples](#examples-customizing-chatbot-actions) below on defining chatbot conditions.
 
 <p align="center"><img src="/img/design-add-choice-q.png" alt="add a
-topic buttons" width="550"/></p>
+single-answer multiple choice question with numeric items" width="550"/></p>
 
 Depending on where the chatbot is deployed, the look of a choice
 question may be different.
 
 A choice question displayed in a **web-based** chatbot:
 
-<p align="center"><img src="/img/preview-choice-q-web.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/preview-choice-q-web.png" alt="preview choice question" width="650"/></p>
 
 A choice question displayed in a **Facebook Messenger chatbot**:
 
-<p align="center"><img src="/img/preview-choice-q-fb.png" alt="add a
-topic buttons" width="350"/></p>
+<p align="center"><img src="/img/preview-choice-q-fb.png" alt="preview choice question in Facebook Messenger" width="350"/></p>
 
 In Facebook Messenger, a user may enter a text message instead of
 clicking on a choice. In such a case, the chatbot will handle the user
@@ -436,8 +433,7 @@ Below is an example chat where the user asks a question intead of
 making a color choice. The chatbot answers the user question and then
 repeats the choice question.
 
-<p align="center"><img src="/img/preview-choice-q-fb-fallback.png" alt="add a
-topic buttons" width="350"/></p>
+<p align="center"><img src="/img/preview-choice-q-fb-fallback.png" alt="Handling user digression during Facebook choice question" width="350"/></p>
 
 #### **Facebook Choice**
 
@@ -453,14 +449,13 @@ As shown below, a Facebook choice question includes:
 * **Button** (at least one button is required)
 * **Image** (optional) An image URL can be added with the question.
 
-<p align="center"><img src="/img/design-add-FB-choice.png" alt="add a
-topic buttons" width="350"/></p>
+<p align="center"><img src="/img/design-add-FB-choice.png" alt="add
+Facebook choice buttons" width="350"/></p>
 
 Here is how a Facebook choice looks like in a Facebook Messenger
 chatbot:
 
-<br><p align="center"><img src="/img/preview-fb-choice.png" alt="add a
-topic buttons" width="350"/></p>
+<br><p align="center"><img src="/img/preview-fb-choice.png" alt="preview Facebook choice buttons" width="350"/></p>
 
 #### **Facebook Email**
 
@@ -471,7 +466,7 @@ email. To allow users to skip this question, set this question `not
 required` in the [topic settings](#topic-settings).
 
 <p align="center"><img src="/img/design-add-FB-email.png" alt="add a
-topic buttons" width="650"/></p>
+Facebook email requestion" width="650"/></p>
 
 ### Customizing Chatbot Actions
 
@@ -494,11 +489,9 @@ For example, if you enter `Have you ever worked at a restaurant?` as
 the request label, Juji will auto retrieve the matched mini
 conversation `This is to ask a user yes/no question' (see below)
 
-<p align="center"><img src="/img/example-label-1.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/example-label-1.png" alt="an example label" width="650"/></p>
 
-<p align="center"><img src="/img/example-topic-1.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/example-topic-1.png" alt="an example label in a topic use" width="650"/></p>
 
 In this case, the built-in dialog will automatically process a user's
 positive or negative responses and enable you use the auto-detected
@@ -544,8 +537,7 @@ question and stores the parsed user input into two attributes:
 Click on the green `attribute` icon to view the attributes associated
 with a built-in dialog (see below).
 
-<p align="center"><img src="/img/system-attribute-example.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/system-attribute-example.png" alt="view system attributes within a topic" width="650"/></p>
 
 You can also edit the attribute names to avoid potential conflicts. For
 example, your chatbot asks two questions regarding `weight`, one for
@@ -574,8 +566,7 @@ As shown below, each customization block includes two parts:
 
 * **THEN** block contains one or more custom chatbot actions.
 
-<p align="center"><img src="/img/design-action.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/design-action.png" alt="design custom chatbot actions" width="650"/></p>
 
 #### **Customize IF Conditions**
 
@@ -587,8 +578,8 @@ conditions to capture user behavior:
     sentences or phrases. One can also specify the similarity
     threshold. By default, the threshold is set at 80%. 
 
-<p align="center"><img src="/img/is-similar-to.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/is-similar-to.png" alt="add a is-similar-to
+trigger" width="450"/></p>
 
 
 * `contains-keywords` If a user input contains one or more
@@ -596,27 +587,24 @@ topic buttons" width="450"/></p>
     requires a precise match with the stem of at least one
     specified keyword.
 
-<p align="center"><img src="/img/contain-keywords.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/contain-keywords.png" alt="add a contains-keywords trigger" width="450"/></p>
 
 
 * `contains-sentiment` If a user input contains a positive or
     negative sentiment. <a name="sentiment-detection"></a>
 
-<p align="center"><img src="/img/contain-sentiment.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/contain-sentiment.png" alt="add a contains-sentiment trigger" width="450"/></p>
 
 * `matches` If a user input matches a rule specified in [Juji chatbot
     language](/reference).
 
-<p align="center"><img src="/img/matches.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/matches.png" alt="add a matches
+trigger" width="450"/></p>
 
 * `is-anything-else` If a user input matches anything else. This is
     basically the **default** condition. 
 
-<p align="center"><img src="/img/default-cond.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/default-cond.png" alt="use a default condition" width="450"/></p>
 
 One can check on the box next to the `STORE MATCHED INPUT` to store the
 matched input into a **custom attribute**.
@@ -625,8 +613,8 @@ As shown below, if a user input contains keywords, such as `milk`,
 `egg`, or `cheese`, a custom attribute `like-protein` can be created
 to store the matched keyword for each user.
 
-<p align="center"><img src="/img/custom-attribute.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/custom-attribute.png" alt="add custom
+attributes" width="650"/></p>
 
 Custom attributes can be used for many purposes, such
 as customizing a chatbot message (see below) or indexing audience
@@ -649,11 +637,9 @@ tip](/chatbot-design-tips-advanced#use-proper-chatbot-trigger).
 As shown below, when a `IF` condition is met, one or more custom
 chatbot actions can be defined:
 
-<p align="center"><img src="/img/custom-action-overview.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/custom-action-overview.png" alt="customize chatbot actions overview" width="450"/></p>
 
-<p align="center"><img src="/img/custom-action-detail.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/custom-action-detail.png" alt="customize chatbot actions overview" width="450"/></p>
 
 * `Quick Acknowledgement`  This defines a simple text message that a chatbot
   can use to respond to a user input.
@@ -693,20 +679,18 @@ customers.
 To customize the ending behavior, click on the **`Wrap-up`**
 topic, the last topic in the left topic panel.
 
-<p align="center"><img src="/img/wrapup-topic.png" alt="add a
-topic buttons" width="250"/></p>
+<p align="center"><img src="/img/wrapup-topic.png" alt="Wrap up a topic" width="250"/></p>
 
 Then click on the text bubble or the `pencil` icon to edit the topic:
 
 : **Option 1: Make a chatbot stick around**
 
-<p align="center"><img src="/img/custom-end-1.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/custom-end-1.png" alt="customize end of chat: option 1" width="550"/></p>
 
 
 : **Option 2: End a chatbot**
 
-<p align="center"><img src="/img/custom-end-2.png" alt="add a
+<p align="center"><img src="/img/custom-end-2.png" alt="customize end of chat: option 2"
 topic buttons" width="550"/></p>
 
 
