@@ -16,11 +16,19 @@ theme:
   favicon: 'img/favicon.ico'
   name: 'material'
   custom_dir: 'theme/'
-  feature:
-    tabs: true
+  features:
+    - tabs
+    - instant
+
   palette:
     primary: 'white'
     accent: 'deep orange'
+
+plugins:
+  - search: 
+      separator: '[\s\-\.]+'
+      lang:
+        - en
 
 extra_css:
   - 'stylesheets/extra.css'
@@ -56,11 +64,11 @@ markdown_extensions:
 
 extra:
   social:
-    - type: 'github'
+    - icon: 'fontawesome/brands/github'
       link: 'https://github.com/juji-io'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/juji_io'
-    - type: 'linkedin'
+    - icon: 'fontawesome/brands/linkedin'
       link: 'https://www.linkedin.com/company/juji-io/'
 
 nav:
