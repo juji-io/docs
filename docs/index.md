@@ -1,7 +1,6 @@
-
 # **About Juji Platform**
 
-Juji cloud-based platform powers the creation, customization, and
+Juji platform enables the creation, customization, and
 operation of a new generation of Conversational Artificial
 Intelligence (AI) Assistants. Currently, these advanced AI assistants
 engage users in a text-based, natural language conversations to
