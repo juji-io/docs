@@ -16,6 +16,7 @@ pipeline {
           env.BUILD_INFO = "<${env.RUN_DISPLAY_URL}|${env.JOB_NAME} [${env.BUILD_NUMBER}]> submitted by ${env.GIT_AUTHOR_NAME} with commit <https://github.com/juji-io/docs/commit/${env.GIT_COMMIT}|${env.GIT_COMMIT.take(7)}>: ${env.GIT_COMMIT_MSG}"
         }
         sh '''
+          git pull
           mkdocs build
           cd ../juji-io.github.io 
           mkdocs gh-deploy --config-file ../juji-io_on_github_docs_master/mkdocs.yml --remote-branch master
