@@ -54,7 +54,7 @@ reports. For example, two entries below from the CSV report file show
 the captured source information (see [how to download a CSV
 report](/reports)).
 
-<p align="center"><img src="/img/capture-external-info.png" alt="Web Deployment" width="650"/></p>
+<p align="center"><img src="/img/capture-external-info.png" alt="capture external information" width="650"/></p>
 
 ## **Deploy to Facebook Page**
 
@@ -100,7 +100,7 @@ successful facebook deployment" width="650"/></p>
 <br>
 
 ### **Update Web Chatbot**
-<p align="center"><img src="/img/web-update.png" alt="Update chatbot" width="650"/></p>
+<p align="center"><img src="/img/web-update.png" alt="Update Web AI chatbot" width="650"/></p>
 
 * **New Release** Use the `Connect with Facebook` button or `New
     Release` button under `Manage` to release a new version of the

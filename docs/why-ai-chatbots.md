@@ -16,7 +16,7 @@ key differences between the two and their suitable applications,
 respectively.
 
 <p align="center"><img src="/img/comparison-table.png" alt="Non-AI
-vs. AI chatbots" width="650"/></p>
+vs. AI chatbots comparison table" width="650"/></p>
 
 Juji Studio enables you to easily create powerful AI chatbots with
 built-in machine intelligence. Your application can often help you
@@ -63,7 +63,7 @@ instantaneously. In addition, the chatbot remembers the conversation
 context, and reasks the question.
 
 <p align="center"><img src="/img/ai-bot-pk-1.png" alt="an example of
-AI bot" width="650"/></p>
+AI chatbot - task oriented" width="650"/></p>
 
 <br>
 
@@ -72,7 +72,7 @@ questions), AI chatbots are capable of social chitchats. Below is an
 example showing a social chat between a chatbot and a user:
 
 <p align="center"><img src="/img/free-text-chat.png" alt="an example of
-AI bot" width="650"/></p>
+AI chatbot - social chats" width="650"/></p>
 
 As shown above, the chatbot can recognize user input and carry on a
 conversation naturally. Juji provides a dialog library that contains
@@ -108,7 +108,7 @@ is also able to gather the rationale behind the user's negative
 sentiment.
 
 <p align="center"><img src="/img/people-insights-1.png" alt="an example of
-AI bot" width="650"/></p>
+AI chatbot for interpreting user input" width="650"/></p>
 
 Furthermore, a capable AI chatbot can read between the lines and
 automatically infer deep people insights from a chat. For example,
@@ -123,7 +123,7 @@ different candidates to do their best in an interview based on their
 unique characteristics.
 
 <p align="center"><img src="/img/people-insights-2.png" alt="an example of
-AI bot" width="550"/></p>
+AI chatbot inferring user intent and characteristics" width="550"/></p>
 
 
 ## **Quick Test**

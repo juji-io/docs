@@ -14,7 +14,7 @@ services.
 As shown below, Juji platform includes three main components, which
 can be used alone or together to suit different application needs.
 
-<p align="center"><img src="/img/JujiPlatform.jpg" alt="Create an AI" width="650"/></p>
+<p align="center"><img src="/img/JujiPlatform.jpg" alt="Create an AI chatbot" width="650"/></p>
 
 
   **[Juji Studio](/juji-studio)** provides a graphical user interface (GUI) for
@@ -64,7 +64,7 @@ Now your chatbot is ready to have a conversation with you. Just say
     hello to it as you have just met a person.
 
 <p align="center"><img src="/img/chat-preview.png"
-alt="Preview page" width="600"/></p>
+alt="AI Chatbot Preview" width="600"/></p>
 
 ### **Deploy Chatbot**
 
@@ -76,12 +76,12 @@ By clicking on the `Deploy` button on the left menu panel, you can now
 
 You chatbot can now engage with your target audience on your Facebook
 page:
-<p align="center"><img src="/img/fb-chat-example.png" alt="facebook messager chat example" width="350"/></p>
+<p align="center"><img src="/img/fb-chat-example.png" alt="facebook messager AI chat example" width="350"/></p>
 
 or your website:
 
 <div style="margin-top: 20px; margin-bottom: 20px">
-<p align="center"><img src="/img/deployed-web.png" alt="web chat example" width="550"/></p></div>
+<p align="center"><img src="/img/deployed-web.png" alt="web AI chat example" width="550"/></p></div>
 
 ### **Monitor Chatbot**
 

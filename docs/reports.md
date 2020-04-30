@@ -48,7 +48,7 @@ is an example showing the themes discovered for the question `What
 subject do you teach`:
 
 <p align="center"><img src="/img/audience-analytics-text.png"
-alt="Audience Analytics" width="650"/></p>
+alt="Audience Analytics: Text analytics" width="650"/></p>
 
 ### **Export Audience Data**
 
@@ -98,8 +98,7 @@ As shown below, the first two columns record users' free-text input to
 two open-ended questions, while the last two columns record user
 choices to two choice questions (radio-button questions).
 
-<p align="center"><img src="/img/user-input-example.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/user-input-example.png" alt="sample audience data table" width="650"/></p>
 
 Moreover, users often ask questions during a chat. Juji also
 automatically records such user-asked questions. Both user responses and
@@ -117,11 +116,10 @@ with this dialog, the chatbot will automatically parse users'
 free-text input to the question and extract two pieces of information
 that are stored in two attributes, `weight-amount` and `weight-unit`. 
 
-<p align="center"><img src="/img/system-attribute-weight.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/system-attribute-weight.png" alt="system
+attribute called weight-amount" width="650"/></p>
 
-<p align="center"><img src="/img/system-attribute-weight-2.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/system-attribute-weight-2.png" alt="system attribute called weight-unit" width="650"/></p>
 
 The CSV report file will also capture these attributes automatically
 (see below). Although you can [customize the names of system
@@ -131,8 +129,7 @@ purposes](#uses-of-audience-data), such as personalized service
 recommendations and retargeting marketing.
 
 
-<p align="center"><img src="/img/system-attribute-weight-3.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/system-attribute-weight-3.png" alt="system attributes displayed in audience data table" width="650"/></p>
 
 
 ### Custom Attributes
@@ -146,12 +143,10 @@ one can detect user sentiment by adding a custom chatbot action as
 below and store the detected sentiment in a custom attribute.
 
 
-<p align="center"><img src="/img/contain-sentiment-attr.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/contain-sentiment-attr.png" alt="how to record a sentiment attribute" width="450"/></p>
 
 
-<p align="center"><img src="/img/sentiment-attr-1.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/sentiment-attr-1.png" alt="define a sentiment attribute" width="450"/></p>
 
 * **extracted keywords** On can define a `contain-keywords` condition
     and store one of the matched keywords into a custom
@@ -160,31 +155,27 @@ topic buttons" width="450"/></p>
     input to a chatbot question.
 
 <p align="center"><img src="/img/keyword-attr.png" alt="add a
-topic buttons" width="450"/></p>
+keyword attribute" width="450"/></p>
 
-<p align="center"><img src="/img/keyword-attr-1.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/keyword-attr-1.png" alt="define a keyword attribute name" width="450"/></p>
 
 
 * **is-similar-to condition** One can define a `is-similar-to` condition and
     store the matched condition into a custom attribute -- a binary
     value (true/false) storing whether if the condition is met. 
 
-<p align="center"><img src="/img/is-similar-to-attr.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/is-similar-to-attr.png" alt="add an is-similar-to attribute" width="450"/></p>
 
-<p align="center"><img src="/img/is-similar-to-attr-1.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/is-similar-to-attr-1.png" alt="define an is-similar-attribute name" width="450"/></p>
 
 * **matched variables** One can define a `matches` condition with a
     specific matched pattern and then store one or more matched
     variables into custom attributes.
 
 <p align="center"><img src="/img/match-attr.png" alt="add a
-topic buttons" width="450"/></p>
+match attribute" width="450"/></p>
 
-<p align="center"><img src="/img/match-attr-1.png" alt="add a
-topic buttons" width="450"/></p>
+<p align="center"><img src="/img/match-attr-1.png" alt="add a match attribute name" width="450"/></p>
 
 
 ### Inferred User Characteristics

@@ -417,11 +417,11 @@ question may be different.
 
 A choice question displayed in a **web-based** chatbot:
 
-<p align="center"><img src="/img/preview-choice-q-web.png" alt="preview choice question" width="650"/></p>
+<p align="center"><img src="/img/preview-choice-q-web.png" alt="preview a web-baed choice question" width="650"/></p>
 
 A choice question displayed in a **Facebook Messenger chatbot**:
 
-<p align="center"><img src="/img/preview-choice-q-fb.png" alt="preview choice question in Facebook Messenger" width="350"/></p>
+<p align="center"><img src="/img/preview-choice-q-fb.png" alt="preview a Facebook choice question in Facebook Messenger" width="350"/></p>
 
 In Facebook Messenger, a user may enter a text message instead of
 clicking on a choice. In such a case, the chatbot will handle the user
@@ -679,7 +679,7 @@ customers.
 To customize the ending behavior, click on the **`Wrap-up`**
 topic, the last topic in the left topic panel.
 
-<p align="center"><img src="/img/wrapup-topic.png" alt="Wrap up a topic" width="250"/></p>
+<p align="center"><img src="/img/wrapup-topic.png" alt="Wrapup topic to end a chat" width="250"/></p>
 
 Then click on the text bubble or the `pencil` icon to edit the topic:
 

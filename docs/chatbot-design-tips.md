@@ -209,8 +209,7 @@ without requiring much customization.
 
 Since Juji uses the request label (see how to [give a good label](/chatbot-design-tips-advanced#give-sensible-labels)) to find the matched built-in dialog, such match is not always correct. For example, your chatbot is supposed to ask a yes-no question, such as `Would you like to take a test drive?`. Juji may not always match such a question with the built-in dialog that handles yes-no question.
 
-<p align="center"><img src="/img/example-topic-1.png" alt="add a
-topic buttons" width="650"/></p>
+<p align="center"><img src="/img/example-topic-1.png" alt="display of a retrieved built-in dialog" width="650"/></p>
 
 We thus strongly recommend that you always check the retrieved built-in dialog to see if it is what you want. If the retrieved built-in dialog is incorrect, use the search button to find a better matched Juji built-in dialog. Using a proper built-in dialog not only supports a better conversation experience, but also reduces your effort of customizing a chatbot. 
 
@@ -281,8 +280,7 @@ avoid repeatitiveness. This can be easily done by adding paraphrases
 to the hello message. Below indicates the use of the green "+" to add
 paraphrases to a chatbot message:
 
-<p align="center"><img src="/img/add-paraphrases-remark.png" alt="add a
-topic buttons" width="550"/></p>
+<p align="center"><img src="/img/add-paraphrases-remark.png" alt="paraphrase a message" width="550"/></p>
 
 Similarly, a chatbot may need to repeat a question/request if a user
 does not comply to it. In such a case, you want to add paraphrases of
@@ -311,7 +309,7 @@ chatbot message more personable:
   a user feel that the chatbot is paying attention to him/her.
 
 
-<p align="center"><img src="/img/user-first-name-func.png" alt="call user by name" width="650"/></p>
+<p align="center"><img src="/img/user-first-name-func.png" alt="call user by his or her first name function (user-first-name)" width="650"/></p>
 
 * **Repeat what a user says in a chatbot response**. The example below
   shows that the chatbot repeats the user's word and makes the user
@@ -329,7 +327,7 @@ chatbot message more personable:
 <br>
 Below is how the chat is like:
 
-<p align="center"><img src="/img/preview-repeat-words.png" alt="Repeat user words" width="650"/></p>
+<p align="center"><img src="/img/preview-repeat-words.png" alt="Preview the repeat of user words" width="650"/></p>
 
 * **Echo a user's feelings in a chatbot response**. The example below
   shows how the chatbot acknowledges the user's feelings.
@@ -343,7 +341,7 @@ Below is how the chat is like:
 <br>
 Here is how the chat is like:
 
-<p align="center"><img src="/img/preview-ack-sentiment.png" alt="Ack user sentiment" width="650"/></p>
+<p align="center"><img src="/img/preview-ack-sentiment.png" alt="Preview how to ack user sentiment" width="650"/></p>
 
 ### Determine Chatbot Default Response
 
@@ -361,7 +359,7 @@ default chatbot responses to anything it cannot recognize. You can go
 to `Chatbot Settings` page (under `Design` menu) to define this defaul response: 
 
 <p align="center"><img src="/img/chatbot-settings-defaultresponse.png"
-alt="Default Response" width="650"/></p>
+alt="chatbot default response to unknown user input" width="650"/></p>
 
 
 In the above example, the default response that you entered will then
@@ -387,7 +385,7 @@ again. To set the refresh rate, you can go to the `Chatbot Settings`
 page:
 
 <p align="center"><img src="/img/chatbot-settings-refresh.png"
-alt="Default Response" width="650"/></p>
+alt="set up a chatbot refresh rate" width="650"/></p>
 
 
 

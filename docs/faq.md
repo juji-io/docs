@@ -105,7 +105,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 ### How do I create an AI chatbot/AI helper/AI agent?
 : On your dashboard, click on the **`+ AI Helper`** button to create a new chatbot. Please check [how to get started](https://docs.juji.io/)
 
-<p align="center"><img src="/img/create-chatbot.png" alt="chatbot settings" width="650"/></p>
+<p align="center"><img src="/img/create-chatbot.png" alt="create a new chatbot" width="650"/></p>
 
 <hr>
 <a name="!project-name"></a>
@@ -122,7 +122,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 : Click on **`Design`** on the left menu panel and then click on **`Chatbot Settings`**. On
 this page, you can customize your chatbot persona. See [Customize Chatbot Persona](/design#chatbot-persona) for more details.
 
-<p align="center"><img src="/img/change-persona.png" alt="chatbot settings" width="650"/></p>
+<p align="center"><img src="/img/change-persona.png" alt="change chatbot persona" width="650"/></p>
 
 <hr>
 <a name="!own-persona"></a>
@@ -155,17 +155,17 @@ Persona](/design#chatbot-persona).
 
 My chatbot asks a question, such as "I can help you now. What can I help you with today?".  But when a user asks a question, the chatbot does not answer and I have to ask it again as shown below.
 
-<p align="center"><img src="/img/wrong-q.png" alt="Design page" width="350px"/></p>
+<p align="center"><img src="/img/wrong-q.png" alt="wrong chatbot question" width="350px"/></p>
 
 
 : Juji chatbots send two types of messages, one is just a message without waiting for a user to respond, the other is a "true" request, which will wait for a user to respond. To take a user input, make sure your question is a "true" question. Check the card associated with your question and make sure it looks like T5 below instead of T6. A "true" request/question has a chat icon associated with the card (T5), while a plain message does not have it (T6).
 
-<p align="center"><img src="/img/pseudo-q.png" alt="Design page" width="350px"/></p>
+<p align="center"><img src="/img/pseudo-q.png" alt="pseudo question" width="350px"/></p>
 
 When you want your chatbot to send a true question, make sure you choose `Make a Request` option as shown below:
 
 <p align="center"><img src="/img/design-topic-type.png" alt="add a
-topic buttons" width="550"/></p>
+request" width="550"/></p>
 
 <hr>
 <a name="!remark"></a>

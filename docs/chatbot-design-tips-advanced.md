@@ -69,13 +69,13 @@ In contrast, if you define a trigger `is-similar-to` with examples
 such as `I like strawberries`:
 
 <p align="center"><img src="/img/is-similar-to-trigger.png"
-alt="Keywords Trigger" width="650"/></p>
+alt="is-similar-to trigger" width="650"/></p>
 
 This trigger will match a user input `I like blueberries` because this
 expression is considered **semantically** similar:
 
 <p align="center"><img src="/img/is-similar-to-chat.png"
-alt="Keywords Trigger" width="650"/></p>
+alt="is-similar-to trigger" width="650"/></p>
 
 With a high enough matching threshold (e.g., `90%`), the trigger will not match
 semantically different input such as `I dislike strawberries`
@@ -130,7 +130,7 @@ Here is another example showing that the request wording is long while
 the label is kept short and to the point:
 
 <p align="center"><img src="/img/good-label-2.png" alt="A sensible
-label 2" width="550"/></p>
+label 2 - short" width="550"/></p>
 
 In case you don't think the label you entered retrieves a suitable
 built-in dialog, you can always browse Juji dialog library to [search
@@ -187,7 +187,7 @@ shown, both labels mentioned above are used to index the corresponding
 user answers.
 
 <p align="center"><img src="../img/label-index-answers.png" alt="A
-sensible label" width="650"/></p>
+sensible label - index answers in audience report" width="650"/></p>
 
 Since the labels are often more concise than the original requests,
 using them to index user answers makes the report more consumable.
