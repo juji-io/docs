@@ -17,6 +17,7 @@ pipeline {
         }
         sh '''
           git pull
+          source ~/.bash_profile
           mkdocs build
         '''
       }
