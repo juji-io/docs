@@ -121,7 +121,7 @@ between two releases and you don't wish to mix the old and new data
 together. Making a new release will also facilitate easier comparison
 of audience behavior under different chatbot versions.
 
-Note that the current [Reports](/reports) page shows the audience
+Note that the current [Reports](../reports) page shows the audience
 information for the most recent release/version of chatbot. If you
 make a new release, currently you may not be able to access the audience
 information for previous releases.
