@@ -40,19 +40,19 @@ Assume that your chatbot asks `What's your favorite fruit?`. You
 define a trigger `contains-keywords` to capture particular kind of
 fruit like `strawberry`.
 
-<p align="center"><img src="/img/keywords-trigger.png" alt="Keywords Trigger" width="650"/></p>
+<p align="center"><img src="../img/keywords-trigger.png" alt="Keywords Trigger" width="650"/></p>
 
 As long as a user input contains a keyword that matches with the fruit
 name you put into, the trigger will fire. For example, it will match a
 user expression `I really like strawberries`:
 
-<p align="center"><img src="/img/keywords-chat-1.png" alt="Keywords
+<p align="center"><img src="../img/keywords-chat-1.png" alt="Keywords
 Trigger" width="650"/></p>
 
 It will also match a user input with very different meaning `I like
 fruit except strawberries`:
 
-<p align="center"><img src="/img/keywords-chat-2.png" alt="Keywords Trigger" width="650"/></p>
+<p align="center"><img src="../img/keywords-chat-2.png" alt="Keywords Trigger" width="650"/></p>
 
 This is because both expressions contain the keyword 'strawberry`
 regardless their use with different semantics. Note that Juji
@@ -63,18 +63,18 @@ in keyword matching to support the matching of word variations.
 However, a `contains-keyword` trigger would not match
 `strawberry` with `blueberry` because these are very different keywords:
 
-<p align="center"><img src="/img/keywords-chat-3.png" alt="Keywords Trigger" width="650"/></p>
+<p align="center"><img src="../img/keywords-chat-3.png" alt="Keywords Trigger" width="650"/></p>
 
 In contrast, if you define a trigger `is-similar-to` with examples
 such as `I like strawberries`:
 
-<p align="center"><img src="/img/is-similar-to-trigger.png"
+<p align="center"><img src="../img/is-similar-to-trigger.png"
 alt="is-similar-to trigger" width="650"/></p>
 
 This trigger will match a user input `I like blueberries` because this
 expression is considered **semantically** similar:
 
-<p align="center"><img src="/img/is-similar-to-chat.png"
+<p align="center"><img src="../img/is-similar-to-chat.png"
 alt="is-similar-to trigger" width="650"/></p>
 
 With a high enough matching threshold (e.g., `90%`), the trigger will not match
@@ -129,7 +129,7 @@ request label short and concise as shown in the example below:
 Here is another example showing that the request wording is long while
 the label is kept short and to the point:
 
-<p align="center"><img src="/img/good-label-2.png" alt="A sensible
+<p align="center"><img src="../img/good-label-2.png" alt="A sensible
 label 2 - short" width="550"/></p>
 
 In case you don't think the label you entered retrieves a suitable
@@ -206,7 +206,7 @@ below and then deploy
 different chatbots for different audiences.
 
 
-<p align="center"><img src="/img/clone-a-chatbot.png" alt="Clone a
+<p align="center"><img src="../img/clone-a-chatbot.png" alt="Clone a
 chatbot" width="650"/></p>
 
 

@@ -32,7 +32,7 @@ you polish the outline.
 Below is a sample outline that is intended to create a chatbot
 that can  chat with gamers about games.  
 <br>
-<p align="center"><img src="/img/chat-outline.png" alt="chat-outline" width="650"/></p>
+<p align="center"><img src="../img/chat-outline.png" alt="chat-outline" width="650"/></p>
 
 <br>
 
@@ -41,7 +41,7 @@ helps make restaurant reservations as well as manage reservations.
 
 <br>
 
-<p align="center"><img src="/img/chat-outline-2.png" alt="another
+<p align="center"><img src="../img/chat-outline-2.png" alt="another
 sample chat outline" width="650"/></p>
 
 <br>
@@ -58,7 +58,7 @@ complex depencies, it is always a good idea to draw the underlying
 corresponding conversation graph representing the restaurant
 reservation chatbot mentioned above.
 
-<p align="center"><img src="/img/chat-outline-2-graph.png" alt="another
+<p align="center"><img src="../img/chat-outline-2-graph.png" alt="another
 sample chat outline" width="650"/></p>
 
 Once the outline is ready, you can then mark each item as a chatbot
@@ -69,7 +69,7 @@ mistakes](#mix-messages-and-requests) during a chatbot making
 process. Based on the markings, you can then [create a
 chatbot](/design) and add the marked items in the main chat flow.
 
-<p align="center"><img src="/img/chat-outline-annotated.png" alt="annotated
+<p align="center"><img src="../img/chat-outline-annotated.png" alt="annotated
 sample chat outline" width="650"/></p>
 
 ### Prepare Q&A List and Chitchats
@@ -139,7 +139,7 @@ the `Q&A Board` page. Please refer to [Customize
 Q&A](/design#customize-qa-and-fallback) for more details on how to
 add/edit Q&As.
 
-<p align="center"><img src="/img/design-qa.png" alt="define Q&As" width="650"/></p>
+<p align="center"><img src="../img/design-qa.png" alt="define Q&As" width="650"/></p>
 
 ## **Balance Business Goals and User Experience**
 
@@ -171,7 +171,7 @@ do not rush out too quickly one after another.
 
 **IMPORTANT TIP:** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
 
-<p align="center"><img src="/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
+<p align="center"><img src="../img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
 ### Mix Different Types of Requests
 
@@ -209,11 +209,11 @@ without requiring much customization.
 
 Since Juji uses the request label (see how to [give a good label](/chatbot-design-tips-advanced#give-sensible-labels)) to find the matched built-in dialog, such match is not always correct. For example, your chatbot is supposed to ask a yes-no question, such as `Would you like to take a test drive?`. Juji may not always match such a question with the built-in dialog that handles yes-no question.
 
-<p align="center"><img src="/img/example-topic-1.png" alt="display of a retrieved built-in dialog" width="650"/></p>
+<p align="center"><img src="../img/example-topic-1.png" alt="display of a retrieved built-in dialog" width="650"/></p>
 
 We thus strongly recommend that you always check the retrieved built-in dialog to see if it is what you want. If the retrieved built-in dialog is incorrect, use the search button to find a better matched Juji built-in dialog. Using a proper built-in dialog not only supports a better conversation experience, but also reduces your effort of customizing a chatbot. 
 
-<p align="center"><img src="/img/search-a-topic.png" alt="search a
+<p align="center"><img src="../img/search-a-topic.png" alt="search a
 topic" width="550"/></p>
 
 
@@ -255,11 +255,11 @@ opinion.
 You can customize gibberish detection or decide whether to permit user
 `I don't know` response in a topic setting as shown below.
 
-<p align="center"><img src="/img/topic-setting-1.png" alt="Topic
+<p align="center"><img src="../img/topic-setting-1.png" alt="Topic
 Setting 1" width="650"/></p>
 
 
-<p align="center"><img src="/img/topic-setting-2.png" alt="Topic
+<p align="center"><img src="../img/topic-setting-2.png" alt="Topic
 Setting 2" width="650"/></p>
 
 As shown above, you can also control the required length of a
@@ -280,7 +280,7 @@ avoid repeatitiveness. This can be easily done by adding paraphrases
 to the hello message. Below indicates the use of the green "+" to add
 paraphrases to a chatbot message:
 
-<p align="center"><img src="/img/add-paraphrases-remark.png" alt="paraphrase a message" width="550"/></p>
+<p align="center"><img src="../img/add-paraphrases-remark.png" alt="paraphrase a message" width="550"/></p>
 
 Similarly, a chatbot may need to repeat a question/request if a user
 does not comply to it. In such a case, you want to add paraphrases of
@@ -292,11 +292,11 @@ repeat everything to sound robotic.
 
 Below is an example showing the initial phrase of a chatbot request. Since this message is long, it would not be used by the chatbot to repeat the question:
 
-<p align="center"><img src="/img/initial-msg.png" alt="Initial Message" width="650"/></p>
+<p align="center"><img src="../img/initial-msg.png" alt="Initial Message" width="650"/></p>
 
 Here is a paraphrase (shorter version) of the same message above and will be used by the chatbot to repeat the question if needed:
 
-<p align="center"><img src="/img/reasking-msg.png" alt="Reasking Message" width="650"/></p>
+<p align="center"><img src="../img/reasking-msg.png" alt="Reasking Message" width="650"/></p>
 
 ### Personalize Messages and Requests
 
@@ -309,7 +309,7 @@ chatbot message more personable:
   a user feel that the chatbot is paying attention to him/her.
 
 
-<p align="center"><img src="/img/user-first-name-func.png" alt="call user by his or her first name function (user-first-name)" width="650"/></p>
+<p align="center"><img src="../img/user-first-name-func.png" alt="call user by his or her first name function (user-first-name)" width="650"/></p>
 
 * **Repeat what a user says in a chatbot response**. The example below
   shows that the chatbot repeats the user's word and makes the user
@@ -322,12 +322,12 @@ chatbot message more personable:
 	3. Insert the attribute into chatbot response using a function
   (e.g., `(get-user-attribute-as-string "like-protein")`
 
-<p align="center"><img src="/img/design-repeat-words.png" alt="Repeat user words" width="450"/></p>
+<p align="center"><img src="../img/design-repeat-words.png" alt="Repeat user words" width="450"/></p>
 
 <br>
 Below is how the chat is like:
 
-<p align="center"><img src="/img/preview-repeat-words.png" alt="Preview the repeat of user words" width="650"/></p>
+<p align="center"><img src="../img/preview-repeat-words.png" alt="Preview the repeat of user words" width="650"/></p>
 
 * **Echo a user's feelings in a chatbot response**. The example below
   shows how the chatbot acknowledges the user's feelings.
@@ -336,12 +336,12 @@ Below is how the chat is like:
 
   	2. Create a corresponding chatbot response based on the detected sentiment
 
-<p align="center"><img src="/img/design-ack-sentiment.png" alt="Ack user sentiment" width="450"/></p>
+<p align="center"><img src="../img/design-ack-sentiment.png" alt="Ack user sentiment" width="450"/></p>
 
 <br>
 Here is how the chat is like:
 
-<p align="center"><img src="/img/preview-ack-sentiment.png" alt="Preview how to ack user sentiment" width="650"/></p>
+<p align="center"><img src="../img/preview-ack-sentiment.png" alt="Preview how to ack user sentiment" width="650"/></p>
 
 ### Determine Chatbot Default Response
 
@@ -358,7 +358,7 @@ To override Juji built-in chatbot responses, you can define your own
 default chatbot responses to anything it cannot recognize. You can go
 to `Chatbot Settings` page (under `Design` menu) to define this defaul response: 
 
-<p align="center"><img src="/img/chatbot-settings-defaultresponse.png"
+<p align="center"><img src="../img/chatbot-settings-defaultresponse.png"
 alt="chatbot default response to unknown user input" width="650"/></p>
 
 
@@ -384,7 +384,7 @@ continue after 60 minutes. They certainly do not want to start it over
 again. To set the refresh rate, you can go to the `Chatbot Settings`
 page:
 
-<p align="center"><img src="/img/chatbot-settings-refresh.png"
+<p align="center"><img src="../img/chatbot-settings-refresh.png"
 alt="set up a chatbot refresh rate" width="650"/></p>
 
 

@@ -15,7 +15,7 @@ Juji IDE provides an interactive development environment that allows
   advanced capabilities (e.g., customizing product recommendation
   policies).
 
-<p align="center"><img src="/img/juji-ide.png" alt="Juji IDE" width="650px"/></p>
+<p align="center"><img src="../img/juji-ide.png" alt="Juji IDE" width="650px"/></p>
 
 ## Work with REP Scripts
 
@@ -23,7 +23,7 @@ In the IDE, you have access to an online scripting environment. To
 access the IDE page, you can click on the red round button at the bottom left corner of the
 [Chatbot Design](/design) window in [Juji Studio](/juji-studio).
 
-<p align="center"><img src="/img/ide-button.png" alt="IDE button" width="650"/></p>
+<p align="center"><img src="../img/ide-button.png" alt="IDE button" width="650"/></p>
 
 ### File Browser
 
@@ -142,7 +142,7 @@ Then, in your script, find the `:ad-lib` key and its vector value in `(config ..
 
 Following our previous example in step 2, below is a screenshot of adding the generated deftopic `generated-faq-topic` to a script and add the topic name to the script's `:ad-lib` vector:
 
-<p align="center"><img src="/img/add-generated-faq-topic.png" alt="IDE faq" width="600"/></p>
+<p align="center"><img src="../img/add-generated-faq-topic.png" alt="IDE faq" width="600"/></p>
 
 At this point, you may save and compile the script. Now your self-defined FAQs are added to your chatbot.
 

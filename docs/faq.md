@@ -105,7 +105,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 ### How do I create an AI chatbot/AI helper/AI agent?
 : On your dashboard, click on the **`+ AI Helper`** button to create a new chatbot. Please check [how to get started](https://docs.juji.io/)
 
-<p align="center"><img src="/img/create-chatbot.png" alt="create a new chatbot" width="650"/></p>
+<p align="center"><img src="../img/create-chatbot.png" alt="create a new chatbot" width="650"/></p>
 
 <hr>
 <a name="!project-name"></a>
@@ -113,7 +113,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
 : As shown below, your project name is internal to you, while the AI chatbot name is external to your audience.
 
-<p align="center"><img src="/img/project-name-chatbot-name.png" alt="Project Name vs. Chatbot Name" width="650px"/></p>
+<p align="center"><img src="../img/project-name-chatbot-name.png" alt="Project Name vs. Chatbot Name" width="650px"/></p>
 
 <hr>
 <a name="!change-persona"></a>
@@ -122,7 +122,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 : Click on **`Design`** on the left menu panel and then click on **`Chatbot Settings`**. On
 this page, you can customize your chatbot persona. See [Customize Chatbot Persona](/design#chatbot-persona) for more details.
 
-<p align="center"><img src="/img/change-persona.png" alt="change chatbot persona" width="650"/></p>
+<p align="center"><img src="../img/change-persona.png" alt="change chatbot persona" width="650"/></p>
 
 <hr>
 <a name="!own-persona"></a>
@@ -155,16 +155,16 @@ Persona](/design#chatbot-persona).
 
 My chatbot asks a question, such as "I can help you now. What can I help you with today?".  But when a user asks a question, the chatbot does not answer and I have to ask it again as shown below.
 
-<p align="center"><img src="/img/wrong-q.png" alt="wrong chatbot question" width="350px"/></p>
+<p align="center"><img src="../img/wrong-q.png" alt="wrong chatbot question" width="350px"/></p>
 
 
 : Juji chatbots send two types of messages, one is just a message without waiting for a user to respond, the other is a "true" request, which will wait for a user to respond. To take a user input, make sure your question is a "true" question. Check the card associated with your question and make sure it looks like T5 below instead of T6. A "true" request/question has a chat icon associated with the card (T5), while a plain message does not have it (T6).
 
-<p align="center"><img src="/img/pseudo-q.png" alt="pseudo question" width="350px"/></p>
+<p align="center"><img src="../img/pseudo-q.png" alt="pseudo question" width="350px"/></p>
 
 When you want your chatbot to send a true question, make sure you choose `Make a Request` option as shown below:
 
-<p align="center"><img src="/img/design-topic-type.png" alt="add a
+<p align="center"><img src="../img/design-topic-type.png" alt="add a
 request" width="550"/></p>
 
 <hr>
@@ -226,23 +226,23 @@ request" width="550"/></p>
 
 : In Juji, you can capture user emoji input in two ways. One is to capture the keyboard input of an emoji. For example, the keyboard input for the smiling face emoji is :-). To capture such a smiling face input and respond to it with a same emoji, you can create a trigger that uses `matches` pattern and then respond to this pattern using the keyboard input:
 
-<p align="center"><img src="/img/handle-emoji-1.png" alt="Handle Emoji" width="450px"/></p>
+<p align="center"><img src="../img/handle-emoji-1.png" alt="Handle Emoji" width="450px"/></p>
 
 : Here is the chat result that shows a user's emoji input and the corresponding chatbot emoji response:
 
-<p align="center"><img src="/img/handle-emoji-1-result.png" alt="Handle Emoji Result" width="550px"/></p>
+<p align="center"><img src="../img/handle-emoji-1-result.png" alt="Handle Emoji Result" width="550px"/></p>
 
 : Another way of capturing emojis is to directly copy and paste an emoji into a pattern as shown below (note that you must quote the emoji):
 
-<p align="center"><img src="/img/handle-emoji-2.png" alt="Handle Emoji" width="450px"/></p>
+<p align="center"><img src="../img/handle-emoji-2.png" alt="Handle Emoji" width="450px"/></p>
 
 : Here is the chat result that shows a user's emoji input and the corresponding chatbot emoji response:
 
-<p align="center"><img src="/img/handle-emoji-2-result.png" alt="Handle Emoji Result" width="550px"/></p>
+<p align="center"><img src="../img/handle-emoji-2-result.png" alt="Handle Emoji Result" width="550px"/></p>
 
 : In addition, Juji's built-in dialogs automatically handle many types of emojis. If you just want to use Juji default responses to user emojis, you don't need to do anything. The example below shows such a default Juji response to a user's frowning face emoji.
 
-<p align="center"><img src="/img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>
+<p align="center"><img src="../img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>
 
 <hr>
 <a name="!question-number"></a>
@@ -281,14 +281,14 @@ questions. Although the user didn't see the answer she seeks, she is
 interested in the answer regarding pet use anyway. So she clicks on the
 suggested question (option 1) and views the answer.
 
-<p align="center"><img src="/img/wrong-qa-1.png" alt="Wrong Matched QA" width="550px"/></p>
+<p align="center"><img src="../img/wrong-qa-1.png" alt="Wrong Matched QA" width="550px"/></p>
 
 : Through this user interaction, the chatbot learns that the two
 questions `Can I use your product for my kids` and `Can I use your
 product for my pets?` are somewhat related to each other. It then
 lists the latter as the top-matched one on the Q&A dashboard:
 
-<p align="center"><img src="/img/wrong-qa-2.png" alt="Wrong Matched QA" width="550px"/></p>
+<p align="center"><img src="../img/wrong-qa-2.png" alt="Wrong Matched QA" width="550px"/></p>
 
 : However, the chatbot cannot really determine whether these two
 questions are close enough to share the same answer. In this case, it
@@ -308,7 +308,7 @@ knowledge base clean, and hopefully free of errors.
 
 : Below is an example showing that a chatbot recommends similar questions when a highly matched question could not be found.
 
-<p align="center"><img src="/img/recommend-questions.png" alt="Recommend similar questions" width="650"/></p>
+<p align="center"><img src="../img/recommend-questions.png" alt="Recommend similar questions" width="650"/></p>
 
 <hr>
 <a name="!overlap-topics"></a>

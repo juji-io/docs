@@ -15,7 +15,7 @@ logged in to Juji platform, you can access the [GraphiQL
 important concepts of using Juji API. Please use the interactive
 [GraphiQL](https://juji.ai/graphiql/graphiql.html) to read the detailed documentation of all Juji GraphQL API calls.
 
-<p align="center"><img src="/img/graphiql.png" alt="GraphiQL" width="650"/></p>
+<p align="center"><img src="../img/graphiql.png" alt="GraphiQL" width="650"/></p>
 
 ## Sample Application
 

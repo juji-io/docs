@@ -15,7 +15,7 @@ user interactions, with a human touch.  The table below summarizes the
 key differences between the two and their suitable applications,
 respectively.
 
-<p align="center"><img src="/img/comparison-table.png" alt="Non-AI
+<p align="center"><img src="../img/comparison-table.png" alt="Non-AI
 vs. AI chatbots comparison table" width="650"/></p>
 
 Juji Studio enables you to easily create powerful AI chatbots with
@@ -41,7 +41,7 @@ Most non-AI chatbots are also known as "button bots", which drive a
 fixed chat flow that requires users to click on a set of choice
 buttons and move a "chat" forward as shown below.
 
-<p align="center"><img src="/img/button-bot-pk-1.png" alt="an example of
+<p align="center"><img src="../img/button-bot-pk-1.png" alt="an example of
 button bot" width="650"/></p>
 
 In such a flow, users are not allowed to interrupt or deviate from the
@@ -62,7 +62,7 @@ chatbot was able to recognize the free-text question and responds to it
 instantaneously. In addition, the chatbot remembers the conversation
 context, and reasks the question.
 
-<p align="center"><img src="/img/ai-bot-pk-1.png" alt="an example of
+<p align="center"><img src="../img/ai-bot-pk-1.png" alt="an example of
 AI chatbot - task oriented" width="650"/></p>
 
 <br>
@@ -71,12 +71,12 @@ In addition to supporting task-oriented chats (e.g., answering user
 questions), AI chatbots are capable of social chitchats. Below is an
 example showing a social chat between a chatbot and a user:
 
-<p align="center"><img src="/img/free-text-chat.png" alt="an example of
+<p align="center"><img src="../img/free-text-chat.png" alt="an example of
 AI chatbot - social chats" width="650"/></p>
 
 As shown above, the chatbot can recognize user input and carry on a
 conversation naturally. Juji provides a dialog library that contains
-thousands of [built-in mini conversations](/design#built-in-dialog),
+thousands of [built-in mini conversations](../design#built-in-dialog),
 which can be directly used to support various social chitchats.
 
 ## People Insights from Chat
@@ -107,7 +107,7 @@ chatbot understand that a user dislikes the movie in question, but it
 is also able to gather the rationale behind the user's negative
 sentiment.
 
-<p align="center"><img src="/img/people-insights-1.png" alt="an example of
+<p align="center"><img src="../img/people-insights-1.png" alt="an example of
 AI chatbot for interpreting user input" width="650"/></p>
 
 Furthermore, a capable AI chatbot can read between the lines and
@@ -122,7 +122,7 @@ a decision. Below shows two examples where a chatbot "coaches" two
 different candidates to do their best in an interview based on their
 unique characteristics.
 
-<p align="center"><img src="/img/people-insights-2.png" alt="an example of
+<p align="center"><img src="../img/people-insights-2.png" alt="an example of
 AI chatbot inferring user intent and characteristics" width="550"/></p>
 
 
@@ -193,4 +193,4 @@ If the answers to all the above questions are positive, there is definitely a go
 
 ## **What's Next**
 
-Ready to create your own AI chatbot? Check out these [design tips](/chatbot-design-tips) for creating super helpful and user-pleasing AI chatbots to help you scale your business and delight your audience. 
+Ready to create your own AI chatbot? Check out these [design tips](../chatbot-design-tips) for creating super helpful and user-pleasing AI chatbots to help you scale your business and delight your audience. 

@@ -21,6 +21,12 @@ pip install mkdocs
 pip install mkdocs-material
 ```
 
+## Assets and Links
+
+Make sure the assets filenames and internal links use relative paths, because the site is deployed as a sub-directory of our main site. 
+
+For example, use `../img/something.png` instead of `/img/something.png`, use `../design` instead of `/design`.
+
 ## Test
 
 After you edit the documents, you can test the site by starting a dev-server:
@@ -33,7 +39,6 @@ mkdocs serve
 And point browser to http://localhost:8000
 
 The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file, documentation directory, or theme directory changes.
-
 
 ## Deploy
 
