@@ -45,5 +45,7 @@ The site is automatically deployed when master branch is pushed to github.
 pip install mkdocs mkdocs-material pymdown-extensions --upgrade
 ```
 
-We may need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`. Also need to change the names of the assets files to be the same as the built ones using `mkdocs build`.
+We may need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`. 
+
+Also need to change the names of the assets files in `assets/javascripts` and `assets/stylesheets` in base.html to be the same as the ones in `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/assets/`.
 
