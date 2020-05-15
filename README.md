@@ -47,5 +47,11 @@ pip install mkdocs mkdocs-material pymdown-extensions --upgrade
 
 We may need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`. 
 
-Also need to change the names of the assets files in `assets/javascripts` and `assets/stylesheets` in base.html to be the same as the ones in `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/assets/`.
+Also need to change the names of the following assets files in base.html to be the same as the ones in `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/assets/`:
+
+* javascripts/worker/search.*.min.js
+* javascripts/bundle.*.min.js
+* javascripts/vwndor.*.min.js
+* stylesheets/main.*.min.css
+* javascripts/palette.*.min.css
 
