@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 pipeline {
-  agent { label 'docs' }
+  agent { label 'web' }
   stages {
     stage('Build') {
       steps {
@@ -18,8 +18,6 @@ pipeline {
         sh '''
           git pull
           mkdocs build
-          cd ../juji-io.github.io 
-          mkdocs gh-deploy --config-file ../juji-io_on_github_docs_master/mkdocs.yml --remote-branch master
         '''
       }
     }
