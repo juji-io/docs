@@ -32,7 +32,7 @@ that chats with a Juji bot.
 
 ## What's Next
 
-* [Juji Data Model](/nouns)
-* [Chat API](/chat)
-* [Data API](/meta)
+* [Juji Data Model](../nouns)
+* [Chat API](../chat)
+* [Data API](../meta)
 

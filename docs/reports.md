@@ -243,5 +243,5 @@ self-help books to those who are always eager to improve oneselves.
 Based on your needs, you may want to create multiple chatbots, e.g.,
 one for helping customers and the other for helping employees. You
 need practice.  To make your chatbot making and management tasks more
-productive, here are some [**design tips**](/chatbot-design-tips).
+productive, here are some [**design tips**](../chatbot-design-tips).
 

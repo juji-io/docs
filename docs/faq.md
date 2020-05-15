@@ -6,7 +6,7 @@
 <hr>
 <a name="!ai-vs-no-ai"></a>
 ### What are the differences between AI chatbots and non-AI chatbots?
-: Here is a [quick comparison](/why-ai-chatbots#a-quick-comparison) between the two.
+: Here is a [quick comparison](../why-ai-chatbots#a-quick-comparison) between the two.
 
 <hr>
 <a name="!know-ai-chatbot"></a>
@@ -32,7 +32,7 @@
 
 <a name="!why-ai-chatbot"></a>
 ### Why do I need an AI chatbot?
-: Here is a [quick test](/why-ai-chatbots/#quick-test) to help you determine if you need an AI chatbot.
+: Here is a [quick test](../why-ai-chatbots/#quick-test) to help you determine if you need an AI chatbot.
 
 <hr>
 <a name="!chat-length"></a>
@@ -42,7 +42,7 @@
 chatbot may chat with its users for a long period of time (e.g., 45
 minutes), while an e-commerce chatbot may chat with its users for a
 few minutes (e.g., 5 minutes) to help resolve user issues. Please
-check out [how to determine the optimal chat length](/chatbot-design-tips#optimal-chat-length).
+check out [how to determine the optimal chat length](../chatbot-design-tips#optimal-chat-length).
 
 <hr>
 <a name="!improve-chatbot"></a>
@@ -120,7 +120,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 ### How do I change chatbot persona?
 
 : Click on **`Design`** on the left menu panel and then click on **`Chatbot Settings`**. On
-this page, you can customize your chatbot persona. See [Customize Chatbot Persona](/design#chatbot-persona) for more details.
+this page, you can customize your chatbot persona. See [Customize Chatbot Persona](../design#chatbot-persona) for more details.
 
 <p align="center"><img src="../img/change-persona.png" alt="change chatbot persona" width="650"/></p>
 
@@ -131,7 +131,7 @@ this page, you can customize your chatbot persona. See [Customize Chatbot Person
 : Click on **`Design`** on the left menu pane, then click on the
 **`Custom`** persona. You can then define your own custom
 persona. More details are under [Customize Chatbot
-Persona](/design#chatbot-persona).
+Persona](../design#chatbot-persona).
 
 
 <hr>
@@ -185,7 +185,7 @@ request" width="550"/></p>
 <hr>
 <a name="!custom-response"></a>
 ### How can I customized the chatbot's response to participants' answers in open-ended questions?
-: You can use both [Juji Studio](/juji-studio) or [Juji IDE](/juji-ide) to customize chatbot responses. Also check out [Chatbot Design](/design) for specifics.
+: You can use both [Juji Studio](../juji-studio) or [Juji IDE](../juji-ide) to customize chatbot responses. Also check out [Chatbot Design](../design) for specifics.
 
 <hr>
 <a name="!mostly-choices"></a>
@@ -210,7 +210,7 @@ request" width="550"/></p>
 <hr>
 <a name="!followup"></a>
 ### What is a follow-up request?
-: A follow-up request is where a chatbot asks a question to deepen a conversation based on a user's answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user's answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](/design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
+: A follow-up request is where a chatbot asks a question to deepen a conversation based on a user's answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user's answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](../design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
 
 <hr>
 <a name="!followup-vs-reg"></a>
@@ -251,7 +251,7 @@ request" width="550"/></p>
 : This depends on your chatbot application. Applications that involve
 much knowledge especially complex knowledge may need many more
 questions than others. Here is a practical way to [anticipate the
-types of questions](/chatbot-design-tips#prepare-qa-list-and-chitchats)
+types of questions](../chatbot-design-tips#prepare-qa-list-and-chitchats)
 your chatbot should handle. This list helps you jumpstart the smarts
 of your chatbot.
 
@@ -265,7 +265,7 @@ of your chatbot.
 values in the ID column to whatever text labels you want to use. We in
 fact encourage you to use labels that you can remember to facilitate
 Q&A management. After you make such changes, make sure you choose the
-`Replace` option when you upload the changed CSV file. See [more tips](/design#qa-tips) on defining IDs.
+`Replace` option when you upload the changed CSV file. See [more tips](../design#qa-tips) on defining IDs.
 
 <hr>
 <a name="!confirm-unanswered-anser"></a>
@@ -304,7 +304,7 @@ knowledge base clean, and hopefully free of errors.
 <a name="!faq-q-variation"></a>
 ###How many question variations or expressions should I put in when preparing Q&A?
 
-: You can start with just one expression per question. Juji has a rich question library that will automatically augment a question you put in. Additionally, Juji chatbots always try to recommend similar questions if it could not find a well matched question during a chat. You can also use the [Q&A dashboard](/design#customize-qa-and-fallback) to monitor and improve the Q&A capabilities of your chatbot incrementally.
+: You can start with just one expression per question. Juji has a rich question library that will automatically augment a question you put in. Additionally, Juji chatbots always try to recommend similar questions if it could not find a well matched question during a chat. You can also use the [Q&A dashboard](../design#customize-qa-and-fallback) to monitor and improve the Q&A capabilities of your chatbot incrementally.
 
 : Below is an example showing that a chatbot recommends similar questions when a highly matched question could not be found.
 
@@ -329,7 +329,7 @@ you have only one window/tab open for one chatbot at a time.
 
 : If this occurs, please double check the Q&A CSV file you
 uploaded. Make sure that all the Q&As are entered in the CSV following
-the [required format](/design#customize-qa-and-fallback).
+the [required format](../design#customize-qa-and-fallback).
 
 <hr>
 <a name="!disable-chatbot"></a>
@@ -337,14 +337,14 @@ the [required format](/design#customize-qa-and-fallback).
 ###How do I set up "out of office" for my chatbot?
 
 : This is quite easy to do on Juji. Just follow these steps to
-[suspend a chatbot](/design#suspend-chat).
+[suspend a chatbot](../design#suspend-chat).
 
 <hr>
 <a name="!similar-vs-contains"></a>
 ###What is the difference between 'contains-keywords` and `is-similar-to` trigger?
 ### When should I use `contains-keywords` vs. `is-similar-to` trigger to guide my chatbot?
 
-: To decide which type of trigger to use, please check out [this tip](/chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
+: To decide which type of trigger to use, please check out [this tip](../chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
 
 <hr>
 <a name="!choice-vs-free-text"></a>
@@ -353,7 +353,7 @@ the [required format](/design#customize-qa-and-fallback).
 
 : These two questions normally elicit different types of
 information. One (choice) is more structured than the other
-(free-text). Check out [this design tip](/chatbot-design-tips-advanced#use-proper-chatbot-request) to
+(free-text). Check out [this design tip](../chatbot-design-tips-advanced#use-proper-chatbot-request) to
 choose one to deliver the best user experience.
 <hr>
 <a name="!preview"></a>
@@ -375,7 +375,7 @@ choose one to deliver the best user experience.
 <hr>
 <a name="!deploy"></a>
 ### How do I deploy my chatbot?
-: Click on **`Deploy`** on the left menu pane to go to the release page. Then choose your deployment type. For more details, check out various [deployment functions](/release).
+: Click on **`Deploy`** on the left menu pane to go to the release page. Then choose your deployment type. For more details, check out various [deployment functions](../release).
 
 <hr>
 <a name="!where-deploy"></a>
@@ -405,8 +405,8 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 raising a child, you should monitor your chatbot and feed your chatbot
 with new knowledge periodically to improve it and help it grow. Juji
 provides you with dashboards to [monitor the Q&A
-status](/design#customize-qa-and-fallback) as well as [monior the
-audience interaction](/reports) with your chatbot.
+status](../design#customize-qa-and-fallback) as well as [monior the
+audience interaction](../reports) with your chatbot.
 
 : We strongly recommend that you check your chatbot via the dashboards
 periodically. If you don't have time to do so, you may want to hire a
@@ -439,7 +439,7 @@ maintain your chatbot.
 ### Will we be able to go into the chatbot at any time and make changes after it goes live?
 
 
-: Yes, Juji Studio allows you to do so very easily and quickly. Check out the instructions under [Design](/design).
+: Yes, Juji Studio allows you to do so very easily and quickly. Check out the instructions under [Design](../design).
 
 ## Reporting Questions
 
@@ -459,7 +459,7 @@ maintain your chatbot.
 <hr>
 <a name="!download-results"></a>
 ### Can I download the conversation results?
-: Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](/reports#export-audience-data) for more details.
+: Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](../reports#export-audience-data) for more details.
 
 <hr>
 <a name="!sync-w-crm"></a>
@@ -467,5 +467,5 @@ maintain your chatbot.
 
 : Currently you can export all your chat data to a CSV file, which can
 then be easily imported into third-party applications, such as
-SalesForce and Marketo. Check out [how to eport to CSV](/reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
+SalesForce and Marketo. Check out [how to eport to CSV](../reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
 

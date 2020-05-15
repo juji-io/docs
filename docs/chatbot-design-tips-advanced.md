@@ -1,14 +1,14 @@
 # **Making AI Chatbots: <br> Best Practices (Advanced)**
 
 Here are more design tips if you want to use the [Juji
-Platform](/index) to optimize your AI chatbot performance and deliver superior user experience.
+Platform](../) to optimize your AI chatbot performance and deliver superior user experience.
 
 
 ## **Use Proper Chatbot Request**
 
 Currently Juji supports two main types of chatbot request:
-[choice-based](/design#choice-request) and
-[free-text](/design#free-text-request). The former collects structured
+[choice-based](../design#choice-request) and
+[free-text](../design#free-text-request). The former collects structured
 user input, while the latter elicits open-ended, free-text user input.
 
 If your goal of a request is to guide users to different directions or
@@ -20,9 +20,9 @@ or unanticipated responses on a particular topic, use a free-text
 request. Because a free-text request is intended to gather open-ended
 user input, be aware of potential highly diverse user digressions. To
 handle such user digressions, make sure that you [choose a right Juji
-built-in dialog](/design#built-in-dialog) to handle such situations
+built-in dialog](../design#built-in-dialog) to handle such situations
 automatically. You can of course write [custom chatbot
-actions](/design#customizing-chatbot-actions) to handle specific user
+actions](../design#customizing-chatbot-actions) to handle specific user
 input that you wish to capture and address.
 
 ## **Use Proper Chatbot Trigger**
@@ -134,7 +134,7 @@ label 2 - short" width="550"/></p>
 
 In case you don't think the label you entered retrieves a suitable
 built-in dialog, you can always browse Juji dialog library to [search
-for a more suitable built-in dialog](/design#built-in-dialog).
+for a more suitable built-in dialog](../design#built-in-dialog).
 
 ### **Handle Context-Sensitive User Inquiries**
 
@@ -192,7 +192,7 @@ sensible label - index answers in audience report" width="650"/></p>
 Since the labels are often more concise than the original requests,
 using them to index user answers makes the report more consumable.
 
-See [these instructions](/reports#export-audience-data) to download
+See [these instructions](../reports#export-audience-data) to download
 an audience report.
 
 ## **Clone Chatbot for Different Audiences**
@@ -212,8 +212,8 @@ chatbot" width="650"/></p>
 
 ## **Make "Native" Juji AI Chatbot**
 
-While [Juji Studio](/juji-studio) provides an easy way to author,
-test, deploy, and manage an AI chatbot, [Juji API](/api) provides the
+While [Juji Studio](../juji-studio) provides an easy way to author,
+test, deploy, and manage an AI chatbot, [Juji API](../api) provides the
 flexibility of integrating an authored chatbot into any third-party
 applications, such as a web or a mobile application. We strongly
 encourage the use of both. For example, content creators such as
@@ -227,5 +227,5 @@ allowing them to collaborate on the same chatbot.
 ## **What's Next**
 
 Want to power up your chatbot and get some more magic going? Juji has
-you covered. Check out [best practices](/chatbot-design-tips) for
-designing AI chatbots or venture into **[Juji IDE](/juji-ide)**.
+you covered. Check out [best practices](../chatbot-design-tips) for
+designing AI chatbots or venture into **[Juji IDE](../juji-ide)**.

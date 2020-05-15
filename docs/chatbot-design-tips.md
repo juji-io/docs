@@ -7,7 +7,7 @@ personalize their help in real-world applications.
 
 In case you are not sure what an AI chatbot is or why you need one,
 check out this comparison on [AI chatbots vs. Non-AI
-chatbots](/why-ai-chatbots).
+chatbots](../why-ai-chatbots).
 
 ## **Support Tasks and Social Chitchat**
 
@@ -67,7 +67,7 @@ user input). Below is the above sample outline with markings
 highlighted in yellow. This avoids [unnecessary
 mistakes](#mix-messages-and-requests) during a chatbot making
 process. Based on the markings, you can then [create a
-chatbot](/design) and add the marked items in the main chat flow.
+chatbot](../design) and add the marked items in the main chat flow.
 
 <p align="center"><img src="../img/chat-outline-annotated.png" alt="annotated
 sample chat outline" width="650"/></p>
@@ -114,7 +114,7 @@ As part of the HELP guide, it is also valuable to customize answers to the follo
 
 * **User request to chat with a human agent**. By default, this question is already in a chatbot's knowledge base. You may want to edit the system default response based on your situation. Just download the CSV file from the Q&A board and edit the answer to this question in the CSV file. Then upload. 
 
-* **Default response to any unrecognized user input**. You can edit the <a href="https://docs.juji.io/design#default-response" target="_blank">**default response to unknown user input**</a> as part of the [conversation parameters](/design#conversation-parameters).
+* **Default response to any unrecognized user input**. You can edit the <a href="https://docs.juji.io/design#default-response" target="_blank">**default response to unknown user input**</a> as part of the [conversation parameters](../design#conversation-parameters).
 
 
 #### <a name="recip-q"></a>Prepare Answers to Reciprocal Questions
@@ -136,7 +136,7 @@ the application.
 
 All the Q&As can be entered in a CSV file or directly in the table on
 the `Q&A Board` page. Please refer to [Customize
-Q&A](/design#customize-qa-and-fallback) for more details on how to
+Q&A](../design#customize-qa-and-fallback) for more details on how to
 add/edit Q&As.
 
 <p align="center"><img src="../img/design-qa.png" alt="define Q&As" width="650"/></p>
@@ -152,7 +152,7 @@ user experience.
 ### Mix Messages and Requests
 
 Juji AI chatbots can send two types of messages (check out [chatbot
-design](/design)). One type is a plain chatbot **message** that ignores
+design](../design)). One type is a plain chatbot **message** that ignores
 user input. The other is a chatbot **request** that waits for user input
 and responds to it. If a chatbot sends too many messages that ignore
 user input, it feels like a monologue (or chatbot spam) instead of a
@@ -201,13 +201,13 @@ elicit the rationale behind user responses.
 
 ### Use Proper Juji Built-in Dialog
 
-As mentioned in the [design](/design) section, Juji provides a rich
-set of [built-in, mini conversations](/design#built-in-dialog). These
+As mentioned in the [design](../design) section, Juji provides a rich
+set of [built-in, mini conversations](../design#built-in-dialog). These
 built-in dialogs automatically handle highly diverse, potentially
 complex user expressions. Such dialogs deliver great conversation experience
 without requiring much customization.
 
-Since Juji uses the request label (see how to [give a good label](/chatbot-design-tips-advanced#give-sensible-labels)) to find the matched built-in dialog, such match is not always correct. For example, your chatbot is supposed to ask a yes-no question, such as `Would you like to take a test drive?`. Juji may not always match such a question with the built-in dialog that handles yes-no question.
+Since Juji uses the request label (see how to [give a good label](../chatbot-design-tips-advanced#give-sensible-labels)) to find the matched built-in dialog, such match is not always correct. For example, your chatbot is supposed to ask a yes-no question, such as `Would you like to take a test drive?`. Juji may not always match such a question with the built-in dialog that handles yes-no question.
 
 <p align="center"><img src="../img/example-topic-1.png" alt="display of a retrieved built-in dialog" width="650"/></p>
 
@@ -405,5 +405,5 @@ you will always have a copy of what you have made.
 ## **What's Next**
 
 Want to power up your chatbot and get some more magic going? Juji has
-you covered. Dig deeper into [advanced design tips](/chatbot-design-tips-advanced) or **[Juji IDE](/juji-ide)**.
+you covered. Dig deeper into [advanced design tips](../chatbot-design-tips-advanced) or **[Juji IDE](../juji-ide)**.
 

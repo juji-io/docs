@@ -85,7 +85,7 @@ message topic - select a message type" width="550"/></p>
 **IMPORTANT TIP**
 
 To decide which chatbot request to use, please check out this [design
-tip](/chatbot-design-tips-advanced#use-proper-chatbot-request).
+tip](../chatbot-design-tips-advanced#use-proper-chatbot-request).
 
 ### Edit a Topic
 
@@ -94,7 +94,7 @@ below on how to edit a specific topic. One can edit a topic in three sections:
 
 * **Chatbot Content** Use this section to customize the actual chatbot
 message(s) that users will see during a chat. Please refer to
-[examples](#examples-customizing-chatbot-content) and [best practices](/chatbot-design-tips)
+[examples](#examples-customizing-chatbot-content) and [best practices](../chatbot-design-tips)
 for defining the content of a topic.
 
 <p align="center"><img src="../img/design-content.png" alt="define
@@ -105,7 +105,7 @@ topic content" width="550"/></p>
     under different conditions. The green "Customization" button shown
     below can be used to add a group of chatbot actions under one
     condition (trigger). Please refer to [examples](#examples-customizing-chatbot-actions)
-    and [best practices](/chatbot-design-tips) for defining specific
+    and [best practices](../chatbot-design-tips) for defining specific
     conditions and corresponding custom chatbot actions.
 
 <p align="center"><img src="../img/design-chatbot-action.png" alt="design
@@ -115,7 +115,7 @@ chatbot actions" width="550"/></p>
 * **Topic Settings** Use this pop-up window
     to customize one or more topic-specific parameters, such as the
     delayed start of this topic and required user response
-    length. Please refer to [best practices](/chatbot-design-tips) to tune
+    length. Please refer to [best practices](../chatbot-design-tips) to tune
     these parameters.
     
 <a name="topic-settings"></a><p align="center">
@@ -302,7 +302,7 @@ personalize the chatbot message.
 * **Add a paraphrase** Use the green `+` button on the right of the
     text bubble to add paraphrases of the message (see the screenshot
     below). The paraphrases will be selected by your chatbot randomly
-    to send during a chat. See [best practices](/chatbot-design-tips)
+    to send during a chat. See [best practices](../chatbot-design-tips)
     for good uses of paraphrases.
 
 <p align="center"><img src="../img/design-plain-remark.png" alt="customize a plain message" width="550"/></p>
@@ -368,7 +368,7 @@ understand users' needs and wants.
 * **Label** Typically, a label is the short form ("stem") of a chatbot
 request. Although it automatically takes the form of the main message,
 it is good to give a sensible label as it is also used for multiple
-purposes (see [best practices](/chatbot-design-tips)).
+purposes (see [best practices](../chatbot-design-tips)).
 
 * **Main Message** (required) This is the question that users will see
     in a chat. Instead of asking a question directly, a good message
@@ -382,7 +382,7 @@ purposes (see [best practices](/chatbot-design-tips)).
     can be used to re-ask the question by checking the `Re-asking
     Message` box.
 
-See [best practices](/chatbot-design-tips) on how to phrase free-text
+See [best practices](../chatbot-design-tips) on how to phrase free-text
 questions in a conversation.
 
 <p align="center"><img src="../img/design-add-free-text-q.png" alt="add a
@@ -596,7 +596,7 @@ trigger" width="450"/></p>
 <p align="center"><img src="../img/contain-sentiment.png" alt="add a contains-sentiment trigger" width="450"/></p>
 
 * `matches` If a user input matches a rule specified in [Juji chatbot
-    language](/reference).
+    language](../reference).
 
 <p align="center"><img src="../img/matches.png" alt="add a matches
 trigger" width="450"/></p>
@@ -629,7 +629,7 @@ the user.
 
 To decide which type of trigger (chatbot condition) to use, please
 check out this [design
-tip](/chatbot-design-tips-advanced#use-proper-chatbot-trigger).
+tip](../chatbot-design-tips-advanced#use-proper-chatbot-trigger).
 
 
 #### **Customize THEN Actions**
@@ -652,7 +652,7 @@ chatbot actions can be defined:
   chatbot to ask a follow-up question. This defines a full topic - a
   request topic. 
 
-#### <a href="suspend-chat"></a>**Suspend Current Chat** 
+#### **Suspend Current Chat** 
 
 Sometimes, you may want to pause a chatbot a bit before letting it
 interact with your audience again. You can do so easily following these steps:
@@ -667,9 +667,9 @@ interact with your audience again. You can do so easily following these steps:
 
 <p align="center"><img src="../img/suspend-chatbot.png" alt="Suspend chat" width="650"/></p>
 
-**IMPORTANT TIP** If your chatbot is deployed via a web URL, you may also want to change the greeting message on the [web cover page](/release#deploy-to-website) to inform future users about the pause/suspension.
+**IMPORTANT TIP** If your chatbot is deployed via a web URL, you may also want to change the greeting message on the [web cover page](../release#deploy-to-website) to inform future users about the pause/suspension.
 
-#### **Customize End Topic** <a href="customize-end-topic"></a>
+#### **Customize End Topic** 
 
 One may want to customize a chatbot's ending behavior. For example, if
 a survey chatbot needs to end a conversational survey at some point. In
@@ -697,7 +697,7 @@ topic buttons" width="550"/></p>
 ## **What's Next**
 
 Once a chatbot is ready, you can deploy it onto a website or a
-Facebook page. Please check out [**Chatbot Deployment**](/release)
+Facebook page. Please check out [**Chatbot Deployment**](../release)
 to deploy your AI chatbot.
 
 

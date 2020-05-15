@@ -17,19 +17,19 @@ can be used alone or together to suit different application needs.
 <p align="center"><img src="img/JujiPlatform.jpg" alt="Create an AI chatbot" width="650"/></p>
 
 
-  **[Juji Studio](/juji-studio)** provides a graphical user interface (GUI) for
+  **[Juji Studio](juji-studio)** provides a graphical user interface (GUI) for
   **everyone**, with or without technical skills or AI knowledge, to
   rapidly create, customize, test, and deploy AI chatbots **with no
   coding required**.
 
-  **[Juji IDE](/juji-ide)** enables people with minimal coding skills (e.g.,
+  **[Juji IDE](juji-ide)** enables people with minimal coding skills (e.g.,
   ability to write HTML) to power AI chatbots with advanced capabilities (e.g.,
   customizing product recommendation policies). It provides an
   interactive development environment that allows chatbot developers
   to write, compile, and preview AI chatbots using a high-level, [chatbot
-  scripting language](https://docs.juji.io/reference/).
+  scripting language](reference).
 
-  **[Juji API](/api)** enables software engineers to embed AI chatbots in
+  **[Juji API](api)** enables software engineers to embed AI chatbots in
     different applications (e.g., mobile or web-based
     applications). While Juji Studio supports the rapid creation and
     customization of an AI chatbot, [Juji
@@ -86,7 +86,7 @@ or your website:
 ### **Monitor Chatbot**
 
 Juji also helps you monitor your chatbot activities and summarize
-audience information. Check out [**Reports Dashboard**](/reports)
+audience information. Check out [**Reports Dashboard**](reports)
 for more details. 
 
 
@@ -98,5 +98,5 @@ chatbot can handle customer inquiries, make personalized product
 recommendations, and elicit customer reviews, 24x7 and always with a
 cool and upbeat attitude :sunglasses:  Now proceed to customizing the chatbot to suit your needs.
 
-### [**Customize Chatbot**](/design)
+### [**Customize Chatbot**](design)
 
