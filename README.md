@@ -1,6 +1,6 @@
 # Juji Documentation
 
-This is the source for Juji's documentation Web site https://docs.juji.io. The site is built with [mkdocs](https://mkdocs.org).
+This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://mkdocs.org).
 
 We welcome pull requests for this repository.
 
@@ -37,21 +37,7 @@ The dev-server also supports auto-reloading, and will rebuild your documentation
 
 ## Deploy
 
-You should have cloned the repo for the built site at
-`git@github.com:juji-io/juji-io.github.io.git`, so that you should have the following file structure:
-
-```
-docs/
-    mkdocs.yml
-    docs/
-juji-io.github.io/
-```
-Now do the following to deploy the site:
-
-```bash
-cd ../juji-io.github.io/
-mkdocs gh-deploy --config-file ../docs/mkdocs.yml --remote-branch master
-```
+The site is automatically deployed when master branch is pushed to github.
 
 ## Upgrade software
 

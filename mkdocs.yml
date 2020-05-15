@@ -1,6 +1,6 @@
 site_name: 'Juji Documentation'
-site_description: 'Tutorials, guides, and references for Juji chatbot creation platform'
-site_url: 'https://docs.juji.io'
+site_description: 'Tutorials, guides, and references for Juji AI chatbot creation platform'
+site_url: 'https://juji.io/docs'
 
 #repo_name: 'juji-io/docs'
 #repo_url: 'https://github.com/juji-io/docs'
@@ -8,7 +8,7 @@ site_url: 'https://docs.juji.io'
 copyright: 'Copyright &copy; 2020 Juji, Inc.'
 
 google_analytics:
-  - 'UA-108804735-1'
+  - 'UA-113933244-1'
   - 'auto'
 
 theme:
@@ -99,4 +99,4 @@ nav:
   - Juji Forum: https://forum.juji.io
   - FAQs: faq.md
   - Trouble Shooting: trouble-shooting.md
-  - Sign up on Juji: https://juji.io/login
+  - Sign up on Juji: https://juji.ai/login
