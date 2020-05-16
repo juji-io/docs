@@ -141,6 +141,34 @@ topic. The cloned topic will retain all behavior of the original topic.
 <p align="center"><img src="../img/design-clone-topic.png" alt="clone
 a topic" width="350"/></p>
 
+### Topic Relationship
+
+Although the chat flow is presented a list of topics, but the inter-connected topics actually form a graph. When the complexity of the chat flow grows, the need to see the relationship among topics grows also. Juji Studio provides two convenient tools for users to visualize and examine the topic graph. The two icons on top of the topic list leads to a text and a graph view of the topic graph.
+
+<p align="center"><img src="../img/chatflow-topic-icons.png" alt="Chatflow topic icons" width="350"/></p>
+
+#### Topic Text List
+
+<p align="center"><img src="../img/topic-list-text-icon.png" alt="Topic text list icon" width="350"/></p>
+
+Click on the Topic Text List icon, you will see all the topics represented in a textual format in a new browser tab. You can copy or download these text for detailed analysis.
+
+<p align="center"><img src="../img/topic-list-text-view.png" alt="Topic text list view" width="700"/></p>
+
+#### Topic Graph
+
+<p align="center"><img src="../img/topic-list-graph-icon.png" alt="Topic graph icon" width="350"/></p>
+
+Click on the Topic Graph icon, you will see all the topics represented in a graph visualization in a new browser tab. Each node in the graph represents a topic.  You can drag the nodes around, pan and zoom in/out the graph. Click Reset button to change the graph layout. Click Center button to re-center the viewpoint. Click Legend button to toggle on/off the legend of the graph. You can also change how long you want the node label to be by choosing a Label Size.
+
+<p align="center"><img src="../img/topic-graph.png" alt="Topic graph" width="700"/></p>
+
+When you click on one of the graph nodes, not only the node turns yellow, the corresponding topic editor in the design view is also selected and open. So you can use the topic graph as a convenient topic navigator for editing topics. 
+
+Here is how to do it: first drag out the topic graph tab as a window, then lay this window side by side with the design view, or lay it top and down with the design view. The idea is to show both windows at the same time, so you can use the topic graph to navigate between topics for editing.
+
+<p align="center"><img src="../img/topic-graph-as-navigator.png" alt="View topic graph and topic editor at the same time" width="700"/></p>
+
 ## **Customize Q&A and Fallback**
 
 In addition to driving a conversation based on the main chat flow, an
