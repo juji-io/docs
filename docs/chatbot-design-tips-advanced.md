@@ -178,19 +178,20 @@ context-sensitive inquiry on this topic:
 
 <p align="center"><img src="../img/context-hobby.png" alt="A sensible label" width="650"/></p>
 
-### **Index User Responses in Audience Report**
+### **Label User Responses in Audience Report**
 
-Another use of a request label is to index the user answers to the
+Another use of a request label is to label the user responses to the
 request in the audience report. Below is an example of audience
 report. It shows various user answers to the above two requests. As
-shown, both labels mentioned above are used to index the corresponding
+shown, both labels mentioned above are used to label the corresponding
 user answers.
 
 <p align="center"><img src="../img/label-index-answers.png" alt="A
-sensible label - index answers in audience report" width="650"/></p>
+sensible label - label user responses in audience report" width="650"/></p>
 
-Since the labels are often more concise than the original requests,
-using them to index user answers makes the report more consumable.
+Since the labels are normally a concise description of requests,
+using them to label user answers in the audience report makes the
+report more consumable.
 
 See [these instructions](../reports#export-audience-data) to download
 an audience report.
@@ -236,8 +237,9 @@ chatbot" width="650"/></p>
 
 If you wish to import a Juji chatbot, just click on the `+ AI Helper`
 button. As shown below, instead of creating a chatbot from scratch,
-you can use the `Import` tab to import an exported `*.juji` file. After
-importing a chatbot, you can customize and manage the chatbot as if it
+you can use the `Import` tab to import an exported `*.juji`
+file. After importing a chatbot, you can then [customize](../design),
+[deploy](../release), and [manage](../reports) the chatbot as if it
 were created by you from scratch.
 
 <p align="center"><img src="../img/create-a-chatbot-btn.png" alt="+ AI Helper
