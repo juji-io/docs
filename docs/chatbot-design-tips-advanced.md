@@ -222,16 +222,16 @@ On Juji, you can easily do so by exporting your chatbot so you can
 share it with others. The following screenshot shows that you can
 click on the ellipsis (...) menu button located on the top right
 corner of the card representing a chatbot you wish to export. Then
-click on the "Export" button. This action will automatically download
-a file called "\*-export.juji" onto your computer, where * is the project
-name associated with the chatbot.
+click on the `Export` button. This action will automatically download
+a file named `*-export.juji` onto your computer, where * is the project
+name associated with the chatbot. For example, if we export the restaurant reservation chatbot in the screenshot shown below, the exported file name would be `Restaurant-Reservation-export.juji`
 
 <p align="center"><img src="../img/export-a-chatbot.png" alt="Export a
 chatbot" width="650"/></p>
 
-If you wish to import a Juji chatbot, just click on the "+ AI Helper"
+If you wish to import a Juji chatbot, just click on the `+ AI Helper`
 button. As shown below, instead of creating a chatbot from scratch,
-you can use the "Import" tab to import an exported \*.juji file. After
+you can use the `Import` tab to import an exported `*.juji` file. After
 importing a chatbot, you can customize and manage the chatbot as if it
 were created by you from scratch.
 
@@ -241,7 +241,7 @@ button" width="350"/></p>
 <p align="center"><img src="../img/import-a-chatbot.png" alt="Import a
 chatbot" width="650"/></p>
 
-## **Difference between "Clone" and "Export"**
+### **Tip: Difference between `Clone` and `Export`**
 Although both "Clone" and "Export" allow the sharing and reuse of a
 Juji chatbot, the key difference is that "Clone" allows the reuse
 within the same Juji account, while "Export" allows the reuse of a
