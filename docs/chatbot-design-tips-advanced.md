@@ -195,7 +195,7 @@ using them to index user answers makes the report more consumable.
 See [these instructions](../reports#export-audience-data) to download
 an audience report.
 
-## **Reuse or Share Juji Chatbots **
+## **Reuse or Share Juji Chatbots**
 
 Creating a custom chatbot often takes time and effort. Juji allows you
 to easily reuse or share a Juji chatbot in one of the two methods
