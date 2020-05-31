@@ -195,7 +195,7 @@ using them to index user answers makes the report more consumable.
 See [these instructions](/reports#export-audience-data) to download
 an audience report.
 
-## **Clone Chatbot for Different Audiences**
+## **Clone Juji Chatbots**
 
 In some cases, you may want your chatbot to behave slightly
 differently for different audiences. For example, one chatbot needs to
@@ -209,20 +209,70 @@ different chatbots for different audiences.
 <p align="center"><img src="/img/clone-a-chatbot.png" alt="Clone a
 chatbot" width="650"/></p>
 
+## **Export/Import Juji Chatbots**
 
-## **Make "Native" Juji AI Chatbot**
+Once you have created a chatbot on Juji, you may want to share it with
+others, for example, a fellow chatbot designer who could help polish
+the chatbot or a client who wishes to buy your chatbot but
+manage the chatbot him/herself. On the other hand, you may want to
+create a chatbot based on another designer's chatbot instead of
+creating one from scratch.
+
+On Juji, you can easily do so by exporting your chatbot so you can
+share it with others. The following screenshot shows that you can
+click on the ellipsis (...) menu button located on the top right
+corner of the card representing a chatbot you wish to export. Then
+click on the "Export" button. This action will automatically download
+a file called *-export.juji onto your computer, where * is the project
+name associated with the chatbot.
+
+<p align="center"><img src="/img/export-a-chatbot.png" alt="Export a
+chatbot" width="650"/></p>
+
+If you wish to import a Juji chatbot, just click on the "+ AI Helper"
+button. As shown below, instead of creating a chatbot from scratch,
+you can use the "Import" tab to import an exported *.juji file. After
+importing a chatbot, you can customize and manage the chatbot as if it
+were created by you from scratch.
+
+<p align="center"><img src="/img/create-a-chatbot-btn.png" alt="+ AI Helper
+button" width="350"/></p>
+
+<p align="center"><img src="/img/import-a-chatbot.png" alt="Import a
+chatbot" width="650"/></p>
+
+## **Difference between "Clone" and "Export"**
+Although both "Clone" and "Export" allow the sharing and reuse of a
+Juji chatbot, the key difference is that "Clone" allows the reuse
+within the same Juji account, while "Export" allows the reuse of a
+chatbot across different Juji accounts (e.g., yours and your
+teammate's).
+
+## **Embed Juji Chatbots in Third-Party Apps**
 
 While [Juji Studio](/juji-studio) provides an easy way to author,
 test, deploy, and manage an AI chatbot, [Juji API](/api) provides the
-flexibility of integrating an authored chatbot into any third-party
-applications, such as a web or a mobile application. We strongly
-encourage the use of both. For example, content creators such as
-social media marketers or sales personnel can use Juji Studio to enter
-the content of a chatbot. On the other side, the IT or engineering
-team can use the Juji API to integrate such a chatbot into business
-applications to deploy a chatbot "native" to the applications. This
-separation of duties gives each team the freedom to operate while
-allowing them to collaborate on the same chatbot.
+flexibility of integrating your chatbot into any third-party
+applications, such as a web or a mobile application.
+
+The Juji platform supports the seamless, combined use of Juji Studio
+and Juji API. For example, content creators such as social media
+marketers, product managers, and sales professionals can use Juji
+Studio to customize the content of a chatbot, deploy and manage the
+chatbot. On the other side, the IT or engineering team can use the
+Juji API to "embed" the deployed chatbot into a brand's own business
+applications, controlling the look and feel of the chatbot and making
+the chatbot "native" to the application. This separation of
+duties gives each team the freedom to operate while allowing them to
+easily collaborate on the same chatbot.
+
+Such integration is also straightforward: just use the Juji provided
+standard API to embed a Juji chatbot into a third-party application,
+without the need of downloading and installing any code or SDK. Once a
+chatbot is embedded, the business team who designs the content or
+workflow of a chatbot can use the Juji Studio to easily manage and
+update the chatbot without requiring the IT or engineering team's
+effort to update the embedded chatbot.
 
 ## **What's Next**
 
