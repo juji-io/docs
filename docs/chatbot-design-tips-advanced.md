@@ -195,21 +195,26 @@ using them to index user answers makes the report more consumable.
 See [these instructions](../reports#export-audience-data) to download
 an audience report.
 
-## **Clone Juji Chatbots**
+## **Reuse or Share Juji Chatbots **
+
+Creating a custom chatbot often takes time and effort. Juji allows you
+to easily reuse or share a Juji chatbot in one of the two methods
+below. Below we also indicate the key difference between these two methods.
+
+### **Clone Juji Chatbots**
 
 In some cases, you may want your chatbot to behave slightly
 differently for different audiences. For example, one chatbot needs to
 redirect to a different URL after it is done chatting, while the other chatbot
 may generate a unique code at the end of the chat. To reuse most of
 the shared chatbot content, you can easily clone a chatbot as shown
-below and then deploy
-different chatbots for different audiences.
+below and then deploy different chatbots for different audiences.
 
 
 <p align="center"><img src="../img/clone-a-chatbot.png" alt="Clone a
 chatbot" width="650"/></p>
 
-## **Export/Import Juji Chatbots**
+### **Export/Import Juji Chatbots**
 
 Once you have created a chatbot on Juji, you may want to share it with
 others, for example, a fellow chatbot designer who could help polish
@@ -241,10 +246,10 @@ button" width="350"/></p>
 <p align="center"><img src="../img/import-a-chatbot.png" alt="Import a
 chatbot" width="650"/></p>
 
-### **Tip: Difference between `Clone` and `Export`**
-Although both "Clone" and "Export" allow the sharing and reuse of a
-Juji chatbot, the key difference is that "Clone" allows the reuse
-within the same Juji account, while "Export" allows the reuse of a
+### **Tip: Difference between Clone and Export**
+Although both `Clone` and `Export` allow the sharing and reuse of a
+Juji chatbot, the key difference is that `Clone` allows the reuse
+within the same Juji account, while `Export` allows the reuse of a
 chatbot across different Juji accounts (e.g., yours and your
 teammate's).
 
