@@ -14,12 +14,12 @@ configure the fields to be shown on the cover page:
 * Email (optional)
 
 
-<p align="center"><img src="/img/web-cover.png" alt="Web Deployment" width="650"/></p>
+<p align="center"><img src="../img/web-cover.png" alt="Web Deployment" width="650"/></p>
 
 Use the `Generate URL` button to generate a web URL. This URL can then
 be embedded into an email or a website for target audience.
 
-<p align="center"><img src="/img/web-url.png" alt="generate URL" width="650"/></p>
+<p align="center"><img src="../img/web-url.png" alt="generate URL" width="650"/></p>
 
 Two URLs are generated:
 
@@ -52,9 +52,9 @@ Linkedin:
 Juji will automatically capture such *external* information in its
 reports. For example, two entries below from the CSV report file show
 the captured source information (see [how to download a CSV
-report](/reports)).
+report](../reports)).
 
-<p align="center"><img src="/img/capture-external-info.png" alt="capture external information" width="650"/></p>
+<p align="center"><img src="../img/capture-external-info.png" alt="capture external information" width="650"/></p>
 
 ## **Deploy to Facebook Page**
 
@@ -62,7 +62,7 @@ One can deploy a Juji chatbot to a Facebook Messenger associated with
 a Facebook page.
 
 
-<p align="center"><img src="/img/facebook-deployment.png"
+<p align="center"><img src="../img/facebook-deployment.png"
 alt="Facebook Deployment" width="650"/></p>
 
 Similar to deploying to a website, one can also edit the **weclome
@@ -73,7 +73,7 @@ Use the blue `Connect with Facebook` button to deploy a
 chatbot. Select the page(s) you want to deploy to. Then click on the
 green `Deploy` button to complete the deployment.
 
-<p align="center"><img src="/img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
+<p align="center"><img src="../img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
 
 If there is no page listed, it means that you have not given Juji
 permissions to any of your Facebook pages to host your
@@ -94,13 +94,13 @@ updates to the deployment, Juji supports two types of update:
     updated chatbot will restart and reflect the changes made.
 
 ### **Update Facebook Chatbot**
-<p align="center"><img src="/img/deploy-fb-after.png" alt="After
+<p align="center"><img src="../img/deploy-fb-after.png" alt="After
 successful facebook deployment" width="650"/></p>
 
 <br>
 
 ### **Update Web Chatbot**
-<p align="center"><img src="/img/web-update.png" alt="Update Web AI chatbot" width="650"/></p>
+<p align="center"><img src="../img/web-update.png" alt="Update Web AI chatbot" width="650"/></p>
 
 * **New Release** Use the `Connect with Facebook` button or `New
     Release` button under `Manage` to release a new version of the
@@ -121,7 +121,7 @@ between two releases and you don't wish to mix the old and new data
 together. Making a new release will also facilitate easier comparison
 of audience behavior under different chatbot versions.
 
-Note that the current [Reports](/reports) page shows the audience
+Note that the current [Reports](../reports) page shows the audience
 information for the most recent release/version of chatbot. If you
 make a new release, currently you may not be able to access the audience
 information for previous releases.

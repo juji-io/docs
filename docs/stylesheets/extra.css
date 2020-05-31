@@ -32,16 +32,9 @@
     font-style:normal
 }
 
-@font-face{
-    font-family:GothamRounded-Medium;
-    src:url(../fonts/GothamRounded-Medium/GothamRounded-Medium.eot) format('embedded-opentype');
-    font-weight:400;
-    font-style:normal
-}
-
 @font-face {
     font-family:GothamRounded-Medium;
-    src:url(../fonts/GothamRounded-Medium/GothamRounded-Medium.otf) format('opentype'),url(../fonts/GothamRounded-Book/GothamRounded-Book.woff) format('woff'),url(../fonts/GothamRounded-Medium/GothamRounded-Medium.otf) format('truetype'),url(../fonts/GothamRounded-Medium/GothamRounded-Medium.svg#GothamRounded-Medium) format('svg');
+    src:url(../fonts/GothamRounded-Medium/GothamRounded-Medium.otf) format('opentype'),url(../fonts/GothamRounded-Book/GothamRounded-Book.woff) format('woff'),url(../fonts/GothamRounded-Medium/GothamRounded-Medium.otf) format('truetype');
     font-weight:400;
     font-style:normal
 }

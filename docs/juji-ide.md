@@ -5,7 +5,7 @@ The Juji platform has many built-in capabilities for creating powerful
 conversational AI assistants. When your needs go beyond these built-in
 capabilities, Juji put in your hands a simple yet expressive chatbot
 scripting language, called [REP (Responsible and
-Empathetic Persona) langauge](/reference), so that you can harness the full power
+Empathetic Persona) langauge](../reference), so that you can harness the full power
 of the Juji platform.
 
 Juji IDE provides an interactive development environment that allows
@@ -15,15 +15,15 @@ Juji IDE provides an interactive development environment that allows
   advanced capabilities (e.g., customizing product recommendation
   policies).
 
-<p align="center"><img src="/img/juji-ide.png" alt="Juji IDE" width="650px"/></p>
+<p align="center"><img src="../img/juji-ide.png" alt="Juji IDE" width="650px"/></p>
 
 ## Work with REP Scripts
 
 In the IDE, you have access to an online scripting environment. To
 access the IDE page, you can click on the red round button at the bottom left corner of the
-[Chatbot Design](/design) window in [Juji Studio](/juji-studio).
+[Chatbot Design](../design) window in [Juji Studio](../juji-studio).
 
-<p align="center"><img src="/img/ide-button.png" alt="IDE button" width="650"/></p>
+<p align="center"><img src="../img/ide-button.png" alt="IDE button" width="650"/></p>
 
 ### File Browser
 
@@ -73,7 +73,7 @@ created right there.
 ## Add Self-Defined (Complex) FAQs
 
 While you can always use the GUI in Juji Studio to add FAQs
-(/design#customize-qa-and-fallback), you may have already prepared
+(../design#customize-qa-and-fallback), you may have already prepared
 answers to some frequently asked questions that you want to import
 into the script. Juji provides a command line tool for you to convert
 the FAQ and answers into REP script snippets, and you can then paste
@@ -142,7 +142,7 @@ Then, in your script, find the `:ad-lib` key and its vector value in `(config ..
 
 Following our previous example in step 2, below is a screenshot of adding the generated deftopic `generated-faq-topic` to a script and add the topic name to the script's `:ad-lib` vector:
 
-<p align="center"><img src="/img/add-generated-faq-topic.png" alt="IDE faq" width="600"/></p>
+<p align="center"><img src="../img/add-generated-faq-topic.png" alt="IDE faq" width="600"/></p>
 
 At this point, you may save and compile the script. Now your self-defined FAQs are added to your chatbot.
 
@@ -151,11 +151,11 @@ At this point, you may save and compile the script. Now your self-defined FAQs a
 To use Juji IDE effectively and efficiently, you may also want to check out
 the following resources, which can help you write scripts, extend chatbot capabilities, and integrate Juji chatbots with third-party systems. 
 
-### [Juji Concepts](/concept)
+### [Juji Concepts](../concept)
 
 Unlike other chatbot platforms, Juji chatbots' built-in intelligence relies on several key concepts, such as conversation topics and automated dialog management.
 
-### [Juji Built-in Dialog Library](/topics)
+### [Juji Built-in Dialog Library](../topics)
 
 Unlike other chatbot platforms, Juji has a rich dialog library, consisting of many mini-conversations, known as built-in topics. Such topics can be directly used or customized to assemble a chatbot rapidly.
 
@@ -163,6 +163,6 @@ Unlike other chatbot platforms, Juji has a rich dialog library, consisting of ma
 
 To extend the capabilities of Juji chatbots, such as connecting them with third-party systems or resources, you can use Juji functions. There are two types of functions:
 
-* [System Functions](/function)
-* [User-Defined Functions](/udf)
+* [System Functions](../function)
+* [User-Defined Functions](../udf)
 

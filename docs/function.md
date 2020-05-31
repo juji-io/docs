@@ -6,4 +6,4 @@ These functions can be used in REP patterns directly without namespace. The firs
 
 However, when using such function outside of REP patterns (e.g., in a self defined function in REP script), it should be called with appropriate namespace and all of its arguments, e.g., `(juji.func.user/user-first-name rep)`.
 
-<iframe width="1280" height="720" src="/sys-fun/" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../sys-fun/" frameborder="0" allowfullscreen></iframe>

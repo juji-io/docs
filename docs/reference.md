@@ -352,7 +352,7 @@ Containment patterns are not allowed in actions.
 
 At occasions when we need to refine a given pattern to impose further
 restrictions, two refinement patterns can be used. These patterns start with a
-refinement keyword, either `:=` or `-`. The first part of the pattern following
+refinement keyword, either `:=` or `:-`. The first part of the pattern following
 the refinement keyword is the main pattern to be matched, and the rest are the
 refinement.
 

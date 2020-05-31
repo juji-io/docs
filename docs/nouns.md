@@ -24,7 +24,7 @@ bot without impacting your production release.
 
 ## Script
 
-Each release is associated with a corresponding script in [REP Language](/reference/). The script is identified by a unique namespace. The namespace has a format `<brand-name>.<engX>.<rep-name>`, where `X` is the sequence number of the engagement, e.g. `mycorp.eng3.kaya`
+Each release is associated with a corresponding script in [REP Language](../reference/). The script is identified by a unique namespace. The namespace has a format `<brand-name>.<engX>.<rep-name>`, where `X` is the sequence number of the engagement, e.g. `mycorp.eng3.kaya`
 
 ## Question
 

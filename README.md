@@ -1,6 +1,6 @@
 # Juji Documentation
 
-This is the source for Juji's documentation Web site https://docs.juji.io. The site is built with [mkdocs](https://mkdocs.org).
+This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://mkdocs.org).
 
 We welcome pull requests for this repository.
 
@@ -21,6 +21,12 @@ pip install mkdocs
 pip install mkdocs-material
 ```
 
+## Assets and Links
+
+Make sure the assets filenames and internal links use relative paths, because the site is deployed as a sub-directory of our main site. 
+
+For example, use `../img/something.png` instead of `/img/something.png`, use `../design` instead of `/design`.
+
 ## Test
 
 After you edit the documents, you can test the site by starting a dev-server:
@@ -34,24 +40,9 @@ And point browser to http://localhost:8000
 
 The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file, documentation directory, or theme directory changes.
 
-
 ## Deploy
 
-You should have cloned the repo for the built site at
-`git@github.com:juji-io/juji-io.github.io.git`, so that you should have the following file structure:
-
-```
-docs/
-    mkdocs.yml
-    docs/
-juji-io.github.io/
-```
-Now do the following to deploy the site:
-
-```bash
-cd ../juji-io.github.io/
-mkdocs gh-deploy --config-file ../docs/mkdocs.yml --remote-branch master
-```
+The site is automatically deployed when master branch is pushed to github.
 
 ## Upgrade software
 
@@ -59,5 +50,13 @@ mkdocs gh-deploy --config-file ../docs/mkdocs.yml --remote-branch master
 pip install mkdocs mkdocs-material pymdown-extensions --upgrade
 ```
 
-We may need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`. Also need to change the names of the assets files to be the same as the built ones using `mkdocs build`.
+We may need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`. 
+
+Also need to change the names of the following assets files in base.html to be the same as the ones in `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/assets/`:
+
+* javascripts/worker/search.*.min.js
+* javascripts/bundle.*.min.js
+* javascripts/vwndor.*.min.js
+* stylesheets/main.*.min.css
+* javascripts/palette.*.min.css
 
