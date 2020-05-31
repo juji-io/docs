@@ -56,9 +56,7 @@ fruit except strawberries`:
 
 This is because both expressions contain the keyword 'strawberry`
 regardless their use with different semantics. Note that Juji
-automatically handles [stemming and lemmatization]
-(https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html)
-in keyword matching to support the matching of word variations.
+automatically handles <a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html" target="_blank">stemming and lemmatization</a> in keyword matching to support the matching of word variations.
 
 However, a `contains-keyword` trigger would not match
 `strawberry` with `blueberry` because these are very different keywords:

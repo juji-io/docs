@@ -15,19 +15,21 @@ Effective AI chatbots should be able to accomplish specific tasks and
 deliver delightful social experience at the same time. Use the tips
 below to create such an AI chatbot with minimum time and effort.
 
-### Start w/ Chat Outline
+### Start w/ Chat Flow Outline
 
 Building an AI chatbot is similar to writing a screenplay, which
 should have a beginning (Welcome), body, and end (Wrap up). Moreover,
 it should have a clear conversation objective that can guide the
 chatbot's to drive a dialog and achieve the objective.
 
-Although Juji provides a set of chatbot templates, each of which
-always includes a Welcome and Wrap-up, we strongly recommend that you
-first create a chat outline using your favorite text editor, such as
-Word and Google doc. Online editing tools, like Google doc, allow
-collaborative editing, which let your colleagues or clients alike help
-you polish the outline.
+Juji provides a set of chatbot templates, each of which always
+includes a Welcome and Wrap-up. We strongly recommend that you first
+create a **chat outline**, which defines a chat flow that your chatbot
+will use to guide a conversation with a target audience. You can use
+your favorite text editor, such as Word and Google Doc to edit such an
+outline in a plain text format. Online editing tools, like Google doc, allow
+collaborative editing, which let your teammates or clients help you
+polish the outline.
 
 Below is a sample outline that is intended to create a chatbot
 that can  chat with gamers about games.  
