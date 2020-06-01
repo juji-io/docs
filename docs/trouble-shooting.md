@@ -81,9 +81,36 @@ choose `Make a Request` option as shown below:
 request" width="550"/></p>
 
 
+## **Cannot upload a new Q&A CSV file**
+
+### **Description**
+I need to upload a new Q&A CSV file to update my chatbot's
+Q&A. However, when I tried to upload it, it told me there are
+errors (e.g., duplicates) inside my file.
+
+### **Trouble Shooting**
+
+It depends on how you have been updating your Q&A repository (or
+knowledge base). Sometimes, erros can occur due to human
+inconsistencies. For example, the same question is added multiple
+times but with a different ID.
+
+Currently, Juji tries to detect such errors automatically and suggest
+fixes. Just in case the errors persist, you could do the following to
+"clean up" your Q&A knowledge base (KB):
+
+* Download the current version of CSV
+* Reupload the file as a replacement
+* Follow warning or error messages to fix the errors one by one. 
+
+These steps will help you clean up any of errors or inconsistencies
+in your Q&A KB.
+
 ## **Image does not show up in Facebook**
 
-### **Description** I created a Facebook Messenger bot. In my chatbot,
+### **Description**
+
+I created a Facebook Messenger bot. In my chatbot,
 I created a Facebook Media message, which includes an image URL. I got
 my image URL on the internet by using "Copy image address". I can see
 the display of the image inside my Juji design page but the image did not
