@@ -282,6 +282,5 @@ effort to update the embedded chatbot.
 
 ## **What's Next**
 
-Want to power up your chatbot and get some more magic going? Juji has
-you covered. Check out [best practices](../chatbot-design-tips) for
-designing AI chatbots or venture into **[Juji IDE](../juji-ide)**.
+Want to power up your chatbot with AI and get some magic going? Juji has
+you covered. Check out more [chatbot best practices](../chatbot-design-tips) or venture into **[Juji IDE](../juji-ide)**, which is an interactive development environment that enables you to customize a chatbot much more deeply than what you can do with [Juji Studio](../juji-studio).
