@@ -670,13 +670,12 @@ chatbot actions can be defined:
 <p align="center"><img src="../img/custom-action-detail.png" alt="customize chatbot actions overview" width="450"/></p>
 
 * `Quick Acknowledgement` This defines a simple text message that a
-  chatbot can use to acknowledge a user. This simply sends a
-  message without waiting for a user's response. So you don't want to
-  put any follow-up question expression (unless it is a reflective
-  question without requiring any user response) in this message
-  because it won't wait for a user to respond to such a question. Use
-  `Follow-up Request` below to ask a follow-up question if you wish to
-  do so. See below.
+  chatbot can use to acknowledge a user. This simply sends a message
+  without waiting for a user's response. This means that any follow-up
+  question expression in this message won't be able to elicit any user
+  response (unless it is a reflective question without requiring any
+  user response). If you wish to ask a follow-up question, add a
+  `Follow-up Request`as described below.
 
 * `Extended Reply` This defines a full chatbot message, including image and
   paraphrases, that a chatbot can use to make an extended reply. This

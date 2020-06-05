@@ -300,6 +300,32 @@ Here is a paraphrase (shorter version) of the same message above and will be use
 
 <p align="center"><img src="../img/reasking-msg.png" alt="Reasking Message" width="650"/></p>
 
+Below shows another example with a question expression for the
+first-time use and a list of re-asking expressions. Note the checkbox
+"Reasking Message". You can use this checkbox to control whether a
+question expression should be used for asking the question first time
+or re-asking. If it is unchecked, a question expression is used to ask a
+user first time when such a question is posed.
+
+<p align="center"><img src="../img/paraphrase-a-question-1.png" alt="chatbot design tip: defining an initial expression for a question" width="650"/></p>
+
+If it is checked, it means that the associated
+expression will ONLY be used when a chatbot re-asks the question but
+not the first time.
+
+<p align="center"><img src="../img/paraphrase-a-question-2.png" alt="chatbot design tip: defining a list of re-asking expressions for a question" width="650"/></p>
+
+If the box is not checked for **any** of the question expressions, then
+every expression can be used for initial asking and re-asking. So it
+is the best practice to define a list of expressions for re-asking
+(normally abbreviated, shorter expressions) by checking the box but
+leave certain expressions (complete, longer expressions) for initial asking.
+
+The screenshot below shows how question paraphrases are used in a chat.
+
+<p align="center"><img src="../img/paraphrase-a-question-demo.png" alt="chatbot design tip: a chatbot asks a question using different expressions: first time vs. second time." width="650"/></p>
+
+
 ### Personalize Messages and Requests
 
 Personalized messages make users feel being heard and more willing to
