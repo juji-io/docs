@@ -473,20 +473,25 @@ user can skip it if s/he wishes to.
 
 Below shows Juji's handling of several user excuses. 
 
-* Example 1
+* Example 1: Too personal
 <p align="center"><img src="../img/handling-user-excuse-1.png"
 alt="Handling a user excuse: this is very personal" width="650"/></p>
 
-* Example 2
+* Example 2: No answer 
 <p align="center"><img src="../img/handling-user-excuse-2.png"
 alt="Handling a user excuse: don't know how to answer the question"
 width="650"/></p>
 
 
-* Example 3
+* Example 3: Too hard
 <p align="center"><img src="../img/handling-user-excuse-3.png"
 alt="Handling a user excuse: the question is too hard to answer"
 width="650"/></p>
+
+A chatbot designer can enable/disable Juji's auto excuse handling by
+going to the "Chatbot Settings" tab, and check on/off the box labeled
+"Handles a user's various excuses not answering a question" under
+"Fallback handling". 
 
 ### Handling User Clarification Questions to Open-Ended Questions
 
