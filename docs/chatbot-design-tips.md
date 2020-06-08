@@ -398,8 +398,8 @@ should be able to anticipate user digressions and handle such
 digressions accordingly. 
 
 From millions of human-chatbot conversations, we have identified
-several types of user digressions, especially when open-ended
-questions are involved in a conversation:
+a number of user digressions, especially when open-ended
+questions are involved in a conversation. Below is a list of examples.
 
 * Gibberish user input (e.g., "aasfa asfs fa")
 * "I don't know" input
@@ -410,16 +410,17 @@ questions are involved in a conversation:
 * User comments on the question (e.g., "this is a strange question")
 * Thin input (e.g., "good")
 
-Not only must a chatbot respond to each type of user input properly,
+Not only must a chatbot respond to each type of user digression properly,
 but it must also decide how to continue a conversation. For example,
 if a chatbot asks a non-required question, it should not re-ask the
-question if a user asks to skip the question. To help chatbot
-designers handle diverse user digressions, Juji offers a rich built-in
-fallback conversation library that automatically detects the type of
-user digression and figures out how to handle it properly. Chatbot
-designers can leverage the fallback library directly but still have
-the freedom to turn on/off specific digression handlers using the
-chatbot settings as shown below.
+question if a user asks to skip the question.
+
+To help chatbot designers handle diverse user digressions, Juji offers
+a rich, built-in fallback conversation library that automatically
+detects many types of user digression and figures out how to handle
+each type properly. Chatbot designers can leverage the fallback
+library directly but still have the flexibility to turn on/off specific
+digression handlers using the chatbot settings as shown below.
 
 <p align="center"><img src="../img/handling-user-digressions.png"
 alt="Settings for turning on or off different user digression handling
@@ -457,30 +458,32 @@ to answer or not.
 
 ### Handling User Excuses to Open-Ended Questions
 
-Users may also give excuses or intentionally dodge a question. Assume
+Users may also give \"excuses\" or intentionally dodge a question. Assume
 that a chatbot asks a user "What's the top challenge you face?".  One
 user may respond "I don't really know since I have many challenges."
 while another user may state "This is too hard for me to answer."
 
 To simplify a conversation designer's task of anticipating diverse
 user excuses, Juji has a built-in library that captures a number of
-common user excuse expressions. During a conversation, Juji will
-automatically detect a user excuse expression and respond to it
-accordingly. If a question is optional, Juji will also inform a user
-that the question is optional and the user can skip it if s/he wishes
-to.
+common user excuse expressions. During a conversation, Juji
+automatically detects a user excuse expression and respond to it
+accordingly. As part of excuse handing, if a question is optional,
+Juji will also inform a user that the question is optional and the
+user can skip it if s/he wishes to.
 
 Below shows Juji's handling of several user excuses. 
 
+* Example 1
 <p align="center"><img src="../img/handling-user-excuse-1.png"
 alt="Handling a user excuse: this is very personal" width="650"/></p>
 
-
+* Example 2
 <p align="center"><img src="../img/handling-user-excuse-2.png"
 alt="Handling a user excuse: don't know how to answer the question"
 width="650"/></p>
 
 
+* Example 3
 <p align="center"><img src="../img/handling-user-excuse-3.png"
 alt="Handling a user excuse: the question is too hard to answer"
 width="650"/></p>
