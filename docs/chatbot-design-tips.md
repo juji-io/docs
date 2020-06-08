@@ -458,7 +458,7 @@ to answer or not.
 
 ### Handling User Excuses to Open-Ended Questions
 
-Users may also give \"excuses\" or intentionally dodge a question. Assume
+Users may also give "excuses" or intentionally dodge a question. Assume
 that a chatbot asks a user "What's the top challenge you face?".  One
 user may respond "I don't really know since I have many challenges."
 while another user may state "This is too hard for me to answer."
