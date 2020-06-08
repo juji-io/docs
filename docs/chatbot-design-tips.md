@@ -241,32 +241,6 @@ shorter chats is always more effective. For example, instead of
 chatting with a user 30 minutes at once, see if you can make your
 chatbot engage with a user 10 minutes every day for 3 days.
 
-### Ensure Quality of User Input
-
-Users may intentionally or unintentionally test a chatbot by feeding
-the chatbot with non-sense or gibberish input. Juji has built-in
-functions to automatically detect such input. Moreover, users may take
-an easy way out by responding with `I don't know`. In such a case, a
-chatbot can be configured to accept or not accept such user
-responses. For example, if a discussion is about a user's knowledge,
-such a response should be acceptable. On the other hand, if the
-discussion is about a user's opinion, such a response may not be
-acceptable since s/he can always come up with an
-opinion.
-
-You can customize gibberish detection or decide whether to permit user
-`I don't know` response in a topic setting as shown below.
-
-<p align="center"><img src="../img/topic-setting-1.png" alt="Topic
-Setting 1" width="650"/></p>
-
-
-<p align="center"><img src="../img/topic-setting-2.png" alt="Topic
-Setting 2" width="650"/></p>
-
-As shown above, you can also control the required length of a
-user response and also indicate whether a chatbot request is required
-to answer or not. 
 
 ## **Create Natural and Engaging Conversations**
 
@@ -415,7 +389,122 @@ page:
 <p align="center"><img src="../img/chatbot-settings-refresh.png"
 alt="set up a chatbot refresh rate" width="650"/></p>
 
+## **Ensure Conversation Quality**
 
+Like in a natural conversation, humans rarely follow a pre-defined
+conversation flow because humans are creative and spontaneous. To
+engage users in a quality conversation, a smart chatbot
+should be able to anticipate user digressions and handle such
+digressions accordingly. 
+
+From millions of human-chatbot conversations, we have identified
+several types of user digressions, especially when open-ended
+questions are involved in a conversation:
+
+* Gibberish user input (e.g., "aasfa asfs fa")
+* "I don't know" input
+* User excuses  (e.g., "this question is too hard for me") 
+* User clarification (e.g., "What do you mean?")
+* User asks to alter chat flow (e.g., "skip")
+* User asks an irrelevant question
+* User comments on the question (e.g., "this is a strange question")
+* Thin input (e.g., "good")
+
+Not only must a chatbot respond to each type of user input properly,
+but it must also decide how to continue a conversation. For example,
+if a chatbot asks a non-required question, it should not re-ask the
+question if a user asks to skip the question. To help chatbot
+designers handle diverse user digressions, Juji offers a rich built-in
+fallback conversation library that automatically detects the type of
+user digression and figures out how to handle it properly. Chatbot
+designers can leverage the fallback library directly but still have
+the freedom to turn on/off specific digression handlers using the
+chatbot settings as shown below.
+
+<p align="center"><img src="../img/handling-user-digressions.png"
+alt="Settings for turning on or off different user digression handling
+" width="650"/></p>
+
+Next we use more concrete examples to explain how Juji handles several
+common types of user digressions to ensure conversation quality.
+
+### Handling Gibberish and "I don't know" User Input
+
+Users may intentionally or unintentionally test a chatbot by feeding
+the chatbot with non-sense or gibberish input. Juji has built-in
+functions to automatically detect such input. Moreover, users may take
+an easy way out by responding with `I don't know`. In such a case, a
+chatbot can be configured to accept or not accept such user
+responses. For example, if a discussion is about a user's knowledge,
+such a response should be acceptable. On the other hand, if the
+discussion is about a user's opinion, such a response may not be
+acceptable since s/he can always come up with an
+opinion.
+
+You can customize gibberish detection or decide whether to permit user
+`I don't know` response in a topic setting as shown below.
+
+<p align="center"><img src="../img/topic-setting-1.png" alt="Topic
+Setting 1" width="650"/></p>
+
+
+<p align="center"><img src="../img/topic-setting-2.png" alt="Topic
+Setting 2" width="650"/></p>
+
+As shown above, you can also control the required length of a
+user response and also indicate whether a chatbot request is required
+to answer or not. 
+
+### Handling User Excuses to Open-Ended Questions
+
+Users may also give excuses or intentionally dodge a question. Assume
+that a chatbot asks a user "What's the top challenge you face?".  One
+user may respond "I don't really know since I have many challenges."
+while another user may state "This is too hard for me to answer."
+
+To simplify a conversation designer's task of anticipating diverse
+user excuses, Juji has a built-in library that captures a number of
+common user excuse expressions. During a conversation, Juji will
+automatically detect a user excuse expression and respond to it
+accordingly. If a question is optional, Juji will also inform a user
+that the question is optional and the user can skip it if s/he wishes
+to.
+
+Below shows Juji's handling of several user excuses. 
+
+<p align="center"><img src="../img/handling-user-excuse-1.png"
+alt="Handling a user excuse: this is very personal" width="650"/></p>
+
+
+<p align="center"><img src="../img/handling-user-excuse-2.png"
+alt="Handling a user excuse: don't know how to answer the question"
+width="650"/></p>
+
+
+<p align="center"><img src="../img/handling-user-excuse-3.png"
+alt="Handling a user excuse: the question is too hard to answer"
+width="650"/></p>
+
+### Handling User Clarification Questions to Open-Ended Questions
+
+Just like in any conversations, a user might not fully understand a
+chatbot's question or find the question unclear. When this occurs, the
+human user may ask a clarification. For example, when a chatbot asks
+"What's the top challenge you face?" A user may ask a clarification
+question "What kind of challenges are you referring to?" or "what do
+you mean".
+
+Since it is hard to anticipate precisely what a user's clarification
+question might be and pre-train a chatbot to handle all possible
+clarification expressions, Juji enables you to use a simple
+approach. As a chatbot designer, you just need to design a chatbot
+question with several alternative question expressions (see <a href="https://juji.io/docs/chatbot-design-tips/#paraphrase-messages-and-requests">paraphrase
+a chatbot question</a>). Juji will take care of the rest. This is
+because Juji has a built-in library that captures the most common
+user clarification questions. During a conversation, if Juji
+automatically detects a user clarification expression, it will then
+rephrase the question using an alternative question expression. This
+way, a user gets a chance to re-interpret the question. 
 
 ## **Preview Chatbot Often**
 
