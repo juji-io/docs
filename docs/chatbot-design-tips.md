@@ -477,7 +477,7 @@ Below shows Juji's handling of several user excuses.
 <p align="center"><img src="../img/handling-user-excuse-1.png"
 alt="Handling a user excuse: this is very personal" width="650"/></p>
 
-* Example 2: No answer 
+* Example 2: No matched answer 
 <p align="center"><img src="../img/handling-user-excuse-2.png"
 alt="Handling a user excuse: don't know how to answer the question"
 width="650"/></p>
