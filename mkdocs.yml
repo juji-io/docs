@@ -86,6 +86,7 @@ nav:
     - Built-in Dialog Library: topics.md
     - System Functions: function.md
     - User-defined Functions: udf.md
+    - Script: script.md
   - Juji API: 
     - Introduction: api.md
     - Data Model: nouns.md
