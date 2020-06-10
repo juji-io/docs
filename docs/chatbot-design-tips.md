@@ -502,17 +502,36 @@ human user may ask a clarification. For example, when a chatbot asks
 question "What kind of challenges are you referring to?" or "what do
 you mean".
 
-Since it is hard to anticipate precisely what a user's clarification
-question might be and pre-train a chatbot to handle all possible
-clarification expressions, Juji enables you to use a simple
-approach. As a chatbot designer, you just need to design a chatbot
-question with several alternative question expressions (see <a href="https://juji.io/docs/chatbot-design-tips/#paraphrase-messages-and-requests">paraphrase
-a chatbot question</a>). Juji will take care of the rest. This is
-because Juji has a built-in library that captures the most common
-user clarification questions. During a conversation, if Juji
-automatically detects a user clarification expression, it will then
-rephrase the question using an alternative question expression. This
-way, a user gets a chance to re-interpret the question. 
+Since it is hard to anticipate what a user's clarification question
+might be for any given question and pre-train a chatbot to handle all
+possible clarification expressions, one of the easiest ways for a
+chatbot to handle user clarification questions is to paraphrase a
+question in multiple ways. The paraphrases may help a user better
+understand a question. Using the example above, the chatbot may
+paraphrase the question as following:
+
+* Perhaps you could describe a challenge you are facing at work?
+* Could you talk about a challenge you have to handle at school? 
+* Could you say a bit about a big challenge you have to face in this pandemic? 
+
+As you can see, the paraphrases are more specific and the specifics
+are most likely to be determined by the conversation context (e.g., a
+conversation with employees vs. students vs. citizens).  Should
+the chatbot just start with a more specific question? Our tip would be
+keeping the initial asking broad because you never know what kind of
+answers respondents may come up with.  You can always design paraphrases to
+be more specific to handle user clarification questions.
+
+As a chatbot designer, you just need to design a chatbot question with
+several alternative question expressions (see <a
+href="https://juji.io/docs/chatbot-design-tips/#paraphrase-messages-and-requests">paraphrase
+a chatbot question</a>). Juji will then take care of the rest. This is
+because Juji has already captured the most common user clarification
+questions. During a conversation, if Juji automatically detects a user
+clarification expression, it will then rephrase the question using an
+alternative question expression that a chatbot designer has
+specified. This way, a user gets a chance to re-interpret the
+question.
 
 ## **Preview Chatbot Often**
 
