@@ -136,7 +136,7 @@
         <div class="md-main__inner md-grid">
           {% block site_nav %}
             {% if nav %}
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="{% if page and page.meta.no_toc %}md-sidebar-no-toc{% else %}md-sidbar{% endif %} md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     {% include "partials/nav.html" %}
