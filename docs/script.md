@@ -4,17 +4,17 @@ Advanced chatbot designers may want to edit the REP scripts directly, since a Ju
 
 A script usually consists of the following sections:
 
-* [namespace declaration](#declare-namespace): declare the namespace of your chatbot and its dependencies.
-* [question definitions](#define-questions): define questions the chatbot will ask.
-* [gui definitions](#define-questions): define gui forms the chatbot will use.
-* [topic definitions](#define-topics): define topics the chatbot will use.
+* [namespace declaration](#declare-namespace): declare the namespace of your chatbot and its dependencies;
+* [question definitions](#define-questions): define questions the chatbot will ask;
+* [gui definitions](#define-questions): define gui forms the chatbot will use;
+* [topic definitions](#define-topics): define topics the chatbot will use;
 * [chat configuration](#configurate-chat): configurate the chatbot to your preferrence.
 
 ## Declare Namespace
 
-To start writing a script, you need to have a [namespace](reference.md#namespace) that the chatbot will live in. This namespace needs to be generated from the Juji system. The easiest way is to create an release and then use its namespace. One way to find such namespace is through the [IDE](juji-ide.md#code-editor). For the purpose of this tutorial, we will use the imaginary `juji-doc-random0.eng1.juji.web1` namespace.
+To start writing a script, you need to have a [namespace](reference.md#namespace) that the chatbot will live in. This namespace needs to be generated from the Juji system. The easiest way is to create an release and use its namespace. One way to find such namespace is through the [IDE](juji-ide.md#code-editor). For the purpose of this tutorial, we will use the imaginary `juji-doc-random0.eng1.juji.web1` namespace.
 
-Once you have your namespace, you can start your script by declaring your namespace:
+Once you have your namespace, you can start your script by declaring the namespace:
 ```clojure
 (ns juji-doc-random0.eng1.juji.web1
  (:require [other-namespace-1 :as alias1]
@@ -39,7 +39,7 @@ The `(:require ...)` expression and `(:import ...)` expression are optional. If 
 
 ## Define Questions
 
-Questions are essential to a conversation, discussion on how they are defined can be found in the [question section of the Language page](reference.md#question).
+Questions are essential to a conversation. Discussion on how they are defined can be found in the [question section of the Language page](reference.md#question).
 
 Below is an example. You can choose any arbitrary name for each question as long as it is unique and easy to refer to from other parts of the script.
 ```clojure
@@ -92,7 +92,7 @@ Below is an example. You can choose any arbitrary name for each question as long
 
 ## Define GUIs
 
-GUIs are used for some special forms to be displayed. Its definition is described in the [GUI section of the Language page](reference.md#gui).
+GUIs are used for some special forms to be displayed in the conversation. Its definition is described in the [GUI section of the Language page](reference.md#gui).
 
 Below is an example. You can use the same naming convention as questions.
 ```clojure
@@ -109,7 +109,7 @@ Below is an example. You can use the same naming convention as questions.
 
 ## Define Topics
 
-Topic is the central part of Juji's REP Language. Before start defining topics, it would be helpful to have a [conceptual overview](concept.md) of its role. Topic is very powerful in terms what it can do. Please refer to the [topic section of the Language page](reference.md#topic) regarding the details of its definition and capabilities.
+Topic is the central part of Juji's REP Language. Before you start on defining topics, it would be helpful to have a [conceptual overview](concept.md) of its role. Topic is very powerful in terms of what it can do. Please refer to the [topic section of the Language page](reference.md#topic) regarding the details of its definition and capabilities.
 
 Below are some examples.
 ```clojure
@@ -177,15 +177,15 @@ Below are some examples.
   (end-chat (post-chat-url))])
 ```
 
-These six topics are all auto generated from [Juji's library topics](topics.md). Juji provides numerous built-in topics for asking questions, handling responses and more. They cover huge varieties of common chatbot use cases. Please refer to the description for finding the topic best suits your use case. 
+These six topics are all auto generated from [Juji's library topics](topics.md). Juji provides numerous built-in topics for asking questions, handling responses and more. They cover huge varieties of common chatbot use cases. Please refer to the description for finding the topic that best suits your use case. 
 
-The first three topic examples are used to ask questions, and each of them uses a Juji's built-in topic to handle user's response (i.e., `juji.topics.interviewing.v4/handle-person-name-response`, `juji.topics.interviewing.v4/handle-gui-completion-w-attribute` and `juji.topics.interviewing.v4/handle-email-gui-completion`).  
+The first three topic examples are used to ask questions, and each of them uses another Juji built-in topic to handle user's response (i.e., `juji.topics.interviewing.v4/handle-person-name-response`, `juji.topics.interviewing.v4/handle-gui-completion-w-attribute` and `juji.topics.interviewing.v4/handle-email-gui-completion`).  
 
 The `display-gui_5` topic is defined to display a gui message, whereas the `rep-tell` topic is defined to show an regular text message. The last topic `final-closing-leave` is defined to end the chat.
 
-However, Chatbot designers can write their own topics from scratch. That is actually one of the major benefit of editing the script. All topics can be directly defined inside the script or in other script namespace that the current script is depending on. In self-defined topics, designers can fully realize Juji REP language's potential. 
+However, Chatbot designers can write their own topics from scratch. That is actually one of the major benefits of editing the script. All topics can be directly defined inside the script or in other script namespace that the current script is depending on. In self-defined topics, designers can fully realize Juji REP language's potential. 
 
-On the other hand, if a designer just wants to reuse Juji's built-in topics, like the ones in the example above, the topics actually need not to be redefined in the script. We will discuss more about this when we configurate the chat.
+On the other hand, if a designer just wants to reuse Juji built-in topics, like the ones in the example above, the topics actually need not to be redefined in the script. We will discuss more about this when we configurate the chat.
 
 ## Configurate Chat
 
@@ -240,9 +240,9 @@ Below is an example.
   :image-sm "/assets/img/content/juji-chat-profile-sm.png"})
 ```
 
-The `:ad-lib` vector declares a lot built-in topics as fallbacks. The namespaces it uses are all required in the namespace declaration above. The `:agenda` vector specifies the topics we defined above in an implicit order to be presented the in chat.
+The `:ad-lib` vector declares a lot of built-in topics as fallbacks. The namespaces it uses are all required in the namespace declaration above. The `:agenda` vector specifies the topics we defined above in an implicit order to be presented in the chat.
 
-Now, if you put everything together, you have a working script. Actually, if you copy the examples from each part of this article into a script file and upload it into your release, it can be compiled and you can try to chat with it. However, if you copy the examples directly into IDE, don't forget to update the imaginary namespace to be the same as your release's.
+Now, if you put everything together, you have a working script. If you copy the examples from each part of this article into a script file and upload it into your release, it can be compiled and you can try to chat with it. However, if you copy the examples directly into IDE, don't forget to update the imaginary namespace to be the same as your release's.
 
 Last but not least, since we did not change any of the Juji built-in topics in our example, we can simplify the script significantly by skipping the entire topic definition and using namespaced topics directly inside the `:agenda`. Below is an example of the simplified script.
 
@@ -367,4 +367,4 @@ Here you have it - a working REP script from scratch. This opens up great possib
 
 ## The Alternative
 
-Even though writing REP scripts directly gives you access to potentially very powerful chatbots, it may still be an overkill in a lot use cases. The way our CTO described it is that the script language is like the machine code. In most cases, we don't need to play with such low level details. Luckily, we have introduced a more intuitive representation to define Juji chatbots, which grants designers full access to all capabilities of Juji chatbots that are available in the Juji Studio and more. Stay tuned for our upcoming tutorial of the Config-doc.
+Even though writing REP scripts directly gives you access to potentially very powerful chatbots, it may still be an overkill in many use cases. The way our CTO described it is that the script language is like the machine code. In most cases, we don't need to play with such low level details. Luckily, we have introduced a more intuitive representation to define Juji chatbots, which grants designers full access to all capabilities of Juji chatbots that are available in the Juji Studio and more. Stay tuned for our upcoming tutorial of the Config-doc.
