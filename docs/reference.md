@@ -961,45 +961,75 @@ well as Juji system functions can be called without namespace prefix.
 In order to support conducting surveys and have good results reporting, REP treat questions specially. Questions need to be defined before being asked in the topics. Similar to named patterns, a top level `(question ...)` form is used to define named questions with a binding form.
 
 ```Clojure
-(question [likert1-5    [{:value 1 :text "Strongly disagree"}
-                         {:value 2 :text "Slightly disagree"}
-                         {:value 3 :text "Neutral"}
-                         {:value 4 :text "Slightly agree"}
-                         {:value 5 :text "Strongly agree"}]
-           yes-no       [{:value 1 :text "Yes"}
-                         {:value 0 :text "No"}]
-           apple-q      {:kind    :single-choice
-                         :heading "I own an apple product"
-                         :choices yes-no}
-           pizza-q      {:kind    :single-choice
-                         :heading "I love pizza"
-                         :choices likert1-5}
-           election-q    {:kind   :single-choice
-                          :heading "Who did you vote for?"
-                          :choices [{:value 0 :text "Trump"}
-                                    {:value 1 :text "Clinton"}
-                                    {:value 2 :text "Johnson"}
-                                    {:value 3 :text "Stein"}]}
-           what-q       {:kind :open-ended
-                         :heading "What color do you like?"
-                         :wording "Could you please tell me the color you like?"}
-           why-q        {:kind    :open-ended
-                         :heading "Why do you like that color?"
-                         :wording "May I ask you why you like that color?"}])
+(question 
+ [likert1-5    [{:value 1 :text "Strongly disagree"}
+                {:value 2 :text "Slightly disagree"}
+                {:value 3 :text "Neutral"}
+                {:value 4 :text "Slightly agree"}
+                {:value 5 :text "Strongly agree"}]
+  yes-no       [{:value 1 :text "Yes"}
+                {:value 0 :text "No"}]
+  apple-q      {:kind    :single-choice
+                :heading "I own an apple product"
+                :choices yes-no}
+  pizza-q      {:kind    :single-choice
+                :heading "I love pizza"
+                :choices likert1-5}
+  election-q   {:kind    :single-choice
+                :heading "Who did you vote for?"
+                :choices [{:value 0 :text "Trump"}
+                          {:value 1 :text "Clinton"}
+                          {:value 2 :text "Johnson"}
+                          {:value 3 :text "Stein"}]}
+  what-q       {:kind    :open-ended
+                :heading "What color do you like?"
+                :content [{:text "Could you please tell me the color you like?"}
+                          {:text       "Tell me about the one color you like",
+                           :repeatable true}]}
+  why-q        {:kind          :open-ended
+                :heading       "Why do you like that color?"
+                :content       [{:text "May I ask you why you like that color?"}]
+                :min-input-len 2}
+  fb-choice-1  {:kind     :single-choice,
+                :heading  "What are you looking for?",
+                :content  [{:text ["What are you looking for?"
+                                   (if
+                                    (not= "facebook" (participation-release-type))
+                                   "(FB buttons will show up in Facebook Messenger)")]}],
+                :required true,
+                :choices  [{:text "Buy a product", :value 0}
+                           {:text "See new collection", :value 1}
+                           {:text "Pricing", :value 2}],
+                :elements [{:title "What are you looking for?",
+                            :buttons   
+                            [{:type "postback", :title "Buy a product", :payload "0"}
+                             {:type "postback", :title "See new collection", :payload "1"}
+                             {:type "postback", :title "Pricing", :payload "2"}],
+                            :subtitle "",
+                            :image-url ""}],
+                :fb-display-type "generic-template-choice"}
+  fb-email     {:kind            :text,
+                :heading         "Collecting Facebook email",
+                :fb-display-type "email",
+                :content         [{:text "Please click on the email to confirm.",
+                                   :repeatable true}],
+                :required        true}])
 ```
-Some types of questions are normally presented in a GUI form. `:single-choice`
-questions are radio buttons; `:multiple-choice` questions are check boxes.
+Some types of questions are normally presented in a GUI form. `:single-choice` questions are radio buttons; `:multiple-choice` questions are check boxes.
 
 The value of `:choices` attribute may be given a name, defined before hand, so that they are reusable, e.g. `likert1-5` and `yes-on`, or it could be included inline, e.g. the choices in `election-q`.
 
-`:open-ended` question are normally presented as sentences in a conversational turn. They may optionally have a `:wording` attribute that is an action pattern.
+`:open-ended` question are normally presented as sentences in a conversational turn. They may optionally have a `:content` attribute that is an action pattern. In addition, a `:min-input-len` attribute can be specified such that when a user's answer is less then the number defined, the chatbot would ask for more input.
 
+A `:single-choice` question with `:fb-display-type "generic-template-choice"` represents a [facebook generic template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic). The `:elements` field corresponding the the template's elements and the questions `:choices`.
 
-Questions, once defined, can be used in special functions to be displayed to the
-users. `:open-ended` questions are displayed using function `(ask-question
-question-name)`. `:single-choice` and `:multiple-choice` questions are displayed with `(ask-qui-question question-name)` function.
+A `:text` question with `:fb-display-type "email"` creates a [facebook quick reply](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies) that asks the user to confirm his/her email address.
 
-To record user’s answer, use function `(record-answer question-name content)`, where content should be a captured content of user input or user choices.
+Another optional `:required` field can be marked for any kind of questions. When `:required` is true, the question cannot be skipped.
+
+Questions, once defined, can be used in special functions to be displayed to the users. `:open-ended` questions are displayed using function `(ask-question question-name)`. `:single-choice` and `:multiple-choice` questions are displayed with `(ask-question-gui question-name)` function.
+
+To record user’s answer, use function `(record-answer question-name message)`, where message should be a captured message of user input or user choices. Usually `heading` is used in the reports to identify questions. So it is good practice to make `heading` unique for each question.
 
 
 ## GUI
@@ -1012,9 +1042,18 @@ REP can present information and accept user input via GUI displays. Displays are
                     :questions   [{:kind :single-choice
                                    :heading  "I love pizza"
                                    :choices  likert1-5}
-                                  apple-q]}])
+                                  apple-q]}
+      fb-media     {:fb-display-type "generic-template",
+                    :type            :raw,
+                    :data            
+                    [{:title    "The book club is open now!!!",
+                      :buttons  [{:url "juji.io", :title "First book"}],
+                      :subtitle "",
+                      :image-url ""}]}])
 ```
 System function `(display-gui display)` can be called to display a GUI element. Normally this should happen on the action pattern of some rules.
+
+The most commonly used GUI is to send [facebook generic template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic) messages like `fb-media` in the example above. However, these messages are different from facebook generic template requests which should be defined as [questions](#question).
 
 ## Config
 
@@ -1024,14 +1063,16 @@ fashion due to user's responses. Developers only write down the rules, and code
 execution is handled by the system.
 
 Users can influence the system behaviours by specifying some control directives.
-In addition to topic specific directives in option map, some global directives for the bot can be declared in a global map called `config`.
+In addition to topic specific directives in option map, some global directives for 
+the bot can be declared in a global map called `config`.
 
 ```Clojure
 (config {
   :release-action []
   :pre-action []
   :post-action []
-  :agenda [start-topic [:a (topic-1 "arg1") topic-2 (topic-3 "arg3")] end-topic]
+  :agenda [start-topic [:a (topic-1 "arg1") topic-2 (topic-3 "arg3")] (topic-4 q4) end-topic]
+  :mini-agendas {}
   :exception [error-topic1 error-topic2]
   :ad-lib [ad-lib1 ad-lib2]
   :background [notify-topic1]
@@ -1039,7 +1080,24 @@ In addition to topic specific directives in option map, some global directives f
   :min-response-time 2000 ; after user hit Enter key, the minimal system wait time before responding, in milliseconds
   :between-response-delay ; when REP have multiple sentences to say in one turn, the deblay between the sentences
   :turn-pace 5 ; when there is no user input, the interval between system's proactive attempts to say something, in seconds
-  :typing-allowance 10 ; when user is typing, how long the system allows the user to pause before trying to respond to previous user input, in seconds })
+  :typing-allowance 10 ; when user is typing, how long the system allows the user to pause before trying to respond to previous user input, in seconds
+  :thin-text-threshold 5 ; if user response in an open-ended question has less words than defined, the chatbot would ask for more unless :min-input-len is defined for that particular question
+  :name "chatbot name"
+  :bio "bio of the chatbot"
+  :faq ["q&a-index-id"] ; where the Q&As are to be find
+  :info "extra bot info"
+  :image-lg "bot-large-img.png"
+  :image "bot-regular-img.png"
+  :image-sm "bot-small-img.png"
+  :personality "chatbot personality"
+  :dependencies []
+  :translations [{:cid "juji.topics.fallback.qa.v1/translate-how-about-you",
+                  :skip false,
+                  :type "fallback",
+                  :topic "juji.topics.fallback.qa.v1/translate-how-about-you",
+                  :description
+                  "Handles a user's reciprocal question to the chatbot"}]
+  :task-completion-code false})
 ```
 `:release-action` allows a vector of function calls to run
  right after compilation, so some setup for the release can be done, e.g.
@@ -1050,17 +1108,30 @@ This allows some session specific setup, e.g. to initialize some global variable
 
 `:post-action` allows a vector of function calls after a chat session ends.
 
-`:agenda` vector specifies desired conversation progression in term of topics. It uses a similar format as that of action patterns, only that the basic unit is topic invocation instead of tokens. It supports sequence pattern, alternative pattern, wildcard pattern, exclusion pattern, start and end pattern. Also, parameters for top level topics are given here.
+`:agenda` vector specifies desired conversation progression in term of topics. 
+It uses a similar format as that of action patterns, only that the basic unit is 
+topic invocation instead of tokens. It supports sequence pattern, alternative pattern, 
+wildcard pattern, exclusion pattern, start and end pattern. Also, parameters for top level topics are given here.
 
-REP may also use some topics as conversational fillers, e.g. to initiate small
+REP may use some topics as conversational fillers, e.g. to initiate small
 talks unrelated to the agenda, or to quickly dispatch user digression. These
 topics are declared in `:ad-lib` vector.
 
-REP may also actively check some topics in the background, where some external conditions are the
+In addition, REP can actively check some topics in the background, where some external conditions are the
 triggers. When the conditions are met, the REP may notify the users about the
 external events. These topics are in `:background` vector.
 
-User may also give unexpected input to REP. These exceptional user input are
+User might give unexpected input to REP. These exceptional user input can be
 handled by topics declared in `:exception` vector.
 
 The declaration of `:agenda`, `:ad-lib`, `background` and `:exception` uses the same format.
+
+`:mini-agendas` allows a map of agendas to be injected inside the chatflow dynamically. 
+The keys are string names for the agendas, and the values are agenda vectors.
+
+`:dependencies` are used for [user-defined functions](udf.md).
+
+`:translations` is a vector of translation topics, that performs translation for ad-lib and exception topics.
+
+`:task-completion-code` is useful for chatbots that conduct surveys. 
+If it is set to true, a code will be generated upon completion and it will be given to the participant.
