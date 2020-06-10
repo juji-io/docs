@@ -2,7 +2,39 @@
 
 This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://mkdocs.org).
 
-We welcome pull requests for this repository.
+## We welcome pull requests for this repository. Follow instructions below
+
+```bash
+git pull
+git checkout -b <mybranchname>
+emacs <filename>
+
+```
+
+Then use the following commands to add + commit changes
+
+```
+git add *
+git commit -m "comments"
+```
+
+Then use git push
+
+```
+git push 
+```
+
+or
+```
+git push --set-upstream origin <mybranchname>
+
+```
+
+Use git push to push changes 
+Then go to Github to create new pull requests (new pull request)
+
+https://github.com/juji-io/docs
+
 
 ## Setup
 
