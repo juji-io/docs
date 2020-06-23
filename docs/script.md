@@ -8,7 +8,7 @@ A script usually consists of the following sections:
 * [question definitions](#define-questions): define questions the chatbot will ask;
 * [gui definitions](#define-questions): define gui forms the chatbot will use;
 * [topic definitions](#define-topics): define topics the chatbot will use;
-* [chat configuration](#configurate-chat): configurate the chatbot to your preferrence.
+* [chat configuration](#configure-chat): configure the chatbot to your preferrence.
 
 ## Declare Namespace
 
@@ -185,9 +185,9 @@ The `display-gui_5` topic is defined to display a gui message, whereas the `rep-
 
 However, Chatbot designers can write their own topics from scratch. That is actually one of the major benefits of editing the script. All topics can be directly defined inside the script or in other script namespace that the current script is depending on. In self-defined topics, designers can fully realize Juji REP language's potential. 
 
-On the other hand, if a designer just wants to reuse Juji built-in topics, like the ones in the example above, the topics actually need not to be redefined in the script. We will discuss more about this when we configurate the chat.
+On the other hand, if a designer just wants to reuse Juji built-in topics, like the ones in the example above, the topics actually need not to be redefined in the script. We will discuss more about this when we configure the chat.
 
-## Configurate Chat
+## Configure Chat
 
 Config is a form that connects different parts of the script together along with some parameters that control the Chatbot's behavior. Please refer to the [config section in the Language page](reference.md#config) on details of how a config is defined.
 
