@@ -1,4 +1,4 @@
-# How to Power Your Own Client
+# Power Existing Chatbots
 
 This guide is for users who enjoy Juji chatbot's powerful dialog management, but prefer using their own interfaces to create chatflow and/or carry out conversations. Juji APIs can help you do exactly that. 
 
