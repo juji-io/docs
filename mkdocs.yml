@@ -98,10 +98,11 @@ nav:
     - Data Model: nouns.md
     - Chat API: chat.md
     - Data API: meta.md
-    - Your Own Client: client.md 
   - Beginners' Guide to AI Chatbots:
     - Why AI Chatbots: why-ai-chatbots.md
     - Design Tips: chatbot-design-tips.md
     - Advanced: chatbot-design-tips-advanced.md
+  - Third-Party Integration:
+    - Third-Party Integration: client.md
   - Sign Up:  
     - Sign up on Juji: https://juji.ai/signup

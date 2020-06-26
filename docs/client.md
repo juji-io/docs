@@ -1,16 +1,18 @@
 # Power Existing Chatbots
 
-This guide is for users who enjoy Juji chatbot's powerful dialog management, but prefer using their own interfaces to create chatflow and/or carry out conversations. Juji APIs can help you do exactly that. 
+<p align="center"><img src="../img/convert-chatflow.png" alt="Convert existing chatflow to Juji config-doc" width="650px"/></p>
 
-* Please read about Juji API [introduction](api.md), [data model](nouns.md) and [data API](meta.md) first if you haven't, they introduce important concepts to help you better understand this guide. 
-* As mentioned in the [API introduction](api.md#graphql) page, [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
-* [Juji client github page](https://github.com/juji-io/cli-client#creating-a-new-chat-using-only-api-an-example) contains concrete examples written in JavaScript for all the API calls in this guide, please refer to it for detail.
+This guide is for users who enjoy Juji chatbot's powerful dialog management, but prefer using their own interfaces to create chatflow and/or carry out conversations. Juji APIs can help you do exactly that. You just need to follow three simple steps:
+
+1. [Log in to your Juji account](#create-a-juji-account-and-login)
+2. [Create a chatbot and customize](#create-a-chatbot-and-customize-it)
+3. [Launch your chatbot](#launch-your-chatbot)
 
 ## Create a Juji Account and Login
 
 A valid Juji account is necessary for using most of the APIs. It is also the only step you have to complete using the Juji website. Simply go to [Juji Signup page](https://juji.ai/signup) to create an account if you haven't yet done so.
 
-Once you have an account, you can use the `authenticate` GraphQL mutation to log into your account and start a session.
+Once you have an account, you can use the `authenticate` [GraphQL](api.md#graphql) mutation to log into your account and start a session.
 ```javascript
 mutation Authenticate($input: AuthenticateInput!){
 	authenticate(input: $input) {
@@ -20,7 +22,7 @@ mutation Authenticate($input: AuthenticateInput!){
 ```
 Store the value of the token. It will be used for [authentication](meta.md#authentication) in other API calls.
 
-You may also need your account's brand id, you can use the following GraphQL query to access it.
+You may also need your account's [brand id](nouns.md#brand), you can use the following GraphQL query to access it.
 ```javascript
 query GetMe{
 	getMe{
@@ -31,7 +33,7 @@ query GetMe{
 
 ## Create a Chatbot and Customize It
 
-A chatbot lives in an engagement. In order to customize a chatbot, you either creates an engagement or uses an existing engagement.
+A chatbot lives in an [engagement](nouns.md#engagement). In order to customize a chatbot, you either creates an engagement or uses an existing engagement.
 
 ```javascript
 // To create engagement
@@ -83,7 +85,7 @@ help,Help,Here comes help!,,,
 help,Can you help me?,,,,'
 ```
 
-## Launch a Chatbot
+## Launch Your Chatbot
 
 Once the chatbot is ready, you can deploy it by creating a [web release](release.md#deploy-to-web).
 
@@ -100,3 +102,9 @@ mutation CreateRelease($input: CreateReleaseInput!){
 The web release can be accessed at `https://juji.ai/pre-chat/<engagement-id>` using a browser or API calls. Please refer to the [Juji chat API page](chat.md) for details on how to use API calls to chat.
 
 You can continue to improve your chatbot after you have made a release - simply update your config-doc and/or Q&As and then make a new release. The pre-chat URL above will always point to the latest web release.
+
+## References
+
+* Please read about Juji API [introduction](api.md), [data model](nouns.md) and [data API](meta.md) first for important API concepts to help you better understand this guide. 
+* [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
+* [Juji client github page](https://github.com/juji-io/cli-client#creating-a-new-chat-using-only-api-an-example) contains concrete examples written in JavaScript for all the API calls in this guide, please refer to it for detail.
