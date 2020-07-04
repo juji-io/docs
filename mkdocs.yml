@@ -92,6 +92,7 @@ nav:
     - System Functions: function.md
     - User-defined Functions: udf.md
     - Scripting Guide: script.md
+    - Config-doc Guide: config-doc.md
   - Juji API: 
     - Introduction: api.md
     - Data Model: nouns.md
@@ -101,5 +102,7 @@ nav:
     - Why AI Chatbots: why-ai-chatbots.md
     - Design Tips: chatbot-design-tips.md
     - Advanced: chatbot-design-tips-advanced.md
+  - Third-Party Integration:
+    - Third-Party Integration: client.md
   - Sign Up:  
     - Sign up on Juji: https://juji.ai/signup
