@@ -95,14 +95,13 @@ nav:
     - Config-doc Guide: config-doc.md
   - Juji API: 
     - Introduction: api.md
-    - Data Model: nouns.md
     - Chat API: chat.md
+    - Data Model: nouns.md
+    - Chat Creation API: client.md
     - Data API: meta.md
   - Beginners' Guide to AI Chatbots:
     - Why AI Chatbots: why-ai-chatbots.md
     - Design Tips: chatbot-design-tips.md
     - Advanced: chatbot-design-tips-advanced.md
-  - Third-Party Integration:
-    - Third-Party Integration: client.md
   - Sign Up:  
     - Sign up on Juji: https://juji.ai/signup

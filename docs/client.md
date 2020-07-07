@@ -1,8 +1,8 @@
-# Power Existing Chatbots
+# Programmatic Chatbots Creation and Deployment
 
 <p align="center"><img src="../img/convert-chatflow.png" alt="Convert existing chatflow to Juji config-doc" width="650px"/></p>
 
-This guide is for users who enjoy Juji chatbot's powerful dialog management, but prefer using their own interfaces to create chatflow and/or carry out conversations. Juji APIs can help you do exactly that. You just need to follow three simple steps:
+This guide is for users who enjoy Juji chatbot's powerful dialog management, but prefer using their own interfaces to create chatflow and/or carry out conversations. Juji APIs can help you do exactly that. In other words, it is possible to programmatically create and deploy chatbots on the Juji platform. You just need to follow three simple steps:
 
 1. [Log in to your Juji account](#create-a-juji-account-and-login)
 2. [Create a chatbot and customize](#create-a-chatbot-and-customize-it)
