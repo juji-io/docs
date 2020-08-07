@@ -36,7 +36,7 @@ a question" width="650px"/></p>
 
 The common cause that your chatbot does not wait for a user to
 answer its question is that the question is not defined properly as a "true"
-question. 
+question.
 
 Juji chatbots send two types of messages, one is just a message
 without waiting for a user to respond, the other is a request, a
@@ -101,7 +101,7 @@ fixes. Just in case the errors persist, you could do the following to
 
 * Download the current version of CSV
 * Reupload the file as a replacement
-* Follow warning or error messages to fix the errors one by one. 
+* Follow warning or error messages to fix the errors one by one.
 
 These steps will help you clean up any of errors or inconsistencies
 in your Q&A KB.
@@ -139,3 +139,28 @@ to display it properly is higher.
 Of course it is always your responsibility to make sure that you have
 the proper rights to use an image in your chatbot.
 
+## **Facebook bot stopped working**
+
+### **Description**
+
+My Facebook bot has stopped working today. It does not respond to user messages.
+It worked yesterday. What happened?
+
+### **Trouble Shooting**
+
+It is likely that your Facebook token has expired.
+
+When you first deployed the Juji bot to Facebook, a token was fetched from
+Facebook and was recorded by Juji for subsequent usage. Due to reasons such as
+inactivity, being logged out, or whatever reasons Facebook deems necessary,
+Facebook may expire that token. When the token is expired, your bot will stop
+working.
+
+To fix, you need to obtain a new token from Facebook.
+
+You obtain a new token from Facebook by going through the deployment process
+  again:  Go back to your Juji Deploy page,  click on the "Continue with
+  Facebook" button and go through the deployment process again.
+
+Important: you must click on the "Continue with Faceook" button, clicking
+"Update" button will not renew your Facebook token.

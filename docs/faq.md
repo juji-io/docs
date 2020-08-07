@@ -414,19 +414,6 @@ professional (e.g., a chatbot agency) who can help you monitor and
 maintain your chatbot.
 
 <hr>
-<a name="!fb-stop-working"></a>
-### My Facebook bot has stopped working today. It worked yesterday. What happened?
-: It is likely that your Facebook token has expired.  When you first deployed the
-  Juji bot to Facebook, a token was fetched from Facebook and was recorded by
-  Juji for subsequent usage. Due to reasons such as inactivity, being logged
-  out, or whatever reasons Facebook deems necessary, Facebook may
-  expire that token. When the token is expired, your bot will stop working. To
-  fix, you need to obtain a new token from Facebook. You do
-  that by going back to your Juji Deploy page,  clicking on the "Continue with
-  Facebook" button and going through the deployment process again.
-
-
-<hr>
 <a name="!vs-survey"></a>
 ### How to use Juji chatbot with Qualtrics or Survey Monkey?
 ### How to use Juji chatbot with other survey software?
