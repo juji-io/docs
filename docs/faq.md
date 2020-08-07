@@ -88,9 +88,9 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
   free for your chatbot to chat with as many people as you want, if you don't
   use Juji Premium features (e.g., customizing chatbot behavior based on natural
   language input or downloading chat reports). Subscription to Juji Premium
-  starts at $25/month or $240/year, which includes up to 100 free chats per month. 
-  After that, each additional chat costs $0.1, the usage is billed monthly.  If you 
-  are from academia and intend to use Juji for academic research, please contact 
+  starts at $25/month or $240/year, which includes up to 100 free chats per month.
+  After that, each additional chat costs $0.1, the usage is billed monthly.  If you
+  are from academia and intend to use Juji for academic research, please contact
   us at hello@juji.io for special discount.
 
 ## Design Questions
@@ -395,7 +395,7 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 <hr>
 <a name="!deploy-to-web"></a>
 ### How do I deploy the chat to my website?
-: Go to “Release” page, choose web deployment to get the URL. You can then embed the URL into an iframe on your website.
+: Go to “Deploy” page, choose web deployment to get the URL. You can then embed the URL into an iframe on your website.
 
 <hr>
 <a name="!after-deploy"></a>
@@ -412,6 +412,19 @@ audience interaction](../reports) with your chatbot.
 periodically. If you don't have time to do so, you may want to hire a
 professional (e.g., a chatbot agency) who can help you monitor and
 maintain your chatbot.
+
+<hr>
+<a name="!fb-stop-working"></a>
+### My Facebook bot has stopped working today. It worked yesterday. What happened?
+: It is likely that your Facebook token has expired.  When you first deployed the
+  Juji bot to Facebook, a token was fetched from Facebook and was recorded by
+  Juji for subsequent usage. Due to reasons such as inactivity, being logged
+  out, or whatever reasons Facebook deems necessary, Facebook may
+  expire that token. When the token is expired, your bot will stop working. To
+  fix, you need to obtain a new token from Facebook. You do
+  that by going back to your Juji Deploy page,  clicking on the "Continue with
+  Facebook" button and going through the deployment process again.
+
 
 <hr>
 <a name="!vs-survey"></a>
@@ -468,4 +481,3 @@ maintain your chatbot.
 : Currently you can export all your chat data to a CSV file, which can
 then be easily imported into third-party applications, such as
 SalesForce and Marketo. Check out [how to eport to CSV](../reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
-
