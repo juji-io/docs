@@ -6,7 +6,7 @@ Juji exposes the same API that powers our Web application to our users.
 
 The Juji API is based on [GraphQL](https://graphql.org). We support
 cross-origin resource sharing (CORS) so you can interact with Juji from any
-client-side application thats support GraphQL. The API endpoint is https://juji.ai/api/graphql
+client-side application thats support GraphQL. The API endpoint is `https://juji.ai/api/graphql`
 
 Juji API is explorable and executable through
 [GraphiQL](https://juji.ai/graphiql/graphiql.html) in-browser IDE.  Once you've
