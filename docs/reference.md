@@ -151,8 +151,8 @@ four tokens: `"Hello"`, `","`, `"world"`, `"!"`.
 The only exception is `-`, which is not considered a token of its own.
 For instance, `"twenty-five-year-old"` is a single token.
 
-In addition, we group consecutive digits together as a single token. 
-For example, `"2:30pm"` is converted into a sequence of four tokens: 
+In addition, we group consecutive digits together as a single token.
+For example, `"2:30pm"` is converted into a sequence of four tokens:
 `"2"`, `":"`, `"30"`, and `"pm"`.
 
 In REP, a token could be represented with a symbol, a string, or a regex.
@@ -341,7 +341,7 @@ Order of the sub-patterns do not matter for containment.
 ; it matches "i love coffe", but not "I love pizza"
 [:! pizza hamburger bacon]
 ; some of the three tokens can appear, in any order,
-; it matches "i love pizza and bacon", or "hamburger bacon and pizza", 
+; it matches "i love pizza and bacon", or "hamburger bacon and pizza",
 ; but not "I love tofu"
 [:s pizza hamburger bacon]
 ```
@@ -588,6 +588,9 @@ The substitution of a pattern name by the actual pattern it refers to happens at
 [I _negative love pizza] ; match "I don't love pizza"
 ```
 
+!!! note "Avoid . in name"
+    Because `.` has special meanings, you should avoid using it in your named pattern names.
+
 ### Captured Content
 
 We often want to name the content matched by a pattern. A form looks like `(?captured-content-name pattern)` can be used to do that, where a symbol starting with `?` will be assigned the content matched by the pattern.
@@ -624,7 +627,7 @@ The captured content can then be referred to later by its name symbol, for examp
     [I love (?kind +) pizza]
     ```
 
-It is often desirable to normalize the captured content into a standard format to store in the captured variable, we can add an additional argument for the capture form to do this. This 3rd elment of the capture form can be either a function or a value. If it is a value, it will simply replace the captured content. If it is a function, the function must be a variadic function with more than one parameter: the first parameter is the REP instance, and the rest of the parameters each correspond to the captured tokens. For example, 
+It is often desirable to normalize the captured content into a standard format to store in the captured variable, we can add an additional argument for the capture form to do this. This 3rd elment of the capture form can be either a function or a value. If it is a value, it will simply replace the captured content. If it is a function, the function must be a variadic function with more than one parameter: the first parameter is the REP instance, and the rest of the parameters each correspond to the captured tokens. For example,
 
 ```Clojure
 ;; Given user input "3", this rule will save in ?x "number"
@@ -961,7 +964,7 @@ well as Juji system functions can be called without namespace prefix.
 In order to support conducting surveys and have good results reporting, REP treat questions specially. Questions need to be defined before being asked in the topics. Similar to named patterns, a top level `(question ...)` form is used to define named questions with a binding form.
 
 ```Clojure
-(question 
+(question
  [likert1-5    [{:value 1 :text "Strongly disagree"}
                 {:value 2 :text "Slightly disagree"}
                 {:value 3 :text "Neutral"}
@@ -1001,7 +1004,7 @@ In order to support conducting surveys and have good results reporting, REP trea
                            {:text "See new collection", :value 1}
                            {:text "Pricing", :value 2}],
                 :elements [{:title "What are you looking for?",
-                            :buttons   
+                            :buttons
                             [{:type "postback", :title "Buy a product", :payload "0"}
                              {:type "postback", :title "See new collection", :payload "1"}
                              {:type "postback", :title "Pricing", :payload "2"}],
@@ -1045,7 +1048,7 @@ REP can present information and accept user input via GUI displays. Displays are
                                   apple-q]}
       fb-media     {:fb-display-type "generic-template",
                     :type            :raw,
-                    :data            
+                    :data
                     [{:title    "The book club is open now!!!",
                       :buttons  [{:url "juji.io", :title "First book"}],
                       :subtitle "",
@@ -1063,7 +1066,7 @@ fashion due to user's responses. Developers only write down the rules, and code
 execution is handled by the system.
 
 Users can influence the system behaviours by specifying some control directives.
-In addition to topic specific directives in option map, some global directives for 
+In addition to topic specific directives in option map, some global directives for
 the bot can be declared in a global map called `config`.
 
 ```Clojure
@@ -1108,9 +1111,9 @@ This allows some session specific setup, e.g. to initialize some global variable
 
 `:post-action` allows a vector of function calls after a chat session ends.
 
-`:agenda` vector specifies desired conversation progression in term of topics. 
-It uses a similar format as that of action patterns, only that the basic unit is 
-topic invocation instead of tokens. It supports sequence pattern, alternative pattern, 
+`:agenda` vector specifies desired conversation progression in term of topics.
+It uses a similar format as that of action patterns, only that the basic unit is
+topic invocation instead of tokens. It supports sequence pattern, alternative pattern,
 wildcard pattern, exclusion pattern, start and end pattern. Also, parameters for top level topics are given here.
 
 REP may use some topics as conversational fillers, e.g. to initiate small
@@ -1126,12 +1129,12 @@ handled by topics declared in `:exception` vector.
 
 The declaration of `:agenda`, `:ad-lib`, `background` and `:exception` uses the same format.
 
-`:mini-agendas` allows a map of agendas to be injected inside the chatflow dynamically. 
+`:mini-agendas` allows a map of agendas to be injected inside the chatflow dynamically.
 The keys are string names for the agendas, and the values are agenda vectors.
 
 `:dependencies` are used for [user-defined functions](udf.md).
 
 `:translations` is a vector of translation topics, that performs translation for ad-lib and exception topics.
 
-`:task-completion-code` is useful for chatbots that conduct surveys. 
+`:task-completion-code` is useful for chatbots that conduct surveys.
 If it is set to true, a code will be generated upon completion and it will be given to the participant.
