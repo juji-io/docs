@@ -14,7 +14,7 @@ I try to chat with the chatbots in your gallery, but none of them works.
 
 ### **Trouble Shooting**
 
-The Web version of Juji chatbots use [Websocket protocal](https://en.wikipedia.org/wiki/WebSocket) to enable two-way communication with Juji servers. Some corporate network administrators block any network traffic that is not in regular HTTP protocol. So if your computer is behind a corporate firewall or is using a comany VPN, please ask your network administrator or IT manager to allow Websocket conection to `wss://juji.ai/api/v1/ws`. 
+The Web version of Juji chatbots use [Websocket protocol](https://en.wikipedia.org/wiki/WebSocket) to enable two-way communication with Juji servers. Some corporate network administrators block any network traffic that is not in regular HTTP protocol. So if your computer is behind a corporate firewall or is using a company VPN, please ask your network administrator or IT manager to allow Websocket connection to `wss://juji.ai/api/v1/ws`. 
 
 ## **My chatbot didn't wait for user responses after asking a question**
 
@@ -101,7 +101,7 @@ errors (e.g., duplicates) inside my file.
 ### **Trouble Shooting**
 
 It depends on how you have been updating your Q&A repository (or
-knowledge base). Sometimes, erros can occur due to human
+knowledge base). Sometimes, errors can occur due to human
 inconsistencies. For example, the same question is added multiple
 times but with a different ID.
 
@@ -172,5 +172,5 @@ You obtain a new token from Facebook by going through the deployment process
   again:  Go back to your Juji Deploy page,  click on the "Continue with
   Facebook" button and go through the deployment process again.
 
-Important: you must click on the "Continue with Faceook" button, clicking
+Important: you must click on the "Continue with Facebook" button, clicking
 "Update" button will not renew your Facebook token.
