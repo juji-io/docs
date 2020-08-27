@@ -6,6 +6,16 @@ issues during such a process. Below we list commonly encountered
 issues reported by chatbot designers and the solutions to resolve such
 issues.
 
+## **Chatbot does not work in my browser**
+
+### **Description**
+
+I try to chat with the chatbots in your gallery, but none of them works.
+
+### **Trouble Shooting**
+
+The Web version of Juji chatbots use [Websocket protocal](https://en.wikipedia.org/wiki/WebSocket) to enable two-way communicate with Juji servers. Some corporate network administrators block any network traffic that is not regular HTTP. So if your computer is behind a corporate firewall or is using a comany VPN, please ask your network administrator or IT manager to allow Websocket conection to `wss://juji.ai/api/v1/ws`. 
+
 ## **My chatbot didn't wait for user responses after asking a question**
 
 ### **Description**
