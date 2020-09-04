@@ -82,10 +82,14 @@
   {% else %}
     <body dir="{{ direction }}">
   {% endif %}
+
+  <div id='jujibot-bubble'>
+    Cannot wait to chat!
+  </div>
   <div id='jujibot-icon'
         background='#8BDFCD'
-        img_url='https://juji.ai/assets/img/content/juji-profile.png'> 
-  </div> 
+        img_url='https://juji.ai/assets/img/content/juji-profile.png'>
+  </div>
   <script>
     (function(d, s, id){
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -93,11 +97,12 @@
         js = d.createElement(s); js.id = id;
         js.src = 'https://juji.ai/assets/js/webplugin.js';
        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'juji-webplugin')); 
-  </script> 
+      }(document, 'script', 'juji-webplugin'));
+  </script>
   <div id='juji-chatbot'
-        chat_url='https://juji.ai/pre-chat/5e1385c7-f4de-4248-b926-dfc805f11506'> 
+        chat_url='https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63'>
   </div>
+
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
