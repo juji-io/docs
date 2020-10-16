@@ -93,6 +93,7 @@ nav:
     - User-defined Functions: udf.md
     - Scripting Guide: script.md
     - Config-doc Guide: config-doc.md
+    - Custom Topics: custom-topics.md
   - Juji API: 
     - Introduction: api.md
     - Chat API: chat.md
