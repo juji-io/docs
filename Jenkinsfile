@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 pipeline {
-  agent { label 'web' }
+  agent { label 'site' }
   stages {
     stage('Build') {
       steps {
