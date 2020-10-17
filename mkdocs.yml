@@ -17,12 +17,14 @@ theme:
   name: 'material'
   custom_dir: 'theme/'
   features:
-    - tabs
-    - instant
+    - navigation.tabs
+    - navigation.instant
+    - navigation.expand
 
   palette:
-    primary: 'white'
-    accent: 'deep orange'
+    - scheme: 'default' 
+      primary: 'white' 
+      accent: 'deep orange' 
 
 plugins:
   - search: 
