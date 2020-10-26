@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juji.io/docs/sitemap.xml
+
