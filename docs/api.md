@@ -16,7 +16,7 @@ This API reference covers only
 important concepts of using Juji API. Please use the interactive
 [GraphiQL](https://juji.ai/graphiql/graphiql.html) IDE to read the detailed documentation of all Juji GraphQL API calls.
 
-For your code to access the API, put this GraphQL API endpoint `https://juji.ai/api/graphql` in your code. Please note: this URL is for your code to access, not a destination for human to visit in browser, you will get "resource not found" if you open it with a browser.
+For your code to access the API, put this GraphQL API endpoint `https://juji.ai/api/graphql` in your code. Please note: this URL is for your code to access, not a destination for human to visit in browser, you will get `{"error": "Unknown server resource."}` if you open it with a browser.
 
 ## Sample Application
 
