@@ -1,6 +1,6 @@
 # Juji Documentation
 
-This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://www.mkdocs.org).
+This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://www.mkdocs.org) using the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
 
 We welcome pull requests for this repository. Follow instructions below.
 
