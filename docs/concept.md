@@ -3,7 +3,7 @@
 Juji leverages the fruits of half century of artificial
 intelligence (AI) research to build a practical and easy-to-use conversational
 agent authoring platform. The core of the Juji platform is a hybrid AI system
-that marries the so called "traditional AI" and the state of art deep learning
+that marries the so called "traditional" or "Symbolic AI" and the state of art deep learning
 (DL) and machine learning (ML) technologies in natural language processing (NLP).
 
 To meet industrial requirements that demand flexibility, accountability and
