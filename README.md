@@ -2,43 +2,36 @@
 
 This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://mkdocs.org).
 
-## We welcome pull requests for this repository. Follow instructions below
+We welcome pull requests for this repository. Follow instructions below.
+
+## Get the code
+
+First fork this repository: https://github.com/juji-io/docs,  so you have your own at https://github.com/yourname/docs
+
+Then checkout to your own branch.
 
 ```bash
+git clone https://github.com/yourname/docs
 git pull
 git checkout -b <mybranchname>
-emacs <filename>
 
 ```
+Then edit the files under `docs` directory.
 
-Then use the following commands to add + commit changes
-
-```
-git add *
-git commit -m "comments"
-```
-
-Then use git push
+Use the following commands to commit your changes and push to your own branch on github.
 
 ```
-git push 
-```
-
-or
-```
+git add docs/yourfile.md
+git commit -m "your commit message"
 git push --set-upstream origin <mybranchname>
 
 ```
 
-Use git push to push changes 
-Then go to Github to create new pull requests (new pull request)
+Then go to Github to create new pull requests for https://github.com/juji-io/docs, so that we can review your changes. After your changes are approved and merged. It will go live automatically.
 
-https://github.com/juji-io/docs
+## Local setup
 
-
-## Setup
-
-Make sure you have python on your system. It is safer to use the same version of python as we do. 
+To build the site, make sure you have python on your system. It is safer to use the same version of python as we do. 
 
 ```bash
 brew install pyenv
@@ -71,10 +64,6 @@ mkdocs serve
 And point browser to http://localhost:8000
 
 The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file, documentation directory, or theme directory changes.
-
-## Deploy
-
-The site is automatically deployed when master branch is pushed to github.
 
 ## Upgrade software
 
