@@ -1,6 +1,6 @@
 # Juji Documentation
 
-This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://mkdocs.org).
+This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://www.mkdocs.org).
 
 We welcome pull requests for this repository. Follow instructions below.
 
@@ -11,9 +11,9 @@ First fork this repository: https://github.com/juji-io/docs,  so you have your o
 Then checkout to your own branch.
 
 ```bash
-git clone https://github.com/yourname/docs
+git clone git@github.com:yourname/docs.git
 git pull
-git checkout -b <mybranchname>
+git checkout -b <yourbranchname>
 
 ```
 Then edit the files under `docs` directory.
@@ -23,11 +23,11 @@ Use the following commands to commit your changes and push to your own branch on
 ```
 git add docs/yourfile.md
 git commit -m "your commit message"
-git push --set-upstream origin <mybranchname>
+git push --set-upstream origin <yourbranchname>
 
 ```
 
-Then go to Github to create new pull requests for https://github.com/juji-io/docs, so that we can review your changes. After your changes are approved and merged. It will go live automatically.
+Then go to Github to create a new pull request for https://github.com/juji-io/docs, so that we can review your changes. Please summarize briefly what you have changed. After your changes are approved and merged. It will go live automatically. Thank you for your contribution!
 
 ## Local setup
 
