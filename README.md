@@ -31,13 +31,15 @@ Then go to Github to create new pull requests for https://github.com/juji-io/doc
 
 ## Local setup
 
-To build the site, make sure you have python on your system. It is safer to use the same version of python as we do. 
+To build the site, make sure you have python on your system. It is safer to use the same version of python as we do. The easist way to ensure this is to install pyenv, and install the right version of python using it. Please follow [its instruction](https://github.com/pyenv/pyenv) to set it up. It is important to add `pyenv init` to your shell. Otherwise you may not be using the right version of python. 
 
 ```bash
 brew install pyenv
 pyenv install 3.6.6
 pyenv global 3.6.6
 ```
+
+Test that you have the right version of python `python --version`.
 
 Now install needed extensions:
 
