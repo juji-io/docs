@@ -3,54 +3,57 @@
 
 ## General Questions
 
-<hr>
-<a name="!ai-vs-no-ai"></a>
-### What are the differences between AI chatbots and non-AI chatbots?
-: Here is a [quick comparison](../why-ai-chatbots#a-quick-comparison) between the two.
+# **Frequently Asked Questions**
+
+## **General Questions**
 
 <hr>
+
+<a name="!ai-vs-no-ai"></a>
+
+
+### What are the differences between AI chatbots and non-AI chatbots?
+
+Here is a [quick comparison](../why-ai-chatbots#a-quick-comparison) between the two.
+
 <a name="!know-ai-chatbot"></a>
-### How do I know my chatbot has AI in it?
+
+
 ### How do I tell if my chatbot is an AI chatbot?
 
-: You can use the quick test below to check if your chatbot has any AI in it. If your answer is "yes" to all questions below, your chatbot is definitely an AI chatbot.
-: * Can your chatbot interact with your audience naturally, e.g.,
+Use the quick test below to check if your chatbot has any AI in it. If your answer is "yes" to all questions below, your chatbot is definitely an AI chatbot.
+
+* Can your chatbot interact with your audience naturally, e.g.,
   answering user natural language questions any time during a chat?
 
-: * Can your chatbot handle multi-step tasks with highly diverse (often
+* Can your chatbot handle multi-step tasks with highly diverse (often
   non-linear) user paths that are difficult to numerate or anticipate?
 
-: * Can your chatbot bond with your audience through natural, social
+* Can your chatbot bond with your audience through natural, social
   interactions?
 
-: * Can your chatbot learn insights of your audience from a chat and
+* Can your chatbot learn insights of your audience from a chat and
   use such insights to help them in the chat in real time?
 
-: * Can your chatbot improve and learn from more user interactions over time?
-
-<hr>
+* Can your chatbot improve and learn from more user interactions over time?
 
 <a name="!why-ai-chatbot"></a>
 ### Why do I need an AI chatbot?
-: Here is a [quick test](../why-ai-chatbots/#quick-test) to help you determine if you need an AI chatbot.
 
-<hr>
+Here is a [quick test](../why-ai-chatbots/#quick-test) to help you find out if you need an AI chatbot.(Spoiler Alert: You probably do.) 
+
 <a name="!chat-length"></a>
 ### How long normally can a user chat with a Juji chatbot?
 
-: This depends on the purpose of your chatbot. An interview
-chatbot may chat with its users for a long period of time (e.g., 45
-minutes), while an e-commerce chatbot may chat with its users for a
-few minutes (e.g., 5 minutes) to help resolve user issues. Please
+It depends on the purpose of your chatbot. An interview chatbot may chat with its users for a long period of time (e.g., 45
+minutes), while an e-commerce chatbot may chat with its users for a couple of minutes to help resolve user issues. Please
 check out [how to determine the optimal chat length](../chatbot-design-tips#optimal-chat-length).
 
-<hr>
 <a name="!improve-chatbot"></a>
-### How will my chatbot be improved over time? Does it improve if more people use it?
+### How will my Juji chatbot improve over time? Does it get smarter if more people use it?
 
-: Your chatbot will get improved over time from two aspects. First, it will be improved if you inject more knowledge into your chatbot. Second, it will also be improved when Juji improves its underlying dialog library. Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, more Juji chatbots are in action, the better all the Juji chatbots will get, and the faster all the Juji chatbots will be improved. There is indeed a network effect for Juji chatbots.
+Your chatbot can improve over time for two reasons. First, it will be get smarter if you inject more knowledge into your chatbot. Second, it will also improve because Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, more Juji chatbots are in action, the better all the Juji chatbots will get. Yes, Juji Chatbots have a network effect in play. Or with apologies to Alexandre Dumas. "All for one and one for all". But we don't do user-side training data, so that headache you don't have. 
 
-<hr>
 <a name="!creation-time"></a>
 ### How long will it take to create an AI chatbot?
 
