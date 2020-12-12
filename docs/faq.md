@@ -3,22 +3,12 @@
 
 ## General Questions
 
-# **Frequently Asked Questions**
-
-## **General Questions**
-
-<hr>
-
 <a name="!ai-vs-no-ai"></a>
-
-
 ### What are the differences between AI chatbots and non-AI chatbots?
 
 Here is a [quick comparison](../why-ai-chatbots#a-quick-comparison) between the two.
 
 <a name="!know-ai-chatbot"></a>
-
-
 ### How do I tell if my chatbot is an AI chatbot?
 
 Use the quick test below to check if your chatbot has any AI in it. If your answer is "yes" to all questions below, your chatbot is definitely an AI chatbot.
@@ -56,7 +46,6 @@ Your chatbot can improve over time for two reasons. First, it will be get smarte
 
 <a name="!creation-time"></a>
 ### How long will it take to create an AI chatbot?
-
 
 : This depends on the purpose of your chatbot. For example, if you
 want to create an e-commerce chatbot that introduces products and
