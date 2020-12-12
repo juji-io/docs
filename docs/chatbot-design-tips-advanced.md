@@ -1,92 +1,56 @@
 # **Making AI Chatbots: <br> Best Practices (Advanced)**
 
-Here are more design tips if you want to use the [Juji
-Platform](../) to optimize your AI chatbot performance and deliver superior user experience.
+Best practices are a crtical part of getting the most out of the many powerful conversational aspects of the Juji platform. Here are some more advanced design tips to help you optimize user experience and chatbot peformance on Juji. [Juji
+Platform](../)
 
+## **Use The Correct Chatbot Request**
 
-## **Use Proper Chatbot Request**
+Juji supports two main types of chatbot request:
 
-Currently Juji supports two main types of chatbot request:
-[choice-based](../design#choice-request) and
-[free-text](../design#free-text-request). The former collects structured
-user input, while the latter elicits open-ended, free-text user input.
+[choice-based](../design#choice-request); which collects structured user input such as "option A" or "Option B".
+[free-text](../design#free-text-request); which collects open-ended "free-text" user input, such as a full sentence or more.
 
-If your goal of a request is to guide users to different directions or
-gathers user input to a limited set of options, use the choice
-request. It is deterministic, quick, and almost error free.
+If the goal of a given request is to guide users to pre-defined pathways or
+or to gather user input on a limited set of options, use the choice-based
+request type. It is deterministic, quick, and almost error free, becuase it's completely rule-driven.
 
 If your goal is to elicit open-ended user input, e.g., their insights
 or unanticipated responses on a particular topic, use a free-text
-request. Because a free-text request is intended to gather open-ended
-user input, be aware of potential highly diverse user digressions. To
-handle such user digressions, make sure that you [choose a right Juji
-built-in dialog](../design#built-in-dialog) to handle such situations
-automatically. You can of course write [custom chatbot
-actions](../design#customizing-chatbot-actions) to handle specific user
-input that you wish to capture and address.
+request. Be aware that if you're offering the user the right to enter just about anything, the possibility of digressions or disambiguous responses is quite high. It's unfair of a user to follow "the lines" of a conversation when the guard rails are simply not there. To handle the unexpected (which you should of course, expect) it's always wise to [choose a Juji built-in dialog](../design#built-in-dialog) to get your conversation through such situations in a simple, almost automatic but still completely naturalistic way. If necessary, you can write your own [custom chatbot actions](../design#customizing-chatbot-actions) to handle specific digressive user input that you wish to capture and address to drive the conversation in different and interesting ways. The more you master our platform, the more capable you will be at writing conversations that feel open, free and user-driven - while maintaining control over their ultimate outcomes. 
 
-## **Use Proper Chatbot Trigger**
+## **Use The Correct Chatbot Trigger**
 
-Depending on your chatbot application, the tip below helps you
-decide whether you use a `contains-keywords` or
-`is-similar-to` trigger when you customize your chatbot actions.
+Depending on your chatbot application, the choice of trigger is critical. There is a big difference between using the `contains-keywords` trigger and the 
+`is-similar-to`trigger when customizing your chatbot's actions.
 
-In general, `contains-keywords` will help better match a user input
-syntactically as long as the input contains the keywords. In contrast,
-`is-similar-to` will help better match a user input semantically
-regardless of its syntactic form.
+### When to use 'Keywords'
 
-Assume that your chatbot asks `What's your favorite fruit?`. You
-define a trigger `contains-keywords` to capture particular kind of
-fruit like `strawberry`.
+In general, `contains-keywords` will help better syntactically match a user input as long as the input contains the keywords. The requirement that user input conform to any other characteristic makes `contains-keywords` the most flexible and percentage-friendly way of defining your triggers. 
+
+Let's imagine that your chatbot asks `What's your favorite fruit?`. If your chatbot is interested in how many of its website's customers eat strawberries, it might define the trigger `contains-keywords` with the keyword `strawberry`.
 
 <p align="center"><img src="../img/keywords-trigger.png" alt="Keywords Trigger" width="650"/></p>
 
-As long as a user input contains a keyword that matches with the fruit
-name you put into, the trigger will fire. For example, it will match a
-user expression `I really like strawberries`:
+So that if the user input contains the keyword, when input such as `I really like strawberries` is entered the trigger will fire. 
 
-<p align="center"><img src="../img/keywords-chat-1.png" alt="Keywords
-Trigger" width="650"/></p>
-
-It will also match a user input with very different meaning `I like
-fruit except strawberries`:
-
-<p align="center"><img src="../img/keywords-chat-2.png" alt="Keywords Trigger" width="650"/></p>
-
-This is because both expressions contain the keyword 'strawberry`
-regardless their use with different semantics. Note that Juji
-automatically handles <a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html" target="_blank">stemming and lemmatization</a> in keyword matching to support the matching of word variations.
-
-However, a `contains-keyword` trigger would not match
-`strawberry` with `blueberry` because these are very different keywords:
-
-<p align="center"><img src="../img/keywords-chat-3.png" alt="Keywords Trigger" width="650"/></p>
-
-In contrast, if you define a trigger `is-similar-to` with examples
-such as `I like strawberries`:
-
-<p align="center"><img src="../img/is-similar-to-trigger.png"
-alt="is-similar-to trigger" width="650"/></p>
-
-This trigger will match a user input `I like blueberries` because this
-expression is considered **semantically** similar:
-
-<p align="center"><img src="../img/is-similar-to-chat.png"
-alt="is-similar-to trigger" width="650"/></p>
-
-With a high enough matching threshold (e.g., `90%`), the trigger will not match
-semantically different input such as `I dislike strawberries`
-even though it contains the word `strawberries'.
-
-In short, a rule of thumb is that if you care about capturing the
-semantics of a user input more accurately, use `is-similar-to` where
-you can give words, phrases, and full sentences as examples. If you
-care about capturing a particular word/phrase regardless how it appear
+To sum up, if you wish to capture a particular word/phrase regardless of how it appears
 syntactically in an input, use `contains-keywords`.
 
-In the near future, we will support the use of both in **one trigger**. 
+### When to user 'Is Similar To"
 
+But supposing your bot was interested in knowing who "didn't like strawberries". This would be a perfect scenario for the user of the `is-similar-to` trigger. 
+
+The best practice in this scenario would be to enter `is-similar-to` examples such as `I really like fruit, except strawberries` and `I don't like strawberries`
+
+<p align="center"><img src="../img/is-similar-to-trigger.png" alt="is-similar-to trigger" width="650"/></p>
+
+In short, the rule of thumb here is that if your aim is to capture the semantics of a given user input more accurately, using`is-similar-to` where
+you can give words, phrases, and full sentences as examples, and cover your bases with extra variations, is the way to go.
+
+#### A note on Stemming and Lemmatization
+
+Yes, the keyword was `strawberry` and the sentence includes it as its plural `strawberries`, but Juji
+automatically handles <a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html" target="_blank">stemming and lemmatization</a> in both `contains-keywords` and `is-similar-to` sentence matching, so you're always covered, without having to program or enter the variations yourself. 
 
 ## **Give Sensible Labels**
 
