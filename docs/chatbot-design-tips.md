@@ -12,34 +12,26 @@ chatbots](../why-ai-chatbots).
 ## **Support Tasks and Social Chitchat**
 
 Effective AI chatbots should be able to accomplish specific tasks and
-deliver delightful social experience at the same time. Use the tips
-below to create such an AI chatbot with minimum time and effort.
+deliver great social experiences at the same time. Use the tips
+below to create an engageing AI chatbot with a lot less time and effort than most of today's chat engines require from users.
 
 ### Start w/ Chat Flow Outline
 
 Building an AI chatbot is similar to writing a screenplay, which
-should have a beginning (Welcome), body, and end (Wrap up). Moreover,
-it should have a clear conversation objective that can guide the
-chatbot's to drive a dialog and achieve the objective.
+should have a beginning, which equates to a welcome and set up, a second act, which takes you through the body of its content, and a third act, which transports you to a decision-based ending. The key to any good screenplay - and chatbot - is a clear through-line or narrative that takes you from beginning to end. Or to put it another way, when you get on a a bus you usually know where you're going. There's a reason for that. 
 
-Juji provides a set of chatbot templates, each of which always
-includes a Welcome and Wrap-up. We strongly recommend that you first
-create a **chat outline**, which defines a chat flow that your chatbot
-will use to guide a conversation with a target audience. You can use
-your favorite text editor, such as Word and Google Doc to edit such an
-outline in a plain text format. Online editing tools, like Google doc, allow
-collaborative editing, which let your teammates or clients help you
-polish the outline.
+Juji provides a set of chatbot templates, each of which has a clear narrative pathway, regardless of domain. We'd stronly recommend you start your journey into writing a chatbot by using one of these, if possible. If you're feeling ambitious and would rather skip the templat, always write a chatbot outline, just like a good screenwriter writes a beat sheet outline for her/his project. Of course in a chatbot, this will be more likely to involve dialogue, another critical part of both the screenwriter's and bot-writer's arsenal. Send your outline around for external feedback. You're almost certain to learn ways to improve it. 
 
 Below is a sample outline that is intended to create a chatbot
 that can  chat with gamers about games.  
+
 <br>
+
 <p align="center"><img src="../img/chat-outline.png" alt="chat-outline" width="650"/></p>
 
 <br>
 
-Here is another sample outline that aims at creating a chatbot that
-helps make restaurant reservations as well as manage reservations.
+Here is a second sample outline, Here a chatbot helps customers make and manage restaurant reservations.
 
 <br>
 
@@ -74,6 +66,8 @@ chatbot](../design) and add the marked items in the main chat flow.
 <p align="center"><img src="../img/chat-outline-annotated.png" alt="annotated
 sample chat outline" width="650"/></p>
 
+Over time this process should become faster and faster as you become omre familar with the 'storytelling' aspects that Juji can handle so well. Indeed, many of our users say Juji is the best platform they have ever used not just becaise it has a complex built-in engine with an easy to understand UI but it also a very creative tool.
+
 ### Prepare Q&A List and Chitchats
 
 As shown next to the conversation graph, one can also define a list of Q&As
@@ -87,7 +81,7 @@ inquiries). Additionally, Juji AI chatbots automatically tracks and manages a
 conversation context, including topic switches (e.g., switching from a
 topic in the main outline to a Q&A or social chitchat). They will
 always bring users back on track (i.e., the topics in the main
-outline).
+outline), and if they don't - according to the data - then you can adjust the topics until they do.
 
 In particular, we recommend that you prepare answers to <a href="#" name="qa-types">**three types of user questions**</a> that can be anticipated.
 
@@ -101,10 +95,7 @@ In particular, we recommend that you prepare answers to <a href="#" name="qa-typ
 
 No matter how smart your chatbot is, it cannot do everything. To make
 a conversation more efficient and transparent, we recommend that you
-always prepare a `HELP` guide to inform users what your chatbot can
-do. This will help users figure out what they can or cannot do with
-the chatbot. It will also reduce user frustrations and help the
-chatbot better guide a user behavior.
+always prepare a `HELP` guide to inform users what of your chatbot's capabilities. By establishing its limits, you will be setting clear expectations with users, who will be more likely to stick around if something goes awry. If a disappointment is a true surprise, users tend to take their leave, sharpish.
 
 You can go to the Q&A dashboard and directly add an entry with "Help"
 in the `Question` column, and your help guide in the `Answer` column,
@@ -114,27 +105,22 @@ and then uploading the revised CSV file.
 
 As part of the HELP guide, it is also valuable to customize answers to the following two questions:
 
-* **User request to chat with a human agent**. By default, this question is already in a chatbot's knowledge base. You may want to edit the system default response based on your situation. Just download the CSV file from the Q&A board and edit the answer to this question in the CSV file. Then upload. 
+* **User request to chat with a human agent**. By default, this question is already in a chatbot's knowledge base. You may want to edit the system default response based on your situation. Just download the CSV file from the Q&A board and edit the answer to this question in the CSV file. Then rename and upload to save the entries to your chatbot. 
 
-* **Default response to any unrecognized user input**. You can edit the <a href="https://docs.juji.io/design#default-response" target="_blank">**default response to unknown user input**</a> as part of the [conversation parameters](../design#conversation-parameters).
+* **Default response to any unrecognized user input**. You can edit the <a href="https://docs.juji.io/design#default-response" target="_blank">**default response to unknown user input**</a> as part of the [conversation parameters](../design#conversation-parameters). You can also add randomized choices to more specific fallbacks.
 
 
 #### <a name="recip-q"></a>Prepare Answers to Reciprocal Questions
 
-Users often ask reciprocal questions, such as `what is your favorite
-color` when asked the same question by a chatbot. One should
-anticipate such user behavior and prepare the chatbot to handle such
-reciprocal questions.
+Users often ask 'reciprocal questions', which are triggered by bot questions like `what is your favorite
+color` Chatbot creators should anticipate that users won't answer, except with a reciprocal question and prepare the chatbot to handle these 'comebackers'. Not surprisingly, there are Juji topics that can help make this easy for you.  
 
 #### <a name="common-q"></a>Prepare Answers to "Common Sense" Questions
 
-Users will enjoy interacting with a chatbot more, if the chatbot can
-answer simple, "common sense" questions related to the duties of the
-chatbot. For example, if a chatbot is used to greet online customers
-of an e-commerce business, it should answer questions about the price
-and availability of the products. Similarly, if a chatbot is used to
-onboard customers for an application, it should answer questions about
-the application.
+Users engage better with chatbots that can can answer simple, "common sense" questions related to the duties of the
+chatbot, or even vaguely more connected 'common-snese questions. For example, if a chatbot is used to greet online customers
+for an e-commerce business, it should be able to answer questions about the price and availability of the products sold online. Similarly, if a chatbot is used to
+onboard customers for an application, it should answer questions about the benefits and features of the application.
 
 All the Q&As can be entered in a CSV file or directly in the table on
 the `Q&A Board` page. Please refer to [Customize
@@ -157,49 +143,38 @@ Juji AI chatbots can send two types of messages (check out [chatbot
 design](../design)). One type is a plain chatbot **message** that ignores
 user input. The other is a chatbot **request** that waits for user input
 and responds to it. If a chatbot sends too many messages that ignore
-user input, it feels like a monologue (or chatbot spam) instead of a
-dialog. If a chatbot asks too many questions, it feels like an
-interrogation instead of conversation. Thus, an AI chatbot should
-support a balanced asking and answering questions, also known as a
-*mixed-initiative conversation*.  When writing a chat outline, mix the
-use of chatbot messages (don't require user responses) and requests
-(requiring user responses).
+user input, it feels like a monologue instead of a
+dialog, or conversation. If a chatbot asks too many questions, it feels like an
+interrogation instead of a discussion. So, just like all good things, a little moderation and balance is required. Mix up the message and requestes. Edit your work on the fly. If you find your bot is sounding too interogative, make some adjustments. And remember. rewriting is a lot more fun than getting that first draft down (although that's must too). If you hit the sweet spot you've got yourself a
+*mixed-initiative conversation*.  Pat yourself on the back for creating a very humanlike conversation.
 
-
-In addition, if you use multiple chatbot messages in a row, you may
-want to add `delay` time (you can set it in [topic
-settings](#topic-settings) between them to time each message so they
-do not rush out too quickly one after another.
+### The Role of Delays
+ 
+Chatbot messages can be delayed in 1s increments. (you can set `delay` in [topic
+settings](#topic-settings). Delays seem natural and real, as if the bot is choosing its response wisely (even though it's already loaded up by the bot in a matter of a few milliseconds. The second and more creative reason for a delay is that it imparts drama at key moment in the course of a chatbot through-line. For example, if the expected response to a given user question is personal, profound, or in some way critical to the chatbot's narrative, take your time giving the bot's response and add a little drama to the proceedings. You can also test the amount of delay that works for a given situation.
 
 **IMPORTANT TIP:** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
 
 <p align="center"><img src="../img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
-### Mix Different Types of Requests
+### Mix Different Types of Requests. 
 
 Juji AI chatbots support several types of requests, e.g., choice-based
 and free-text requests. While choice-based questions are quick and
 easy for users to answer, they gather limited information for
-businesses to act upon. Moreover, choice-based answers can be easily
+a chatbot to act upon. Moreover, choice-based answers can be easily
 "cheated" (e.g., a user simply makes a random choice without even
-reading the request). On the other hand, free-text questions
-especially open-ended questions often elicit rich and meaningful
-responses, but they take more time and effort for users to respond. In
-addition, Juji has built-in [gibberish
-detection](#ensure-quality-of-user-input) to prevent gibberish
-responses.
+reading the request). On the other hand, free-text questions,
+especially open-ended questions, can often garner rich and meaningful
+responses, but they take more time and effort for users to respond. We want users to want to respond fully. The character and personality of the bot can be absolutely critical in that regard. 
 
-To make users stay engaged without feeling too tired, it is a good
-practice to mix choice-based and free-text requests in a chat. From
-our experience, maintaining a 2:3 ratio, 2 choice questions and 3
-free-text inquiries, normally works well. We also encourage the use of
-open-ended chatbot inquiries (e.g., `How do you feel about the movie`)
-instead of simple yes-no questions (e.g., `Do you like the movie`). The
-former can elicit in-depth often unanticipated responses and make a
-conversation more lively, while latter may end a chat prematurely. If
-you have to use a yes-no question (e.g., collecting a definite yes-no
-answer), you may want to add a follow-up `Why` free-text question to
-elicit the rationale behind user responses.   
+### A 2:3 Ratio
+
+To keep users engaged over the course of a chat narrative be sure mix choice-based and free-text requests. Our research shows that the optimium ratio is 2:3, with two (2) choice questions for every three (3) free-text inquiries. We have found that proportion normally works very well. 
+
+### The Yes-No Question Is Not Always Your Friend
+
+We also encourage the use of open-ended chatbot inquiries (e.g., `How do you feel about the movie`) instead of simple yes-no questions (e.g., `Do you like the movie`), which open the bot up to a not particularly useful mono-syllabic answer. Bots engage users when users feel engaged enough to text into the bot, but users do not like the question `why?` following a yes/no question which should have been avoided in the first place. The golden rule here is that user engagement is everything.  
 
 ### Use Proper Juji Built-in Dialog
 
@@ -218,29 +193,22 @@ We thus strongly recommend that you always check the retrieved built-in dialog t
 <p align="center"><img src="../img/search-a-topic.png" alt="search a
 topic" width="550"/></p>
 
+### Detecting Gibberish
+
+`akjds;laksdjfsl;kdjfa;lskdjf` When a Juji chatbot sees that in response to a pretty straightforward question, it can detect that its gibberish and respond in a way that helps the user return to a more motivated place, if that's possible. Even  person with a less-than-goldfish length attention span will appreciate the bot's good intentions, and after adding some more gibberish may be silently impressed that here was a bot that kind of understood their idea of a joke rather than deliver some completely robotic fallback like "I'm still learning. Run your answer by me again."
 
 ### Optimal Chat Length
 
 Although Juji AI chatbots can engage users in a very lengthy
 conversation (e.g., the longest was 3.5 hours), engaging someone in a
-conversation requires much time and mental effort. It is thus a good
-practice to keep a chat at a certain length to keep your audience
-engaged while completing intended tasks.
-
-From our experience, a chat should be kept below 5 minutes if your
-chatbot does not have much interesting content or topics to
-discuss. If your chatbot poses questions and engage users in free-text
-discussions, making a chat between 10-12 minutes enables your chatbot
-to bond with your audience but without wearing them out. If your
-chatbot is intended to conduct lengthy interviews, try to keep it
-within 45 minutes.
+conversation requires much time and mental effort, for both visitor and creator. The rule of thumb here should be, make the chatbot as short as it can be get its job done. If you're keeping a user on the bot for 5 minutes you are doing very well, so don't push your luck unless your use case requires it. If you're seeking out free-text information, and your bot's character and dialogue is managing to ellicit a ton of free text responses that are worthwhile, 10-12 minutes is probably your limit.  If your
+chatbot is intended to conduct lengthy interviews, try to keep it within 45 minutes.
 
 If you need to gather certain amount of information from your audience
 before your chatbot can help them, dividing a long chat into multiple
 shorter chats is always more effective. For example, instead of
 chatting with a user 30 minutes at once, see if you can make your
 chatbot engage with a user 10 minutes every day for 3 days.
-
 
 ## **Create Natural and Engaging Conversations**
 
