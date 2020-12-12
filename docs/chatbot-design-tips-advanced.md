@@ -52,67 +52,43 @@ you can give words, phrases, and full sentences as examples, and cover your base
 Yes, the keyword was `strawberry` and the sentence includes it as its plural `strawberries`, but Juji
 automatically handles <a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html" target="_blank">stemming and lemmatization</a> in both `contains-keywords` and `is-similar-to` sentence matching, so you're always covered, without having to program or enter the variations yourself. 
 
-## **Give Sensible Labels**
+## **Sensible Labels Are Important**
 
-The label of a free-text request is a very important piece of
-information. It is used for multiple purposes. As
-described below, it is used to
+The label of a free-text request isn't just a label, it actually has a number of critical roles to play in the way the Juji Engine parses and interprets information.  Here's a list of a label's main functions;
 
-* summarize a chat topic (i.e., displayed on the topic card
-in the left panel)
+1. Labels summarize an Agenda topic (i.e., displayed on the topic card
+in the left sidebar vertical scroll panel)
+2. Labels set the context for a match search for relevant built-in Juji Ad-Lib Topics
+3. Labels set the context for understanding and responding to user inquiries.
+4. Labels index user answers in an audience report.
 
-* search for built-in Juji dialog
+###. **1. See Your Structure In Seconds**
 
-* translate user inquiries in context
+The clearer and more concise the labels, the quicker you'll understand the strengths and weaknesses of your structure, and the faster you'll be able to navigate through the design and preview of your bot as you prepare it for primetime.
 
-* index user answers in an audience report.
+###. **2. Search for Built-in Juji Dialog**
 
-### **Search for Built-in Juji Dialog**
+The more accurate the label the better Juji will find the best Ad-Lib Topics to cover your digressions away from the main flow and get your users back to where you need them to go. And the best part is this. The more accurate the matches with ad-lib topics, the less customization you'll have to do. As we build our ad-lib topics, the need to customize might even go down to the magic number. Zero. 
 
-A request label is always used to find a matched Juji built-in dialog
-to handle conversations around the request. For example, Juji has a
-built-in dialog that handles diverse user responses to the request
-`What are your hobbies`. To find such a built-in dialog, Juji uses the
-label entered with the request. Giving a sensible lable can
-better help Juji find the right built-in conversation, which can then
-handle diverse user responses on that topic with **no or little**
-customization required.
-
-In particular, we suggest that you give short, concise labels to
-distill chatbot requests, which facilitates the finding of matched 
-built-in dialogs. For example, if your chatbot is intended to ask a
-user about his/her opinion about an event, it might give a long
-description of the event before posing the question. In such a case,
-put the long and full description in the request, but keep the
-request label short and concise as shown in the example below:
+Here's an example of a simple, sensible label. 
 
 <p align="center"><img src="../img/good-label.png" alt="A sensible label" width="650"/></p>
 
-Here is another example showing that the request wording is long while
-the label is kept short and to the point:
+Here is another slightly longer example. 
 
 <p align="center"><img src="../img/good-label-2.png" alt="A sensible
 label 2 - short" width="550"/></p>
 
-In case you don't think the label you entered retrieves a suitable
-built-in dialog, you can always browse Juji dialog library to [search
-for a more suitable built-in dialog](../design#built-in-dialog).
+Of course, if your label choice isn't pulling up the ad-lib topics that match your agenda topics, you just have to change the labels you're concerned about, and the next time you preview the engine will give you new choices to consider. To find a good label, reverse engineer the process by [browsing Juji ad-lib topics] (../design#built-in-dialog).
 
-### **Handle Context-Sensitive User Inquiries**
+### **3. Handle Context-Sensitive User Inquiries**
 
-In a conversation, a user may pose a context-sensitive inquiry. For
-example, a chatbot asks `Everyone loves movies. What's your favorite
-movie?`. A user may ask a reciprocal question instead of answering the
-question `What's yours`. In such a case, the chatbot must first translate
-this user inquiry `What's yours` into a full inquiry `What's your
-favorite movie` based on the context before processing the user inquiry.
+A context-sensitive inquiry might involve something like this. Say a chatbot asks `Everyone loves movies. What's your favorite
+movie?`. A user may ask a reciprocal question instead of answering the question `What's yours`. In such a case, the chatbot must first translate
+this user inquiry `What's yours` into a full inquiry `What's your favorite movie` based on the context before processing the user inquiry.
 
 Currently Juji automatically translates a context-sensitive user
-inquiry based on the label instead of the request itself. This is
-because the label often captures the core question. A translation
-based on the core question can avoid unnecessary noises. Below shows
-two example requests and their labels, which are used for handling
-context-sensitive user inquiries.
+inquiry based on the label instead of the request itself, because a well-chosen label is often the quickest and most accurate way to capture the core of a topic. In other words, to capture context (and trust us, that's the holy grail of chatbots), all you have to do is label your topics smartly. Juji's codebase does the rest. Here are a couple of examples to illustrate the importance of smart labelling. 
 
 **Example I**
 
@@ -121,85 +97,59 @@ additional description.
 
 <p align="center"><img src="../img/fav-movie-label.png" alt="A sensible label" width="650"/></p>
 
-Based on this label, below shows a chat fragment that handles a
-context-sensitive user inquiry on this topic:
-
+Based on this label, here's context-friendly response to the user inquiry that easily takes care of what in other engines would require a good chunk of time to get right. 
 
 <p align="center"><img src="../img/context-fav-movie.png" alt="A sensible label" width="650"/></p>
 
 
 **Example II**
 
-Here is another example showing the label is just the stem of the
-  question:
+One approach is to capture the stem of the question with a keyword of context.
 
 <p align="center"><img src="../img/hobby-label.png" alt="A sensible label" width="650"/></p>
 
-A conversation fragment shows that how the chatbot handles a
-context-sensitive inquiry on this topic:
+Again, the snippet of conversation gets the context spot on without any fuss.
 
 <p align="center"><img src="../img/context-hobby.png" alt="A sensible label" width="650"/></p>
 
-### **Label User Responses in Audience Report**
+### **4. Label User Responses in Audience Report**
 
-Another use of a request label is to label the user responses to the
-request in the audience report. Below is an example of audience
-report. It shows various user answers to the above two requests. As
-shown, both labels mentioned above are used to label the corresponding
-user answers.
+Labelling is also critical to working out which topics are delivering the goods and which are not in the audience report. 
 
 <p align="center"><img src="../img/label-index-answers.png" alt="A
 sensible label - label user responses in audience report" width="650"/></p>
 
-Since the labels are normally a concise description of requests,
-using them to label user answers in the audience report makes the
-report more consumable.
-
-See [these instructions](../reports#export-audience-data) to download
+By the way [follow these instructuions](../reports#export-audience-data) to download
 an audience report.
 
 ## **Reuse or Share Juji Chatbots**
 
-Creating a custom chatbot often takes time and effort. Juji allows you
-to easily reuse or share a Juji chatbot in one of the two methods
-below. Below we also indicate the key difference between these two methods.
+Creating a custom chatbot almost always takes time and effort. Juji allows you
+to easily reuse or share a Juji chatbot in two ways.
 
-### **Clone Juji Chatbots**
+3. Clone your Juji chatbot. 
+4. Export or Import Juji chatbots.  To do that follow the instructions in the screenshot below. 
 
-In some cases, you may want your chatbot to behave slightly
-differently for different audiences. For example, one chatbot needs to
-redirect to a different URL after it is done chatting, while the other chatbot
-may generate a unique code at the end of the chat. To reuse most of
-the shared chatbot content, you can easily clone a chatbot as shown
-below and then deploy different chatbots for different audiences.
+### **1. Clone Juji Chatbots**
 
+Say you're creating a chatbot with multiple calls to action (redirect vs form vs coupon code). If you clone the original chatbot twice, all you have to do is change the ending of the bot for each of your choices, and you can then trigger activation of one type or another depending on visitor profile.
 
 <p align="center"><img src="../img/clone-a-chatbot.png" alt="Clone a
 chatbot" width="650"/></p>
 
-### **Export/Import Juji Chatbots**
+To clone your Juji chatbot hit the ellipsis menu (...) on a chatbot in your dashboard and choose `clone`.
 
-Once you have created a chatbot on Juji, you may want to share it with
-others, for example, a fellow chatbot designer who could help polish
-the chatbot or a client who wishes to buy your chatbot but
-manage the chatbot him/herself. On the other hand, you may want to
-create a chatbot based on another designer's chatbot instead of
-creating one from scratch.
+### **2. Export/Import Juji Chatbots**
 
-On Juji, you can easily do so by exporting your chatbot so you can
-share it with others. The following screenshot shows that you can
-click on the ellipsis (...) menu button located on the top right
-corner of the card representing a chatbot you wish to export. Then
-click on the `Export` button. This action will automatically download
-a file named `*-export.juji` onto your computer, where * is the project
-name associated with the chatbot. For example, if we export the restaurant reservation chatbot in the screenshot shown below, the exported file name would be `Restaurant-Reservation-export.juji`
+The export/import approach is designed to support non-simultaneous chatbot collaboration between the owners of different Juji accounts. It can also facilitate a sale of a chatbot from one party to another. 
+
+To export your Juji chatbot hit the (...) ellipsis drop down menu and this time choose `export` to download a .Juji file for your designated download folder. Give it a relevant title. For example, if it's a restaurant reservation bot, you could call the file `restaurant-reservation-bot.juji`. After that's done, you can send it or to your collaborator or customer who can then import it to their own Juji account.
 
 <p align="center"><img src="../img/export-a-chatbot.png" alt="Export a
 chatbot" width="650"/></p>
 
-If you wish to import a Juji chatbot, just click on the `+ AI Helper`
-button. As shown below, instead of creating a chatbot from scratch,
-you can use the `Import` tab to import an exported `*.juji`
+To import a Juji chatbot, just click on the `+ AI Helper`
+button then hit the `Import` tab to import an exported `*.juji`
 file. After importing a chatbot, you can then [customize](../design),
 [deploy](../release), and [manage](../reports) the chatbot as if it
 were created by you from scratch.
@@ -209,13 +159,6 @@ button" width="350"/></p>
 
 <p align="center"><img src="../img/import-a-chatbot.png" alt="Import a
 chatbot" width="650"/></p>
-
-### **Tip: Difference between Clone and Export**
-Although both `Clone` and `Export` allow the sharing and reuse of a
-Juji chatbot, the key difference is that `Clone` allows the reuse
-within the same Juji account, while `Export` allows the reuse of a
-chatbot across different Juji accounts (e.g., yours and your
-teammate's).
 
 ## **Embed Juji Chatbots in Third-Party Apps**
 
@@ -244,7 +187,6 @@ update the chatbot without requiring the IT or engineering team's
 effort to update the embedded chatbot.
 
 
-## **What's Next**
+## **Power User Stuff**
 
-Want to power up your chatbot with AI and get some magic going? Juji has
-you covered. Check out more [chatbot best practices](../chatbot-design-tips) or venture into **[Juji IDE](../juji-ide)**, which is an interactive development environment that enables you to customize a chatbot much more deeply than what you can do with [Juji Studio](../juji-studio).
+Check out more [chatbot best practices](../chatbot-design-tips) or venture into **[Juji IDE](../juji-ide)**, our interactive development environment, and customize your Juji chatbot to another level of awesome after setting up the key elements in [Juji Studio](../juji-studio).
