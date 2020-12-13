@@ -4,8 +4,9 @@ The Juji platform is the easiest and best way to create, customize and deploy th
 Intelligence (AI) Assistants on the market. Currently, our advanced AI assistants
 engage users in text-based, natural language conversations to
 accomplish a wide variety of tasks, from answering user inquiries
-and making personalized product recommendations to more complicated interactions in digital healthcare and other challenging domains. Also known as **AI
-chatbots**, these AI assistants can handle complex and diverse user inputs, infer users' implicit needs and wants, and use such
+and making personalized product recommendations to more complicated interactions in digital healthcare and other challenging domains. 
+
+Also known as **AI Chatbots**, our Juji AI assistants can handle complex and diverse user inputs, infer users' implicit needs and wants, and use such
 understanding to deliver truly hyper-personalized guidance and services. And here's the best part. Because of the way out software is built, we handle most of the heavy lifting for you, so you can focus on the structure and writiing of the the conversation, and the personality of your chatbot. 
 
 The Juji Platform is made up of three main components, but most of your work (unless your a developer) can be handled in our easy to use Juji Studio. 
