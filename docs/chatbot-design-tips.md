@@ -191,18 +191,20 @@ topic" width="550"/></p>
 
 `akjds;laksdjfsl;kdjfa;lskdjf` When a Juji chatbot sees that in response to a pretty straightforward question, it can detect that its gibberish and respond in a way that helps the user return to a more motivated place, if that's possible. Even  person with a less-than-goldfish length attention span will appreciate the bot's good intentions, and after adding some more gibberish may be silently impressed that here was a bot that kind of understood their idea of a joke rather than deliver some completely robotic fallback like "I'm still learning. Run your answer by me again." Juji bots like to learn but `akjds;laksdjfsl;kdjfa;lskdjf` is definitely not on the curriculum. 
 
+Juji regards "non-answers" the sanme way as it treats `asdfasdfouywer9uw09eru1` The classic non-answer is `I don't know` Using the gibberish detection workflow you can decide whether to accept an non-answer response as shown below.
+
+<p align="center"><img src="../img/topic-setting-1.png" alt="Topic
+Setting 1" width="650"/></p>
+
+You can also control the required length of any given user response and also indicate whether a chatbot request is required
+to answer or not. Be careful with these settings. They are global and can have a major impact on the functionality of your Juji Chatbot. 
+
 ### Optimal Chat Length
 
 Although Juji AI chatbots can engage users in a very lengthy
 conversation (e.g., the longest was 3.5 hours), engaging someone in a
 conversation requires much time and mental effort, for both visitor and creator. The rule of thumb here should be, make the chatbot as short as it can be get its job done. If you're keeping a user on the bot for 5 minutes you are doing very well, so don't push your luck unless your use case requires it. If you're seeking out free-text information, and your bot's character and dialogue is managing to ellicit a ton of free text responses that are worthwhile, 10-12 minutes is probably your limit.  If your
 chatbot is intended to conduct lengthy interviews, try to keep it within 45 minutes.
-
-If you need to gather certain amount of information from your audience
-before your chatbot can help them, dividing a long chat into multiple
-shorter chats is always more effective. For example, instead of
-chatting with a user 30 minutes at once, see if you can make your
-chatbot engage with a user 10 minutes every day for 3 days.
 
 ## **Create Natural and Engaging Conversations**
 
@@ -240,14 +242,14 @@ The screenshot below shows how question paraphrases are used in a chat.
 
 <p align="center"><img src="../img/paraphrase-a-question-demo.png" alt="chatbot design tip: a chatbot asks a question using different expressions: first time vs. second time." width="650"/></p>
 
-
 ### Personalize Messages and Requests
 
 Personalized messages and requests make users feel more special and keeps them engaged. There are two simple ways to make a
 chatbot message or requested personalized. 
 
-* **Address users by their first name occasionally during a chat**. The function
-  `(user-first-name)` can be inserted into any chatbot message to make users feel that chatbot is paying attention to them. Everyone likes the personal touch. Don't overuse the first name function in your conversation. It can go from caring to creepy kind of quickly. A quick read-out loud will set the alarm bells ringing if you've gone too far. 
+* **Address users by their first name occasionally during a chat**. 
+
+The function  `(user-first-name)` can be inserted into any chatbot message to make users feel that chatbot is paying attention to them. Everyone likes the personal touch. Don't overuse the first name function in your conversation. It can go from caring to creepy kind of quickly. A quick read-out loud will set the alarm bells ringing if you've gone too far. 
 
 <p align="center"><img src="../img/user-first-name-func.png" alt="call user by his or her first name function (user-first-name)" width="650"/></p>
 
@@ -255,8 +257,7 @@ chatbot message or requested personalized.
   
 	1. Define a `contains-keywords` trigger
 	2. `STORE MATCHED INPUT` into a custom attribute (e.g., `like-protein`)
-	3. Insert the attribute into chatbot response using a function
-  (e.g., `(get-user-attribute-as-string "like-protein")`
+	3. Insert the attribute into chatbot response using a function. (e.g., `(get-user-attribute-as-string "like-protein")`
 
 <p align="center"><img src="../img/design-repeat-words.png" alt="Repeat user words" width="450"/></p>
 
@@ -279,6 +280,8 @@ And here's the chat as it would play out
 
 <p align="center"><img src="../img/preview-ack-sentiment.png" alt="Preview how to ack user sentiment" width="650"/></p>
 
+Used judiciously, this feature is a very important way of imprinting the empathetic nature of Juji on its users. It's worth noting that empathy is a profund and very transferable human trait, that is foundational to personality. It is often known as a "super trait", and its central to Juji's approach. 
+
 ### Determine Chatbot Default Response
 
 We've established that no chatbot is perfect. Before you came to Juji, you may have felt that you were never going to find a bot engine that was close enough.  To
@@ -294,24 +297,9 @@ alt="chatbot default response to unknown user input" width="650"/></p>
 In the above example, the default response that you entered will then
 be used instead of Juji built-in default responses.
 
-### Periodically Refresh Chatbot
+### Chatbot Refresh Rate
 
-Just like a person, your chatbot may not want to engage with anyone in
-a never-ending conversation. For example, if a chatbot is intended to
-conduct an interview, it should end after the interview is
-done. Similarly, if a chatbot is intended to help users in an
-e-commerce situation, it may want to be refreshed from time to time so
-users can be helped from the start (like re-entering a store).
-
-By default, a Juji chatbot will be refreshed (restarted) every 60
-minutes after it chats with a person. However, this refresh rate may
-be different depending on your chatbot tasks. For example, if your
-chatbot is conducting an interview that normally lasts for 45 minutes,
-we recommend that you set the refresh rate to every 180 minutes
-because your audience may not finish their interviews and want to
-continue after 60 minutes. They certainly do not want to start it over
-again. To set the refresh rate, you can go to the `Chatbot Settings`
-page:
+Juji is structured so it can essentially talk forever if prompted. By default, though, the bot restarts fresh every 60 minutes. If your bot is a long interview, you might want set the refresh rate a little longer, because it's unlikely that the user will want to start over with the same interview. That wouold be odd. You can set the `refresh rate` by scrolling down `chatbot settings` situated as the right tab of the `design` screen.
 
 <p align="center"><img src="../img/chatbot-settings-refresh.png"
 alt="set up a chatbot refresh rate" width="650"/></p>
@@ -319,23 +307,19 @@ alt="set up a chatbot refresh rate" width="650"/></p>
 ## **Ensure Conversation Quality**
 
 Like in a natural conversation, humans rarely follow a pre-defined
-conversation flow because humans are creative and spontaneous. To
-engage users in a quality conversation, a smart chatbot
-should be able to anticipate user digressions and handle such
-digressions accordingly. 
+conversation flo, and tend to digress, because we're all - to a greater or lesser extent - creative, spontaneous, or very occassionally in a bad mood and non-cooperative. To
+engage users in a quality conversation, a smart chatbot should be able to anticipate user digressions and handle them just right. Getting this right in most engines is a time-consuming feat, but in Juji we've taken the human approach, analyzed milions of human-chatbot conversations and boiled down the number of digressions to those most commonly used (and that make up about 95% of most digressive interactions). Digressions are most likely as non-dequitor responses to questions, particularly open-end questions.
 
-From millions of human-chatbot conversations, we have identified
-a number of user digressions, especially when open-ended
-questions are involved in a conversation. Below is a list of examples.
+Here are just a few examples, some of which are already covered. 
 
 * Gibberish user input (e.g., "aasfa asfs fa")
 * "I don't know" input
 * User excuses  (e.g., "this question is too hard for me") 
 * User clarification (e.g., "What do you mean?")
 * User asks to alter chat flow (e.g., "skip")
-* User asks an irrelevant question
+* User asks an irrelevant question. (Do you think a blue shirt was right for today?)
 * User comments on the question (e.g., "this is a strange question")
-* Thin input (e.g., "good")
+* Mono-syllabic or lazy input (e.g., "good"). 
 
 Not only must a chatbot respond to each type of user digression properly,
 but it must also decide how to continue a conversation. For example,
@@ -356,47 +340,15 @@ alt="Settings for turning on or off different user digression handling
 Next we use more concrete examples to explain how Juji handles several
 common types of user digressions to ensure conversation quality.
 
-### Handling Gibberish and "I don't know" User Input
-
-Users may intentionally or unintentionally test a chatbot by feeding
-the chatbot with non-sense or gibberish input. Juji has built-in
-functions to automatically detect such input. Moreover, users may take
-an easy way out by responding with `I don't know`. In such a case, a
-chatbot can be configured to accept or not accept such user
-responses. For example, if a discussion is about a user's knowledge,
-such a response should be acceptable. On the other hand, if the
-discussion is about a user's opinion, such a response may not be
-acceptable since s/he can always come up with an
-opinion.
-
-You can customize gibberish detection or decide whether to permit user
-`I don't know` response in a topic setting as shown below.
-
-<p align="center"><img src="../img/topic-setting-1.png" alt="Topic
-Setting 1" width="650"/></p>
-
+### Handling User Excuses to Open-Ended Questions
 
 <p align="center"><img src="../img/topic-setting-2.png" alt="Topic
 Setting 2" width="650"/></p>
 
-As shown above, you can also control the required length of a
-user response and also indicate whether a chatbot request is required
-to answer or not. 
-
-### Handling User Excuses to Open-Ended Questions
-
-Users may also give "excuses" or intentionally dodge a question. Assume
+Being human, users may also give "excuses" or intentionally dodge a question. Take this example. Let's assume
 that a chatbot asks a user "What's the top challenge you face?".  One
 user may respond "I don't really know since I have many challenges."
-while another user may state "This is too hard for me to answer."
-
-To simplify a conversation designer's task of anticipating diverse
-user excuses, Juji has a built-in library that captures a number of
-common user excuse expressions. During a conversation, Juji
-automatically detects a user excuse expression and respond to it
-accordingly. As part of excuse handing, if a question is optional,
-Juji will also inform a user that the question is optional and the
-user can skip it if s/he wishes to.
+while another user may state "That's tough to answer." Both get us nowhere. There are countless examples of "nowhere" responses like this, which need carefully constructed responses to reinvigorate the discussoin (Bot are just like humans in that regard. If a conversation is flagging, we use similar devices to get the confab back on the rails. At Juji, we do this by detecting the type of user response, and giving a suitable comeback. If a question is deemed optional but was answered anyway, we just tell the user not to worry and move on. 
 
 Below shows Juji's handling of several user excuses. 
 
@@ -408,7 +360,6 @@ alt="Handling a user excuse: this is very personal" width="650"/></p>
 <p align="center"><img src="../img/handling-user-excuse-2.png"
 alt="Handling a user excuse: don't know how to answer the question"
 width="650"/></p>
-
 
 * Example 3: Too hard
 <p align="center"><img src="../img/handling-user-excuse-3.png"
@@ -424,9 +375,7 @@ going to the "Chatbot Settings" tab, and check on/off the box labeled
 
 Just like in any conversations, a user might not fully understand a
 chatbot's question or find the question unclear. When this occurs, the
-human user may ask a clarification. As shown below, a user asks a
-clarification question per the chatbot's asking "Could you introduce
-yourself in 2-3 sentences?"
+user may seek clarification with a "Clarification Question". Here are a few examples of how to create a seamless clarification strategy.
 
 <p align="center"><img src="../img/handling-user-clarification.png"
 alt="Handling a user's clarification question: what would you like to
@@ -434,7 +383,7 @@ know about me" width="650"/></p>
 
 Here is another example, a chatbot asks "What's the top challenge you
 face?" A user may ask a clarification question "What kind of
-challenges are you referring to?" or "what do you mean".
+challenges are you referring to?" or "What do you mean?".
 
 Since it is hard to anticipate what a user's clarification question
 might be and pre-train a chatbot to handle all possible clarification
@@ -447,34 +396,22 @@ the question as following:
 
 * Could you describe yourself in three key phrases?
 * Could you say a bit about the type of work you do?
-* Could you say a bit about yourself, e.g., the
-kind of gamer you are?
+* Could you say a bit about yourself, e.g., the kind of gamer you are?
 
 Make the paraphrases more specific and the specifics can be determined by the conversation context (e.g., a conversation with job candidates vs. employees vs. gamers).  Should the chatbot just start with a more specific question? Our tip would be keeping the initial asking broad because you never know what kind of answers people may come up with.  You can always design paraphrases to be more specific to handle user clarification questions.
 
-Juji enables you to paraphrase a question easily. As a chatbot
-designer, you just need to design a chatbot question with several
-alternative question expressions (see <a
+You can paraphrase a question easily with Huhi, so your attempts to help a user get the clarity s/he needs will feel natural, friendly and human. As a chatbot
+designer, you just need to design a chatbot question with severa alternatives (see <a
 href="https://juji.io/docs/chatbot-design-tips/#paraphrase-messages-and-requests">paraphrase
-a chatbot question</a>). Juji will then take care of the rest. This is
-because Juji has a built-in library that captures the most common
-user clarification questions. During a conversation, if Juji
-automatically detects a user clarification expression, it will then
-rephrase the question using an alternative question expression. This
-way, a user gets a chance to re-interpret the question. 
+a chatbot question</a>) and Juji takes care of the rest, with the help of our ever-growing built-in library that captures, among many other things, those pesky clarification questions. By reprhasing your chatbot's question, calmly and naturalistically, we are far more likely to keep the chat going, once the user feels more comfortable moving forward with a useful response that helps her/hiim and Juji. One last note on this area. Juji is designed to be a very cooperative chatbot, which thrives on teamwork with the user. That teamwork makes for better responses and greater user loyalty.
 
-## **Preview Chatbot Often**
+## **Preview Chatbot Often When Building**
 
-Since an AI chatbot can exhibit complex conversation behavior, we
-strongly recommend that you preview your AI chatbot frequently during
-the customization process. This will also help you revert your
-customizations if needed before going too far, since `undo` is
-not supported at this moment.
+Most of Juji's myriad of features aren't activated until you preview your bot, and sometimes there's a mismatch between your entry and how Juji responds. The more you preview as you design, the more you'll be able to adjust your input in a way that Juji can understand. None of this is any more than trial and error. Finally, if you like what you've got but haven't been able to get out of a conflict with the AI, go ahead and clone what you have (or take a copy of the text version of the bot) so you have a record of the copy you like. It's very likely that the solution will enable you to keep most if not all your creativity intact. 
 
-If you need to undo the designs made, you may want to use the `clone`
-function to clone a chatbot first before undoing the designs. This way
-you will always have a copy of what you have made.
+## Periodically Change Up Your Chatbot's Conversation
 
+Unless you're calling a particularly rigid call center, humans have a tendency to vary their scripts with some ad-libs. You should consider doing the same with your chatbot. Clients have a tendency to say "done and dusted", when their chatbot is in production, but continuing to improve and vary it keeps it feeling more alive, which for a blob of spinning electrons is always a good idea. The moral of the story is don't be afraid to go in and adjust the story. You should definitely do this is some part of the flow isn't working, according to the conversation data, but even if everything's feeling great, changing it up to keep it fresh is also a great idea. One word of caution though. Don't undermine it at its core. In other words, don't throw out the bot with the bathwater.
 
 ## **What's Next**
 
