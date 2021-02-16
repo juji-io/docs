@@ -1138,3 +1138,43 @@ The keys are string names for the agendas, and the values are agenda vectors.
 
 `:task-completion-code` is useful for chatbots that conduct surveys.
 If it is set to true, a code will be generated upon completion and it will be given to the participant.
+
+
+### Ad-lib topics ordering
+
+If the ad-lib topic vector contains an option map as the first item, the system will optimize
+the ordering of the topics according to the user input, so that topics more
+similar to user input will have precedence.
+
+However, the system optimization may be in conflict with your preference on which
+topics should have precedence. In such cases, you can use the following options
+to specify your preferences, and the system will respect these when doing the
+re-ordering of the topics. If system cannot satisfy all the preferences, no
+ordering will be performed.
+
+* `:fixed` This option takes a map of topic invocations to the desired order
+  numbers, starting from 0. For example, if you want the topic `a-topic` to be
+  the first topic, you can specify `:fixed {a-topic 0}`
+
+* `:no-sort` This option allows you to specify a set of topic invocations
+  that do not participate in the re-ordering. For example, `:no-sort #{b-topic
+  c-topic}`
+
+* `:partials` This option allows you to specify a sequence of partial orders of topic
+  invocations, where each partial order is a vector of items. Each item could
+  either be a topic invocation, or a set of topic invocations. For example, if
+  `e-topic` needs to appear after `d-topic`, and `d-topic` needs to appear after `c-topoic`,
+  this partial order can be specified by `:partials [[c-topic d-topic e
+  topic]]`; Further more, if `j-topic` and `k-topic` needs to be behind
+  `e-topic` and `f-topic`, this partial order can be added: `:partials [[c-topic d-topic e
+  topic] [#{e-topic f-topic} {j-topic k-topic}]]`. Within the set, any order is
+  acceptable.
+
+ Taken together, your `:ad-lib`  vector looks like this:
+
+```Clojure
+[{:fixed {a-topic 0}
+   :no-sort #{b-topic c-topic}
+   :partials [[c-topic d-topic e-topic] [#{e-topic f-topic} {j-topic k-topic}]]}
+ a-topic b-topic c-topic d-topic e-topic f-topic j-topic k-topic]
+```
