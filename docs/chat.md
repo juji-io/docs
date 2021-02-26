@@ -26,7 +26,7 @@ Only first name is required, so that the bot can address the user.
 For example, using the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) of a Web browser, you may create a request like this:
 ```javascript
 const request = new Request('https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63', 
-                            {method: 'POST', body: '{"firstName": "Tom"}'});
+                            {method: 'POST', body: '{"firstName": "John"}'});
 fetch(request)
   .then(response => {
     if (response.status === 200) {
