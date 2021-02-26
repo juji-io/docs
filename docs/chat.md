@@ -12,7 +12,7 @@ The following steps are required to initiate a chat session via the API:
 ## Create participation
 
 First, note the [Web release URL of the REP](/#create-your-first-chatbot), e.g.
-`https://juji.ai/pre-chat/mycorp/2`. Make a HTTP `POST` request to that URL
+`https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63`. Make a HTTP `POST` request to that URL
 with the following form data:
 
 Field Name | Required?
