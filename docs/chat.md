@@ -23,6 +23,27 @@ Field Name | Required?
 
 Only first name is required, so that the bot can address the user.
 
+For example, using the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) of a Web browser, you may create a request like this:
+```javascript
+const request = new Request('https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63', 
+                            {method: 'POST', body: '{"firstName": "Tom"}'});
+fetch(request)
+  .then(response => {
+    if (response.status === 200) {
+      return response.json();
+    } else {
+      throw new Error('Something went wrong on api server!');
+    }
+  })
+  .then(response => {
+    console.debug(response);
+    // ...
+  }).catch(error => {
+    console.error(error);
+  });
+
+```
+
 A successful `POST` request returns a JSON object looks like this:
 
 ```json
