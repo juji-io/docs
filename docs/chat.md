@@ -143,7 +143,7 @@ Followed by REP's chat messages if this REP is configued to speak first, e.g.
 ```
 
 To handle these incoming messages in your code, you need to register a listener. For example, to continue our Web browser example:
-```
+```javascript
 socket.addEventListener('message', function (event) {
     console.log('Message from server ', event.data);
 });
