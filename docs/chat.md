@@ -148,7 +148,7 @@ socket.addEventListener('message', function (event) {
     console.log('Message from server ', event.data);
 });
 ```
-Here we just print out the incoming messages in the console. You could parse these JSON messages to do something else instead. Normally, you would want to display in your client the chat message from the bot, i.e. the mesages with type "normal" and role "rep", so user can read and respond to them.
+Here we just print out the incoming messages in the console. You should parse these JSON messages to do something useful instead. Normally, you would want to display in your client the chat messages from the bot, i.e. the mesages with type "normal" and role "rep", so user can read and respond to them.
 
 
 `type` is a required field of Juji chat message. Currently, chat message could be one of the following types:
