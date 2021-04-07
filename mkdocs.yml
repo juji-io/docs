@@ -22,9 +22,23 @@ theme:
     - navigation.expand
 
   palette:
-    - scheme: 'default' 
-      primary: 'white' 
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: white 
       accent: 'deep orange' 
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 plugins:
   - search: 

@@ -78,8 +78,6 @@ We may need to reconcile our customization in `theme/base.html` with the install
 Also need to change the names of the following assets files in base.html to be the same as the ones in `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/assets/`:
 
 * javascripts/worker/search.*.min.js
-* javascripts/bundle.*.min.js
-* javascripts/vendor.*.min.js
 * stylesheets/main.*.min.css
 * stylesheets/palette.*.min.css
 
