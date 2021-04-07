@@ -45,8 +45,10 @@ Now install needed extensions:
 
 ```bash
 pip install mkdocs
-pip install mkdocs-material
+pip install mkdocs-material==<version>
 ```
+
+Get mkdocs-material version from theme/base.html by searching for "mkdocs-material" in the file.
 
 ## Assets and Links
 

@@ -13,8 +13,51 @@ configure the fields to be shown on the cover page:
 * Last Name (optional)
 * Email (optional)
 
-
 <p align="center"><img src="../img/web-cover.png" alt="Web Deployment" width="650"/></p>
+
+### **Activity Tracking**
+
+An optional activity tracking setting is provided for page-owners who want to track their visitors' chat activities in their Google Analytics. In case you are not interested in adding activity tracking, you can safely skip this section and go directly to [Generate URL](#generate-url).
+
+<p align="center"><img src="../img/web-activity-tracking.png" alt="Web Deployment Activity Tracking" width="650"/></p>
+
+To enable activity tracking, you will need to fill in all three fields listed in Step 2: Domain, Web URL and ID.
+
+* **Domain**: the domain of your page without the scheme or path, e.g., `mozilla.org`
+* **Web URL**: the origin of your page, this will typically be scheme + `://` + domain, e.g., `https://mozilla.org`
+* **ID**: the Google Analytics tracking ID. You can get this ID on your Google Analytics page, go to Admin > Property Settings > Tracking Info > Tracking Code > Tracking ID. The ID will have format similar to `UA-123456789-1`.
+
+Once the activity tracking is enabled, your deployed Juji web chat page will be updated with your tracking info. 
+
+**Web Widget Activity Tracking**: If you are using Juji web widget on your page, you simply insert your web plugin code as instructed in the [Deploy as Web Widget](#deploy-as-web-widget) section below. The code gets updated automatically with your activity tracking setting, so if you change your setting here, make sure you use the updated web plugin code. 
+
+**Web URL Activity Tracking**: If you are using web URL directly and you want to have cross-domain tracking between your site and your Juji chat, you will need to perform the following two actions in order to ensure the chat activities appear appropriately inside your Google Analytics.
+  
+  1. Copy the GA SECTION from the web plugin code and insert it directly after the opening <body> tag on each page where you want the linking happen. However, if you already have Google Analytics linker set up, just add the domains to your existing linkers.
+  2. Adding "juji.ai" to your Google Analytics referral exclusion list at Admin > Property Settings > Tracking Info > Referral Exclusion List
+
+After everything is set up correctly, wait for a day for the Google Analytics change kicks in. Then you will see pageviews similar to `/chat/606c1558-d290-4387-b870-8462ae3e3ee5`. Such pageviews tell you those visitors have chatted with your Juji chatbot. 
+
+#### Quick Start with the Chat Activity Info
+A good way to use the extra piece of chat activity info is to create two segments in your Google Analytics View - "chatted" and "not chatted", and use them to evaluate your chatbot's influence on your page.
+
+To create segments, you go to Admin > View Settings > Segments > + NEW SEGMENT. For "chatted" segment, you edit the Seqences as shown below:
+
+<p align="center"><img src="../img/chatted-ga-segment.png" alt="Configure chatted google analytics segment" width="650"/></p>
+
+For "not chatted" segment, you change the filter type from "Include" to "Exclude":
+
+<p align="center"><img src="../img/not-chatted-ga-segment.png" alt="Configure not-chatted google analytics segment" width="650"/></p>
+
+Now, you can add the new segments in our metrics tables (Goals, Site Content etc.), and see how they perform. 
+
+<p align="center"><img src="../img/ga-site-content-w-segments.png" alt="Google Analytics site content all pages with chatted vs not-chatted segments" width="650"/></p>
+
+#### Activity Tracking with Google Tag Manager
+
+The activity tracking setting also works with Google Tag Manager, but it will require some setup in Google Tag Manager. Please contact support at(@) juji.io if you need assistance on setting up activity tracking with your Google Tag Manager. 
+
+### **Generate URL**
 
 Use the `Generate URL` button to generate a web URL. This URL can then
 be embedded into an email or a website for target audience.
@@ -23,10 +66,12 @@ be embedded into an email or a website for target audience.
 
 Two URLs are generated:
 
-* **Test URL** Give this URL to testers so that the chat data can be
+* **Test Link** Give this URL to testers so that the chat data can be
   identified as test data easily.
 
-* **Regular URL** Use this URL for target audience. 
+* **Web Link** Use this URL for target audience. 
+
+<p align="center"><img src="../img/web-url-generated.png" alt="generated two web URLs" width="650"/></p>
 
 ### **Customize Web URL with External Data**
 In some cases, you may want to customize the generated chatbot URL
@@ -55,6 +100,16 @@ the captured source information (see [how to download a CSV
 report](../reports)).
 
 <p align="center"><img src="../img/capture-external-info.png" alt="capture external information" width="650"/></p>
+
+### **Deploy as Web Widget**
+
+If you don't want your visitors to be redirected to another page, you can make your chatbot live on your page as a web widget. It will look similar to the Juji chatbot at the bottom right of this documentation page.
+
+To add such widget, after you go through the web deployment process, instead of copying the URL, you copy the web plugin code that appears below the URL. Then, simply insert it directly after the opening `<body>` tag on each page where you want the widget to appear.
+
+<p align="center"><img src="../img/install-web-plugin.png" alt="install web plugin" width="650"/></p>
+
+The web plugin code gets updated automatically with your activity tracking in step 2 of the web deployment process. If you have activity tracking enabled, you will see a "GA SECTION" in the web plugin code. The section is required for linking your site and the Juji's chat page. However, if you are already setting Google Analytics linkers, pleaser remove the GA section and add the linker domains into your existing linker setting.
 
 ## **Deploy to Facebook Page**
 
