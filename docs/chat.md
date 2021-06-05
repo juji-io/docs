@@ -1,9 +1,9 @@
 
 # Chat API
 
-It is easy to write a chat client that talks with a Juji chatbot via Juji Chat API. For example, it takes less than 200 line of Javascript code to write a client that chats with a Juji bot, see [sample code written in node.js on github](https://github.com/juji-io/cli-client). 
+It is easy to write a chat client that talks with a Juji chatbot via Juji Chat API. For example, it takes less than 200 line of Javascript code to write a client that chats with a Juji bot, see [sample code written in node.js on github](https://github.com/juji-io/cli-client).
 
-Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client. This requires using [GraphQL subscription](http://spec.graphql.org/June2018/) to enable the server to push data to your client. Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open. 
+Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client. This requires using [GraphQL subscription](http://spec.graphql.org/June2018/) to enable the server to push data to your client. Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open.
 
 Clients can be written in any programming language that supports Websocket. For example, most Web browsers support [this Javascript Websocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket), so it is easy to write a Juji client that works for Web browsers.
 
@@ -25,8 +25,11 @@ Only first name is required, so that the bot can address the user.
 
 For example, using the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) of a Web browser, you may create a request like this:
 ```javascript
-const request = new Request('https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63', 
-                            {method: 'POST', body: '{"firstName": "John"}'});
+let formData = new FormData();
+formData.append('firstName', 'John');
+
+const request = new Request('https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63',
+                            {method: 'POST', body: formData});
 fetch(request)
   .then(response => {
     if (response.status === 200) {
@@ -60,7 +63,7 @@ Failed `POST` request returns a JSON object with an `error` field with an error 
 ## Establish WebSocket connection
 
 A WebSocket connection with the server can now be established by doing a HTTP `GET`
-on the returned `websocketUrl` value above. 
+on the returned `websocketUrl` value above.
 
 A successful `GET` request will upgrade the connection to the WebSocket protocol, or an
 error message will be returned.
