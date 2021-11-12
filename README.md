@@ -82,4 +82,3 @@ Also need to change the names of the following assets files in base.html to be t
 * javascripts/worker/search.*.min.js
 * stylesheets/main.*.min.css
 * stylesheets/palette.*.min.css
-
