@@ -108,7 +108,7 @@ written.
 
 The data analysis endpoint is https://juji.ai/api/analyze
 
-The input file is expected to be `POST` as a `file` field in `multipart/form-data`.
+The input file is expected to be `POST` as a `file` field in `multipart/form-data`. There is no need to specify the content-type. If have to, put in `application/json` or `text/csv` respectively.
 
 The input file can be either a JSON or CSV file with corresponding file suffix.
 
