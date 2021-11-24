@@ -24,8 +24,8 @@ Store the value of the token. It will be used for [authentication](meta.md#authe
 
 You may also need your account's [brand id](nouns.md#brand), you can use the following GraphQL query to access it.
 ```javascript
-query GetMe{
-	getMe{
+query GetBrands{
+	getBrands{
     	name
 	}
 }
@@ -36,9 +36,7 @@ query GetMe{
 A chatbot lives in an [engagement](nouns.md#engagement). In order to customize a chatbot, you either creates an engagement or uses an existing engagement.
 
 ```javascript
-// To create engagement
-// Set useDefault to true in the input to start your engagement 
-// with default persona and config-doc.
+// To create engagement with default blank template
 mutation CreateEngagement($input: CreateEngagementInput!){
 	createEngagement(input: $input) {
 		engagement{
