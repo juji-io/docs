@@ -1,6 +1,6 @@
 # **Juji Tutorials**
 
-This page hosts a set of video tutorials on how to design and customize AI chatbots for various applications.
+This page hosts a selected set of video tutorials on how to design and customize Juji cognitive AI assistants (aka cogitive AI chatbots) for various applications. For a full set of tutorials or recorded video demos, please visit [the Juji Youtube Channel](https://www.youtube.com/hellojuji). 
 
 ## Introduction to Juji AI Chatbots
 

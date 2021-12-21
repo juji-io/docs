@@ -1,5 +1,5 @@
 site_name: 'Juji Documentation'
-site_description: 'Tutorials, guides, and references for Juji AI chatbot creation platform'
+site_description: 'Juji Cognitive AI Assistant (Chatbot) Best Practices, Reference Guide, Tutorials, and Trouble Shooting'
 site_url: 'https://juji.io/docs'
 
 #repo_name: 'juji-io/docs'
@@ -88,12 +88,8 @@ extra:
       link: 'https://www.linkedin.com/company/juji-io/'
 
 nav:
+  - Juji Home: https://juji.io
   - Get Started: index.md
-  - Tutorials: tutorial.md  
-  - FAQs: faq.md
-  - Trouble Shooting: trouble-shooting.md
-  - Forum: https://forum.juji.io
-  - Homepage: https://juji.io
   - Juji Studio:  
     - Introduction: juji-studio.md
     - Chatbot Design: design.md
@@ -116,9 +112,16 @@ nav:
     - Data Model: nouns.md
     - Chat Creation API: client.md
     - Data API: meta.md
-  - Beginners' Guide to AI Chatbots:
+  - Beginners' Guide:
     - Why AI Chatbots: why-ai-chatbots.md
-    - Design Tips: chatbot-design-tips.md
-    - Advanced: chatbot-design-tips-advanced.md
-  - Sign Up:  
-    - Sign up on Juji: https://juji.ai/signup
+    - Do I Need AI Chatbot: do-i-need-ai-chatbot.md
+    - How to Select AI Chatbot Platform: how-to-select-ai-chatbot-platform.md
+  - AI Chatbot Design Tips:
+      - Best Practices: chatbot-design-tips.md
+      - Advanced Design Tips: chatbot-design-tips-advanced.md
+  - Get Help:
+    - Tutorials: tutorial.md
+    - FAQs: faq.md
+    - Trouble Shooting: trouble-shooting.md
+    - Juji Forum: https://forum.juji.io
+ 

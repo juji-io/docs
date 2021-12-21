@@ -1,23 +1,46 @@
-# **The Juji Platform**
 
-The Juji platform is the easiest and best way to create, customize and deploy the most advanced Conversational Artificial
-Intelligence (AI) Assistants on the market. Currently, our advanced AI assistants
-engage users in text-based, natural language conversations to
-accomplish a wide variety of tasks, from answering user inquiries
-and making personalized product recommendations to more complicated interactions in digital healthcare and other challenging domains. 
+# **Introduction: The Juji Platform**
 
-Also known as **AI Chatbots**, our Juji AI assistants can handle complex and diverse user inputs, infer users' implicit needs and wants, and use such
-understanding to deliver truly hyper-personalized guidance and services. And here's the best part. Because of the way out software is built, we handle most of the heavy lifting for you, so you can focus on the structure and writiing of the the conversation, and the personality of your chatbot. 
+The Juji platform enables you to rapidly and easily create, launch,
+and manage powerful, custom Juji AI assistants in the form of chatbots
+with built-in cognitive intelligence. Such intelligence enables your
+chatbot to interpret highly diverse and complex user natural language
+expressions, analyze user sentiment, manage complex and critical
+conversations empathically by actively listening to its users, and
+infer users' personality characteristics from a conversation.
 
-The Juji Platform is made up of three main components, but most of your work (unless your a developer) can be handled in our easy to use Juji Studio. 
+Juji AI assistants engage users in text-based, natural language
+conversations to accomplish a wide variety of tasks across domains,
+such as greeting users on your website to answer user inquiries about
+your online offerings and guide user actions as well as keeping users
+engaged in long-term activities in your mobile app.
+
+Because training powerful AI chatbots requires deep AI expertise,
+sophisticated programming, not to mention large amounts of training
+data and intensive computational resources, Juji has also made its
+platform **accessible** by enabling non-IT professionals to create,
+launch, and manage custom cognitive AI chatbots with no code and no IT
+resources required. In other words, Juji handles the heavy lifting for
+you, so you can focus on the structure and writing of the human-AI
+conversation, and the personality of your chatbot.
+
+The Juji Platform is made up of three main components, which provides both the convenience and flexibility for an organization to build and manage its cognitive AI chatbots. 
 
 <p align="center"><img src="img/JujiPlatform.jpg" alt="Create an AI chatbot" width="650"/></p>
 
 
-  **[Juji Studio](juji-studio)** provides a graphical user interface (GUI) for
+  **[Juji Studio](juji-studio)** supports **end-to-end**, **NO-CODE**
+  design, development, and management of cognitive AI chatbots. It
+  provides an intuitive graphical user interface (GUI) for
   **everyone**, with or without technical skills or AI knowledge, to
-  rapidly create, customize, test, and deploy AI chatbots **with no
-  coding required**. It's also easy to understand, fun and fast to use, and if you're the creative sort, that's good news for your creative flow. 
+  rapidly create, customize, test, deploy, and manage AI chatbots with
+  no code or IT resources required. It automatically generates and
+  manages the conversation flow of an AI chatbot including
+  auto-handling arbitrary user interruptions based on the conversation
+  topics specified by a human designer. Juji Studio also provides a
+  conversation library with a rich set of pre-built AI chatbot assets,
+  including AI chatbot templates, conversation topics, and
+  domain-specific Q&A templates.
 
   **[Juji IDE](juji-ide)** enables people with minimal coding skills (e.g.,
   ability to write HTML) to power AI chatbots with advanced capabilities (e.g.,
@@ -26,12 +49,14 @@ The Juji Platform is made up of three main components, but most of your work (un
   to write, compile, and preview AI chatbots using a high-level, [chatbot
   scripting language](reference). So you don't even have to be a nerd to use the IDE, just someone with an intermediate level of understanding of simple computer language. These days a good chunk of peeps can handle the IDE pretty well. That means even the most complex of Juji's elements is probably less complex than the 'basic' chatbot engines of some of our more illustrious competitors.  
 
-  **[Juji API](api)** enables software engineers to embed Juji AI chatbots in
-    different applications (e.g., mobile or web-based
+  **[Juji API](api)** enables **application developers** (e.g., someone
+    who is familiar with Javascript or Python) to embed Juji AI
+    chatbots in different applications (e.g., mobile or web-based
     applications). While Juji Studio supports the rapid creation and
     customization of an AI chatbot, [Juji
     API](https://docs.juji.io/api/) allows rapid and easy integration
-    of such a chatbot into third-party applications. With our rock-solid API Juji bots can be integrated just about anywhere. 
+    of such a chatbot into third-party applications. With our
+    rock-solid API Juji bots can be integrated just about anywhere.
 
 ## **Get Started on Juji**
 

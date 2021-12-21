@@ -1,4 +1,4 @@
-# **Making AI Chatbots: <br> Best Practices**
+# **Designing AI Chatbots: <br> Best Practices**
 
 Based on our 18+ years of experience for designing and developing
 conversational AI (AI chatbots), here we share a set of design tips
