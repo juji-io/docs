@@ -5,7 +5,7 @@ site_url: 'https://juji.io/docs'
 #repo_name: 'juji-io/docs'
 #repo_url: 'https://github.com/juji-io/docs'
 
-copyright: 'Copyright &copy; 2021 <a href="https://juji.io">Juji, Inc.</a>'
+copyright: 'Copyright &copy; 2022 <a href="https://juji.io">Juji, Inc.</a>'
 
 google_analytics:
   - 'UA-113933244-1'
@@ -24,9 +24,9 @@ theme:
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      primary: white 
-      accent: 'deep orange' 
+      scheme: default
+      primary: white
+      accent: 'deep orange'
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -41,7 +41,7 @@ theme:
         name: Switch to light mode
 
 plugins:
-  - search: 
+  - search:
       separator: '[\s\-\.]+'
       lang:
         - en
@@ -90,13 +90,13 @@ extra:
 nav:
   - Juji Home: https://juji.io
   - Get Started: index.md
-  - Juji Studio:  
+  - Juji Studio:
     - Introduction: juji-studio.md
     - Chatbot Design: design.md
     - Chatbot Deployment: release.md
     - Chatbot Monitoring: reports.md
     - Design Best Practices: chatbot-design-tips.md
-  - Juji IDE: 
+  - Juji IDE:
     - Introduction: juji-ide.md
     - Concepts: concept.md
     - Language: reference.md
@@ -106,7 +106,7 @@ nav:
     - Scripting Guide: script.md
     - Config-doc Guide: config-doc.md
     - Custom Topics: custom-topics.md
-  - Juji API: 
+  - Juji API:
     - Introduction: api.md
     - Chat API: chat.md
     - Data Model: nouns.md
@@ -124,4 +124,3 @@ nav:
     - FAQs: faq.md
     - Trouble Shooting: trouble-shooting.md
     - Juji Forum: https://forum.juji.io
- 
