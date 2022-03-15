@@ -56,13 +56,13 @@ product list is short, it would then be rather fast. For example, it
 would take just a few minutes to get the first version up and running
 and then a couple of hours to fine-tune it if you wish to do so.
 
-<hr>
+
 <a name="!user-data"></a>
 ### How will Juji use the data collected from interviewees?
 
 : Privacy is very important to us. Please refer to our privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
-<hr>
+
 <a name="!contact-info-safety"></a>
 ### Will Juji keep a copy of user contact information and their responses? Will Juji retain rights to use them?
 
@@ -76,13 +76,13 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
 ## Design Questions
 
-<hr>
+
 <a name="!design-page"></a>
 ### What does `Design` do?
 
 : This allows you to customize your chatbot, such as its persona and chatbot actions.
 
-<hr>
+
 <a name="!create-ai-chatbot"></a>
 ### How do I create an AI chatbot/AI helper/AI agent?
 
@@ -90,7 +90,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
 <p align="center"><img src="../img/create-chatbot.png" alt="create a new chatbot" width="650"/></p>
 
-<hr>
+
 <a name="!project-name"></a>
 ### Will my users/audience see my project name?
 
@@ -98,7 +98,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 
 <p align="center"><img src="../img/project-name-chatbot-name.png" alt="Project Name vs. Chatbot Name" width="650px"/></p>
 
-<hr>
+
 <a name="!change-persona"></a>
 ### How do I change chatbot persona?
 
@@ -107,7 +107,7 @@ this page, you can customize your chatbot persona. See [Customize Chatbot Person
 
 <p align="center"><img src="../img/change-persona.png" alt="change chatbot persona" width="650"/></p>
 
-<hr>
+
 <a name="!own-persona"></a>
 ### How can I define my own persona?
 
@@ -117,25 +117,25 @@ persona. More details are under [Customize Chatbot
 Persona](../design#chatbot-persona).
 
 
-<hr>
+
 <a name="!persona"></a>
 ### Will the persona I choose affect the way s/he responds to users?
 
 : Yes, different persona may have different responses depending on the context of the chat. Please check our publication regarding the [effect of chatbot personality](https://dl.acm.org/citation.cfm?id=3232077&dl=ACM&coll=DL).
 
-<hr>
+
 <a name="!persona-fit"></a>
 ### If I give you the type of audience and information I am after, can you help me choose a fitting persona?
 
 : We can help you choose a fitting persona if you provide more information about the interview you would like to conduct.
 
-<hr>
+
 <a name="!customize-chat"></a>
 ### How do I customize a conversation?
 
 : Click on **`Design`** on the left menu pane, you will see the design page. Mouse over any text bubble or click on it to edit or delete the text. You can also click on any **`+`** sign to add new conversation topic.
 
-<hr>
+
 <a name="!miss-my-q"></a>
 ### Why didn't my chatbot take my question?
 
@@ -153,61 +153,61 @@ When you want your chatbot to send a true question, make sure you choose `Make a
 <p align="center"><img src="../img/design-topic-type.png" alt="add a
 request" width="550"/></p>
 
-<hr>
+
 <a name="!remark"></a>
 ### What is a `Remark` or `Message`?
 
 : A remark is a chatbot comment in conversation that does not require user input.
 
-<hr>
+
 <a name="!msg-vs-request"></a>
 ### What are the differences between a `Message` and a `Request`?
 
 : A message or remark is a chatbot comment in conversation that does not wait for a user response. In contrast, when the chatbot asks a question or make a request, it will actively wait for the user to input the answer.
 
-<hr>
+
 <a name="!custom-topic"></a>
 ### What is a custom topic and how to write it?
 
 : A custom topic allows you to customize the way you would like the bot to respond to users' inputs. Topics are the primary building blocks of the chatbot's conversation. The [concept page](concept.md) of the Juji documentation provides detailed explanation on how to write a topic.
 
-<hr>
+
 <a name="!custom-response"></a>
 
 ### How can I customized the chatbot's response to participants' answers in open-ended questions?
 : You can use both [Juji Studio](../juji-studio) or [Juji IDE](../juji-ide) to customize chatbot responses. Also check out [Chatbot Design](../design) for specifics.
 
-<hr>
+
 <a name="!mostly-choices"></a>
 ### Does the chatbot work with interview questions which have primarily choice answers, and need only the chatbot's help to draw out responses for those who select “other” in their multiple choice answer?
 
 : Yes, we support choice questions, open-ended questions, and other types of questions. Although we recommend our users to take advantage of our AI powered conversation skills and personality analysis by using open-ended questions, our chatbot works perfectly in chat with primarily choice questions. The AI chatbot can be easily set up to collect extra responses when interviewee select "other" in a multiple choice question.
 
-<hr>
+
 <a name="!add-q"></a>
 ### How do I add a question?
 
 : Click on **`Design`** on the left menu pane, you can add a question by clicking any **`+`** sign then choosing the question type.
 
-<hr>
+
 <a name="!multi-choice"></a>
 ### How to add a multiple choice (checkboxes) question?
 
 : On the “Design” page of your chatbot, you can add a multiple choice question by first clicking the “+” sign then choosing “Checkboxes” in the popup menu.
 
-<hr>
+
 <a name="!single-choice"></a>
 ### How to add a single choice (radio buttons) question?
 
 : On the “Design” page of your chatbot, you can add a single choice question by first clicking the “+” sign then choosing “Radio buttons” in the popup menu.
 
-<hr>
+
 <a name="!followup"></a>
 ### What is a follow-up request?
 
 : A follow-up request is where a chatbot asks a question to deepen a conversation based on a user's answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user's answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](../design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
 
-<hr>
+
 <a name="!followup-vs-reg"></a>
 ### What are the differences between a follow-up request or a request I added using the round green `+` button)?
 ### When should I add a follow-up request?
@@ -215,7 +215,7 @@ request" width="550"/></p>
 
 : It is quite simple to test whether you need a follow-up or just a regular request. A follow-up request is always conditioned upon one or more other requests. The follow-up request will not be activated if such a condition is not met during a chat. In contrast, a regular request added using the green round **`+`** button will be activated unconditionally as the chat flows to it. In other words, if you want your chatbot to always make a request regardless what happened in a chat, you will add a regular request. Otherwise, you will add a follow-up request that will depend on certain conditions, e.g., particular user responses to a chatbot question.
 
-<hr>
+
 <a name="!capture-emoji"></a>
 ### How can I capture a user's emoji like "thumbs up" and respond to it using an emoji?
 
@@ -239,7 +239,7 @@ request" width="550"/></p>
 
 <p align="center"><img src="../img/default-emoji-response.png" alt="Handle Emoji Result" width="550px"/></p>
 
-<hr>
+
 <a name="!question-number"></a>
 ###How many questions should I put in so my chatbot can function reasonably smart?
 
@@ -250,7 +250,7 @@ types of questions](../chatbot-design-tips#prepare-qa-list-and-chitchats)
 your chatbot should handle. This list helps you jumpstart the smarts
 of your chatbot.
 
-<hr>
+
 <a name="!faq-id"></a>
 ### Why do I need the ID column in my Q&A CSV file? Can I delete it? Do I have to use the IDs given to me?
 
@@ -262,7 +262,7 @@ fact encourage you to use labels that you can remember to facilitate
 Q&A management. After you make such changes, make sure you choose the
 `Replace` option when you upload the changed CSV file. See [more tips](../design#qa-tips) on defining IDs.
 
-<hr>
+
 <a name="!confirm-unanswered-anser"></a>
 ### Why do I always need to confirm the answers to the unanswered user questions on my Q&A dashboard? Can my chatbot learn itself? Why didn't my chatbot automatically learn new Q&As?
 
@@ -295,7 +295,7 @@ that a human manually verifies whether a matched question is indeed a
 good match to avoid potential mistakes. This will keep a chatbot's
 knowledge base clean, and hopefully free of errors.
 
-<hr>
+
 <a name="!faq-q-variation"></a>
 ###How many question variations or expressions should I put in when preparing Q&A?
 
@@ -305,7 +305,7 @@ knowledge base clean, and hopefully free of errors.
 
 <p align="center"><img src="../img/recommend-questions.png" alt="Recommend similar questions" width="650"/></p>
 
-<hr>
+
 <a name="!overlap-topics"></a>
 ### Why do I see overlapped topic cards or cannot add follow-ups?
 
@@ -318,7 +318,7 @@ active at the same time in the near future, please check to make sure
 you have only one window/tab open for one chatbot at a time.
 
 
-<hr>
+
 <a name="!faq-not-updated"></a>
 ### Why cannot my chatbot answer any questions even after I uploaded my Q&A CSV file?
 
@@ -326,7 +326,7 @@ you have only one window/tab open for one chatbot at a time.
 uploaded. Make sure that all the Q&As are entered in the CSV following
 the [required format](../design#customize-qa-and-fallback).
 
-<hr>
+
 <a name="!disable-chatbot"></a>
 ### How do I suspend/pause/stop/disable a chatbot? I don't want to delete my chatbot but I want to pause it.
 ### How do I set up "out of office" for my chatbot?
@@ -334,14 +334,14 @@ the [required format](../design#customize-qa-and-fallback).
 : This is quite easy to do on Juji. Just follow these steps to
 [suspend a chatbot](../design#suspend-chat).
 
-<hr>
+
 <a name="!similar-vs-contains"></a>
 ###What is the difference between 'contains-keywords` and `is-similar-to` trigger?
 ### When should I use `contains-keywords` vs. `is-similar-to` trigger to guide my chatbot?
 
 : To decide which type of trigger to use, please check out [this tip](../chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
 
-<hr>
+
 <a name="!choice-vs-free-text"></a>
 ### When should I use a choice question vs. a free-text question?
 ### How should I decide a choice question vs. a free-text question?
@@ -351,13 +351,13 @@ information. One (choice) is more structured than the other
 (free-text). Check out [this design tip](../chatbot-design-tips-advanced#use-proper-chatbot-request) to
 choose one to deliver the best user experience.
 
-<hr>
+
 <a name="!preview"></a>
 ### What does `Preview` do?
 
 : The **`Preview`** page allows you to test your chatbot before you deploy it to meet your audience.
 
-<hr>
+
 <a name="!preview-start-again"></a>
 ### My chat starts over again when I return to the `Preview` page
 
@@ -365,19 +365,19 @@ choose one to deliver the best user experience.
 
 ## Deployment Questions
 
-<hr>
+
 <a name="!deploy-page"></a>
 ### What does `Deploy` do?
 
 : This allows you to deploy your chatbot to meet your audience. For example, you can get a web URL and send it out with your email, or you can embed the URL on your website to meet with your website visitors.
 
-<hr>
+
 <a name="!deploy"></a>
 ### How do I deploy my chatbot?
 
 : Click on **`Deploy`** on the left menu pane to go to the release page. Then choose your deployment type. For more details, check out various [deployment functions](../release).
 
-<hr>
+
 <a name="!where-deploy"></a>
 ### Should I create a chatbot on Facebook Messenger or on my website
 
@@ -392,13 +392,13 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 : * Native to any mobile devices
 : * Always on
 
-<hr>
+
 <a name="!deploy-to-web"></a>
 ### How do I deploy the chat to my website?
 
 : Go to “Deploy” page, choose web deployment to get the URL. You can then embed the URL into an iframe on your website.
 
-<hr>
+
 <a name="!after-deploy"></a>
 ### After I deploy my chatbot, what should I do then?
 
@@ -414,32 +414,32 @@ periodically. If you don't have time to do so, you may want to hire a
 professional (e.g., a chatbot agency) who can help you monitor and
 maintain your chatbot.
 
-<hr>
+
 <a name="!vs-survey"></a>
 ### How to use Juji chatbot with Qualtrics or Survey Monkey?
 ### How to use Juji chatbot with other survey software?
 
 : You can include Juji chatbot's Web deployment link in your survey messages. Alternatively, you can include third-party survey link in Juji chatbot's messages.
 
-<hr>
+
 <a name="!completion-code"></a>
 ### I want a completion code for Mechanical Turk. How do I get a completion code?
 
 : In the `Wrap-up` topic, if you choose to end the chat, you have an option to  choose whether or not you want to display a completion code that is unique for every end-user when the conversation ends.
 
-<hr>
+
 <a name="!no-identity-info"></a>
 ### I don't want to collect any identifying information such as email addresses or last names
 
 : On the web deployment, you can choose whether or not you want to collect email and/or last name from your chatbot end-users. The first name is mandatory for the chatbot to properly address the user in conversation.
 
-<hr>
+
 <a name="!247-chat"></a>
 ### Does my deployed chatbot operate 24/7?
 
 : Certainly. Your chatbot is alive 24x7.
 
-<hr>
+
 <a name="!update-live"></a>
 ### Will we be able to go into the chatbot at any time and make changes after it goes live?
 
@@ -448,7 +448,7 @@ maintain your chatbot.
 
 ## Reporting Questions
 
-<hr>
+
 <a name="!reports-page"></a>
 ### What does `Reports` do?
 ### What do the results look like?
@@ -457,19 +457,19 @@ maintain your chatbot.
 
 : The **`Reports`** page displays multiple types of information gathered by your chatbot, such as chat stats, responses from each user, personality analysis, and overall response summaries.
 
-<hr>
+
 <a name="!dont-see-results"></a>
 ### I don't see results of my chat
 
 : Only the participation in a released(deployed) chat will show up in the results page. Participation in a preview chat will not be stored as results. For Web deployment, test mode is another option for testing. Comparing with testing on the `Preview` page, the participation on the test mode link can be viewed on the `Results` page.
 
-<hr>
+
 <a name="!download-results"></a>
 ### Can I download the conversation results?
 
 : Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](../reports#export-audience-data) for more details.
 
-<hr>
+
 <a name="!sync-w-crm"></a>
 ### What capabilities will we have to sync to SalesForce or Marketo?
 
