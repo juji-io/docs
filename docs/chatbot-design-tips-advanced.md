@@ -148,13 +148,12 @@ To export your Juji chatbot hit the (...) ellipsis drop down menu and this time 
 <p align="center"><img src="../img/export-a-chatbot.png" alt="Export a
 chatbot" width="650"/></p>
 
-To import a Juji chatbot, just click on the `+ AI Helper`
-button then hit the `Import` tab to import an exported `*.juji`
+To import a Juji chatbot, just click on the import icon as shown below to import an exported `*.juji`
 file. After importing a chatbot, you can then [customize](../design),
 [deploy](../release), and [manage](../reports) the chatbot as if it
 were created by you from scratch.
 
-<p align="center"><img src="../img/create-a-chatbot-btn.png" alt="+ AI Helper
+<p align="center"><img src="../img/import-a-chatbot-btn.png" alt="+ AI Helper
 button" width="350"/></p>
 
 <p align="center"><img src="../img/import-a-chatbot.png" alt="Import a

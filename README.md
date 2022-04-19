@@ -31,12 +31,15 @@ Then go to Github to create a new pull request for https://github.com/juji-io/do
 
 ## Local setup
 
-To build the site, make sure you have python on your system. It is safer to use the same version of python as we do. The easist way to ensure this is to install pyenv, and install the right version of python using it. Please follow [its instruction](https://github.com/pyenv/pyenv) to set it up. It is important to add `pyenv init` to your shell. Otherwise you may not be using the right version of python. 
+To build the site, make sure you have python on your system. It is safer to use the same version of python as we do. There are multiple ways to ensure this. Below we show how you can set up with pyenv or conda.
+
+### pyenv
+One option is to install pyenv, and install the right version of python using it. Please follow [its instruction](https://github.com/pyenv/pyenv) to set it up. It is important to add `pyenv init` to your shell. Otherwise you may not be using the right version of python. 
 
 ```bash
 brew install pyenv
-pyenv install 3.6.6
-pyenv global 3.6.6
+pyenv install 3.9
+pyenv global 3.9
 ```
 
 Test that you have the right version of python `python --version`.
@@ -47,8 +50,18 @@ Now install needed extensions:
 pip install mkdocs
 pip install mkdocs-material==<version>
 ```
-
 Get mkdocs-material version from theme/base.html by searching for "mkdocs-material" in the file.
+
+### conda
+Conda is another popular option for install virtual python env. Follow [conda installation on mac](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
+```bash
+conda create -n juji-doc python=3.9
+conda activate juji-doc
+conda install -c conda-forge mkdocs
+conda install -c conda-forge mkdocs-material=<version>
+```
+Get mkdocs-material version from theme/base.html by searching for "mkdocs-material" in the file.
+
 
 ## Assets and Links
 

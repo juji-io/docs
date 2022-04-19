@@ -17,29 +17,49 @@ configure the fields to be shown on the cover page:
 
 ### **Activity Tracking**
 
-An optional activity tracking setting is provided for page-owners who want to track their visitors' chat activities in their Google Analytics. In case you are not interested in adding activity tracking, you can safely skip this section and go directly to [Generate URL](#generate-url).
+An optional activity tracking setting is provided for page-owners who want to track their visitors' chat activities on their page. In case you are not interested in adding activity tracking, you can safely skip this section and go directly to [Generate URL](#generate-url).
 
 <p align="center"><img src="../img/web-activity-tracking.png" alt="Web Deployment Activity Tracking" width="650"/></p>
 
-To enable activity tracking, you will need to fill in all three fields listed in Step 2: Domain, Web URL and ID.
+There two types of activity tracking are supported: 1) Juji chat status tracking with HTML element, and 2) integration with existing Google Analytics on the page. The two types are not excluded, enabling the second type will also enable the first.
 
+#### **Juji Chat Status Tracking with HTML Element**
+
+This is a very flexible status tracking to use, because it let you define your own action when the chat status changes. To enable this tracking, you need to fill in the **Web URL** field in Step 2 with the origin of your page and install the web plugin code (regardless which web plugin setting you choose).
+
+A hidden HTML input element with id "juji-chat-status" is included when you install web widget on your website (i.e., `<input id='juji-chat-status' type='hidden' value='not chatted'>`). When the chat is started by your visitor, the value of the element will change from "not chatted" to "chatted" and a "change" event will be dispatched. As a results, you can react to such change event and perform all kinds of actions (e.g., send info to your analytics etc.). Below is an simple example HTML script that sends an alert to the page when the chat is initiated by the visitor.
+
+```html
+<script>
+  var chatStatusElement = document.getElementById('juji-chat-status');
+  chatStatusElement.addEventListener(
+      'change',
+      function() {alert("Juji chat started!");}
+  );
+</script>
+```
+
+#### **Google Analytics Integration**
+
+To enable Google Analytics Integration, you will need to fill in all three fields listed in Step 2: Domain, Web URL and ID.
+
+* **Web URL**: the origin of your page, this will typically be scheme + `://` + domain, e.g., `https://mozilla.org`. If you are familiar with JavaScript, you may find this URL by checking `window.location.origin;` inside the web console on your page.
 * **Domain**: the domain of your page without the scheme or path, e.g., `mozilla.org`
-* **Web URL**: the origin of your page, this will typically be scheme + `://` + domain, e.g., `https://mozilla.org`
 * **ID**: the Google Analytics tracking ID. You can get this ID on your Google Analytics page, go to Admin > Property Settings > Tracking Info > Tracking Code > Tracking ID. The ID will have format similar to `UA-123456789-1`.
 
 Once the activity tracking is enabled, your deployed Juji web chat page will be updated with your tracking info. 
 
-**Web Widget Activity Tracking**: If you are using Juji web widget on your page, you simply insert your web plugin code as instructed in the [Deploy as Web Widget](#deploy-as-web-widget) section below. The code gets updated automatically with your activity tracking setting, so if you change your setting here, make sure you use the updated web plugin code. 
+**Web Widget Google Analytics Integration**: If you are using Juji web widget on your page, you simply insert your web plugin code as instructed in the [Deploy as Web Widget](#deploy-as-web-widget) section below. The code gets updated automatically with your activity tracking setting, so if you change your setting here, make sure you use the updated web plugin code. 
 
-**Web URL Activity Tracking**: If you are using web URL directly and you want to have cross-domain tracking between your site and your Juji chat, you will need to perform the following two actions in order to ensure the chat activities appear appropriately inside your Google Analytics.
+**Web URL Google Analytics Integration**: If you are using web URL directly and you want to have cross-domain tracking between your site and your Juji chat, you will need to perform the following two actions in order to ensure the chat activities appear appropriately inside your Google Analytics.
   
   1. Copy the GA SECTION from the web plugin code and insert it directly after the opening <body> tag on each page where you want the linking happen. However, if you already have Google Analytics linker set up, just add the domains to your existing linkers.
   2. Adding "juji.ai" to your Google Analytics referral exclusion list at Admin > Property Settings > Tracking Info > Referral Exclusion List
 
-After everything is set up correctly, wait for a day for the Google Analytics change kicks in. Then you will see pageviews similar to `/chat/606c1558-d290-4387-b870-8462ae3e3ee5`. Such pageviews tell you those visitors have chatted with your Juji chatbot. 
+After everything is set up correctly, wait for a day for the Google Analytics change kicks in. Then you will see pageviews similar to `/chat/606c1558-d290-4387-b870-8462ae3e3ee5`. Such pageviews tell you those visitors have chatted with your Juji chatbot.
 
-#### Quick Start with the Chat Activity Info
-A good way to use the extra piece of chat activity info is to create two segments in your Google Analytics View - "chatted" and "not chatted", and use them to evaluate your chatbot's influence on your page.
+#### Quick Start with the Chat Activity Info on Google Analytics
+A good way to use the extra piece of chat activity info after Google Analtyics integration is to create two segments in your Google Analytics View - "chatted" and "not chatted", and use them to evaluate your chatbot's influence on your page.
 
 To create segments, you go to Admin > View Settings > Segments > + NEW SEGMENT. For "chatted" segment, you edit the Seqences as shown below:
 
@@ -49,11 +69,16 @@ For "not chatted" segment, you change the filter type from "Include" to "Exclude
 
 <p align="center"><img src="../img/not-chatted-ga-segment.png" alt="Configure not-chatted google analytics segment" width="650"/></p>
 
+Alternatively, you may import the prebuilt segments to your Google Analytics account by clicking into the following links:
+
+  * chatted: https://analytics.google.com/analytics/web/template?uid=x_wa63uXQVSOlw-SPgW2qg
+  * not chatted: https://analytics.google.com/analytics/web/template?uid=wfFkNpiEQd-Bw8GK3a6hAA
+
 Now, you can add the new segments in our metrics tables (Goals, Site Content etc.), and see how they perform. 
 
 <p align="center"><img src="../img/ga-site-content-w-segments.png" alt="Google Analytics site content all pages with chatted vs not-chatted segments" width="650"/></p>
 
-#### Activity Tracking with Google Tag Manager
+#### Integration with Google Tag Manager
 
 The activity tracking setting also works with Google Tag Manager, but it will require some setup in Google Tag Manager. Please contact support at(@) juji.io if you need assistance on setting up activity tracking with your Google Tag Manager. 
 
