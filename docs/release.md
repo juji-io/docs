@@ -25,9 +25,13 @@ There two types of activity tracking are supported: 1) Juji chat status tracking
 
 #### **Juji Chat Status Tracking with HTML Element**
 
-This is a very flexible status tracking to use, because it let you define your own action when the chat status changes. To enable this tracking, you need to fill in the **Web URL** field in Step 2 with the origin of your page and install the web plugin code (regardless which web plugin setting you choose).
+This is a very flexible status tracking to use, because it let you define your own action when the chat status changes. To enable this tracking, you need to 
 
-A hidden HTML input element with id "juji-chat-status" is included when you install web widget on your website (i.e., `<input id='juji-chat-status' type='hidden' value='not chatted'>`). When the chat is started by your visitor, the value of the element will change from "not chatted" to "chatted" and a "change" event will be dispatched. As a results, you can react to such change event and perform all kinds of actions (e.g., send info to your analytics etc.). Below is an simple example HTML script that sends an alert to the page when the chat is initiated by the visitor.
+1. fill in the **Web URL** field in Step 2 with the origin of your page;
+2. update your release if you already deployed your chatbot, so the web plugin code and the corresponding Juji chat page include your latest tracking info;
+3. install the updated web plugin code on your page (regardless which web plugin setting you choose).
+
+After you perform the steps above, a hidden HTML input element with id "juji-chat-status" will be included on your website (i.e., `<input id='juji-chat-status' type='hidden' value='not chatted'>`). When your visitor starts the Juji chat, the value of the element will change from "not chatted" to "chatted". Moreover, a "change" event will be dispatched to the element object. As a results, you can listen to such "change" event and perform all kinds of actions (e.g., sending info to your analytics etc.). Below is a simple example HTML script that sends an alert to the page when the chat is initiated by the visitor.
 
 ```html
 <script>
