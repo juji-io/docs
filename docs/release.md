@@ -86,6 +86,11 @@ Now, you can add the new segments in our metrics tables (Goals, Site Content etc
 
 The activity tracking setting also works with Google Tag Manager, but it will require some setup in Google Tag Manager. Please contact support at(@) juji.io if you need assistance on setting up activity tracking with your Google Tag Manager. 
 
+#### Troubleshooting
+1. "We are able to deploy the code in our page, but the value of the input tag with id=juji-chat-status does not get updated from not chatted to chatted once we click on Start Chat button."
+
+Usually this means the parent page (your page) does not receive the post message from the child page (iframe). And usually this is because the parent origin is not the same as the Web URL value we gather from the chatbot configuration. So when you have this issue, the first thing you want to do is to double check if the Web URL field in the SECTION 2 on the DEPLOY page of your chatbot has the right value (as shown [here](#activity-tracking))? As described above, it should be the origin of your page (i.e. run `window.location.origin;` in your web console on your page to get the exact origin).
+
 ### **Generate URL**
 
 Use the `Generate URL` button to generate a web URL. This URL can then
