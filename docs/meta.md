@@ -26,43 +26,6 @@ with the variable `brandName` specified in an JSON object:
 Consult the documentation of your GraphQL client library on the details of submitting
 GraphQL queries.
 
-## Authentication
-
-Juji API data access operations require authentication.  The authentication is
-based on [JSON Web Token (JWT)](https://en.wikipedia.org/wiki/JSON_Web_Token).
-
-Once you have created an account at https://juji.ai/signup, to authenticate to
-the API, supply your email and password to the `authenticate` GraphQL mutation
-and request the `token` field in the response, e.g.
-
-```graphql
-mutation
-  authenticate($input: AuthenticateInput!) {
-    authenticate(input: $input) {
-      token
-    }
-  }
-```
-where the variable input should be a JSON object with `email` and `password` fields.
-
-If successful, a JSON object is returned with a token, e.g.
-```json
-{
-  data: {
-    authenticate: {
-      token: "a very long random looking string"
-    }
-  }
-}
-```
-
-For all subsequent API calls, add the returned token in the
-`Authorization` header of the request with the string `Bearer ` prefixed to the
-token. For example, if the returned token was `abc` then the `Authorization`
-header would be `Bearer abc`.
-
-Note that all API calls must be made over HTTPS and that as of now, the returned token is valid for up to 10 hours.
-
 ## Output Format
 
 Our API can return data in JSON, [EDN](https://github.com/edn-format/edn) as well as
@@ -125,17 +88,34 @@ The output is streamed back in CSV format, where the first row is the header wit
 Juji does not retain the uploaded files, as they are immediately discarded after
 the output is returned.
 
-## Download Chat Report with Personality Scores
+## Download Chat Report
 
-This can be done with a GET request.
+### Basic Conversation Report
+
+Basic chat report can be fetch using GET request.
+
+```shell
+curl --location --request GET \
+'https://juji.ai/api/reports?report-key=individual-results&auth-token=<token-value>&engagement-id=<engagement-id>&include-test-data=false'
+```
+As shown in the example above, send a GET request to `https://juji.ai/api/reports` and in the query string, set the `report-key` to "individual-results", then fill in the engagement-id and other optional parameters. When using API key, `auth-token` parameter is not required. `include-test-data` is set to `false` by default.
+
+The response will be a string of data in csv format. The data includes conversation responses of each participatants of the given engagement. An exameple is shown below.
+```shell
+First Name,Last Name,Email,User Agent,Completion Code,Location,Start,Finish,Duration (minutes),Channel,Gather demographics: gender,Asked FAQs
+t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""75.31.74.180"", :area-code 0, :dma-code 0, :city ""Sunnyvale"", :country-code ""US"", :metro-code 0, :longitude -122.0177, :postal-code ""94085"", :region ""California"", :org ""AS7018 AT&T Services, Inc."", :latitude 37.388596, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,
+```
+
+### Standard Big5 Report
+
+This can be done with the same GET request except the `report-key` will be set to `big5`.
 
 ```shell
 curl --location --request GET \
 'https://juji.ai/api/reports?report-key=big5&auth-token=<token-value>&engagement-id=<engagement-id>&include-test-data=false'
 ```
-As shown in the example above, send a GET request to `https://juji.ai/api/reports` and in the query string, set the `report-key` to "big5", then fill in the authentication token and engagement-id. 
 
-The response will be a string of data in csv format. The data includes conversation responses and personality scores (if applicable) of each participatants of the given engagement. An exameple is shown below.
+Similarly, the response will be a string of data in csv format. The data includes conversation responses and personality scores (if applicable) of each participatants of the given engagement. An exameple is shown below.
 ```shell
 First Name,Last Name,Email,User Agent,Completion Code,Location,Start,Finish,Duration (minutes),Channel,Gather demographics: gender,Asked FAQs,Openness,Imagination,Artistic_Interest,Feelings,Adventurousness,Intellectual_Curiosity,Liberalism,Conscientiousness,Self_Efficacy,Orderliness,Dutifulness,Achievement_Striving,Self_Discipline,Cautiousness,Extroversion,Friendliness,Gregariousness,Assertiveness,Activity_Level,Excitement_Seeking,Cheerfulness,Agreeableness,Trust,Straightforwardness,Altruism,Cooperation,Modesty,Sympathy,Neuroticism,Anxiety,Anger,Depression,Self_Consciousness,Impulsiveness,Vulnerability
 t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""75.31.74.180"", :area-code 0, :dma-code 0, :city ""Sunnyvale"", :country-code ""US"", :metro-code 0, :longitude -122.0177, :postal-code ""94085"", :region ""California"", :org ""AS7018 AT&T Services, Inc."", :latitude 37.388596, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,,36.13541798365461,13.290581805094925,69.90396487992511,77.15953217560208,14.352478113721617,21.452611092889672,20.653339834694272,44.28527848667517,54.561037503275145,82.38387886673544,91.3233545692471,10.616104982056406,19.55675956043462,7.270535438302267,75.0045233539362,84.47620138247996,80.35717998131344,66.9274661801379,54.78618912035408,82.03414681082974,81.44595664850205,82.06446262912935,90.87886328546921,85.49197212672262,83.83877023080315,75.70710344618357,88.70960654682591,67.76046013877169,78.67947741962988,67.04116468437702,86.20177231934017,78.76662084022674,69.74154161142214,99.68790702532878,70.6378580370844

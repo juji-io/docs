@@ -7,6 +7,8 @@ Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/w
 
 Clients can be written in any programming language that supports Websocket. For example, most Web browsers support [this Javascript Websocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket), so it is easy to write a Juji client that works for Web browsers.
 
+Note that you don't need authentication to create a participation and start chatting. You just need a deployed chatbot.
+
 The following steps are required to initiate a chat session via the API:
 
 ## Create participation
@@ -21,7 +23,7 @@ Field Name | Required?
 `lastName` | No
 `email` | No
 
-Only first name is required, so that the bot can address the user.
+Only first name is required, so that the bot can address the user. Data in JSON format is also supported.
 
 For example, using the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) of a Web browser, you may create a request like this:
 ```javascript
@@ -51,12 +53,13 @@ A successful `POST` request returns a JSON object looks like this:
 
 ```json
 {
+  "chatUrl": "https://juji.ai/chat/5c3bcc2a-9ce5-40a7-b1da-80c065e283b0",
   "participationId": "5c3bcc2a-9ce5-40a7-b1da-80c065e283b0",
   "websocketUrl": "wss://juji.ai/api/v1/ws"
 }
 ```
 
-The returned JSON object contains two pieces of information needed to initiate a WebSocket connection to start the chat: `participationId` and `websocketUrl`.
+The returned JSON object contains two pieces of information needed to initiate a WebSocket connection to start the chat: `participationId` and `websocketUrl`. In addition, it also contains the `chatUrl` which can be used to enter the prebuilt Juji chat page.
 
 Failed `POST` request returns a JSON object with an `error` field with an error message string.
 

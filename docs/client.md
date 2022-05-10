@@ -20,7 +20,7 @@ mutation Authenticate($input: AuthenticateInput!){
   	}
 }
 ```
-Store the value of the token. It will be used for [authentication](meta.md#authentication) in other API calls.
+Store the value of the token. It will be used for [authentication](api.md#authentication) in other API calls.
 
 You may also need your account's [brand id](nouns.md#brand), you can use the following GraphQL query to access it.
 ```javascript
