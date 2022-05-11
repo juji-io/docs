@@ -62,11 +62,11 @@ in the left sidebar vertical scroll panel)
 3. Labels set the context for understanding and responding to user inquiries.
 4. Labels index user answers in an audience report.
 
-###. **1. See Your Structure In Seconds**
+### **1. See Your Structure In Seconds**
 
 The clearer and more concise the labels, the quicker you'll understand the strengths and weaknesses of your structure, and the faster you'll be able to navigate through the design and preview of your bot as you prepare it for primetime.
 
-###. **2. Search for Built-in Juji Dialog**
+### **2. Search for Built-in Juji Dialog**
 
 The more accurate the label the better Juji will find the best Ad-Lib Topics to cover your digressions away from the main flow and get your users back to where you need them to go. And the best part is this. The more accurate the matches with ad-lib topics, the less customization you'll have to do. As we build our ad-lib topics, the need to customize might even go down to the magic number. Zero. 
 

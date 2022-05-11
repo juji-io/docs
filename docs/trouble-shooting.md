@@ -116,6 +116,9 @@ fixes. Just in case the errors persist, you could do the following to
 These steps will help you clean up any of errors or inconsistencies
 in your Q&A KB.
 
+#### Formatting
+Another reason that might introduce error is the encoding of the CSV file. It's important to make sure the CSV file is saved with `.csv` extension and `UTF-8` encoding for the best performance. The file format and encoding can be updated in `save as` or `export as` options in both `Microsoft Excel` and `Numbers`.
+
 ## **Image does not show up in Facebook**
 
 ### **Description**

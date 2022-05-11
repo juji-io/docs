@@ -194,15 +194,16 @@ one unanswered user question (indicated by the red badge displayed
 next to the `Q&A Board`). Juji automatically detects unanswered user
 questions and displays such questions on the Q&A dashboard.
 
+#### **Upload Q&As CSV**
+
 <a name="qa-tips">**IMPORTANT TIP**</a> If you decide to put all your Q&As in a CSV file and then upload, download the CSV file first as it contains the required file format to fill in your Q&As.
 
 As shown below, each template includes four columns:
 
 <p align="center"><img src="../img/qa-csv.png" alt="CSV file of Q&A" width="650"/></p>
 
-All four columns must be preserved, so is their order.  Although the
-first column (**`ID`**) and the last column (**`Comment`**) can be
-left empty, the empty columns must still exist and cannot be deleted.
+First three columns must be preserved.  Although the first column (`ID`) can be left empty, it must still exist and cannot be deleted.
+Besides, other optional columns can be used for additional functionality. All columns order must be reserved.
 
 * **ID** You can use this column to give your Q&A pair a
     name/label. If you don't provide an ID, Juji will automatically
@@ -213,11 +214,17 @@ left empty, the empty columns must still exist and cannot be deleted.
     Q&As. Moreover, they also share all the alternative answers (see
     below).
 
-* **Question** This column holds questions and their varied expressions. 
+* **Question** Questions and their varied expressions. 
 
-* **Answer** This column holds answers. You can enter alternative answers to the same question. This will make your chatbot sound more intelligent. When there are alternative answers, a chatbot randomly chooses one to use when answering a matched question. 
+* **Answer** Answers. You can enter alternative answers to the same question. This will make your chatbot sound more intelligent. When there are alternative answers, a chatbot randomly chooses one to use when answering a matched question. 
 
-* **Comment** This column holds your comments, which is optional.
+* **Comment** (Optional) Comments.
+* **Multi-turn Q&A** (Optional) Multi-turn Q&A key. The specified multi-turn Q&A will start when the Q&A is triggered if the Multi-turn status is `active`.
+* **# of asking** (Reporting) Number of times the unanswered question get asked. Change in this column has no effect on the Q&A.
+* **Tag(s)** (Optional) Tags for the Q&A.
+* **Multi-turn status** (Optional) Status of the multi-turn Q&A, can be `inactive` or `active`.
+
+It's important to make sure the CSV file is saved with `.csv` extension and `UTF-8` encoding for the best performance. The file format and encoding can be updated in `save as` or `export as` options in both `Microsoft Excel` and `Numbers`.
 
 
 ### **Support Social Chitchat**
