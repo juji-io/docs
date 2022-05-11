@@ -98,17 +98,39 @@ Basic chat report can be fetch using GET request.
 curl --location --request GET \
 'https://juji.ai/api/reports?report-key=individual-results&auth-token=<token-value>&engagement-id=<engagement-id>&include-test-data=false'
 ```
-As shown in the example above, send a GET request to `https://juji.ai/api/reports` and in the query string, set the `report-key` to "individual-results", then fill in the engagement-id and other optional parameters. When using API key, `auth-token` parameter is not required. `include-test-data` is set to `false` by default.
+As shown in the example above, send a GET request to `https://juji.ai/api/reports` and in the query string, set the `report-key` to "individual-results", then fill in the `engagement-id` and other optional parameters. Engagement id can be queried using API call such as `Engagements` or you can find the id as the last part of the generated web URL after you deployed your chatbot. When using API key, `auth-token` parameter is not required. `include-test-data` is set to `false` by default.
 
 The response will be a string of data in csv format. The data includes conversation responses of each participatants of the given engagement. An exameple is shown below.
 ```shell
 First Name,Last Name,Email,User Agent,Completion Code,Location,Start,Finish,Duration (minutes),Channel,Gather demographics: gender,Asked FAQs
-t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""75.31.74.180"", :area-code 0, :dma-code 0, :city ""Sunnyvale"", :country-code ""US"", :metro-code 0, :longitude -122.0177, :postal-code ""94085"", :region ""California"", :org ""AS7018 AT&T Services, Inc."", :latitude 37.388596, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,
+t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""12.34.56.789"", :area-code 0, :dma-code 0, :city ""A"", :country-code ""US"", :metro-code 0, :longitude -123.4567, :postal-code ""12345"", :region ""California"", :org ""AT&T Services, Inc."", :latitude 123.4567, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,
 ```
+
+Optionally you can also include tarit percentile scores in your individual results if you have access to personality analytics. The following boolean parameters can be used to specify the traits you desire:
+
+* `big5_factors`
+* `big5_facets`
+* `holland_codes`
+* `shopper_dna`
+* `soft_skills`
+* `moral_characters`
+
+Below is an example using cRUL and well as its response.
+
+```shell
+curl --location --request GET \
+'https://juji.ai/api/reports?report-key=individual-results&auth-token=<token-value>&engagement-id=<engagement-id>&include-test-data=false&big5_factors=True&soft_skills=True'
+```
+
+```shell
+First Name,Last Name,Email,User Agent,Completion Code,Location,Start (America/Los_Angeles),Finish,Duration (minutes),Channel,Tell me about yourself,Asked FAQs,big5_factors_neuroticism,big5_factors_extroversion,big5_factors_openness,big5_factors_agreeableness,big5_factors_conscientiousness,soft_skills_leadership,soft_skills_people_skills,soft_skills_innovativeness,soft_skills_grit,soft_skills_action_oriented,soft_skills_resourcefulness,soft_skills_inquisitiveness,soft_skills_teamwork,soft_skills_communication,soft_skills_positivity,soft_skills_calmness,soft_skills_independence,soft_skills_detail_oriented,soft_skills_adaptability
+John,,juji-user-a3f2ac4e-b614-4151-8b01-839c654109a3@juji-inc.com,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""12.34.56.789"", :area-code 0, :dma-code 0, :city ""A"", :country-code ""US"", :metro-code 0, :longitude -123.4567, :postal-code ""12345"", :region ""California"", :org ""AT&T Services, Inc."", :latitude 123.4567, :country-name ""United States""}",2022-05-10 23:14:03,2022-05-10 23:14:33,0,web,I am an AI software engineer at Juji. I train chatbots,,17.066186189512738,9.182373692137357,92.17822650548699,18.897750348327946,92.82761574531013,89.66562210622642,0.44348765009564195,99.34258717762158,93.0057170659342,75.51779746902791,99.95202433931146,99.77415041423164,3.503366467149105,42.572588437085365,18.1462436235978,95.45517236734389,99.99089855797502,93.71164811901794,83.54958737675481
+```
+The column names for the trait scores are the trait ids which are the same as the ones in Juji's Personality API. For more question regarding the personality scores and analytics, please contact `support at(@) juji.io.`.
 
 ### Standard Big5 Report
 
-This can be done with the same GET request except the `report-key` will be set to `big5`.
+Alternatively, there is an API for retrieving Big5 personality scores with trait names. This can be done with the same GET request as the regular individual results API except the `report-key` is set to `big5`.
 
 ```shell
 curl --location --request GET \
@@ -118,5 +140,5 @@ curl --location --request GET \
 Similarly, the response will be a string of data in csv format. The data includes conversation responses and personality scores (if applicable) of each participatants of the given engagement. An exameple is shown below.
 ```shell
 First Name,Last Name,Email,User Agent,Completion Code,Location,Start,Finish,Duration (minutes),Channel,Gather demographics: gender,Asked FAQs,Openness,Imagination,Artistic_Interest,Feelings,Adventurousness,Intellectual_Curiosity,Liberalism,Conscientiousness,Self_Efficacy,Orderliness,Dutifulness,Achievement_Striving,Self_Discipline,Cautiousness,Extroversion,Friendliness,Gregariousness,Assertiveness,Activity_Level,Excitement_Seeking,Cheerfulness,Agreeableness,Trust,Straightforwardness,Altruism,Cooperation,Modesty,Sympathy,Neuroticism,Anxiety,Anger,Depression,Self_Consciousness,Impulsiveness,Vulnerability
-t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""75.31.74.180"", :area-code 0, :dma-code 0, :city ""Sunnyvale"", :country-code ""US"", :metro-code 0, :longitude -122.0177, :postal-code ""94085"", :region ""California"", :org ""AS7018 AT&T Services, Inc."", :latitude 37.388596, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,,36.13541798365461,13.290581805094925,69.90396487992511,77.15953217560208,14.352478113721617,21.452611092889672,20.653339834694272,44.28527848667517,54.561037503275145,82.38387886673544,91.3233545692471,10.616104982056406,19.55675956043462,7.270535438302267,75.0045233539362,84.47620138247996,80.35717998131344,66.9274661801379,54.78618912035408,82.03414681082974,81.44595664850205,82.06446262912935,90.87886328546921,85.49197212672262,83.83877023080315,75.70710344618357,88.70960654682591,67.76046013877169,78.67947741962988,67.04116468437702,86.20177231934017,78.76662084022674,69.74154161142214,99.68790702532878,70.6378580370844
+t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""12.34.56.789"", :area-code 0, :dma-code 0, :city ""A"", :country-code ""US"", :metro-code 0, :longitude -123.4567, :postal-code ""12345"", :region ""California"", :org ""AT&T Services, Inc."", :latitude 123.4567, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,,36.13541798365461,13.290581805094925,69.90396487992511,77.15953217560208,14.352478113721617,21.452611092889672,20.653339834694272,44.28527848667517,54.561037503275145,82.38387886673544,91.3233545692471,10.616104982056406,19.55675956043462,7.270535438302267,75.0045233539362,84.47620138247996,80.35717998131344,66.9274661801379,54.78618912035408,82.03414681082974,81.44595664850205,82.06446262912935,90.87886328546921,85.49197212672262,83.83877023080315,75.70710344618357,88.70960654682591,67.76046013877169,78.67947741962988,67.04116468437702,86.20177231934017,78.76662084022674,69.74154161142214,99.68790702532878,70.6378580370844
 ```
