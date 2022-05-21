@@ -62,6 +62,9 @@ Once the activity tracking is enabled, your deployed Juji web chat page will be 
 
 After everything is set up correctly, wait for a day for the Google Analytics change kicks in. Then you will see pageviews similar to `/chat/606c1558-d290-4387-b870-8462ae3e3ee5`. Such pageviews tell you those visitors have chatted with your Juji chatbot.
 
+##### Ensure single session 
+Google Aanalytics by default triggers a new session when traffic arrives to your site from a different domain. This means your user's session count could artificially be doubled if they come to your site and chat with the chatbot then click on some link inside your chatbot to get back to your site. However, as this is very common issue, Google provide a simple solution to this - adding the other domain ("juji.ai" in this case) into your referral exclusion list. And [here](https://support.google.com/analytics/answer/2795830) is how you can do that.
+
 #### Quick Start with the Chat Activity Info on Google Analytics
 A good way to use the extra piece of chat activity info after Google Analtyics integration is to create two segments in your Google Analytics View - "chatted" and "not chatted", and use them to evaluate your chatbot's influence on your page.
 
