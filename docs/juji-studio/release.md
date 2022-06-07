@@ -13,13 +13,13 @@ configure the fields to be shown on the cover page:
 * Last Name (optional)
 * Email (optional)
 
-<p align="center"><img src="../img/web-cover.png" alt="Web Deployment" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/web-cover.png" alt="Web Deployment" width="650"/></p>
 
 ### **Activity Tracking**
 
 An optional activity tracking setting is provided for page-owners who want to track their visitors' chat activities on their page. In case you are not interested in adding activity tracking, you can safely skip this section and go directly to [Generate URL](#generate-url).
 
-<p align="center"><img src="../img/web-activity-tracking.png" alt="Web Deployment Activity Tracking" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/web-activity-tracking.png" alt="Web Deployment Activity Tracking" width="650"/></p>
 
 There two types of activity tracking are supported: 1) Juji chat status tracking with HTML element, and 2) integration with existing Google Analytics on the page. The two types are not excluded, enabling the second type will also enable the first.
 
@@ -70,11 +70,11 @@ A good way to use the extra piece of chat activity info after Google Analtyics i
 
 To create segments, you go to Admin > View Settings > Segments > + NEW SEGMENT. For "chatted" segment, you edit the Seqences as shown below:
 
-<p align="center"><img src="../img/chatted-ga-segment.png" alt="Configure chatted google analytics segment" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/chatted-ga-segment.png" alt="Configure chatted google analytics segment" width="650"/></p>
 
 For "not chatted" segment, you change the filter type from "Include" to "Exclude":
 
-<p align="center"><img src="../img/not-chatted-ga-segment.png" alt="Configure not-chatted google analytics segment" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/not-chatted-ga-segment.png" alt="Configure not-chatted google analytics segment" width="650"/></p>
 
 Alternatively, you may import the prebuilt segments to your Google Analytics account by clicking into the following links:
 
@@ -83,7 +83,7 @@ Alternatively, you may import the prebuilt segments to your Google Analytics acc
 
 Now, you can add the new segments in our metrics tables (Goals, Site Content etc.), and see how they perform. 
 
-<p align="center"><img src="../img/ga-site-content-w-segments.png" alt="Google Analytics site content all pages with chatted vs not-chatted segments" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/ga-site-content-w-segments.png" alt="Google Analytics site content all pages with chatted vs not-chatted segments" width="650"/></p>
 
 #### Integration with Google Tag Manager
 
@@ -99,7 +99,7 @@ Usually this means the parent page (your page) does not receive the post message
 Use the `Generate URL` button to generate a web URL. This URL can then
 be embedded into an email or a website for target audience.
 
-<p align="center"><img src="../img/web-url.png" alt="generate URL" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/web-url.png" alt="generate URL" width="650"/></p>
 
 Two URLs are generated:
 
@@ -108,7 +108,7 @@ Two URLs are generated:
 
 * **Web Link** Use this URL for target audience. 
 
-<p align="center"><img src="../img/web-url-generated.png" alt="generated two web URLs" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/web-url-generated.png" alt="generated two web URLs" width="650"/></p>
 
 ### **Customize Web URL with External Data**
 In some cases, you may want to customize the generated chatbot URL
@@ -136,7 +136,7 @@ reports. For example, two entries below from the CSV report file show
 the captured source information (see [how to download a CSV
 report](../reports)).
 
-<p align="center"><img src="../img/capture-external-info.png" alt="capture external information" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/capture-external-info.png" alt="capture external information" width="650"/></p>
 
 ### **Deploy as Web Widget**
 
@@ -144,7 +144,7 @@ If you don't want your visitors to be redirected to another page, you can make y
 
 To add such widget, after you go through the web deployment process, instead of copying the URL, you copy the web plugin code that appears below the URL. Then, simply insert it directly after the opening `<body>` tag on each page where you want the widget to appear.
 
-<p align="center"><img src="../img/install-web-plugin.png" alt="install web plugin" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/install-web-plugin.png" alt="install web plugin" width="650"/></p>
 
 The web plugin code gets updated automatically with your activity tracking in step 2 of the web deployment process. If you have activity tracking enabled, you will see a "GA SECTION" in the web plugin code. The section is required for linking your site and the Juji's chat page. However, if you are already setting Google Analytics linkers, pleaser remove the GA section and add the linker domains into your existing linker setting.
 
@@ -154,7 +154,7 @@ One can deploy a Juji chatbot to a Facebook Messenger associated with
 a Facebook page.
 
 
-<p align="center"><img src="../img/facebook-deployment.png"
+<p align="center"><img src="https://juji.io/docs/img/facebook-deployment.png"
 alt="Facebook Deployment" width="650"/></p>
 
 Similar to deploying to a website, one can also edit the **weclome
@@ -165,7 +165,7 @@ Use the blue `Connect with Facebook` button to deploy a
 chatbot. Select the page(s) you want to deploy to. Then click on the
 green `Deploy` button to complete the deployment.
 
-<p align="center"><img src="../img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
 
 If there is no page listed, it means that you have not given Juji
 permissions to any of your Facebook pages to host your
@@ -186,13 +186,13 @@ updates to the deployment, Juji supports two types of update:
     updated chatbot will restart and reflect the changes made.
 
 ### **Update Facebook Chatbot**
-<p align="center"><img src="../img/deploy-fb-after.png" alt="After
+<p align="center"><img src="https://juji.io/docs/img/deploy-fb-after.png" alt="After
 successful facebook deployment" width="650"/></p>
 
 <br>
 
 ### **Update Web Chatbot**
-<p align="center"><img src="../img/web-update.png" alt="Update Web AI chatbot" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/web-update.png" alt="Update Web AI chatbot" width="650"/></p>
 
 * **New Release** Use the `Connect with Facebook` button or `New
     Release` button under `Manage` to release a new version of the

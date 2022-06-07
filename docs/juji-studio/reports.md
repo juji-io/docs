@@ -8,7 +8,7 @@ This dashboard currently shows the number of users who chatted with
 the chatbot. One can use the date slider below the chart to view the
 number of users per selected time period.
 
-<p align="center"><img src="../img/Report-Overview.png" alt="Chat Stats" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/Report-Overview.png" alt="Chat Stats" width="650"/></p>
 
 ## **Audience Dashboard**
 Juji presents a real-time audience dashboard, which monitors and
@@ -25,7 +25,7 @@ Audience overview is displayed in a table. The table is updated in
 real time to show several pieces of basic information related to users,
 such as `name`, `location`, and `channel`.
 
-<p align="center"><img src="../img/Report-Audience.png" alt="Audience Overview" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/Report-Audience.png" alt="Audience Overview" width="650"/></p>
 
 <br>
 
@@ -38,7 +38,7 @@ chatbot questions or custom attribute.
 Below is an example displaying the distribution of user choices by
 percentile to the question `What's your favorite color`.
 
-<p align="center"><img src="../img/audience-analytics-piechart.png"
+<p align="center"><img src="https://juji.io/docs/img/audience-analytics-piechart.png"
 alt="Audience Analytics" width="650"/></p>
 
 <br> For an open-ended question, Juji summarizes the free-text user
@@ -47,7 +47,7 @@ displays the discovered themes with the top-3 highest coverages. Below
 is an example showing the themes discovered for the question `What
 subject do you teach`:
 
-<p align="center"><img src="../img/audience-analytics-text.png"
+<p align="center"><img src="https://juji.io/docs/img/audience-analytics-text.png"
 alt="Audience Analytics: Text analytics" width="650"/></p>
 
 ### **Export Audience Data**
@@ -60,7 +60,7 @@ you can always export the data by downloading the corresponding CSV file.
 As shown below, click on the `download CSV` button to download the
 file.
 
-<p align="center"><img src="../img/download-report.png" alt="download CSV" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/download-report.png" alt="download CSV" width="650"/></p>
 
 
 ## **Types of Audience Data**
@@ -82,7 +82,7 @@ fine-grained customer segmentation and individual preferences).
 Below is a sample CSV file containing various audience information
 gathered from their chats with an AI chatbot.
 
-<p align="center"><img src="../img/sample-csv.png" alt="Sample CSV"
+<p align="center"><img src="https://juji.io/docs/img/sample-csv.png" alt="Sample CSV"
 width="650"/></p>
 
 ### Explicit User Input
@@ -98,7 +98,7 @@ As shown below, the first two columns record users' free-text input to
 two open-ended questions, while the last two columns record user
 choices to two choice questions (radio-button questions).
 
-<p align="center"><img src="../img/user-input-example.png" alt="sample audience data table" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/user-input-example.png" alt="sample audience data table" width="650"/></p>
 
 Moreover, users often ask questions during a chat. Juji also
 automatically records such user-asked questions. Both user responses and
@@ -116,10 +116,10 @@ with this dialog, the chatbot will automatically parse users'
 free-text input to the question and extract two pieces of information
 that are stored in two attributes, `weight-amount` and `weight-unit`. 
 
-<p align="center"><img src="../img/system-attribute-weight.png" alt="system
+<p align="center"><img src="https://juji.io/docs/img/system-attribute-weight.png" alt="system
 attribute called weight-amount" width="650"/></p>
 
-<p align="center"><img src="../img/system-attribute-weight-2.png" alt="system attribute called weight-unit" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/system-attribute-weight-2.png" alt="system attribute called weight-unit" width="650"/></p>
 
 The CSV report file will also capture these attributes automatically
 (see below). Although you can [customize the names of system
@@ -129,7 +129,7 @@ purposes](#uses-of-audience-data), such as personalized service
 recommendations and retargeting marketing.
 
 
-<p align="center"><img src="../img/system-attribute-weight-3.png" alt="system attributes displayed in audience data table" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/system-attribute-weight-3.png" alt="system attributes displayed in audience data table" width="650"/></p>
 
 
 ### Custom Attributes
@@ -143,10 +143,10 @@ one can detect user sentiment by adding a custom chatbot action as
 below and store the detected sentiment in a custom attribute.
 
 
-<p align="center"><img src="../img/contain-sentiment-attr.png" alt="how to record a sentiment attribute" width="450"/></p>
+<p align="center"><img src="https://juji.io/docs/img/contain-sentiment-attr.png" alt="how to record a sentiment attribute" width="450"/></p>
 
 
-<p align="center"><img src="../img/sentiment-attr-1.png" alt="define a sentiment attribute" width="450"/></p>
+<p align="center"><img src="https://juji.io/docs/img/sentiment-attr-1.png" alt="define a sentiment attribute" width="450"/></p>
 
 * **extracted keywords** On can define a `contain-keywords` condition
     and store one of the matched keywords into a custom
@@ -154,28 +154,28 @@ below and store the detected sentiment in a custom attribute.
     attributes store extracted keywords instead of the *entire* user
     input to a chatbot question.
 
-<p align="center"><img src="../img/keyword-attr.png" alt="add a
+<p align="center"><img src="https://juji.io/docs/img/keyword-attr.png" alt="add a
 keyword attribute" width="450"/></p>
 
-<p align="center"><img src="../img/keyword-attr-1.png" alt="define a keyword attribute name" width="450"/></p>
+<p align="center"><img src="https://juji.io/docs/img/keyword-attr-1.png" alt="define a keyword attribute name" width="450"/></p>
 
 
 * **is-similar-to condition** One can define a `is-similar-to` condition and
     store the matched condition into a custom attribute -- a binary
     value (true/false) storing whether if the condition is met. 
 
-<p align="center"><img src="../img/is-similar-to-attr.png" alt="add an is-similar-to attribute" width="450"/></p>
+<p align="center"><img src="https://juji.io/docs/img/is-similar-to-attr.png" alt="add an is-similar-to attribute" width="450"/></p>
 
-<p align="center"><img src="../img/is-similar-to-attr-1.png" alt="define an is-similar-attribute name" width="450"/></p>
+<p align="center"><img src="https://juji.io/docs/img/is-similar-to-attr-1.png" alt="define an is-similar-attribute name" width="450"/></p>
 
 * **matched variables** One can define a `matches` condition with a
     specific matched pattern and then store one or more matched
     variables into custom attributes.
 
-<p align="center"><img src="../img/match-attr.png" alt="add a
+<p align="center"><img src="https://juji.io/docs/img/match-attr.png" alt="add a
 match attribute" width="450"/></p>
 
-<p align="center"><img src="../img/match-attr-1.png" alt="add a match attribute name" width="450"/></p>
+<p align="center"><img src="https://juji.io/docs/img/match-attr-1.png" alt="add a match attribute name" width="450"/></p>
 
 
 ### Inferred User Characteristics
@@ -185,7 +185,7 @@ automatically infers user characteristics from user
 input. Currently, Juji infers about 150 user characteristics, including
 `Big 5 personality` (see example below), `reader DNA` and `gamer DNA`.
 
-<p align="center"><img src="../img/big5-example.png" alt="inferred user characteristics" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/big5-example.png" alt="inferred user characteristics" width="650"/></p>
 
 
 ## **Uses of Audience Data**
@@ -207,7 +207,7 @@ segments: people who prefer `strawberries` and those who enjoy
 `blueberries`. Another custom attribute `prefer-protein" identifies
 another customer segment: people who like proteins.
 
-<p align="center"><img src="../img/segmentation.png" alt="customer segmentation" width="650"/></p> 
+<p align="center"><img src="https://juji.io/docs/img/segmentation.png" alt="customer segmentation" width="650"/></p> 
 
 
 ### Retargeting Marketing 

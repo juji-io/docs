@@ -14,7 +14,7 @@ Using the `Q&A Board`, one can support custom, natural-language Q&As,
 monitor, and manage unanswered user questions encountered during a
 chat. Below is an example of a Q&A board:
 
-<p align="center"><img src="../img/design-qa.png" alt="Q&A dashboard"
+<p align="center"><img src="https://juji.io/docs/img/design-qa.png" alt="Q&A dashboard"
 width="650"/></p>
 
 On this page, one can enter a custom Q&A pair directly in the table
@@ -30,7 +30,7 @@ questions and displays such questions on the Q&A dashboard.
 
 As shown below, each template includes four columns:
 
-<p align="center"><img src="../img/qa-csv.png" alt="CSV file of Q&A" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/qa-csv.png" alt="CSV file of Q&A" width="650"/></p>
 
 First three columns must be preserved.  Although the first column (`ID`) can be left empty, it must still exist and cannot be deleted.
 Besides, other optional columns can be used for additional functionality. All columns order must be reserved.
@@ -71,7 +71,7 @@ texts expressions similar to those indicated under ID `Humor`
 (B8-B10), the chatbot will tell a joke by randomly picking one from
 cells C8 and C9:
 
-<p align="center"><img src="../img/custom-fallback.png" alt="Select Custom Fallback" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/custom-fallback.png" alt="Select Custom Fallback" width="650"/></p>
 
 **IMPORTANT TIP** Juji already provides rich, built-in social chitchats. We recommend that you observe the behavior of your chatbot first before adding any custom user comment-chatbot response pairs. 
 
