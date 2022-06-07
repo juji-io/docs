@@ -32,8 +32,8 @@ You can also click on the small avatar icon located at the lower right corner an
 
 Follow the reference guide to create, customize, test, deploy, and manage a custom chatbot in Juji Studio. 
 
-* [Chatbot Design](../juji-studio/design) 
-* [Chatbot Deployment](../juji-studio/release) 
-* [Chatbot Management](../juji-studio/reports)
+* [Chatbot Design](./juji-studio/design) 
+* [Chatbot Deployment](./juji-studio/release) 
+* [Chatbot Management](./juji-studio/reports)
 
 Finally, some great [Design Tips and Best Practices](../quality-chatbot-design-tips) to make your chatbots awe-inspiring.

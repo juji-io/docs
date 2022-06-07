@@ -96,10 +96,9 @@ nav:
   - Get Started: index.md
   - Juji Studio:
     - Introduction: juji-studio.md
-    - Chatbot Design: design.md
-    - Chatbot Deployment: release.md
-    - Chatbot Monitoring: reports.md
-    - Reference Guide: juji-studio-reference-guide.md
+    - Chatbot Design: juji-studio/design.md
+    - Chatbot Deployment: juji-studio/release.md
+    - Chatbot Monitoring: juji-studio/reports.md
   - Juji IDE:
     - Introduction: juji-ide.md
     - Concepts: concept.md
