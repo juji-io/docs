@@ -66,7 +66,7 @@ message topic - select a message type" width="550"/></p>
 **IMPORTANT TIP**
 
 To decide which chatbot request to use, please check out this [design
-tip](../chatbot-design-tips-advanced#use-proper-chatbot-request).
+tip](https://juji.io/docs/chatbot-design-tips-advanced#use-proper-chatbot-request).
 
 ## Edit a Topic
 
@@ -74,7 +74,7 @@ Once a topic is added, one can then edit the topic in three sections:
 
 ### **Chatbot Content**
 
-You can customize the chatbot message(s) that users will see during a chat.  Please refer to [design best practices](../chatbot-design-tips)
+You can customize the chatbot message(s) that users will see during a chat.  Please refer to [design best practices](https://juji.io/docs/chatbot-design-tips)
 for defining the content of a topic.
 
 <p align="center"><img src="https://juji.io/docs/img/design-content.png" alt="define
@@ -97,7 +97,7 @@ personalize the chatbot message.
 * **Add a paraphrase** Use the green `+` button on the right of the
     text bubble to add paraphrases of the message (see the screenshot
     below). The paraphrases will be selected by your chatbot randomly
-    to send during a chat. See [best practices](../chatbot-design-tips)
+    to send during a chat. See [best practices](https://juji.io/docs/chatbot-design-tips)
     for good uses of paraphrases.
 
 <p align="center"><img src="https://juji.io/docs/img/design-plain-remark.png" alt="customize a plain message" width="550"/></p>
@@ -163,7 +163,7 @@ understand users' needs and wants.
 * **Label** Typically, a label is the short form ("stem") of a chatbot
 request. Although it automatically takes the form of the main message,
 it is good to give a sensible label as it is also used for multiple
-purposes (see [best practices](../chatbot-design-tips)).
+purposes (see [best practices](https://juji.io/docs/chatbot-design-tips)).
 
 * **Main Message** (required) This is the question that users will see
     in a chat. Instead of asking a question directly, a good message
@@ -177,7 +177,7 @@ purposes (see [best practices](../chatbot-design-tips)).
     can be used to re-ask the question by checking the `Re-asking
     Message` box.
 
-See [best practices](../chatbot-design-tips) on how to phrase free-text
+See [best practices](https://juji.io/docs/chatbot-design-tips) on how to phrase free-text
 questions in a conversation.
 
 <p align="center"><img src="https://juji.io/docs/img/design-add-free-text-q.png" alt="add a
@@ -267,7 +267,7 @@ Facebook email requestion" width="650"/></p>
 
 You can also customize chatbot behavior based on user responses. The green "Customization" button shown
     below can be used to add a group of chatbot actions under one
-    condition (trigger). Refer to the [design best practices](../chatbot-design-tips) for defining specific conditions and corresponding custom chatbot actions.
+    condition (trigger). Refer to the [design best practices](https://juji.io/docs/chatbot-design-tips) for defining specific conditions and corresponding custom chatbot actions.
 
 <p align="center"><img src="https://juji.io/docs/img/design-chatbot-action.png" alt="design
 chatbot actions" width="550"/></p>
@@ -398,7 +398,7 @@ trigger" width="450"/></p>
 <p align="center"><img src="https://juji.io/docs/img/contain-sentiment.png" alt="add a contains-sentiment trigger" width="450"/></p>
 
 * `matches` If a user input matches a rule specified in [Juji chatbot
-    language](../reference).
+    language](https://juji.io/docs/reference).
 
 <p align="center"><img src="https://juji.io/docs/img/matches.png" alt="add a matches
 trigger" width="450"/></p>
@@ -431,7 +431,7 @@ the user.
 
 To decide which type of trigger (chatbot condition) to use, please
 check out this [design
-tip](../chatbot-design-tips-advanced#use-proper-chatbot-trigger).
+tip](https://juji.io/docs/chatbot-design-tips-advanced#use-proper-chatbot-trigger).
 
 
 #### **Customize THEN Actions**
@@ -461,7 +461,7 @@ chatbot actions can be defined:
 
 ### Topic Settings
 
-You can also customize one or more topic-specific parameters, such as whether a "request" topic requires user response and the length of user responses. Please refer to [best practices](../chatbot-design-tips) to fine tune these parameters.
+You can also customize one or more topic-specific parameters, such as whether a "request" topic requires user response and the length of user responses. Please refer to [best practices](https://juji.io/docs/chatbot-design-tips) to fine tune these parameters.
     
 <a name="topic-settings"></a><p align="center">
 <img src="https://juji.io/docs/img/design-topic-settings.png" alt="design topic settings"
@@ -486,7 +486,7 @@ interact with your audience again. You can do so easily in the **Welcome** topic
 
 <p align="center"><img src="https://juji.io/docs/img/suspend-chatbot.png" alt="Suspend chat" width="650"/></p>
 
-**IMPORTANT TIP** If your chatbot is deployed via a web URL, you may also want to change the greeting message on the [web cover page](../release#deploy-to-website) to inform future users about the pause/suspension.
+**IMPORTANT TIP** If your chatbot is deployed via a web URL, you may also want to change the greeting message on the [web cover page](https://juji.io/docs/release#deploy-to-website) to inform future users about the pause/suspension.
 
 ### Wrap-up Topic 
 
@@ -569,6 +569,6 @@ Here is how to do it: first drag out the topic graph tab as a window, then lay t
 
 Once a chatbot is ready, you can deploy it onto a website or a
 Facebook page. Please check out [**Chatbot Deployment**](../release)
-to deploy your AI chatbot. If you wish to further customize your chatbot, such as its capabilities to handle user questions, please refer to [**Customize QA**](../customize-qa). If you wish to customize the chatbot's persona or other settings, please refer to [**Customize Chatbot Persona**](../customize-persona-beyond).
+to deploy your AI chatbot. If you wish to further customize your chatbot, such as its capabilities to handle user questions, please refer to [**Customize QA**](../customize-qa). If you wish to customize the chatbot's persona or other settings, please refer to [**Customize Chatbot Persona**](../customize-persona-beyond/).
 
 
