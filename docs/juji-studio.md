@@ -18,14 +18,29 @@ If you have an account but don't remember your password, you can always click on
 
 ##Your Home Screen
 
+###Create a Chatbot
+
 When you login to Juji Studio the first time, below is what your "home screen" looks like. This is also where all your chatbots will be listed.
 
 <p align="center"><img src="../img/juji-studio/juji-studio-add-a-chatbot.png" alt="Juji Studio Signon page" width="650px"/></p>
+
+### Manage a Chatbot
+
+Once you create a chatbot, the chatbot will show up on this "home screen". You can edit the chatbot's content or behavior as well as test the chatbot by clicking on the **Manage** button.
+
+<p align="center"><img src="../img/juji-studio/manage-a-chatbot.png" alt="Juji Studio Signon page" width="650px"/></p>
+
+You can also click on the elipsis icon (three dots) on the top right corner of the chatbot tile, and perform additional management actions on that chatbot, such as **export**, **clone**, and **delete**.
+
+<p align="center"><img src="../img/juji-studio/other-chatbot-actions.png" alt="Juji Studio Signon page" width="650px"/></p>
+
+###Logout
 
 If you wish to log out of Juji Studio, you can use the menu button located at the top right corner of the screen.
 
 <p align="center"><img src="../img/juji-studio/juji-studio-logout.png" alt="Juji Studio Signon page" width="650px"/></p>
 
+### Get Help
 You can also click on the small avatar icon located at the lower right corner and chat with the avatar to get more help.
 
 <p align="center"><img src="../img/juji-studio/juji-studio-help.png" alt="Juji Studio Signon page" width="650px"/></p>
