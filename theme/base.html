@@ -93,25 +93,60 @@
       {% include "partials/javascripts/palette.html" %}
     {% endif %}
 
-  <div id='jujibot-bubble'>
-    Cannot wait to chat!
-  </div>
-  <div id='jujibot-icon'
-        background='#8BDFCD'
-        img_url='https://juji.ai/assets/img/content/juji-profile.png'>
-  </div>
-  <script>
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://juji.ai/assets/js/webplugin.js';
-       fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'juji-webplugin'));
-  </script>
-  <div id='juji-chatbot'
-        chat_url='https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63'>
-  </div>
+    <!--Juji Welcome Chatbot-->
+    <div id='jujibot-bubble'>
+        Click on me to chat with me
+    </div>
+    <div id='jujibot-icon'
+            background='#8BDFCD'
+            img_url='https://juji.ai/assets/img/content/juji-profile.png'
+            role='button'
+            tabIndex='0'
+            alt='Click to chat with Juji'
+            aria-label='Click on this button to start the chat window. After you click, use tab key to navigate the chat window'>
+    </div>
+    <input id='juji-chat-status' type='hidden' value='not chatted'>
+    <!-- GA SECTION: Update Google Analytics linker config -->
+    <!-- If the page already has linker config set to the tracking ID, please remove this GA SECTION and add the domains to the existing linker. -->
+    <!-- <script async src='https://www.googletagmanager.com/gtag/js?id=UA-113933244-1'></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-113933244-1',
+            {'linker': {'domains': ['juji.io', 'juji.ai']},
+             'send_page_view': false});
+    </script> -->
+    <!-- GA SECTION end -->
+    <script>
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://juji.ai/assets/js/cookielessParent.js';
+        document.head.appendChild(script);
+        script.onload = function(){
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                if (js.readyState) {
+                    js.onreadystatechange = function () {
+                        if (js.readyState == 'loaded' || js.readyState == 'complete') {
+                            js.onreadystatechange = null;
+                            updateIframe('https://juji.ai', 'UA-113933244-1');
+                        }
+                    }
+                } else {
+                    js.onload = function () {
+                        updateIframe('https://juji.ai', 'UA-113933244-1');
+                    }
+                }
+                js.src = 'https://juji.ai/assets/js/webplugin-2.0.0.js';
+           fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'juji-webplugin'));
+        }
+    </script>
+    <div id='juji-chatbot'
+            chat_url='https://juji.ai/pre-chat/6197eb12-2a20-4164-be37-cf2240655ede?start-chat=false'>
+    </div>
 
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
