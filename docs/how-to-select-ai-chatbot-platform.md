@@ -129,7 +129,7 @@ partially to support new tasks, ask the following:
   propreitary solutions?
 
 
-## **Chatbot Option Comparison: Item by Item**
+### **Build Your Own Chatbot Comparison Table**
 
 To make chatbot option comparison more concrete, we have created a set
 of detailed comparison criteria with concrete examples for you to go

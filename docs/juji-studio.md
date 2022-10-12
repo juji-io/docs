@@ -30,7 +30,7 @@ Once you create a chatbot, the chatbot will show up on this "home screen". You c
 
 <p align="center"><img src="../img/juji-studio/manage-a-chatbot.png" alt="Juji Studio Signon page" width="650px"/></p>
 
-You can also click on the ellipsis icon (three dots) on the top right corner of the chatbot card, and perform additional management actions on that chatbot, such as **export**, **import**, **clone**, and **delete**. When you import a chatbot into another chatbot, it means that you wish to replace the chatbot's main chat flow or Q&A list with that of another chatbot.
+You can also click on the ellipsis icon (three dots) on the top right corner of the chatbot card, and perform additional management actions on that chatbot, such as **export**, **import**, **clone**, and **delete**. When you import a chatbot into another chatbot, it means that you wish to replace the target chatbot's main chat flow or Q&A list with that of another chatbot.
 
 **Design Tip** Importing a chatbot into another chatbot is most useful when you want to share multi-turn Q&As among different chatbots. The typical Q&A CSV list cannot capture the content and logic of multi-turn Q&As, which can be exported with a chatbot and then be imported into another chatbot. See [customization of Q&A](./customize-qa)  
 

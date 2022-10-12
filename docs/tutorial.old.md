@@ -20,31 +20,8 @@ The videos under this section teach how to design engaging, empathetic, and prod
 (Steve: put this video https://youtu.be/Aw_S2-xi8Tc desc + title image + youtube link here)
 
 ### How to Ask Questions
-<p align="center"><img src="/JujiDocumentation/Images/questions.jpg" alt="Create a cognitive AI chatbot to meet and greet" width="650"/></p>
-No-Code Design of AI Chatbots to Ask Open-Ended Questions
 
-We have received several requests on how to design AI chatbots that can ask user questions, including 
-open-ended questions.
-
-We will share with you a set of design tips on how to create AI chatbots that can ask user questions, 
-including how to handle and capture diverse and complex user responses to these questions, 
-with NO CODE.  We will also share several practical uses of such a chatbot in various domains, 
-e.g., conducting conversational surveys (e.g., surveying users or employees) or interviews 
-(e.g., interviewing job candidates), as well as performing assessments (e.g., wellness 
-assessments).
-
-<div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7aZB5154Qu0&list=PLSxT_T7jUXceBDPBMp6CP-xyrIHD8BwUY&index=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-How to Make No-Code AI Chatbots to Ask Questions Empathetically
-
-We will share with you two more design tips on how to create AI chatbots that can ask user 
-questions with NO CODE. In particular, how to enable a quality conversation by anticipating 
-user responses and how to customize your chatbot to respond to users empathetically and 
-personally.
-
-<div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=udp17CmF8ss&list=PLSxT_T7jUXceBDPBMp6CP-xyrIHD8BwUY&index=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+(Steve: you can put the two videos with description + title images + youtube links here)
 
 
 ### How to Handle User Free-Text Q&A
@@ -93,32 +70,8 @@ This 3-minute tutorial shows how Alicia makes a personalized production introduc
 This section contains the design for domain-specific uses of AI chatbots. 
 
 ### Smart Greeter on a Website
-<p align="center"><img src="/JujiDocumentation/Images/GreetandGuide.jpg" alt="Create a cognitive AI chatbot to meet and greet" width="650"/></p>
-If you can use PowerPoint or Excel, you can create a cognitive AI chatbot.
 
-Do you want your website to proactively engage with each of your visitors, for example, eliciting 
-who is visiting your site and the purpose of the visit, highlighting the key aspects of your 
-products/services based on their needs, answering their inquiries instantly, and guiding them 
-to where they can take an action (e.g., submitting an application)? A cognitive AI chatbot 
-sitting on your website can help you accomplish all the above responsibly. This webinar will  
-share the end-to-end process of designing, deploying, and managing a cognitive AI chatbot for 
-a website with no code. Specifically, it will cover the following:
-
-<ul dir="ltr">
-		<li>How to design a cognitive AI chatbot to perform the following tasks</li>
-		<li>Greet and guide your visitors</li>
-		<li>Gather visitor information (e.g., contact and interests)</li>
-		<li>Handle natural language Q&As occurred anytime during the chat</li>
-		<li>How to deploy the chatbot on a website</li>
-		<li>How to monitor the chatbot using a real-time dashboard</li>
-		<li>How to handle chatbot imperfections and fix these imperfections in a live chatbot</li>
-</ul>	
-	
-If you can use PowerPoint or Excel, you can create a cognitive AI chatbot to augment your 
-website and make your visitors and staff members infinitely happier.
-
-<div align="center">
-<iframe width="560" height="315" src="https://youtu.be/klKnc_rI2cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+(Steve: could you copy paste part of the event description including the title image here + this video https://youtu.be/klKnc_rI2cw here) 
 
 
 ### Smart E-Commerce on Facebook
