@@ -63,7 +63,7 @@ experience and business ROI, you want to compare available chatbot
 options on the following aspects: 
 
 * How well can a chatbot drive an empathetic and
-  productive **two-way conversation**?
+  productive two-way conversation?
 
 * How well can a chatbot deeply understand the psychographic
   characteristics (e.g., interests, unspoken needs, and personality)
@@ -135,9 +135,11 @@ To make chatbot option comparison more concrete, we have created a set
 of detailed comparison criteria with concrete examples for you to go
 through and check them off on your list. While we use the building of
 an educational chatbot solution as an example, the criteria can be
-used broadly for building any chatbot solutions. You are most welcome
-to download the comparison template to create your own comparison
-sheet of different chatbot options along all the dimensions.
+used broadly for building any chatbot solutions.
+
+You are most welcome to download the comparison template to create
+your own comparison sheet of different chatbot options along all the
+dimensions.
 
 
 ## **What's Next**
