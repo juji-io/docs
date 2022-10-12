@@ -144,9 +144,7 @@ dimensions.
 
 <!-- <embed src="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf"> -->
 <!-- <object data="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf" width="100%"></object>>  -->
-<iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
-
-<!-- <iframe width="100%" height="800" ></iframe> -->
+<iframe width="100%" height="700" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
 
 
 <!-- <Wenxi: Insert the Comparison Table Here> -->
