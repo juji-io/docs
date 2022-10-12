@@ -138,13 +138,13 @@ check them off on your list for each chatbot option. While we use the
 building of an educational chatbot solution as an example, the
 criteria can be used broadly for building any chatbot solutions. 
 
-**Tips: You can click on the "+" button to zoom in on the comparison table if needed. You can also download the pdf to view it somewhere else.**
-
-You are most welcome to download the comparison template to create
-your own comparison sheet of different chatbot options along all the
-dimensions.
+**You can click on the "+" button to zoom in on the comparison table if needed. You can also download the pdf to view it somewhere else.**
 
 <iframe width="100%" height="700" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
+
+You are most welcome to download the Excel comparison template to create
+your own comparison sheet of different chatbot options along all the
+dimensions.
 
 ## **What's Next**
 
