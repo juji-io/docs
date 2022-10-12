@@ -132,19 +132,26 @@ partially to support new tasks, ask the following:
 ## **Build Your Own Chatbot Comparison Table**
 
 To help your Round-2 evaluation of multiple chatbot options, we have
-created a set of detailed comparison criteria by the 3 factors above
-with concrete examples. You can go through the items one by one and
-check them off on your list for each chatbot option. While we use the
-building of an educational chatbot solution as an example, the
-criteria can be used broadly for building any chatbot solutions. 
+created a set of detailed comparison criteria by the 3 factors
+mentioned above: [User Experience and Business
+ROI](#i-user-experience-and-business-roi), [Time to Value and Cost of
+Ownership](#ii-time-to-value-and-cost-of-ownership), and
+[Enterprise-Scale Adaptability and
+Extensibility](#iii-enterprise-scale-adaptibility-and-extensibility). For
+your convenience, we list *all* the evaluation dimensions in a table
+below, supplemented with concrete examples wherever possible to help
+explain each evaluation dimension. While we use the building of an
+educational chatbot solution as an example, the evaluation criteria
+can be used broadly for building any chatbot solutions.
 
-**You can click on the "+" button to zoom in on the comparison table if needed. You can also download the pdf to view it somewhere else.**
+**Click on the "+" button to zoom in on the comparison table. You can also download the pdf for offline review.**
 
-<iframe width="100%" height="700" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
+<iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
 
-You are most welcome to download the Excel comparison template to create
+Feel free to download the Excel comparison template to build
 your own comparison sheet of different chatbot options along all the
-dimensions.
+dimensions. So you can go through the dimensions one by one and
+check them off for each chatbot option.
 
 ## **What's Next**
 
