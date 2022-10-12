@@ -136,18 +136,15 @@ created a set of detailed comparison criteria by the 3 factors above
 with concrete examples. You can go through the items one by one and
 check them off on your list for each chatbot option. While we use the
 building of an educational chatbot solution as an example, the
-criteria can be used broadly for building any chatbot solutions.
+criteria can be used broadly for building any chatbot solutions. 
+
+**Tips: You can click on the "+" button to zoom in on the comparison table if needed. You can also download the pdf to view it somewhere else.**
 
 You are most welcome to download the comparison template to create
 your own comparison sheet of different chatbot options along all the
 dimensions.
 
-<!-- <embed src="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf"> -->
-<!-- <object data="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf" width="100%"></object>>  -->
 <iframe width="100%" height="700" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
-
-
-<!-- <Wenxi: Insert the Comparison Table Here> -->
 
 ## **What's Next**
 
