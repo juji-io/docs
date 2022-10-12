@@ -142,7 +142,11 @@ You are most welcome to download the comparison template to create
 your own comparison sheet of different chatbot options along all the
 dimensions.
 
-<Wenxi: Insert the Comparison Table Here>
+<!-- <embed src="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf"> -->
+<!-- <object data="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf" width="100%"></object>>  -->
+<iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
+
+<!-- <Wenxi: Insert the Comparison Table Here> -->
 
 ## **What's Next**
 
