@@ -144,9 +144,14 @@ explain each evaluation dimension. While we use the building of an
 educational chatbot solution as an example, the evaluation criteria
 can be used broadly for building any chatbot solutions.
 
-**Click on the "+" button to zoom in on the comparison table. You can also download the pdf for offline review.**
+**Click on the "+" button to zoom in on the comparison table. You can also [download the pdf](../pdf/Compare-Chatbot-Options.pdf) for offline review.**
 
-<iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
+<!-- <iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe> -->
+<!-- <iframe src="https://drive.google.com/file/d/1N6JnkVej5IgAzcY3lZIOf5QAHsEqt_j-/preview?usp=sharing&embedded=true" width="100%" height="800" frameborder="0"></iframe> -->
+
+<object data="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf" frameborder="0" width="100%" height="700px">
+    <embed src="https://drive.google.com/file/d/1N6JnkVej5IgAzcY3lZIOf5QAHsEqt_j-/preview?usp=sharing" width="100%" height="700px"/> 
+</object>
 
 Feel free to download the [Excel comparison template](../files/Compare-Chatbot-Options-Template.xlsx) to build
 your own comparison sheet of different chatbot options along all the
