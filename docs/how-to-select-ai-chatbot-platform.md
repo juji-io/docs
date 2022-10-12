@@ -129,18 +129,20 @@ partially to support new tasks, ask the following:
   propreitary solutions?
 
 
-### **Build Your Own Chatbot Comparison Table**
+## **Build Your Own Chatbot Comparison Table**
 
-To make chatbot option comparison more concrete, we have created a set
-of detailed comparison criteria with concrete examples for you to go
-through and check them off on your list. While we use the building of
-an educational chatbot solution as an example, the criteria can be
-used broadly for building any chatbot solutions.
+To help your Round-2 evaluation of multiple chatbot options, we have
+created a set of detailed comparison criteria by the 3 factors above
+with concrete examples. You can go through the items one by one and
+check them off on your list for each chatbot option. While we use the
+building of an educational chatbot solution as an example, the
+criteria can be used broadly for building any chatbot solutions.
 
 You are most welcome to download the comparison template to create
 your own comparison sheet of different chatbot options along all the
 dimensions.
 
+<Wenxi: Insert the Comparison Table Here>
 
 ## **What's Next**
 
