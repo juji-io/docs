@@ -148,7 +148,7 @@ can be used broadly for building any chatbot solutions.
 
 <iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe>
 
-Feel free to download the Excel comparison template to build
+Feel free to download the [Excel comparison template](../files/Compare-Chatbot-Options-Template.xlsx) to build
 your own comparison sheet of different chatbot options along all the
 dimensions. So you can go through the dimensions one by one and
 check them off for each chatbot option.
