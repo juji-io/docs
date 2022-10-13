@@ -131,7 +131,7 @@ This allows you to control what kind of
     handle user-initiated side talking gracefully and also keep the
     chat on track. 
 
-<p align="center"><img src="https://juji.io/docs/img/handling-fallbacks.png" alt="chatbot settings" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/handle-fallbacks.png" alt="chatbot settings" width="650"/></p>
 
 ## Collaboration Notes
 
