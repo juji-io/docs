@@ -35,9 +35,11 @@ chat or chat window appears.
 When a chatbot sends a long message (by default 50 or more words), you
 may wish to give users some time to read and digest the message before
 moving on. In this case, the message will be automatically displayed
-with a "Done" button. A user will need to click on "Done" to move
+with a "More" button. Whenever a user has finished reading the message and is ready to move on, s/he will just click on the "More" button to move
 on. You can change the default (50) to decide what would be considered
 a long message.
+
+<p align="center"><img src="https://juji.io/docs/img/display-control-example.png" alt="define a custom persona" width="650"/></p>
 
 ### Enable/Disable Progress Bar
 
@@ -45,7 +47,7 @@ When a chatbot is used to perform a certain task that has a definite
 beginning and end, such as conducting an interview/survey, onboarding a user, or
 taking an application, you may want to display a progress bar so the users would know where they are in the process. You can turn on or off the progress bar as needed.
 
-<p align="center"><img src="https://juji.io/docs/img/chatbot-progress-bar.png" alt="chatbot settings" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/chat-progress-bar.png" alt="chatbot settings" width="650"/></p>
 
 ### Enable/Disable User Feedback
 
