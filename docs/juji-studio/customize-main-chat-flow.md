@@ -141,7 +141,11 @@ Click on the button "Add quick text message" to add up to 3 quick messages.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/add-quick-reply.png" alt="enable a quick reply message for users to click to reply" width="550"/></p>
 
-<p align="center"><img src="https://juji.io/docs/img/juji-studio/define-quick-reply.png" alt="define up to 3 quick reply messages per topic" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/define-quick-reply.png" alt="define up to 3 quick reply messages per topic. Here two quick text messages are defined: HELP and RESTART" width="550"/></p>
+
+Here is how "click to text" messages look like in a chat:
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/quick-reply-in-chat.png" alt="how quick reply messages look like in a chat: HELP and RESTART" width="550"/></p>
 
 * **Add a paraphrase** To create a natural and rich conversation, you can also add paraphrases of a chatbot message, especially if such a message needs to be repeated in the same conversation. For example, when a chatbot asks users a question, if the users don't anwer the question, the chatbot may need to repeat the question. In such cases, paraphrases could help make the repetitions sound more pleasant and natural.
 
@@ -151,11 +155,11 @@ Use the `+` button on the right of the text bubble to add paraphrases
     practices](https://juji.io/docs/chatbot-design-tips) for good uses
     of paraphrases.
 
-<p align="center"><img src="https://juji.io/docs/img/add-paraphrases.png" alt="customize a plain message" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/add-paraphrases.png" alt="add paraphrases of a chatbot message" width="550"/></p>
 
 You can also view all the paraphrases using the "down arrow" button:
 
-<p align="center"><img src="https://juji.io/docs/img/view-paraphrases.png" alt="customize a plain message" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/view-paraphrases.png" alt="view paraphrases" width="550"/></p>
 
 
 #### **FB Media Card**
