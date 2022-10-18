@@ -86,39 +86,77 @@ You can customize a chatbot's message(s) to users during a chat.  Please refer t
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/msg-edit-options.png" alt="chatbot message editing options" width="550"/></p>
 
-Here we use a set of examples to show how to define the content
-of a messsage and how the content would appear in a chat on the web or
+Below we use a set of examples to show how to use each of the editing
+options and how the content would appear in a chat on the web or
 Facebook Messenger.
 
-* **Add an image** Click on the "add an image" icon to insert an image into a chat message. This allows an image to be uploaded and displayed in a chat. Note that the image will be displayed alone during a chat right before or after a text message.
+* **Add an image** Click on the "add an image" icon to insert an image into a chat message. This allows an image to be uploaded and displayed in a chat.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-image-option.png" alt="insert an image into a chatbot message" width="550"/></p>
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-image-edit.png" alt="chatbot message including an image" width="550"/></p>
 
 
+The screenshot below shows how an image is displayed in a chat. It is displayed right before or after a text message. 
+
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/image-in-chat.png" alt="display an image in a chat" width="550"/></p>
 
 
-* **Add a function** Use the green function button (`fx`) below the
-text bubble to add a function, such as `(user-first-name)` to
-personalize the chatbot message.
+* **Make a bullet list** Select part of the message text and then click on the button "Make a bullet list" to convert the highlighted text into a bullet list as shown below.
 
-* **Add a link** Use the `link` button to add a URL (`bio`).
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/make-bullet-list.png" alt="display an image in a chat" width="550"/></p>
 
-* **Add a paraphrase** Use the green `+` button on the right of the
-    text bubble to add paraphrases of the message (see the screenshot
-    below). The paraphrases will be selected by your chatbot randomly
-    to send during a chat. See [best practices](https://juji.io/docs/chatbot-design-tips)
-    for good uses of paraphrases.
+* **Insert a hyperlink** A chatbot can send a message with a URL link so users can follow the link to access more information. Select part of the text message (`FAQ list`) and then click on the `Create a hyperlink of highlighted text` button to add a URL.
 
-<p align="center"><img src="https://juji.io/docs/img/design-plain-remark.png" alt="customize a plain message" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/add-hyperlink.png" alt="display an image in a chat" width="550"/></p>
 
-You can always use the green `eye` icon located at the top-right
-corner of the text bubble to preview the above message in a chat:
+During a chat, the content of the hyperlink can be accessed in one of the two ways: in a separate browser tab or within the same window where the chatbot sits. When you insert a hyperlink, you can select which option you'd prefer.  
 
-<p align="center"><br><br><img src="https://juji.io/docs/img/preview-plain-remark.png" alt="preview 
-a text message" width="350"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/add-hyperlink-options.png" alt="display an image in a chat" width="550"/></p>
+
+The clickthroughs of any inserted hyperlinks are tracked automatically. This means that a chatbot owner can view which hyperlinks are clicked on and how frequently, which provides the indication what content your users might be interested. See ["Reports"](https://juji.io/docs/juji-studio/reports/) dashboard to view the clickthroughs of hyperlinks. 
+
+
+* **Call an API** A chatbot may need to access information stored in a third-party system (e.g., a CMS or CRM) in order to communicate information tailored to aspecific user. For example, if a prospective student asks about his/her application status, the chatbot needs to access Salesforce database to retrieve the requested information. To do so, you can insert an API call to access the third-party information. Specifically, just click on the "call API" button and then follow the API call pop-up to insert the API call details.
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/call-api.png" alt="display an image in a chat" width="550"/></p>
+
+Your IT personnel often knows which API is supported and the syntax of such API calls. You don't need to write any code, you just need to get the API call details from them and copy & paste them into the API pop-up window. Here is a [Youtube Video Tutorial](https://youtu.be/LNY2S3PbSAY) on how to use APIs to connect your chatbot with other systems. 
+
+* **Add a function** Use the "Insert a function" button (`fx`) to add a function, such as `(user-first-name)` to personalize the chatbot message or make a dynamic message (e.g., based on a user's input). Watch [this Youtube video tutorial](https://youtu.be/dVjvjB-bq5w) on how to use various functions including external functions to customize a chatbot message. 
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-function.png" alt="insert a function in a chatbot message" width="550"/></p>
+
+* **Insert an attribute** During a chat, a chatbot may gather bits and pieces of information from a user (e.g., the number of people, date and time info) in order to perform a certain task (e.g., making a reservation). As a good paractice, it is always desirable to repeat and confirm such information back to the user. To do so, you can insert an attribute in a chatbot message since user opt-in information is auto-captured in an attribute during a chat.
+
+As shown the example below, click on the "Add attribute" button insert attributes that capture user input regarding a reservation.
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-attribute.png" alt="insert attribute in a chatbot message" width="550"/></p>
+
+Attributes are very powerful elements that can be used in chatbot design and help a chatbot learn new knowledge, maintain a memory, and accomplish complex tasks. Watch [this Youtube Video Tutorial](https://youtu.be/3jxvygIvHcg) to see how attributes can be used in creating a powerful AI chatbot. 
+
+* **Add quick texting messages** In certain parts of conversation, you may want to provide users with a "quick texting" convenience. This means, when a chatbot asks a question, it also provides a couple of quick reply options, which a user can just click on the text to reply vs. type the text and then submit. This convenient reply mode is useful especially on a mobile device. The main difference between "quick texting" and radio buttons is that "quick texting" still allows users to provide other forms of responses while radio buttons take only button clicks. It provides the interaction convenience while remaining open to diverse user responses. We recommend that quick texting be used sparsely because a good conversation should not be dominated by "click to text".
+
+Click on the button "Add quick text message" to add up to 3 quick messages.
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/add-quick-reply.png" alt="enable a quick reply message for users to click to reply" width="550"/></p>
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/define-quick-reply.png" alt="define up to 3 quick reply messages per topic" width="550"/></p>
+
+* **Add a paraphrase** To create a natural and rich conversation, you can also add paraphrases of a chatbot message, especially if such a message needs to be repeated in the same conversation. For example, when a chatbot asks users a question, if the users don't anwer the question, the chatbot may need to repeat the question. In such cases, paraphrases could help make the repetitions sound more pleasant and natural.
+
+Use the `+` button on the right of the text bubble to add paraphrases
+    of the message (see the screenshot below). The paraphrases will be
+    selected by your chatbot randomly to send during a chat. See [best
+    practices](https://juji.io/docs/chatbot-design-tips) for good uses
+    of paraphrases.
+
+<p align="center"><img src="https://juji.io/docs/img/add-paraphrases.png" alt="customize a plain message" width="550"/></p>
+
+You can also view all the paraphrases using the "down arrow" button:
+
+<p align="center"><img src="https://juji.io/docs/img/view-paraphrases.png" alt="customize a plain message" width="550"/></p>
+
 
 #### **FB Media Card**
 
