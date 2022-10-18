@@ -70,19 +70,35 @@ tip](https://juji.io/docs/chatbot-design-tips-advanced#use-proper-chatbot-reques
 
 ## Edit a Topic
 
-Once a topic is added, one can then edit the topic in three sections:
+No matter whether you wish to configure your chatbot to make a request (aka asking users a question) or send a message, once a topic is added, you can then edit the topic in four sections:
+
+* [Chatbot Content](./#chatbot-content). This is to customize a message that a chatbot will send to your users. 
+
+* [Chatbot Responses](./#Chatbot-responses) (only for request topics). This is to customize a chatbot's response to a user's reply to a question asked by the chatbot. 
+
+* [Chatbot Actions](./#chatbot-actions). This is to customize a chatbot's actions prior to or after the chatbot send users a message (e.g., posing a question or displaying an image). 
+
+* [Topic Settings](./#topic-settings). This is to customize various settings related to a request or a simple message.
 
 ### **Chatbot Content**
 
-You can customize the chatbot message(s) that users will see during a chat.  Please refer to [design best practices](https://juji.io/docs/chatbot-design-tips)
-for defining the content of a topic.
+You can customize a chatbot's message(s) to users during a chat.  Please refer to [design best practices](https://juji.io/docs/chatbot-design-tips) for composing the content of such a message. Below lists various message editing options. 
 
-<p align="center"><img src="https://juji.io/docs/img/design-content.png" alt="define
-topic content" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/msg-edit-options.png" alt="chatbot message editing options" width="550"/></p>
 
 Here we use a set of examples to show how to define the content
-of different topics and how the content would appear in a chat on the web or
-Facebook Messenger. 
+of a messsage and how the content would appear in a chat on the web or
+Facebook Messenger.
+
+* **Add an image** Click on the "add an image" icon to insert an image into a chat message. This allows an image to be uploaded and displayed in a chat. Note that the image will be displayed alone during a chat right before or after a text message.
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-image-option.png" alt="insert an image into a chatbot message" width="550"/></p>
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-image-edit.png" alt="chatbot message including an image" width="550"/></p>
+
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/image-in-chat.png" alt="display an image in a chat" width="550"/></p>
+
 
 * **Add a function** Use the green function button (`fx`) below the
 text bubble to add a function, such as `(user-first-name)` to
