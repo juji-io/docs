@@ -133,16 +133,23 @@ partially to support new tasks, ask the following:
 
 To help your Round-2 evaluation of multiple chatbot options, we have
 created a set of detailed comparison criteria by the 3 factors
-mentioned above: [User Experience and Business
-ROI](#i-user-experience-and-business-roi), [Time to Value and Cost of
-Ownership](#ii-time-to-value-and-cost-of-ownership), and
-[Enterprise-Scale Adaptability and
-Extensibility](#iii-enterprise-scale-adaptibility-and-extensibility). For
-your convenience, we list *all* the evaluation dimensions in a table
-below, supplemented with concrete examples wherever possible to help
-explain each evaluation dimension. While we use the building of an
+mentioned above:
+* [User Experience and Business
+ROI](#i-user-experience-and-business-roi)
+* [Time to Value and Cost of Ownership](#ii-time-to-value-and-cost-of-ownership)
+* [Enterprise-Scale Adaptability and
+Extensibility](#iii-enterprise-scale-adaptibility-and-extensibility).
+
+For your convenience, we list all the evaluation dimensions in a
+table below, supplemented with concrete examples wherever possible to
+help explain each evaluation dimension. While we use building an
 educational chatbot solution as an example, the evaluation criteria
-can be used broadly for building any chatbot solutions.
+should be broadly applicable for building any chatbot solutions.
+
+You can also [download the comparison template in an Excel
+file](../files/Compare-Chatbot-Options-Template.xlsx) to build your
+own comparison sheet and evaluate different chatbot options by
+checking off each dimension for each chatbot option.
 
 **Click on the "+" button to zoom in on the comparison table. You can also [download the pdf](../pdf/Compare-Chatbot-Options.pdf) for offline review.**
 
@@ -153,10 +160,7 @@ can be used broadly for building any chatbot solutions.
 <!-- <embed src="https://drive.google.com/file/d/1N6JnkVej5IgAzcY3lZIOf5QAHsEqt_j-/preview?usp=sharing" width="100%" height="700px"/>  -->
 <!-- </object> -->
 
-Feel free to download the [Excel comparison template](../files/Compare-Chatbot-Options-Template.xlsx) to build
-your own comparison sheet of different chatbot options along all the
-dimensions. So you can go through the dimensions one by one and
-check them off for each chatbot option.
+
 
 ## **What's Next**
 

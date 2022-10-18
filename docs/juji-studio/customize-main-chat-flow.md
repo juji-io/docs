@@ -84,15 +84,11 @@ Here we use a set of examples to show how to define the content
 of different topics and how the content would appear in a chat on the web or
 Facebook Messenger. 
 
-#### **Plain Text Chatbot Message**
-
-This is the simplest chatbot message that contains only plain text.
-
 * **Add a function** Use the green function button (`fx`) below the
 text bubble to add a function, such as `(user-first-name)` to
 personalize the chatbot message.
 
-* **Add a link** Use the green `link` button to add a URL (`bio`).
+* **Add a link** Use the `link` button to add a URL (`bio`).
 
 * **Add a paraphrase** Use the green `+` button on the right of the
     text bubble to add paraphrases of the message (see the screenshot
