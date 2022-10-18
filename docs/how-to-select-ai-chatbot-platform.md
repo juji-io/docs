@@ -134,11 +134,15 @@ partially to support new tasks, ask the following:
 To help your Round-2 evaluation of multiple chatbot options, we have
 created a set of detailed comparison criteria by the 3 factors
 mentioned above:
+
 * [User Experience and Business
 ROI](#i-user-experience-and-business-roi)
+
 * [Time to Value and Cost of Ownership](#ii-time-to-value-and-cost-of-ownership)
+
 * [Enterprise-Scale Adaptability and
-Extensibility](#iii-enterprise-scale-adaptibility-and-extensibility).
+Extensibility](#iii-enterprise-scale-adaptibility-and-extensibility)
+
 
 For your convenience, we list all the evaluation dimensions in a
 table below, supplemented with concrete examples wherever possible to
