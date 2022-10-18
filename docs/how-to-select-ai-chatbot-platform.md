@@ -157,6 +157,7 @@ checking off each dimension for each chatbot option.
 
 **Click on the "+" button to zoom in on the comparison table. You can also [download the pdf](../pdf/Compare-Chatbot-Options.pdf) for offline review.**
 
+
 <!-- <iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe> -->
 <iframe src="https://drive.google.com/file/d/1N6JnkVej5IgAzcY3lZIOf5QAHsEqt_j-/preview?usp=sharing" width="100%" height="700" frameborder="0"></iframe>
 
