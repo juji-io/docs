@@ -44,21 +44,16 @@ As shown above, Juji currently supports two types of topics:
 This is for a chatbot to ask a user a question or perform a certain
   action. The chatbot must wait for a user to respond to such a
   request before moving the conversation forward. Currently, Juji
-  supports five types of chatbot request:
-
-<p align="center"><img src="https://juji.io/docs/img/design-request-type.png" alt="add a
-request topic - select a request type" width="550"/></p>
+  supports [several types of chatbot request](./#type-of-chatbot-request) as described below.
 
 ### **Chatbot Message**
 
-This is for a chatbot to send a message to a user without waiting for
-  a user's response. Currently, Juji supports three types of chatbot
-  message.
+This is for a chatbot to send a message to a user **without** waiting for
+  a user's response. Currently, Juji supports [several types of chatbot
+  messages](./#type-of-chatbot-message) as explained below in detail.
 
-<p align="center"><img src="https://juji.io/docs/img/design-message-type.png" alt="add a
-message topic - select a message type" width="550"/></p>
 
-**IMPORTANT TIP** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
+**IMPORTANT TIP** If you intend to have your chatbot wait for a user input before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
 
 <p align="center">
 <img src="https://juji.io/docs/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
@@ -165,7 +160,7 @@ You can also view all the paraphrases using the "down arrow" button:
 
 
 
-### **Chatbot Actions**
+### **Chatbot Responses**
 
 You can also customize chatbot behavior based on user responses. The green "Customization" button shown
     below can be used to add a group of chatbot actions under one
@@ -360,6 +355,19 @@ chatbot actions can be defined:
 * `Follow-up Request` This defines a chatbot request that allows the
   chatbot to ask a follow-up question. This defines a full topic - a
   request topic. 
+
+### **Chatbot Actions**
+
+Besides customizing a chatbot's response to user input, you can also customize a chatbot's actions before or after the chatbot sends a message to users.
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/customize-chatbot-action-1.png" alt="customize chatbot actions prior to sending a message" width="550"/></p>
+
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/customize-chatbot-action-2.png" alt="customize chatbot actions after sending a message" width="550"/></p>
+
+
+Use these actions to run background options. For example, a chatbot collects a user input (e.g., date of birth) and wants to check whether such an input is consistent with the user's previous input. To do so, one can customize a chatbot's action (post action) after collecting the user's date of birth. This post action will compare the current user input with the previous input. Sometimes certain actions may need to be performed before a chatbot sends a message to user. For example, if a chatbot wants to calculate a tax on a particular purchase, it may need to retrieve the tax rate per the user location. In this case, one could define a custom action (prior action) to retrieve the tax rate before sending a message to tell the user the total purchase price.  
+
 
 ### Topic Settings
 
