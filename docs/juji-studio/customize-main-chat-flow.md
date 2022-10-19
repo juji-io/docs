@@ -80,6 +80,7 @@ No matter whether you wish to configure your chatbot to make a request (aka aski
 
 * [Topic Settings](./#topic-settings). This is to customize various settings related to a request or a simple message.
 
+
 ### **Chatbot Content**
 
 You can customize a chatbot's message(s) to users during a chat.  Please refer to [design best practices](https://juji.io/docs/chatbot-design-tips) for composing the content of such a message. Below lists various message editing options. 
@@ -162,160 +163,7 @@ You can also view all the paraphrases using the "down arrow" button:
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/view-paraphrases.png" alt="view paraphrases" width="550"/></p>
 
 
-#### **FB Media Card**
 
-For a FB Messenger chatbot, one can define one or more FB
-Media cards to display a combination of text, image, and URL links. As
-shown below, each card contains:
-
-* **Title** (required field)
-
-* **Subtitle** (optional)
-
-* **Image** (optional image URL)
-
-* **URL Buttons** (up to 3 links per card) 
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-FB-media.png" alt="Facebook Media Card" width="550"/></p>
-
-Currently one can define up to three FB Media cards. In a Facebook
-Messenger window, these cards will show up in a carousel.
-
-<p align="center"><img src="https://juji.io/docs/img/design-fb-media-desktop.png" alt="FB media card carousel" width="550"/></p>
-
-Note that FB Media cards will ***not*** show up if the chatbot is
-deployed on a website.
-
-#### **Web Media Card**
-
-For a website chatbot, one can also define a message with a
-combination of text, image, and URL. As shown below, the web media
-card contains:
-
-* **Text Message** (required)
-* **Hyper Link** (optional)
-* **Image** (optional image URL)
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-web-media-3.png" alt="add web
-media" width="550"/></p>
-
-Below is the preview of a web media card with an image:
-
-<p align="center"><img src="https://juji.io/docs/img/preview-web-media.png" alt="preview web media
-" width="550"/></p>
-
-
-#### **<a name="free-text-request"></a>Free-text Request**
-
-Perhaps the most used request for an AI chatbot is to pose free-text,
-open-ended questions during a chat. Such a question can elicit diverse
-and detailed user responses to gather in-depth insights and better
-understand users' needs and wants.
-
-<a name="request-label"></a>As shown below, a free-text request includes the following:
-
-* **Label** Typically, a label is the short form ("stem") of a chatbot
-request. Although it automatically takes the form of the main message,
-it is good to give a sensible label as it is also used for multiple
-purposes (see [best practices](https://juji.io/docs/chatbot-design-tips)).
-
-* **Main Message** (required) This is the question that users will see
-    in a chat. Instead of asking a question directly, a good message
-    should also contain the context or motivation of the
-    asking.
-    
-* **Re-asking Messages** (optional) During a chat, a user may not
-    always respond to a chatbot question. In such a case, a chatbot
-    may want to repeat the question. One can add (green `+`)
-    paraphrases of a request and indicate whether such a paraphrase
-    can be used to re-ask the question by checking the `Re-asking
-    Message` box.
-
-See [best practices](https://juji.io/docs/chatbot-design-tips) on how to phrase free-text
-questions in a conversation.
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-free-text-q.png" alt="add a
-free-text question" width="850"/></p>
-
-#### <a name="choice-request">**Choice Request**</a>
-
-One of the popular chatbot request is to ask a user to make a
-choice. Below is an example of a single choice request, also known as
-radio button question, where a user can select only one choice.
-
-As shown below, a single choice question contains:
-
-* **Main Message** (required)
-
-* **Option Items** (at least one item is required)
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-radio.png" alt="add a
-single-answer multiple choice question" width="850"/></p>
-
-In addition to adding regular option items, `Other` option can be added to
-let a user specify additional text. One can also indicate whether to
-treat all the option items as numbers. Numeric choices can be used to
-define chatbot conditions involving numeric operations, such as `>=`
-and `<`. See [examples](#examples-customizing-chatbot-actions) below on defining chatbot conditions.
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-choice-q.png" alt="add a
-single-answer multiple choice question with numeric items" width="550"/></p>
-
-Depending on where the chatbot is deployed, the look of a choice
-question may be different.
-
-A choice question displayed in a **web-based** chatbot:
-
-<p align="center"><img src="https://juji.io/docs/img/preview-choice-q-web.png" alt="preview a web-baed choice question" width="650"/></p>
-
-A choice question displayed in a **Facebook Messenger chatbot**:
-
-<p align="center"><img src="https://juji.io/docs/img/preview-choice-q-fb.png" alt="preview a Facebook choice question in Facebook Messenger" width="350"/></p>
-
-In Facebook Messenger, a user may enter a text message instead of
-clicking on a choice. In such a case, the chatbot will handle the user
-text input first. Since a Juji AI chatbot tracks a conversation
-context, it will repeat the question, if the choice question is a
-required one.
-
-Below is an example chat where the user asks a question intead of
-making a color choice. The chatbot answers the user question and then
-repeats the choice question.
-
-<p align="center"><img src="https://juji.io/docs/img/preview-choice-q-fb-fallback.png" alt="Handling user digression during Facebook choice question" width="350"/></p>
-
-#### **Facebook Choice**
-
-Semantically, a Facebook choice question is essentially the same as a regular
-choice question except that it takes the form of Facebook buttons in a
-Facebook Messenger chatbot. This type of request will ***not*** be
-displayed in a web-based chatbot.
-
-As shown below, a Facebook choice question includes:
-
-* **Title** (required) This is the main asking message.
-* **Subtitle** (optional) This adds more information to the question.
-* **Button** (at least one button is required)
-* **Image** (optional) An image URL can be added with the question.
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-FB-choice.png" alt="add
-Facebook choice buttons" width="350"/></p>
-
-Here is how a Facebook choice looks like in a Facebook Messenger
-chatbot:
-
-<br><p align="center"><img src="https://juji.io/docs/img/preview-fb-choice.png" alt="preview Facebook choice buttons" width="350"/></p>
-
-#### **Facebook Email**
-
-This special request enables a chatbot to gather opt-in user email in
-a Facebook Messenger chatbot. A user must click on the displayed email
-to confirm (opt-in) his/her email. A user can also text an alternative
-email. To allow users to skip this question, set this question `not
-required` in the [topic settings](#topic-settings).
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-FB-email.png" alt="add a
-Facebook email requestion" width="650"/></p>
 
 ### **Chatbot Actions**
 
@@ -521,6 +369,243 @@ You can also customize one or more topic-specific parameters, such as whether a 
 <img src="https://juji.io/docs/img/design-topic-settings.png" alt="design topic settings"
 width="550"/></p>
 
+
+## Delete a Topic
+
+To delete a topic, mouse hover the corresponding topic card listed in
+the left topic panel. Then click on the red trash can icon to delete
+the topic. A deletion is permanent and cannot be undone.
+
+<p align="center"><img src="https://juji.io/docs/img/design-delete-topic.png" alt="delete a
+topic" width="350"/></p>
+
+## Clone a Topic
+
+To clone a topic, mouse over the corresponding topic card listed in
+the left topic panel. Then click on the green clone icon to clone the
+topic. The cloned topic will retain all behavior of the original topic.
+ 
+<p align="center"><img src="https://juji.io/docs/img/design-clone-topic.png" alt="clone
+a topic" width="350"/></p>
+
+## View Topic Relationship
+
+Although the chat flow is presented a list of topics, but the inter-connected topics actually form a graph. When the complexity of the chat flow grows, the need to see the relationship among topics grows also. Juji Studio provides two convenient tools for users to visualize and examine the topic graph. The two icons on top of the topic list leads to a text and a graph view of the topic graph.
+
+<p align="center"><img src="https://juji.io/docs/img/chatflow-topic-icons.png" alt="Chatflow topic icons" width="350"/></p>
+
+ 
+### **View Topic Text List**
+
+<p align="center"><img src="https://juji.io/docs/img/topic-list-text-icon.png" alt="Topic text list icon" width="350"/></p>
+
+Click on the Topic Text List icon, you will see all the topics represented in a textual format in a new browser tab. You can copy or download these text for detailed analysis.
+
+<p align="center"><img src="https://juji.io/docs/img/topic-list-text-view.png" alt="Topic text list view" width="700"/></p>
+
+### **View Topic Graph**
+
+<p align="center"><img src="https://juji.io/docs/img/topic-list-graph-icon.png" alt="Topic graph icon" width="350"/></p>
+
+Click on the Topic Graph icon, you will see all the topics represented in a graph visualization in a new browser tab. Each node in the graph represents a topic.  You can drag the nodes around, pan and zoom in/out the graph. Click Reset button to change the graph layout. Click Center button to re-center the viewpoint. Click Legend button to toggle on/off the legend of the graph. You can also change how long you want the node label to be by choosing a Label Size.
+
+<p align="center"><img src="https://juji.io/docs/img/topic-graph.png" alt="Topic graph" width="700"/></p>
+
+When you click on one of the graph nodes, not only the node turns yellow, the corresponding topic editor in the design view is also selected and open. So you can use the topic graph as a convenient topic navigator for editing topics. 
+
+Here is how to do it: first drag out the topic graph tab as a window, then lay this window side by side with the design view, or lay it top and down with the design view. The idea is to show both windows at the same time, so you can use the topic graph to navigate between topics for editing.
+
+<p align="center"><img src="https://juji.io/docs/img/topic-graph-as-navigator.png" alt="View topic graph and topic editor at the same time" width="700"/></p>
+
+
+## Type of Chatbot Request
+
+Although one can write any type of conversation topics in
+Juji, below we list the types of chatbot requests currently supported in
+[Juji Studio](https://juji.io/docs/juji-studio/).
+
+### **Free-text Request**
+
+Perhaps the most used request for an AI chatbot is to pose free-text,
+open-ended questions during a chat. Such a question can elicit diverse
+and detailed user responses to gather in-depth insights and better
+understand users' needs and wants.
+
+<a name="request-label"></a>As shown below, a free-text request includes the following:
+
+* **Label** Typically, a label is the short form ("stem") of a chatbot
+request. Although it automatically takes the form of the main message,
+it is good to give a sensible label as it is also used for multiple
+purposes (see [best practices](https://juji.io/docs/chatbot-design-tips)).
+
+* **Main Message** (required) This is the question that users will see
+    in a chat. Instead of asking a question directly, a good message
+    should also contain the context or motivation of the
+    asking.
+    
+* **Re-asking Messages** (optional) During a chat, a user may not
+    always respond to a chatbot question. In such a case, a chatbot
+    may want to repeat the question. One can add (green `+`)
+    paraphrases of a request and indicate whether such a paraphrase
+    can be used to re-ask the question by checking the `Re-asking
+    Message` box.
+
+See [best practices](https://juji.io/docs/chatbot-design-tips) on how to phrase free-text
+questions in a conversation.
+
+<p align="center"><img src="https://juji.io/docs/img/design-add-free-text-q.png" alt="add a
+free-text question" width="850"/></p>
+
+### **Choice Request**
+
+One of the popular chatbot request is to ask a user to make a
+choice. Below is an example of a single choice request, also known as
+radio button question, where a user can select only one choice.
+
+As shown below, a single choice question contains:
+
+* **Main Message** (required)
+
+* **Option Items** (at least one item is required)
+
+<p align="center"><img src="https://juji.io/docs/img/design-add-radio.png" alt="add a
+single-answer multiple choice question" width="850"/></p>
+
+In addition to adding regular option items, `Other` option can be added to
+let a user specify additional text. One can also indicate whether to
+treat all the option items as numbers. Numeric choices can be used to
+define chatbot conditions involving numeric operations, such as `>=`
+and `<`. See [examples](#examples-customizing-chatbot-actions) below on defining chatbot conditions.
+
+<p align="center"><img src="https://juji.io/docs/img/design-add-choice-q.png" alt="add a
+single-answer multiple choice question with numeric items" width="550"/></p>
+
+Depending on where the chatbot is deployed, the look of a choice
+question may be different.
+
+A choice question displayed in a **web-based** chatbot:
+
+<p align="center"><img src="https://juji.io/docs/img/preview-choice-q-web.png" alt="preview a web-baed choice question" width="650"/></p>
+
+A choice question displayed in a **Facebook Messenger chatbot**:
+
+<p align="center"><img src="https://juji.io/docs/img/preview-choice-q-fb.png" alt="preview a Facebook choice question in Facebook Messenger" width="350"/></p>
+
+In Facebook Messenger, a user may enter a text message instead of
+clicking on a choice. In such a case, the chatbot will handle the user
+text input first. Since a Juji AI chatbot tracks a conversation
+context, it will repeat the question, if the choice question is a
+required one.
+
+Below is an example chat where the user asks a question intead of
+making a color choice. The chatbot answers the user question and then
+repeats the choice question.
+
+<p align="center"><img src="https://juji.io/docs/img/preview-choice-q-fb-fallback.png" alt="Handling user digression during Facebook choice question" width="350"/></p>
+
+### **Facebook Choice**
+
+Semantically, a Facebook choice question is essentially the same as a regular
+choice question except that it takes the form of Facebook buttons in a
+Facebook Messenger chatbot. This type of request will ***not*** be
+displayed in a web-based chatbot.
+
+As shown below, a Facebook choice question includes:
+
+* **Title** (required) This is the main asking message.
+* **Subtitle** (optional) This adds more information to the question.
+* **Button** (at least one button is required)
+* **Image** (optional) An image URL can be added with the question.
+
+<p align="center"><img src="https://juji.io/docs/img/design-add-FB-choice.png" alt="add
+Facebook choice buttons" width="350"/></p>
+
+Here is how a Facebook choice looks like in a Facebook Messenger
+chatbot:
+
+<br><p align="center"><img src="https://juji.io/docs/img/preview-fb-choice.png" alt="preview Facebook choice buttons" width="350"/></p>
+
+### **Facebook Email**
+
+This special request enables a chatbot to gather opt-in user email in
+a Facebook Messenger chatbot. A user must click on the displayed email
+to confirm (opt-in) his/her email. A user can also text an alternative
+email. To allow users to skip this question, set this question `not
+required` in the [topic settings](#topic-settings).
+
+<p align="center"><img src="https://juji.io/docs/img/design-add-FB-email.png" alt="add a
+Facebook email requestion" width="650"/></p>
+
+## **Type of Chatbot Message**
+
+Again, one can write almost any type of chatbot messages (e.g., multi-modal, information graphics, etc.), below we list the message types currently supported by Juji Studio.
+
+#### **Web Media Card**
+
+For a website chatbot, one can define a multimedia message with a
+combination of text, image or video, and URLs. As shown below, the web media
+card contains:
+
+* **Image** or **Video** (required)
+* **Text Message** (optional)
+* **Hyper Link** (optional, up to 3 URL links)
+
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/web-media-card.png" alt="add a web
+media card" width="550"/></p>
+
+Below is the preview of a web media card with an image:
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/preview-web-media.png" alt="preview web media
+" width="550"/></p>
+
+#### **Web Media Carousel**
+
+Sometimes, one may wish to display several images or videos side by side like a carousel. This can be easily done in Juji Studio by simply clicking on the "+" button at the end of a web media card to add additional cards. One can add up to 5 media cards and they will be displayed as a carousel of images/videos in a chat.
+
+An image carousel:
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/image-carousel.png" alt="an image carousel in a chat
+" width="550"/></p>
+
+A video carousel:
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/video-carousel.png" alt="a video carousel in a chat
+" width="550"/></p>
+
+
+#### **FB Media Card**
+
+For a FB Messenger chatbot, one can define one or more FB
+Media cards to display a combination of text, image, and URL links. As
+shown below, each card contains:
+
+* **Title** (required field)
+
+* **Subtitle** (optional)
+
+* **Image** (optional image URL)
+
+* **URL Buttons** (up to 3 links per card) 
+
+<p align="center"><img src="https://juji.io/docs/img/design-add-FB-media.png" alt="Facebook Media Card" width="550"/></p>
+
+Currently one can define up to three FB Media cards. In a Facebook
+Messenger window, these cards will show up in a carousel.
+
+<p align="center"><img src="https://juji.io/docs/img/design-fb-media-desktop.png" alt="FB media card carousel" width="550"/></p>
+
+Note that FB Media cards will ***not*** show up if the chatbot is
+deployed on a website.
+
+
+## **Special Topics**
+
+To help jump start the design of a chatbot, Juji has made two special topics:
+* [Welcome Topic](./#welcome-topic). This is the **first topic** in all Juji AI assistant templates. It cannot be removed. It sends the first chatbot message to users when a chat session starts. One can however customize the welcome message.
+
+* [Wrap-up Topic](./#wrapup-topic). This is the **last topic** in all Juji AI assistant templates. It cannot be removed. It sends the last chatbot message to users when a chat session ends. One can customize the wrap up message as well as the chat ending options.   
+
 ### Welcome Topic
 
 No matter whether you use a blank template or a task-specific Juji template to create a chatbot, every chatbot comes with two pre-built topics, the **Welcome** topic that starts a conversation and the **Wrap-up** topic that ends a conversation.
@@ -570,53 +655,6 @@ topic buttons" width="550"/></p>
 
 If you decide to end a conversation, you also have the option to redirect the ending to a custom URL of yours. Just enter the URL where you want the ending will be.  
 
-## Delete a Topic
-
-To delete a topic, mouse hover the corresponding topic card listed in
-the left topic panel. Then click on the red trash can icon to delete
-the topic. A deletion is permanent and cannot be undone.
-
-<p align="center"><img src="https://juji.io/docs/img/design-delete-topic.png" alt="delete a
-topic" width="350"/></p>
-
-
-## Clone a Topic
-
-To clone a topic, mouse over the corresponding topic card listed in
-the left topic panel. Then click on the green clone icon to clone the
-topic. The cloned topic will retain all behavior of the original topic.
- 
-<p align="center"><img src="https://juji.io/docs/img/design-clone-topic.png" alt="clone
-a topic" width="350"/></p>
-
-## View Topic Relationship
-
-Although the chat flow is presented a list of topics, but the inter-connected topics actually form a graph. When the complexity of the chat flow grows, the need to see the relationship among topics grows also. Juji Studio provides two convenient tools for users to visualize and examine the topic graph. The two icons on top of the topic list leads to a text and a graph view of the topic graph.
-
-<p align="center"><img src="https://juji.io/docs/img/chatflow-topic-icons.png" alt="Chatflow topic icons" width="350"/></p>
-
- 
-### **View Topic Text List**
-
-<p align="center"><img src="https://juji.io/docs/img/topic-list-text-icon.png" alt="Topic text list icon" width="350"/></p>
-
-Click on the Topic Text List icon, you will see all the topics represented in a textual format in a new browser tab. You can copy or download these text for detailed analysis.
-
-<p align="center"><img src="https://juji.io/docs/img/topic-list-text-view.png" alt="Topic text list view" width="700"/></p>
-
-### **View Topic Graph**
-
-<p align="center"><img src="https://juji.io/docs/img/topic-list-graph-icon.png" alt="Topic graph icon" width="350"/></p>
-
-Click on the Topic Graph icon, you will see all the topics represented in a graph visualization in a new browser tab. Each node in the graph represents a topic.  You can drag the nodes around, pan and zoom in/out the graph. Click Reset button to change the graph layout. Click Center button to re-center the viewpoint. Click Legend button to toggle on/off the legend of the graph. You can also change how long you want the node label to be by choosing a Label Size.
-
-<p align="center"><img src="https://juji.io/docs/img/topic-graph.png" alt="Topic graph" width="700"/></p>
-
-When you click on one of the graph nodes, not only the node turns yellow, the corresponding topic editor in the design view is also selected and open. So you can use the topic graph as a convenient topic navigator for editing topics. 
-
-Here is how to do it: first drag out the topic graph tab as a window, then lay this window side by side with the design view, or lay it top and down with the design view. The idea is to show both windows at the same time, so you can use the topic graph to navigate between topics for editing.
-
-<p align="center"><img src="https://juji.io/docs/img/topic-graph-as-navigator.png" alt="View topic graph and topic editor at the same time" width="700"/></p>
 
 
 ## What's Next
