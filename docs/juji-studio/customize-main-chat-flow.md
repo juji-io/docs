@@ -424,7 +424,7 @@ Although one can write any type of conversation topics in
 Juji, below we list the types of chatbot requests currently supported in
 [Juji Studio](https://juji.io/docs/juji-studio/).
 
-<p align="center"><img src="https://juji.io/docs/img/chatbot-request-type.png" alt="displays a list of chatbot request types to be described below" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/chatbot-request-type.png" alt="displays a list of chatbot request types to be described below" width="550"/></p>
 
 ### **Free-text Request**
 
@@ -542,7 +542,7 @@ Facebook email requestion" width="650"/></p>
 
 Again, one can write almost any type of chatbot messages (e.g., multi-modal, information graphics, etc.), below we list the message types currently supported by Juji Studio.
 
-<p align="center"><img src="https://juji.io/docs/img/chatbot-message-type.png" alt="displays a list of message types to be described below" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/chatbot-message-type.png" alt="displays a list of message types to be described below" width="550"/></p>
 
 ### **Web Media Card**
 
