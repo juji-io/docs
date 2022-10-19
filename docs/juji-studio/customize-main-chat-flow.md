@@ -458,36 +458,39 @@ questions in a conversation.
 <p align="center"><img src="https://juji.io/docs/img/design-add-free-text-q.png" alt="add a
 free-text question" width="850"/></p>
 
-### **Choice Request**
+### **Choice Request (Radio Buttons)**
 
 One of the popular chatbot request is to ask a user to make a
-choice. Below is an example of a single choice request, also known as
-radio button question, where a user can select only one choice.
+choice. Below is an example of a single answer, multiple choice
+request, also known as radio button question, where a user can select
+only one choice.
 
-As shown below, a single choice question contains:
+As shown below, this type of choice question contains:
 
 * **Main Message** (required)
 
-* **Option Items** (at least one item is required)
+* **Option Items** (at least one item is required to be selected by user)
 
-<p align="center"><img src="https://juji.io/docs/img/design-add-radio.png" alt="add a
-single-answer multiple choice question" width="850"/></p>
+<p align="center"><img src="https://juji.io/docs/img/studio/radio-button-definition.png" alt="define a radio button question" width="550"/></p>
+
+<p align="center"><img src="https://juji.io/docs/img/studio/choice-question-options.png" alt="define various options of a choice question" width="550"/></p>
 
 In addition to adding regular option items, `Other` option can be added to
 let a user specify additional text. One can also indicate whether to
 treat all the option items as numbers. Numeric choices can be used to
 define chatbot conditions involving numeric operations, such as `>=`
-and `<`. See [examples](#examples-customizing-chatbot-actions) below on defining chatbot conditions.
-
-<p align="center"><img src="https://juji.io/docs/img/design-add-choice-q.png" alt="add a
-single-answer multiple choice question with numeric items" width="550"/></p>
+and `<`. See [examples](#examples-customizing-chatbot-actions) below on defining chatbot conditions. There are other options that can be set to control the display of choice items (e.g., displaying the items in a random order or horizontally).
 
 Depending on where the chatbot is deployed, the look of a choice
 question may be different.
 
-A choice question displayed in a **web-based** chatbot:
+A choice question displayed in a web-based chatbot:
 
-<p align="center"><img src="https://juji.io/docs/img/preview-choice-q-web.png" alt="preview a web-baed choice question" width="650"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/radio-button-in-chat.png" alt="preview a web-baed radio button question" width="650"/></p>
+
+A choice question displayed in a web-based chatbot but with items laid out horizontally:
+
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/radio-buttons-in-chat-horz.png" alt="preview a web-based radio button question with a horizontal display of choice items" width="650"/></p>
 
 A choice question displayed in a **Facebook Messenger chatbot**:
 
@@ -504,6 +507,16 @@ making a color choice. The chatbot answers the user question and then
 repeats the choice question.
 
 <p align="center"><img src="https://juji.io/docs/img/preview-choice-q-fb-fallback.png" alt="Handling user digression during Facebook choice question" width="350"/></p>
+
+### **Choice Request (Checkbox)**
+
+Similar to the radio buttons shown above, another popular choice question is multi-answer, multiple-choice question, also known as checkbox question. This type of choice question allows users to check one or more boxes as the answer.
+
+Below shows how to define a checkbox question.
+<p align="center"><img src="https://juji.io/docs/img/studio/checkbox-definition.png" alt="define a checkbox question" width="350"/></p>
+
+This is how a checkbox question looks like in a chat:
+<p align="center"><img src="https://juji.io/docs/img/studio/checkbox-in-chat.png" alt="a checkbox question displayed in a chat" width="350"/></p>
 
 ### **Facebook Choice**
 
