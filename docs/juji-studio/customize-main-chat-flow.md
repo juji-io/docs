@@ -471,9 +471,9 @@ As shown below, this type of choice question contains:
 
 * **Option Items** (at least one item is required to be selected by user)
 
-<p align="center"><img src="https://juji.io/docs/img/studio/radio-button-definition.png" alt="define a radio button question" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/radio-button-definition.png" alt="define a radio button question" width="550"/></p>
 
-<p align="center"><img src="https://juji.io/docs/img/studio/choice-question-options.png" alt="define various options of a choice question" width="550"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/choice-question-options.png" alt="define various options of a choice question" width="550"/></p>
 
 In addition to adding regular option items, `Other` option can be added to
 let a user specify additional text. One can also indicate whether to
@@ -488,7 +488,7 @@ A choice question displayed in a web-based chatbot:
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/radio-button-in-chat.png" alt="preview a web-baed radio button question" width="650"/></p>
 
-A choice question displayed in a web-based chatbot but with items laid out horizontally:
+A choice question displayed in a web-based chatbot with items laid out horizontally:
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/radio-buttons-in-chat-horz.png" alt="preview a web-based radio button question with a horizontal display of choice items" width="650"/></p>
 
@@ -513,10 +513,10 @@ repeats the choice question.
 Similar to the radio buttons shown above, another popular choice question is multi-answer, multiple-choice question, also known as checkbox question. This type of choice question allows users to check one or more boxes as the answer.
 
 Below shows how to define a checkbox question.
-<p align="center"><img src="https://juji.io/docs/img/studio/checkbox-definition.png" alt="define a checkbox question" width="350"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/checkbox-definition.png" alt="define a checkbox question" width="550"/></p>
 
 This is how a checkbox question looks like in a chat:
-<p align="center"><img src="https://juji.io/docs/img/studio/checkbox-in-chat.png" alt="a checkbox question displayed in a chat" width="350"/></p>
+<p align="center"><img src="https://juji.io/docs/img/juji-studio/checkbox-in-chat.png" alt="a checkbox question displayed in a chat" width="550"/></p>
 
 ### **Facebook Choice**
 
