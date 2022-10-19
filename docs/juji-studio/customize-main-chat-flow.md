@@ -424,6 +424,8 @@ Although one can write any type of conversation topics in
 Juji, below we list the types of chatbot requests currently supported in
 [Juji Studio](https://juji.io/docs/juji-studio/).
 
+<p align="center"><img src="https://juji.io/docs/img/chatbot-request-type.png" alt="displays a list of chatbot request types to be described below" width="550"/></p>
+
 ### **Free-text Request**
 
 Perhaps the most used request for an AI chatbot is to pose free-text,
@@ -536,11 +538,13 @@ required` in the [topic settings](#topic-settings).
 <p align="center"><img src="https://juji.io/docs/img/design-add-FB-email.png" alt="add a
 Facebook email requestion" width="650"/></p>
 
-## **Type of Chatbot Message**
+## Type of Chatbot Message
 
 Again, one can write almost any type of chatbot messages (e.g., multi-modal, information graphics, etc.), below we list the message types currently supported by Juji Studio.
 
-#### **Web Media Card**
+<p align="center"><img src="https://juji.io/docs/img/chatbot-message-type.png" alt="displays a list of message types to be described below" width="550"/></p>
+
+### **Web Media Card**
 
 For a website chatbot, one can define a multimedia message with a
 combination of text, image or video, and URLs. As shown below, the web media
@@ -559,7 +563,7 @@ Below is the preview of a web media card with an image:
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/preview-web-media.png" alt="preview web media
 " width="550"/></p>
 
-#### **Web Media Carousel**
+### **Web Media Carousel**
 
 Sometimes, one may wish to display several images or videos side by side like a carousel. This can be easily done in Juji Studio by simply clicking on the "+" button at the end of a web media card to add additional cards. One can add up to 5 media cards and they will be displayed as a carousel of images/videos in a chat.
 
@@ -574,7 +578,7 @@ A video carousel:
 " width="550"/></p>
 
 
-#### **FB Media Card**
+### **FB Media Card**
 
 For a FB Messenger chatbot, one can define one or more FB
 Media cards to display a combination of text, image, and URL links. As
