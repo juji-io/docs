@@ -111,10 +111,12 @@ nav:
     - Custom Topics: custom-topics.md
   - Juji API:
     - Introduction: api.md
-    - Chat API: chat.md
-    - Data Model: nouns.md
-    - Chat Creation API: client.md
-    - Data API: meta.md
+    - Juji Core: meta.md
+    - Juji Application: chat.md
+    # - Chat API: chat.md
+    # - Data Model: nouns.md
+    # - Chat Creation API: client.md
+    # - Data API: meta.md
  
   - Get Help:
     - Tutorials: tutorial.md

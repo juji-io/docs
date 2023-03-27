@@ -1,144 +1,204 @@
-# Data Access
+# Juji Core API
 
-You can access meta data as well as results about your chat engagements over the
-GraphQL API at https://juji.ai/api/graphql
+Some of Juji's core functionalities are exposed through API to support different use cases outside the Juji Platform application.
 
-An example GraphQL query to list all engagements of a brand:
+## Personality Inference
 
-```graphql
-query
-  engagements($brandName: String!) {
-    getEngagementsByBrand(brandName: $brandName) {
-        name
-        order
-        status
-    }
+Only one API is needed to access all personality inference models. The models infer an
+individual's personality and other traits using text that he or she has produced.
+
+### Basic API Information
+
+- Endpoint URL: https://juji.ai/api/analyze
+- Method: POST
+- Max Size: 8MB
+
+Both [JWT and API Key](api.md#authentication) autentication are supported. Account login is not required for API Key, which is recommended autentication method if your Juji Core API usage is independent from Juji Application.
+
+
+| Header Parameter | Example | Description | Type |
+| --- | --- | --- | --- |
+| Accept | "application/json" or "text/csv" | Specify the response type | string |
+| Content-Type | "application/json" or "text/csv" | Specify the input data type | string |
+| Authorization | "Bearer <token\>" or "Basic <apikey:<apikey\> encrypted\>" | Specify for authentication | string |
+
+| Query Parameter | Example | Description | Type | default |
+| --- | --- | --- | --- | --- |
+| version | YYYY-MM-DD e.g., 2020-01-01, 2021-12-01 | Specify Juji API version at a particular date, latest version starts on 2021-12-01. To use previous API version, please specify a date before 2021-12-01. **Note: the previous API does not affect other parameters, see the [section below](#old-version) for more details.**  | string | latest version |
+| lang | "en", "es", "fr" or "zh" | Specify language of the input data, non-English input will be translated to English for analysis | string | "en" |
+| big5_factors | true/false | Whether to include big5 factor results | boolean | TRUE |
+| big5_facets | true/false | Whether to include big5 facet results | boolean | FALSE |
+| holland_codes | true/false | Whether to include holland code results | boolean | FALSE |
+| shopper_dna | true/false | Whether to include shopper dna results | boolean | FALSE |
+| soft_skills | true/false | Whether to include soft skill results | boolean | FALSE |
+| moral_characters | true/false | Whether to include moral character results | boolean | FALSE |
+| big5_factors_x | true/false | Whether to include big5 factor explanation that's tailored to resulting percentile | boolean | FALSE |
+| big5_facets_x | true/false | Whether to include big5 facet explanation that's tailored to resulting percentile | boolean | FALSE |
+| big5_factors_x_general | true/false | Whether to include big5 factor general explanation | boolean | FALSE |
+| big5_facets_x_general | true/false | Whether to include big5 facet general explanation | boolean | FALSE |
+| holland_codes_x_general | true/false | Whether to include holland code general explanation | boolean | FALSE |
+| shopper_dna_x_general | true/false | Whether to include shopper dna general explanation | boolean | FALSE |
+| soft_skills_x_general | true/false | Whether to include soft skill result general explanation | boolean | FALSE |
+| moral_characters_x_general | true/false | Whether to include moral character general explanation | boolean | FALSE |
+
+#### Request Data/Body
+
+Data can be included in the request in JSON or CSV format.
+
+Data in JSON format should be an array of objects that each object represent a person that is identified by "id" and has "text" for analysis. JSON input can be passed directly as the body of the request or through a file. Below is an example JSON data.
+```json
+[         
+  {                 
+    "id":"1",                 
+    "text":"sentence 1. sentence 2..."
+  },
+  {
+    "id":"2",
+    "text":"sentence 1. sentence 2..."
   }
+]
 ```
 
-with the variable `brandName` specified in an JSON object:
+Data in CSV format requires each row to represent a person with the first column being the id and the second column being the text. The CSV file should have no header. Below is an example of same data in CSV format.
+```csv
+1, sentence 1. sentence 2...
+2, sentence 1. sentence 2...
+```
+
+#### Response
+
+Similarly, response in both JSON and CSV formats are supported.
+
+Response in JSON format will have the following fields:
+
+| Key | Example | Description |
+| --- | --- | --- |
+| trait_id | "big5_facets_imagination" | id of the trait, <category\>_<name\> |
+| name | "imagination" | name of the trait |
+| category | "big5_facets" | category of the trait |
+| percentile | 23.42 | percentile |
+| explanation | "low imagination" | explanation of the trait percentile in English |
+| general_explanation | "imagination is ..." | general explanation of the trait in English |
+| parent | "big5_factors_openness" | the trait_id of the parent of the trait if applicable |
+
+And below is an example.
+
 ```json
 {
-  brandName: "mycorp"
+  "results": 
+  [
+    {
+      "id": "1", 
+      "personality": 
+      {
+        "big5_factors_openness":
+        {
+          "trait_id": "big5_factors_openness",
+          "name": "Openness",
+          "category": "big5_factors", 
+          "percentile": 70.12, 
+          "explanation": "high openness",
+          "general_explanation": "openness is ...",
+          "code": "a_7100"
+        },
+        "big5_facets_imagination": 
+        {
+          "trait_id": "big5_facets_imagination",
+          "name": "Imagination",
+          "category": "big5_facets",
+          "percentile": 34.56, 
+          "explanation": "low imagination",
+          "general_explanation": "imagination is ...",
+          "parent": "big5_factors_openness",
+          "code": "a_7110"
+        }, 
+      ...
+      }
+    }, 
+    {
+      "id": "2", 
+      ...
+    }, 
+    ...
+  ]
 }
 ```
 
-Consult the documentation of your GraphQL client library on the details of submitting
-GraphQL queries.
+Response in CSV has a header that provides information to each column.
 
-## Output Format
+### Example API calls
 
-Our API can return data in JSON, [EDN](https://github.com/edn-format/edn) as well as
-[Transit](https://github.com/cognitect/transit-format) format.
-
-You can specify how you want to receive API responses by including the `Accept` header set to any one of:
-
-* `application/json` (default)
-* `application/edn`
-* `application/transit+json`
-
-The advantages of EDN and Transit are richer data types. With Transit you also get a more efficient over the wire format.
-
-## Errors
-
-GraphQL always returns a 200 HTTP response status code, so we have to rely on
-the `errors` field of the response to check for errors.
-
-Per the GraphQL specification, `errors` is an array of maps (dictionaries).  Each error map will have the following keys `message`, `category`, `kind` and `data`.  `data` is any valid `JSON` or `EDN` value and the other fields are all strings.  There are five (5) broad categories of errors `authentication`, `authorization`, `validation`, `application` and `unexpected`.  Within each category, `kind` explicitly identifies the actual error.
-
-For example, an authentication errors look like:
-```json
-{
-  "category": "authentication",
-  "kind":     "auth.error/not-authenticated",
-  "message":  "The operation requires you to be authenticated.",
-  "data":     {}
-}
+#### Raw JSON
+```shell
+curl --location --request POST 'http://localhost:8080/api/analyze?version=2021-12-10&big5_facets=true' \
+--header 'Authorization: Bearer eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..wN4i7DMa_k0CDe74ABYDqw.d8sBK-7JIpj_Dh6nL8SgLrzQ_aOCWsy6tngCGZHwItpsJkIY7hBueQYasOFCpbQa.fg1PZD5hcH_OfuFV6KsnZg' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--data-raw '[         
+        {                 
+                "id":"1",                 
+                "text":"When the bad times started there, in 38, he came to Spain, since he had both nationalities. "
+        },
+        {
+                "id":"2",
+                "text":"It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair."
+        }
+]'
 ```
 
-## Websocket
+#### JSON File
+```shell
+curl --location --request POST 'http://localhost:8080/api/analyze?version=2021-12-10&big5_facets=true' \
+--header 'Authorization: Bearer eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..wN4i7DMa_k0CDe74ABYDqw.d8sBK-7JIpj_Dh6nL8SgLrzQ_aOCWsy6tngCGZHwItpsJkIY7hBueQYasOFCpbQa.fg1PZD5hcH_OfuFV6KsnZg' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--data-binary '@juji.json'
+```
 
-Some computational intensive API requests are handled with Websockt, so the results
-can stream in when they become available. Since WebSocket requests cannot set custom headers, the JWT token should be sent as a query parameter `auth-token`.
+#### CSV File
+```shell
+curl --location --request POST 'http://localhost:8080/api/analyze?version=2021-12-10' \
+--header 'Authorization: Bearer eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..wN4i7DMa_k0CDe74ABYDqw.d8sBK-7JIpj_Dh6nL8SgLrzQ_aOCWsy6tngCGZHwItpsJkIY7hBueQYasOFCpbQa.fg1PZD5hcH_OfuFV6KsnZg' \
+--header 'Accept: application/json' \
+--header 'Content-Type: text/csv' \
+--data-binary '@juji.csv'
+```
 
-## Upload Data for Analysis
+#### API Key
+```shell
+curl --request POST 'https://juji.ai/api/analyze?version=2021-12-10&big5_facets=true&holland_codes=true&big5_factors_x=true&holland_codes_x_general=true&soft_skills=true&moral_characters=true&shopper_dna=true&moral_characters_x_general=true&big5_facets_x=true&big5_facets_x_general=true' \
+--header 'Accept: application/json' \
+-u 'apikey:<your-api-key>' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+        {
+                "id":"1",
+                "text":"It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair."
+        }
+]'
+```
 
-It is possible to access Juji's analytics capabilities without using the chat platform. However, the same authentication requirement for data access described above is necessary.
+### Personality Models and Traits
 
-Currently, we offer individual traits analysis, where our models infer an
-individual's personality and other individual traits using text that he or she has
-written.
+The API support inference of more than 60 traits using 6 personality models.
 
-The data analysis endpoint is https://juji.ai/api/analyze
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTMQ4ixKZQ2NUox_OpHXcyhDz07fbSQWIulkFasipoZFFOX-t8T9FbjnWDFhuoukqx0mmkV_y3SfpyI/pubhtml?gid=1269779010&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="700"></iframe>
 
-The input file is expected to be `POST` as a `file` field in `multipart/form-data`. There is no need to specify the content-type. If have to, put in `application/json` or `text/csv` respectively.
+### Old version
 
-The input file can be either a JSON or CSV file with corresponding file suffix.
+The previous version personality inference can be used by specifying the version parameter to any date before 2021-12-01. However, none of the other query parameters are supported in this version. And only the big 5 factors and their facets percentile predictions will be provided in the response.
 
-If the input is CSV, we expect the first column contains the identifier, and the
+In this version, data needs to be provided throught a file. The data file is expected to be `POST` as a `file` field in `multipart/form-data`. There is no need to specify the content-type. If have to, put in `application/json` or `text/csv` respectively as the data file can be either a JSON or CSV file with corresponding file suffix.
+
+If the data is in a CSV file, we expect the first column contains the identifier, and the
 second column contains a concatenation of an individual's written text as a single string. The CSV file should *not* have header.
 
-If the input is JSON, we expect an array of objects, where
+If the data is in JSON format, we expect an array of objects, where
 each object has two fields: `id` and `text`. `text` will be a concatenation of
 an individual's written text into a single string, and `id` be any string that
 is unique among the input rows/objects.
 
-The output is streamed back in CSV format, where the first row is the header with the names of the traits. The values of the traits are percentage.
+The output is streamed back in a CSV file, where the first row is the header with the names of the traits. The values of the traits are percentiles.
 
 Juji does not retain the uploaded files, as they are immediately discarded after
 the output is returned.
-
-## Download Chat Report
-
-### Basic Conversation Report
-
-Basic chat report can be fetch using GET request.
-
-```shell
-curl --location --request GET \
-'https://juji.ai/api/reports?report-key=individual-results&auth-token=<token-value>&engagement-id=<engagement-id>&include-test-data=false'
-```
-As shown in the example above, send a GET request to `https://juji.ai/api/reports` and in the query string, set the `report-key` to "individual-results", then fill in the `engagement-id` and other optional parameters. Engagement id can be queried using API call such as `Engagements` or you can find the id as the last part of the generated web URL after you deployed your chatbot. When using API key, `auth-token` parameter is not required. `include-test-data` is set to `false` by default.
-
-The response will be a string of data in csv format. The data includes conversation responses of each participatants of the given engagement. An exameple is shown below.
-```shell
-First Name,Last Name,Email,User Agent,Completion Code,Location,Start,Finish,Duration (minutes),Channel,Gather demographics: gender,Asked FAQs
-t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""12.34.56.789"", :area-code 0, :dma-code 0, :city ""A"", :country-code ""US"", :metro-code 0, :longitude -123.4567, :postal-code ""12345"", :region ""California"", :org ""AT&T Services, Inc."", :latitude 123.4567, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,
-```
-
-Optionally you can also include tarit percentile scores in your individual results if you have access to personality analytics. The following boolean parameters can be used to specify the traits you desire:
-
-* `big5_factors`
-* `big5_facets`
-* `holland_codes`
-* `shopper_dna`
-* `soft_skills`
-* `moral_characters`
-
-Below is an example using cRUL and well as its response.
-
-```shell
-curl --location --request GET \
-'https://juji.ai/api/reports?report-key=individual-results&auth-token=<token-value>&engagement-id=<engagement-id>&include-test-data=false&big5_factors=True&soft_skills=True'
-```
-
-```shell
-First Name,Last Name,Email,User Agent,Completion Code,Location,Start (America/Los_Angeles),Finish,Duration (minutes),Channel,Tell me about yourself,Asked FAQs,big5_factors_neuroticism,big5_factors_extroversion,big5_factors_openness,big5_factors_agreeableness,big5_factors_conscientiousness,soft_skills_leadership,soft_skills_people_skills,soft_skills_innovativeness,soft_skills_grit,soft_skills_action_oriented,soft_skills_resourcefulness,soft_skills_inquisitiveness,soft_skills_teamwork,soft_skills_communication,soft_skills_positivity,soft_skills_calmness,soft_skills_independence,soft_skills_detail_oriented,soft_skills_adaptability
-John,,juji-user-a3f2ac4e-b614-4151-8b01-839c654109a3@juji-inc.com,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""12.34.56.789"", :area-code 0, :dma-code 0, :city ""A"", :country-code ""US"", :metro-code 0, :longitude -123.4567, :postal-code ""12345"", :region ""California"", :org ""AT&T Services, Inc."", :latitude 123.4567, :country-name ""United States""}",2022-05-10 23:14:03,2022-05-10 23:14:33,0,web,I am an AI software engineer at Juji. I train chatbots,,17.066186189512738,9.182373692137357,92.17822650548699,18.897750348327946,92.82761574531013,89.66562210622642,0.44348765009564195,99.34258717762158,93.0057170659342,75.51779746902791,99.95202433931146,99.77415041423164,3.503366467149105,42.572588437085365,18.1462436235978,95.45517236734389,99.99089855797502,93.71164811901794,83.54958737675481
-```
-The column names for the trait scores are the trait ids which are the same as the ones in Juji's Personality API. For more question regarding the personality scores and analytics, please contact `support at(@) juji.io.`.
-
-### Standard Big5 Report
-
-Alternatively, there is an API for retrieving Big5 personality scores with trait names. This can be done with the same GET request as the regular individual results API except the `report-key` is set to `big5`.
-
-```shell
-curl --location --request GET \
-'https://juji.ai/api/reports?report-key=big5&auth-token=<token-value>&engagement-id=<engagement-id>&include-test-data=false'
-```
-
-Similarly, the response will be a string of data in csv format. The data includes conversation responses and personality scores (if applicable) of each participatants of the given engagement. An exameple is shown below.
-```shell
-First Name,Last Name,Email,User Agent,Completion Code,Location,Start,Finish,Duration (minutes),Channel,Gather demographics: gender,Asked FAQs,Openness,Imagination,Artistic_Interest,Feelings,Adventurousness,Intellectual_Curiosity,Liberalism,Conscientiousness,Self_Efficacy,Orderliness,Dutifulness,Achievement_Striving,Self_Discipline,Cautiousness,Extroversion,Friendliness,Gregariousness,Assertiveness,Activity_Level,Excitement_Seeking,Cheerfulness,Agreeableness,Trust,Straightforwardness,Altruism,Cooperation,Modesty,Sympathy,Neuroticism,Anxiety,Anger,Depression,Self_Consciousness,Impulsiveness,Vulnerability
-t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""12.34.56.789"", :area-code 0, :dma-code 0, :city ""A"", :country-code ""US"", :metro-code 0, :longitude -123.4567, :postal-code ""12345"", :region ""California"", :org ""AT&T Services, Inc."", :latitude 123.4567, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,,36.13541798365461,13.290581805094925,69.90396487992511,77.15953217560208,14.352478113721617,21.452611092889672,20.653339834694272,44.28527848667517,54.561037503275145,82.38387886673544,91.3233545692471,10.616104982056406,19.55675956043462,7.270535438302267,75.0045233539362,84.47620138247996,80.35717998131344,66.9274661801379,54.78618912035408,82.03414681082974,81.44595664850205,82.06446262912935,90.87886328546921,85.49197212672262,83.83877023080315,75.70710344618357,88.70960654682591,67.76046013877169,78.67947741962988,67.04116468437702,86.20177231934017,78.76662084022674,69.74154161142214,99.68790702532878,70.6378580370844
-```
