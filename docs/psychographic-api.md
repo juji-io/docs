@@ -1,13 +1,12 @@
-# Juji Cognitive Core API
+# Juji Psychographic Insights API
 
 "If you wish to persuade me, you must think my thoughts, feel my
 feelings and speak my words." —Cicero
 
-Over 2000 years ago, Cicero already pinpointed out the importance of
-understanding a person deeply. When coming to reading one's mind or
-understanding someone's thoughts, the closest approach perhaps is to
-learn about a person's unique psychographic characteristics, such as their
-personality traits, temperament,and psychological motivations. 
+When coming to reading one's mind or understanding someone's thoughts,
+the closest approach perhaps is to learn about a person's unique
+psychographic characteristics, such as their personality traits,
+temperament,and psychological motivations.
 
 Traditionally, item-based, self-report approaches (e.g., personality
 tests) are used to discover one's psychographic
@@ -20,11 +19,16 @@ for the holy grill for many industries, including [marketing](https://blog.hubsp
 management](https://www.marketscreener.com/quote/stock/SALESFORCE-COM-INC-12180/news/Salesforce-com-Is-a-Robot-the-Key-To-Your-Next-Successful-Interview-41863174/), [healthcare](https://www.ajmc.com/view/understanding-psychographics-and-how-all-health-care-behavior-is-local), and [education](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=50d4a59232d235c4526af6eb2483471e74ac73a6).
 
 Building on our extensive experience of Computational Psychology, Juji
-has built the world's [most comprehensively validated psychographic
-inference](https://au.finance.yahoo.com/news/juji-inc-powers-auburn-led-143000709.html),
-accessible via Juji Cognitive Core API.
+has built the world's only evidence-based, [most comprehensively
+validated psychographic inference
+engine](https://au.finance.yahoo.com/news/juji-inc-powers-auburn-led-143000709.html). Developers
+can access the engine via the Juji Psychographic Insights API to
+analyze anyone's text, such as blogs, social media posts, chat text,
+and voice transcripts and infer the person's unique psychographic
+characteristics, such as personality and psychological motivations.
 
-Juji offers 100+ psychographic models, including fundamental
+
+Juji offers 100+ psychographic trait models, including fundamental
 personality trait models and composite psychographic
 models. Developers use only one API to access all psychographic
 inference models that infer psychographic characteristics by analyzing
@@ -41,19 +45,21 @@ aspects: passions and interests (what they like to do), skills (what
 they are good at), and how they handle life's challenges
 (social-emotional intelligence).
 
-Currently, Juji focuses on inferring [the Big 5 Personality
-Traits](https://en.wikipedia.org/wiki/Big_Five_personality_traits),
-which is the most validated and most widely used personality trait
-model. Since numerous studies have demonstrated [the power of Big 5
-personality traits](https://pubmed.ncbi.nlm.nih.gov/26151971/) in
-impacting one's many important life outcomes, such as academic
-achievement, job attainment, marriage, and lifespan, developers can
-use Juji API to infer individuals' Big 5 personality traits at scale
-and use the inferred personality insights to build hyper-personalized
-applications in any domain or industry (e.g., match-making patients
-with doctors, assessing the fit of candidates and job roles,
-predicting entrepreneurs' likelihood of success, and recommending
-suitable financial products).
+Currently exposed via API, one can obtain computed trait scores of
+[the Big 5 Personality
+Traits](https://en.wikipedia.org/wiki/Big_Five_personality_traits)
+from text. The Big 5 personality model includes 35 trait models, is
+the most validated and most widely used personality trait model. Since
+numerous studies have demonstrated [the power of Big 5 personality
+traits](https://pubmed.ncbi.nlm.nih.gov/26151971/) in impacting one's
+many important life outcomes, such as academic achievement, job
+attainment, marriage, and lifespan, developers can use Juji API to
+infer individuals' Big 5 personality traits at scale and use the
+inferred personality insights to build hyper-personalized applications
+in any domain or industry (e.g., match-making patients with doctors,
+assessing the fit of candidates and job roles, predicting
+entrepreneurs' likelihood of success, and recommending suitable
+financial products).
 
 ## Inferring Composite Psychographic Characteristics Models
 

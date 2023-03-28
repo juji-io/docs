@@ -1,12 +1,16 @@
-# Juji Application API
+# Juji Cognitive AI Chat API
 
-## GraphQL
+The Juji Cognitive AI Chat API enables developers to create an
+end-to-end cognitive AI chatbot. It is mainly based on
+[GraphQL](https://graphql.org). We support cross-origin resource
+sharing (CORS) so you can interact with Juji from any client-side
+application that supports GraphQL.
 
-The Juji Application API is mainly based on [GraphQL](https://graphql.org). We support
-cross-origin resource sharing (CORS) so you can interact with Juji from any
-client-side application that supports GraphQL. 
 
-Once you've logged in to Juji platform, you can access the in-browser [GraphiQL](https://juji.ai/graphiql/graphiql.html) IDE to explore Juji API and execute queries.  
+## GraphQL Basics
+Once you've logged in to Juji platform, you can access the in-browser
+[GraphiQL](https://juji.ai/graphiql/graphiql.html) IDE to explore Juji
+API and execute queries.
 
 <p align="center"><img src="../img/graphiql.png" alt="GraphiQL" width="650"/></p>
 
@@ -16,7 +20,7 @@ important concepts of using Juji API. Please use the interactive
 
 For your code to access the API, put this GraphQL API endpoint `https://juji.ai/api/graphql` in your code. Please note: this URL is for your code to access, not a destination for human to visit in browser, you will get `{"error": "Unknown server resource."}` if you open it with a browser.
 
-### Data Access
+## Data Access
 
 You can access meta data as well as results about your chat engagements over the
 GraphQL API at https://juji.ai/api/graphql
@@ -89,7 +93,7 @@ This guide is for users who enjoy Juji chatbot's powerful dialog management, but
 2. [Create a chatbot and customize](#create-a-chatbot-and-customize-it)
 3. [Launch your chatbot](#launch-your-chatbot)
 
-### Create a Juji Account and Login
+## Create a Juji Account and Login
 
 A valid Juji account is necessary for using most of the APIs. It is also the only step you have to complete using the Juji website. Simply go to [Juji Signup page](https://juji.ai/signup) to create an account if you haven't yet done so.
 
@@ -112,7 +116,7 @@ query GetBrands{
 }
 ```
 
-### Create a Chatbot and Customize It
+## Create a Chatbot and Customize It
 
 A chatbot lives in an [engagement](nouns.md#engagement). In order to customize a chatbot, you either creates an engagement or uses an existing engagement.
 
@@ -164,7 +168,7 @@ help,Help,Here comes help!,,,
 help,Can you help me?,,,,'
 ```
 
-### Launch Your Chatbot
+## Launch Your Chatbot
 
 Once the chatbot is ready, you can deploy it by creating a [web release](release.md#deploy-to-web).
 
@@ -182,7 +186,7 @@ The web release can be accessed at `https://juji.ai/pre-chat/<engagement-id>` us
 
 You can continue to improve your chatbot after you have made a release - simply update your config-doc and/or Q&As and then make a new release. The pre-chat URL above will always point to the latest web release.
 
-### References
+## References
 
 * Please read about Juji API [introduction](api.md) first for important API concepts to help you better understand this guide. Additional API documentation also includes [Juji Cognitive Core API](psychographic-api.md) and [data model API](nouns.md). 
 * [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
