@@ -184,7 +184,7 @@ You can continue to improve your chatbot after you have made a release - simply 
 
 ### References
 
-* Please read about Juji API [introduction](api.md), [data model](nouns.md) and [data API](meta.md) first for important API concepts to help you better understand this guide. 
+* Please read about Juji API [introduction](api.md) first for important API concepts to help you better understand this guide. Additional API documentation also includes [Juji Cognitive Core API](psychographic-api.md) and [data model API](nouns.md). 
 * [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
 * [Juji client github page](https://github.com/juji-io/cli-client#creating-a-new-chat-using-only-api-an-example) contains concrete examples written in JavaScript for all the API calls in this guide, please refer to it for detail.
 
