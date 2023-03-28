@@ -1,6 +1,24 @@
 # Juji API 
 
-Two types of Juji API are provided - Juji Core API and Juji Application API. The [core API](meta.md) is independent of the Juji Application, it can be used in many applications beyond chatbots. On the other hand, the [application API](chat.md) provides a way to programmtically access the Juji Platform and its conversations.
+The Juji Cognitive AI infrastructure is a domain-independent and
+industry-agnostic infrastructure that enables developers to automate
+psychographic inference or build cognitive AI applications in **any**
+domains and industries. Specifically, developers can access the Juji
+Cognitive AI infrastructure via two sets of Juji API: Juji Cognitive
+Core API and Juji Cognitive Application API.
+
+The [Juji Cognitive Core API](psychographic-api.md) enables automatic inference of fundamental human personality traits (e.g., [Big 5 personality traits](https://en.wikipedia.org/wiki/Big_Five_personality_traits)) as well as composite psychographic characteristics (e.g., [Holland Codes](https://en.wikipedia.org/wiki/Holland_Codes)) from **any** human communication text, including conversational scripts, emails, voice transcripts, and social media posts. Such inference is **domain and industry independent**, which allows developers to automate psychographic inferences for any domain or tasks, such as assessing financial lenders' personality traits, students' psychologic needs and learning style, and the soft skills and moral characters of police officer candidates.    
+
+On the other hand, the [Juji Cognitive Application API](cognitive-ai-chatbot-api.md)
+enables the creation of an end-to-end cognitive AI assistant in a form
+of chatbot in **any domain or industry** and the embedding of such an
+AI assistant in any third-party application, such as in a mobile
+application or an embodied AI agent.
+
+The Juji Cognitive Core API and the Juji Cognitive Application API are
+independent of each other, each set of API can be used independently
+or together as needed. 
+
 
 ## Authentication
 
@@ -102,3 +120,9 @@ A participation is always associated with a release.
 
 Each end users answer to REP's question is recorded, along with the participation
 in which the question is answered.
+
+
+## Access Other Juji Components
+
+* Juji Studio (https://juji.io/docs/juji-studio/)
+* Juji IDE (https://juji.io/docs/juji-ide/)
