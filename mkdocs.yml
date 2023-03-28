@@ -111,8 +111,8 @@ nav:
     - Custom Topics: custom-topics.md
   - Juji API:
     - Introduction: api.md
-    - Juji Core: meta.md
-    - Juji Application: chat.md
+    - Juji Core: psychographic-api.md
+    - Juji Application: cognitive-ai-chatbot-api.md
     # - Chat API: chat.md
     # - Data Model: nouns.md
     # - Chat Creation API: client.md

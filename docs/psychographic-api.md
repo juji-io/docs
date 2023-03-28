@@ -97,7 +97,7 @@ Both [JWT and API Key](api.md#authentication) autentication are supported. Accou
 
 | Query Parameter | Example | Description | Type | default |
 | --- | --- | --- | --- | --- |
-| version | YYYY-MM-DD e.g., 2020-01-01, 2021-12-01 | Specify Juji API version at a particular date, latest version starts on 2021-12-01. To use previous API version, please specify a date before 2021-12-01. **Note: the previous API does not affect other parameters, see the [section below](#old-version) for more details.**  | string | latest version |
+| version | YYYY-MM-DD e.g., 2020-01-01, 2021-12-01 | Specify Juji API version at a particular date, latest version starts on 2021-12-01. To use previous API version, please specify a date before 2021-12-01. **Note: the previous API does not affect other parameters, see the [section below](#previous-version) for more details.**  | string | latest version |
 | lang | "en", "es", "fr" or "zh" | Specify language of the input data, non-English input will be translated to English for analysis | string | "en" |
 | big5_factors | true/false | Whether to include big5 factor results | boolean | TRUE |
 | big5_facets | true/false | Whether to include big5 facet results | boolean | FALSE |

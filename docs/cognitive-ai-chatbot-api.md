@@ -48,7 +48,7 @@ with the variable `brandName` specified in an JSON object:
 Consult the documentation of your GraphQL client library on the details of submitting
 GraphQL queries.
 
-#### Output Format
+### Output Format
 
 Our API can return data in JSON, [EDN](https://github.com/edn-format/edn) as well as
 [Transit](https://github.com/cognitect/transit-format) format.
@@ -61,7 +61,7 @@ You can specify how you want to receive API responses by including the `Accept` 
 
 The advantages of EDN and Transit are richer data types. With Transit you also get a more efficient over the wire format.
 
-#### Errors
+### Errors
 
 GraphQL always returns a 200 HTTP response status code, so we have to rely on
 the `errors` field of the response to check for errors.
@@ -78,7 +78,7 @@ For example, an authentication errors look like:
 }
 ```
 
-#### Websocket
+### Websocket
 
 Some computational intensive API requests are handled with Websocket, so the results
 can stream in when they become available. Since WebSocket requests cannot set custom headers, the JWT token should be sent as a query parameter `auth-token`.
@@ -97,7 +97,7 @@ This guide is for users who enjoy Juji chatbot's powerful dialog management, but
 
 A valid Juji account is necessary for using most of the APIs. It is also the only step you have to complete using the Juji website. Simply go to [Juji Signup page](https://juji.ai/signup) to create an account if you haven't yet done so.
 
-Once you have an account, you can use the `authenticate` [GraphQL](api.md#graphql) mutation to log into your account and start a session.
+Once you have an account, you can use the `authenticate` [GraphQL](api.md#json-web-token-jwt-authentication) mutation to log into your account and start a session.
 ```javascript
 mutation Authenticate($input: AuthenticateInput!){
   authenticate(input: $input) {
@@ -105,9 +105,9 @@ mutation Authenticate($input: AuthenticateInput!){
     }
 }
 ```
-Store the value of the token. It will be used for [authentication](api.md#authentication) in other API calls.
+Store the value of the token. It will be used for authentication in other API calls.
 
-You may also need your account's [brand id](nouns.md#brand), you can use the following GraphQL query to access it.
+You may also need your account's [brand id](api.md#brand), you can use the following GraphQL query to access it.
 ```javascript
 query GetBrands{
   getBrands{
@@ -118,7 +118,7 @@ query GetBrands{
 
 ## Create a Chatbot and Customize It
 
-A chatbot lives in an [engagement](nouns.md#engagement). In order to customize a chatbot, you either creates an engagement or uses an existing engagement.
+A chatbot lives in an [engagement](api.md#engagement). In order to customize a chatbot, you either creates an engagement or uses an existing engagement.
 
 ```javascript
 // To create engagement with default blank template
@@ -144,7 +144,7 @@ query Engagements($brandName: String!) {
 }
 ```
 
-Then you can 1) update your chatflow by uploading a [customized config-doc](config-doc.md) and/or 2) update your Q&As by uploading a [customized Q&A csv file](design.md#customize-qa-and-fallback).
+Then you can 1) update your chatflow by uploading a [customized config-doc](config-doc.md) and/or 2) update your Q&As by uploading a [customized Q&A csv file](juji-studio/customize-qa.md).
 
 ```javascript
 // Set isJson to true if the the config-doc is in JSON format,
@@ -170,7 +170,7 @@ help,Can you help me?,,,,'
 
 ## Launch Your Chatbot
 
-Once the chatbot is ready, you can deploy it by creating a [web release](release.md#deploy-to-web).
+Once the chatbot is ready, you can deploy it by creating a [web release](juji-studio/release.md#deploy-to-website).
 
 ```javascript
 mutation CreateRelease($input: CreateReleaseInput!){
@@ -182,15 +182,9 @@ mutation CreateRelease($input: CreateReleaseInput!){
 }
 ```
 
-The web release can be accessed at `https://juji.ai/pre-chat/<engagement-id>` using a browser or API calls. Please refer to the [Juji chat API page](chat.md) for details on how to use API calls to chat.
+The web release can be accessed at `https://juji.ai/pre-chat/<engagement-id>` using a browser or API calls. Please refer to the [chat section](#chat) below for details on how to use API calls to chat.
 
 You can continue to improve your chatbot after you have made a release - simply update your config-doc and/or Q&As and then make a new release. The pre-chat URL above will always point to the latest web release.
-
-## References
-
-* Please read about Juji API [introduction](api.md) first for important API concepts to help you better understand this guide. Additional API documentation also includes [Juji Cognitive Core API](psychographic-api.md) and [data model API](nouns.md). 
-* [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
-* [Juji client github page](https://github.com/juji-io/cli-client#creating-a-new-chat-using-only-api-an-example) contains concrete examples written in JavaScript for all the API calls in this guide, please refer to it for detail.
 
 ## Chat
 
@@ -199,7 +193,7 @@ It is easy to write a chat client that talks with a Juji chatbot via Juji Chat A
   * [sample client written in node.js on github](https://github.com/juji-io/cli-client),
   * and [sample chat client written in Python on github](https://github.com/juji-io/juji-python-client).
 
-Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client. This requires using [GraphQL subscription](http://spec.graphql.org/June2018/) to enable the server to push data to your client. Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open.
+Juji's chat experience is built on top of [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to push data to the client. This requires using [GraphQL subscription](https://www.apollographql.com/docs/react/data/subscriptions/) to enable the server to push data to your client. Invoking a GraphQL subscription must be done over WebSocket because data will be streamed in and the connection must be kept open.
 
 Clients can be written in any programming language that supports Websocket. For example, most Web browsers support [this Javascript Websocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket), so it is easy to write a Juji client that works for Web browsers.
 
@@ -209,7 +203,7 @@ The following steps are required to initiate a chat session via the API:
 
 ### Create participation
 
-First, note the [Web release URL of the REP](https://juji.io/docs/release/#deploy-to-website), e.g.
+First, note the [Web release URL of the REP](juji-studio/release.md#deploy-to-website), e.g.
 `https://juji.ai/pre-chat/5f4d4a16-9471-4b84-a26a-94a286a38c63`. Make a HTTP `POST` request to that URL
 with the following form data:
 
@@ -508,3 +502,9 @@ Similarly, the response will be a string of data in csv format. The data include
 First Name,Last Name,Email,User Agent,Completion Code,Location,Start,Finish,Duration (minutes),Channel,Gather demographics: gender,Asked FAQs,Openness,Imagination,Artistic_Interest,Feelings,Adventurousness,Intellectual_Curiosity,Liberalism,Conscientiousness,Self_Efficacy,Orderliness,Dutifulness,Achievement_Striving,Self_Discipline,Cautiousness,Extroversion,Friendliness,Gregariousness,Assertiveness,Activity_Level,Excitement_Seeking,Cheerfulness,Agreeableness,Trust,Straightforwardness,Altruism,Cooperation,Modesty,Sympathy,Neuroticism,Anxiety,Anger,Depression,Self_Consciousness,Impulsiveness,Vulnerability
 t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",,"{:timezone ""America/Los_Angeles"", :ip ""12.34.56.789"", :area-code 0, :dma-code 0, :city ""A"", :country-code ""US"", :metro-code 0, :longitude -123.4567, :postal-code ""12345"", :region ""California"", :org ""AT&T Services, Inc."", :latitude 123.4567, :country-name ""United States""}",2021-01-20 23:24:06,,1,web,,,36.13541798365461,13.290581805094925,69.90396487992511,77.15953217560208,14.352478113721617,21.452611092889672,20.653339834694272,44.28527848667517,54.561037503275145,82.38387886673544,91.3233545692471,10.616104982056406,19.55675956043462,7.270535438302267,75.0045233539362,84.47620138247996,80.35717998131344,66.9274661801379,54.78618912035408,82.03414681082974,81.44595664850205,82.06446262912935,90.87886328546921,85.49197212672262,83.83877023080315,75.70710344618357,88.70960654682591,67.76046013877169,78.67947741962988,67.04116468437702,86.20177231934017,78.76662084022674,69.74154161142214,99.68790702532878,70.6378580370844
 ```
+
+## References
+
+* Please read about Juji API [introduction](api.md) first for important API concepts to help you better understand this guide. Additional API documentation also includes [Juji Cognitive Core API](psychographic-api.md). 
+* [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
+* [Juji client github page](https://github.com/juji-io/cli-client) contains concrete examples written in JavaScript for all the API calls in this guide, please refer to it for detail.
