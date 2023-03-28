@@ -17,7 +17,7 @@ biases](https://cla.auburn.edu/news/articles/tydkydk-that-ai-knows-about-you/). 
 finding a more natural, objective, and affordable approach to measure
 individuals' unique psychographic characteristics accurately at scale is a quest
 for the holy grill for many industries, including [marketing](https://blog.hubspot.com/insiders/marketing-psychographics), [talent
-management](https://www.marketscreener.com/quote/stock/SALESFORCE-COM-INC-12180/news/Salesforce-com-Is-a-Robot-the-Key-To-Your-Next-Successful-Interview-41863174/), [healthcare](https://www.ajmc.com/view/understanding-psychographics-and-how-all-health-care-behavior-is-local, and [education](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=50d4a59232d235c4526af6eb2483471e74ac73a6).
+management](https://www.marketscreener.com/quote/stock/SALESFORCE-COM-INC-12180/news/Salesforce-com-Is-a-Robot-the-Key-To-Your-Next-Successful-Interview-41863174/), [healthcare](https://www.ajmc.com/view/understanding-psychographics-and-how-all-health-care-behavior-is-local), and [education](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=50d4a59232d235c4526af6eb2483471e74ac73a6).
 
 Building on our extensive experience of Computational Psychology, Juji
 has built the world's [most comprehensively validated psychographic
