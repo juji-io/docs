@@ -3,9 +3,9 @@
 The Juji Cognitive AI infrastructure consists of two core cognitive AI
 engines: **Psychographic Insights Engine** and **Cognitive AI Chat
 Engine**, both of which are **domain and industry
-independent**. Developers can use Juji API to access both Juji
-engines and build their own cognitive AI
-applications in **any domain and industry**.
+independent**. Developers can access both Juji engines via API and
+build their own cognitive AI applications in **any domain and
+industry**.
 
 ## Juji Psychographic Insights API
 
@@ -27,42 +27,42 @@ human characteristics are typically persisted over a long period of
 time and are shown to be effective at [predicting human real-world
 behavior](https://www.yahoo.com/now/juji-inc-powers-auburn-led-143000709.html).
 
-Given the power of psycholographics and its wide applicability to many
-domains and industries, developers can use the Juji Psychographic
-Insights API to build a wide range of AI applications across domains
-or industries. These AI applications can automatically derive user
-psychographic insights and use the discovered insights to
+Given the power of psycholographics and its wide applicability to
+virtually **any** domain and industry, developers can use the Juji
+Psychographic Insights API to build a wide range of AI applications
+across domains or industries. These AI applications can automatically
+derive user psychographic insights and use the discovered insights to
 predict or guide user behavior, including
 
 * financial applications that auto-assess borrowers' personality
-  traits and recommend suitable financial products.
+  traits and recommend suitable financial products;
 
 * educational applications that auto-discover students'
 psychologic needs and learning style to match-make students with
-learning programs and mentors.
+learning programs and mentors;
 
-* talent management applications that can auto-infer the soft skills
+* talent management applications that auto-assess the soft skills
 and moral characters of police candidates to determine their fit for a
-police job role.
+police job role; and
 
-* healthcare applications that can auto-infer patients' personality
+* healthcare applications that auto-infer patients' personality
   traits and deliver hyper-personalized treatments.
 
 
 ##Juji Cognitive AI Chat API
 
-While the Juji Psychographic Insights engine is very powerful at
-gaining deep insights into each individual and can be used alone,
-**end-to-end killer AI applications** are the ones that can best harness
-its power. Typically, such an application auto-gathers
-high-quality user data for psychographic inference and then uses the
-inferred psychographic insights to predict and guide user behavior and
-aid human decision making.
+While the Juji Psychographic Insights engine can be used alone, it is
+best used in an **end-to-end AI application** to maximize
+the power of psychographics. Typically, such an application
+auto-gathers high-quality user data for psychographic inference and
+then uses the inferred psychographic insights to predict and guide
+user behavior and aid human decision making.
 
-One class of such killer applications is AI assistants that can
-automate high-touch, human-AI engagements via two-way
-conversations. However, creating AI assistants from scratch is
-nontrivial, requiring AI and IT expertise, and extensive computational
+One class of **killer applications** for best harnessing the power of
+psychographics is cognitive AI assistants that can automate
+high-touch, human-AI engagements via two-way conversations. However,
+creating cognitive AI assistants from scratch is nontrivial, requiring
+Psychology, AI and IT expertise, as well as extensive computational
 and data resources.
 
 [Juji Cognitive AI Chat API](cognitive-ai-chatbot-api.md) enables
@@ -73,10 +73,11 @@ their chatbot in multiple forms, includng in a text chat window on a
 website, a third-party mobile application, or an embodied AI agent.
 
 For example, developers can use the Juji Cognitive Chat API to rapidly
-create an AI chatbot in the healthcare wellness domain, which will gather
-memeber data naturally in a chat and feeds the data to the Juji
-Psychographic API for analysis. The AI chatbot can then use the
-inferred psychographics to deliver hyper-personalized wellness guidance.
+create an AI chatbot in the healthcare wellness domain, which will
+gather memeber data naturally in a conversation and feeds the data to
+the Juji Psychographic API for analysis. The AI chatbot can then use
+the inferred psychographics to deliver hyper-personalized wellness
+guidance in the same conversation.
 
 
 ## Authentication
