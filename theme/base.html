@@ -97,17 +97,18 @@
 <div id='jujibot-bubble'
      aria-label='Chat pop-up text bubble.'
      alt='Chat pop-up text bubble.'
-     tabIndex='0'>
+     tabIndex='0'
+     style='display:none;'>
 <button id='close-popup'
         aria-label='Click on this button to minimize the chat pop-up.'
         alt='Click on this button to minimize the chat pop-up.'
         tabIndex='0'>
 </button>
-    Click on me to chat
+    Click to chat
 </div>
 <div id='jujibot-icon'
         background='#8BDFCD'
-        img_url='https://juji.ai/assets/img/content/juji-profile.png'
+        img_url='https://juji.ai/assets/img/content/juji-profile-mini.webp'
         role='button'
         tabIndex='0'
         alt='Click to chat with Juji'
@@ -116,10 +117,12 @@
 <button id='minimized-chat-icon'
         aria-label='Click on this button to maximize the chat pop-up.'
         alt='Click on this button to maximize the chat pop-up.'
-        tabIndex='0'>
+        tabIndex='0'
+        style='display:none;'>
         <img id='minimized-chat-icon-image' src='https://juji.ai/assets/img/ui/user-input-icon.png'
              aria-label='minimized chat icon image'
-             alt='minimized chat icon image'></img>
+             alt='minimized chat icon image'
+             style='display:none;'></img>
 </button>  
 <input id='juji-chat-status' type='hidden' value='not chatted'>
 <!-- GA SECTION: Update Google Analytics linker config -->
@@ -134,6 +137,7 @@
 </script> -->
 <!-- GA SECTION end -->
 <script>
+ window.addEventListener("load", (event) => {
     var script = document.createElement('script');
     var minimizedIconWidthAndHeight = 50;
     script.type = 'text/javascript';
@@ -161,7 +165,7 @@
             js.src = 'https://juji.ai/assets/js/webplugin-2.0.0.js';
        fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'juji-webplugin'));
-    }
+    }});
 </script>
 <div id='juji-chatbot'
         chat_url='https://juji.ai/pre-chat/6197eb12-2a20-4164-be37-cf2240655ede?start-chat=false'>
