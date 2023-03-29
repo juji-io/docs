@@ -27,46 +27,56 @@ human characteristics are typically persisted over a long period of
 time and are shown to be effective at [predicting human real-world
 behavior](https://www.yahoo.com/now/juji-inc-powers-auburn-led-143000709.html).
 
-Thus the Juji Psychographic Insights API enables developers to build a
-wide range of applications across diverse domains or industries, which
-can automatically derive psychographic insights of a target audience
-and use the discovered insights to predict or guide audience behavior:
+Given the power of psycholographics and its wide applicability to many
+domains and industries, developers can use the Juji Psychographic
+Insights API to build a wide range of AI applications across domains
+or industries. These AI applications can automatically derive user
+psychographic insights and use the discovered insights to
+predict or guide user behavior, including
 
-* financial applications that auto-assess lenders' personality traits
-and recommend suitable financial products.
+* financial applications that auto-assess borrowers' personality
+  traits and recommend suitable financial products.
 
 * educational applications that auto-discover students'
 psychologic needs and learning style to match-make students with
-mentors.
+learning programs and mentors.
 
 * talent management applications that can auto-infer the soft skills
 and moral characters of police candidates to determine their fit for a
 police job role.
 
+* healthcare applications that can auto-infer patients' personality
+  traits and deliver hyper-personalized treatments.
+
+
 ##Juji Cognitive AI Chat API
 
-While the Juji Psychographic Insights API enables developers to
-discover people's unique psychographic characteristics from text,
-developers may need to generate the data (i.e., user text) needed to
-derive user psychographic insights or employ the derived psychographic
-insights to achieve specific goals (e.g., aiding users in their
-decision making).
+While the Juji Psychographic Insights engine is very powerful at
+gaining deep insights into each individual and can be used alone,
+**end-to-end killer AI applications** are the ones that can best harness
+its power. Typically, such an application auto-gathers
+high-quality user data for psychographic inference and then uses the
+inferred psychographic insights to predict and guide user behavior and
+aid human decision making.
 
-[Juji Cognitive AI Chat API]](cognitive-ai-chatbot-api.md) enables
+One class of such killer applications is AI assistants that can
+automate high-touch, human-AI engagements via two-way
+conversations. However, creating AI assistants from scratch is
+nontrivial, requiring AI and IT expertise, and extensive computational
+and data resources.
+
+[Juji Cognitive AI Chat API](cognitive-ai-chatbot-api.md) enables
 developers to access the Juji Cognitive AI Chat engine and rapidly
 build an **end-to-end** cognitive AI assistant in a form of chatbot in
 **any domain or industry**. Developers can also use the API to deploy
 their chatbot in multiple forms, includng in a text chat window on a
 website, a third-party mobile application, or an embodied AI agent.
 
-While developers can use the Juji Psychographic API and the Juji
-Cognitive Chat API independent of each other, we strongly encourage
-developers to use the two sets of API together to maximize the ROI of
-a cognitive AI application. For example, developers can use the Juji
-Cognitive Chat API to rapidly create an AI chatbot that will gather
-user data naturally in a chat and feeds the data to Juji Psychographic
-API for analysis. The analysis results, user psychographics, can then
-be used by the chatbot to deliver hyper-personalized guidance.
+For example, developers can use the Juji Cognitive Chat API to rapidly
+create an AI chatbot in the healthcare wellness domain, which will gather
+memeber data naturally in a chat and feeds the data to the Juji
+Psychographic API for analysis. The AI chatbot can then use the
+inferred psychographics to deliver hyper-personalized wellness guidance.
 
 
 ## Authentication
