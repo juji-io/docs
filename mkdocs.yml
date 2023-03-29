@@ -111,8 +111,8 @@ nav:
     - Custom Topics: custom-topics.md
   - Juji API:
     - Introduction: api.md
-    - Juji Psychographic Insights: psychographic-api.md
-    - Juji Cognitive AI Chat: cognitive-ai-chatbot-api.md
+    - Juji Psychographic Insights API: psychographic-api.md
+    - Juji Cognitive AI Chat API: cognitive-ai-chatbot-api.md
     # - Chat API: chat.md
     # - Data Model: nouns.md
     # - Chat Creation API: client.md

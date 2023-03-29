@@ -3,36 +3,42 @@
 "If you wish to persuade me, you must think my thoughts, feel my
 feelings and speak my words." —Cicero
 
-When coming to reading one's mind or understanding someone's thoughts,
+When coming to reading one's mind or understanding one's thoughts,
 the closest approach perhaps is to learn about a person's unique
 psychographic characteristics, such as their personality traits,
 temperament,and psychological motivations.
+
+##Introduction
 
 Traditionally, item-based, self-report approaches (e.g., personality
 tests) are used to discover one's psychographic
 characteristics. However, such approaches are subjective
 (self-reported) and [prone to faking due to social desirability
-biases](https://cla.auburn.edu/news/articles/tydkydk-that-ai-knows-about-you/). Thus,
-finding a more natural, objective, and affordable approach to measure
-individuals' unique psychographic characteristics accurately at scale is a quest
-for the holy grill for many industries, including [marketing](https://blog.hubspot.com/insiders/marketing-psychographics), [talent
-management](https://www.marketscreener.com/quote/stock/SALESFORCE-COM-INC-12180/news/Salesforce-com-Is-a-Robot-the-Key-To-Your-Next-Successful-Interview-41863174/), [healthcare](https://www.ajmc.com/view/understanding-psychographics-and-how-all-health-care-behavior-is-local), and [education](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=50d4a59232d235c4526af6eb2483471e74ac73a6).
+biases](https://cla.auburn.edu/news/articles/tydkydk-that-ai-knows-about-you/). Thus, finding a more natural, objective, and affordable approach to
+accurately measure individuals' unique psychographic characteristics
+at scale has become a quest for the holy grill in many industries,
+including
+[marketing](https://blog.hubspot.com/insiders/marketing-psychographics),
+[talent
+management](https://www.marketscreener.com/quote/stock/SALESFORCE-COM-INC-12180/news/Salesforce-com-Is-a-Robot-the-Key-To-Your-Next-Successful-Interview-41863174/),
+[healthcare](https://www.ajmc.com/view/understanding-psychographics-and-how-all-health-care-behavior-is-local),
+and
+[education](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=50d4a59232d235c4526af6eb2483471e74ac73a6).
 
 Building on our extensive experience of Computational Psychology, Juji
 has built the world's only evidence-based, [most comprehensively
 validated psychographic inference
 engine](https://au.finance.yahoo.com/news/juji-inc-powers-auburn-led-143000709.html). Developers
-can access the engine via the Juji Psychographic Insights API to
-analyze anyone's text, such as blogs, social media posts, chat text,
-and voice transcripts and infer the person's unique psychographic
+can access the engine via the Juji Psychographic Insights API, 
+analyzing a person's text, such as blogs, social media posts, chat text,
+and voice transcripts and inferring their unique psychographic
 characteristics, such as personality and psychological motivations.
 
 
-Juji offers 100+ psychographic trait models, including fundamental
-personality trait models and composite psychographic
-models. Developers use only one API to access all psychographic
-inference models that infer psychographic characteristics by analyzing
-text produced by an individual or a brand.
+Juji can automatically infer 100+ psychographic trait models,
+including fundamental personality trait models and composite
+psychographic models. Developers use one type of API to access all
+trait models.
 
 
 ## Inferring Fundamental Personality Trait Models
