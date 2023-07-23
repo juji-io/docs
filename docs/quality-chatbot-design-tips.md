@@ -405,7 +405,7 @@ Make the paraphrases more specific and the specifics can be determined by the co
 
 You can paraphrase a question easily with Huhi, so your attempts to help a user get the clarity s/he needs will feel natural, friendly and human. As a chatbot
 designer, you just need to design a chatbot question with severa alternatives (see <a
-href="https://juji.io/docs/chatbot-design-tips/#paraphrase-messages-and-requests">paraphrase
+href="https://juji.io/docs/quality-chatbot-design-tips/#paraphrase-messages-and-requests">paraphrase
 a chatbot question</a>) and Juji takes care of the rest, with the help of our ever-growing built-in library that captures, among many other things, those pesky clarification questions. By reprhasing your chatbot's question, calmly and naturalistically, we are far more likely to keep the chat going, once the user feels more comfortable moving forward with a useful response that helps her/hiim and Juji. One last note on this area. Juji is designed to be a very cooperative chatbot, which thrives on teamwork with the user. That teamwork makes for better responses and greater user loyalty.
 
 ## **Preview Chatbot Often When Building**

@@ -119,7 +119,7 @@ Labelling is also critical to working out which topics are delivering the goods 
 <p align="center"><img src="../img/label-index-answers.png" alt="A
 sensible label - label user responses in audience report" width="650"/></p>
 
-By the way [follow these instructuions](../reports#export-audience-data) to download
+By the way [follow these instructuions](../juji-studio/reports#export-audience-data) to download
 an audience report.
 
 ## **Reuse or Share Juji Chatbots**

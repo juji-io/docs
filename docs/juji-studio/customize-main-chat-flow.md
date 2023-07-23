@@ -1,4 +1,4 @@
-# **Customize Main Chat Flow** 
+# **Customize Main Chat Flow**
 
 <p align="center"><img src="https://juji.io/docs/img/design-main-flow.png" alt="Design page" width="650px"/></p>
 
@@ -53,7 +53,7 @@ This is for a chatbot to send a message to a user **without** waiting for
   messages](./#type-of-chatbot-message) as explained below in detail.
 
 
-**IMPORTANT TIP** If you intend to have your chatbot wait for a user input before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question. 
+**IMPORTANT TIP** If you intend to have your chatbot wait for a user input before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question.
 
 <p align="center">
 <img src="https://juji.io/docs/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
@@ -67,18 +67,18 @@ tip](https://juji.io/docs/chatbot-design-tips-advanced#use-proper-chatbot-reques
 
 No matter whether you wish to configure your chatbot to make a request (aka asking users a question) or send a message, once a topic is added, you can then edit the topic in four sections:
 
-* [Chatbot Content](./#chatbot-content). This is to customize a message that a chatbot will send to your users. 
+* [Chatbot Content](./#chatbot-content). This is to customize a message that a chatbot will send to your users.
 
-* [Chatbot Responses](./#Chatbot-responses) (only for request topics). This is to customize a chatbot's response to a user's reply to a question asked by the chatbot. 
+* [Chatbot Responses](./#Chatbot-responses) (only for request topics). This is to customize a chatbot's response to a user's reply to a question asked by the chatbot.
 
-* [Chatbot Actions](./#chatbot-actions). This is to customize a chatbot's actions prior to or after the chatbot send users a message (e.g., posing a question or displaying an image). 
+* [Chatbot Actions](./#chatbot-actions). This is to customize a chatbot's actions prior to or after the chatbot send users a message (e.g., posing a question or displaying an image).
 
 * [Topic Settings](./#topic-settings). This is to customize various settings related to a request or a simple message.
 
 
 ### **Chatbot Content**
 
-You can customize a chatbot's message(s) to users during a chat.  Please refer to [design best practices](https://juji.io/docs/chatbot-design-tips) for composing the content of such a message. Below lists various message editing options. 
+You can customize a chatbot's message(s) to users during a chat.  Please refer to [design best practices](https://juji.io/docs/quality-chatbot-design-tips) for composing the content of such a message. Below lists various message editing options.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/msg-edit-options.png" alt="chatbot message editing options" width="550"/></p>
 
@@ -93,7 +93,7 @@ Facebook Messenger.
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-image-edit.png" alt="chatbot message including an image" width="550"/></p>
 
 
-The screenshot below shows how an image is displayed in a chat. It is displayed right before or after a text message. 
+The screenshot below shows how an image is displayed in a chat. It is displayed right before or after a text message.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/image-in-chat.png" alt="display an image in a chat" width="550"/></p>
 
@@ -106,20 +106,20 @@ The screenshot below shows how an image is displayed in a chat. It is displayed 
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/add-hyperlink.png" alt="display an image in a chat" width="550"/></p>
 
-During a chat, the content of the hyperlink can be accessed in one of the two ways: in a separate browser tab or within the same window where the chatbot sits. When you insert a hyperlink, you can select which option you'd prefer.  
+During a chat, the content of the hyperlink can be accessed in one of the two ways: in a separate browser tab or within the same window where the chatbot sits. When you insert a hyperlink, you can select which option you'd prefer.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/add-hyperlink-options.png" alt="display an image in a chat" width="550"/></p>
 
-The clickthroughs of any inserted hyperlinks are tracked automatically. This means that a chatbot owner can view which hyperlinks are clicked on and how frequently, which provides the indication what content your users might be interested. See ["Reports"](https://juji.io/docs/juji-studio/reports/) dashboard to view the clickthroughs of hyperlinks. 
+The clickthroughs of any inserted hyperlinks are tracked automatically. This means that a chatbot owner can view which hyperlinks are clicked on and how frequently, which provides the indication what content your users might be interested. See ["Reports"](https://juji.io/docs/juji-studio/reports/) dashboard to view the clickthroughs of hyperlinks.
 
 
 * **Call an API** A chatbot may need to access information stored in a third-party system (e.g., a CMS or CRM) in order to communicate information tailored to aspecific user. For example, if a prospective student asks about his/her application status, the chatbot needs to access Salesforce database to retrieve the requested information. To do so, you can insert an API call to access the third-party information. Specifically, just click on the "call API" button and then follow the API call pop-up to insert the API call details.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/call-api.png" alt="display an image in a chat" width="550"/></p>
 
-Your IT personnel often knows which API is supported and the syntax of such API calls. You don't need to write any code, you just need to get the API call details from them and copy & paste them into the API pop-up window. Here is a [Youtube Video Tutorial](https://youtu.be/LNY2S3PbSAY) on how to use APIs to connect your chatbot with other systems. 
+Your IT personnel often knows which API is supported and the syntax of such API calls. You don't need to write any code, you just need to get the API call details from them and copy & paste them into the API pop-up window. Here is a [Youtube Video Tutorial](https://youtu.be/LNY2S3PbSAY) on how to use APIs to connect your chatbot with other systems.
 
-* **Add a function** Use the "Insert a function" button (`fx`) to add a function, such as `(user-first-name)` to personalize the chatbot message or make a dynamic message (e.g., based on a user's input). Watch [this Youtube video tutorial](https://youtu.be/dVjvjB-bq5w) on how to use various functions including external functions to customize a chatbot message. 
+* **Add a function** Use the "Insert a function" button (`fx`) to add a function, such as `(user-first-name)` to personalize the chatbot message or make a dynamic message (e.g., based on a user's input). Watch [this Youtube video tutorial](https://youtu.be/dVjvjB-bq5w) on how to use various functions including external functions to customize a chatbot message.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-function.png" alt="insert a function in a chatbot message" width="550"/></p>
 
@@ -129,7 +129,7 @@ As shown the example below, click on the "Add attribute" button insert attribute
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-attribute.png" alt="insert attribute in a chatbot message" width="550"/></p>
 
-Attributes are very powerful elements that can be used in chatbot design and help a chatbot learn new knowledge, maintain a memory, and accomplish complex tasks. Watch [this Youtube Video Tutorial](https://youtu.be/3jxvygIvHcg) to see how attributes can be used in creating a powerful AI chatbot. 
+Attributes are very powerful elements that can be used in chatbot design and help a chatbot learn new knowledge, maintain a memory, and accomplish complex tasks. Watch [this Youtube Video Tutorial](https://youtu.be/3jxvygIvHcg) to see how attributes can be used in creating a powerful AI chatbot.
 
 * **Add quick texting messages** In certain parts of conversation, you may want to provide users with a "quick texting" convenience. This means, when a chatbot asks a question, it also provides a couple of quick reply options, which a user can just click on the text to reply vs. type the text and then submit. This convenient reply mode is useful especially on a mobile device. The main difference between "quick texting" and radio buttons is that "quick texting" still allows users to provide other forms of responses while radio buttons take only button clicks. It provides the interaction convenience while remaining open to diverse user responses. We recommend that quick texting be used sparsely because a good conversation should not be dominated by "click to text".
 
@@ -148,7 +148,7 @@ Here is how "click to text" messages look like in a chat:
 Use the `+` button on the right of the text bubble to add paraphrases
     of the message (see the screenshot below). The paraphrases will be
     selected by your chatbot randomly to send during a chat. See [best
-    practices](https://juji.io/docs/chatbot-design-tips) for good uses
+    practices](https://juji.io/docs/quality-chatbot-design-tips) for good uses
     of paraphrases.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/add-paraphrases.png" alt="add paraphrases of a chatbot message" width="550"/></p>
@@ -164,7 +164,7 @@ You can also view all the paraphrases using the "down arrow" button:
 
 You can also customize chatbot behavior based on user responses. The green "Customization" button shown
     below can be used to add a group of chatbot actions under one
-    condition (trigger). Refer to the [design best practices](https://juji.io/docs/chatbot-design-tips) for defining specific conditions and corresponding custom chatbot actions.
+    condition (trigger). Refer to the [design best practices](https://juji.io/docs/quality-chatbot-design-tips) for defining specific conditions and corresponding custom chatbot actions.
 
 <p align="center"><img src="https://juji.io/docs/img/design-chatbot-action.png" alt="design
 chatbot actions" width="550"/></p>
@@ -173,7 +173,7 @@ In a natural conversation, different user behavior should drive
 different chatbot actions. Juji supports the customization of chatbot
 behavior in many ways. This section will use a set of concrete
 examples to show how to easily customize a chatbot behavior based on
-application needs. 
+application needs.
 
 #### <a name="built-in-dialog"></a> **Use Juji Built-in Dialog**
 
@@ -254,7 +254,7 @@ icon to pin a found dialog (see above). This means that changes in
 your request label will no longer trigger Juji to search and
 change the matched dialog automatically.
 
-Besides reusing a Juji built-in dialog, you can always customize 
+Besides reusing a Juji built-in dialog, you can always customize
 a built-in dialog. Next we use a set of examples to show how to
 customize built-in dialogs.
 
@@ -275,7 +275,7 @@ conditions to capture user behavior:
 
 * `is-similar-to` If a user input is similar to one or more
     sentences or phrases. One can also specify the similarity
-    threshold. By default, the threshold is set at 80%. 
+    threshold. By default, the threshold is set at 80%.
 
 <p align="center"><img src="https://juji.io/docs/img/is-similar-to.png" alt="add a is-similar-to
 trigger" width="450"/></p>
@@ -301,7 +301,7 @@ trigger" width="450"/></p>
 trigger" width="450"/></p>
 
 * `is-anything-else` If a user input matches anything else. This is
-    basically the **default** condition. 
+    basically the **default** condition.
 
 <p align="center"><img src="https://juji.io/docs/img/default-cond.png" alt="use a default condition" width="450"/></p>
 
@@ -328,7 +328,7 @@ the user.
 
 To decide which type of trigger (chatbot condition) to use, please
 check out this [design
-tip](https://juji.io/docs/chatbot-design-tips-advanced#use-proper-chatbot-trigger).
+tip](https://juji.io/docs/quality-chatbot-design-tips-advanced#use-proper-chatbot-trigger).
 
 
 #### **Customize THEN Actions**
@@ -354,7 +354,7 @@ chatbot actions can be defined:
 
 * `Follow-up Request` This defines a chatbot request that allows the
   chatbot to ask a follow-up question. This defines a full topic - a
-  request topic. 
+  request topic.
 
 ### **Chatbot Actions**
 
@@ -366,13 +366,13 @@ Besides customizing a chatbot's response to user input, you can also customize a
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/customize-chatbot-action-2.png" alt="customize chatbot actions after sending a message" width="550"/></p>
 
 
-Use these actions to run background options. For example, a chatbot collects a user input (e.g., date of birth) and wants to check whether such an input is consistent with the user's previous input. To do so, one can customize a chatbot's action (post action) after collecting the user's date of birth. This post action will compare the current user input with the previous input. Sometimes certain actions may need to be performed before a chatbot sends a message to user. For example, if a chatbot wants to calculate a tax on a particular purchase, it may need to retrieve the tax rate per the user location. In this case, one could define a custom action (prior action) to retrieve the tax rate before sending a message to tell the user the total purchase price.  
+Use these actions to run background options. For example, a chatbot collects a user input (e.g., date of birth) and wants to check whether such an input is consistent with the user's previous input. To do so, one can customize a chatbot's action (post action) after collecting the user's date of birth. This post action will compare the current user input with the previous input. Sometimes certain actions may need to be performed before a chatbot sends a message to user. For example, if a chatbot wants to calculate a tax on a particular purchase, it may need to retrieve the tax rate per the user location. In this case, one could define a custom action (prior action) to retrieve the tax rate before sending a message to tell the user the total purchase price.
 
 
 ### Topic Settings
 
-You can also customize one or more topic-specific parameters, such as whether a "request" topic requires user response and the length of user responses. Please refer to [best practices](https://juji.io/docs/chatbot-design-tips) to fine tune these parameters.
-    
+You can also customize one or more topic-specific parameters, such as whether a "request" topic requires user response and the length of user responses. Please refer to [best practices](https://juji.io/docs/quality-chatbot-design-tips) to fine tune these parameters.
+
 <a name="topic-settings"></a><p align="center">
 <img src="https://juji.io/docs/img/design-topic-settings.png" alt="design topic settings"
 width="550"/></p>
@@ -392,7 +392,7 @@ topic" width="350"/></p>
 To clone a topic, mouse over the corresponding topic card listed in
 the left topic panel. Then click on the green clone icon to clone the
 topic. The cloned topic will retain all behavior of the original topic.
- 
+
 <p align="center"><img src="https://juji.io/docs/img/design-clone-topic.png" alt="clone
 a topic" width="350"/></p>
 
@@ -402,7 +402,7 @@ Although the chat flow is presented a list of topics, but the inter-connected to
 
 <p align="center"><img src="https://juji.io/docs/img/chatflow-topic-icons.png" alt="Chatflow topic icons" width="350"/></p>
 
- 
+
 ### **View Topic Text List**
 
 <p align="center"><img src="https://juji.io/docs/img/topic-list-text-icon.png" alt="Topic text list icon" width="350"/></p>
@@ -419,7 +419,7 @@ Click on the Topic Graph icon, you will see all the topics represented in a grap
 
 <p align="center"><img src="https://juji.io/docs/img/topic-graph.png" alt="Topic graph" width="700"/></p>
 
-When you click on one of the graph nodes, not only the node turns yellow, the corresponding topic editor in the design view is also selected and open. So you can use the topic graph as a convenient topic navigator for editing topics. 
+When you click on one of the graph nodes, not only the node turns yellow, the corresponding topic editor in the design view is also selected and open. So you can use the topic graph as a convenient topic navigator for editing topics.
 
 Here is how to do it: first drag out the topic graph tab as a window, then lay this window side by side with the design view, or lay it top and down with the design view. The idea is to show both windows at the same time, so you can use the topic graph to navigate between topics for editing.
 
@@ -446,13 +446,13 @@ understand users' needs and wants.
 * **Label** Typically, a label is the short form ("stem") of a chatbot
 request. Although it automatically takes the form of the main message,
 it is good to give a sensible label as it is also used for multiple
-purposes (see [best practices](https://juji.io/docs/chatbot-design-tips)).
+purposes (see [best practices](https://juji.io/docs/quality-chatbot-design-tips)).
 
 * **Main Message** (required) This is the question that users will see
     in a chat. Instead of asking a question directly, a good message
     should also contain the context or motivation of the
     asking.
-    
+
 * **Re-asking Messages** (optional) During a chat, a user may not
     always respond to a chatbot question. In such a case, a chatbot
     may want to repeat the question. One can add (green `+`)
@@ -460,7 +460,7 @@ purposes (see [best practices](https://juji.io/docs/chatbot-design-tips)).
     can be used to re-ask the question by checking the `Re-asking
     Message` box.
 
-See [best practices](https://juji.io/docs/chatbot-design-tips) on how to phrase free-text
+See [best practices](https://juji.io/docs/quality-chatbot-design-tips) on how to phrase free-text
 questions in a conversation.
 
 <p align="center"><img src="https://juji.io/docs/img/design-add-free-text-q.png" alt="add a
@@ -611,7 +611,7 @@ shown below, each card contains:
 
 * **Image** (optional image URL)
 
-* **URL Buttons** (up to 3 links per card) 
+* **URL Buttons** (up to 3 links per card)
 
 <p align="center"><img src="https://juji.io/docs/img/design-add-FB-media.png" alt="Facebook Media Card" width="550"/></p>
 
@@ -629,30 +629,30 @@ deployed on a website.
 To help jump start the design of a chatbot, Juji has made two special topics:
 * [Welcome Topic](./#welcome-topic). This is the **first topic** in all Juji AI assistant templates. It cannot be removed. It sends the first chatbot message to users when a chat session starts. One can however customize the welcome message.
 
-* [Wrap-up Topic](./#wrapup-topic). This is the **last topic** in all Juji AI assistant templates. It cannot be removed. It sends the last chatbot message to users when a chat session ends. One can customize the wrap up message as well as the chat ending options.   
+* [Wrap-up Topic](./#wrapup-topic). This is the **last topic** in all Juji AI assistant templates. It cannot be removed. It sends the last chatbot message to users when a chat session ends. One can customize the wrap up message as well as the chat ending options.
 
 ### Welcome Topic
 
 No matter whether you use a blank template or a task-specific Juji template to create a chatbot, every chatbot comes with two pre-built topics, the **Welcome** topic that starts a conversation and the **Wrap-up** topic that ends a conversation.
 
-To start a good or warm conversation, you may wish to edit the default messages in the **Welcome** topic to suit your context. Please refer to [this recorded webinar](https://youtu.be/Aw_S2-xi8Tc) to see how to phrase custom welcome messages for different use cases.   
+To start a good or warm conversation, you may wish to edit the default messages in the **Welcome** topic to suit your context. Please refer to [this recorded webinar](https://youtu.be/Aw_S2-xi8Tc) to see how to phrase custom welcome messages for different use cases.
 
-#### **Suspend Current Chat** 
+#### **Suspend Current Chat**
 
 For various reasons, you may want to pause a chatbot before letting it
 interact with your audience again. You can do so easily in the **Welcome** topic:
 
 * Click on the **`Welcome`** card
 
-* Click on the slider under the welcome message (on the right panel) to suspend a chat. See the screenshot below. 
+* Click on the slider under the welcome message (on the right panel) to suspend a chat. See the screenshot below.
 
 * Edit the welcome message accordingly to inform users about the suspension/pause.
 
 <p align="center"><img src="https://juji.io/docs/img/suspend-chatbot.png" alt="Suspend chat" width="650"/></p>
 
-**IMPORTANT TIP** If your chatbot is deployed via a web URL, you may also want to change the greeting message on the [web cover page](https://juji.io/docs/release#deploy-to-website) to inform future users about the pause/suspension.
+**IMPORTANT TIP** If your chatbot is deployed via a web URL, you may also want to change the greeting message on the [web cover page](https://juji.io/docs/juji-studio/release#deploy-to-website) to inform future users about the pause/suspension.
 
-### Wrap-up Topic 
+### Wrap-up Topic
 
 Another Juji built-in topic for every chatbot is the **Wrap-up**
 topic. One may want to customize a chatbot's ending behavior. For
@@ -678,7 +678,7 @@ Then click on the text bubble or the `pencil` icon to edit the topic:
 <p align="center"><img src="https://juji.io/docs/img/custom-end-2.png" alt="customize end of chat: option 2"
 topic buttons" width="550"/></p>
 
-If you decide to end a conversation, you also have the option to redirect the ending to a custom URL of yours. Just enter the URL where you want the ending will be.  
+If you decide to end a conversation, you also have the option to redirect the ending to a custom URL of yours. Just enter the URL where you want the ending will be.
 
 
 
@@ -687,5 +687,3 @@ If you decide to end a conversation, you also have the option to redirect the en
 Once a chatbot is ready, you can deploy it onto a website or a
 Facebook page. Please check out [**Chatbot Deployment**](../release)
 to deploy your AI chatbot. If you wish to further customize your chatbot, such as its capabilities to handle user questions, please refer to [**Customize QA**](../customize-qa). If you wish to customize the chatbot's persona or other settings, please refer to [**Customize Chatbot Persona**](../customize-persona-beyond/).
-
-

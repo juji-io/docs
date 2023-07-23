@@ -114,7 +114,7 @@ this page, you can customize your chatbot persona. See [Customize Chatbot Person
 : Click on **`Design`** on the left menu pane, then click on the
 **`Custom`** persona. You can then define your own custom
 persona. More details are under [Customize Chatbot
-Persona](../design#chatbot-persona).
+Persona](../juji-studio/design#chatbot-persona).
 
 
 
@@ -339,7 +339,7 @@ the [required format](../design#customize-qa-and-fallback).
 ###What is the difference between 'contains-keywords` and `is-similar-to` trigger?
 ### When should I use `contains-keywords` vs. `is-similar-to` trigger to guide my chatbot?
 
-: To decide which type of trigger to use, please check out [this tip](../chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
+: To decide which type of trigger to use, please check out [this tip](../quality-chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
 
 
 <a name="!choice-vs-free-text"></a>
