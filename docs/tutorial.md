@@ -35,7 +35,8 @@ e.g., conducting conversational surveys (e.g., surveying users or employees) or 
 assessments).
 
 <div align="center">
-<iframe width="560" height="315" src="https://youtube.com/playlist?list=PLSxT_T7jUXcdoDQUnbfWtVeppIlJ5syuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLSxT_T7jUXcdoDQUnbfWtVeppIlJ5syuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ### How to Handle User Free-Text Q&A
 
@@ -76,7 +77,7 @@ This 47 seconds video shows  how to enable an AI chatbot to personalize each mes
 This 3-minute tutorial shows how Alicia makes a personalized production introduction based on user input.
 
 <div align="center">
-<iframe width="560" height="315" src="https://youtu.be/lNv0Ud8V2Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lNv0Ud8V2Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## AI Chatbot Applications
 
@@ -108,7 +109,7 @@ If you can use PowerPoint or Excel, you can create a cognitive AI chatbot to aug
 website and make your visitors and staff members infinitely happier.
 
 <div align="center">
-<iframe width="560" height="315" src="https://youtu.be/XkI9c4iBwl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XkI9c4iBwl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
 ### Smart E-Commerce on Facebook
@@ -120,4 +121,4 @@ website and make your visitors and staff members infinitely happier.
 ### Integrate Juji Chatbots with Third-Party Systems
 
 <div align="center">
-<iframe width="560" height="315" src="https://youtu.be/nUf9zyM2nbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nUf9zyM2nbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
