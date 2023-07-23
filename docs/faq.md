@@ -246,7 +246,7 @@ request" width="550"/></p>
 : This depends on your chatbot application. Applications that involve
 much knowledge especially complex knowledge may need many more
 questions than others. Here is a practical way to [anticipate the
-types of questions](../chatbot-design-tips#prepare-qa-list-and-chitchats)
+types of questions](../quality-chatbot-design-tips#prepare-qa-list-and-chitchats)
 your chatbot should handle. This list helps you jumpstart the smarts
 of your chatbot.
 
@@ -467,7 +467,7 @@ maintain your chatbot.
 <a name="!download-results"></a>
 ### Can I download the conversation results?
 
-: Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](../reports#export-audience-data) for more details.
+: Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](../juji-studio/reports#export-audience-data) for more details.
 
 
 <a name="!sync-w-crm"></a>

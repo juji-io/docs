@@ -154,7 +154,7 @@ As we can see, there are quite a few sub-fields. Let's take a look at them one b
 * default-response-to-question: Its value is a string. The chatbot will use this to respond if it does not understand a user's question. If the string is empty, a default response is used.
 * ad-lib: Its value is an vector of maps, where each map represents a fallback topic. Currently only Juji's built-in fallback topics are supported. Designers can start with the default topics and remove the ones they don't want.
 * translations: Its value is an vector of maps, where each map represents a translation topic. Currently only Juji's built-in translation topics are supported. The translation topics are applied after the main topic. In most cases, this field doesn't need to be changed.
-* persona: Its value is a map that defines the chatbot persona. It does not need to be changed if the chat is not happening inside a [Juji web release](../release#deploy-to-website) UI.
+* persona: Its value is a map that defines the chatbot persona. It does not need to be changed if the chat is not happening inside a [Juji web release](../juji-studio/release#deploy-to-website) UI.
 
 ## items
 The value of `:items` is a map where each key-value pair is an item as value and its id as key. An item's id is an unique non-negative integer. Below is an example of an items map that includes items of various types and sub-types. We will examine these concepts in detail.
@@ -391,7 +391,7 @@ Most item fields are shared across sub-types. However, some fields are unique to
 * sub-type: Its value is a string indicating the sub-type of the item.
 * topic: Its value is a string of a library or customized topic name with its namespace. Currently, only the "free-text" sub-type item supports a variety of topics. Items of other sub-types have their designated topics that should not be changed. Please refer to [built-in library topics](topics.md) if you would like to choose a built-in topic.
 * label: Its value is a string summarizing what the item is asking. Only a request item uses this field. Its value is also used for identifying questions in chat reports and automatically matching a topic to a "free-text" sub-type item in Juji Studio.
-* actions: Its value is a vector that contains one or more maps representing [customized actions](../juji-studio/design.md#customizing-chatbot-actions). Customized actions can be used to define specific responses to different user answers, store attributes and dynamically change the chatflow.
+* actions: Its value is a vector that contains one or more maps representing [customized actions](../juji-studio/design#customizing-chatbot-actions). Customized actions can be used to define specific responses to different user answers, store attributes and dynamically change the chatflow.
 * precondition: Its value is a vector that contains one or more maps representing preconditions. Only when the preconditions are satisfied, the item would be presented by the chatbot. This can be used to dynamically control the chatflow base on the user's attributes or/and the current context.
 * id: Its value is an integer that is the id of this item.
 * end: Its value is a boolean signaling whether this item will end the chat.

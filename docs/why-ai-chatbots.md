@@ -24,7 +24,7 @@ decide whether you need an AI chatbot. For example, if you need a
 chatbot just to broadcast messages but ignore any user interactions
 (e.g., user questions), you probably do not need an AI chatbot. On the
 other hand, if you want your chatbot to interactively engage and help your
-audience, e.g., answering user product inquiries while introducing 
+audience, e.g., answering user product inquiries while introducing
 products, then you need an AI chatbot.
 
 ## Conversation Capabilities
@@ -49,7 +49,7 @@ flow, let alone asking questions or making requests during the flow
 (e.g., user questions are simply ignored). Such chatbots are suitable
 for only very simple tasks during which user actions can be highly
 anticipated (e.g., only a couple of choices to make) and users are
-unlikely to deviate from a pre-defined chat flow. 
+unlikely to deviate from a pre-defined chat flow.
 
 ### **AI Chatbots**
 
@@ -76,7 +76,7 @@ AI chatbot - social chats" width="650"/></p>
 
 As shown above, the chatbot can recognize user input and carry on a
 conversation naturally. Juji provides a dialog library that contains
-thousands of [built-in mini conversations](../design#built-in-dialog),
+thousands of [built-in mini conversations](../juji-studio/design),
 which can be directly used to support various social chitchats.
 
 ## People Insights from Chat
@@ -86,7 +86,7 @@ the understanding to best help the person. Since chatbots aim at
 scaling out human-human communications, ideally chatbots should get to
 know their users and use such knowledge to best help their users. The
 level of understanding about your audience that you want to obtain
-can also help you decide whether you need a non-AI or AI chatbot. 
+can also help you decide whether you need a non-AI or AI chatbot.
 
 ### **Non-AI Chatbots**
 
@@ -96,7 +96,7 @@ limited. For example, their understanding of users is limited at
 eliciting users' choices or preferences from button selections as
 described above. Extracting richer information or implicit meanings
 from natural language expressions is not part of the user
-understanding process in non-AI chatbots. 
+understanding process in non-AI chatbots.
 
 ### **AI Chatbots**
 
