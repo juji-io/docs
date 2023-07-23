@@ -29,7 +29,7 @@ Building on our extensive experience of Computational Psychology, Juji
 has built the world's only evidence-based, [most comprehensively
 validated psychographic inference
 engine](https://au.finance.yahoo.com/news/juji-inc-powers-auburn-led-143000709.html). Developers
-can access the engine via the Juji Psychographic Insights API, 
+can access the engine via the Juji Psychographic Insights API,
 analyzing a person's text, such as blogs, social media posts, chat text,
 and voice transcripts and inferring their unique psychographic
 characteristics, such as personality and psychological motivations.
@@ -73,12 +73,12 @@ In addition to inferring fundamental personality traits, Juji enables
 the measuring of composite psychographic characteristics, such as
 [Holland Codes](https://en.wikipedia.org/wiki/Holland_Codes), human
 soft skills, and moral characters. All such characteristics can also
-be calculated via the Juji Cognitive Core API. 
+be calculated via the Juji Cognitive Core API.
 
 
 ## API Definition
 
-- Endpoint URL: https://juji.ai/api/analyze
+- Endpoint URL: `https://juji.ai/api/analyze`
 - Method: POST
 - Max Size: 8MB
 
@@ -126,9 +126,9 @@ Data can be included in the request in JSON or CSV format.
 
 Data in JSON format should be an array of objects that each object represent a person that is identified by "id" and has "text" for analysis. JSON input can be passed directly as the body of the request or through a file. Below is an example JSON data.
 ```json
-[         
-  {                 
-    "id":"1",                 
+[
+  {
+    "id":"1",
     "text":"sentence 1. sentence 2..."
   },
   {
@@ -162,40 +162,40 @@ Response in JSON format will have the following fields:
 
 ```json
 {
-  "results": 
+  "results":
   [
     {
-      "id": "1", 
-      "personality": 
+      "id": "1",
+      "personality":
       {
         "big5_factors_openness":
         {
           "trait_id": "big5_factors_openness",
           "name": "Openness",
-          "category": "big5_factors", 
-          "percentile": 70.12, 
+          "category": "big5_factors",
+          "percentile": 70.12,
           "explanation": "high openness",
           "general_explanation": "openness is ...",
           "code": "a_7100"
         },
-        "big5_facets_imagination": 
+        "big5_facets_imagination":
         {
           "trait_id": "big5_facets_imagination",
           "name": "Imagination",
           "category": "big5_facets",
-          "percentile": 34.56, 
+          "percentile": 34.56,
           "explanation": "low imagination",
           "general_explanation": "imagination is ...",
           "parent": "big5_factors_openness",
           "code": "a_7110"
-        }, 
+        },
       ...
       }
-    }, 
+    },
     {
-      "id": "2", 
+      "id": "2",
       ...
-    }, 
+    },
     ...
   ]
 }
@@ -211,9 +211,9 @@ curl --location --request POST 'http://localhost:8080/api/analyze?version=2021-1
 --header 'Authorization: Bearer eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..wN4i7DMa_k0CDe74ABYDqw.d8sBK-7JIpj_Dh6nL8SgLrzQ_aOCWsy6tngCGZHwItpsJkIY7hBueQYasOFCpbQa.fg1PZD5hcH_OfuFV6KsnZg' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
---data-raw '[         
-        {                 
-                "id":"1",                 
+--data-raw '[
+        {
+                "id":"1",
                 "text":"When the bad times started there, in 38, he came to Spain, since he had both nationalities. "
         },
         {

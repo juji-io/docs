@@ -109,12 +109,12 @@ file](#export-audience-data)).
 
 Since Juji chatbots support natural, free-text chats, these chatbots
 also automatically extract key information from user free-text input
-and store the information into easy-to-use system attributes. 
+and store the information into easy-to-use system attributes.
 
 As shown below, a chatbot asks `how heavy is your dog`. Associated
 with this dialog, the chatbot will automatically parse users'
 free-text input to the question and extract two pieces of information
-that are stored in two attributes, `weight-amount` and `weight-unit`. 
+that are stored in two attributes, `weight-amount` and `weight-unit`.
 
 <p align="center"><img src="https://juji.io/docs/img/system-attribute-weight.png" alt="system
 attribute called weight-amount" width="650"/></p>
@@ -162,7 +162,7 @@ keyword attribute" width="450"/></p>
 
 * **is-similar-to condition** One can define a `is-similar-to` condition and
     store the matched condition into a custom attribute -- a binary
-    value (true/false) storing whether if the condition is met. 
+    value (true/false) storing whether if the condition is met.
 
 <p align="center"><img src="https://juji.io/docs/img/is-similar-to-attr.png" alt="add an is-similar-to attribute" width="450"/></p>
 
@@ -192,7 +192,7 @@ input. Currently, Juji infers about 150 user characteristics, including
 
 Because AI chatbots produce rich audience information, which can be
 used to serve the audience in a hyper-personalized manner. Below we
-share several typical usages of such data.  
+share several typical usages of such data.
 
 ### Customer Segmentation
 
@@ -207,10 +207,10 @@ segments: people who prefer `strawberries` and those who enjoy
 `blueberries`. Another custom attribute `prefer-protein" identifies
 another customer segment: people who like proteins.
 
-<p align="center"><img src="https://juji.io/docs/img/segmentation.png" alt="customer segmentation" width="650"/></p> 
+<p align="center"><img src="https://juji.io/docs/img/segmentation.png" alt="customer segmentation" width="650"/></p>
 
 
-### Retargeting Marketing 
+### Retargeting Marketing
 
 Based on user explicit input or extracted attributes, businesses can
 retarget one or more specific customer segment. Using the above
@@ -243,5 +243,4 @@ self-help books to those who are always eager to improve oneselves.
 Based on your needs, you may want to create multiple chatbots, e.g.,
 one for helping customers and the other for helping employees. You
 need practice.  To make your chatbot making and management tasks more
-productive, here are some [**design tips**](../chatbot-design-tips).
-
+productive, here are some [**design tips**](../quality-chatbot-design-tips).

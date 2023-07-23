@@ -391,7 +391,7 @@ Most item fields are shared across sub-types. However, some fields are unique to
 * sub-type: Its value is a string indicating the sub-type of the item.
 * topic: Its value is a string of a library or customized topic name with its namespace. Currently, only the "free-text" sub-type item supports a variety of topics. Items of other sub-types have their designated topics that should not be changed. Please refer to [built-in library topics](topics.md) if you would like to choose a built-in topic.
 * label: Its value is a string summarizing what the item is asking. Only a request item uses this field. Its value is also used for identifying questions in chat reports and automatically matching a topic to a "free-text" sub-type item in Juji Studio.
-* actions: Its value is a vector that contains one or more maps representing [customized actions](design.md#customizing-chatbot-actions). Customized actions can be used to define specific responses to different user answers, store attributes and dynamically change the chatflow.
+* actions: Its value is a vector that contains one or more maps representing [customized actions](../juji-studio/design.md#customizing-chatbot-actions). Customized actions can be used to define specific responses to different user answers, store attributes and dynamically change the chatflow.
 * precondition: Its value is a vector that contains one or more maps representing preconditions. Only when the preconditions are satisfied, the item would be presented by the chatbot. This can be used to dynamically control the chatflow base on the user's attributes or/and the current context.
 * id: Its value is an integer that is the id of this item.
 * end: Its value is a boolean signaling whether this item will end the chat.

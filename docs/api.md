@@ -1,4 +1,4 @@
-# Juji API 
+# Juji API
 
 The Juji Cognitive AI infrastructure consists of two core cognitive AI
 engines: **Psychographic Insights Engine** and **Cognitive AI Chat
@@ -25,7 +25,7 @@ human innate psychographic characteristics from text originated in
 **any applications, domains or industries**. Moreover, Juji-inferred
 human characteristics are typically persisted over a long period of
 time and are shown to be effective at [predicting human real-world
-behavior](https://www.yahoo.com/now/juji-inc-powers-auburn-led-143000709.html).
+behavior](https://www.businesswire.com/news/home/20230124005074/en/Juji-Inc.-Powers-Auburn-Led-Five-University-Study-on-Validating-Personality-Scores-Inferred-by-an-AI-Chatbot).
 
 Given the power of psycholographics and its wide applicability to
 virtually **any** domain and industry, developers can use the Juji
@@ -117,7 +117,7 @@ Note that all API calls must be made over HTTPS and that as of now, the returned
 
 ### API KEY Authentication
 
-API key can be used as a long lasting token for autentication. Once you obtained the key, you can used it for years. So it is useful if you want to build some integration with Juji on your product. 
+API key can be used as a long lasting token for autentication. Once you obtained the key, you can used it for years. So it is useful if you want to build some integration with Juji on your product.
 
 To obtain the API key, you will need to do the following:
 

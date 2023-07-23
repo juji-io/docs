@@ -114,9 +114,11 @@ website and make your visitors and staff members infinitely happier.
 
 ### Smart E-Commerce on Facebook
 
-[This tutorial](https://youtu.be/Uvvo6fm5GU8) shows how to create, customize, and manage AI chatbots for E-commerce applications on Facebook Messenger. Alicia is an AI assistant living in a Facebook Messenger and can help e-commerce businesses greet their customers, introduce products, answer customer inquiries, and discover customer insights.
+[This tutorial](https://youtu.be/iQp_kOq5zWA) shows how to create, customize, and manage AI chatbots for E-commerce applications on Facebook Messenger. Alicia is an AI assistant living in a Facebook Messenger and can help e-commerce businesses greet their customers, introduce products, answer customer inquiries, and discover customer insights.
 
-<p align="center"><img src="https://juji.io/docs/img/alicia-FB.png" alt="Select Custom Fallback" width="650"/></p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iQp_kOq5zWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
 
 ### Integrate Juji Chatbots with Third-Party Systems
 

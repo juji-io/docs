@@ -30,19 +30,19 @@
 <a name="!why-ai-chatbot"></a>
 ### Why do I need an AI chatbot?
 
-: Here is a [quick test](../why-ai-chatbots/#quick-test) to help you find out if you need an AI chatbot.(Spoiler Alert: You probably do.) 
+: Here is a [quick test](../why-ai-chatbots/#quick-test) to help you find out if you need an AI chatbot.(Spoiler Alert: You probably do.)
 
 <a name="!chat-length"></a>
 ### How long normally can a user chat with a Juji chatbot?
 
 : It depends on the purpose of your chatbot. An interview chatbot may chat with its users for a long period of time (e.g., 45
 minutes), while an e-commerce chatbot may chat with its users for a couple of minutes to help resolve user issues. Please
-check out [how to determine the optimal chat length](../chatbot-design-tips#optimal-chat-length).
+check out [how to determine the optimal chat length](../quality-chatbot-design-tips#optimal-chat-length).
 
 <a name="!improve-chatbot"></a>
 ### How will my Juji chatbot improve over time? Does it get smarter if more people use it?
 
-: Your chatbot can improve over time for two reasons. First, it will be get smarter if you inject more knowledge into your chatbot. Second, it will also improve because Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, more Juji chatbots are in action, the better all the Juji chatbots will get. Yes, Juji Chatbots have a network effect in play. Or with apologies to Alexandre Dumas. "All for one and one for all". But we don't do user-side training data, so that headache you don't have. 
+: Your chatbot can improve over time for two reasons. First, it will be get smarter if you inject more knowledge into your chatbot. Second, it will also improve because Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, more Juji chatbots are in action, the better all the Juji chatbots will get. Yes, Juji Chatbots have a network effect in play. Or with apologies to Alexandre Dumas. "All for one and one for all". But we don't do user-side training data, so that headache you don't have.
 
 <a name="!creation-time"></a>
 ### How long will it take to create an AI chatbot?
@@ -375,7 +375,7 @@ choose one to deliver the best user experience.
 <a name="!deploy"></a>
 ### How do I deploy my chatbot?
 
-: Click on **`Deploy`** on the left menu pane to go to the release page. Then choose your deployment type. For more details, check out various [deployment functions](../release).
+: Click on **`Deploy`** on the left menu pane to go to the release page. Then choose your deployment type. For more details, check out various [deployment functions](../juji-studio/release).
 
 
 <a name="!where-deploy"></a>
@@ -406,8 +406,8 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 raising a child, you should monitor your chatbot and feed your chatbot
 with new knowledge periodically to improve it and help it grow. Juji
 provides you with dashboards to [monitor the Q&A
-status](../design#customize-qa-and-fallback) as well as [monior the
-audience interaction](../reports) with your chatbot.
+status](../design#customize-qa-and-fallback) as well as [monitor the
+audience interaction](../juji-studio/reports) with your chatbot.
 
 : We strongly recommend that you check your chatbot via the dashboards
 periodically. If you don't have time to do so, you may want to hire a

@@ -23,7 +23,7 @@ For your code to access the API, put this GraphQL API endpoint `https://juji.ai/
 ## Data Access
 
 You can access meta data as well as results about your chat engagements over the
-GraphQL API at https://juji.ai/api/graphql
+GraphQL API at `https://juji.ai/api/graphql`
 
 An example GraphQL query to list all engagements of a brand:
 
@@ -125,9 +125,9 @@ A chatbot lives in an [engagement](api.md#engagement). In order to customize a c
 mutation CreateEngagement($input: CreateEngagementInput!){
   createEngagement(input: $input) {
     engagement{
-      name 
-      id 
-      order 
+      name
+      id
+      order
       status
     }
   }
@@ -175,8 +175,8 @@ Once the chatbot is ready, you can deploy it by creating a [web release](juji-st
 ```javascript
 mutation CreateRelease($input: CreateReleaseInput!){
   createRelease(input: $input) {
-    id 
-    order 
+    id
+    order
     type
   }
 }
@@ -505,6 +505,6 @@ t1,,juji-user-548327dc-aa1f-4054-8ab4-a37e203e0c26@juji-inc.com,"Mozilla/5.0 (Ma
 
 ## References
 
-* Please read about Juji API [introduction](api.md) first for important API concepts to help you better understand this guide. Additional API documentation also includes [Juji Cognitive Core API](psychographic-api.md). 
+* Please read about Juji API [introduction](api.md) first for important API concepts to help you better understand this guide. Additional API documentation also includes [Juji Cognitive Core API](psychographic-api.md).
 * [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
 * [Juji client github page](https://github.com/juji-io/cli-client) contains concrete examples written in JavaScript for all the API calls in this guide, please refer to it for detail.
