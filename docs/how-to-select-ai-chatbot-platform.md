@@ -12,7 +12,7 @@ on which chatbot option or platform would suit your needs the best.
 Before diving into the nitty-gritty details of a chatbot platform, use
 the following questions to do a quick prescreening of available
 chatbot options. This process is relatively quick and easy, which
-should save you a ton of time by quickly weeding out the unhelpful ones.  
+should save you a ton of time by quickly weeding out the unhelpful ones.
 
 !!! question "Does the platform use its own chatbot to serve its own business, ideally in the same solution that you wish to have?"
     In other words, do they trust their own product enough to dogfood it?
@@ -26,11 +26,11 @@ If the answer to the above question is `yes`, ask:
     * Whether and how well does it address your questions and handle your interruptions?
     * Whether and how well does it help you achieve your task?
 
-    Keep in mind that this is perhaps one of their better chatbots. It's most likely that if you don't like the interaction experience, it would be very difficult for you to build a chatbot on their platform with which your users would enjoy interacting.  
+    Keep in mind that this is perhaps one of their better chatbots. It's most likely that if you don't like the interaction experience, it would be very difficult for you to build a chatbot on their platform with which your users would enjoy interacting.
 
 If the answers to the above questions are all positive, ask:
 
-!!! question "How fast can you use the platform to create a simple AI chatbot yourself?" 
+!!! question "How fast can you use the platform to create a simple AI chatbot yourself?"
     Just make a simple chatbot to demonstrate the following:
 
     * Make your chatbot ask user an open-ended question (e.g., `Could you introduce yourself?`)
@@ -41,7 +41,7 @@ If the platform does not allow you to DIY such a simple AI chatbot described abo
 
 !!! question "How long will take the platform provider to do it for you?"
 
-If the answers to all the above questions are positive to you, the platform might be worth a deeper look as described below. 
+If the answers to all the above questions are positive to you, the platform might be worth a deeper look as described below.
 
 ## **Round 2: Compare Chatbot Options by 3 Factors**
 
@@ -60,7 +60,7 @@ as well as maximize business ROI, such as improving prospective
 student conversion and existing student retention rate. When
 evaluating how well a chatbot option can deliver satisfactory user
 experience and business ROI, you want to compare available chatbot
-options on the following aspects: 
+options on the following aspects:
 
 * How well can a chatbot drive an empathetic and
   productive two-way conversation?
@@ -86,10 +86,10 @@ chatbot options and compare the following:
 * What resources are required to do the customization (e.g., non-IT subject
   matter experts, dedicated IT personnel, or professional services)?
 
-* How long will it take to make all the customizations? 
+* How long will it take to make all the customizations?
 
 * How do I test, iteratively improve, and deploy a chatbot solution?
-  How easy and fast can I do this? 
+  How easy and fast can I do this?
 
 * What kind of reporting and analytics are available for me to access?
   Are they real-time data?
@@ -169,4 +169,4 @@ checking off each dimension for each chatbot option.
 
 ## **What's Next**
 
-Ready to create your own AI chatbot? Check out these [design tips](../chatbot-design-tips) for creating super helpful and user-pleasing AI chatbots to help you scale your business and delight your audience. 
+Ready to create your own AI chatbot? Check out these [design tips](../quality-chatbot-design-tips) for creating super helpful and user-pleasing AI chatbots to help you scale your business and delight your audience.

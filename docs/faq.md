@@ -103,7 +103,7 @@ privacy policy at https://juji.io/util/juji-privacy-policy.pdf.
 ### How do I change chatbot persona?
 
 : Click on **`Design`** on the left menu panel and then click on **`Chatbot Settings`**. On
-this page, you can customize your chatbot persona. See [Customize Chatbot Persona](../design#chatbot-persona) for more details.
+this page, you can customize your chatbot persona. See [Customize Chatbot Persona](../juji-studio/design#chatbot-persona) for more details.
 
 <p align="center"><img src="../img/change-persona.png" alt="change chatbot persona" width="650"/></p>
 
@@ -475,4 +475,4 @@ maintain your chatbot.
 
 : Currently you can export all your chat data to a CSV file, which can
 then be easily imported into third-party applications, such as
-SalesForce and Marketo. Check out [how to eport to CSV](../reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
+SalesForce and Marketo. Check out [how to export to CSV](../juji-studio/reports#export-audience-data). If you have specific data-export requirements, please feel free to write to us (support@juji.io).
