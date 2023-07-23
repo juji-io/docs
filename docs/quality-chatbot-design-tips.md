@@ -64,7 +64,7 @@ user input). Below is the above sample outline with markings
 highlighted in yellow. This avoids [unnecessary
 mistakes](#mix-messages-and-requests) during a chatbot making
 process. Based on the markings, you can then [create a
-chatbot](../design) and add the marked items in the main chat flow.
+chatbot](../juji-studio/design) and add the marked items in the main chat flow.
 
 <p align="center"><img src="../img/chat-outline-annotated.png" alt="annotated
 sample chat outline" width="650"/></p>
@@ -125,7 +125,7 @@ onboard customers for an application, it should answer questions about the benef
 
 All the Q&As can be entered in a CSV file or directly in the table on
 the `Q&A Board` page. Please refer to [Customize
-Q&A](../design#customize-qa-and-fallback) for more details on how to
+Q&A](../juji-studio/design#customize-qa-and-fallback) for more details on how to
 add/edit Q&As.
 
 <p align="center"><img src="../img/design-qa.png" alt="define Q&As" width="650"/></p>
@@ -141,7 +141,7 @@ user experience, also known as 'having fun'.  Getting this balance just right is
 ### Mix Messages and Requests
 
 Juji AI chatbots can send two types of messages (check out [chatbot
-design](../design)). One type is a plain chatbot **message** that ignores
+design](../juji-studio/design)). One type is a plain chatbot **message** that ignores
 user input. The other is a chatbot **request** that waits for user input
 and responds to it. If a chatbot sends too many messages that ignore
 user input, it feels like a monologue instead of a
@@ -179,8 +179,8 @@ We also encourage the use of open-ended chatbot inquiries (e.g., `How do you fee
 
 ### Use Proper Juji Built-in Dialog
 
-As mentioned in the [design](../design) section, Juji provides a rich
-set of [built-in, mini conversations](../design#built-in-dialog). These
+As mentioned in the [design](../juji-studio/design) section, Juji provides a rich
+set of [built-in, mini conversations](../juji-studio/design#built-in-dialog). These
 built-in dialogs automatically handle highly diverse, potentially
 complex user expressions. Such dialogs deliver great conversation experience
 without requiring much customization. And as Juji grows so does the library of built-in conversational snippets, making your life even easier with Juji.

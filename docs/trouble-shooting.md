@@ -14,7 +14,7 @@ I try to chat with the chatbots in your gallery, but none of them works.
 
 ### **Trouble Shooting**
 
-The Web version of Juji chatbots use [Websocket protocol](https://en.wikipedia.org/wiki/WebSocket) to enable two-way communication with Juji servers. Some corporate network administrators block any network traffic that is not in regular HTTP protocol. So if your computer is behind a corporate firewall or is using a company VPN, please ask your network administrator or IT manager to allow Websocket connection to `wss://juji.ai/api/v1/ws`. 
+The Web version of Juji chatbots use [Websocket protocol](https://en.wikipedia.org/wiki/WebSocket) to enable two-way communication with Juji servers. Some corporate network administrators block any network traffic that is not in regular HTTP protocol. So if your computer is behind a corporate firewall or is using a company VPN, please ask your network administrator or IT manager to allow Websocket connection to `wss://juji.ai/api/v1/ws`.
 
 ## **My chatbot didn't wait for user responses after asking a question**
 
@@ -57,7 +57,7 @@ user responses, make sure your question is a "true" question.
 Using the above example, the question expression is included as part
 of the `Quick acknowledgement`, which only sends a message
 without waiting for any user response (see Customize THEN Actions in
-[chatbot design](../design)). To ask a follow-up question as intended,
+[chatbot design](../juji-studio/design)). To ask a follow-up question as intended,
 you will need to add a `Follow-up Request` as shown below:
 
 <p align="center"><img src="../img/create-a-request.png" alt="Create a

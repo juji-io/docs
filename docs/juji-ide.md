@@ -32,7 +32,7 @@ and config files. The files are organized by the bot applications you have
 created, each called an `Engagement`.
 
 Each `Engagement` contains a `Config` document, which reflects the [Design
-View](../design) of the bot; a `Preivew` release, which has the script powering
+View](../juji-studio/design) of the bot; a `Preivew` release, which has the script powering
 the preview chat; and a number of `Web`, `Facebook`, or `Slack` releases, which
 are your production releases of the bot scripts.
 
@@ -73,7 +73,7 @@ created right there.
 ## Add Self-Defined (Complex) FAQs
 
 While you can always use the GUI in Juji Studio to add FAQs
-(../design#customize-qa-and-fallback), you may have already prepared
+(../juji-studio/design#customize-qa-and-fallback), you may have already prepared
 answers to some frequently asked questions that you want to import
 into the script. Juji provides a command line tool for you to convert
 the FAQ and answers into REP script snippets, and you can then paste

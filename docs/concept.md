@@ -140,7 +140,7 @@ focus is made easier by computational recognition of three key topic types.
 
 ### Agenda Topics (User Generated)
 
-These are often the user's chosen topics as constructed in the [Design View](../design). Once built they are lined up into anan agenda queue on the Juji engine's run-time system. Users can control and vary the order of, and trigger randomization within their agenda topics, as they see fit. The bot always attempts to prioritize the user's chosen agenda topics, and will only fundamentally diverge from the user's plan if the user consistently fails to follow the agenda topic path laid out by the chatbot creator.
+These are often the user's chosen topics as constructed in the [Design View](../juji-studio/design). Once built they are lined up into anan agenda queue on the Juji engine's run-time system. Users can control and vary the order of, and trigger randomization within their agenda topics, as they see fit. The bot always attempts to prioritize the user's chosen agenda topics, and will only fundamentally diverge from the user's plan if the user consistently fails to follow the agenda topic path laid out by the chatbot creator.
 
 ### Ad-lib Topics (Small Talk)
 

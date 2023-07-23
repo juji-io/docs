@@ -7,8 +7,8 @@ Platform](../)
 
 Juji supports two main types of chatbot request:
 
-[choice-based](../design#choice-request); which collects structured user input such as "option A" or "Option B".
-[free-text](../design#free-text-request); which collects open-ended "free-text" user input, such as a full sentence or more.
+[choice-based](../juji-studio/design#choice-request); which collects structured user input such as "option A" or "Option B".
+[free-text](../juji-studio/design#free-text-request); which collects open-ended "free-text" user input, such as a full sentence or more.
 
 If the goal of a given request is to guide users to pre-defined pathways or
 or to gather user input on a limited set of options, use the choice-based
@@ -16,7 +16,7 @@ request type. It is deterministic, quick, and almost error free, becuase it's co
 
 If your goal is to elicit open-ended user input, e.g., their insights
 or unanticipated responses on a particular topic, use a free-text
-request. Be aware that if you're offering the user the right to enter just about anything, the possibility of digressions or disambiguous responses is quite high. It's unfair of a user to follow "the lines" of a conversation when the guard rails are simply not there. To handle the unexpected (which you should of course, expect) it's always wise to [choose a Juji built-in dialog](../design#built-in-dialog) to get your conversation through such situations in a simple, almost automatic but still completely naturalistic way. If necessary, you can write your own [custom chatbot actions](../design#customizing-chatbot-actions) to handle specific digressive user input that you wish to capture and address to drive the conversation in different and interesting ways. The more you master our platform, the more capable you will be at writing conversations that feel open, free and user-driven - while maintaining control over their ultimate outcomes.
+request. Be aware that if you're offering the user the right to enter just about anything, the possibility of digressions or disambiguous responses is quite high. It's unfair of a user to follow "the lines" of a conversation when the guard rails are simply not there. To handle the unexpected (which you should of course, expect) it's always wise to [choose a Juji built-in dialog](../juji-studio/design#built-in-dialog) to get your conversation through such situations in a simple, almost automatic but still completely naturalistic way. If necessary, you can write your own [custom chatbot actions](../juji-studio/design#customizing-chatbot-actions) to handle specific digressive user input that you wish to capture and address to drive the conversation in different and interesting ways. The more you master our platform, the more capable you will be at writing conversations that feel open, free and user-driven - while maintaining control over their ultimate outcomes.
 
 ## **Use The Correct Chatbot Trigger**
 
@@ -79,7 +79,7 @@ Here is another slightly longer example.
 <p align="center"><img src="../img/good-label-2.png" alt="A sensible
 label 2 - short" width="550"/></p>
 
-Of course, if your label choice isn't pulling up the ad-lib topics that match your agenda topics, you just have to change the labels you're concerned about, and the next time you preview the engine will give you new choices to consider. To find a good label, reverse engineer the process by [browsing Juji ad-lib topics] (../design#built-in-dialog).
+Of course, if your label choice isn't pulling up the ad-lib topics that match your agenda topics, you just have to change the labels you're concerned about, and the next time you preview the engine will give you new choices to consider. To find a good label, reverse engineer the process by [browsing Juji ad-lib topics](../juji-studio/design#built-in-dialog).
 
 ### **3. Handle Context-Sensitive User Inquiries**
 

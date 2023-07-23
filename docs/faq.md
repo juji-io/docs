@@ -175,7 +175,7 @@ request" width="550"/></p>
 <a name="!custom-response"></a>
 
 ### How can I customized the chatbot's response to participants' answers in open-ended questions?
-: You can use both [Juji Studio](../juji-studio) or [Juji IDE](../juji-ide) to customize chatbot responses. Also check out [Chatbot Design](../design) for specifics.
+: You can use both [Juji Studio](../juji-studio) or [Juji IDE](../juji-ide) to customize chatbot responses. Also check out [Chatbot Design](../juji-studio/design) for specifics.
 
 
 <a name="!mostly-choices"></a>
@@ -205,7 +205,7 @@ request" width="550"/></p>
 <a name="!followup"></a>
 ### What is a follow-up request?
 
-: A follow-up request is where a chatbot asks a question to deepen a conversation based on a user's answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user's answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](../design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
+: A follow-up request is where a chatbot asks a question to deepen a conversation based on a user's answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user's answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](../juji-studio/design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
 
 
 <a name="!followup-vs-reg"></a>
@@ -260,7 +260,7 @@ of your chatbot.
 values in the ID column to whatever text labels you want to use. We in
 fact encourage you to use labels that you can remember to facilitate
 Q&A management. After you make such changes, make sure you choose the
-`Replace` option when you upload the changed CSV file. See [more tips](../design#qa-tips) on defining IDs.
+`Replace` option when you upload the changed CSV file. See [more tips](../juji-studio/design#qa-tips) on defining IDs.
 
 
 <a name="!confirm-unanswered-anser"></a>
@@ -299,7 +299,7 @@ knowledge base clean, and hopefully free of errors.
 <a name="!faq-q-variation"></a>
 ###How many question variations or expressions should I put in when preparing Q&A?
 
-: You can start with just one expression per question. Juji has a rich question library that will automatically augment a question you put in. Additionally, Juji chatbots always try to recommend similar questions if it could not find a well matched question during a chat. You can also use the [Q&A dashboard](../design#customize-qa-and-fallback) to monitor and improve the Q&A capabilities of your chatbot incrementally.
+: You can start with just one expression per question. Juji has a rich question library that will automatically augment a question you put in. Additionally, Juji chatbots always try to recommend similar questions if it could not find a well matched question during a chat. You can also use the [Q&A dashboard](../juji-studio/design#customize-qa-and-fallback) to monitor and improve the Q&A capabilities of your chatbot incrementally.
 
 : Below is an example showing that a chatbot recommends similar questions when a highly matched question could not be found.
 
@@ -324,7 +324,7 @@ you have only one window/tab open for one chatbot at a time.
 
 : If this occurs, please double check the Q&A CSV file you
 uploaded. Make sure that all the Q&As are entered in the CSV following
-the [required format](../design#customize-qa-and-fallback).
+the [required format](../juji-studio/design#customize-qa-and-fallback).
 
 
 <a name="!disable-chatbot"></a>
@@ -332,14 +332,14 @@ the [required format](../design#customize-qa-and-fallback).
 ### How do I set up "out of office" for my chatbot?
 
 : This is quite easy to do on Juji. Just follow these steps to
-[suspend a chatbot](../design#suspend-chat).
+[suspend a chatbot](../juji-studio/design#suspend-chat).
 
 
 <a name="!similar-vs-contains"></a>
 ###What is the difference between 'contains-keywords` and `is-similar-to` trigger?
 ### When should I use `contains-keywords` vs. `is-similar-to` trigger to guide my chatbot?
 
-: To decide which type of trigger to use, please check out [this tip](../quality-chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
+: To decide which type of trigger to use, please check out [this tip](../chatbot-design-tips-advanced#use-proper-chatbot-trigger) on the differences of the two and which one you should use.
 
 
 <a name="!choice-vs-free-text"></a>
@@ -406,7 +406,7 @@ or group. A Facebook Messenger chatbot has several advantages over a web-based d
 raising a child, you should monitor your chatbot and feed your chatbot
 with new knowledge periodically to improve it and help it grow. Juji
 provides you with dashboards to [monitor the Q&A
-status](../design#customize-qa-and-fallback) as well as [monitor the
+status](../juji-studio/design#customize-qa-and-fallback) as well as [monitor the
 audience interaction](../juji-studio/reports) with your chatbot.
 
 : We strongly recommend that you check your chatbot via the dashboards
@@ -444,7 +444,7 @@ maintain your chatbot.
 ### Will we be able to go into the chatbot at any time and make changes after it goes live?
 
 
-: Yes, Juji Studio allows you to do so very easily and quickly. Check out the instructions under [Design](../design).
+: Yes, Juji Studio allows you to do so very easily and quickly. Check out the instructions under [Design](../juji-studio/design).
 
 ## Reporting Questions
 

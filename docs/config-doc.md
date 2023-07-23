@@ -7,7 +7,7 @@ A config-doc is a data structure that stores a chatflow from Juji Studio. Every 
 
 ## The Abstraction of Items
 
-The config-doc's representation is evolved around the abstraction of item. A chatflow is essentially some arrangement of such items. In Juji Studio, the items are shown as [topic blocks](../design).
+The config-doc's representation is evolved around the abstraction of item. A chatflow is essentially some arrangement of such items. In Juji Studio, the items are shown as [topic blocks](../juji-studio/design).
 
 <p align="center"><img src="../img/design-add-topic.png" alt="Juji topic blocks example" width="350"/></p>
 

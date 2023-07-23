@@ -34,7 +34,7 @@ Then go to Github to create a new pull request for https://github.com/juji-io/do
 To build the site, make sure you have python on your system. It is safer to use the same version of python as we do. There are multiple ways to ensure this. Below we show how you can set up with pyenv or conda.
 
 ### pyenv
-One option is to install pyenv, and install the right version of python using it. Please follow [its instruction](https://github.com/pyenv/pyenv) to set it up. It is important to add `pyenv init` to your shell. Otherwise you may not be using the right version of python. 
+One option is to install pyenv, and install the right version of python using it. Please follow [its instruction](https://github.com/pyenv/pyenv) to set it up. It is important to add `pyenv init` to your shell. Otherwise you may not be using the right version of python.
 
 ```bash
 brew install pyenv
@@ -65,9 +65,9 @@ Get mkdocs-material version from theme/base.html by searching for "mkdocs-materi
 
 ## Assets and Links
 
-Make sure the assets filenames and internal links use relative paths, because the site is deployed as a sub-directory of our main site. 
+Make sure the assets filenames and internal links use relative paths, because the site is deployed as a sub-directory of our main site.
 
-For example, use `../img/something.png` instead of `/img/something.png`, use `../design` instead of `/design`.
+For example, use `../img/something.png` instead of `/img/something.png`, use `../juji-studio/design` instead of `/design`.
 
 ## Test
 
@@ -88,7 +88,7 @@ The dev-server also supports auto-reloading, and will rebuild your documentation
 pip install mkdocs mkdocs-material pymdown-extensions --upgrade
 ```
 
-We may need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`. 
+We may need to reconcile our customization in `theme/base.html` with the installed one, e.g. at `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/base.html`.
 
 Also need to change the names of the following assets files in base.html to be the same as the ones in `~/.pyenv/versions/3.6.6/lib/python3.6/site-packages/material/assets/`:
 
