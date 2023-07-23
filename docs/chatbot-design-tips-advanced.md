@@ -16,29 +16,29 @@ request type. It is deterministic, quick, and almost error free, becuase it's co
 
 If your goal is to elicit open-ended user input, e.g., their insights
 or unanticipated responses on a particular topic, use a free-text
-request. Be aware that if you're offering the user the right to enter just about anything, the possibility of digressions or disambiguous responses is quite high. It's unfair of a user to follow "the lines" of a conversation when the guard rails are simply not there. To handle the unexpected (which you should of course, expect) it's always wise to [choose a Juji built-in dialog](../design#built-in-dialog) to get your conversation through such situations in a simple, almost automatic but still completely naturalistic way. If necessary, you can write your own [custom chatbot actions](../design#customizing-chatbot-actions) to handle specific digressive user input that you wish to capture and address to drive the conversation in different and interesting ways. The more you master our platform, the more capable you will be at writing conversations that feel open, free and user-driven - while maintaining control over their ultimate outcomes. 
+request. Be aware that if you're offering the user the right to enter just about anything, the possibility of digressions or disambiguous responses is quite high. It's unfair of a user to follow "the lines" of a conversation when the guard rails are simply not there. To handle the unexpected (which you should of course, expect) it's always wise to [choose a Juji built-in dialog](../design#built-in-dialog) to get your conversation through such situations in a simple, almost automatic but still completely naturalistic way. If necessary, you can write your own [custom chatbot actions](../design#customizing-chatbot-actions) to handle specific digressive user input that you wish to capture and address to drive the conversation in different and interesting ways. The more you master our platform, the more capable you will be at writing conversations that feel open, free and user-driven - while maintaining control over their ultimate outcomes.
 
 ## **Use The Correct Chatbot Trigger**
 
-Depending on your chatbot application, the choice of trigger is critical. There is a big difference between using the `contains-keywords` trigger and the 
+Depending on your chatbot application, the choice of trigger is critical. There is a big difference between using the `contains-keywords` trigger and the
 `is-similar-to`trigger when customizing your chatbot's actions.
 
 ### When to use 'Keywords'
 
-In general, `contains-keywords` will help better syntactically match a user input as long as the input contains the keywords. The requirement that user input conform to any other characteristic makes `contains-keywords` the most flexible and percentage-friendly way of defining your triggers. 
+In general, `contains-keywords` will help better syntactically match a user input as long as the input contains the keywords. The requirement that user input conform to any other characteristic makes `contains-keywords` the most flexible and percentage-friendly way of defining your triggers.
 
 Let's imagine that your chatbot asks `What's your favorite fruit?`. If your chatbot is interested in how many of its website's customers eat strawberries, it might define the trigger `contains-keywords` with the keyword `strawberry`.
 
 <p align="center"><img src="../img/keywords-trigger.png" alt="Keywords Trigger" width="650"/></p>
 
-So that if the user input contains the keyword, when input such as `I really like strawberries` is entered the trigger will fire. 
+So that if the user input contains the keyword, when input such as `I really like strawberries` is entered the trigger will fire.
 
 To sum up, if you wish to capture a particular word/phrase regardless of how it appears
 syntactically in an input, use `contains-keywords`.
 
 ### When to user 'Is Similar To"
 
-But supposing your bot was interested in knowing who "didn't like strawberries". This would be a perfect scenario for the user of the `is-similar-to` trigger. 
+But supposing your bot was interested in knowing who "didn't like strawberries". This would be a perfect scenario for the user of the `is-similar-to` trigger.
 
 The best practice in this scenario would be to enter `is-similar-to` examples such as `I really like fruit, except strawberries` and `I don't like strawberries`
 
@@ -50,7 +50,7 @@ you can give words, phrases, and full sentences as examples, and cover your base
 #### A note on Stemming and Lemmatization
 
 Yes, the keyword was `strawberry` and the sentence includes it as its plural `strawberries`, but Juji
-automatically handles <a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html" target="_blank">stemming and lemmatization</a> in both `contains-keywords` and `is-similar-to` sentence matching, so you're always covered, without having to program or enter the variations yourself. 
+automatically handles <a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html" target="_blank">stemming and lemmatization</a> in both `contains-keywords` and `is-similar-to` sentence matching, so you're always covered, without having to program or enter the variations yourself.
 
 ## **Sensible Labels Are Important**
 
@@ -68,13 +68,13 @@ The clearer and more concise the labels, the quicker you'll understand the stren
 
 ### **2. Search for Built-in Juji Dialog**
 
-The more accurate the label the better Juji will find the best Ad-Lib Topics to cover your digressions away from the main flow and get your users back to where you need them to go. And the best part is this. The more accurate the matches with ad-lib topics, the less customization you'll have to do. As we build our ad-lib topics, the need to customize might even go down to the magic number. Zero. 
+The more accurate the label the better Juji will find the best Ad-Lib Topics to cover your digressions away from the main flow and get your users back to where you need them to go. And the best part is this. The more accurate the matches with ad-lib topics, the less customization you'll have to do. As we build our ad-lib topics, the need to customize might even go down to the magic number. Zero.
 
-Here's an example of a simple, sensible label. 
+Here's an example of a simple, sensible label.
 
 <p align="center"><img src="../img/good-label.png" alt="A sensible label" width="650"/></p>
 
-Here is another slightly longer example. 
+Here is another slightly longer example.
 
 <p align="center"><img src="../img/good-label-2.png" alt="A sensible
 label 2 - short" width="550"/></p>
@@ -88,7 +88,7 @@ movie?`. A user may ask a reciprocal question instead of answering the question 
 this user inquiry `What's yours` into a full inquiry `What's your favorite movie` based on the context before processing the user inquiry.
 
 Currently Juji automatically translates a context-sensitive user
-inquiry based on the label instead of the request itself, because a well-chosen label is often the quickest and most accurate way to capture the core of a topic. In other words, to capture context (and trust us, that's the holy grail of chatbots), all you have to do is label your topics smartly. Juji's codebase does the rest. Here are a couple of examples to illustrate the importance of smart labelling. 
+inquiry based on the label instead of the request itself, because a well-chosen label is often the quickest and most accurate way to capture the core of a topic. In other words, to capture context (and trust us, that's the holy grail of chatbots), all you have to do is label your topics smartly. Juji's codebase does the rest. Here are a couple of examples to illustrate the importance of smart labelling.
 
 **Example I**
 
@@ -97,7 +97,7 @@ additional description.
 
 <p align="center"><img src="../img/fav-movie-label.png" alt="A sensible label" width="650"/></p>
 
-Based on this label, here's context-friendly response to the user inquiry that easily takes care of what in other engines would require a good chunk of time to get right. 
+Based on this label, here's context-friendly response to the user inquiry that easily takes care of what in other engines would require a good chunk of time to get right.
 
 <p align="center"><img src="../img/context-fav-movie.png" alt="A sensible label" width="650"/></p>
 
@@ -114,7 +114,7 @@ Again, the snippet of conversation gets the context spot on without any fuss.
 
 ### **4. Label User Responses in Audience Report**
 
-Labelling is also critical to working out which topics are delivering the goods and which are not in the audience report. 
+Labelling is also critical to working out which topics are delivering the goods and which are not in the audience report.
 
 <p align="center"><img src="../img/label-index-answers.png" alt="A
 sensible label - label user responses in audience report" width="650"/></p>
@@ -127,8 +127,8 @@ an audience report.
 Creating a custom chatbot almost always takes time and effort. Juji allows you
 to easily reuse or share a Juji chatbot in two ways.
 
-3. Clone your Juji chatbot. 
-4. Export or Import Juji chatbots.  To do that follow the instructions in the screenshot below. 
+3. Clone your Juji chatbot.
+4. Export or Import Juji chatbots.  To do that follow the instructions in the screenshot below.
 
 ### **1. Clone Juji Chatbots**
 
@@ -141,7 +141,7 @@ To clone your Juji chatbot hit the ellipsis menu (...) on a chatbot in your dash
 
 ### **2. Export/Import Juji Chatbots**
 
-The export/import approach is designed to support non-simultaneous chatbot collaboration between the owners of different Juji accounts. It can also facilitate a sale of a chatbot from one party to another. 
+The export/import approach is designed to support non-simultaneous chatbot collaboration between the owners of different Juji accounts. It can also facilitate a sale of a chatbot from one party to another.
 
 To export your Juji chatbot hit the (...) ellipsis drop down menu and this time choose `export` to download a .Juji file for your designated download folder. Give it a relevant title. For example, if it's a restaurant reservation bot, you could call the file `restaurant-reservation-bot.juji`. After that's done, you can send it or to your collaborator or customer who can then import it to their own Juji account.
 
@@ -161,8 +161,8 @@ chatbot" width="650"/></p>
 
 ## **Embed Juji Chatbots in Third-Party Apps**
 
-While [Juji Studio](/juji-studio) provides an easy way to author,
-test, deploy, and manage an AI chatbot, [Juji API](/api) provides the
+While [Juji Studio](../juji-studio) provides an easy way to author,
+test, deploy, and manage an AI chatbot, [Juji API](../api) provides the
 flexibility of integrating your chatbot into any third-party
 applications, such as a web or a mobile application.
 

@@ -1,6 +1,6 @@
 # **Juji Tutorials**
 
-This page hosts a set of video tutorials including [the recording of our weekly live webinars](https://www.youtube.com/playlist?list=PLSxT_T7jUXceBDPBMp6CP-xyrIHD8BwUY) on how to design, customize, and integrate Juji cognitive AI assistants (aka cogitive AI chatbots) for various applications. For a full set of tutorials or recorded video demos, please visit [the Juji Youtube Channel](https://www.youtube.com/hellojuji). 
+This page hosts a set of video tutorials including [the recording of our weekly live webinars](https://www.youtube.com/playlist?list=PLSxT_T7jUXceBDPBMp6CP-xyrIHD8BwUY) on how to design, customize, and integrate Juji cognitive AI assistants (aka cogitive AI chatbots) for various applications. For a full set of tutorials or recorded video demos, please visit [the Juji Youtube Channel](https://www.youtube.com/hellojuji).
 
 ## Get Started
 
@@ -12,40 +12,30 @@ This two-minute video shows how to get started on Juji, and create and deploy yo
 
 ## **NO CODE** Conversational AI Design
 
-The videos under this section teach how to design engaging, empathetic, and productive AI chatbots with NO CODE. 
+The videos under this section teach how to design engaging, empathetic, and productive AI chatbots with NO CODE.
 
 
 ### How to Deliver Engaging Conversations
 
-(Steve: put this video https://youtu.be/Aw_S2-xi8Tc desc + title image + youtube link here)
+
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Aw_S2-xi8Tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### How to Ask Questions
-<p align="center"><img src="/JujiDocumentation/Images/questions.jpg" alt="Create a cognitive AI chatbot to meet and greet" width="650"/></p>
-No-Code Design of AI Chatbots to Ask Open-Ended Questions
 
-We have received several requests on how to design AI chatbots that can ask user questions, including 
+We have received several requests on how to design AI chatbots that can ask user questions, including
 open-ended questions.
 
-We will share with you a set of design tips on how to create AI chatbots that can ask user questions, 
-including how to handle and capture diverse and complex user responses to these questions, 
-with NO CODE.  We will also share several practical uses of such a chatbot in various domains, 
-e.g., conducting conversational surveys (e.g., surveying users or employees) or interviews 
-(e.g., interviewing job candidates), as well as performing assessments (e.g., wellness 
+We will share with you a set of design tips on how to create AI chatbots that can ask user questions,
+including how to handle and capture diverse and complex user responses to these questions,
+with NO CODE.  We will also share several practical uses of such a chatbot in various domains,
+e.g., conducting conversational surveys (e.g., surveying users or employees) or interviews
+(e.g., interviewing job candidates), as well as performing assessments (e.g., wellness
 assessments).
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7aZB5154Qu0&list=PLSxT_T7jUXceBDPBMp6CP-xyrIHD8BwUY&index=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-How to Make No-Code AI Chatbots to Ask Questions Empathetically
-
-We will share with you two more design tips on how to create AI chatbots that can ask user 
-questions with NO CODE. In particular, how to enable a quality conversation by anticipating 
-user responses and how to customize your chatbot to respond to users empathetically and 
-personally.
-
-<div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=udp17CmF8ss&list=PLSxT_T7jUXceBDPBMp6CP-xyrIHD8BwUY&index=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
+<iframe width="560" height="315" src="https://youtube.com/playlist?list=PLSxT_T7jUXcdoDQUnbfWtVeppIlJ5syuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ### How to Handle User Free-Text Q&A
 
@@ -72,7 +62,7 @@ handle such multi-step question and answering without any coding.
 
 ### How to Design a Deeply Personalized Chatbot
 
-If a chatbot can personalize its messages to each user, it will help make a human-AI conversation more engaging and productive. The videos in this section show you how to make a chatbot personable.  
+If a chatbot can personalize its messages to each user, it will help make a human-AI conversation more engaging and productive. The videos in this section show you how to make a chatbot personable.
 
 #### Personalize a Chatbot by User Personality
 This 47 seconds video shows  how to enable an AI chatbot to personalize each message based on a user's persona. Such a persona is automatically inferred on the fly based on the user's chat with the AI chatbot.
@@ -86,22 +76,22 @@ This 47 seconds video shows  how to enable an AI chatbot to personalize each mes
 This 3-minute tutorial shows how Alicia makes a personalized production introduction based on user input.
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Uvvo6fm5GU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://youtu.be/lNv0Ud8V2Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## AI Chatbot Applications
 
-This section contains the design for domain-specific uses of AI chatbots. 
+This section contains the design for domain-specific uses of AI chatbots.
 
 ### Smart Greeter on a Website
-<p align="center"><img src="/JujiDocumentation/Images/GreetandGuide.jpg" alt="Create a cognitive AI chatbot to meet and greet" width="650"/></p>
+
 If you can use PowerPoint or Excel, you can create a cognitive AI chatbot.
 
-Do you want your website to proactively engage with each of your visitors, for example, eliciting 
-who is visiting your site and the purpose of the visit, highlighting the key aspects of your 
-products/services based on their needs, answering their inquiries instantly, and guiding them 
-to where they can take an action (e.g., submitting an application)? A cognitive AI chatbot 
-sitting on your website can help you accomplish all the above responsibly. This webinar will  
-share the end-to-end process of designing, deploying, and managing a cognitive AI chatbot for 
+Do you want your website to proactively engage with each of your visitors, for example, eliciting
+who is visiting your site and the purpose of the visit, highlighting the key aspects of your
+products/services based on their needs, answering their inquiries instantly, and guiding them
+to where they can take an action (e.g., submitting an application)? A cognitive AI chatbot
+sitting on your website can help you accomplish all the above responsibly. This webinar will
+share the end-to-end process of designing, deploying, and managing a cognitive AI chatbot for
 a website with no code. Specifically, it will cover the following:
 
 <ul dir="ltr">
@@ -112,13 +102,13 @@ a website with no code. Specifically, it will cover the following:
 		<li>How to deploy the chatbot on a website</li>
 		<li>How to monitor the chatbot using a real-time dashboard</li>
 		<li>How to handle chatbot imperfections and fix these imperfections in a live chatbot</li>
-</ul>	
-	
-If you can use PowerPoint or Excel, you can create a cognitive AI chatbot to augment your 
+</ul>
+
+If you can use PowerPoint or Excel, you can create a cognitive AI chatbot to augment your
 website and make your visitors and staff members infinitely happier.
 
 <div align="center">
-<iframe width="560" height="315" src="https://youtu.be/klKnc_rI2cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://youtu.be/XkI9c4iBwl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
 ### Smart E-Commerce on Facebook
@@ -127,6 +117,7 @@ website and make your visitors and staff members infinitely happier.
 
 <p align="center"><img src="https://juji.io/docs/img/alicia-FB.png" alt="Select Custom Fallback" width="650"/></p>
 
-## Integrate Juji Chatbots with Third-Party Systems
+### Integrate Juji Chatbots with Third-Party Systems
 
-(Steve: put relevant videos here)
+<div align="center">
+<iframe width="560" height="315" src="https://youtu.be/nUf9zyM2nbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
