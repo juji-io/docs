@@ -1,6 +1,6 @@
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- <script async src='https://www.google-analytics.com/analytics.js'></script> -->
 <script async src='/docs/assets/javascripts/autotrack.js'></script>
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+<!-- <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 ga('create', "{{ config.google_analytics[0] }}", 'auto', {allowLinker: true});
 ga('require', 'linkid');
 ga('require', 'cleanUrlTracker');
@@ -12,5 +12,15 @@ ga('require', 'urlChangeTracker');
 ga('require', 'linker');
 ga('linker:autoLink', ['juji.ai', 'juji.io'], false, false);
 ga('send', 'pageview');
-</script>
+</script> -->
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113933244-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113933244-1', {
+    'linker': {'domains': ['juji.ai', 'forum.juji.io', 'docs.juji.io', 'juji.io']}
+  });
+</script>

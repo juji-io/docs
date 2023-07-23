@@ -89,13 +89,16 @@ extra:
 
 nav:
   - Juji Home: https://juji.io
+  - Beginners' Guide:
+    - Why AI Chatbots: why-ai-chatbots.md
+    - Do I Need AI Chatbot: do-i-need-ai-chatbot.md
+    - How to Select an AI Chatbot Platform: how-to-select-ai-chatbot-platform.md
   - Get Started: index.md
   - Juji Studio:
     - Introduction: juji-studio.md
-    - Chatbot Design: design.md
-    - Chatbot Deployment: release.md
-    - Chatbot Monitoring: reports.md
-    - Design Best Practices: chatbot-design-tips.md
+    - Chatbot Design: juji-studio/design.md
+    - Chatbot Deployment: juji-studio/release.md
+    - Chatbot Monitoring: juji-studio/reports.md
   - Juji IDE:
     - Introduction: juji-ide.md
     - Concepts: concept.md
@@ -108,19 +111,27 @@ nav:
     - Custom Topics: custom-topics.md
   - Juji API:
     - Introduction: api.md
-    - Chat API: chat.md
-    - Data Model: nouns.md
-    - Chat Creation API: client.md
-    - Data API: meta.md
-  - Beginners' Guide:
-    - Why AI Chatbots: why-ai-chatbots.md
-    - Do I Need AI Chatbot: do-i-need-ai-chatbot.md
-    - How to Select AI Chatbot Platform: how-to-select-ai-chatbot-platform.md
-  - AI Chatbot Design Tips:
-      - Best Practices: chatbot-design-tips.md
-      - Advanced Design Tips: chatbot-design-tips-advanced.md
+    - Juji Psychographic Insights API: psychographic-api.md
+    - Juji Cognitive AI Chat API: cognitive-ai-chatbot-api.md
+    # - Chat API: chat.md
+    # - Data Model: nouns.md
+    # - Chat Creation API: client.md
+    # - Data API: meta.md
+ 
   - Get Help:
     - Tutorials: tutorial.md
+    - AI Chatbot Design Tips: quality-chatbot-design-tips.md
+    - Advanced Design Tips: chatbot-design-tips-advanced.md
     - FAQs: faq.md
     - Trouble Shooting: trouble-shooting.md
     - Juji Forum: https://forum.juji.io
+
+  
+    
+#      - Question-Asking Chatbots: question-asking-chatbot-design-tips.md
+#      - Make Chatbots Helpful: helpful-chatbot-design-tips.md
+#      - Add Multimedia Chats: multimedia-chatbot-design-tips.md
+#      - Support Complex Q&A: multi-turn-chatbot-design-tips.md
+#      - Inject Knowledge into Chatbots: func-api-design-tips.md
+    
+#    - Juji Studio Reference Guide

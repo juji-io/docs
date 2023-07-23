@@ -110,7 +110,7 @@ or your website:
 ### **Monitor Chatbot**
 
 Juji also helps you monitor your chatbot activities and summarize
-audience information. Check out [**Reports Dashboard**](reports)
+audience information. Check out [**Reports Dashboard**](juji-studio/reports)
 for more details. 
 
 
@@ -122,5 +122,5 @@ chatbot can handle customer inquiries, make personalized product
 recommendations, and elicit customer reviews, 24x7 and always with a
 cool and upbeat attitude :sunglasses:  Now lets customize your chatbot to make it truly awesome.
 
-### [**Customize Chatbot**](design)
+### [**Customize Chatbot**](juji-studio/design)
 

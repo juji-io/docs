@@ -909,7 +909,7 @@ go back to the including topic, which is usually the intended behavior.
    "Wow, I like meat, yummy!"
    (meat-food))
 ```
- Anonymous followup topics use `_` as the topic name,  they do not take parameters and do not have their own option maps. Instead they inherit the parameters and option map of the ancestor topics, as well as the captured contents of the ancestor rules.
+ Anonymous followup topics use `_` as the topic name, they do not take parameters and do not have their own option maps. Instead they inherit the parameters and the `:segment-sentence?` and the `:named-pattern` options from the ancestor topics, as well as the captured contents of the ancestor rules.
 
 ## Variable
 
