@@ -106,7 +106,7 @@ As part of the HELP guide, it is also critical to customize answers to the follo
 
 * **User request to chat with a human agent**. By default, this question is already in a chatbot's knowledge base. You may want to edit the system default response based on your situation. Just download the CSV file from the Q&A board and edit the answer to this question in the CSV file. Then rename and upload to save the entries to your chatbot.
 
-* **Default response to any unrecognized user input**. You can edit the <a href="https://juji.io/docs/juji-studio/design/" target="_blank">**default response to unknown user input**</a> as part of the [conversation parameters](../design#conversation-parameters). You can also add randomized choices to more specific fallbacks.
+* **Default response to any unrecognized user input**. You can edit the <a href="https://juji.io/docs/juji-studio/design/" target="_blank">**default response to unknown user input**</a> as part of the [conversation parameters](../juji-studio/design#conversation-parameters). You can also add randomized choices to more specific fallbacks.
 
 You can handle other help questions, but be careful not to overwhelm the user, who can always go to the FAQ if s/he needs specific questions answered at any time during the conversation.
 

@@ -327,8 +327,7 @@ the user.
 **IMPORTANT TIP**
 
 To decide which type of trigger (chatbot condition) to use, please
-check out this [design
-tip](https://juji.io/docs/quality-chatbot-design-tips-advanced#use-proper-chatbot-trigger).
+check out this [design tip](https://juji.io/docs/chatbot-design-tips-advanced#use-proper-chatbot-trigger).
 
 
 #### **Customize THEN Actions**
