@@ -21,7 +21,7 @@ Juji IDE provides an interactive development environment that allows
 
 In the IDE, you have access to an online scripting environment. To
 access the IDE page, you can click on the red round button at the bottom left corner of the
-[Chatbot Design](../design) window in [Juji Studio](../juji-studio).
+[Chatbot Design](/juji-studio/design) window in [Juji Studio](/juji-studio).
 
 <p align="center"><img src="../img/ide-button.png" alt="IDE button" width="650"/></p>
 
@@ -32,7 +32,7 @@ and config files. The files are organized by the bot applications you have
 created, each called an `Engagement`.
 
 Each `Engagement` contains a `Config` document, which reflects the [Design
-View](design.md) of the bot; a `Preivew` release, which has the script powering
+View](../design) of the bot; a `Preivew` release, which has the script powering
 the preview chat; and a number of `Web`, `Facebook`, or `Slack` releases, which
 are your production releases of the bot scripts.
 
@@ -92,7 +92,7 @@ Your self-defined FAQs need to be written in a csv file satisfying the following
 
 Here's an <a href="../faq-parser/example-faqs.csv">example FAQ csv file</a>.
 
-The ability of Juji bot to recognize FAQs depends on the number of example questions you give. So it is recommended that you give multiple forms of the same question as examples. 
+The ability of Juji bot to recognize FAQs depends on the number of example questions you give. So it is recommended that you give multiple forms of the same question as examples.
 
 Once you have prepared your FAQ and answers in the above format, do the following two steps to import them:
 
@@ -149,7 +149,7 @@ At this point, you may save and compile the script. Now your self-defined FAQs a
 ## Chatbot Scripting Resources
 
 To use Juji IDE effectively and efficiently, you may also want to check out
-the following resources, which can help you write scripts, extend chatbot capabilities, and integrate Juji chatbots with third-party systems. 
+the following resources, which can help you write scripts, extend chatbot capabilities, and integrate Juji chatbots with third-party systems.
 
 ### [Juji Concepts](../concept)
 
@@ -165,4 +165,3 @@ To extend the capabilities of Juji chatbots, such as connecting them with third-
 
 * [System Functions](../function)
 * [User-Defined Functions](../udf)
-

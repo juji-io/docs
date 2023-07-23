@@ -1,9 +1,9 @@
 # Concepts of Juji Platform
 
 Juji leverages the fruits of half century of artificial
-intelligence (AI) research, mainly in "Symbolic AI" to build a practical and 
-easy-to-use conversational agent authoring platform which makes sophisticated conversational 
-AI available to everyone.  
+intelligence (AI) research, mainly in "Symbolic AI" to build a practical and
+easy-to-use conversational agent authoring platform which makes sophisticated conversational
+AI available to everyone.
 
 The core of the Juji platform is a hybrid AI system
 which marries Symbolic AI (characterized by a high-confidence solidity) and the latest deep learning
@@ -16,9 +16,9 @@ To meet business requirements which demand flexibility, accountability and
 explainability of AI systems, Juji developed a declarative production rule
 language to glue together its advanced NLP
 capabilities. Called **REP** (Responsible Empathetic Persona), the language compiler
-and provides run-time **automatic dialog management**, which alleviates most of the time-consuming confusions, 
-burdens and pains often associated with developing anything but the most rudimentary conversational agent. 
-In other words our hybrid AI is baked in.  This is one of the central advantages of the Juji Platform. 
+and provides run-time **automatic dialog management**, which alleviates most of the time-consuming confusions,
+burdens and pains often associated with developing anything but the most rudimentary conversational agent.
+In other words our hybrid AI is baked in.  This is one of the central advantages of the Juji Platform.
 
 So let's briefly go over the main concepts of REP language. If you need more detail take a look at [Language
 Reference](reference.md).
@@ -66,9 +66,9 @@ When a rule is fired, its associated followup topics are 'primed', and automatic
      ["Nice to meet you!"]))
 
 ```
-*Line 5* starts with an anonymous topic definition, `_` , for a name or label if one doesn't come to mind. No paremeters are accepted. The line ends with a trigger pattern, which is the word 'hello'. If the word "hello" is contained in the user's response to the bot's initial "Hello world!", the action is triggered, 
+*Line 5* starts with an anonymous topic definition, `_` , for a name or label if one doesn't come to mind. No paremeters are accepted. The line ends with a trigger pattern, which is the word 'hello'. If the word "hello" is contained in the user's response to the bot's initial "Hello world!", the action is triggered,
 
-*Line 6* is the triggered action, In this case, a text response by the bot to reply "Nice to meet you!" to the user. 
+*Line 6* is the triggered action, In this case, a text response by the bot to reply "Nice to meet you!" to the user.
 
 This time, instead of a default topic definition, let's go ahead and give our topic a proper definition instead. Let's call it "greeting".
 
@@ -93,7 +93,7 @@ achieve the same thing.
 ```
 
 To extend the power of the topic as a building block, there can be multiple rules in a topic. And each rule may itself be
-associated with zero or multiple embedded followup topics. 
+associated with zero or multiple embedded followup topics.
 
 ```clojure
 (deftopic greeting
@@ -120,9 +120,9 @@ that returns the user's first name. In addition to producing text output,
 functions can do arbitrary things. You can also write your own [user defined function](udf.md).
 
 Line 7 is a trigger that contains a built-in function call that checks whether
-the user input is very similar to the short question  "What's up?". This is a classic example of the Juji hybrid AI in action. The "0.9" equates to a 90% match proabaility, which can be ascertained by utilizing the advanced DL and ML technologies baked in to the Juji codesbase. 
+the user input is very similar to the short question  "What's up?". This is a classic example of the Juji hybrid AI in action. The "0.9" equates to a 90% match proabaility, which can be ascertained by utilizing the advanced DL and ML technologies baked in to the Juji codesbase.
 
-Line 11 demonstrates that our pattern language seamlessly handles foreign languages within the same rule. 
+Line 11 demonstrates that our pattern language seamlessly handles foreign languages within the same rule.
 
 Line 9, 13, 14 contains reference to topics that must be defined elsewhere
 already, and pulled into the conversation from external sources.
@@ -132,7 +132,7 @@ already, and pulled into the conversation from external sources.
 In Juji's REP protocal, the dialog flow is managed automatically by the Juji system. The system
 which takes care of both system initiated (proactive) and user initiated (reactive)
 conversation turns. The conversation may jump around, but the bot always brings
-the conversation back to the rules and topics as defined by the chatbot creator. 
+the conversation back to the rules and topics as defined by the chatbot creator.
 This unique combination of supported flow management and mission (or dialogue through-line)
 focus is made easier by computational recognition of three key topic types.
 
@@ -140,12 +140,12 @@ focus is made easier by computational recognition of three key topic types.
 
 ### Agenda Topics (User Generated)
 
-These are often the user's chosen topics as constructed in the [Design View](design.md). Once built they are lined up into anan agenda queue on the Juji engine's run-time system. Users can control and vary the order of, and trigger randomization within their agenda topics, as they see fit. The bot always attempts to prioritize the user's chosen agenda topics, and will only fundamentally diverge from the user's plan if the user consistently fails to follow the agenda topic path laid out by the chatbot creator.
+These are often the user's chosen topics as constructed in the [Design View](../design). Once built they are lined up into anan agenda queue on the Juji engine's run-time system. Users can control and vary the order of, and trigger randomization within their agenda topics, as they see fit. The bot always attempts to prioritize the user's chosen agenda topics, and will only fundamentally diverge from the user's plan if the user consistently fails to follow the agenda topic path laid out by the chatbot creator.
 
 ### Ad-lib Topics (Small Talk)
 
-If an agenda topic fails to produce a bot response, ad-lib topics can be triggered. Juji has many of these built in topics 
-that cover all kinds ofcontingencies, such as user digression, user misbehavior, missing information, courtesy fillers, troll responses, small talk and and so on. Users may write their own ad-lib topics, which can then added to the Juji database for use by others. Ad-lib topics are a critical bridge to completing an agenda, and once again, are built in. 
+If an agenda topic fails to produce a bot response, ad-lib topics can be triggered. Juji has many of these built in topics
+that cover all kinds ofcontingencies, such as user digression, user misbehavior, missing information, courtesy fillers, troll responses, small talk and and so on. Users may write their own ad-lib topics, which can then added to the Juji database for use by others. Ad-lib topics are a critical bridge to completing an agenda, and once again, are built in.
 
 ### Exception Topics  (Fallbacks)
 
@@ -158,10 +158,10 @@ The function of a topic in any topic type above is not fixed. For example, an ad
 ## Other Features
 
 In addition to topics and functions, REP language includes some convenient scripting
-features, such as 
+features, such as
 
-[Variables](reference.md#variable), 
-[Named Patterns](reference.md#named-pattern), 
+[Variables](reference.md#variable),
+[Named Patterns](reference.md#named-pattern),
 [Name Spaces](reference.md#namespace).
 
 To enable users to build interviews and surveys, REP has tailor-made scripting features for use cases involving questions (eg, job interviews) and surveys (GUI).
@@ -169,4 +169,4 @@ To enable users to build interviews and surveys, REP has tailor-made scripting f
 [Questions](reference.md#question)
 [GUI](reference.md#gui).
 
-Further features will be rolled out over time. 
+Further features will be rolled out over time.

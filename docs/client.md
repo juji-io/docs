@@ -40,9 +40,9 @@ A chatbot lives in an [engagement](nouns.md#engagement). In order to customize a
 mutation CreateEngagement($input: CreateEngagementInput!){
 	createEngagement(input: $input) {
 		engagement{
-			name 
-			id 
-			order 
+			name
+			id
+			order
 			status
 		}
 	}
@@ -59,7 +59,7 @@ query Engagements($brandName: String!) {
 }
 ```
 
-Then you can 1) update your chatflow by uploading a [customized config-doc](config-doc.md) and/or 2) update your Q&As by uploading a [customized Q&A csv file](design.md#customize-qa-and-fallback).
+Then you can 1) update your chatflow by uploading a [customized config-doc](config-doc.md) and/or 2) update your Q&As by uploading a [customized Q&A csv file](/juji-studio/design#customize-qa-and-fallback).
 
 ```javascript
 // Set isJson to true if the the config-doc is in JSON format,
@@ -85,13 +85,13 @@ help,Can you help me?,,,,'
 
 ## Launch Your Chatbot
 
-Once the chatbot is ready, you can deploy it by creating a [web release](release.md#deploy-to-web).
+Once the chatbot is ready, you can deploy it by creating a [web release](/juji-studio/release#deploy-to-web).
 
 ```javascript
 mutation CreateRelease($input: CreateReleaseInput!){
 	createRelease(input: $input) {
-		id 
-		order 
+		id
+		order
 		type
 	}
 }
@@ -103,6 +103,6 @@ You can continue to improve your chatbot after you have made a release - simply 
 
 ## References
 
-* Please read about Juji API [introduction](api.md), [data model](nouns.md) and [data API](meta.md) first for important API concepts to help you better understand this guide. 
+* Please read about Juji API [introduction](api.md), [data model](nouns.md) and [data API](meta.md) first for important API concepts to help you better understand this guide.
 * [Juji's GraphiQL](https://juji.ai/graphiql/graphiql.html) can be used to explore existing GraphQL APIs and their parameters.
 * [Juji client github page](https://github.com/juji-io/cli-client#creating-a-new-chat-using-only-api-an-example) contains concrete examples written in JavaScript for all the API calls in this guide, please refer to it for detail.
