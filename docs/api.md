@@ -2,8 +2,8 @@
 
 The Juji Cognitive AI infrastructure consists of two core cognitive AI
 engines: **Psychographic Insights Engine** and **Cognitive AI Chat
-Engine**, both of which are **domain and industry
-independent**. Developers can access both Juji engines via API and
+Engine**. Both of are **domain and industry independent**. 
+Developers can access both Juji engines via API and 
 build their own cognitive AI applications in **any domain and
 industry**.
 
