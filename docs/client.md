@@ -2,7 +2,7 @@
 
 <p align="center"><img src="../img/convert-chatflow.png" alt="Convert existing chatflow to Juji config-doc" width="650px"/></p>
 
-This guide is for users who enjoy Juji chatbot's powerful dialog management, but prefer using their own interfaces to create chatflow. For example, one can take an existing chat flow created in another platform, convert it to [Juji's chatflow format](config-doc.md). Then use Juji APIs to create and deploy the chatbot on Juji. In other words, it is possible to programmatically create and deploy chatbots on the Juji platform. You just need to follow three simple steps:
+This guide is for users who enjoy Juji chatbot's powerful dialog management, but prefer to use their own user interfaces to create chatflow. For example, one can take an existing chat flow created in another platform, convert it to [Juji's chatflow format](config-doc.md). Then use Juji APIs to create and deploy the chatbot on Juji. In other words, it is possible to programmatically create and deploy chatbots on the Juji platform. You just need to follow three simple steps:
 
 1. [Log in to your Juji account](#create-a-juji-account-and-login)
 2. [Create a chatbot and customize](#create-a-chatbot-and-customize-it)
