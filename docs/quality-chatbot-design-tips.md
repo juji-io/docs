@@ -69,7 +69,7 @@ chatbot](../juji-studio/design) and add the marked items in the main chat flow.
 <p align="center"><img src="../img/chat-outline-annotated.png" alt="annotated
 sample chat outline" width="650"/></p>
 
-Over time this process should become faster and faster as you become omre familar with the 'storytelling' aspects that Juji can handle so well. Indeed, many of our users say Juji is the best platform they have ever used not just becaise it has a complex built-in engine with an easy to understand UI but it also a very creative tool.
+Over time this process should become faster and faster as you become more familiar with the 'storytelling' aspects that Juji can handle so well. Indeed, many of our users say Juji is the best platform they have ever used not just becaise it has a complex built-in engine with an easy to understand UI but it also a very creative tool.
 
 ### Prepare Q&A List and Chitchats
 
