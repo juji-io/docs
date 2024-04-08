@@ -7,16 +7,16 @@ Platform](../)
 
 Juji supports two main types of chatbot request:
 
-[choice-based](../juji-studio/design#choice-request); which collects structured user input such as "option A" or "Option B".
+[choice-based](../juji-studio/design#choice-request); which collects structured user input such as "Option A" or "Option B".
 [free-text](../juji-studio/design#free-text-request); which collects open-ended "free-text" user input, such as a full sentence or more.
 
-If the goal of a given request is to guide users to pre-defined pathways or
+If the goal of a given request is to guide users to pre-defined pathways  
 or to gather user input on a limited set of options, use the choice-based
 request type. It is deterministic, quick, and almost error free, becuase it's completely rule-driven.
 
 If your goal is to elicit open-ended user input, e.g., their insights
 or unanticipated responses on a particular topic, use a free-text
-request. Be aware that if you're offering the user the right to enter just about anything, the possibility of digressions or disambiguous responses is quite high. It's unfair of a user to follow "the lines" of a conversation when the guard rails are simply not there. To handle the unexpected (which you should of course, expect) it's always wise to [choose a Juji built-in dialog](../juji-studio/design#built-in-dialog) to get your conversation through such situations in a simple, almost automatic but still completely naturalistic way. If necessary, you can write your own [custom chatbot actions](../juji-studio/design#customizing-chatbot-actions) to handle specific digressive user input that you wish to capture and address to drive the conversation in different and interesting ways. The more you master our platform, the more capable you will be at writing conversations that feel open, free and user-driven - while maintaining control over their ultimate outcomes.
+request. Be aware that if you're offering the user the right to enter just about anything, the possibility of digressions or ambiguous responses is quite high. It's unfair of a user to follow "the lines" of a conversation when the guard rails are simply not there. To handle the unexpected (which you should of course, expect) it's always wise to [choose a Juji built-in dialog](../juji-studio/design#built-in-dialog) to get your conversation through such situations in a simple, almost automatic but still completely naturalistic way. If necessary, you can write your own [custom chatbot actions](../juji-studio/design#customizing-chatbot-actions) to handle specific digressive user input that you wish to capture and address to drive the conversation in different and interesting ways. The more you master our platform, the more capable you will be at writing conversations that feel open, free and user-driven - while maintaining control over their ultimate outcomes.
 
 ## **Use The Correct Chatbot Trigger**
 
@@ -143,7 +143,7 @@ To clone your Juji chatbot hit the ellipsis menu (...) on a chatbot in your dash
 
 The export/import approach is designed to support non-simultaneous chatbot collaboration between the owners of different Juji accounts. It can also facilitate a sale of a chatbot from one party to another.
 
-To export your Juji chatbot hit the (...) ellipsis drop down menu and this time choose `export` to download a .Juji file for your designated download folder. Give it a relevant title. For example, if it's a restaurant reservation bot, you could call the file `restaurant-reservation-bot.juji`. After that's done, you can send it or to your collaborator or customer who can then import it to their own Juji account.
+To export your Juji chatbot hit the (...) ellipsis drop down menu and this time choose `export` to download a .Juji file for your designated download folder. Give it a relevant title. For example, if it's a restaurant reservation bot, you could call the file `restaurant-reservation-bot.juji`. After that's done, you can send it to your collaborator or customer who can then import it to their own Juji account.
 
 <p align="center"><img src="../img/export-a-chatbot.png" alt="Export a
 chatbot" width="650"/></p>
@@ -188,4 +188,4 @@ effort to update the embedded chatbot.
 
 ## **Power User Stuff**
 
-Check out more [chatbot best practices](../quality-chatbot-design-tips) or venture into **[Juji IDE](../juji-ide)**, our interactive development environment, and customize your Juji chatbot to another level of awesome after setting up the key elements in [Juji Studio](../juji-studio).
+Check out more [chatbot best practices](../quality-chatbot-design-tips) or venture into **[Juji IDE](../juji-ide)**, our interactive development environment, and customize your Juji chatbot to another level of awesomeness after setting up the key elements in [Juji Studio](../juji-studio).

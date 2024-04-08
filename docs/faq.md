@@ -42,7 +42,7 @@ check out [how to determine the optimal chat length](../quality-chatbot-design-t
 <a name="!improve-chatbot"></a>
 ### How will my Juji chatbot improve over time? Does it get smarter if more people use it?
 
-: Your chatbot can improve over time for two reasons. First, it will be get smarter if you inject more knowledge into your chatbot. Second, it will also improve because Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, more Juji chatbots are in action, the better all the Juji chatbots will get. Yes, Juji Chatbots have a network effect in play. Or with apologies to Alexandre Dumas. "All for one and one for all". But we don't do user-side training data, so that headache you don't have.
+: Your chatbot can improve over time for two reasons. First, it will get smarter if you inject more knowledge into your chatbot. Second, it will also improve because Juji constantly improves its dialog library based on all Juji chatbot usage and behavior. In other words, the more Juji chatbots are in action, the better all the Juji chatbots will get. Yes, Juji Chatbots have a network effect in play. Or with apologies to Alexandre Dumas. "All for one and one for all". But we don't do user-side training data, so that headache you don't have.
 
 <a name="!creation-time"></a>
 ### How long will it take to create an AI chatbot?
@@ -163,7 +163,7 @@ request" width="550"/></p>
 <a name="!msg-vs-request"></a>
 ### What are the differences between a `Message` and a `Request`?
 
-: A message or remark is a chatbot comment in conversation that does not wait for a user response. In contrast, when the chatbot asks a question or make a request, it will actively wait for the user to input the answer.
+: A message or remark is a chatbot comment in conversation that does not wait for a user response. In contrast, when the chatbot asks a question or makes a request, it will actively wait for the user to input the answer.
 
 
 <a name="!custom-topic"></a>
@@ -174,14 +174,14 @@ request" width="550"/></p>
 
 <a name="!custom-response"></a>
 
-### How can I customized the chatbot's response to participants' answers in open-ended questions?
-: You can use both [Juji Studio](../juji-studio) or [Juji IDE](../juji-ide) to customize chatbot responses. Also check out [Chatbot Design](../juji-studio/design) for specifics.
+### How can I customize the chatbot's response to participants' answers in open-ended questions?
+: You can use both [Juji Studio](../juji-studio) and [Juji IDE](../juji-ide) to customize chatbot responses. Also check out [Chatbot Design](../juji-studio/design) for specifics.
 
 
 <a name="!mostly-choices"></a>
 ### Does the chatbot work with interview questions which have primarily choice answers, and need only the chatbot's help to draw out responses for those who select “other” in their multiple choice answer?
 
-: Yes, we support choice questions, open-ended questions, and other types of questions. Although we recommend our users to take advantage of our AI powered conversation skills and personality analysis by using open-ended questions, our chatbot works perfectly in chat with primarily choice questions. The AI chatbot can be easily set up to collect extra responses when interviewee select "other" in a multiple choice question.
+: Yes, we support choice questions, open-ended questions, and other types of questions. Although we recommend our users to take advantage of our AI powered conversation skills and personality analysis by using open-ended questions, our chatbot works perfectly in chat with primarily choice questions. The AI chatbot can be easily set up to collect extra responses when interviewees select "other" in a multiple choice question.
 
 
 <a name="!add-q"></a>
@@ -205,11 +205,11 @@ request" width="550"/></p>
 <a name="!followup"></a>
 ### What is a follow-up request?
 
-: A follow-up request is where a chatbot asks a question to deepen a conversation based on a user's answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user's answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](../juji-studio/design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned up user responses to a previous question.
+: A follow-up request is where a chatbot asks a question to deepen a conversation based on a user's answer to the previous question (i.e., parent question). For example, a follow-up question may be used to probe further (e.g., `What features do you dislike most?`) if a user's answer to the previous question (e.g., `How do you like the lipstick so far`) contains negative or positive sentiment (see how to easily [detect user sentiment](../juji-studio/design#sentiment-detection) in a chat). Unlike a reguar question, a follow-up question is often conditioned upon user responses to a previous question.
 
 
 <a name="!followup-vs-reg"></a>
-### What are the differences between a follow-up request or a request I added using the round green `+` button)?
+### What are the differences between a follow-up request or a request I added using the round green `+` button?
 ### When should I add a follow-up request?
 ### Should I add a follow-up or a regular request?
 
@@ -361,7 +361,7 @@ choose one to deliver the best user experience.
 <a name="!preview-start-again"></a>
 ### My chat starts over again when I return to the `Preview` page
 
-: This is the expected behavior. “Preview” page is set up for user to tests their designed chats in different scenarios. When refreshed or returning to the “Preview” page from elsewhere, it will restart the chat.
+: This is the expected behavior. “Preview” page is set up for user to test their designed chats in different scenarios. When refreshed or returning to the “Preview” page from elsewhere, it will restart the chat.
 
 ## Deployment Questions
 
@@ -461,7 +461,7 @@ maintain your chatbot.
 <a name="!dont-see-results"></a>
 ### I don't see results of my chat
 
-: Only the participation in a released(deployed) chat will show up in the results page. Participation in a preview chat will not be stored as results. For Web deployment, test mode is another option for testing. Comparing with testing on the `Preview` page, the participation on the test mode link can be viewed on the `Results` page.
+: Only the participation in a released (deployed) chat will show up in the results page. Participation in a preview chat will not be stored as results. For Web deployment, test mode is another option for testing. Compared with testing on the `Preview` page, the participation on the test mode link can be viewed on the `Results` page.
 
 
 <a name="!download-results"></a>

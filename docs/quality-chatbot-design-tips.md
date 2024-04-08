@@ -98,7 +98,7 @@ No matter how smart your chatbot is, there's always something it's going to miss
 a conversation more efficient, transparent and effective, we recommend you
 always prepare a `HELP` guide to make sure users know your chatbot's capabilities. By establishing its limits, you will be setting clear expectations with users, who will be more likely to stick with your chatbot if something goes awry. If a disappointment is a true surprise, users tend to take their leave, sharpish. And when they go, they have a habit of not coming back. So this is important stuff.
 
-The best way to insure you're covered is to head for the Q&A dashboard, and add an entry with "Help"
+The best way to ensure you're covered is to head for the Q&A dashboard, and add an entry with "Help"
 in the `Question` column, and your help guide in the `Answer` column, and then click `Submit`. You can also do so by downloading the CSV file on
 the Q&A board, filling in the entry related to `Help` in the CSV file, and then uploading the revised CSV file.
 
@@ -185,7 +185,7 @@ built-in dialogs automatically handle highly diverse, potentially
 complex user expressions. Such dialogs deliver great conversation experience
 without requiring much customization. And as Juji grows so does the library of built-in conversational snippets, making your life even easier with Juji.
 
-Since Juji uses the request label (see how to [write a good label](../chatbot-design-tips-advanced#give-sensible-labels)) to find the matched built-in dialog, its up to label selecction to find the built-in that's right for you. That's why we always recommend testing out the built-ins against your label until you find the built-in that works for your conversational outline and structure. Don't spend hours on this, but at least get the responses to the point where they're accurate enough to be effective.=, and if you want to improve them, you can add variations that go into the Juji brain bank, so it's a win-win.
+Since Juji uses the request label (see how to [write a good label](../chatbot-design-tips-advanced#give-sensible-labels)) to find the matched built-in dialog, its up to label selecction to find the built-in that's right for you. That's why we always recommend testing out the built-ins against your label until you find the built-in that works for your conversational outline and structure. Don't spend hours on this, but at least get the responses to the point where they're accurate enough to be effective, and if you want to improve them, you can add variations that go into the Juji brain bank, so it's a win-win.
 
 <p align="center"><img src="../img/search-a-topic.png" alt="search a
 topic" width="550"/></p>
@@ -194,7 +194,7 @@ topic" width="550"/></p>
 
 `akjds;laksdjfsl;kdjfa;lskdjf` When a Juji chatbot sees that in response to a pretty straightforward question, it can detect that its gibberish and respond in a way that helps the user return to a more motivated place, if that's possible. Even  person with a less-than-goldfish length attention span will appreciate the bot's good intentions, and after adding some more gibberish may be silently impressed that here was a bot that kind of understood their idea of a joke rather than deliver some completely robotic fallback like "I'm still learning. Run your answer by me again." Juji bots like to learn but `akjds;laksdjfsl;kdjfa;lskdjf` is definitely not on the curriculum.
 
-Juji regards "non-answers" the sanme way as it treats `asdfasdfouywer9uw09eru1` The classic non-answer is `I don't know` Using the gibberish detection workflow you can decide whether to accept an non-answer response as shown below.
+Juji regards "non-answers" the same way as it treats `asdfasdfouywer9uw09eru1` The classic non-answer is `I don't know` Using the gibberish detection workflow you can decide whether to accept an non-answer response as shown below.
 
 <p align="center"><img src="../img/topic-setting-1.png" alt="Topic
 Setting 1" width="650"/></p>
@@ -226,10 +226,10 @@ paraphrases to a chatbot message:
 <p align="center"><img src="../img/add-paraphrases-remark.png" alt="paraphrase a message" width="550"/></p>
 
 Similarly, a chatbot may need to repeat a question/request if a user
-does not comply to it. In such a case, you want to add different forms of the question prompt like a person would IRL. Repetitive is a great giveaway of robotic conversation, and people, who like their bots to be just like them, hate it. Juji also enables another humanlike element. When giving a request first time, the chatbot
-will naturally set out the context and rationale for its request. On subsequent asks of the tame question, the chatbot will omit these contextual elements (because the user is already aware of them) and in so doing will sound natural and relaxed.
+does not comply to it. In such a case, you want to add different forms of the question prompt like a person would URL. Repetitive is a great giveaway of robotic conversation, and people, who like their bots to be just like them, hate it. Juji also enables another humanlike element. When giving a request the first time, the chatbot
+will naturally set out the context and rationale for its request. On subsequent asks of the same question, the chatbot will omit these contextual elements (because the user is already aware of them) and in so doing will sound natural and relaxed.
 
-Here's am example of paraphrasing a request in action, showing the initial contextually sound phrasing of a chatbot request. Since this message is quite a mouthful, avoiding it on a second or subsequent ask would b very valuable
+Here's am example of paraphrasing a request in action, showing the initial contextually sound phrasing of a chatbot request. Since this message is quite a mouthful, avoiding it on a second or subsequent ask would be very valuable
 
 <p align="center"><img src="../img/initial-msg.png" alt="Initial Message" width="650"/></p>.
 
@@ -247,7 +247,7 @@ The screenshot below shows how question paraphrases are used in a chat.
 
 ### Personalize Messages and Requests
 
-Personalized messages and requests make users feel more special and keeps them engaged. There are two simple ways to make a
+Personalized messages and requests make users feel more special and keep them engaged. There are two simple ways to make a
 chatbot message or requested personalized.
 
 * **Address users by their first name occasionally during a chat**.
@@ -268,11 +268,11 @@ Below is how the chat should play out:
 
 <p align="center"><img src="../img/preview-repeat-words.png" alt="Preview the repeat of user words" width="650"/></p>
 
-Again, it's important not to go overboard with the repeat-backs, or what sounded supportive can quickly become tiresome, and possibly even disingenuous. (Both the former are conversation killers in real life so you can imagine how an automated chatbot will fair having to deal with this kind of repetition).
+Again, it's important not to go overboard with the repeat-backs, or what sounded supportive can quickly become tiresome, and possibly even disingenuous. Both the former are conversation killers in real life so you can imagine how an automated chatbot will fair having to deal with this kind of repetition.
 
 * **Echo a user's feelings in a chatbot response**.
 
-Acknowledging user feelings, and making clear you understand them are the dual elements of empathy (Empathy is made up of 'cognitive empathy' which is understanding a person's concerns or predicament, which is a pre-requisite of 'affective empathy' which is the expressed concern to 'show' the person that you (or in this case the bot) can demonstrate its understanding. In other words it's a very important device, and here's how to build it. When your customizing your bots responses;
+Acknowledging user feelings, and making clear you understand them are the dual elements of empathy. Empathy is made up of 'cognitive empathy' which is understanding a person's concerns or predicament, and it is a pre-requisite of 'affective empathy' that is the expressed concern to 'show' the person that you (or in this case the bot) can demonstrate its understanding. In other words it's a very important device, and here's how to build it. When your customizing your bots responses;
 
   	1. Define a `contains-sentiment` trigger
   	2. Create a corresponding chatbot response based on the detected sentiment
@@ -283,7 +283,7 @@ And here's the chat as it would play out
 
 <p align="center"><img src="../img/preview-ack-sentiment.png" alt="Preview how to ack user sentiment" width="650"/></p>
 
-Used judiciously, this feature is a very important way of imprinting the empathetic nature of Juji on its users. It's worth noting that empathy is a profund and very transferable human trait, that is foundational to personality. It is often known as a "super trait", and its central to Juji's approach.
+Used judiciously, this feature is a very important way of imprinting the empathetic nature of Juji on its users. It's worth noting that empathy is a profund and very transferable human trait, that is foundational to personality. It is often known as a "super trait", and it's central to Juji's approach.
 
 ### Determine Chatbot Default Response
 
@@ -302,7 +302,7 @@ be used instead of Juji built-in default responses.
 
 ### Chatbot Refresh Rate
 
-Juji is structured so it can essentially talk forever if prompted. By default, though, the bot restarts fresh every 60 minutes. If your bot is a long interview, you might want set the refresh rate a little longer, because it's unlikely that the user will want to start over with the same interview. That wouold be odd. You can set the `refresh rate` by scrolling down `chatbot settings` situated as the right tab of the `design` screen.
+Juji is structured so it can essentially talk forever if prompted. By default, though, the bot restarts fresh every 60 minutes. If your bot is a long interview, you might want set the refresh rate a little longer, because it's unlikely that the user will want to start over with the same interview. That would be odd. You can set the `refresh rate` by scrolling down `chatbot settings` situated as the right tab of the `design` screen.
 
 <p align="center"><img src="../img/chatbot-settings-refresh.png"
 alt="set up a chatbot refresh rate" width="650"/></p>
@@ -310,7 +310,7 @@ alt="set up a chatbot refresh rate" width="650"/></p>
 ## **Ensure Conversation Quality**
 
 Like in a natural conversation, humans rarely follow a pre-defined
-conversation flo, and tend to digress, because we're all - to a greater or lesser extent - creative, spontaneous, or very occassionally in a bad mood and non-cooperative. To
+conversation flow, and tend to digress, because we're all - to a greater or lesser extent - creative, spontaneous, or very occassionally in a bad mood and non-cooperative. To
 engage users in a quality conversation, a smart chatbot should be able to anticipate user digressions and handle them just right. Getting this right in most engines is a time-consuming feat, but in Juji we've taken the human approach, analyzed milions of human-chatbot conversations and boiled down the number of digressions to those most commonly used (and that make up about 95% of most digressive interactions). Digressions are most likely as non-dequitor responses to questions, particularly open-end questions.
 
 Here are just a few examples, some of which are already covered.
@@ -351,7 +351,7 @@ Setting 2" width="650"/></p>
 Being human, users may also give "excuses" or intentionally dodge a question. Take this example. Let's assume
 that a chatbot asks a user "What's the top challenge you face?".  One
 user may respond "I don't really know since I have many challenges."
-while another user may state "That's tough to answer." Both get us nowhere. There are countless examples of "nowhere" responses like this, which need carefully constructed responses to reinvigorate the discussoin (Bot are just like humans in that regard. If a conversation is flagging, we use similar devices to get the confab back on the rails. At Juji, we do this by detecting the type of user response, and giving a suitable comeback. If a question is deemed optional but was answered anyway, we just tell the user not to worry and move on.
+while another user may state "That's tough to answer." Both get us nowhere. There are countless examples of "nowhere" responses like this, which need carefully constructed responses to reinvigorate the discussoin (Bots are just like humans in that regard. If a conversation is flagging, we use similar devices to get the confab back on the rails. At Juji, we do this by detecting the type of user response, and giving a suitable comeback. If a question is deemed optional but was answered anyway, we just tell the user not to worry and move on.
 
 Below shows Juji's handling of several user excuses.
 
@@ -403,10 +403,10 @@ the question as following:
 
 Make the paraphrases more specific and the specifics can be determined by the conversation context (e.g., a conversation with job candidates vs. employees vs. gamers).  Should the chatbot just start with a more specific question? Our tip would be keeping the initial asking broad because you never know what kind of answers people may come up with.  You can always design paraphrases to be more specific to handle user clarification questions.
 
-You can paraphrase a question easily with Huhi, so your attempts to help a user get the clarity s/he needs will feel natural, friendly and human. As a chatbot
-designer, you just need to design a chatbot question with severa alternatives (see <a
+You can paraphrase a question easily with Juji, so your attempts to help a user get the clarity s/he needs will feel natural, friendly and human. As a chatbot
+designer, you just need to design a chatbot question with several alternatives (see <a
 href="https://juji.io/docs/quality-chatbot-design-tips/#paraphrase-messages-and-requests">paraphrase
-a chatbot question</a>) and Juji takes care of the rest, with the help of our ever-growing built-in library that captures, among many other things, those pesky clarification questions. By reprhasing your chatbot's question, calmly and naturalistically, we are far more likely to keep the chat going, once the user feels more comfortable moving forward with a useful response that helps her/hiim and Juji. One last note on this area. Juji is designed to be a very cooperative chatbot, which thrives on teamwork with the user. That teamwork makes for better responses and greater user loyalty.
+a chatbot question</a>) and Juji takes care of the rest, with the help of our ever-growing built-in library that captures, among many other things, those pesky clarification questions. By reprhasing your chatbot's question, calmly and naturalistically, we are far more likely to keep the chat going, once the user feels more comfortable moving forward with a useful response that helps her/him and Juji. One last note on this area. Juji is designed to be a very cooperative chatbot, which thrives on teamwork with the user. That teamwork makes for better responses and greater user loyalty.
 
 ## **Preview Chatbot Often When Building**
 
@@ -414,7 +414,7 @@ Most of Juji's myriad of features aren't activated until you preview your bot, a
 
 ## Periodically Change Up Your Chatbot's Conversation
 
-Unless you're calling a particularly rigid call center, humans have a tendency to vary their scripts with some ad-libs. You should consider doing the same with your chatbot. Clients have a tendency to say "done and dusted", when their chatbot is in production, but continuing to improve and vary it keeps it feeling more alive, which for a blob of spinning electrons is always a good idea. The moral of the story is don't be afraid to go in and adjust the story. You should definitely do this is some part of the flow isn't working, according to the conversation data, but even if everything's feeling great, changing it up to keep it fresh is also a great idea. One word of caution though. Don't undermine it at its core. In other words, don't throw out the bot with the bathwater.
+Unless you're calling a particularly rigid call center, humans have a tendency to vary their scripts with some ad-libs. You should consider doing the same with your chatbot. Clients have a tendency to say "done and dusted", when their chatbot is in production, but continuing to improve and vary it keeps it feeling more alive, which for a blob of spinning electrons is always a good idea. The moral of the story is don't be afraid to go in and adjust the story. You should definitely do this if some part of the flow isn't working, according to the conversation data, but even if everything's feeling great, changing it up to keep it fresh is also a great idea. One word of caution though. Don't undermine it at its core. In other words, don't throw out the bot with the bathwater.
 
 ## **What's Next**
 
