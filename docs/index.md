@@ -78,8 +78,7 @@ create a Juji account with only a working email.
 ### **Create First AI Chatbot**
 
 After signing in, you can now create your first AI chatbot. Click on
-the red `+ AI Helper` button and follow the process to select `Say
-hello world` template.
+the red `+ AI Helper` button and follow the process to select `Use a blank template`.
     
 ### **Preview Chatbot**
 
