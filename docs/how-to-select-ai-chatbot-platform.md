@@ -1,66 +1,125 @@
 # **Which AI Chatbot Platform to Use?** <a name="right-platform"></a>
 
-For individuals and organizations who are unfamiliar with the development of conversational AI solutions, this seems like a daunting question to answer because there are hundreds or thousands of chatbot options available out there.
+For individuals and organizations who are unfamiliar with the development of conversational AI solutions, this seems like a daunting question to answer because there are hundreds if not thousands of chatbot options available out there.
 
-Investing in a chatbot solution is not a light decision or short-term
-investment. We would like to share with you two rounds of due diligence that
-you could perform to evaluate various chatbot options and then decide
-on which chatbot option or platform would suit your needs the best.
+Like adopting a child, investing in a chatbot solution is not a light
+decision nor a short-term investment. We would like to share with you
+the tips on whether and how to make a wise AI investment. In
+particular, we recommend three quick rounds of due diligence plus a
+deep dive.
 
-## **Round 1: Prescreen a chatbot option**
+## **Round 1: Decide on whether you'd need a chatbot at all**
 
-Before diving into the nitty-gritty details of a chatbot platform, use
-the following questions to do a quick prescreening of available
-chatbot options. This process is relatively quick and easy, which
-should save you a ton of time by quickly weeding out the unhelpful ones.
+Just like making any investment, it's always good to start with a justifiable
+investment rationale and a clear investment goal. The same principle
+should also be applied to a chatbot investment.
+First, [use this quick assessment](#do-i-need-ai-chatbot.md) to decide whether it is worth investing in a chatbot solution. 
 
-!!! question "Does the platform use its own chatbot to serve its own business, ideally in the same solution that you wish to have?"
-    In other words, do they trust their own product enough to dogfood it?
+## **Round 2: Decide on which type of chatbot you'd need**
 
-If the answer to the above question is `yes`, ask:
+Once you decide that you do want to invest in an AI chatbot solution,
+a simple Google search will present you with hundreds if not thousands
+of AI chatbot platforms! Almost all of them claim that they are
+powered by generative AI and all seem to offer similar features,
+giving the first impression that any of them would do the job.
 
-!!! question "How do you like your interaction experience with the featured chatbot?"
-    Concretely, ask the following:
+In reality, not every chatbot platform is created equal or is a
+perfect fit for the chatbot solution you have in mind. For example,
+many of our customers mentioned to us before they found Juji, they had
+explored 20+ chatbot platforms but failed to find the one that meets
+their needs.
 
-    * Whether and how well does it understand your free-text input?
-    * Whether and how well does it address your questions and handle your interruptions?
-    * Whether and how well does it help you achieve your task?
+To help you expedite your chatbot platform selection process, in this
+round, we help you identify the type of chatbots you need
+before diving into the nitty-gritty details of an AI chatbot
+platform. This step is utterly important since different types of chatbots
+require different types of technologies and support, which in turn
+affects the type and size of investment you'd need to make.
 
-    Keep in mind that this is perhaps one of their better chatbots. It's most likely that if you don't like the interaction experience, it would be very difficult for you to build a chatbot on their platform with which your users would enjoy interacting.
+### 1. Q﻿uestion-Answering Chatbots (QA Chatbots)
 
-If the answers to the above questions are all positive, ask:
+The main task for these chatbots is to answer user questions based on
+public and/or proprietary information. For example, universities may
+use a chatbot on their website to answer student questions about
+learning programs (see Image 1.1 below), or hospitals may use a
+chatbot in their mobile app to answer patient questions on medical
+services. Very similar to the behavior of ChatGPT, this type of
+chatbot is typically driven by user questions and assumes that all
+questions can be answered in a SINGLE response, which is not the case
+in many real-world applications.
 
-!!! question "How fast can you use the platform to create a simple AI chatbot yourself?"
-    Just make a simple chatbot to demonstrate the following:
+### 2﻿. Question-Asking Chatbots (Survey/Interview Chatbots)
 
-    * Make your chatbot ask user an open-ended question (e.g., `Could you introduce yourself?`)
-    * Ask chatbot a general question before responding to the chatbot's asking (e.g., `What kind of questions can you answer`)
-    * Observe how the chatbot responds to your input and note what you like or dislike
+The main task for these chatbots is to ask user questions and gather
+information from an intended audience. Very similar to an online
+survey, this type of chatbot has been used to gather information for
+research studies, personality assessments, and job interviews (Image
+1.2 provides an example of an interview chatbot). Typically, this type
+of chatbot is NOT capable of answering user questions including
+clarification questions during the process.
 
-If the platform does not allow you to DIY such a simple AI chatbot described above, ask:
 
-!!! question "How long will take the platform provider to do it for you?"
+### 3﻿. Proactive, Two-Way Conversational Chatbots (Proactive Chatbots)
 
-If the answers to all the above questions are positive to you, the platform might be worth a deeper look as described below.
+In real-world applications, chatbots often need to perform multiple
+tasks simultaneously to deliver desired user experience and accomplish
+the business objectives. For example, a QA-only chatbot on a
+university website may be inadequate because the same chatbot must
+also ask questions to gather necessary information from the visitors
+before it can answer their questions (see Image 1.3 below). Similarly,
+a survey-only chatbot for job interviews may be unsatisfactory because
+it must also answer candidate questions regarding the positions and
+the organization during the interview. This third type of chatbot is a
+hybrid of the QA and survey chatbots, capable of both asking and
+answering questions during a conversation, known as Proactive
+Chatbots.
 
-## **Round 2: Compare Chatbot Options by 3 Factors**
+## **Round 3: Evaluate AI Chatbot Platforms by the Type of Chatbot Needed**
 
-The pre-screening stage could typically help you weed out most of the
-chatbot options. Assume now that you have 3-5 chatbot platforms to do
-a deep dive on. We recommend that you evaluate and compare these selected platforms along three factors as listed below.
+Once you decide the type of AI chatbot you need, you can then use the relevant
+chatbot KPIs to evaluate AI chatbot platforms. Below lists the chatbot KPIs relevant to each type of chatbot.
+
+
+### Chatbot KPIs for evaluating AI platforms for QA Chatbots
+	  - Answer quality and quality control
+	  - Handling complex Q&A
+	  - Real-time chatbot behavioral monitoring and improvements
+
+### Chatbot KPIs for evaluating AI platforms for Interview Chatbots
+	  - Abilities to elicit quality user responses
+	  - Abilities to handle user digressions
+	  - Abilities to generate interview summary reports and analytics
+
+### Chatbot KPIs for evaluating AI platforms for Proactive Chatbots
+	  - Interactional intelligence
+	  - Personal intelligence
+	  - Prudence
+	  - Plug-n-play
+
+For a detailed description of these KPIs, please visit [this blog](https://juji.io/blog/how-to-select-a-chatbot-platform-powered-by-generative-ai/)
+
+## **Take a Deep Dive: Compare Chatbot Options by 3 Factors**
+
+The the first 3 rounds could help you quickly decide whether it is
+worth investing in an AI chatbot solution and weed out most of the
+chatbot options that will not help you fulfill your chatbot goals. Assume now
+that you have 3-5 chatbot platforms to do a deep dive on. We recommend
+that you evaluate and compare these selected platforms along three
+factors as listed below.
 
 ### **I. User Experience and Business ROI**
 
-A chatbot or conversational AI agent is meant to scale out human
-engagements with a target audience (e.g., universities with
-prospective and existing students) through a conversation. A key
-criterion to evaluate a chatbot platform is to assess how well a
-chatbot engages with a user and delivers satisfactory user experience
-as well as maximize business ROI, such as improving prospective
-student conversion and existing student retention rate. When
-evaluating how well a chatbot option can deliver satisfactory user
-experience and business ROI, you want to compare available chatbot
-options on the following aspects:
+A chatbot or conversational AI agent is meant to scale out human-human
+engagements (e.g., university enrollment counselors with prospective
+students and college academic advisors with existing students). Since
+a chatbot acts on the behalf of an organization, a key criterion to
+evaluate a chatbot platform is to assess how well a chatbot engages
+with a user and delivers satisfactory user experience while
+maximizing business ROI, such as improving prospective student
+conversion and existing student retention rate. When evaluating how
+well a chatbot option can deliver satisfactory user experience and
+business ROI, you want to compare available chatbot options on the
+following aspects:
 
 * How well can a chatbot drive an empathetic and
   productive two-way conversation?
