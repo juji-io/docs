@@ -1,6 +1,9 @@
 # **Which AI Chatbot Platform to Use?** <a name="right-platform"></a>
 
-For individuals and organizations who are unfamiliar with the development of conversational AI solutions, this seems like a daunting question to answer because there are hundreds if not thousands of chatbot options available out there.
+For individuals and organizations who are unfamiliar with the
+development of conversational AI solutions, this seems like a daunting
+question to answer because there are hundreds if not thousands of
+chatbot options available out there.
 
 Like adopting a child, investing in a chatbot solution is not a light
 decision nor a short-term investment. We would like to share with you
