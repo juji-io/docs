@@ -16,7 +16,7 @@ deep dive.
 Just like making any investment, it's always good to start with a justifiable
 investment rationale and a clear investment goal. The same principle
 should also be applied to a chatbot investment.
-First, [use this quick assessment](#do-i-need-ai-chatbot.md) to decide whether it is worth investing in a chatbot solution. 
+First, [use this quick assessment](https://juji.io/blog/do-you-really-need-an-ai-chatbot-use-these-3-questions-to-decide/) to decide whether it is worth investing in a chatbot solution. 
 
 ## **Round 2: Decide on which type of chatbot you'd need**
 
