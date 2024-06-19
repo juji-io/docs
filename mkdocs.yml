@@ -89,9 +89,11 @@ extra:
 
 nav:
   - Juji Home: https://juji.io
-  - Do I Need a Chatbot Powered by Generative AI: do-i-need-ai-chatbot.md
-  - How to Select an AI Chatbot Platform: how-to-select-ai-chatbot-platform.md
-  - Get Started: index.md
+  - Beginners' Guide:
+    - Get Started on Juji: index.md
+    - Tutorials: tutorial.md
+    - AI Chatbot Design Tips: quality-chatbot-design-tips.md
+    - More Design Tips: chatbot-design-tips-advanced.md
   - Juji Studio:
     - Introduction: juji-studio.md
     - Chatbot Design: juji-studio/design.md
@@ -115,16 +117,13 @@ nav:
     # - Data Model: nouns.md
     # - Chat Creation API: client.md
     # - Data API: meta.md
- 
-  - Beginners' Guide:
-    - Tutorials: tutorial.md
-    - AI Chatbot Design Tips: quality-chatbot-design-tips.md
-    - Advanced Design Tips: chatbot-design-tips-advanced.md
-    - FAQs: faq.md
     
-  - Where to Get Help
+  - Get Help:
+    - FAQs: faq.md
     - Trouble Shooting: trouble-shooting.md
     - Juji Forum: https://forum.juji.io
+
+  - How to Select an AI Chatbot Platform: how-to-select-ai-chatbot-platform.md
 
   
     
