@@ -51,6 +51,8 @@ chatbot is typically driven by user questions and assumes that all
 questions can be answered in a SINGLE response, which is not the case
 in many real-world applications.
 
+<p align="center"><img src="../img/choose_platform_1.1.png" alt="Juji Studio" width="650px"/></p>
+
 ### 2﻿. Question-Asking Chatbots (Survey/Interview Chatbots)
 
 The main task for these chatbots is to ask user questions and gather
@@ -61,6 +63,7 @@ research studies, personality assessments, and job interviews (Image
 of chatbot is NOT capable of answering user questions including
 clarification questions during the process.
 
+<p align="center"><img src="../img/choose_platform_1.2.png" alt="Juji Studio" width="650px"/></p>
 
 ### 3﻿. Proactive, Two-Way Conversational Chatbots (Proactive Chatbots)
 
@@ -76,6 +79,8 @@ the organization during the interview. This third type of chatbot is a
 hybrid of the QA and survey chatbots, capable of both asking and
 answering questions during a conversation, known as Proactive
 Chatbots.
+
+<p align="center"><img src="../img/choose_platform_1.3.png" alt="Juji Studio" width="650px"/></p>
 
 ## **Round 3: Evaluate AI Chatbot Platforms by the Type of Chatbot Needed**
 
@@ -213,17 +218,17 @@ educational chatbot solution as an example, the evaluation criteria
 should be broadly applicable for building any chatbot solutions.
 
 You can also [download the comparison template in an Excel
-file](../files/Compare-Chatbot-Options-Template.xlsx) to build your
+file](./files/Compare-Chatbot-Options-Template.xlsx) to build your
 own comparison sheet and evaluate different chatbot options by
 checking off each dimension for each chatbot option.
 
-**Click on the "+" button to zoom in on the comparison table. You can also [download the pdf](../pdf/Compare-Chatbot-Options.pdf) for offline review.**
+**Click on the "+" button to zoom in on the comparison table. You can also [download the pdf](./pdf/Compare-Chatbot-Options.pdf) for offline review.**
 
 
-<!-- <iframe width="100%" height="800" src="../pdf/Compare-Chatbot-Options.pdf"></iframe> -->
+<!-- <iframe width="100%" height="800" src="./pdf/Compare-Chatbot-Options.pdf"></iframe> -->
 <iframe src="https://drive.google.com/file/d/1N6JnkVej5IgAzcY3lZIOf5QAHsEqt_j-/preview?usp=sharing" width="100%" height="700" frameborder="0"></iframe>
 
-<!-- <object data="../pdf/Compare-Chatbot-Options.pdf" type="application/pdf" frameborder="0" width="100%" height="700px"> -->
+<!-- <object data="./pdf/Compare-Chatbot-Options.pdf" type="application/pdf" frameborder="0" width="100%" height="700px"> -->
 <!-- <embed src="https://drive.google.com/file/d/1N6JnkVej5IgAzcY3lZIOf5QAHsEqt_j-/preview?usp=sharing" width="100%" height="700px"/>  -->
 <!-- </object> -->
 

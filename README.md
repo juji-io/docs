@@ -75,7 +75,7 @@ After you edit the documents, you can test the site by starting a dev-server:
 
 ```bash
 cd docs
-mkdocs serve
+mkdocs serve -a 0.0.0.0:8000
 ```
 
 And point browser to http://localhost:8000
