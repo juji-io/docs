@@ -89,47 +89,70 @@ chatbot KPIs to evaluate AI chatbot platforms. Below lists the chatbot KPIs rele
 
 
 ### Chatbot KPIs for evaluating AI platforms for QA Chatbots
-  1. Answer quality and quality control
+<ol>
+  <li>Answer quality and quality control</li>
    <p align="center"><img src="../img/choose_platform_2.1.png" alt="Juji Studio" width="650px"/></p>
-  2. Handling complex Q&A
+   <p/>
+   <p/>
+  <li>Handling complex Q&A</li>
    <p align="center"><img src="../img/choose_platform_2.2.png" alt="Juji Studio" width="650px"/></p>
-  3. Real-time chatbot behavioral monitoring and improvements
+   <p/>
+   <p/>
+  <li>Real-time chatbot behavioral monitoring and improvements</li>
+</ol>
 
 ### Chatbot KPIs for evaluating AI platforms for Interview Chatbots
 <ol>
   <li>Abilities to elicit quality user responses</li>
    <p align="center"><img src="../img/choose_platform_3.1.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
+   <hr/>
+   <p/>
    <p align="center"><img src="../img/choose_platform_3.2.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
+   <hr/>
+   <p/>
    <p align="center"><img src="../img/choose_platform_3.3.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
+   <hr/>
+   <p/>
    <p align="center"><img src="../img/choose_platform_3.4.png" alt="Juji Studio" width="650px"/></p>
-
-
+   <p/>
   <li>Abilities to handle user digressions</li>
    <p align="center"><img src="../img/choose_platform_3.5.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
   <li>Abilities to generate interview summary reports and analytics</li>
    <p align="center"><img src="../img/choose_platform_3.6.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
+   <hr/>
+   <p/>
    <p align="center"><img src="../img/choose_platform_3.7.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
+   <hr/>
+   <p/>
    <p align="center"><img src="../img/choose_platform_3.8.png" alt="Juji Studio" width="650px"/></p>
+   <p/>
+   <hr/>
+   <p/>
 
 </ol>
 ### Chatbot KPIs for evaluating AI platforms for Proactive Chatbots
   1. Interactional intelligence
    <p align="center"><img src="../img/choose_platform_4.1.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
+   <p/>
   2. Personal intelligence
    <p align="center"><img src="../img/choose_platform_4.2.png" alt="Juji Studio" width="650px"/></p>
-
+   <p/>
+   <p/>
   3. Prudence
    <p align="center"><img src="../img/choose_platform_4.3.png" alt="Juji Studio" width="650px"/></p>
-   
+   <p/>
+   <p/>
   4. Plug-n-play
    <p align="center"><img src="../img/choose_platform_4.4.png" alt="Juji Studio" width="650px"/></p>
+   <p/>
+   <p/>
 
 For a detailed description of these KPIs, please visit [this blog](https://juji.io/blog/how-to-select-a-chatbot-platform-powered-by-generative-ai/)
 
