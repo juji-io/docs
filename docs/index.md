@@ -113,6 +113,18 @@ audience information. Check out [**Reports Dashboard**](juji-studio/reports)
 for more details. 
 
 
+### **Download Chatbot and Assets**
+
+In case you wish to share and reuse your chatbot and chatbot assets, you can download and save all your chatbot assets.
+
+In particular, there are three types of AI assets you can save:
+1. Your chatbot and all its design and main agentic workflows
+2. Your chatbot knowledge base
+3. Your chabot audience information
+
+For details please check out [**Download Juji Chatbot**](download-chatbot)
+
+
 ## **What's Next**
 
 Your AI chatbot can be very powerful: it can help you scale out traditional
