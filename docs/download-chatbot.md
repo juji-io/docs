@@ -15,12 +15,12 @@ You can export your Juji chatbot in two ways:
 ### **Inside the chatbot**
 If you are inside this chatbot, click on the "floppy disk" icon to download it - this will result in a .juji file. In case the Juji platform continues, you can simply upload this file to restore your AI chatbot. See the screenshot below.
 
-<p align="center"><img src="img/export-chatbot-inside.png" alt="Export a Juji chatbot within the chatbot" width="650"/></p>
+<p align="center"><img src="../img/export-chatbot-inside.png" alt="Export a Juji chatbot within the chatbot" width="650"/></p>
 
 ### **Outside the chatbot**
 If you are outside of the chatbot, click on the "Export" button as shown below.
 
-<p align="center"><img src="img/export-chatbot-outside.png" alt="Export a Juji chatbot outside the chatbot" width="650"/></p>
+<p align="center"><img src="../img/export-chatbot-outside.png" alt="Export a Juji chatbot outside the chatbot" width="650"/></p>
 
 
 ## **Download Juji Chatbot Knowledgebase**
@@ -35,7 +35,7 @@ Go inside your chatbot and follow the steps below:
 * When the download pop-up window shows up, we strongly suggest that you select ALL to download everything including unanswered questions.
 
 
-<p align="center"><img src="img/download-kb.png" alt="Download an AI chatbot's KB" width="650"/></p>
+<p align="center"><img src="../img/download-kb.png" alt="Download an AI chatbot's KB" width="650"/></p>
 
 
 ## **Download Juji Chatbot Audience Info**
@@ -49,4 +49,4 @@ Go inside your chatbot and then follow the steps:
 * Click on the calendar icon. Then select the option "All (2020 - Now)" as shown below. This may take a while if you have many users in the past. 
 * Click on the "Download" button. In the download pop-up window, again, we suggest that you download CSV as well as the full transcripts for future potential use.
 
-<p align="center"><img src="img/select-audience.png" alt="Select the audience of an AI chatbot by time" width="650"/></p>
+<p align="center"><img src="../img/select-audience.png" alt="Select the audience of an AI chatbot by time" width="650"/></p>
