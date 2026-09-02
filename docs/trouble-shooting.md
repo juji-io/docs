@@ -76,11 +76,10 @@ below.
 <p align="center"><img src="../img/allowed-user-answer.png"
 alt="a follow-up question is asked and a user response is given" width="650px"/></p>
 
-To check whether a chatbot is asking a "true" question, you can always
-check the card associated with the message containing your question
-expression. See two cards T5 and T6 shown in the screenshot below. A
-"true" request/question has a chat icon associated with the card (T5),
-while a plain message does not have it (T6).
+To check whether a chatbot is asking a "true" question, review the topic
+type for the message containing your question. See the two cards T5 and T6
+shown in the screenshot below. T5 is configured as a request topic, while T6
+is configured as a plain message topic.
 
 <p align="center"><img src="../img/pseudo-q.png" alt="pseudo question" width="350px"/></p>
 

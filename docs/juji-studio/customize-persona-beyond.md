@@ -19,7 +19,7 @@ To personalize your chatbot, you can choose a stock persona or define a custom p
 
 <br>
 
-To define a custom persona, click on the `Custom` persona icon as shown below. You can then upload your persona photo, give your custom persona a name, and enter a short bio. Once you are done, click on the green check mark to save it.
+To define a custom persona, select the `Custom` persona option as shown below. You can then upload your persona photo, give your custom persona a name, and enter a short bio. Once you are done, choose the save action to keep the changes.
 
 <p align="center"><img src="https://juji.io/docs/img/custom-chatbot-persona.png" alt="define a custom persona" width="650"/></p>
 
@@ -148,5 +148,4 @@ In a situation where multiple people may co-design a chatbot, one can leave a no
 Once a chatbot is ready, you can deploy it onto a website or a
 Facebook page. Please check out [**Chatbot Deployment**](../release)
 to deploy your AI chatbot. If you wish to further customize your chatbot, such as its [**main chat flow**](../customize-main-chat-flow) or [**capabilities to handle QnA**](../customize-qa), you can continue doing so. 
-
 

@@ -23,13 +23,14 @@ in the flow.
 
 One can add a topic to an existing chat flow in one of the two ways:
 
-* Click on the round green **`+`** button below the **`Welcome`** card to
-  add a topic at the beginning of a chat flow. You can also use the
-  same green **`+`** button above the **`Wrap-up`** card to add a topic at the end of a chat flow.
+* Use the add-topic **`+`** action below the **`Welcome`** card to add a
+  topic at the beginning of a chat flow. You can also use the same
+  add-topic **`+`** action above the **`Wrap-up`** card to add a topic
+  at the end of a chat flow.
 
-* Mouse hover any topic card (e.g., `How are you doing?`) and then
-  select the round green **`+`** button to add a topic after the current
-  topic card.
+* Hover over any topic card (e.g., `How are you doing?`) and then select
+  the add-topic **`+`** action to add a topic after the current topic
+  card.
 
 <p align="center"><img src="https://juji.io/docs/img/design-add-topic.png" alt="add a
 topic button" width="350"/></p>
@@ -53,7 +54,7 @@ This is for a chatbot to send a message to a user **without** waiting for
   messages](./#type-of-chatbot-message) as explained below in detail.
 
 
-**IMPORTANT TIP** If you intend to have your chatbot wait for a user input before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question.
+**IMPORTANT TIP** If you intend to have your chatbot wait for user input before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 is a plain message topic and will not wait for user input, while T5 is a request topic and will.
 
 <p align="center">
 <img src="https://juji.io/docs/img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
@@ -86,7 +87,7 @@ Below we use a set of examples to show how to use each of the editing
 options and how the content would appear in a chat on the web or
 Facebook Messenger.
 
-* **Add an image** Click on the "add an image" icon to insert an image into a chat message. This allows an image to be uploaded and displayed in a chat.
+* **Add an image** Use the `Add image` action to insert an image into a chat message. This allows an image to be uploaded and displayed in a chat.
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/insert-image-option.png" alt="insert an image into a chatbot message" width="550"/></p>
 
@@ -153,7 +154,7 @@ Use the `+` button on the right of the text bubble to add paraphrases
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/add-paraphrases.png" alt="add paraphrases of a chatbot message" width="550"/></p>
 
-You can also view all the paraphrases using the "down arrow" button:
+You can also view all the paraphrases by expanding the paraphrase list:
 
 <p align="center"><img src="https://juji.io/docs/img/juji-studio/view-paraphrases.png" alt="view paraphrases" width="550"/></p>
 
@@ -162,8 +163,8 @@ You can also view all the paraphrases using the "down arrow" button:
 
 ### **Chatbot Responses**
 
-You can also customize chatbot behavior based on user responses. The green "Customization" button shown
-    below can be used to add a group of chatbot actions under one
+You can also customize chatbot behavior based on user responses. The
+    `Customization` button shown below can be used to add a group of chatbot actions under one
     condition (trigger). Refer to the [design best practices](https://juji.io/docs/quality-chatbot-design-tips) for defining specific conditions and corresponding custom chatbot actions.
 
 <p align="center"><img src="https://juji.io/docs/img/design-chatbot-action.png" alt="design
@@ -206,11 +207,11 @@ favorite thing` (see below)
 
 <p align="center"><img src="https://juji.io/docs/img/example-topic-2.png" alt="example topic associated with a label" width="650"/></p>
 
-In case that Juji-retrieved mini conversation is not what you want to
-use, you can always find a different built-in dialog (click on the
-green search icon as shown above). Below is a screenshot showing the
-Juji dialog library, where you can browse and use keywords to search
-for a suitable, built-in dialog to use.
+In case that the Juji-retrieved mini conversation is not what you want to
+use, you can always find a different built-in dialog by using the search
+action shown above. Below is a screenshot showing the Juji dialog library,
+where you can browse and use keywords to search for a suitable built-in
+dialog to use.
 
 <p align="center"><img src="https://juji.io/docs/img/search-a-topic.png" alt="search a
 topic" width="550"/></p>
@@ -233,8 +234,8 @@ does your dog weigh`), Juji automatically parses user input to the
 question and stores the parsed user input into two attributes:
 `weight-amount` and `weight-unit`.
 
-Click on the green `attribute` icon to view the attributes associated
-with a built-in dialog (see below).
+Use the `Attributes` action to view the attributes associated with a built-in
+dialog (see below).
 
 <p align="center"><img src="https://juji.io/docs/img/system-attribute-example.png" alt="view system attributes within a topic" width="650"/></p>
 
@@ -249,8 +250,8 @@ respectively to distinguish user answers to these two questions.
 As described above, Juji uses the request label you entered to search
 and find a matched built-in dialog. This means that changing your
 request label will *automatically* trigger Juji to find a different
-matched dialog. To avoid such situations, you can use the green `pin`
-icon to pin a found dialog (see above). This means that changes in
+matched dialog. To avoid such situations, you can use the `Pin`
+action to pin a found dialog (see above). This means that changes in
 your request label will no longer trigger Juji to search and
 change the matched dialog automatically.
 
@@ -379,25 +380,25 @@ width="550"/></p>
 
 ## Delete a Topic
 
-To delete a topic, mouse hover the corresponding topic card listed in
-the left topic panel. Then click on the red trash can icon to delete
-the topic. A deletion is permanent and cannot be undone.
+To delete a topic, open the actions for the corresponding topic card in
+the topic list and choose the delete action. A deletion is permanent and
+cannot be undone.
 
 <p align="center"><img src="https://juji.io/docs/img/design-delete-topic.png" alt="delete a
 topic" width="350"/></p>
 
 ## Clone a Topic
 
-To clone a topic, mouse over the corresponding topic card listed in
-the left topic panel. Then click on the green clone icon to clone the
-topic. The cloned topic will retain all behavior of the original topic.
+To clone a topic, open the actions for the corresponding topic card in
+the topic list and choose the clone action. The cloned topic will retain
+all behavior of the original topic.
 
 <p align="center"><img src="https://juji.io/docs/img/design-clone-topic.png" alt="clone
 a topic" width="350"/></p>
 
 ## View Topic Relationship
 
-Although the chat flow is presented a list of topics, but the inter-connected topics actually form a graph. When the complexity of the chat flow grows, the need to see the relationship among topics grows also. Juji Studio provides two convenient tools for users to visualize and examine the topic graph. The two icons on top of the topic list leads to a text and a graph view of the topic graph.
+Although the chat flow is presented as a list of topics, the inter-connected topics actually form a graph. When the complexity of the chat flow grows, the need to see the relationship among topics grows as well. Juji Studio provides two convenient tools for users to visualize and examine the topic graph. The controls above the topic list open a text view and a graph view of the topic graph.
 
 <p align="center"><img src="https://juji.io/docs/img/chatflow-topic-icons.png" alt="Chatflow topic icons" width="350"/></p>
 
@@ -406,7 +407,7 @@ Although the chat flow is presented a list of topics, but the inter-connected to
 
 <p align="center"><img src="https://juji.io/docs/img/topic-list-text-icon.png" alt="Topic text list icon" width="350"/></p>
 
-Click on the Topic Text List icon, you will see all the topics represented in a textual format in a new browser tab. You can copy or download these text for detailed analysis.
+Select **Topic Text List** to see all the topics represented in a textual format in a new browser tab. You can copy or download this text for detailed analysis.
 
 <p align="center"><img src="https://juji.io/docs/img/topic-list-text-view.png" alt="Topic text list view" width="700"/></p>
 
@@ -414,7 +415,7 @@ Click on the Topic Text List icon, you will see all the topics represented in a 
 
 <p align="center"><img src="https://juji.io/docs/img/topic-list-graph-icon.png" alt="Topic graph icon" width="350"/></p>
 
-Click on the Topic Graph icon, you will see all the topics represented in a graph visualization in a new browser tab. Each node in the graph represents a topic.  You can drag the nodes around, pan and zoom in/out the graph. Click Reset button to change the graph layout. Click Center button to re-center the viewpoint. Click Legend button to toggle on/off the legend of the graph. You can also change how long you want the node label to be by choosing a Label Size.
+Select **Topic Graph** to see all the topics represented in a graph visualization in a new browser tab. Each node in the graph represents a topic. You can drag the nodes around, pan and zoom in or out of the graph. Use **Reset** to change the graph layout, **Center** to re-center the viewpoint, and **Legend** to toggle the legend on or off. You can also change how long you want the node label to be by choosing a **Label Size**.
 
 <p align="center"><img src="https://juji.io/docs/img/topic-graph.png" alt="Topic graph" width="700"/></p>
 
@@ -454,7 +455,8 @@ purposes (see [best practices](https://juji.io/docs/quality-chatbot-design-tips)
 
 * **Re-asking Messages** (optional) During a chat, a user may not
     always respond to a chatbot question. In such a case, a chatbot
-    may want to repeat the question. One can add (green `+`)
+    may want to repeat the question. One can add additional
+    paraphrases by using the add-paraphrase `+` action
     paraphrases of a request and indicate whether such a paraphrase
     can be used to re-ask the question by checking the `Re-asking
     Message` box.
@@ -643,7 +645,7 @@ interact with your audience again. You can do so easily in the **Welcome** topic
 
 * Click on the **`Welcome`** card
 
-* Click on the slider under the welcome message (on the right panel) to suspend a chat. See the screenshot below.
+* Use the suspension toggle in the **Welcome** topic settings to suspend a chat. See the screenshot below.
 
 * Edit the welcome message accordingly to inform users about the suspension/pause.
 
@@ -661,11 +663,11 @@ done. In contrast, a customer support chatbot must hang around all the time to
 serve customers.
 
 To customize the ending behavior, click on the **`Wrap-up`**
-topic, the last topic in the left topic panel.
+topic in the topic list.
 
 <p align="center"><img src="https://juji.io/docs/img/wrapup-topic.png" alt="Wrapup topic to end a chat" width="250"/></p>
 
-Then click on the text bubble or the `pencil` icon to edit the topic:
+Then use the topic edit action to edit the topic:
 
 : **Option 1: Make a chatbot stick around**
 

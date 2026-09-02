@@ -122,8 +122,8 @@ API key can be used as a long lasting token for autentication. Once you obtained
 To obtain the API key, you will need to do the following:
 
 1. Log in to your Juji account on juji.io
-2. In the dashboard, click the top right button and select Account
-  <p align="center"><img src="../img/visit-account-page.png" alt="Visit Account Page" width="650px"/></p>
+2. In the dashboard, open the account menu and select **Account**
+  <p align="center"><img src="../img/visit-account-page.png" alt="Account menu with the Account option" width="650px"/></p>
 3. In the Account page, select "APIKEY" then select "Generate New API Key" to get one
   <p align="center"><img src="../img/generate-new-api-key.png" alt="Generate New API Key" width="650px"/></p>
 4. Copy the generated API key somewhere secure and don't tell anyone :) Note that you will only see the API key on Juji website once. If you lost it, you will need to generate a new one.

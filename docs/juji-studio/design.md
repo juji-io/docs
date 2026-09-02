@@ -46,7 +46,7 @@ Juji provides a set of task-specific templates that can be used to create a chat
 
 <br>
 
-Before choosing a chatbot template, you can always preview sample chats produced by the template by clicking on the "eye" icon associated with each template.
+Before choosing a chatbot template, you can always preview sample chats produced by the template by selecting the **Preview** action associated with each template.
 
 <p align="center"><img src="../../img/juji-studio/create-chatbot-preview-template.png" alt="Juji Studio Preview A Chatbot Template" width="650px"/></p>
 
@@ -99,5 +99,4 @@ One can test a chatbot easily by clicking on the "Preview" button. This allows a
 Once a chatbot is ready, you can deploy it onto a website or a
 Facebook page. Please check out [**Chatbot Deployment**](../release)
 to deploy your AI chatbot.
-
 

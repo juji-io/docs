@@ -18,10 +18,10 @@ chat. Below is an example of a Q&A board:
 width="650"/></p>
 
 On this page, one can enter a custom Q&A pair directly in the table
-(using the green **`+`** button to add) or upload a CSV file
+(using the add-row **`+`** action) or upload a CSV file
 containing a Q&A list. The above screenshot also shows that there is
-one unanswered user question (indicated by the red badge displayed
-next to the `Q&A Board`). Juji automatically detects unanswered user
+one unanswered user question (indicated by the unanswered-question count
+shown next to the `Q&A Board`). Juji automatically detects unanswered user
 questions and displays such questions on the Q&A dashboard.
 
 ### **Upload Q&As CSV**
@@ -99,5 +99,3 @@ picture-in-picture" allowfullscreen></iframe> </div>
 Once a chatbot is ready, you can deploy it onto a website or a
 Facebook page. Please check out [**Chatbot Deployment**](../release)
 to deploy your AI chatbot. If you wish to further customize your chatbot, such as its persona or other settings, please refer to [**Customize Chatbot Persona**](../customize-persona-beyond).
-
-

@@ -144,7 +144,7 @@ My chatbot asks a question, such as "I can help you now. What can I help you wit
 <p align="center"><img src="../img/wrong-q.png" alt="wrong chatbot question" width="350px"/></p>
 
 
-: Juji chatbots send two types of messages, one is just a message without waiting for a user to respond, the other is a "true" request, which will wait for a user to respond. To take a user input, make sure your question is a "true" question. Check the card associated with your question and make sure it looks like T5 below instead of T6. A "true" request/question has a chat icon associated with the card (T5), while a plain message does not have it (T6).
+: Juji chatbots send two types of messages: a plain message that does not wait for a user response, and a request that waits for user input. To take user input, configure the topic as `Make a Request`. In the example below, T5 is a request topic and T6 is a plain message topic.
 
 <p align="center"><img src="../img/pseudo-q.png" alt="pseudo question" width="350px"/></p>
 
@@ -209,11 +209,11 @@ request" width="550"/></p>
 
 
 <a name="!followup-vs-reg"></a>
-### What are the differences between a follow-up request or a request I added using the round green `+` button?
+### What are the differences between a follow-up request or a request I added using the add-topic `+` action?
 ### When should I add a follow-up request?
 ### Should I add a follow-up or a regular request?
 
-: It is quite simple to test whether you need a follow-up or just a regular request. A follow-up request is always conditioned upon one or more other requests. The follow-up request will not be activated if such a condition is not met during a chat. In contrast, a regular request added using the green round **`+`** button will be activated unconditionally as the chat flows to it. In other words, if you want your chatbot to always make a request regardless what happened in a chat, you will add a regular request. Otherwise, you will add a follow-up request that will depend on certain conditions, e.g., particular user responses to a chatbot question.
+: It is quite simple to test whether you need a follow-up or just a regular request. A follow-up request is always conditioned upon one or more other requests. The follow-up request will not be activated if such a condition is not met during a chat. In contrast, a regular request added using the add-topic **`+`** action will be activated unconditionally as the chat flows to it. In other words, if you want your chatbot to always make a request regardless of what happened in a chat, you will add a regular request. Otherwise, you will add a follow-up request that will depend on certain conditions, e.g., particular user responses to a chatbot question.
 
 
 <a name="!capture-emoji"></a>
@@ -467,7 +467,7 @@ maintain your chatbot.
 <a name="!download-results"></a>
 ### Can I download the conversation results?
 
-: Yes. They can be downloaded as CSV files by clicking the download CSV icon next to the corresponding result type. See [export data to CSV](../juji-studio/reports#export-audience-data) for more details.
+: Yes. They can be downloaded as CSV files by using the `Download CSV` action for the corresponding result type. See [export data to CSV](../juji-studio/reports#export-audience-data) for more details.
 
 
 <a name="!sync-w-crm"></a>

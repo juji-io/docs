@@ -158,18 +158,18 @@ a Facebook page.
 alt="Facebook Deployment" width="650"/></p>
 
 Similar to deploying to a website, one can also edit the **weclome
-message** shown up in a Facebook Messenger. Click on the green
-`Checklist` to make a Facebook page ready to host a chatbot.
+message** shown up in Facebook Messenger. Click `Checklist` to make a
+Facebook page ready to host a chatbot.
 
-Use the blue `Connect with Facebook` button to deploy a
-chatbot. Select the page(s) you want to deploy to. Then click on the
-green `Deploy` button to complete the deployment.
+Use the `Connect with Facebook` button to deploy a
+chatbot. Select the page(s) you want to deploy to. Then click
+`Deploy` to complete the deployment.
 
 <p align="center"><img src="https://juji.io/docs/img/select-fb-page.png" alt="Select facebook page to deploy" width="650"/></p>
 
 If there is no page listed, it means that you have not given Juji
 permissions to any of your Facebook pages to host your
-chatbots. In that case, click on the green `Connect More` button to
+chatbots. In that case, click `Connect More` to
 select Facebook pages and give permissions. The permitted pages should
 then show up in the list and you can then select one or more to deploy a
 chatbot to.  
@@ -223,4 +223,3 @@ information for previous releases.
 Once a chatbot is deployed, you can monitor its status and the
 associated audience information. Please check out [**Report
 Dashboard**](reports.md) to deploy your AI chatbot. 
-

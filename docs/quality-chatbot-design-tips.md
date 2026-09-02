@@ -154,7 +154,7 @@ interrogation instead of a discussion. So, just like all good things, a little m
 Chatbot messages can be delayed in 1s increments. (you can set `delay` in [topic
 settings](#topic-settings). Delays seem natural and real, as if the bot is choosing its response wisely (even though it's already loaded up by the bot in a matter of a few milliseconds. The second and more creative reason for a delay is that it imparts drama at key moment in the course of a chatbot through-line. For example, if the expected response to a given user question is personal, profound, or in some way critical to the chatbot's narrative, take your time giving the bot's response and add a little drama to the proceedings. You can also test the amount of delay that works for a given situation.
 
-**IMPORTANT TIP:** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 will not wait for a user's input but T5 will. Note the chat icon appearing on T5, indicating T5 is a "true" question.
+**IMPORTANT TIP:** If you intend to have your chatbot wait for a user input and respond to it before moving on, make sure you choose `Make a Request`. Otherwise, your chatbot simply ignores any user input even if the message is worded like a question. As the example shown below, T6 is a plain message topic and will not wait for user input, while T5 is a request topic and will.
 
 <p align="center"><img src="../img/pseudo-q.png" alt="Pseudo question" width="350"/></p>
 
@@ -219,8 +219,8 @@ conversation experience that can best engage with your target audience.
 To make a chatbot sound more natural, define variations of your line or 'paraphrases' as we call them at Juji for any given a chatbot
 message or a request. For example, if your chatbot says 'hello' to your
 audience everyday, you might want your chatbot to change it up on a randomized basis to
-avoid sounding repetitive, and robotic. This can be easily done by adding paraphrases
-to the 'hello' message. Below indicates the use of the green "+" to add
+avoid sounding repetitive and robotic. This can be easily done by adding paraphrases
+to the 'hello' message. Below shows the add-paraphrase `+` action used to add
 paraphrases to a chatbot message:
 
 <p align="center"><img src="../img/add-paraphrases-remark.png" alt="paraphrase a message" width="550"/></p>

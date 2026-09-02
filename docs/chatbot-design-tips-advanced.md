@@ -137,24 +137,23 @@ Say you're creating a chatbot with multiple calls to action (redirect vs form vs
 <p align="center"><img src="../img/clone-a-chatbot.png" alt="Clone a
 chatbot" width="650"/></p>
 
-To clone your Juji chatbot hit the ellipsis menu (...) on a chatbot in your dashboard and choose `clone`.
+To clone your Juji chatbot, open the chatbot actions menu on the dashboard card and choose `Clone`.
 
 ### **2. Export/Import Juji Chatbots**
 
 The export/import approach is designed to support non-simultaneous chatbot collaboration between the owners of different Juji accounts. It can also facilitate a sale of a chatbot from one party to another.
 
-To export your Juji chatbot hit the (...) ellipsis drop down menu and this time choose `export` to download a .Juji file for your designated download folder. Give it a relevant title. For example, if it's a restaurant reservation bot, you could call the file `restaurant-reservation-bot.juji`. After that's done, you can send it to your collaborator or customer who can then import it to their own Juji account.
+To export your Juji chatbot, open the chatbot actions menu and choose `Export` to download a `.juji` file for your designated download folder. Give it a relevant title. For example, if it's a restaurant reservation bot, you could call the file `restaurant-reservation-bot.juji`. After that's done, you can send it to your collaborator or customer who can then import it to their own Juji account.
 
 <p align="center"><img src="../img/export-a-chatbot.png" alt="Export a
 chatbot" width="650"/></p>
 
-To import a Juji chatbot, just click on the import icon as shown below to import an exported `*.juji`
+To import a Juji chatbot, use the **Import** action shown below to import an exported `*.juji`
 file. After importing a chatbot, you can then [customize](../juji-studio/design),
 [deploy](../juji-studio/release), and [manage](../juji-studio/reports) the chatbot as if it
 were created by you from scratch.
 
-<p align="center"><img src="../img/import-a-chatbot-btn.png" alt="+ AI Helper
-button" width="350"/></p>
+<p align="center"><img src="../img/import-a-chatbot-btn.png" alt="Import chatbot action" width="350"/></p>
 
 <p align="center"><img src="../img/import-a-chatbot.png" alt="Import a
 chatbot" width="650"/></p>
