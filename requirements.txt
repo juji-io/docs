@@ -1,0 +1,8 @@
+# The custom theme/base.html references Material 7.1.0 assets and partials.
+mkdocs-material==7.1.0
+mkdocs==1.2.4
+pymdown-extensions==8.2
+Markdown==3.3.7
+# MkDocs 1.2 uses APIs removed in newer Jinja2 and importlib-metadata releases.
+Jinja2==3.0.3
+importlib-metadata==4.13.0

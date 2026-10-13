@@ -2,6 +2,53 @@
 
 This is the source for Juji's documentation Web site https://juji.io/docs. The site is built with [mkdocs](https://www.mkdocs.org) using the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
 
+## Deploy on Netlify at juji.io/docs/
+
+Deploy this repository as a separate Netlify project in the same team as the
+main [juji-io/site](https://github.com/juji-io/site) project. The main site proxies
+`/docs/` to the documentation project, so documentation updates deploy independently.
+No DNS change is needed.
+
+1. Commit and push this repository's Netlify configuration and dependency file.
+2. In Netlify, import `juji-io/docs` from GitHub. Use `master` as the production
+   branch and leave the base directory at the repository root. The checked-in
+   `netlify.toml` sets Python 3.11, the build command `mkdocs build`, and the
+   publish directory `site`. Netlify installs `requirements.txt` automatically.
+3. Name the documentation project `juji-docs`, if available. Verify its successful
+   deployment at `https://juji-docs.netlify.app/`, including a nested page, images,
+   and search. If Netlify assigns a different project name, use its actual
+   `.netlify.app` address in the main site's proxy rule below.
+4. In the **main site's** `netlify.toml`, add these rules before any catch-all
+   redirects, retaining its existing configuration:
+
+   ```toml
+   [[redirects]]
+     from = "/docs"
+     to = "/docs/"
+     status = 301
+     force = true
+
+   [[redirects]]
+     from = "/docs/*"
+     to = "https://juji-docs.netlify.app/:splat"
+     status = 200
+     force = true
+   ```
+
+5. After the documentation project is live, commit and push the main site's
+   routing change. Its automatic deploy enables `https://juji.io/docs/`.
+   Check `/docs`, `/docs/`, `/docs/tutorial/`, and `/docs/juji-studio/design/`,
+   including navigation, images, and search. `/docs` should redirect to `/docs/`;
+   page navigation should stay under `juji.io/docs/`.
+
+Keep `site_url` set to `https://juji.io/docs/`. Do not redirect the documentation
+project's `.netlify.app` address back to `juji.io/docs/`, because the main site
+uses it as the proxy origin. Unknown documentation paths should return 404;
+do not add a single-page-app fallback to `index.html`.
+
+See Netlify's [proxy documentation](https://docs.netlify.com/manage/routing/redirects/rewrites-proxies/)
+and [Python dependency setup](https://docs.netlify.com/build/configure-builds/manage-dependencies/#python).
+
 We welcome pull requests for this repository. Follow instructions below.
 
 ## Get the code
@@ -38,8 +85,8 @@ One option is to install pyenv, and install the right version of python using it
 
 ```bash
 brew install pyenv
-pyenv install 3.9
-pyenv global 3.9
+pyenv install 3.11
+pyenv global 3.11
 ```
 
 Test that you have the right version of python `python --version`.
@@ -47,20 +94,18 @@ Test that you have the right version of python `python --version`.
 Now install needed extensions:
 
 ```bash
-pip install mkdocs
-pip install mkdocs-material==<version>
+pip install -r requirements.txt
 ```
-Get mkdocs-material version from theme/base.html by searching for "mkdocs-material" in the file.
+The dependency versions in `requirements.txt` match the customized Material 7.1.0 theme.
 
 ### conda
 Conda is another popular option for install virtual python env. Follow [conda installation on mac](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 ```bash
-conda create -n juji-doc python=3.9
+conda create -n juji-doc python=3.11
 conda activate juji-doc
-conda install -c conda-forge mkdocs
-conda install -c conda-forge mkdocs-material=<version>
+pip install -r requirements.txt
 ```
-Get mkdocs-material version from theme/base.html by searching for "mkdocs-material" in the file.
+Install from `requirements.txt` to use the same dependency versions as Netlify.
 
 
 ## Assets and Links

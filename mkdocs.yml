@@ -1,6 +1,6 @@
 site_name: 'Juji Documentation'
 site_description: 'Juji Cognitive AI Assistant (Chatbot) Best Practices, Reference Guide, Tutorials, and Trouble Shooting'
-site_url: 'https://juji.io/docs'
+site_url: 'https://juji.io/docs/'
 
 #repo_name: 'juji-io/docs'
 #repo_url: 'https://github.com/juji-io/docs'
