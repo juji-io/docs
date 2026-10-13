@@ -23,23 +23,45 @@ No DNS change is needed.
 
    ```toml
    [[redirects]]
-     from = "/docs"
-     to = "/docs/"
-     status = 301
-     force = true
-
-   [[redirects]]
      from = "/docs/*"
      to = "https://juji-docs.netlify.app/:splat"
      status = 200
      force = true
    ```
 
+   Also add `netlify/edge-functions/docs-trailing-slash.js` in the main site:
+
+   ```javascript
+   export default function (request) {
+     const url = new URL(request.url);
+     const path = url.pathname;
+     const isDocsPath = path === "/docs" || path.startsWith("/docs/");
+     const isPage = !path.endsWith("/") && !path.split("/").pop().includes(".");
+     if (isDocsPath && isPage) {
+       url.pathname += "/";
+       return Response.redirect(url, 301);
+     }
+   }
+
+   export const config = {
+     path: ["/docs", "/docs/*"],
+   };
+   ```
+
+   This adds trailing slashes to extensionless documentation page URLs, preserving
+   query parameters and the base path for MkDocs relative assets. File URLs pass through.
+   Netlify's ordinary redirect rules treat `/docs` and `/docs/` as the same path,
+   so a `/docs` to `/docs/` redirect rule creates an infinite redirect loop.
+   See [Netlify's trailing-slash behavior](https://docs.netlify.com/manage/routing/redirects/redirect-options/#trailing-slash)
+   and [edge function declarations](https://docs.netlify.com/build/edge-functions/declarations/).
+
 5. After the documentation project is live, commit and push the main site's
    routing change. Its automatic deploy enables `https://juji.io/docs/`.
    Check `/docs`, `/docs/`, `/docs/tutorial/`, and `/docs/juji-studio/design/`,
    including navigation, images, and search. `/docs` should redirect to `/docs/`;
    page navigation should stay under `juji.io/docs/`.
+   Also check that `/docs/tutorial` and `/docs/juji-studio/design` redirect to
+   their trailing-slash URLs, so older links load the correct styles and scripts.
 
 Keep `site_url` set to `https://juji.io/docs/`. Do not redirect the documentation
 project's `.netlify.app` address back to `juji.io/docs/`, because the main site
