@@ -4,5 +4,5 @@ mkdocs==1.2.4
 pymdown-extensions==8.2
 Markdown==3.3.7
 # MkDocs 1.2 uses APIs removed in newer Jinja2 and importlib-metadata releases.
-Jinja2==3.0.3
+Jinja2==3.1.6
 importlib-metadata==4.13.0
